@@ -1,0 +1,1153 @@
+= Y.A.R.I.S: Adventurer's Guide to doom & destruction & stuff
+//{{{ Front matter
+:sectlinks:
+:toc:
+:toclevels: 1
+// Kim Ravn Hansen <moccalotto@gmail.com>
+
+////
+To undefine an attribute, place a ! at the end of the name:
+
+:linkcss!:
+:imagesdir: ./images
+:iconsdir: ./icons
+:stylesdir: ./styles
+:scriptsdir: ./js
+////
+//}}}
+
+
+
+This document contains character creation and game mechanics, as well as gear, spells, and abilities
+for level 1 and 2 characters.
+
+// {{{ ADVENTURERS SHEET
+== ADVENTURER’S SHEET
+The adventurer’s sheet has a bunch of fields for you to pencil in, and when you’re done, you’re ready for adventure.
+
+=== Stats
+Your character has 6 primary stats:
+
+Strength:: is used for melee attacks, jock stuff and carrying gear.
+Dexterity:: is used for stealth, melee defense, and tricky tasks.
+Constitution:: is used for carrying gear and surviving bad trauma.
+Intelligence:: is used for initiative, magic, and managing resources.
+Wisdom:: is used for ranged attack, ranged defense, and perception.
+Charisma:: is used for luck, negotiation, charm magic, and selling treasure.
+
+=== Extra Stuff
+Here’s some more things for you to keep track of.
+
+Level:: your character's level is a measure of their badassitude. You start at level 1 and max out
+at level 10.
+
+Hit Points (HP):: is your current number of hit points. Bad stuff happens if you out of HP.
+
+[[hit_point_max]]
+Hit Point Max:: is the maximum number of hit points you can have. I.e. the number of HP you have
+when you're at full health.
+
+[[recovery_die]]
+Recovery Die:: is the die you roll (one or more of) to regain hit points when you rest or receive
+magical healing. You start with a recovery die of d8.
+
+Total Item Slots:: is the maximum number of items you can carry. This number is the highest of your
+*strength* and *constitution*.
+
+Unencumbered Item Slots:: is the number of items you can carry without being encumbered. This number
+is the lowest of your *strength* and *constitution*.
+
+Moves:: is the number of meters you can move in a round (and other useful things).
+// }}}
+
+// {{{ CREATE YOUR ADVENTURER
+== CREATE YOUR ADVENTURER
+Go through the following sections, one by one, to create a new character.
+
+=== Stats
+For each of your six stats in order, you roll 1d8+6 and assign the result to that stat. Now each
+stat has a value between 7 and 14.
+
+=== Background and Fluff
+Roll on each of the following tables to flesh out your character.
+
+==== Ancestral Traits
+First roll a d6. If it is an even number, you do not have any special ancestral traits. If it is an
+odd number, roll two more d6.  The lowest number is used on the table on the left, and the highest
+number is used on the table on the right.
+
+[%header]
+|===
+|Low Roll   | High Roll
+| Hands     | Troll
+| Ears      | Gnoll
+| Nose      | Goblin
+| Hair      | Elf
+| Eyes      | Dwarf
+| Teeth     | Gnome
+|===
+
+====
+A roll of 1 and 6 would give you gnome hands. And a roll of one and one you troll hands (claws, maybe?) and a roll of 4 and 3 would give you an elven nose.
+====
+
+==== Vice
+Roll a d12. If you roll a number that isn’t on the table, you don’t have a vice.
+
+. Two vices: Roll twice.
+. Drinking
+. Bar fighting
+. Attention
+. Gambling
+. Stealing
+. Fornicating
+
+
+
+==== Background
+Roll a d6 and a d20. If the d6 rolled an even number, pick your
+background from the left column, otherwise pick your background
+from the right column
+
+[%header,cols=2*a]
+|===
+d6 rolled 1, 3, or 5 | d6 rolled 2, 4, or 6
+
+|
+. Apothecary
+. Baker
+. Banker
+. Bartender
+. Butcher
+. Carter
+. Chandler
+. Clergy
+. Clerk
+. Companion
+. Cook
+. Courier
+. Courtier
+. Doctor
+. Entertainer
+. Farmer
+. Fisherman
+. Foreigner: roll again for original background
+. Gambler
+. Gold Smith
+|
+. Hunter
+. Hustler
+. Laborer
+. Magician’s apprentice
+. Merchant
+. Monestarian
+. Musician
+. Notary
+. Officer
+. Prisoner
+. Lazy spouse
+. Royalty
+. Sailor
+. Scribe
+. Sheff
+. Smith
+. Solder
+. Squire
+. Street Urchin
+. Thief
+|===
+
+
+=== Adventuring Gear
+All characters start with the following equipment:
+
+* A backpack.
+* Two torches.
+* A weapon of their choice.
+* Two common ration packs.
+* A set of common clothing.
+* A bedroll.
+
+*In addition to that:* Roll on each of the following tables
+to find out what equipment your character starts with.
+See <<REFERENCE>> for more info on equipment and items.
+
+
+==== Ranged Weapon
+Roll 1d6 on this table to find out if you have a ranged weapon.
+
+[%header]
+|===
+|d6     | Weapon
+|1-3:   | No Ranged Weapon.
+|4:     | Slingshot + Bag of stones.
+|5:     | Bow + Quiver of arrows.
+|6:     | Crossbow + Quiver of bolts.
+|===
+
+==== Shield
+Roll 1d6. If you rolled 5 or 6, you have a light shield. Otherwise, you don’t have a shield.
+
+
+==== Armor
+You have 1d3-1 light armor pieces. See <<REFERENCE>> for more info.
+
+==== Utility Gear 1
+Rol ????? on this table.
+
+[cols="2,8"]
+|===
+| 1 | 1 Iron Ration.
+| 2 | 1 Grappling Hook.
+| 3 | 1 torch.
+| 4 | Rope, 10 meters.
+| 5 | 1 Kosh <<REFERENCE>>
+| 6 | Ball bearings.
+| 7+ | ??
+|===
+
+
+
+==== Utility Gear 2
+Roll ????? twice on this table. If the second roll is the same as the first roll, reroll it.
+
+[cols="2,8"]
+|===
+| 1 | 1d6 gold pieces
+| 2 | 1 spellbook with a spell of your choice.
+| 3 | 1 Storm Lantern
+| 4 | Lantern
+| 5 | Spikes
+| 6 | Chalk.
+| 7 | Copper purse.
+| 8 | Tinkering tools.
+| 9 | Lockpicking tools.
+| 10| Map making tools.
+|===
+
+=== All Done
+Now it’s time to read about the adventurer class and then check out the sections on dice checks and combat.
+
+// }}}
+
+// {{{ ADVENTURER
+== ADVENTURER
+
+[quote, Baron LeDik]
+____
+Adventurers are brave, eager, and dangerous
+____
+
+All characters start out with the same class: Adventurer.
+
+=== Level 1
+
+==== Recovery Die
+Your recovery die is d8. This means that you regenerate 1d8 hit points when you
+get a good long rest. Spells and potions may let you regenerate several recovery
+dice at once.
+
+
+==== Hit Points
+Your hit point max is 8, which means that, under normal circumstances, you can’t
+have more than 8 hit points. When you have lost all your hit points, you have to
+roll on the death table.
+
+[[armor_skills]]
+==== Armor Skills
+You  are skilled at using light shields and light armors, meaning you can use
+them without being encumbered.
+
+[[weapon_skills]]
+==== Weapon Skills
+You are skilled at using light melee weapons and ranged weapons. 
+On the <<adventurer_damage_rolls_table,table below>> you can see how much damage
+you deal with each weapon category.
+
+[[adventurer_damage_rolls_table]]
+.Adventurer Damage Rolls
+[%header]
+|===
+| Weapon Type         | Skill level | Damage Roll
+| Unarmed Combat      | Unskilled   | 1d4
+| Light Melee Weapons | Skilled     | 1d6
+| Heavy Melee Weapons | Unskilled   | 1d8
+| Ranged Weapons      | Skilled     | 1d6
+|===
+
+==== Spellcasting
+You can use <<spellbooks>> to cast #basic spells. You can cast these spells on the
+fly (this is called <<Basic Spellcasting>>), and you can cast certain spells as
+rituals (this is called basic ritual casting). In addition to using spellbooks
+to cast spells, you can also recharge spellbooks, which is called Basic
+Recharging.
+
+=== Level 2
+
+==== More Hit Points more better
+Your hit point max is increased by 1d8. Roll with advantage.
+
+==== Better stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point. And an even more betterer stat Roll a d20 and
+select a stat that is lower than the result of the die roll. Increase that stat
+by 1 point. If no stats are lower than your die roll, nothing happens.
+
+==== Adventurer’s Special Ability
+Choose one of the abilities below. You can switch this ability at levels 4, 6, 8, and 10.
+
+Armorer::
+If you have taken less damage than what your armor  provides, you can repair your armor. This brings
+you to full health. Repairing armor takes 30 minutes and requires 1 consumption of tinkerer tools.
+At 5th level and beyond you can also repair the armor of your allies.
+
+Everdeen::
+If you are without arrows during combat, you can spend 3 moves, and make a charisma check. If
+successful, you somehow have a single extra arrow and you’re ready to fire. If unsuccessful, you
+cannot use this ability before you have stocked up on ammunition. This ability also works with
+bolts, slingshots, and darts.
+
+[[great_weapon_specialist]]
+Great Weapon Specialist::
+You are skilled at using heavy melee weapons. Extra damage ??????
+
+Monstrous Gourmand::
+You can make edible ration packs from fresh monster parts. It requires sharp cutting instruments, a
+large pot, a bonfire (or equivalent source of heat), 1 hour of work, and a successful intelligence
+check to create 1 ration pack. A medium sized monster “contains” 2 ration packs. In addition to
+creating rations, you are also able to eat fresh, uncooked, monster meat without getting sick. It
+requires a sharp cutting tool, 3d6 minutes, and a successful constitution check to create and eat
+such a “meal”.
+
+Negotiator::
+You have advantage on checks that involve negotiation. You also have advantage on haggle checks (see
+<<the_haggling_check,The haggling check>>).
+
+Pugilist::
+You are skilled at unarmed combat, meaning your attack checks are normal instead of difficult, and
+you use your skilled damage die when dealing damage. Note that, if you’re using a shield, your
+unarmed damage is reduced to 1. Beware that striking baddies in heavy armor, as well as certain
+dangerous monsters, with your body can have grave consequences.
+
+Rider::
+You acquire a trained horse (for free, as a gift, or similar). You become proficient at riding
+horses. You have advantage on all riding-related checks. You have advantage on consumption checks
+for animal feed. When you reach level 5 your riding proficiency expands to all rideable land
+creatures. At level 8, you can ride virtually anything.
+
+Shady::
+On a successful charisma check you pull out a dagger from a boot, a sleeve or… somewhere. If your
+check fails, you cannot do it again for the rest of the session. In combat, this feat requires 3
+moves. You are also skilled at using a <<kosh>>, something normal adventurers are not.
+
+Spelunker::
+You always have some chalk. You always know the cardinal directions. You have advantage on checks
+that involve navigation in caves and dungeons. One of the ropes you carry does not take up an item
+slot. Aside from being unable to see, you do not suffer any debilitating effects from being alone in
+total darkness. You have advantage on consumption checks for Lamp Oil and Torches.
+
+Thrifty::
+You have advantage on all consumption checks.
+
+Traveler::
+You have advantage on consumption checks for rations and animal feed. You have advantage on
+geography related checks. One of the ration packs you carry does’t take up an item slot.
+
+=== Level 3: graduation
+It is time for you to move on. You’re no longer just an adventurer, you’re a Hero. Choose a hero
+class from the <<YARIS Heroes Guide>>.
+
+//}}}
+
+//{{{DICE
+== DICE
+You can make rolls and checks with your dice. A roll is any kind of roll such as 1d6, 2d4, 3d6+3, etc. A check is a special kind of roll described below.
+
+=== Checks
+You make checks to see if your character can successfully do something non-trivial; you roll your
+d20. The check is successful if you roll under a specified *_target number_*, which is usually one of your stats.
+
+.Target Number
+====
+You want to lift something really heavy, so the GM tells you to
+make a strength check. You roll a d20. If you rolled lower than your strength, the check was
+successful, otherwise it was unsuccessful.
+====
+
+[[nat1]]
+Rolling a 1::
+Checks are always successful if you roll a 1 on your d20, this is called a *_nat1_*.
+
+[[nat20]]
+Rolling a 20::
+Checks are always unsuccessful if you roll a 20 on your d20. This is called a *_nat20_*.
+
+[[easy_checks]]
+Easy checks::
+are checks where the target number is 3 higher than what it would normally be.
+
+.Easy strength check
+====
+if your strength is 9, making an easy strength check would need to roll under 12.
+====
+
+[[difficult_checks]]
+Difficult checks::
+are checks where the target number is 3 lower than what it normally would be.
+
+.Difficult strength check
+[example]
+if your strength is 9, making a difficult strength check would need to roll under 6.
+
+Both = Difficult::
+If one or more conditions make a check difficult, it remains difficult even
+if one or more conditions make the check easy.
+
+[[adversarial_checks]]
+=== Adversarial Checks
+These are checks where the difficulty depends on the level of the adversary. In
+this context, and adversary can be a baddie, an <<NPC>>, a lock, a trap, a
+riddle, or similar.
+
+If the adversary is two or more levels above you, the check is
+<<difficult_checks,difficult>>, and if the adversary is two or more levels
+below you, the check is <<easy_checks,easy>>.
+
+.Adversarial Checks
+====
+
+You are trying to disarm a trap. You are level 3, but the trap is level 5, your
+check is difficult.
+
+---
+
+You are haggling with a merchant and trying to get a good price. You are level
+3, and the merchant is level 1, so your check is easy.
+
+---
+
+You are attacking an evil orc. You are level 3, and the orc is level 2, so
+your are within one level of each other, and thus your check normal normal.
+
+====
+
+
+=== Advantage & Disadvantage
+Certain conditions, abilities, classes, and spells can give a roll an advantage or disadvantage,
+which changes the way you roll the dice.
+
+Advantage::
+If a roll has advantage, you roll the dice twice, and pick the result you like best.
+
+.Damage roll with advantage
+[example]
+you have advantage on a Damage Roll, you roll your damage dice twice and pick the roll you like
+best.
+
+Disadvantage::
+If a roll has disadvantage, you roll the dice twice, and the GM picks the result they like.
+
+Both = neither::
+If at least one advantage and at least one disadvantage applies to the same roll, it becomes a
+normal without any advantage or disadvantage roll.
+
+//}}}
+
+//{{{ LEVELS
+== LEVELS
+You begin at level 1, and you can gain levels until you reach level 10. You gain levels by acquiring
+suitable treasures. For a team of level X adventurers to gain a new level, they must acquire *X*
+suitable treasures. This document only deals with levels 1 and 2. Once you reach level 3, you become
+a hero, and you can find all the info about heroes in the Hero’s Guide to doom & destruction &
+stuff.
+
+Acquire:: Acquiring a treasure means, recovering it (possibly by liberating it from baddies), and
+getting it safely back to your base of operations. It can be necessary to make multiple trips to
+recover a large treasure. If only parts of a treasure can be recovered, only those parts count in
+the value of the treasure.
+
+Suitable:: For a treasure to be considered suitable for gaining levels, it must be worth at least
+100 gp per level per character in the adventuring party.
+
+Treasure:: A treasure is a big horde, situated in a single location, such as a small hamlet, a
+dungeon, a castle, a farm, a town house, etc. Small, unsuitable treasures cannot be combined into
+large, suitable ones. Enormous treasures cannot be split up into several adequate ones. Loot from
+monsters is generally not classified as treasure, but there are exceptions, such as the evil
+wizard’s artifact staff that is worth several fortunes, and of course the dragon’s horde.
+
+.Leveling up
+====
+. In order to level up, a party of 5 first level characters must recover a single treasure worth
+anus _5·1·100=500_ gold pieces.
+
+. In order to level up, a party of 4 PCs at 6th level must recover six treasures in order to
+advance. Each treasure must be worth at least _4·6·100=2,400_ gold pieces.
+
+====
+
+// }}}
+
+//{{{EQUIPMENT
+== EQUIPMENT
+This section contains info on item slots, usage points, and several lists of equipment.
+These lists are not exhaustive, and other types of items and equipment exist.
+
+=== ITEM SLOTS
+An average item takes up one item slot. Bulky or heavy items, such as heavy armor, can take up
+multiple Item Slots. Your number of Item Slots is determined by your strength and constitution. The
+lower of these two numbers is your number of unencumbered item slots, and the higher number is your
+total number of item slots. You can use all your unencumbered Item Slots without any side effects,
+but If you use any of your remaining item slots, you become encumbered, which means that everything
+you do becomes difficult. You can never fill/carry more than your Item Slots Total.
+
+.Calculating item slots
+====
+If your strength is 7 and your constitution is 16, you have 16 item slots, and 7 of those are
+unencumbered item slots. This means that, if you use 8 or more of your item slots, you become
+encumbered.
+====
+
+=== USAGE POINTS
+Certain items have Usage Points, which are, among other things, the minimum number of times they can
+be used before they are used up.
+
+Consumables:: Items that can be completely used up (such as rations, arrows, lamp oil) have usage
+points. Once these items run out of usage points, they’re gone, completely used up.
+
+Repairables:: Items that can be worn out (such as armor pieces, weapons, and spellbooks) have usage
+points to track when they will wear out. Once these items run out of usage points, they stop
+working, but they can be repaired.
+
+=== Consumption
+Consumption is an unspecified amount of a consumable item. When you use/consume a consumption of an
+item, you make a consumption check, which is just a check with a target number of 11, and if it is
+unsuccessful, the item loses a usage point.
+
+.Using Magic Components
+====
+A consumption of magic components means you use some unspecified amount of your magic components and
+then you make a consumption check. And if the check was unsuccessful, your magic components lose a
+usage point.
+====
+
+Consumable Projectiles:: In Combat, projectiles (such as arrows, bolts, slingshots, etc.) are
+consumables. You do not roll a consumption check every time you fire an arrow, bolt, or slingshot
+during combat. Instead you make one consumption check after the combat ends; if you used more than
+one type of projectile, make consumption checks for each type. If you fire a projectile when not in
+combat, you make a consumption check with advantage after you fired the shot.
+
+Repairable Items:: A repairable item (such as a piece of armor or a spellbook) has a maximum number
+of Usage Points, and a current number of Usage Points. As a repairable item is used, it loses its
+Current Usage Points, and it becomes unusable when it reaches zero. It can be repaired, but never
+regain more than its Maximum Usage Points.
+
+Exactly how a repairable item loses its Usage Points, and how it is repaired again, depends on the
+type of item; see the <<Basic Spellcasting>>, <<Armor Damage>>, and <<Weapon Damage>> for more info.
+
+=== Gear
+
+.General Gear
+[%header,cols="9,^1,2"]
+|===
+| Name              | IS| Cost
+|Pole, 3m foldable  | 2 | 5cp
+|Ladder, 2m         | 2 | 10cp
+|Rope, 25m          | 2 |
+|Rope, 10m          | 1 |
+|Shovel             | 1 |
+|Clothing, poor     | 1 |
+|Clothing moderate  | 1 |
+|Clothing, right    | 1 |
+|Backpack           | 1 |
+|????????           | X |
+|===
+
+
+.Consumables
+[%header,cols="8,^1,^1,2"]
+|===
+| Name                  | IS| UP| Cost
+| Bag of slingshots     | 1 | 3 |
+| Ball bearings         | 1 | 2 |
+| Candles               | 1 | 6 |
+| Chalk                 | 1 | 12|
+| Lamp Oil              | 1 | 2 | 5cp
+| Quiver of arrows      | 1 | 3 |
+| Quiver of bolts       | 1 | 3 |
+| Ration pack, Iron     | 1 | 2 |
+| Ration pack, normal   | 1 | 1 |
+| Spikes†               | 1 | 2 |
+| Tools, lockpicking    | 1 | 4 |
+| Tools, tinkering      | 1 | 4 |
+| Torch                 | 1 | 2 | 5cp
+|===
+
+.Light Armor
+[%header,cols="8,^1,^1,2"]
+|===
+| Name                  | IS| HP| Cost
+| Light Shield          | 1 | 2 | 8
+| Light Helmet          | 1 | 2 | 8
+| Light Cuirass         | 2 | 3 | 27
+| Light Gauntlets       | 1 | 2 | 8
+| Light Greaves         | 1 | 2 | 8
+|===
+
+.Medium Armor
+[%header,cols="8,^1,^1,2"]
+|===
+| Name                  | IS| HP| Cost
+| Medium Shield         | 2 | 4 | 64
+| Medium Helmet         | 2 | 4 | 64
+| Medium Cuirass        | 3 | 5 | 125
+| Medium Gauntlets      | 2 | 4 | 64
+| Medium Greaves        | 2 | 4 | 64
+|===
+
+
+.Heavy Armor
+[%header,cols="8,^1,^1,2"]
+|===
+| Name                  | IS| HP| Cost
+| Heavy Shield          | 3 | 6 | 216
+| Heavy Helmet          | 3 | 6 | 216
+| Heavy Cuirass         | 4 | 7 | 343
+| Heavy Gauntlets       | 3 | 6 | 216
+| Heavy Greaves         | 3 | 6 | 216
+|===
+
+
+
+
+Light Melee Weapons::
+A light weapon costs 5gp and takes up 1 usage point.
+
+Heavy Melee Weapons::
+A two-handed weapon costs 6gp and takes up 2 usage points.
+
+.Melee Weapons
+[%header,cols="9,^1,2"]
+|===
+| Melee Weapon                  | IS| Cost
+| Light Melee Weapon            | 1 | 5 gp
+| Heavy Melee Weapon            | 2 | 8 gp
+|===
+
+
+.Ranged Weapons
+[%header,cols="8,^1,^1,2"]
+|===
+| Name                          | IS| UP| Cost
+| Darts                         | 1 | 3 | 2
+| Bow                           | 2 | - |
+| ↳ quiver of arrows            | 1 | 10| 2
+| Crossbow                      | 1 | - | 10
+| ↳ quiver of bolts             | 1 | 10| 2
+| Sling                         | 0 | - | 4
+| ↳ bag of stones               | 1 | 10| 2
+|===
+
+
+=== Special Items
+
+Spellbook::
+A spellbook is a magical book or tome that contains a single spell. See more
+about them in the <<basic spellcasting>> section.
+
+Kosh::
+Only adventurers with the shady special ability are skilled at using koshes. To
+use a target, you make an attack check; if you hit the target, it loses 1 hit
+point. You then roll your damage die. If your roll was higher than the target’s
+remaining hit points, the target gains the unconscious condition, which means
+they’ll wake up within 2d6 hours if not healed.
+
+Spikes::
+Can be used to wedge doors shut.
+
+Lamp::
+????
+* Uses lamp oil
+* One dose per hour
+* Lamp oil bottles have “many” doses
+
+Torch::
+Aside from illuminating the area around you, torches can be used for a number
+of things.
+
+Torches have 2 Usage Points, and you must make a consumption check
+every hour.
+
+Torches can be revitalized; it requires one consumption of Lamp Oil
+to restore 1 Usage Point to a torch.
+
+You can throw a torch and use it as a ranged weapon, but it is difficult. If
+you rolled a nat20 on your ranged attack check, the torch is broken and cannot
+be repaired. The throwing range of a torch is 5 meters.
+
+You can use your torch as a melee weapon, but it is difficult. If you roll a
+nat20 on your melee attack check, the torch breaks and cannot be repaired.
+
+Purse::
+Purses can reduce bookkeeping when buying goods and services that aren't that
+costly.
+
+Copper purse::: for 1,000 copper pieces you can buy a copper purse. It has 10
+Usage Points. When you buy something costing less than 100 copper pieces, you
+make a Consumption Check for the copper purse instead.
+
+Silver purse::: for 1,000 silver pieces you can buy a silver purse. It has 10
+Usage Points. Whenever you buy something costing less than 100 silver pieces,
+Wyou make a Consumption Check for the silver purse instead.
+
+Gold purse::: for 1,000 gold pieces you can buy a gold purse. It has 10 Usage
+Points. When you buy something costing less than 100 gold pieces, you make a
+Consumption Check for the gold purse instead.
+
+Grappling hook::
+????????
+
+Bank book::
+A bank book is a magical book that can contain money. There is a magical ritual
+called Banking Transaction (X), that allows you to transfer money into and out
+of the book.
+
+Lockpicking tools::
+These tools allow you to pick various locks. They can be used up, and therefore
+have Usage Points. To Open a Lock, you first spend 5 minutes and one
+consumption of lockpicking tools. Then you make both a dexterity- and an
+intelligence check.
+
+* If both are successful, you open the lock.
+* If one is successful, the lock does not open, but you get to try again.
+* If none are successful, the lock becomes jammed, and can only be opened by a
+real key.
+
+Tinkering tools::
+Tinkering tools can be used to disarm traps and repair broken items. To repair
+an armor piece, you first spend 10 minutes and one consumption of tinkering
+tools. Then you make a difficult intelligence check. If successful, you have
+restored the armor piece to its maximum usage points. To repair a broken or
+jammed lock, you first spend 30 minutes and one consumption of tinkering tools.
+Then you make a dexterity check and an intelligence check.
+
+* If both are successful, you have repaired the lock.
+* If one is successful, the lock is still seized, but you get to try again.
+* If none are successful, the lock becomes even more broken, and only another
+person, of a higher level, can try to repair it.
+
+
+=== Selling and Haggling
+You buy things for the listed price, but you cannot sell items at that price.
+When selling something trivial or cheap, you sell it for 50% of the listed
+value, but if you’re selling more precious things, you must make a haggling
+check.
+
+[[the_haggling_check]]
+The Haggling Check::
+If you’re selling expensive items, or if you’re selling things in bulk, you
+must haggle to get a good price. You first roll a charisma check
+
+.Haggling check outcome
+[cols="^2s,10"]
+|===
+| Nat20     | You sell the item(s) for 25% of local list price.
+| Failure   | You sell the item(s) for 50% of local list price.
+| Success   | You sell the item(s) for 75% of local list price.
+| Nat1      | You sell the item(s) for 100% of local list price.
+|===
+
+
+//}}}
+
+//{{{ COMBAT
+== COMBAT
+
+This section is all about fighting 🤺
+
+=== Rounds
+Combat is divided into 10-second rounds. At the beginning of each round, the
+initiative is rolled to determine who goes first. After that, each combatant
+gets to act once per round; this is called their turn.
+
+During their turn, a combatant can do the following things in order.
+. Make up to 5 moves.
+. Take one action.
+
+=== Initiative
+At the beginning of each round each PC makes an intelligence check. If the PCs
+have more failed checks than there are combat capable baddies on the
+battlefield, the baddies get to go first that round.
+
+The players act in the order in which they sit around the gaming table,
+clockwise from the GMs. The baddies act in whatever order the GM wishes.
+
+=== Moves
+An adventurer has 5 moves, and here are some examples on how to use them.
+
+IMPORTANT: Moves do not carry over to the next round; use them or lose them.
+
+.Moves
+[%header,cols="^1,11"]
+|===
+| Moves | Description
+| 1     | Move 1 meter in good terrain
+| 1     | Ready a potion from a belt pouch
+| 1     | Draw a weapon from your sheath or equivalent
+| 1     | Switch to a new quiver
+| 1     | Drop a light shield
+| 2     | Open a door
+| 2     | Mount or dismount
+| 2     | Move 1 meter in bad terrain
+| 2     | Get up from a prone position
+| 4     | Remove your helmet
+| 5     | Drop a functional heavy shield
+| 5     | Ready a spellbook from your backpack
+|===
+
+=== Actions
+When a character has performed their moves, they get to take their action.
+Here are some examples of actions:
+
+* Attack with a readied weapon.
+* Unarmed attack.
+* Drink a readied potion.
+* Cast a spell with a readied spellbook.
+* Dropping an unusable heavy shield.
+* Use a special ability.
+
+An action can also be converted to 3 moves that must be used right away, and do
+not carry over to the next round.
+
+=== Attacks & Damage
+
+Whenever you attack someone, you must first make an attack check.
+After that, you make your damage roll, which depends on the type of weapon you're using,
+and whether or not you are skilled at using said weapon.
+
+Attack check::
+* If you use a ranged weapon, the attack check is an adversarial wisdom check.
+* If you use a melee weapon, or you use unarmed combat, the attack check is an adversarial strength check.
+* If you attack someone who is 2 or more levels lower than you, your attack check is easy.
+* If you attack someone who is 2 or more levels higher than you, your attack check is difficult.
+* If you are not <<weapon_skills,skilled>> at using your weapon, your check is difficult.
+
+Damage rolls::
+When you hit a baddie, you roll a die to see how much damage you deal. 
+The die depends on the type of weapon you used.
+
+See the <<adventurer_damage_rolls_table>> table to find your damage die.
+
+.A note on special abilities
+--
+If you have the <<great_weapon_specialist,Great weapon specialist>>
+special ability, you are also skilled in using heavy melee weapons.
+--
+
+[[critical_hit]]
+Critical hits::
+If you roll a <<nat1>> on your attack check, you get an extra action for free.
+You do not get any moves, but you can use your action any way you like,
+including attacking the same opponent again.
+
+Weapon wear and tear::
+If you roll a <<nat20>> on your attack check, you must roll your damage die. If you
+roll the minimum possible value, your weapon becomes unusable and must be
+repaired before it can be used again. It can be repaired by a weaponsmith, a
+process that takes hours of work and requires a weaponsmith workshop.
+
+=== Defense
+When a baddie attacks you, you make a defense check to see if you avoid the
+damage. The GM does not make an attack check for the baddie.
+
+Melee Defense Check:: When a baddie attacks you in melee combat, you make a
+Dexterity check. If successful, you dodge the attack. If you’re unsuccessful,
+you lose a number of hit points equal to the attacker’s damage check.
+
+Ranged Defense Check:: When a baddie attacks you at range, you make a Wisdom
+check. If you succeed, you dodge the attack, but if you fail the check, you’re
+hit and take damage.
+
+==== Armor
+You can wear up to five pieces of armor; a helmet, a cuirass, a gauntlet, a set
+of greaves, and a shield. 
+
+===== Armor Grants Hit Points
+Each piece of armor you wear increases your hit point total by a number of
+points. The better the armor piece, the more hit points you get. 
+
+When you don armor, your <<hit_point_max,hit point max>> and your current
+number of hit points both increase by the number of hit points provided by the
+armor piece.
+
+When you doff armor, your <<hit_point_max,hit point max>> and your current
+number of hit points both decrease by the number of hit points provided by the
+armor piece. (which means that, technically, you can die if you are very low on
+hit points and remove an armor piece).
+
+===== Armor Requires Skill
+If you are wearing one or more armor pieces that you are not proficient with,
+you become <<Encumbered>>, which makes every check you make difficult.
+
+=== Damage and Death
+When you hit a baddie, you roll a damage roll to see how many points of damage
+you deal. The dice used in the damage roll depends on your class, your
+abilities, and the weapon (or spell) you used in the attack. Your opponent
+subtracts your damage from their current number of hit points. If a baddie is
+reduced to zero hit points (or below) they die instantly.
+
+==== Taking damage
+The GM tells you what the damage die is, and you roll it, and subtract the
+result from your hit points.
+
+But no matter what, you can never go below zero hit points.
+
+==== Baddies With Zero Hit Points
+Baddies die when they reach 0 HP. The only way to bring them back is to revive
+or resurrect them with powerful magic. If you want to stun a baddie, you can
+use certain items, spells, and abilities.
+
+==== Adventurers With Zero Hit Points
+If you reach 0 hit points, you permanently decrease a random stat by one point,
+and then you must roll on the Death Table. 
+
+.Reaching zero hit points
+[example]
+--
+You have 4 HP left, and an angry troll hits you for 12 points of damage. You're
+brought down to zero HP. 
+
+You roll a d6 to find out which stat to reduce. You rolled a 2, so your
+dexterity is reduced by 1.
+
+You now have to roll on the <<death_table,Death Table>>: You roll a 53, meaning
+you're unconscious and <<dying,dying>>, which in turn means you will have to roll a
+d20 every round from now on, and a nat20 will result in your death.
+--
+
+===== Taking Damage At Zero Hit Points
+If you take damage and you are already at zero hit points, you lose 1d4 points
+from a random stat, and you must roll on the <<trauma_table,Trauma Table>> and add the amount of
+damage taken to your d100 roll.
+
+.Kicking a player character while they're down
+[example]
+--
+You’re have zero hit points, you have already rolled on the <<death_table,Death
+Table>>once (and survived, for now), and some dastardly baddie strikes you for
+5 damage. 
+
+You first roll a d6 and a d4 to reduce one of your stats, you rolled a 6 and a
+3, meaning your charisma is lowered by 3 points.
+
+You then roll on the <<trauma_table,Trauma Table>> and add 5 to your d100 roll
+(because you received 5 points of damage). You rolled _7+5=12_, meaning you did
+not suffer any trauma effects, you lucky bastard.
+--
+
+==== Death table
+
+[[death_table]]
+.Death Table
+[%header,cols="^2,10"]
+|===
+| d100          | Effect
+| 100           | You’re destroyed.
+| 99            | You’re dead.
+| 76-98         | You’re comatose and dying. 
+| 25-75         | You’re unconscious and dying.
+| 02-25         | You’re unconscious.
+| 1             | You’re still awake. At 1 HP, but prone.
+|===
+
+Destroyed:: You’re extremely dead; You must roll twice on the Trauma Table and
+mark any temporary losses as Reversible. Only great resurrection magic, such as
+<<Greater Revival>> (or better) can bring you back to life. 
+
+Dead:: You’re dead; you must roll on the trauma table (in case you are revived
+or turn into an undead).
+
+[[dying]]
+Dying:: You’re near death; you must roll on the trauma table. Every round, at the
+beginning of your turn, you must make a d20 roll; if you roll a nat1, you are
+no longer dying, but unconscious, and if you rolled a nat20, you are dead.
+
+Comatose:: You’re in a deep coma. If you receive conventional medical care, you
+will wake up in a matter of hours; make a Constitution check every hour to see
+if you wake up. If you receive magical healing, you will wake up in a matter of
+minutes; make a Constitution check every minute to see if you wake up.
+
+Unconscious:: You are unconscious; if you receive any kind of healing, you will
+wake up right away, otherwise you will wake up within 2d6 hours.
+
+==== Trauma Table
+The trauma table is used when you take damage after being reduced to 0 hit points.
+
+[[trauma_table]]
+.Trauma table
+[cols="^2,^2,8"]
+|===
+| 101+      | Amputation    | Lose a random limb
+| 100       | Permanent     | -1d4 to random stat
+| 89-99     | Permanent     | -1d8 maximum hit points
+| 90-98     | Reversible    | -1 moves
+| 81-89     | Reversible    | -1 to Charisma
+| 71-80     | Reversible    | -1 unencumbered item slot
+| 61-70     | Temporary     | -1 moves
+| 51-60     | Temporary     | All checks are difficult
+| 41-50     | Temporary     | -1d6 to random stat
+| 31-40     | Temporary     | 1d8 to maximum hit points
+| 21-30     | Reversible    | Battle scar
+| 01-20     | -             | No trauma.
+|===
+
+Amputation:: You lose an arm or a limb. Roll 1d4 to find out which. Roll
+Dexterity or Constitution (your choice) if you succeed, you only lose half the
+limb. Otherwise you lose all of it. Your limb can regrow if the restoration
+spell is used.
+
+Permanent Trauma:: Permanent loss is permanent. There is no way to undo it or
+reverse it.
+
+Reversible Trauma:: This type of trauma can be undone with  restoration spells;
+one spell per trauma.
+
+Temporary trauma:: lasts for 1d20 days or until a restoration spell is cast on
+you.
+
+=== Healing and regeneration
+You can regain hit points in various ways, but you can never heal or be healed
+beyond your <<hit_point_max,hit point max>>.
+
+Resting:: Resting for 8 hours, six of which are spent sleeping, will
+allow you to regenerate a bit; roll your <<recovery_die,recovery die>>, and
+increase your hit points by that number. Aside from sleeping and keeping watch,
+you cannot do anything of consequence while resting. 
+
+====
+An adventurer with a
+recovery die of d8 will regenerate 1d8 hit points after sleeping 6 hours and
+resting for an additional 2.
+====
+
+Magical Healing:: Spells, potions, and powers often allow you to instantly
+recover hit points equal to several recovery dice rolls. There are also items
+and spells that do not rely on your recovery die, but these spells and items
+are usually relatively powerful.
+
+== CONDITIONS
+
+Conditions can affect characters and baddies.
+
+[[encumbered]]
+Encumbered:: All checks become <<difficult_checks,difficult>>, meaning that you
+have to roll 3 points lower than you normally would to succeed.
+
+[[exhausted]]
+Exhausted:: Same as encumbered AND your number of moves is halved, rounded down.
+
+[[poisoned:]]
+Poisoned:: You temporarily lose 1d4 points of a random stat every minute. After
+rolling your stat loss, you make a constitution check with disadvantage. If
+successful, the poisoned condition is removed. You die if any of your stats are
+reduced to zero. If you die from poison, only Greater Revival can restore you
+back to life.
+
+[[demoralized]]
+Demoralized:: On your next turn you must spend all your moves (if possible)
+retreating from your opponents. When you have done that, the demoralized
+condition goes away.
+
+== MAGIC
+
+=== Spellbooks
+A spellbook is a magical tome, book, or scroll. It takes up one Item Slot, contains one spell and has a number of Usage Points.
+
+Charge:: Spellbooks need magical charge (usage points) to work. When a
+spellbook runs out of usage points, it becomes inert and unusable until it is
+recharged. A spellbooks maximum usage points depends on the power and skill of
+its creator.
+Recharging:: Adventurers can recharge spellbooks, it takes time and requires
+magic components. See Basic Recharging on page 
+
+=== Basic Spellcasting
+Adventurers can cast #basic spells (all spells in this document are #basic). 
+But they must have a spellbook containing the given spell and:
+* The spellbook has at least one Usage Point.
+* The spellbook is in your hands.
+* There’s enough light for you to read the text, you can speak, and you aren't encumbered or restrained.
+* The spell’s level isn't higher than yours.
+* The spell has the #basic tag.
+
+Casting Time::
+It is an action to cast a spell (unless otherwise specified in the spell’s
+description, some spells can take a long time to cast).
+
+When casting a spell, you::
+* Remove 1 Usage Point from the spellbook.
+* Then make an Intelligence check:
+* If successful, you cast the spell, and it takes effect. 
+  If unsuccessful, the spell fizzles. If you rolled a nat20, the spellbook
+  instantly loses all its usage points.
+* If your spell fizzled, you can try again next round if your spellbook still
+  has charge.
+
+
+=== Basic Ritual Casting
+Some spells can be without exhausting the spellbook, but it takes more time to do so.
+
+Requirements::
+The spell must have the #ritual tag,
+You must have the spellbook on you while the ritual is performed.
+The spellbook must have at least one usage point.
+Procedure::
+You spend 10 minutes chanting and reading from the spellbook.
+Then you spend one consumption of magic components.
+Then you make an Intelligence check; if successful, you cast the spell. If unsuccessful, the spell fizzles, but you can try again later. If nat20, the spellbook loses all its usage points.
+
+=== Basic Recharging
+Adventurers can recharge #basic spellbooks, restoring them to their maximum usage points.
+Requirements:: The spell in the spellbook must be #basic, and its level must
+not be higher than yours.
+
+Procedure:: You start by spending one consumption of magic components, followed
+by 30 minutes of ritualistic work. Then you make an Intelligence check. If the
+check succeeds, you have recharged the spellbook, otherwise you must try again.
+
+==== Spell Details
+A spell can have a number of #tags, as well as a level, a duration, and a
+range.
+
+#basic:: All basic spells can be cast by adventurers, and all spells in this
+document are #basic. Higher level characters have access to more advanced
+types of spells with other tags.
+
+#ritual:: These spells can be cast via Basic Ritual Casting, but can also be
+cast normally via Basic Spellcasting. 
+
+#multilevel:: There are many versions of this spell, each with its own level. 
+.Spells with #multilevel tag
+====
+The Tragic Missile (X) spell is technically not a single spell. It exists as
+Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile 10.
+The amount of damage dealt by this spell increases with its level.
+====
+#trance:: You must be seated to cast a trance spell, and you must remain seated
+for its duration. The spell stops instantly if you take damage, make a defense
+check, get up, move, or take an action. You can speak, breathe, and adjust
+your position to remain comfortable, and nothing more.
+
+#focus:: All focus spells have durations, but they stop instantly if you cast
+another spell, take damage, or actively stop focusing on keeping the spell
+going.
+
+#summoning:: Spells with this tag are used for summoning beings and creatures. 
+
+#elemental:: Spells with this tag are used for conjuring elemental beings and
+elemental spell effects. 
+
+Range:: Is the range of the spell.
+
+Duration:: Is the duration of the spell
+
+LVL:: Is the level of the caster. Some spells become more powerful when the
+caster has a high level.
