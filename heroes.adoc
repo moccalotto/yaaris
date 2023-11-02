@@ -1,0 +1,12 @@
+= Y.A.R.I.S: Heroe's guide to doom & destruction & stuff
+//{{{ Front matter
+:stylesheet: style.css
+:sectlinks:
+:toc:
+:toclevels: 1
+:experimental:
+:stem:
+//}}}
+
+
+HEROES
