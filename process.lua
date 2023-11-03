@@ -51,10 +51,8 @@ for line in f:lines() do
             prefix = prefix .. " "
             mode = MODE_SORTING
             sections = {}
-        else
-            -- This line is a normal line. Add it to the output without any modification
-            output = output .. "\n" .. line
         end
+        output = output .. "\n" .. line
     elseif mode == MODE_SORTING then                   -- We're sorting.
         if string.sub(line, 1, #prefix) == prefix then -- We encountered a headline (a key)
             -- Start a new section
@@ -66,9 +64,10 @@ for line in f:lines() do
 
             table.sort(sections)
             output = output .. "\n" .. table.concat(sections, "\n")
+            output = output .. "\n" .. line -- remember to include the "//ENDSORT" in the output
             mode = MODE_NONE
         else
-            -- This happens if we have some (hopyfully) blank lines
+            -- This happens if we have some (hopefully) blank lines
             -- before the first headline is scanned.
             if sections[#sections] == nil then
                 goto continue
