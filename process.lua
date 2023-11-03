@@ -26,7 +26,7 @@ if filename == nil then
 end
 
 -- Check that file exists
-local f = io.open(filename, "r")
+local f = io.open(filename, "r+")
 if not f then
     io.stderr:write(string.format("file '%s' does not exist", filename))
     os.exit(1)
@@ -98,8 +98,6 @@ for line in f:lines() do
     ::continue::
 end
 
-f:close()
-
 if not (mode == MODE_NONE and #sections == 0) then
     io.stderr:write("You forgot a closing //END_SORT line!\n")
     print("mode", mode)
@@ -107,4 +105,13 @@ if not (mode == MODE_NONE and #sections == 0) then
     os.exit(1)
 end
 
+if arg[2] == "--overwrite" then
+    f:seek("set")
+    f:write(output)
+    f:flush()
+    f:close()
+    os.exit(0)
+end
+
+f:close()
 print(output)
