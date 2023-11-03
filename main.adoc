@@ -7,8 +7,6 @@
 :experimental:
 :stem:
 
-
-
 // Written By: Kim Ravn Hansen <moccalotto@gmail.com>
 
 This document contains character creation and game mechanics, as well as gear,
