@@ -7,8 +7,6 @@
 :experimental:
 :stem:
 
-// Written By: Kim Ravn Hansen <moccalotto@gmail.com>
-
 This document contains character creation and game mechanics, as well as gear,
 spells, and abilities for characters of first and second level.
 
@@ -33,14 +31,14 @@ Charisma:: is used for luck, negotiation, charm magic, and selling treasure.
 Here’s some more things for you to keep track of.
 
 Level:: your character's level is a measure of their badassity. You start at
-level 1 and max out at level 10. Incidentally, spells, baddies, and certain
-items also have levels
+level 1 and max out at level 10. Baddies, spells, certain items and tasks
+also have levels
 
 Hit points (HP):: is your current number of hit points. Bad stuff happens if
-you run out of HP.
+you <<zero_hp,run out of HP>>.
 
 [[hit_point_total]]
-hit point total:: is the maximum number of hit points you can have. I.e. the
+Hit point total:: is the maximum number of hit points you can have. I.e. the
 number of HP you have when you're at full health. This number increases every
 time you gain a new level, and wearing armor
 can also increase this number
@@ -49,14 +47,14 @@ can also increase this number
 Recovery die:: is the die you roll (one or more of) to regain hit points when
 you rest or receive magical healing. You start with a recovery die of d8.
 
-Total item slots:: is the maximum number of items you can carry. This number is
-the highest of your _strength_ and _constitution_.
+Total item slots:: is the maximum number of <<Item Slots,items>> you can carry.
+This number is the highest of your _strength_ and _constitution_.
 
 Unencumbered item slots:: is the number of items you can carry without being
 encumbered. This number is the lowest of your _strength_ and _constitution_.
 
-Moves:: is the number of meters you can move in a round (and other useful
-things).
+Moves:: is the number of meters you can move in a round. You can also use moves
+to do other interesting <<Moves,things>>.
 // }}}
 
 // {{{ CREATE YOUR ADVENTURER
@@ -207,7 +205,7 @@ Roll once on the <<utility_gear_1>> table.
 | 2    | Grappling hook
 | 3    | <<Storm Lantern,Storm lantern>>
 | 4    | Rope, 10 meters
-| 5    | <<kosh,Kosh>>
+| 5    | <<Kosh>>
 | 6    | Ball bearings
 | 7    | Shovel
 | 8    | <<Lockpicking Tools>>
@@ -229,7 +227,7 @@ reroll it.
 | 2    | <<Spellbook>> with 1 <<Usage Points,usage point>>
          and a spell of your choice
 | 3    | <<Torch>>
-| 4    | <<spikes,Spikes>>
+| 4    | <<Spikes>>
 | 5    | <<Tinkering Tools>>
 | 6    | Pole, 3m, foldable
 | 7    | Chalk
@@ -361,7 +359,7 @@ Shady::
 On a successful _charisma_ check you pull out a dagger from a boot, a sleeve
 or… somewhere. If your check fails, you cannot do it again for the rest of the
 session. In combat, this feat requires 3 moves. You are also skilled at using a
-<<kosh,kosh>>, something normal adventurers are not.
+<<Kosh,kosh>>, something normal adventurers are not.
 
 Spelunker::
 You always have some chalk. You always know the cardinal directions. You have
@@ -607,17 +605,21 @@ it is repaired again, depends on the type of item; see the
 .General Gear
 [%header,cols="10,^1,>1"]
 |===
-| Name              | IS| Cost
-|Pole, 3m foldable  | 2 | 5     cp
-|Ladder, 2m         | 2 | 10    cp
-|Rope, 25m          | 2 |
-|Rope, 10m          | 1 |
-|Shovel             | 1 |
-|Clothing, poor     | 1 |
-|Clothing moderate  | 1 |
-|Clothing, wealthy  | 1 |
-|Backpack           | 1 |
-|Flint and steel    | 0 | 1     cp
+| Name                  | IS| Cost
+| 1 silver piece        | - | 100   cp
+| 1 gold piece          | - | 100   sp
+| Coin sack             | - | 50    cp
+| ↳ Full of 100 coins   | 1 | - 
+| Pole, 3m foldable     | 2 | 5     cp
+| Ladder, 2m            | 2 | 10    cp
+| Rope, 25m             | 2 |
+| Rope, 10m             | 1 |
+| Shovel                | 1 |
+| Clothing, poor        | 1 |
+| Clothing moderate     | 1 |
+| Clothing, wealthy     | 1 |
+| Backpack              | 1 |
+| Flint and steel       | 0 | 1     cp
 |===
 
 
@@ -632,9 +634,10 @@ it is repaired again, depends on the type of item; see the
 | <<Lamp Oil>>                  | 1 | 2 | 5     cp
 | Quiver of arrows              | 1 | 3 |
 | Quiver of bolts               | 1 | 3 |
+| <<Magic Components>>          | 1 | 2 | 1     gp
 | Ration pack, iron             | 1 | 2 | 4     sp   [[ration_pack_iron]]
 | Ration pack, normal           | 1 | 1 | 1     sp   [[ration_pack_normal]]
-| <<spikes,Spikes>>             | 1 | 2 |
+| <<Spikes>>                    | 1 | 2 |
 | <<Lockpicking Tools,Tools>>   | 1 | 4 |
 | <<Tinkering Tools,Tools>>     | 1 | 4 |
 | <<Torch>>                     | 1 | 2 | 5     cp
@@ -718,6 +721,12 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 
 === Special Items
 
+// STARTSORT ====
+==== Coins
+Small amounts of counts do not take up any room, but 100 coins 
+take up 1 <<Item Slots,item slot>>, and generally requires a coin
+sack to contain.
+
 ==== Spellbook
 A spellbook is a magical book or tome that contains a single spell and
 takes up a single item slot.
@@ -731,7 +740,6 @@ Spellbooks usually only have a single usage point.
 
 See more about them in the <<Spellbooks>> section.
 
-[[kosh]]
 ==== Kosh
 Only adventurers with the <<shady,shady>> special ability are skilled at using
 koshes. To use a target, you make an attack check; if you hit the target, it
@@ -739,7 +747,6 @@ loses 1 hit point. You then roll your damage die. If your roll was higher than
 the target’s remaining hit points, the target gains the unconscious condition,
 which means they’ll wake up within 2d6 hours if not healed.
 
-[[spikes]]
 ==== Spikes
 When hammered in between the door and the wall or jamb, these 30 centimeter
 spikes can wedge a door shut until the spikes are removed.
@@ -765,6 +772,10 @@ roll a nat20 on your melee attack check, the torch breaks and cannot be
 repaired. If you roll a nat1, the target is set <<on_fire,on fire>>, dealing
 1d4 damage every round until it is put out.
 
+==== Magic Components
+Magic components are used when casting spells as rituals and when recharging
+spellbooks
+
 ==== Lantern
 Lanterns illuminates the area around you. The lantern does not have have any
 usage points itself, but it it does <<Lamp Oil>>; it uses one consumption every
@@ -789,7 +800,6 @@ _strength_ meters), ruptures, and covers an area of 1d4 square meters.
 //
 At this point the oil is not on fire; you must light it yourself with torch,
 a spell, or similar fashion.
-
 
 ==== Purse
 Purses aren't real items; they are concepts that can simplify bookkeeping.
@@ -863,6 +873,8 @@ To do so you must make an _intelligence_ check and a _wisdom_ check.
 *   If both failed, the map is not accurate at all. Twists and turns are
     wrong, scales are wrong, the cardinal directions are wrong, and there
     are missing areas and notes.
+
+//ENDSORT
 
 === Selling and Haggling
 You buy things for price listed in this guide, but you cannot sell items at
@@ -1032,6 +1044,7 @@ Baddies die when they reach 0 HP. The only way to bring them back is to revive
 or resurrect them with powerful magic. If you want to stun a baddie, you can
 use certain items, spells, and abilities.
 
+[[zero_hp]]
 ==== Adventurers With Zero Hit Points
 If you reach 0 hit points, you permanently decrease a random stat by one point,
 and then you must roll on the <<death_table,Death Table>>.
@@ -1239,8 +1252,8 @@ Procedure::
 
 
 === Basic Ritual Casting
-Some spells can be without exhausting the spellbook, but it takes more time to
-do so.
+Some spells can be cast without exhausting the spellbook, but it takes more
+time to do so.
 
 Requirements::
 * The spell must have the <<ritual,ritual>> property,
@@ -1332,9 +1345,10 @@ as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
 
 //{{{SPELLS
 == SPELLS
-All spells listed in this section are <<basic,basic>> and can be used by adventurers.
+All spells listed in this section are <<basic,basic>> and can be used by
+adventurers.
 
-// AUTOSORT ===
+// STARTSORT ===
 
 === Alertness (X)
 *Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
@@ -1730,7 +1744,7 @@ is 2 or more higher than the caster's level, and difficult of the creatures
 level is 2 or more lower than the caster's level.
 
 === Purify Rations (X)
-*Level 2+, <<ritual,ritual>>, <<multilevel,multilevel>>*
+*Level 2, <<ritual,ritual>>, <<multilevel,multilevel>>*
 
 You purify 1 ration pack and 1 water skin’s worth of liquid per level of this
 spell. The food and drink is completely safe to eat and drink; it does not
@@ -1744,7 +1758,7 @@ You can read and understand any written language. This spell does not decode
 cryptographic cipher text, but it does let you understand secret languages.
 
 === Remove Fear (X)
-*Level 1, <<multilevel,multilevel>>, range: _charisma_ meters*
+*Level 2, <<multilevel,multilevel>>, range: _charisma_ meters*
 
 You target an ally within _charisma_ meters of you. The spell automatically
 removes _X_ fear-based conditions such as <<demoralized,demoralized>>.
@@ -1857,6 +1871,8 @@ means they can be rubbed out or washed away with water.
 
 The chalk stops being magical once you stop focusing on the spell, or after
 _charisma_ hours. But the marks remain visible to you, and invisible to others.
+
+//ENDSORT
 
 //}}}
 
