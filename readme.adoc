@@ -1,4 +1,5 @@
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
+Kim Ravn Hansen <moccalotto@gmail.com>
 :stylesheet: style.css
 :sectlinks:
 :toc:
@@ -7,7 +8,6 @@
 :experimental:
 :stem:
 
-// Written By: Kim Ravn Hansen <moccalotto@gmail.com>
 
 * xref:main#[Adventurers’s Guide to doom & destruction & stuff].
 * xref:heroes#[Hero’s Guide to doom & destruction & stuff].
