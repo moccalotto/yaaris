@@ -289,18 +289,18 @@ deal with each weapon category.
 |===
 
 ==== Spellcasting
-You can use <<Spellbooks,spellbooks>> to cast <<basic,basic>> spells. You can cast these
-spells on the fly (this is called <<Basic Spellcasting>>), and you can cast
-certain spells as rituals (this is called <<Basic Ritual Casting>>). In addition to
-using spellbooks to cast spells, you can also recharge them via
-<<Basic Recharging>>.
+You can use <<Spellbooks,spellbooks>> to cast <<basic,basic>> spells. You can
+cast these spells on the fly (this is called <<Basic Spellcasting>>), and you
+can cast certain spells as rituals (this is called <<Basic Ritual Casting>>).
+In addition to using spellbooks to cast spells, you can also recharge the books
+via <<Basic Recharging>>.
 
 === Level 2
 
-==== More Hit Points more better
+==== More Hit Points More Better
 Your hit point total is increased by 1d8. Roll with advantage.
 
-==== Better stats
+==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point. And an even more betterer stat Roll a d20
 and select a stat that is lower than the result of the die roll. Increase that
@@ -310,6 +310,7 @@ stat by 1 point. If no stats are lower than your die roll, nothing happens.
 Choose one of the abilities below. You can switch this ability at levels 4, 6,
 8, and 10.
 
+//START_SORT::
 Armorer::
 If you have taken less damage than what your armor  provides, you can repair
 your armor. This brings you to full health. Repairing armor takes 30 minutes
@@ -377,7 +378,9 @@ You have advantage on consumption checks for rations and animal feed. You have
 advantage on geography related checks. One of the ration packs you carry does’t
 take up an item slot.
 
-=== Level 3: graduation
+//END_SORT
+
+=== Level 3: Graduation
 It is time for you to move on. You’re no longer just an adventurer, you’re a
 Hero. Choose a hero class from the 
 xref:heroes#[Hero’s Guide to doom & destruction & stuff].
@@ -531,11 +534,13 @@ This section contains info on item slots, <<Usage Points,usage points>>, and
 several lists of equipment. These lists are not exhaustive, and other types of
 items and equipment exist.
 
-=== Exchange Rates
-The price for one gold piece is 100 silver pieces, and the price for a silver
-piece is 100 copper pieces. Normally, only rich persons deal in gold, merchants,
-small businesses, and small farms deal in silver, and unskilled labor deal mostly
-in copper.
+=== Money
+The weight of a few coins is negligible, but in large quantities, 100 coins
+take up one <<Item Slots,item slot>>. 
+A gold piece is equivalent to 100 silver pieces, a silver piece is 100 copper
+pieces. 
+Normally, only rich persons deal in gold, small businesses and farmsteads deal
+in silver, and unskilled labor deal mostly in copper.
 
 === Item Slots
 An average item takes up one item slot. Bulky or heavy items, such as heavy
@@ -606,10 +611,6 @@ it is repaired again, depends on the type of item; see the
 [%header,cols="10,^1,>1"]
 |===
 | Name                  | IS| Cost
-| 1 silver piece        | - | 100   cp
-| 1 gold piece          | - | 100   sp
-| Coin sack             | - | 50    cp
-| ↳ Full of 100 coins   | 1 | - 
 | Pole, 3m foldable     | 2 | 5     cp
 | Ladder, 2m            | 2 | 10    cp
 | Rope, 25m             | 2 |
@@ -683,7 +684,7 @@ it is repaired again, depends on the type of item; see the
 .Food and lodging (per person per night)
 [%header,cols="10,2"]
 |===
-| Service                                   | Cost
+| Lodging                                   | Cost
 | Opulent (luxurious rooms and food)        | 1 gp
 | Middle class (small room, decent fare)    | 1 sp
 | Poor (sleep in common room, cheap food)   | 1 cp
@@ -720,8 +721,8 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 
 
 === Special Items
+//START_SORT ====
 
-// STARTSORT ====
 ==== Coins
 Small amounts of counts do not take up any room, but 100 coins 
 take up 1 <<Item Slots,item slot>>, and generally requires a coin
@@ -874,7 +875,7 @@ To do so you must make an _intelligence_ check and a _wisdom_ check.
     wrong, scales are wrong, the cardinal directions are wrong, and there
     are missing areas and notes.
 
-//ENDSORT
+//END_SORT
 
 === Selling and Haggling
 You buy things for price listed in this guide, but you cannot sell items at
@@ -1348,7 +1349,7 @@ as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
 All spells listed in this section are <<basic,basic>> and can be used by
 adventurers.
 
-// STARTSORT ===
+// START_SORT ===
 
 === Alertness (X)
 *Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
@@ -1872,12 +1873,11 @@ means they can be rubbed out or washed away with water.
 The chalk stops being magical once you stop focusing on the spell, or after
 _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
-//ENDSORT
-
+//END_SORT
 //}}}
 
 //{{{DICTIONARY
-//SORT::
+//START_SORT::
 == DICTIONARY
 
 [horizontal]
@@ -1966,5 +1966,6 @@ successful check.
 Y.A.R.I.S::
 It’s an acronym: Yet Another Reduced Instruction Set.
 
+//END_SORT
 //}}}
 
