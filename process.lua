@@ -1,15 +1,14 @@
-
--- Sort selected areas of a text file 
--- 
--- Each area has a number of sections, 
--- and each section has a headline that 
+-- Sort selected areas of a text file
+--
+-- Each area has a number of sections,
+-- and each section has a headline that
 -- is used as a key.
 --
--- The program simply treats each section as a string, and treats each area as a 
--- collection of strings. The strings are sorted such that the sections in 
+-- The program simply treats each section as a string, and treats each area as a
+-- collection of strings. The strings are sorted such that the sections in
 -- the area will appear in order.
 --
--- For now, only asciidoc (and markdown) headlines are supported, but 
+-- For now, only asciidoc (and markdown) headlines are supported, but
 -- description lists are on the way
 --
 local filename = arg[1]
@@ -47,17 +46,14 @@ for line in f:lines() do
             prefix = prefix .. " "
             mode = MODE_SORTING
             sections = {}
-        else 
-
+        else
             -- This line is a normal line. Add it to the output without any modification
             output = output .. "\n" .. line
         end
-
-    elseif mode == MODE_SORTING then                       -- We're sorting.
+    elseif mode == MODE_SORTING then                   -- We're sorting.
         if string.sub(line, 1, #prefix) == prefix then -- We encountered a headline (a key)
             -- Start a new section
             sections[#sections + 1] = line
-
         elseif string.match(line, "^//%s*ENDSORT") then -- We should stop sorting
             -- Each section within the current sorting area is a single line
             -- Sort those lines to sort the entire area,
@@ -66,9 +62,7 @@ for line in f:lines() do
             table.sort(sections)
             output = output .. "\n" .. table.concat(sections, "\n")
             mode = MODE_NONE
-
         else
-
             -- This happens if we have some (hopyfully) blank lines
             -- before the first headline is scanned.
             if sections[#sections] == nil then
@@ -77,9 +71,8 @@ for line in f:lines() do
             -- This line is a normal line within the section.
             -- Add it to the current section.
             sections[#sections] = sections[#sections] .. "\n" .. line
-
         end
-    else 
+    else
         error("what!" .. mode)
     end
 
@@ -89,4 +82,3 @@ end
 f:close()
 
 print(output)
-usage: process.lua [filename]
