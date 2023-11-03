@@ -26,7 +26,7 @@ if filename == nil then
 end
 
 -- Check that file exists
-local f = io.open(filename, "rb")
+local f = io.open(filename, "r")
 if not f then
     io.stderr:write(string.format("file '%s' does not exist", filename))
     os.exit(1)
