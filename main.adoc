@@ -381,7 +381,8 @@ take up an item slot.
 
 === Level 3: graduation
 It is time for you to move on. You’re no longer just an adventurer, you’re a
-Hero. Choose a hero class from the xref:heroes#[]
+Hero. Choose a hero class from the 
+xref:heroes#[Hero’s Guide to doom & destruction & stuff].
 
 //}}}
 
@@ -391,8 +392,8 @@ You begin at level 1, and you can gain levels until you reach level 10. You
 gain levels by acquiring suitable treasures. For a team of level _X_
 adventurers to gain a new level, they must acquire _X_ suitable treasures. This
 document only deals with levels 1 and 2. Once you reach level 3, you become a
-hero, and you can find all the info about heroes in the xref:heroes#[Hero’s
-Guide to doom & destruction & stuff],
+hero, and you can find all the info about heroes in the 
+xref:heroes#[Hero’s Guide to doom & destruction & stuff].
 
 Acquire:: Acquiring a treasure means, recovering it (possibly by liberating it
 from baddies), and getting it safely back to your base of operations. It can be
@@ -855,12 +856,12 @@ _wisdom_ check.
 You can use these tools to maps of dungeons, cities, and various land areas.
 To do so you must make an _intelligence_ check and a _wisdom_ check.
 
-*   If both are successful, your mapping process is accurate for the entire 
+*   If both are successful, your mapping process is accurate for the entire
     dungeon level, city, or area.
 *   If just one is successful, your scales are incorrect, and using the
     map is <<difficult,difficult>>.
 *   If both failed, the map is not accurate at all. Twists and turns are
-    wrong, scales are wrong, the cardinal directions are wrong, and there 
+    wrong, scales are wrong, the cardinal directions are wrong, and there
     are missing areas and notes.
 
 === Selling and Haggling
@@ -1213,8 +1214,9 @@ and only very powerful tomes have more.
 
 
 === Basic Spellcasting
-Adventurers can cast <<basic,basic>> spells (all spells in this document are <<basic,basic>>).
-But they must have a spellbook containing the given spell and:
+Adventurers can cast <<basic,basic>> spells (all spells in this document are
+<<basic,basic>>). But they must have a spellbook containing the given spell
+and:
 
 Requirements::
 * The spellbook has at least one <<Usage Points,usage point>>.
@@ -1508,8 +1510,8 @@ Sense Undead?
 === Fierce Fortune (X)
 *Level 1, <<multilevel,multilevel>>*
 
-An ally within _X_ meters gets advantage on their next Attack- or Defense check,
-provided it occurs within _X_+1 rounds.
+An ally within _X_ meters gets advantage on their next <<Attack Check,attack>>-
+or <<Defense,defense check>>, provided it occurs within _X_+1 rounds.
 
 === Find Flora & Fauna
 *Level 1, <<focus,focus>>,  ??????*
@@ -1662,7 +1664,14 @@ It also allows you to decipher (but not cast) spells in spellbooks whose level
 is three levels higher than yours.
 
 === Magical Stone
-*?????*
+*Level 1*
+You touch a nonmagical stone or slingshot no larger than your fist. It becomes
+magical, and flies towards an enemy within _wisdom_ meters at great speed. The
+stone automatically hits the opponent, dealing damage equal to three times your
+level.
+
+NOTE: The stone can only hit the baddie if there is a direct line between the
+stone and the baddie. It cannot curve or fly around obstacles.
 
 
 === Mend (X)
@@ -1688,8 +1697,8 @@ while receiving and replying.
 You select a magical item within 2 meters of you, weighing no more than _X_ kg.
 
 This spell completely hides the fact that the item is magical; only observers
-with a level higher than _X_ can detect the item’s magic, and that this spell has
-been used to hide it.
+with a level higher than _X_ can detect the item’s magic, and that this spell
+has been used to hide it.
 
 === Nostrum’s Magical Aura (X)
 *Level 1, <<ritual,ritual>>, duration: _X_ days*
@@ -1700,18 +1709,18 @@ You give the item an invisible magical aura of your design. Anyone who uses
 detect magic, identify or similar detection magic will think the item is
 magical, and they will think the item has magical properties of your choosing.
 
-Observers with a level higher than _X_ can detect that this spell has been cast,
-and that the item is nonmagical.
+Observers with a level higher than _X_ can detect that this spell has been
+cast, and that the item is nonmagical.
 
 === Phantasm (X)
 *Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
 
 You create a purely visual illusion of an object, creature, thing, or
 phenomenon no bigger than 3 cubic meters. You can make the phantasm appear
-anywhere you can see within 10·_X_ meters, and it must remain within that radius
-at all times. You can move the phantasm 1·_X_ meters per round. The spell ends
-after 5·_X_ minutes, if you stop focusing on it, or if something substantial
-touches the phantasm (heavy smoke, sandstorm, a creature, etc.).
+anywhere you can see within 10·_X_ meters, and it must remain within that
+radius at all times. You can move the phantasm 1·_X_ meters per round. The
+spell ends after 5·_X_ minutes, if you stop focusing on it, or if something
+substantial touches the phantasm (heavy smoke, sandstorm, a creature, etc.).
 
 Creatures that have a reason to disbelieve the phantasm (such as creatures that
 rely heavily on scent and sound, or people who find the phantasm incompatible
@@ -1734,8 +1743,16 @@ magical effects that may affect the food and drink.
 You can read and understand any written language. This spell does not decode
 cryptographic cipher text, but it does let you understand secret languages.
 
-=== Remove Fear
-*?????*
+=== Remove Fear (X)
+*Level 1, <<multilevel,multilevel>>, range: _charisma_ meters*
+
+You target an ally within _charisma_ meters of you. The spell automatically
+removes _X_ fear-based conditions such as <<demoralized,demoralized>>.
+
+If the target suffers from more than _X_ fear effects, the GM chooses which to
+remove.
+
+NOTE: There are more fear effects than the ones described in this guide.
 
 === Shield
 *Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
@@ -1749,11 +1766,12 @@ And if you’re hit for 1 point of damage, you take zero points of damage.
 *Level 1, <<multilevel,multilevel>>, <<ritual,ritual>>*
 
 You touch  a nonmagical wearable item, weighing at least 1
-<<Item Slots,item slot>> and worth at least _X_ silver pieces. The item becomes
-a consumable magical item with _X_ <<Usage Points,usage points>>. When the
-wearer of such an item falls more than one meter, the magic in the item
-activates and the fall is slowed so the wearer does not take any damage. When
-the wearer has landed, the item loses one Usage Point. When all the item’s
+<<Item Slots,item slot>> and worth at least _X_ silver pieces.
+The item becomes a consumable magical item with _X_
+<<Usage Points,usage points>>.
+When the wearer of such an item falls more than one meter, the magic in the
+item activates and the fall is slowed so the wearer does not take any damage.
+When the wearer has landed, the item loses one Usage Point. When all the item’s
 Usage Points have been spent, the item crumbles to dust.
 
 === Snooze (X)
@@ -1778,10 +1796,12 @@ sleeping baddie wakes up if they take damage.
 === Spenser’s levitating Bowl
 *Level 1, <<ritual,ritual>>, duration: _intelligence_ · 10 minutes.*
 
-You conjure a large vaguely bowl-shape plate that can carry as many item slots
-as your _strength_ score. It levitates about a meter above the ground, and can
-move half as fast as an adventurer. It is able to “climb” stairs and hills, but
-cannot scale walls or steep cliffs.
+You conjure a large vaguely bowl-shape plate that can carry as many
+<<Item Slots,item slots>> as your _strength_ score.
+
+It levitates about a meter above the ground, and can move half as fast as an
+adventurer. It is able to “climb” stairs and hills, but cannot scale walls or
+steep cliffs.
 
 === Spider Climb (X)
 *Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
@@ -1814,8 +1834,9 @@ its next turn.
 *Level 1+, <<multilevel,multilevel>>, range: _wisdom+X_ meters*
 
 You fire a frightening magical missile against a baddie within range. When
-struck, the baddie takes _X_ d4 damage, and then you make an adversarial
-_charisma_ check; if successful the baddie becomes <<demoralized,demoralized>>.
+struck, the baddie takes _X_ d4 damage, and then you make an
+<<adversarial_checks,adversarial>> _charisma_ check; if successful the baddie
+becomes <<demoralized,demoralized>>.
 
 === Vines (X)
 *Level 2, <<focus,focus>>, <<multilevel,multilevel>>*
@@ -1828,9 +1849,14 @@ check (their choice) each round, or all they have zero moves that round.
 === Wizard’s Mark
 *Level 1, <<ritual,ritual>>, <<focus,focus>>*
 
-Makes a piece of chalk magical such that it makes marks only you can see.
-Except for being invisible, the marks behave as normal chalk. The chalk stops
-being magical once you stop focusing on the spell, or after _charisma_ hours.
+Makes a piece of chalk magical so it makes invisible marks that only you can
+see.
+
+Other than being invisible, the marks behave as normal chalk marks, which
+means they can be rubbed out or washed away with water.
+
+The chalk stops being magical once you stop focusing on the spell, or after
+_charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //}}}
 
@@ -1863,7 +1889,8 @@ your enemy.
 
 Check::
 You roll your d20 against a given target number (usually one of your stats). +
-For example: when rolling a _strength_ check you roll a d20 and must roll lower than your _strength_ to succeed.
+_For example: when rolling a strength check you roll a d20 and must roll lower
+than your strength to succeed._
 
 Difficult::
 Difficult checks have a target number that’s 3 lower than normal checks.
@@ -1907,6 +1934,11 @@ Player Character(s).
 Proficient::
 It is difficult or impossible to use an armor, weapon, or specialist tool you
 are not proficient with.
+
+Roll::
+Rolls are generic die rolls where you roll one or more specified dice, such as
+_3d6_, _1d10_, _2d8+2_, etc. The most common type of roll is the damage roll,
+where you roll your damage die for the type of weapon you're using.
 
 TN::
 Abbreviation of Target Number.
