@@ -11,18 +11,24 @@
 -- For now, only asciidoc (and markdown) headlines are supported, but
 -- description lists are on the way
 --
+--
+
+local function trim(s)
+    return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
+end
+
 local filename = arg[1]
 
 -- Check that a filename was given
-if not filename then
-    print(string.format("usage: %s [filename]", arg[0]))
-    os.exit(1)
+if filename == nil then
+    io.stderr:write(string.format("usage: %s [filename]", arg[0]))
+    os.exit(0)
 end
 
 -- Check that file exists
 local f = io.open(filename, "rb")
 if not f then
-    print(string.format("file '%s' does not exist", filename))
+    io.stderr:write(string.format("file '%s' does not exist", filename))
     os.exit(1)
 end
 
@@ -42,7 +48,6 @@ for line in f:lines() do
         prefix = string.match(line, "^//%s*STARTSORT%s*([=]+)")
 
         if prefix then -- We've encountered a "start sort" command. So we enter sorting-mode
-            print("Sorting:", prefix)
             prefix = prefix .. " "
             mode = MODE_SORTING
             sections = {}
