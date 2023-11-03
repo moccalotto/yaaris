@@ -312,10 +312,7 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 
 //START_SORT::
 Armorer::
-If you have taken less damage than what your armor  provides, you can repair
-your armor. This brings you to full health. Repairing armor takes 30 minutes
-and requires 1 consumption of tinkerer tools. At 5th level and beyond you can
-also repair the armor of your allies.
+???????????????????????????????
 
 Everdeen::
 If you are without arrows during combat, you can spend 3 moves, and make a
@@ -329,13 +326,14 @@ Great weapon specialist::
 You are skilled at using heavy melee weapons.
 
 Monstrous Gourmand::
-You can make edible ration packs from fresh monster parts. It requires sharp
-cutting instruments, a large pot, a bonfire (or equivalent source of heat), one
-hour of work, and a successful _intelligence_ check to create one ration pack.
-A medium sized monster “contains” 2 ration packs. In addition to creating
-rations, you are also able to eat fresh, uncooked, monster meat without getting
-sick. It requires a sharp cutting tool, 3d6 minutes, and a successful
-_constitution_ check to create and eat such a “meal”.
+You can make edible ration packs from fresh monster parts (any recently dead
+creature will do) It requires sharp cutting instruments, a large pot, a bonfire
+(or equivalent source of heat), one hour of work, and a successful
+_intelligence_ check to create one ration pack. A medium sized creature
+“contains” 2 ration packs. In addition to creating rations, you are also able
+to eat fresh, uncooked, monster meat without getting sick. It requires a sharp
+cutting tool, 3d6 minutes, and a successful _constitution_ check to create and
+eat such a “meal”.
 
 Negotiator::
 You have advantage on checks that involve negotiation. You also have advantage
@@ -371,7 +369,7 @@ you do not suffer any debilitating effects from being alone in total darkness
 advantage on consumption checks for <<Lamp Oil>> and <<Torch,Torches>>.
 
 Thrifty::
-You have advantage on all consumption checks.
+You have advantage on consumption checks with coin <<Purse,purses>>.
 
 Traveler::
 You have advantage on consumption checks for rations and animal feed. You have
@@ -1380,13 +1378,7 @@ towards you, is now simply cautious.
 === Armor (X)
 *Level 1, <<multilevel,multilevel>>, <<ritual,ritual>>*
 
-You temporarily turn a nonmagical item you are wearing into a magical armor
-piece with _X_+2 usage points. The item loses all its usage points when you stop
-wearing it, and like a regular armor piece, it stops working when it loses its
-usage points. When the item has lost all its usage points, it is no longer
-considered an armor piece. The lost usage points cannot be restored, but you
-can cast this spell on the item again. You can only wear 5 armor pieces at a
-time.
+?????????????????????????????????????????????????
 
 
 === Banking Transaction (X)
