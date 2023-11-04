@@ -231,8 +231,6 @@ html{
     line-height:1.6;
     margin-bottom:1.25em;
     text-rendering:optimizeLegibility;
-    text-align: justify;
-    text-justify: inter-word;
 }
  p aside{
     font-size:.875em;
@@ -1126,13 +1124,13 @@ html{
     background:#f8f8f7
 }
  th.halign-left,td.halign-left{
-    text-align:left
+    text-align:left !important
 }
  th.halign-right,td.halign-right{
-    text-align:right
+    text-align:right !important
 }
  th.halign-center,td.halign-center{
-    text-align:center
+    text-align:center !important
 }
  th.valign-top,td.valign-top{
     vertical-align:top

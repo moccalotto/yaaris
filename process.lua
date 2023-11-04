@@ -11,11 +11,22 @@
 -- For now, only asciidoc (and markdown) headlines are supported, but
 -- description lists are on the way
 --
+-- TODO:
+-- Variables and substitutions with evaluation via dostring
+-- Syntax for settings vars could be
+-- {{?  mufassa = "tjams" }}
+-- {{? mufassa tjams }}
 --
-
-local function trim(s)
-    return (string.gsub(s, "^%s*(.-)%s*$", "%1"))
-end
+-- Syntax for inserting vars could be
+-- {{:: string.upper(mufassa) }}
+-- my little pony is {{: mufassa .. " næsehorn "}}
+--
+-- Can assist in streamlining data across the three guides.
+-- Can ease links.
+--
+-- Maybe a quick var insert:
+-- @@@mufassa           (inserts the contents of mufassa variable)
+--
 
 local filename = arg[1]
 

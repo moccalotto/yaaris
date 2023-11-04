@@ -1,6 +1,7 @@
 
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
+:doctype: article
 :sectlinks:
 :toc:
 :toclevels: 1
@@ -21,12 +22,12 @@ you’re done, you’re ready for adventure.
 === Stats
 Your character has 6 primary stats:
 
-Strength:: is used for melee attacks, jock stuff and carrying gear.
-Dexterity:: is used for stealth, melee defense, and tricky tasks.
-Constitution:: is used for carrying gear and surviving bad trauma.
-Intelligence:: is used for initiative, magic, and managing resources.
-Wisdom:: is used for ranged attack, ranged defense, and perception.
-Charisma:: is used for luck, negotiation, charm magic, and selling treasure.
+Strength::      is used for melee attacks, jock stuff and carrying gear.
+Dexterity::     is used for stealth, melee defense, and tricky tasks.
+Constitution::  is used for carrying gear and surviving bad trauma.
+Intelligence::  is used for initiative, magic, and managing resources.
+Wisdom::        is used for ranged attack, ranged defense, and perception.
+Charisma::      is used for luck, negotiation, charm magic, and selling treasure.
 
 === Extra Stuff
 Here’s some more things for you to keep track of.
@@ -280,7 +281,7 @@ deal with each weapon category.
 
 [[adventurer_damage_rolls_table]]
 .Adventurer Damage Rolls
-[%header]
+[%header,cols="8,^2,^2"]
 |===
 | Weapon Type         | Skill level | Damage Roll
 | Light Melee Weapons | Skilled     | 1d6
@@ -312,8 +313,10 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 8, and 10.
 
 //START_SORT::
-Armorer::
-???????????????????????????????
+Armorer:: [[armorer]]
+You can repair a piece of broken armor if you have the right tools. See
+<<Tinkering Tools>> for more information.
+
 
 Everdeen::
 If you are without arrows during combat, you can spend 3 moves, and make a
@@ -392,26 +395,24 @@ You begin at level 1, and you can gain levels until you reach level 10. You
 gain levels by acquiring suitable treasures. For a team of level _X_
 adventurers to gain a new level, they must acquire _X_ suitable treasures. This
 document only deals with levels 1 and 2. Once you reach level 3, you become a
-hero, and you can find all the info about heroes in the 
-xref:heroes#[Hero’s Guide to doom & destruction & stuff].
+hero; see xref:heroes#[Hero’s Guide to doom & destruction & stuff] for more info.
 
-Acquire:: Acquiring a treasure means, recovering it (possibly by liberating it
-from baddies), and getting it safely back to your base of operations. It can be
-necessary to make multiple trips to recover a large treasure. If only parts of
-a treasure can be recovered, only those parts count in the value of the
-treasure.
+[discrete]
+==== Acquire
+Acquiring a treasure means, recovering it (possibly by liberating it
+from baddies), and getting it safely back to your base of operations. 
+Since a hundred coins take up an entire item slot, it can be necessary to make
+multiple trips to recover a large treasure. 
 
-Suitable:: For a treasure to be considered suitable for gaining levels, it must
-be worth at least 100 gold pieces per level per character in the adventuring
-party.
+[discrete]
+==== Suitable
+A treasure is _suitable_ if it is worth 100 gold pieces times the sum
+of the levels of all the characters in the party.
 
-Treasure:: A treasure is a big horde, situated in a single location, such as a
-small hamlet, a dungeon, a castle, a farm, a town house, etc. Small, unsuitable
-treasures cannot be combined into large, suitable ones. Enormous treasures
-cannot be split up into several adequate ones. Loot from monsters is generally
-not classified as treasure, but there are exceptions, such as the evil wizard’s
-artifact staff that is worth several fortunes, and of course the dragon’s
-horde.
+[discrete]
+==== Treasure
+A treasure is a big horde, often situated in one location. It is up to the GM
+to decide what is an actual treasure, and what is just general loot.
 
 .Leveling up
 ====
@@ -835,13 +836,17 @@ a spell, or similar fashion.
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
 
-Repairing items:: To repair a broken item, trap, mechanism, or stuck door, you
-spend 10 minutes and one <<consumption,consumption>> of tinkering tools. Then
-you make a _dexterity_ check and an _intelligence_ check.
+Repairing items and armor pieces:: To repair a broken armor piece, trap,
+mechanism, stuck door, or similar, you spend 10 minutes and one
+<<consumption,consumption>> of tinkering tools. Then you make a _dexterity_
+check and an _intelligence_ check.
 
 * If both are successful, you have repaired the item.
 * If one is successful, the item is still damage, but you may try again.
 * If both failed, you cannot fix this item until you've gained a new level.
+
+IMPORTANT: _light armor_ can be repair using only tinkering tools, but _medium_ and
+_heavy_ armor also requires a rudimentary smithy:
 
 Disarming traps:: To disarm a trap you spend 10 minutes and one
 <<consumption,consumption>> of tinkering tools. Then you make a _dexterity_ and
@@ -872,6 +877,14 @@ You can use your torch as a light melee weapon, but it is difficult. If you
 roll a nat20 on your melee attack check, the torch breaks and cannot be
 repaired. If you roll a nat1, the target is set <<on_fire,on fire>>, dealing
 1d4 damage every round until it is put out.
+
+.Light and visibility
+[sidebar]
+The radius/area of light from torches, lamps, lanterns, and even magical spells
+strongly depends on the setting; fog reduces the light's radius, terrain
+features might obscure visibility in general, and other factors, such as magic,
+also comes into play. It is therefore up to the GM, and not the rules, to
+determine what the PCs can see, based on these factors.
 
 //END_SORT
 
@@ -1023,6 +1036,23 @@ hit points and remove an armor piece).
 ===== Armor Requires Skill
 If you are wearing one or more armor pieces that you are not proficient with,
 you become <<encumbered,encumbered>>, which makes every check you make difficult.
+
+===== Armor Wears Out
+If you roll a <<nat20,nat20>> on you Defense Check, and the damage dealt
+was higher than your worst armor piece (the one that provided fewest hit points),
+that armor piece becomes broken, and no longer provides any hit points.
+
+WARNING: if you're wearing two or more pieces of broken armor, you become
+<<encumbered,encumbered>>.
+
+IMPORTANT: 
+====
+The armor can be repaired. So you should make a note of how many HP the armor
+piece granted initially.
+
+But Only an <<armorer,armorer>> can restore the armor piece to its former
+glory.
+====
 
 === Damage and Death
 When you hit a baddie, you roll a damage roll to see how many points of damage
@@ -1184,6 +1214,10 @@ have to roll 3 points lower than you normally would to succeed.
 
 [[exhausted]]
 Exhausted:: Same as encumbered AND your number of moves is halved, rounded down.
+
+[[frightened]]
+Frightened:: You cannot move closer to what you believe is the source of
+your fear. You have 2 fewer moves than normal.
 
 [[poisoned]]
 Poisoned:: You temporarily lose 1d4 points of a random stat every minute. After
@@ -1617,12 +1651,12 @@ bright light that illuminates a radius of 10+_X_ meters.
 
 You can attempt to cast this spell on the eyes of a creature within range,
 effectively blinding it (if it uses eyes and light to see). It requires a
-successful _charisma_ check, and if the creature’s level is higher than _X_, the spell
-fizzles.
+successful difficult _charisma_ check, and if the creature’s level is higher
+than _X_, the spell fizzles.
 
-You must make a successful _charisma_ check to cast this spell on an item currently
-held, worn, or touched by a living creature, and if the creature’s level is
-higher than _X_, the spell fizzles.
+You must make a successful _charisma_ check to cast this spell on an item
+currently held, worn, or touched by a living creature, and if the creature’s
+level is higher than _X_, the spell fizzles.
 
 === Intruder Alert
 *Level 1, <<ritual,ritual>>, duration: _wisdom_ hours*
@@ -1659,7 +1693,21 @@ advantage on the damage roll and the _wisdom_ check.
 === Mage Might (X)
 *Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
 
-For the next _X_ rounds, your _strength_ score becomes 15+_X_/2 (rounded down).
+For the next _X_ rounds, your _strength_ score becomes 15+_X_*0.5 (rounded
+down).
+
+
+=== Mage Torch (X)
+*Level 2, <<focus,focus>>, <<multilevel,multilevel>>, range: _X_×5 meters*
+
+You target a spot you can see within range. At that spot a magical ghostly
+torch appears. By spending one <<moves,move>> you can move the torch up to 5
+meters to a spot you can see and that is within range.
+
+If you move so that the torch comes out of range, the spell stops and the torch
+vanishes.
+
+The torch disappears after 8 hours.
 
 === Magical Reading
 *Level 1, <<ritual,ritual>>, duration: 8 hours*
@@ -1698,7 +1746,7 @@ the recipient makes a successful _charisma_ check, no one notices its distractio
 while receiving and replying.
 
 === Mustrum’s Mundane Shroud (X)
-*Level 1, <<ritual,ritual>>, duration: _X_ days*
+*Level 2, <<ritual,ritual>>, duration: _X_ days*
 
 You select a magical item within 2 meters of you, weighing no more than _X_ kg.
 
@@ -1707,12 +1755,12 @@ with a level higher than _X_ can detect the item’s magic, and that this spell
 has been used to hide it.
 
 === Nostrum’s Magical Aura (X)
-*Level 1, <<ritual,ritual>>, duration: _X_ days*
+*Level 1, <<ritual,ritual>>, duration: _X_ days, range: 2 meters*
 
-You select a nonmagical item within 2 meters of you, weighing no more than _X_ kg.
+You select a nonmagical item within range, weighing no more than _X_ kg.
 
 You give the item an invisible magical aura of your design. Anyone who uses
-detect magic, identify or similar detection magic will think the item is
+<<Detect Magic>>, identify or similar detection magic will think the item is
 magical, and they will think the item has magical properties of your choosing.
 
 Observers with a level higher than _X_ can detect that this spell has been
