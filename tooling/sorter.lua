@@ -37,7 +37,11 @@ local function sorter(lines)
                 preface = ""
             end
 
-            str = str .. "\n" .. line
+            if str == "" then
+                str = line
+            else
+                str = str .. "\n" .. line
+            end
 
             goto continue
         end
@@ -58,7 +62,7 @@ local function sorter(lines)
                 -- and insert the lines into the output.
 
                 table.sort(sections)
-                sorted = table.concat(sections, "\n")
+                local sorted = table.concat(sections, "\n")
 
                 -- is there a preface?
                 if #preface > 0 then
