@@ -1,4 +1,3 @@
-
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
 :doctype: article
@@ -331,7 +330,7 @@ You can repair a piece of broken armor if you have the right tools. See
 Great weapon specialist::
 You are skilled at using heavy melee weapons.
 
-[[mounstrous_gourmand]]
+[[monstrous_gourmand]]
 Monstrous Gourmand::
 You can make edible ration packs from fresh monster parts (any recently dead
 creature will do) It requires sharp cutting instruments, a large pot, a bonfire
@@ -731,6 +730,8 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 
 === Special Items
 //START_SORT ====
+
+
 ==== Bank book
 A bank book is a magical book that can contain money. There is a magical ritual
 called Banking Transaction (X), that allows you to transfer money into and out
@@ -1217,36 +1218,43 @@ recovery dice.
 
 Conditions can affect characters and baddies.
 
-//START_SORT::
+//START_SORT [[]]
 
-ZEncumbered:: [[encumbered]]
+[[exhausted]]
+Exhausted:: 
+Same as encumbered AND your number of moves is halved, rounded down.
+
+[[encumbered]]
+Encumbered:: 
 All checks become <<difficult,difficult>>, meaning that you
 have to roll 3 points lower than you normally would to succeed.
 
-Exhausted:: [[exhausted]]
-Same as encumbered AND your number of moves is halved, rounded down.
-
-Frightened:: [[frightened]]
+[[frightened]]
+Frightened::
 You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
 
-Poisoned:: [[poisoned]]
+[[poisoned]]
+Poisoned::
 You temporarily lose 1d4 points of a random stat every minute. After
 rolling your stat loss, you make a _constitution_ check with disadvantage. If
 successful, the poisoned condition is removed. You die if any of your stats are
 reduced to zero. If you die from poison, only Greater Revival can restore you
 back to life.
 
-Demoralized:: [[demoralized]]
+[[demoralized]]
+Demoralized::
 On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
 
-On Fire:: [[on_fire]]
+[[on_fire]]
+On Fire::
 You are on fire. At the start of every round, just before you get to act,
 you take 1d4 points of damage, and then you roll a _constitution_ check. If you
 succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a nat20, the damage die increases (for instance, from 1d4 to 1d6).
+
 
 //END_SORT
 //}}}
@@ -1394,6 +1402,8 @@ All spells listed in this section are <<basic,basic>> and can be used by
 adventurers.
 
 // START_SORT ===
+
+
 === Alertness (X)
 *Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
 
@@ -1929,6 +1939,8 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //{{{DICTIONARY
 //START_SORT::
+
+
 Adventurer::
 All PCs start out as adventurers and have to level up to level 3 before they
 can get their hero class.
@@ -2018,5 +2030,5 @@ It’s an acronym: Yet Another Reduced Instruction Set.
 uction Set.
 
 //END_SORT
-//}}}
 
+//}}}
