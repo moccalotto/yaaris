@@ -359,9 +359,10 @@ on haggle checks (see <<the_haggling_check,The haggling check>>).
 [[pugilist]]
 Pugilist::
 You are skilled at unarmed combat, meaning your attack checks are normal
-instead of difficult, and you use your skilled damage die when dealing damage.
-Note that, if you’re using a shield, your unarmed damage is reduced to 1.
-Beware that striking  certain dangerous monsters (such as fire elementals) with
+instead of difficult. If you're not weapon a shield, and not wearing any medium
+or heavy armor pieces, your unarmed damage die is increased to 1d6.
+
+WARNING: Striking certain dangerous monsters (such as fire elementals) with
 your body can have grave consequences.
 
 [[rider]]
@@ -1000,11 +1001,22 @@ After that, you make your damage roll, which depends on the type of weapon you'r
 and whether or not you are skilled at using said weapon.
 
 ==== Attack Check
-* If you use a ranged weapon, the attack check is an adversarial _wisdom_ check.
-* If you use a melee weapon, or you use unarmed combat, the attack check is an adversarial _strength_ check.
-* If you attack someone who is 2 or more levels lower than you, your attack check is easy.
+
+To hit a baddie you must roll an attack check. There are two types of attack check:
+ranged and melee.
+
+Melee::
+When you use melee weapons or unarmed combat, the attack check is an
+adversarial _strength_ check.
+
+Ranged::
+When you use ranged weapons, the attack check is an adversarial _wisdom_ check.
+
+[IMPORTANT]
+====
 * If you attack someone who is 2 or more levels higher than you, your attack check is difficult.
 * If you are not <<weapon_skills,skilled>> at using your weapon, your check is difficult.
+====
 
 ==== Damage Roll
 When you hit a baddie, you roll a die to see how much damage you deal.

@@ -25,6 +25,8 @@ local function sorter(lines)
                     sortKeyPattern = "::%s*$"
                 elseif sortArg == "[[]]" then
                     sortKeyPattern = "^%[%[[%w_]+%]%]"
+                elseif sortArg == "//KEY:" then
+                    sortKeyPattern = "^%s*//KEY:"
                 else
                     io.stderr:write(string.format("unsupported sort argument: %s", sortArg))
                     os.exit()
@@ -43,14 +45,14 @@ local function sorter(lines)
         --
         -- SORTING
         --
-        if mode == MODE_SORTING then                          -- We're sorting.
-            if nil ~= string.match(line, sortKeyPattern) then -- We found a new section headline/sortkey
+        if mode == MODE_SORTING then                   -- We're sorting.
+            if string.match(line, sortKeyPattern) then -- We found a new section headline/sortkey
                 -- Start a new section
                 sections[#sections + 1] = line
                 goto continue
             end
 
-            if nil ~= string.match(line, "^//%s*END_SORT") then -- We should stop sorting
+            if string.match(line, "^//%s*END_SORT") then -- We should stop sorting
                 -- Each section within the current sorting area is a single line
                 -- Sort those lines to sort the entire area,
                 -- and insert the lines into the output.
@@ -62,9 +64,11 @@ local function sorter(lines)
                 if #preface > 0 then
                     -- yes, so add preface text to beginning of sorted chunk
                     str = str .. "\n" .. preface
+                    str = str .. sorted         -- add the sorted sections without extra newline
+                else
+                    str = str .. "\n" .. sorted -- add the sorted sections
                 end
-                str = str .. "\n" .. sorted -- add the sorted sections
-                str = str .. "\n" .. line   -- add "//END_SORT" line
+                str = str .. "\n" .. line       -- add "//END_SORT" line
                 mode = MODE_SCAN
                 sections = {}
                 preface = ""
