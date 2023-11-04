@@ -1,4 +1,3 @@
-
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
 :doctype: article
@@ -1354,7 +1353,7 @@ again.
 The properties of a spell is listed in bold font right underneath the spell's
 name.
 
-//START_SORT::
+//START_SORT[[]]
 
 [[basic]]
 basic::
