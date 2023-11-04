@@ -57,9 +57,14 @@ local function sorter(lines)
 
                 table.sort(sections)
                 sorted = table.concat(sections, "\n")
-                str = str .. "\n" .. preface -- add preface text to beginning of sorted chunk
-                str = str .. "\n" .. sorted  -- add the sorted sections
-                str = str .. "\n" .. line    -- remember to include the "//END_SORT" in the output
+
+                -- is there a preface?
+                if #preface > 0 then
+                    -- yes, so add preface text to beginning of sorted chunk
+                    str = str .. "\n" .. preface
+                end
+                str = str .. "\n" .. sorted -- add the sorted sections
+                str = str .. "\n" .. line   -- add "//END_SORT" line
                 mode = MODE_SCAN
                 sections = {}
                 preface = ""
