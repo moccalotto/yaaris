@@ -176,7 +176,7 @@ equipment and items.
 ==== Ranged weapon
 Roll 1d6 on this table to find out if you have a ranged weapon.
 
-[%header,cols="^1,10"]
+[%header,cols="^2,10"]
 |===
 |d6     | Weapon
 |1-3:   | No Ranged Weapon.
@@ -312,12 +312,9 @@ stat by 1 point. If no stats are lower than your die roll, nothing happens.
 Choose one of the abilities below. You can switch this ability at levels 4, 6,
 8, and 10.
 
-//START_SORT::
-Armorer:: [[armorer]]
-You can repair a piece of broken armor if you have the right tools. See
-<<Tinkering Tools>> for more information.
+//START_SORT [[]]
 
-
+[[everdeen]]
 Everdeen::
 If you are without arrows during combat, you can spend 3 moves, and make a
 _charisma_ check. If successful, you somehow have a single extra arrow and
@@ -325,10 +322,16 @@ you’re ready to fire. If unsuccessful, you cannot use this ability before you
 have stocked up on ammunition. This ability also works with bolts, slingshots,
 and darts.
 
+[[armorer]]
+Armorer:: 
+You can repair a piece of broken armor if you have the right tools. See
+<<Tinkering Tools>> for more information.
+
 [[great_weapon_specialist]]
 Great weapon specialist::
 You are skilled at using heavy melee weapons.
 
+[[mounstrous_gourmand]]
 Monstrous Gourmand::
 You can make edible ration packs from fresh monster parts (any recently dead
 creature will do) It requires sharp cutting instruments, a large pot, a bonfire
@@ -339,10 +342,12 @@ to eat fresh, uncooked, monster meat without getting sick. It requires a sharp
 cutting tool, 3d6 minutes, and a successful _constitution_ check to create and
 eat such a “meal”.
 
+[[negotiator]]
 Negotiator::
 You have advantage on checks that involve negotiation. You also have advantage
 on haggle checks (see <<the_haggling_check,The haggling check>>).
 
+[[pugilist]]
 Pugilist::
 You are skilled at unarmed combat, meaning your attack checks are normal
 instead of difficult, and you use your skilled damage die when dealing damage.
@@ -350,6 +355,7 @@ Note that, if you’re using a shield, your unarmed damage is reduced to 1.
 Beware that striking  certain dangerous monsters (such as fire elementals) with
 your body can have grave consequences.
 
+[[rider]]
 Rider::
 You acquire a trained horse (for free, as a gift, or similar). You become
 proficient at riding horses. You have advantage on all riding-related checks.
@@ -364,6 +370,7 @@ or… somewhere. If your check fails, you cannot do it again for the rest of the
 session. In combat, this feat requires 3 moves. You are also skilled at using a
 <<Kosh,kosh>>, something normal adventurers are not.
 
+[[spelunker]]
 Spelunker::
 You always have some chalk. You always know the cardinal directions. You have
 advantage on checks that involve navigation in caves and dungeons. One of the
@@ -372,9 +379,11 @@ you do not suffer any debilitating effects from being alone in total darkness
 (which can otherwise cause you to suffer from dungeon madness ??????). You have
 advantage on consumption checks for <<Lamp Oil>> and <<Torch,Torches>>.
 
+[[thrifty]]
 Thrifty::
 You have advantage on consumption checks with coin <<Purse,purses>>.
 
+[[traveler]]
 Traveler::
 You have advantage on consumption checks for rations and animal feed. You have
 advantage on geography related checks. One of the ration packs you carry does’t
@@ -1208,35 +1217,38 @@ recovery dice.
 
 Conditions can affect characters and baddies.
 
-[[encumbered]]
-Encumbered:: All checks become <<difficult,difficult>>, meaning that you
+//START_SORT::
+
+ZEncumbered:: [[encumbered]]
+All checks become <<difficult,difficult>>, meaning that you
 have to roll 3 points lower than you normally would to succeed.
 
-[[exhausted]]
-Exhausted:: Same as encumbered AND your number of moves is halved, rounded down.
+Exhausted:: [[exhausted]]
+Same as encumbered AND your number of moves is halved, rounded down.
 
-[[frightened]]
-Frightened:: You cannot move closer to what you believe is the source of
+Frightened:: [[frightened]]
+You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
 
-[[poisoned]]
-Poisoned:: You temporarily lose 1d4 points of a random stat every minute. After
+Poisoned:: [[poisoned]]
+You temporarily lose 1d4 points of a random stat every minute. After
 rolling your stat loss, you make a _constitution_ check with disadvantage. If
 successful, the poisoned condition is removed. You die if any of your stats are
 reduced to zero. If you die from poison, only Greater Revival can restore you
 back to life.
 
-[[demoralized]]
-Demoralized:: On your next turn you must spend all your moves (if possible)
+Demoralized:: [[demoralized]]
+On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
 
-[[on_fire]]
-On Fire:: You are on fire. At the start of every round, just before you get to act,
+On Fire:: [[on_fire]]
+You are on fire. At the start of every round, just before you get to act,
 you take 1d4 points of damage, and then you roll a _constitution_ check. If you
 succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a nat20, the damage die increases (for instance, from 1d4 to 1d6).
 
+//END_SORT
 //}}}
 
 //{{{ MAGIC
