@@ -1,3 +1,4 @@
+
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
 :sectlinks:
@@ -720,24 +721,15 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 
 === Special Items
 //START_SORT ====
+==== Bank book
+A bank book is a magical book that can contain money. There is a magical ritual
+called Banking Transaction (X), that allows you to transfer money into and out
+of the book.
 
 ==== Coins
 Small amounts of counts do not take up any room, but 100 coins 
 take up 1 <<Item Slots,item slot>>, and generally requires a coin
 sack to contain.
-
-==== Spellbook
-A spellbook is a magical book or tome that contains a single spell and
-takes up a single item slot.
-
-Spellbook prices vary greatly from place to place and on which type of spell
-is inscribed in the book. They are rarely cheaper than 25 gold pieces,
-and prices skyrocket as the spell's level and/or the number of usage points
-increases.
-
-Spellbooks usually only have a single usage point.
-
-See more about them in the <<Spellbooks>> section.
 
 ==== Kosh
 Only adventurers with the <<shady,shady>> special ability are skilled at using
@@ -745,35 +737,6 @@ koshes. To use a target, you make an attack check; if you hit the target, it
 loses 1 hit point. You then roll your damage die. If your roll was higher than
 the target’s remaining hit points, the target gains the unconscious condition,
 which means they’ll wake up within 2d6 hours if not healed.
-
-==== Spikes
-When hammered in between the door and the wall or jamb, these 30 centimeter
-spikes can wedge a door shut until the spikes are removed.
-
-==== Torch
-Aside from illuminating the area around you, torches can be used for a number
-of things.
-
-Torches have 2 <<Usage Points,usage points>>, and you must make a consumption
-check every hour.
-
-Torches can be revitalized; it requires one consumption of <<Lamp Oil>> to
-restore 1 <<Usage Points,usage point>> to a torch. This cannot be done while
-the torch is lit. After revitalizing your torch, you roll a difficult _wisdom_
-check. If unsuccessful, the torch is destroyed, and cannot be lit.
-
-You can throw a torch and use it as a ranged weapon, but it is difficult. If
-you rolled a nat20 on your attack check, the torch is broken and cannot
-be repaired. The throwing range of a torch is 5 meters.
-
-You can use your torch as a light melee weapon, but it is difficult. If you
-roll a nat20 on your melee attack check, the torch breaks and cannot be
-repaired. If you roll a nat1, the target is set <<on_fire,on fire>>, dealing
-1d4 damage every round until it is put out.
-
-==== Magic Components
-Magic components are used when casting spells as rituals and when recharging
-spellbooks
 
 ==== Lantern
 Lanterns illuminates the area around you. The lantern does not have have any
@@ -785,20 +748,32 @@ check. If successful, the lantern lands where you want it to (within _strength_
 meters), and covers 1d4 square meters in flaming oil. Anyone inside the affected
 area is set <<on_fire,on fire>>.
 
-==== Storm Lantern
-This is a variant of the <<Lantern,normal lantern>> that cannot be blown
-out in normal storms and gales.
+==== Lockpicking Tools
+These tools allow you to pick various locks. They can be used up, and therefore
+have <<Usage Points,usage points>>. To Open a Lock, you first spend 5 minutes and one
+consumption of lockpicking tools. Then you make both a _dexterity_- and an
+_intelligence_ check.
 
-=== Lamp Oil
-This <<consumable,consumable>> item is flammable; you can use it as fuel for your
-lantern or storm lantern, and you can use it to light things on fire.
+* If both are successful, you open the lock.
+* If one is successful, the lock does not open, but you get to try again.
+* If none are successful, the lock becomes jammed, and can only be opened by a
+real key.
 
-You can throw lamp oil to cover an area; You first roll a _dexterity_ check. If
-successful, the oil bottle (or skin or jug) lands where you want it (within
-_strength_ meters), ruptures, and covers an area of 1d4 square meters.
-//
-At this point the oil is not on fire; you must light it yourself with torch,
-a spell, or similar fashion.
+==== Magic Components
+Magic components are used when casting spells as rituals and when recharging
+spellbooks
+
+==== Map Making Tools
+You can use these tools to maps of dungeons, cities, and various land areas.
+To do so you must make an _intelligence_ check and a _wisdom_ check.
+
+*   If both are successful, your mapping process is accurate for the entire
+    dungeon level, city, or area.
+*   If just one is successful, your scales are incorrect, and using the
+    map is <<difficult,difficult>>.
+*   If both failed, the map is not accurate at all. Twists and turns are
+    wrong, scales are wrong, the cardinal directions are wrong, and there
+    are missing areas and notes.
 
 ==== Purse
 Purses aren't real items; they are concepts that can simplify bookkeeping.
@@ -825,21 +800,37 @@ Gold purse:: for 1,000 gold pieces you can buy a gold purse. It has 10
 gold pieces, you make a <<Consumption Check,consumption check>> for the
 gold purse instead.
 
-==== Bank book
-A bank book is a magical book that can contain money. There is a magical ritual
-called Banking Transaction (X), that allows you to transfer money into and out
-of the book.
+==== Spellbook
+A spellbook is a magical book or tome that contains a single spell and
+takes up a single item slot.
 
-==== Lockpicking Tools
-These tools allow you to pick various locks. They can be used up, and therefore
-have <<Usage Points,usage points>>. To Open a Lock, you first spend 5 minutes and one
-consumption of lockpicking tools. Then you make both a _dexterity_- and an
-_intelligence_ check.
+Spellbook prices vary greatly from place to place and on which type of spell
+is inscribed in the book. They are rarely cheaper than 25 gold pieces,
+and prices skyrocket as the spell's level and/or the number of usage points
+increases.
 
-* If both are successful, you open the lock.
-* If one is successful, the lock does not open, but you get to try again.
-* If none are successful, the lock becomes jammed, and can only be opened by a
-real key.
+Spellbooks usually only have a single usage point.
+
+See more about them in the <<Spellbooks>> section.
+
+==== Spikes
+When hammered in between the door and the wall or jamb, these 30 centimeter
+spikes can wedge a door shut until the spikes are removed.
+
+==== Storm Lantern
+This is a variant of the <<Lantern,normal lantern>> that cannot be blown
+out in normal storms and gales.
+
+=== Lamp Oil
+This <<consumable,consumable>> item is flammable; you can use it as fuel for your
+lantern or storm lantern, and you can use it to light things on fire.
+
+You can throw lamp oil to cover an area; You first roll a _dexterity_ check. If
+successful, the oil bottle (or skin or jug) lands where you want it (within
+_strength_ meters), ruptures, and covers an area of 1d4 square meters.
+//
+At this point the oil is not on fire; you must light it yourself with torch,
+a spell, or similar fashion.
 
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
@@ -861,17 +852,26 @@ _wisdom_ check.
 * If both failed, the trap triggers, and you are not able to dodge the effects
   (if the trap is aimed at you).
 
-==== Map Making Tools
-You can use these tools to maps of dungeons, cities, and various land areas.
-To do so you must make an _intelligence_ check and a _wisdom_ check.
+==== Torch
+Aside from illuminating the area around you, torches can be used for a number
+of things.
 
-*   If both are successful, your mapping process is accurate for the entire
-    dungeon level, city, or area.
-*   If just one is successful, your scales are incorrect, and using the
-    map is <<difficult,difficult>>.
-*   If both failed, the map is not accurate at all. Twists and turns are
-    wrong, scales are wrong, the cardinal directions are wrong, and there
-    are missing areas and notes.
+Torches have 2 <<Usage Points,usage points>>, and you must make a consumption
+check every hour.
+
+Torches can be revitalized; it requires one consumption of <<Lamp Oil>> to
+restore 1 <<Usage Points,usage point>> to a torch. This cannot be done while
+the torch is lit. After revitalizing your torch, you roll a difficult _wisdom_
+check. If unsuccessful, the torch is destroyed, and cannot be lit.
+
+You can throw a torch and use it as a ranged weapon, but it is difficult. If
+you rolled a nat20 on your attack check, the torch is broken and cannot
+be repaired. The throwing range of a torch is 5 meters.
+
+You can use your torch as a light melee weapon, but it is difficult. If you
+roll a nat20 on your melee attack check, the torch breaks and cannot be
+repaired. If you roll a nat1, the target is set <<on_fire,on fire>>, dealing
+1d4 damage every round until it is put out.
 
 //END_SORT
 
@@ -1125,7 +1125,7 @@ The trauma table is used when you take damage after being reduced to 0 hit point
 .Trauma table
 [%header,cols="^1,^2,8",stripes=even,frame=none,grid=none]
 |===
-| roll      | Type          | Effect
+| Roll      | Type          | Effect
 | 101+      | Amputation    | Lose a random limb
 | 100       | Permanent     | -1d4 to random stat
 | 89-99     | Permanent     | -1d8 maximum hit points
@@ -1348,7 +1348,6 @@ All spells listed in this section are <<basic,basic>> and can be used by
 adventurers.
 
 // START_SORT ===
-
 === Alertness (X)
 *Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
 
@@ -1536,13 +1535,6 @@ target receives 1d6+_X_ damage, otherwise they receive 1d6 damage.
 
 Your _charisma_ checks are easy for the next _X_ minutes.
 
-=== Gills (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>, <<ritual,ritual>>*
-
-You and 1+_X_ willing creatures within 4+_X_ meters can breathe water (and only
-water) for the next 2+_X_ minutes. The spell also ends if you stop focusing on
-it.
-
 === Ghost Mount (X)
 *Level 2, <<focus,focus>>, <<multilevel,multilevel>>*
 
@@ -1579,6 +1571,13 @@ The servant appears within 3·_X_ meters, and must stay within 10·_X_ meters.
 
 The spell lasts 10·_X_ minutes, until you stop focusing on it, or the servant
 gets more than 10·_X_ meters away.
+
+=== Gills (X)
+*Level 1, <<focus,focus>>, <<multilevel,multilevel>>, <<ritual,ritual>>*
+
+You and 1+_X_ willing creatures within 4+_X_ meters can breathe water (and only
+water) for the next 2+_X_ minutes. The spell also ends if you stop focusing on
+it.
 
 === Gloom (X)
 *Level 1+, <<multilevel,multilevel>>, range: 2+_X_ meters*
@@ -1870,10 +1869,6 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //{{{DICTIONARY
 //START_SORT::
-== DICTIONARY
-
-[horizontal]
-
 Adventurer::
 All PCs start out as adventurers and have to level up to level 3 before they
 can get their hero class.
@@ -1957,6 +1952,10 @@ successful check.
 
 Y.A.R.I.S::
 It’s an acronym: Yet Another Reduced Instruction Set.
+
+//END_SORT
+//}}}
+uction Set.
 
 //END_SORT
 //}}}
