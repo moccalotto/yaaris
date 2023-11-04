@@ -742,9 +742,6 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 === Special Items
 //START_SORT ====
 
-
-
-
 ==== Bank book
 A bank book is a magical book that can contain money. There is a magical ritual
 called Banking Transaction (X), that allows you to transfer money into and out
