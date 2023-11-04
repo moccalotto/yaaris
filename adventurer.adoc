@@ -290,6 +290,12 @@ deal with each weapon category.
 | Heavy Melee Weapons | Unskilled   | 1d10
 |===
 
+[[exotic_weapon_skills]]
+==== Exotic Weapon Skills
+You are not skilled at using exotic weapons such as the <<Kosh,kosh>>.
+Becoming skilled with such weapons require special training or abilities (such
+as <<shady,shady>>).
+
 ==== Spellcasting
 You can use <<Spellbooks,spellbooks>> to cast <<basic,basic>> spells. You can
 cast these spells on the fly (this is called <<Basic Spellcasting>>), and you
@@ -298,6 +304,8 @@ In addition to using spellbooks to cast spells, you can also recharge the books
 via <<Basic Recharging>>.
 
 === Level 2
+When you reach second level, you gain more hit points, better stats, and a
+special ability.
 
 ==== More Hit Points More Better
 Your hit point total is increased by 1d8. Roll with advantage.
@@ -313,7 +321,6 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 8, and 10.
 
 //START_SORT [[]]
-
 
 [[armorer]]
 Armorer:: 
@@ -746,11 +753,12 @@ take up 1 <<Item Slots,item slot>>, and generally requires a coin
 sack to contain.
 
 ==== Kosh
-Only adventurers with the <<shady,shady>> special ability are skilled at using
+Adventurers with the <<shady,shady>> special ability are skilled at using
 koshes. To use a target, you make an attack check; if you hit the target, it
-loses 1 hit point. You then roll your damage die. If your roll was higher than
-the target’s remaining hit points, the target gains the unconscious condition,
-which means they’ll wake up within 2d6 hours if not healed.
+immediately loses 1 hit point. You then roll your damage die. If your roll was
+higher than the target’s remaining hit points, the target gains the 
+<<unconscious,unconscious condition>>, which means they’ll wake up within 2d6
+hours if not healed.
 
 ==== Lantern
 Lanterns illuminates the area around you. The lantern does not have have any
@@ -1058,7 +1066,7 @@ that armor piece becomes broken, and no longer provides any hit points.
 WARNING: if you're wearing two or more pieces of broken armor, you become
 <<encumbered,encumbered>>.
 
-IMPORTANT: 
+IMPORTANT:
 ====
 The armor can be repaired. So you should make a note of how many HP the armor
 piece granted initially.
@@ -1148,18 +1156,8 @@ so are grave.
 Dead:: You’re dead; you must roll on the <<trauma_table,trauma table>> (in case
 you are revived or turn into an undead).
 
-[[dying]]
-Dying:: You’re near death; you must roll on the trauma table. Every round, at the
-beginning of your turn, you must make a d20 roll; if you roll a nat1, you are
-no longer dying, but unconscious, and if you rolled a nat20, you are dead.
-
-Comatose:: You’re in a deep coma. If you receive conventional medical care, you
-will wake up in a matter of hours; make a _constitution_ check every hour to see
-if you wake up. If you receive magical healing, you will wake up in a matter of
-minutes; make a _constitution_ check every minute to see if you wake up.
-
-Unconscious:: You are unconscious; if you receive any kind of healing, you will
-wake up right away, otherwise you will wake up within 2d6 hours.
+Dead, Dying, and Comatose:: These conditions are described in detail the
+<<CONDITIONS>>
 
 ==== Trauma Table
 The trauma table is used when you take damage after being reduced to 0 hit points.
@@ -1223,12 +1221,23 @@ Conditions can affect characters and baddies.
 
 //START_SORT [[]]
 
+[[comatose]]
+Comatose:: You’re in a deep coma. If you receive conventional medical care, you
+will wake up in a matter of hours; make a _constitution_ check every hour to see
+if you wake up. If you receive magical healing, you will wake up in a matter of
+minutes; make a _constitution_ check every minute to see if you wake up.
 
 [[demoralized]]
 Demoralized::
 On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
+
+[[dying]]
+Dying:: You’re near death; you must roll on the <<Trauma Table>>. Every round,
+at the beginning of your turn, you must make a d20 roll; if you roll a
+<<nat1,nat1>>, you are no longer dying, but <<unconscious,unconscious>>, and if
+you rolled a nat20, you are dead.
 
 [[encumbered]]
 Encumbered:: 
@@ -1259,6 +1268,11 @@ rolling your stat loss, you make a _constitution_ check with disadvantage. If
 successful, the poisoned condition is removed. You die if any of your stats are
 reduced to zero. If you die from poison, only Greater Revival can restore you
 back to life.
+
+[[unconscious]]
+Unconscious:: You are unconscious; if you receive any kind of healing, you will
+wake up right away, otherwise you will wake up within 2d6 hours.
+
 
 //END_SORT
 //}}}
@@ -1340,24 +1354,26 @@ again.
 The properties of a spell is listed in bold font right underneath the spell's
 name.
 
-.Spell properties
-[frame=none,grid=none,stripes=odd,cols="2,10"]
-|===
+//START_SORT::
 
-| basic [[basic]] |
+[[basic]]
+basic::
 All basic spells can be cast by adventurers, and all spells in this document
 are <<basic,basic>>. Higher level characters have access to more advanced types
 of spells.
 
-| ritual [[ritual]] |
+[[ritual]]
+ritual::
 These spells can be cast via Basic Ritual Casting, but can also be
 cast normally via Basic Spellcasting.
 
-| multilevel [[multilevel]] |
+[[multilevel]]
+multilevel::
 There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example for an illustration.
 
-| trance  [[trance]] |
+[[trance]]
+trance::
 You must be seated to cast a trance spell, and you must remain seated
 for its duration. +
 //
@@ -1371,24 +1387,27 @@ The spell stops instantly if you:
 You can speak, breathe, and adjust
 your position to remain comfortable, and nothing more.
 
-| focus [[focus]] |
+[[focus]]
+focus::
 These spells cut their duration short and stop instantly if you
 cast another spell,
 take damage,
 or stop focusing on keeping the spell going.
 
-
-| Range |
+[[range]]
+range::
 The range of the spell.
 
-| Duration |
+[[duration]]
+duration::
 The duration of the spell
 
-| LVL [[LVL]] |
+[[lvl]]
+lvl::
 The level of the caster (i.e. not the spell). The potency, duration, or range
 of certain spell increases with the casters level.
 
-|===
+//END_SORT
 
 [[example_multilevel]]
 .Spells with <<multilevel,multilevel>> tag
@@ -1406,8 +1425,6 @@ All spells listed in this section are <<basic,basic>> and can be used by
 adventurers.
 
 // START_SORT ===
-
-
 
 === Alertness (X)
 *Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
@@ -1480,11 +1497,11 @@ than _X_. The animal no longer considers you or your party as threats, and will
 simply wander away if possible.
 
 === Club
-*Level 1, duration: <<LVL,LVL>>+5 rounds.*
+*Level 1, duration: <<lvl,lvl>>+5 rounds.*
 
 A magical wooden club appears in your hand. You are proficient at wielding this
 one-handed weapon, and your damage die is 1d12 when doing so. The club
-dissolves into dust after <<LVL,LVL>>+5 rounds, or instantly if you let go of it.
+dissolves into dust after <<lvl,lvl>>+5 rounds, or instantly if you let go of it.
 
 === Command (X)
 *Level: 1, <<multilevel,multilevel>>, duration: 1 round.*
@@ -1992,7 +2009,7 @@ Initiative::
 A check made at the beginning of a combat round to see which side gets to act
 first.
 
-Level (LVL)::
+Level (lvl)::
 A character can have a level between 1 and 10. Baddies, traps, locks, spells,
 and various tasks can also have a level.
 
