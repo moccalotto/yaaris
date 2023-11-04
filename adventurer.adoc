@@ -1,3 +1,4 @@
+
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
 :doctype: article
@@ -320,6 +321,7 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 8, and 10.
 
 //START_SORT [[]]
+
 
 [[armorer]]
 Armorer:: 
@@ -738,6 +740,7 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 
 === Special Items
 //START_SORT ====
+
 
 
 
@@ -1220,6 +1223,7 @@ Conditions can affect characters and baddies.
 
 //START_SORT [[]]
 
+
 [[comatose]]
 Comatose:: You’re in a deep coma. If you receive conventional medical care, you
 will wake up in a matter of hours; make a _constitution_ check every hour to see
@@ -1361,15 +1365,35 @@ All basic spells can be cast by adventurers, and all spells in this document
 are <<basic,basic>>. Higher level characters have access to more advanced types
 of spells.
 
-[[ritual]]
-ritual::
-These spells can be cast via Basic Ritual Casting, but can also be
-cast normally via Basic Spellcasting.
+[[duration]]
+duration::
+The duration of the spell
+
+[[focus]]
+focus::
+These spells cut their duration short and stop instantly if you
+cast another spell,
+take damage,
+or stop focusing on keeping the spell going.
+
+[[lvl]]
+lvl::
+The level of the caster (i.e. not the spell). The potency, duration, or range
+of certain spell increases with the casters level.
 
 [[multilevel]]
 multilevel::
 There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example for an illustration.
+
+[[range]]
+range::
+The range of the spell.
+
+[[ritual]]
+ritual::
+These spells can be cast via Basic Ritual Casting, but can also be
+cast normally via Basic Spellcasting.
 
 [[trance]]
 trance::
@@ -1385,26 +1409,6 @@ The spell stops instantly if you:
 //
 You can speak, breathe, and adjust
 your position to remain comfortable, and nothing more.
-
-[[focus]]
-focus::
-These spells cut their duration short and stop instantly if you
-cast another spell,
-take damage,
-or stop focusing on keeping the spell going.
-
-[[range]]
-range::
-The range of the spell.
-
-[[duration]]
-duration::
-The duration of the spell
-
-[[lvl]]
-lvl::
-The level of the caster (i.e. not the spell). The potency, duration, or range
-of certain spell increases with the casters level.
 
 //END_SORT
 
@@ -1424,6 +1428,7 @@ All spells listed in this section are <<basic,basic>> and can be used by
 adventurers.
 
 // START_SORT ===
+
 
 === Alertness (X)
 *Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
@@ -1960,6 +1965,7 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //{{{DICTIONARY
 //START_SORT::
+
 
 
 
