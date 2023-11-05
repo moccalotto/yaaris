@@ -323,14 +323,17 @@ stat by 1 point. If no stats are lower than your die roll, nothing happens.
 Choose one of the abilities below. You can switch this ability at levels 4, 6,
 8, and 10.
 
-//START_SORT [[]]
+//START_SORT//KEY:
 
-
+KEY:
+[reftext="armorer"]
 [[armorer]]
 Armorer:: 
 You can repair a piece of broken armor if you have the right tools. See
 <<Tinkering Tools>> for more information.
 
+KEY:
+[reftext="everdeen"]
 [[everdeen]]
 Everdeen::
 If you are without arrows during combat, you can spend 3 moves, and make a
@@ -339,10 +342,14 @@ you’re ready to fire. If unsuccessful, you cannot use this ability before you
 have stocked up on ammunition. This ability also works with bolts, slingshots,
 and darts.
 
+KEY:
+[reftext="great_weapon_specialist"]
 [[great_weapon_specialist]]
 Great weapon specialist::
 You are skilled at using heavy melee weapons.
 
+KEY:
+[reftext="monstrous_gourmand"]
 [[monstrous_gourmand]]
 Monstrous Gourmand::
 You can make edible ration packs from fresh monster parts (any recently dead
@@ -354,11 +361,15 @@ to eat fresh, uncooked, monster meat without getting sick. It requires a sharp
 cutting tool, 3d6 minutes, and a successful _constitution_ check to create and
 eat such a “meal”.
 
+KEY:
+[reftext="negotiator"]
 [[negotiator]]
 Negotiator::
 You have advantage on checks that involve negotiation. You also have advantage
 on haggle checks (see <<the_haggling_check,The haggling check>>).
 
+KEY:
+[reftext="pugilist"]
 [[pugilist]]
 Pugilist::
 You are skilled at unarmed combat, meaning your attack checks are normal
@@ -368,6 +379,8 @@ or heavy armor pieces, your unarmed damage die is increased to 1d6.
 WARNING: Striking certain dangerous monsters (such as fire elementals) with
 your body can have grave consequences.
 
+KEY:
+[reftext="rider"]
 [[rider]]
 Rider::
 You acquire a trained horse (for free, as a gift, or similar). You become
@@ -376,6 +389,8 @@ You have advantage on <<Consumption Check,consumption checks>>for animal feed.
 When you reach level 5 your riding proficiency expands to all rideable land
 creatures. At level 8, you can ride virtually any tame creature.
 
+KEY:
+[reftext="shady"]
 [[shady]]
 Shady::
 On a successful _charisma_ check you pull out a dagger from a boot, a sleeve
@@ -383,6 +398,8 @@ or… somewhere. If your check fails, you cannot do it again for the rest of the
 session. In combat, this feat requires 3 moves. You are also skilled at using a
 <<Kosh,kosh>>, something normal adventurers are not.
 
+KEY:
+[reftext="spelunker"]
 [[spelunker]]
 Spelunker::
 You always have some chalk. You always know the cardinal directions. You have
@@ -392,16 +409,19 @@ you do not suffer any debilitating effects from being alone in total darkness
 (which can otherwise cause you to suffer from dungeon madness ??????). You have
 advantage on consumption checks for <<Lamp Oil>> and <<Torch,Torches>>.
 
+KEY:
+[reftext="thrifty"]
 [[thrifty]]
 Thrifty::
 You have advantage on consumption checks with <<Purse,coin purses>>.
 
+KEY:
+[reftext="traveler"]
 [[traveler]]
 Traveler::
 You have advantage on consumption checks for rations and animal feed. You have
 advantage on geography related checks. One of the ration packs you carry does’t
 take up an item slot.
-
 //END_SORT
 
 === Level 3: Graduation
@@ -508,7 +528,9 @@ the roll <<easy>>, but you're also <<encumbered>>, which makes the check
 
 ====
 
-[[adversarial_checks]]
+
+[reftext="adversarial"]
+[[adversarial]]
 === Adversarial Checks
 These are checks where the difficulty depends on the level of the adversary. In
 this context, and adversary can be a baddie, an <<NPC>>, a lock, a trap, a
@@ -542,6 +564,7 @@ your are within one level of each other, and thus your check is normal.
 Certain conditions, abilities, classes, and spells can give a roll an advantage or disadvantage,
 which changes the way you roll the dice.
 
+[reftext="advantage"]
 [[advantage]]
 Advantage::
 If a roll has advantage, you roll the dice twice, and pick the result you like best.
@@ -552,6 +575,7 @@ you have advantage on a Damage Roll, you roll your damage dice twice and pick
 the roll you like best.
 ====
 
+[reftext="disadvantage"]
 [[disadvantage]]
 Disadvantage::
 If a roll has disadvantage, you roll the dice twice, and the GM picks the
@@ -777,6 +801,34 @@ A bank book is a magical book that can contain money. There is a magical ritual
 called Banking Transaction (X), that allows you to transfer money into and out
 of the book.
 
+==== Coin Purse
+Purses aren't real items; they are concepts that can simplify bookkeeping.
+Instead of keeping track of every copper penny and doing a lot of math,
+you just make consumptions whenever you buy something.
+You don't need to buy purses from a merchant - you just "buy" them directly
+from the GM. You cannot sell them or exchange them.
+
+[reftext="copper purse"]
+[[purse_copper]]
+Copper purse:: for 1,000 copper pieces you can buy a copper purse. It has 10
+<<Usage Points,usage points>>. Whenever you buy something costing less than 100
+copper pieces, you make a <<Consumption Check,consumption check>> for the
+copper purse instead.
+
+[reftext="silver purse"]
+[[purse_silver]]
+Silver purse:: for 1,000 silver pieces you can buy a silver purse. It has 10
+<<Usage Points,usage points>>. Whenever you buy something costing less than 100
+silver pieces, you make a <<Consumption Check,consumption check>> for the
+silver purse instead.
+
+[reftext="gold purse"]
+[[purse_gold]]
+Gold purse:: for 1,000 gold pieces you can buy a gold purse. It has 10
+<<Usage Points,usage points>>. Whenever you buy something costing less than 100
+gold pieces, you make a <<Consumption Check,consumption check>> for the
+gold purse instead.
+
 ==== Coins
 Small amounts of counts do not take up any room, but 100 coins 
 take up 1 <<Item Slots,item slot>>, and generally requires a coin
@@ -826,34 +878,6 @@ To do so you must make an _intelligence_ check and a _wisdom_ check.
 *   If both failed, the map is not accurate at all. Twists and turns are
     wrong, scales are wrong, the cardinal directions are wrong, and there
     are missing areas and notes.
-
-==== Coin Purse
-Purses aren't real items; they are concepts that can simplify bookkeeping.
-Instead of keeping track of every copper penny and doing a lot of math,
-you just make consumptions whenever you buy something.
-You don't need to buy purses from a merchant - you just "buy" them directly
-from the GM. You cannot sell them or exchange them.
-
-[reftext="copper purse"]
-[[purse_copper]]
-Copper purse:: for 1,000 copper pieces you can buy a copper purse. It has 10
-<<Usage Points,usage points>>. Whenever you buy something costing less than 100
-copper pieces, you make a <<Consumption Check,consumption check>> for the
-copper purse instead.
-
-[reftext="silver purse"]
-[[purse_silver]]
-Silver purse:: for 1,000 silver pieces you can buy a silver purse. It has 10
-<<Usage Points,usage points>>. Whenever you buy something costing less than 100
-silver pieces, you make a <<Consumption Check,consumption check>> for the
-silver purse instead.
-
-[reftext="gold purse"]
-[[purse_gold]]
-Gold purse:: for 1,000 gold pieces you can buy a gold purse. It has 10
-<<Usage Points,usage points>>. Whenever you buy something costing less than 100
-gold pieces, you make a <<Consumption Check,consumption check>> for the
-gold purse instead.
 
 ==== Spellbook
 A spellbook is a magical book or tome that contains a single spell and
@@ -1037,10 +1061,10 @@ ranged and melee.
 
 Melee::
 When you use melee weapons or unarmed combat, the attack check is an
-adversarial _strength_ check.
+<<adversarial>> _strength_ check.
 
 Ranged::
-When you use ranged weapons, the attack check is an adversarial _wisdom_ check.
+When you use ranged weapons, the attack check is an <<adversarial>> _wisdom_ check.
 
 [IMPORTANT]
 ====
@@ -1275,10 +1299,20 @@ minutes; make a _constitution_ check every minute to see if you wake up.
 //KEY:
 [reftext="demoralized"]
 [[demoralized]]
-Demoralized::
-On your next turn you must spend all your moves (if possible)
+Demoralized:: On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
+
+//KEY:
+[reftext="dungeon_mad"]
+[[dungeon_mad]]
+Dungeon Mad:: You've been in complete darkness in a dungeon too long. Every hour you must
+make a _wisdom_ check. If you fail, you lose 1 point from a random stat.
+
+[reftext="encumbered"]
+[[encumbered]]
+Encumbered:: All checks become <<difficult>>, meaning that you
+have to roll 3 points lower than you normally would to succeed.
 
 //KEY:
 [reftext="dying"]
@@ -1289,36 +1323,20 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 you rolled a nat20, you are dead.
 
 //KEY:
-[reftext="dungeon_mad"]
-[[dungeon_mad]]
-Dungeon Mad::
-You've been in complete darkness in a dungeon too long. Every hour you must
-make a _wisdom_ check. If you fail, you lose 1 point from a random stat.
-
-[reftext="encumbered"]
-[[encumbered]]
-Encumbered:: 
-All checks become <<difficult>>, meaning that you
-have to roll 3 points lower than you normally would to succeed.
-
-//KEY:
 [reftext="exhausted"]
 [[exhausted]]
-Exhausted:: 
-Same as <<encumbered>> AND your number of moves is halved, rounded down.
+Exhausted:: Same as <<encumbered>> AND your number of moves is halved, rounded down.
 
 //KEY:
 [reftext="frightened"]
 [[frightened]]
-Frightened::
-You cannot move closer to what you believe is the source of
+Frightened:: You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
 
 //KEY:
 [reftext="on_fire"]
 [[on_fire]]
-On Fire::
-You are on fire. At the start of every round, just before you get to act,
+On Fire:: You are on fire. At the start of every round, just before you get to act,
 you take 1d4 points of damage, and then you roll a _constitution_ check. If you
 succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a nat20, the damage die increases (for instance, from 1d4 to 1d6).
@@ -1326,20 +1344,18 @@ rolled a nat20, the damage die increases (for instance, from 1d4 to 1d6).
 //KEY:
 [reftext="poisoned"]
 [[poisoned]]
-Poisoned::
-You temporarily lose 1d4 points of a random stat every minute. After rolling
-your stat loss, you make a _constitution_ check with
-<<disadvantage,disadvantage>>. If successful, the poisoned condition is
-removed. You die if any of your stats are reduced to zero. If you die from
-poison, only Greater Revival can restore you back to life.
+Poisoned:: You temporarily lose 1d4 points of a random stat every minute. After
+rolling your stat loss, you make a _constitution_ check with <<disadvantage>>.
+If successful, the poisoned condition is removed. You die if any of your stats
+are reduced to zero. If you die from poison, only Greater Revival can restore
+you back to life.
 
 //KEY:
 [reftext="restrained"]
 [[restrained]]
-Restrained::
-Your hands and feet are restrained. You have only one <<moves,move>> each round.
-Depending on the circumstances, the GM might allow you to try and escape your
-bonds.
+Restrained:: Your hands and feet are restrained. You have only one
+<<moves,move>> each round. Depending on the circumstances, the GM might allow
+you to try and escape your bonds.
 
 //KEY:
 [reftext="unconscious"]
@@ -1398,7 +1414,7 @@ Some spells can be cast without exhausting the spellbook, but it takes more
 time to do so.
 
 Requirements::
-* The spell must have the <<ritual,ritual>> property,
+* The spell must have the <<ritual>> property,
 * You must have the spellbook on you while the ritual is performed.
 * The spellbook must have at least one <<Usage Points,usage point>>.
 
@@ -1442,6 +1458,14 @@ duration::
 The duration of the spell
 
 //KEY:
+[reftext="eftext="lvl"]
+[reftext="lvl"]
+[[lvl]]
+lvl::
+The level of the caster (i.e. not the spell). The potency, duration, or range
+of certain spell increases with the casters level.
+
+//KEY:
 [reftext="focus"]
 [[focus]]
 focus::
@@ -1449,14 +1473,6 @@ These spells cut their duration short and stop instantly if you
 cast another spell,
 take damage,
 or stop focusing on keeping the spell going.
-
-//KEY:
-[reftext="eftext="lvl"]
-[reftext="lvl"]
-[[lvl]]
-lvl::
-The level of the caster (i.e. not the spell). The potency, duration, or range
-of certain spell increases with the casters level.
 
 //KEY:
 [reftext="multilevel"]
@@ -1524,22 +1540,22 @@ advantage to 2·_X_ checks in total (i.e. not to each recipient) or when the
 caster stops focusing on the spell, whichever comes first.
 
 === Alluring Attraction (X)
-*Level 1, <<multilevel>>, <<ritual,ritual>>, duration: _X_ days*
+*Level 1, <<multilevel>>, <<ritual>>, duration: _X_ days*
 
 Of the next _X_+1 _charisma_ checks you make, you have advantage on checks that
 have a strong flirting component or involve physical attraction.
 
 === Animal Friendship (X)
-*Level 1, <<focus>>, <<multilevel>>, <<ritual,ritual>>*
+*Level 1, <<focus>>, <<multilevel>>, <<ritual>>*
 
 Within the next _X_ + 1 hours, all _intelligence_, _wisdom_, and _charisma_
-checks made to befriend animals have <<advantage,advantage>>. On top of that,
+checks made to befriend animals have <<advantage>>. On top of that,
 there is a 50% chance that an animal that would have otherwise been hostile
 towards you, is now simply cautious.
 
 
 === Armor (X)
-*Level 1, <<multilevel>>, <<ritual,ritual>>*
+*Level 1, <<multilevel>>, <<ritual>>*
 
 ?????????????????????????????????????????????????
 
@@ -1549,9 +1565,9 @@ towards you, is now simply cautious.
 You touch a magical Bank Book and transfer coins into- or out of it. You cannot
 bring the book’s balance below zero.
 
-It takes _X_ minutes to cast this spell, and it requires _X_ gold pieces, which are
-consumed by the spell (yes, you must have at least _X_ gold coins on hand to
-withdraw your money).
+It takes _X_ minutes to cast this spell, and it requires _X_ gold pieces, which
+are consumed by the spell (yes, you must have at least _X_ gold coins on hand
+to withdraw your money).
 
 The number of coins you can withdraw/deposit is 10·X·X·_X_ (i.e. 10·X³).
 
@@ -1566,9 +1582,9 @@ This spell has no negative effects on non-vermin.
 
 Vermin whose level is _X_ or higher are completely unaffected.
 
-Vermin whose level is lower than _X_ must make a normal _wisdom_ check or move out of
-the repellent area. Even if the check is successful, any other checks made
-within the repellent area are difficult.
+Vermin whose level is lower than _X_ must make a normal _wisdom_ check or move
+out of the repellent area. Even if the check is successful, any other checks
+made within the repellent area are <<difficult>>.
 
 Mundane vermin, such as normal spiders, worms, ants, flies, wasps, etc. are
 level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
@@ -1590,14 +1606,14 @@ dissolves into dust after <<lvl>>+5 rounds, or instantly if you let go of it.
 === Command (X)
 *Level: 1, <<multilevel>>, duration: 1 round*
 
-You give a creature within _X_ meters a one-word command and then make a _charisma_
-check. If you’re successful, the target will attempt to execute the command as
-best it can, and as it understands the command, but only for one round, and
-only if the command would not result in self harm.
+You give a creature within _X_ meters a one-word command and then make a
+_charisma_ check. If you’re successful, the target will attempt to execute the
+command as best it can, and as it understands the command, but only for one
+round, and only if the command would not result in self harm.
 
 This spell does not affect targets whose level is higher than _X_.
 
-If the target’s level is lower than _X_ the _charisma_ check is easy.
+If the target’s level is lower than _X_ the _charisma_ check is <<easy>>.
 
 Any creature targeted by this spell will become hostile towards you, regardless
 if they executed the command or not.
@@ -1629,12 +1645,13 @@ bonfire. If the fire is the size of a bonfire, it goes out, not producing any
 additional smoke in the process.
 
 === Cure Exhaustion
-*Level 1, <<ritual,ritual>>*
+*Level 1, <<ritual>>, range: _wisdom_ meter*
 
-You target a willing person. If you make a successful easy _wisdom_ check, the
-exhausted condition is removed from the target.
+You target a willing person. If you make a successful <<easy>> _wisdom_ check,
+the exhausted condition is removed from the target.
 
-A creature that has been targeted by this spell becomes immune to it for 1 hour.
+A creature that has been targeted by this spell becomes immune to it for 1
+hour.
 
 === Danger Sense
 *Level 2*
@@ -1647,7 +1664,7 @@ Context is important: a high level paladin might be dangerous to her foes, but
 completely harmless to her friends.
 
 === Detect Magic
-*Level 1, <<ritual,ritual>>, duration: _intelligence_ minutes*
+*Level 1, <<ritual>>, duration: _intelligence_ minutes*
 
 You can see magic items, and items that are affected by spells, such as an item
 with light cast on it. The item must be within _wisdom_ meters. To you, magical
@@ -1675,17 +1692,17 @@ penetrate more than one meter of rock or one centimeter of lead.
 === Fey Flames
 *Level 2*
 
-You target a point within _wisdom_ meters.
-Every object and creature within 5 meters of that
-point glows with a faint light as if on fire.
-Invisible creatures and object can now be seen,
-but attack checks against them are <<difficult>>
+You target a point within _wisdom_ meters. Every object and creature within 5
+meters of that point glows with a faint light as if on fire. Invisible
+creatures and object can now be seen, but attack checks against them are
+<<difficult>>
 
 === Fierce Fortune (X)
 *Level 1, <<multilevel>>*
 
-An ally within _X_ meters gets advantage on their next <<Attack Check,attack>>-
-or <<Defense,defense check>>, provided it occurs within _X_+1 rounds.
+An ally within _X_ meters gets <<advantage>>on their next <<Attack
+Check,attack>>- or <<Defense,defense check>>, provided it occurs within _X_+1
+rounds.
 
 === Find Flora & Fauna
 *Level 1, <<focus>>,  ??????*
@@ -1741,7 +1758,7 @@ The spell lasts 10·_X_ minutes, until you stop focusing on it, or the servant
 gets more than 10·_X_ meters away.
 
 === Gills (X)
-*Level 1, <<focus>>, <<multilevel>>, <<ritual,ritual>>*
+*Level 1, <<focus>>, <<multilevel>>, <<ritual>>*
 
 You and 1+_X_ willing creatures within 4+_X_ meters can breathe water (and only
 water) for the next 2+_X_ minutes. The spell also ends if you stop focusing on
@@ -1767,12 +1784,12 @@ another creature.
 The gloomy area looks like dense fog when seen from the outside.
 
 === Heal (X)
-*Level 1+, <<ritual,ritual>>, <<multilevel>>, range: 3+_X_ meters*
+*Level 1+, <<ritual>>, <<multilevel>>, range: 3+_X_ meters*
 
 You heal a creature within range. It recovers _X_ recovery dice.
 
 === Hurt (X)
-*Level 1+, <<multilevel>>, <<ritual,ritual>>, range: _X_+3 meters*
+*Level 1+, <<multilevel>>, <<ritual>>, range: _X_+3 meters*
 
 You use dark necrotic magic to harm a creature within range. If you make a
 successful _wisdom_ check, the creature loses _X_d8, otherwise it loses _X_d4
@@ -1793,7 +1810,7 @@ currently held, worn, or touched by a living creature, and if the creature’s
 level is higher than _X_, the spell fizzles.
 
 === Intruder Alert
-*Level 1, <<ritual,ritual>>, duration: _wisdom_ hours*
+*Level 1, <<ritual>>, duration: _wisdom_ hours*
 
 Upon casting the spell, you touch a door, tent flap, a lock, or similar
 moveable object. If the object is disturbed by a creature (but not the wind), a
@@ -1831,7 +1848,7 @@ For the next _X_ rounds, your _strength_ score becomes 15+_X_*0.5 (rounded
 down).
 
 === Mage Torch (X)
-*Level 2, <<focus>>, <<multilevel>>, range: _X_×5 meters*
+*Level 2, <<focus>>, <<multilevel>>, range: _X_·5 meters*
 
 You target a spot you can see within range. At that spot a magical ghostly
 torch appears. By spending one <<moves,move>> you can move the torch up to 5
@@ -1843,7 +1860,7 @@ vanishes.
 The torch disappears after 8 hours.
 
 === Magical Reading
-*Level 1, <<ritual,ritual>>, duration: 8 hours*
+*Level 1, <<ritual>>, duration: 8 hours*
 
 You cast this spell on a spellbook or mundane book. It allows you to safely
 read the book without falling for any mental magical traps the text may hold.
@@ -1879,7 +1896,7 @@ the recipient makes a successful _charisma_ check, no one notices its distractio
 while receiving and replying.
 
 === Mustrum’s Mundane Shroud (X)
-*Level 2, <<ritual,ritual>>, duration: _X_ days*
+*Level 2, <<ritual>>, duration: _X_ days*
 
 You select a magical item within 2 meters of you, weighing no more than _X_ kg.
 
@@ -1888,7 +1905,7 @@ with a level higher than _X_ can detect the item’s magic, and that this spell
 has been used to hide it.
 
 === Nostrum’s Magical Aura (X)
-*Level 1, <<ritual,ritual>>, duration: _X_ days, range: 2 meters*
+*Level 1, <<ritual>>, duration: _X_ days, range: 2 meters*
 
 You select a nonmagical item within range, weighing no more than _X_ kg.
 
@@ -1911,13 +1928,13 @@ substantial touches the phantasm (heavy smoke, sandstorm, a creature, etc.).
 
 Creatures that have a reason to disbelieve the phantasm (such as creatures that
 rely heavily on scent and sound, or people who find the phantasm incompatible
-with their sense of “what ought to be” can make an adversarial _charisma_ check
-to see the phantasm for what it is. The check is easy if the creature's level
-is 2 or more higher than the caster's level, and difficult of the creatures
-level is 2 or more lower than the caster's level.
+with their sense of “what ought to be” can make an <<adversarial>> _charisma_
+check to see the phantasm for what it is. The check is easy if the creature's
+level is 2 or more higher than the caster's level, and difficult of the
+creatures level is 2 or more lower than the caster's level.
 
 === Purify Rations (X)
-*Level 2, <<ritual,ritual>>, <<multilevel>>*
+*Level 2, <<ritual>>, <<multilevel>>*
 
 You purify 1 ration pack and 1 water skin’s worth of liquid per level of this
 spell. The food and drink is completely safe to eat and drink; it does not
@@ -1925,7 +1942,7 @@ taste bad, and it is nourishing. This spell does not remove curses or other
 magical effects that may affect the food and drink.
 
 === Read Script
-*Level 2, <<ritual,ritual>>, duration: 10·_intelligence_ minutes*
+*Level 2, <<ritual>>, duration: 10·_intelligence_ minutes*
 
 You can read and understand any written language. This spell does not decode
 cryptographic cipher text, but it does let you understand secret languages.
@@ -1950,15 +1967,14 @@ If a baddie hits you for 5 points of damage, you only take 2 points of damage.
 And if you’re hit for 1 point of damage, you take zero points of damage.
 
 === Slow Fall (X)
-*Level 1, <<multilevel>>, <<ritual,ritual>>*
+*Level 1, <<multilevel>>, <<ritual>>*
 
-You touch  a nonmagical wearable item, weighing at least 1
-<<Item Slots,item slot>> and worth at least _X_ silver pieces.
-The item becomes a consumable magical item with _X_
-<<Usage Points,usage points>>.
-When the wearer of such an item falls more than one meter, the magic in the
-item activates and the fall is slowed so the wearer does not take any damage.
-When the wearer has landed, the item loses one Usage Point. When all the item’s
+You touch  a nonmagical wearable item, weighing at least 1 
+<<Item Slots,item slot>> and worth at least _X_ silver pieces. The item becomes
+a consumable magical item with _X_ <<Usage Points,usage points>>. When the
+wearer of such an item falls more than one meter, the magic in the item
+activates and the fall is slowed so the wearer does not take any damage. When
+the wearer has landed, the item loses one Usage Point. When all the item’s
 Usage Points have been spent, the item crumbles to dust.
 
 === Snooze (X)
@@ -1981,7 +1997,7 @@ Creatures sleep for a number of rounds equal to your _charisma_, however a
 sleeping baddie wakes up if they take damage.
 
 === Spenser’s levitating Bowl
-*Level 1, <<ritual,ritual>>, duration: _intelligence_ · 10 minutes*
+*Level 1, <<ritual>>, duration: _intelligence_ · 10 minutes*
 
 You conjure a large vaguely bowl-shape plate that can carry as many
 <<Item Slots,item slots>> as your _strength_ score.
@@ -2004,7 +2020,7 @@ You cause 10·_X_ liters of water to pour out of a wineskin, teapot, keg, or
 similar; at a speed of about 1 liter per round (10 liters per minute)
 
 === Strength of Stone (X)
-*Level 1, <<focus>>, <<multilevel>>, <<ritual,ritual>>*
+*Level 1, <<focus>>, <<multilevel>>, <<ritual>>*
 
 You target a willing ally within 2·_X_ meters, making all their _strength_ checks
 easy for a 2·_X_ rounds.
@@ -2012,17 +2028,17 @@ easy for a 2·_X_ rounds.
 === Taunt
 *Level 1, <<multilevel>>, duration: 1 round*
 
-You target _X_ creatures within 10+_X_ meters. For each target, if you can make a
-successful adversarial _charisma_ check (which is difficult if the target’s level
-is higher than yours), the target will rush and attack you in melee combat on
-its next turn.
+You target _X_ creatures within 10+_X_ meters. For each target, if you can make
+a successful <<adversarial>> _charisma_ check (which is difficult if the
+target’s level is higher than yours), the target will rush and attack you in
+melee combat on its next turn.
 
 === Tragic Missile (X)
 *Level 1+, <<multilevel>>, range: _wisdom+X_ meters*
 
 You fire a frightening magical missile against a baddie within range. When
 struck, the baddie takes _X_ d4 damage, and then you make an
-<<adversarial_checks,adversarial>> _charisma_ check; if successful the baddie
+<<adversarial>> _charisma_ check; if successful the baddie
 becomes <<demoralized>>.
 
 === Vines (X)
@@ -2034,7 +2050,7 @@ affected area must make a successful _strength_, _dexterity_ or _intelligence_
 check (their choice) each round, or all they have zero moves that round.
 
 === Wizard’s Mark
-*Level 1, <<ritual,ritual>>, <<focus>>*
+*Level 1, <<ritual>>, <<focus>>*
 
 Makes a piece of chalk magical so it makes invisible marks that only you can
 see.
@@ -2061,11 +2077,11 @@ you're attacking a baddie who is 2 or more levels higher than you, your check
 is difficult.
 
 Attack check, melee::
-A check to hit an opponent. It's an adversarial _strength_ check, and it is
+A check to hit an opponent. It's an <<adversarial>> _strength_ check, and it is
 difficult if you're not skilled at using the given weapon.
 
 Attack check, ranged::
-A check to hit an opponent. It's an adversarial _wisdom_ check, and it is
+A check to hit an opponent. It's an <<adversarial>> _wisdom_ check, and it is
 difficult if you're not skilled at using the given weapon.
 
 Baddie::
@@ -2101,7 +2117,7 @@ A character can have a level between 1 and 10. Baddies, traps, locks, spells,
 and various tasks can also have a level.
 
 Melee defense check::
-A check to avoid being hit. This is an adversarial _dexterity_ check.
+A check to avoid being hit. This is an <<adversarial>> _dexterity_ check.
 
 NPC and NPCs::
 Non player character(s). These persons and creatures are played by the GM.
