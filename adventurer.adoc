@@ -29,7 +29,6 @@ Wisdom::        is used for ranged attack, ranged defense, and perception.
 Charisma::      is used for luck, negotiation, charm magic, and selling treasure.
 
 === Extra Stuff
-Here’s some more things for you to keep track of.
 
 Level:: your character's level is a measure of their badassity. You start at
 level 1 and max out at level 10. Baddies, spells, certain items and tasks
@@ -71,20 +70,21 @@ Roll on each of the following tables to flesh out your character.
 
 ==== Ancestral Traits
 First roll a d6. If it is an even number, you do not have any special ancestral
-traits. If it is an odd number, roll two more d6.  The lowest number is used on
+traits. If it is an odd number, roll two more d6. The lowest number is used on
 the table on the left, and the highest number is used on the table on the
 right.
 
 [%header,%unbreakable,cols="^6,^6"]
 |===
 | Low roll  | High roll
-//----------------------
+//----------|-----------
 | Hands     | Troll
 | Ears      | Gnoll
 | Nose      | Goblin
 | Hair      | Elf
 | Eyes      | Dwarf
 | Teeth     | Gnome
+//----------|-----------
 |===
 
 .Ancestral Traits
@@ -171,17 +171,18 @@ All characters start with the following equipment:
 equipment your character starts with. See <<EQUIPMENT>> for more info on
 equipment and items.
 
-
 ==== Ranged weapon
 Roll 1d6 on this table to find out if you have a ranged weapon.
 
 [%header,cols="^2,10"]
 |===
+//------|-----------
 |d6     | Weapon
 |1-3:   | No Ranged Weapon.
 |4:     | Slingshot + Bag of stones.
 |5:     | Bow + Quiver of arrows.
 |6:     | Crossbow + Quiver of bolts.
+//------|-----------
 |===
 
 :!sectids:
@@ -201,6 +202,7 @@ Roll once on the <<utility_gear_1>> table.
 .Utility Gear 1
 [%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
+//-----|-----------
 | 1d10 | Item
 | 1    | <<ration_pack_iron,Ration pack, iron>>
 | 2    | Grappling hook
@@ -212,6 +214,7 @@ Roll once on the <<utility_gear_1>> table.
 | 8    | <<Lockpicking Tools>>
 | 9    | <<Lantern>>
 | 10   | <<purse_copper,Copper purse>>
+//-----|-----------
 |===
 
 
@@ -223,6 +226,7 @@ reroll it.
 .Utility Gear 2
 [%header,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
+//-----|-----------
 | 1d10 | Item
 | 1    | 2d4 gold pieces
 | 2    | <<Spellbook>> with 1 <<Usage Points,usage point>>
@@ -235,6 +239,7 @@ reroll it.
 | 8    | <<ration_pack_normal,Ration pack, normal>>
 | 9    | <<Lamp Oil>>
 | 10   | <<Map Making Tools>>
+//-----|-----------
 |===
 
 === All Done
@@ -266,13 +271,11 @@ Your hit point total is 8, which means that, under normal circumstances, you
 can’t have more than 8 hit points. When you have lost all your hit points, you
 have to roll on the death table.
 
-[[armor_skills]]
 ==== Armor Skills
 You  are skilled at using light shields and light armors. If you are wearing an
 armor you're not skilled at using, you become <<encumbered,encumbered>>.
 See the <<Armor>> section for more info.
 
-[[weapon_skills]]
 ==== Weapon Skills
 You are skilled at using light melee weapons and ranged weapons. On the
 <<adventurer_damage_rolls_table,table below>> you can see how much damage you
@@ -282,21 +285,22 @@ deal with each weapon category.
 .Adventurer Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
-| Weapon Type         | Skill level | Damage Roll
-| Light Melee Weapons | Skilled     | 1d6
-| Ranged Weapons      | Skilled     | 1d6
-| Unarmed Combat      | Unskilled   | 1d3
-| Heavy Melee Weapons | Unskilled   | 1d10
+| Weapon Type           | Skill level | Damage Roll
+//----------------------|-------------|------------
+| Light Melee Weapons   | Skilled     | 1d6
+| Ranged Weapons        | Skilled     | 1d6
+| Unarmed Combat        | Unskilled   | 1d3
+| Heavy Melee Weapons   | Unskilled   | 1d10
+//----------------------|-------------|------------
 |===
 
-[[exotic_weapon_skills]]
 ==== Exotic Weapon Skills
 You are not skilled at using exotic weapons such as the <<Kosh,kosh>>.
 Becoming skilled with such weapons require special training or abilities (such
 as <<shady,shady>>).
 
 ==== Spellcasting
-You can use <<Spellbooks,spellbooks>> to cast <<basic,basic>> spells. You can
+You can use <<Spellbooks,spellbooks>> to cast <<basic>> spells. You can
 cast these spells on the fly (this is called <<Basic Spellcasting>>), and you
 can cast certain spells as rituals (this is called <<Basic Ritual Casting>>).
 In addition to using spellbooks to cast spells, you can also recharge the books
@@ -390,7 +394,7 @@ advantage on consumption checks for <<Lamp Oil>> and <<Torch,Torches>>.
 
 [[thrifty]]
 Thrifty::
-You have advantage on consumption checks with coin <<Purse,purses>>.
+You have advantage on consumption checks with <<Purse,coin purses>>.
 
 [[traveler]]
 Traveler::
@@ -462,14 +466,17 @@ _strength_ check. You roll a d20. If you rolled lower than your _strength_, the
 check was successful, otherwise it was unsuccessful.
 ====
 
+[reftext="nat1"]
 [[nat1]]
 Rolling a 1::
-Checks are always successful if you roll a 1 on your d20, this is called a *_nat1_*.
+Checks are always successful if you roll a 1 on your d20, this is called a _nat1_.
 
+[reftext="nat20"]
 [[nat20]]
 Rolling a 20::
-Checks are always unsuccessful if you roll a 20 on your d20. This is called a *_nat20_*.
+Checks are always unsuccessful if you roll a 20 on your d20. This is called a _nat20_.
 
+[reftext="easy"]
 [[easy]]
 Easy checks::
 are checks where the target number is 3 higher than what it would normally be.
@@ -479,6 +486,7 @@ are checks where the target number is 3 higher than what it would normally be.
 if your _strength_ is 9, making an easy _strength_ check would need to roll under 12.
 ====
 
+[reftext="difficult"]
 [[difficult]]
 Difficult checks::
 are checks where the target number is 3 lower than what it normally would be.
@@ -488,8 +496,17 @@ are checks where the target number is 3 lower than what it normally would be.
 if your _strength_ is 9, making a difficult _strength_ check would need to roll under 6.
 
 Both = Difficult::
-If one or more conditions make a check difficult, it remains difficult even
-if one or more conditions make the check easy.
+If one or more conditions make a check <<difficult>>, it remains difficult if
+there are other many other circumstances that would have made the check
+<<easy>>.
+
+.Both = Difficult
+====
+You are battling an orc whose level is 2 below yours. This would normally make
+the roll <<easy>>, but you're also <<encumbered>>, which makes the check
+<<difficult>>, so, overall, your check remains _difficult_.
+
+====
 
 [[adversarial_checks]]
 === Adversarial Checks
@@ -498,21 +515,21 @@ this context, and adversary can be a baddie, an <<NPC>>, a lock, a trap, a
 riddle, or similar.
 
 If the adversary is two or more levels above you, the check is
-<<difficult,difficult>>, and if the adversary is two or more levels
-below you, the check is <<easy,easy>>.
+<<difficult>>, and if the adversary is two or more levels
+below you, the check is <<easy>>.
 
 .Adversarial Checks
 ====
 
 A second level adventurer is trying to attack an evil orc who is level 5.
-This attack is <<difficult,difficult>> because the orc is two or more levels above the
+This attack is <<difficult>> because the orc is two or more levels above the
 adventurer.
 
 ---
 
 A level 3 player character is trying to haggle with a merchant to get a good
 price on some loot. The PC is level 3, and the merchant is level 1, so the
-check is <<easy,easy>>.
+check is <<easy>>.
 
 ---
 
@@ -520,7 +537,6 @@ You are attacking a zombie. You are level 2, and the zombie is level 1, so
 your are within one level of each other, and thus your check is normal.
 
 ====
-
 
 === Advantage & Disadvantage
 Certain conditions, abilities, classes, and spells can give a roll an advantage or disadvantage,
@@ -536,6 +552,7 @@ you have advantage on a Damage Roll, you roll your damage dice twice and pick
 the roll you like best.
 ====
 
+[[disadvantage]]
 Disadvantage::
 If a roll has disadvantage, you roll the dice twice, and the GM picks the
 result they like.
@@ -645,6 +662,7 @@ it is repaired again, depends on the type of item; see the
 .Consumables
 [%header,cols="9,^1,^1,>1"]
 |===
+//------------------------------|---|---|-----------
 | Name                          | IS| UP| Cost
 | Bag of slingshots             | 1 | 3 |
 | Ball bearings                 | 1 | 2 |
@@ -657,9 +675,10 @@ it is repaired again, depends on the type of item; see the
 | Ration pack, iron             | 1 | 2 | 4     sp   [[ration_pack_iron]]
 | Ration pack, normal           | 1 | 1 | 1     sp   [[ration_pack_normal]]
 | <<Spikes>>                    | 1 | 2 |
-| <<Lockpicking Tools,Tools>>   | 1 | 4 |
-| <<Tinkering Tools,Tools>>     | 1 | 4 |
+| <<Lockpicking Tools>>         | 1 | 4 |
+| <<Tinkering Tools>>           | 1 | 4 |
 | <<Torch>>                     | 1 | 2 | 5     cp
+//------------------------------|---|---|-----------
 |===
 
 // Price of armor is typically (hp)³
@@ -668,22 +687,26 @@ it is repaired again, depends on the type of item; see the
 [%header,cols="9,^1,^1,>1"]
 |===
 | Name                  | IS| HP| Cost
+//----------------------|---|---|-----------
 | Light Shield          | 1 | 2 | 8     gp
 | Light Helmet          | 1 | 2 | 8     gp
 | Light Cuirass         | 2 | 3 | 27    gp
 | Light Gauntlets       | 1 | 2 | 8     gp
 | Light Greaves         | 1 | 2 | 8     gp
+//----------------------|---|---|-----------
 |===
 
 .Medium Armor
 [%header,cols="9,^1,^1,>1"]
 |===
 | Name                  | IS| HP| Cost
+//----------------------|---|---|-----------
 | Medium Shield         | 2 | 4 | 64    gp
 | Medium Helmet         | 2 | 4 | 64    gp
 | Medium Cuirass        | 3 | 5 | 125   gp
 | Medium Gauntlets      | 2 | 4 | 64    gp
 | Medium Greaves        | 2 | 4 | 64    gp
+//----------------------|---|---|-----------
 |===
 
 
@@ -691,11 +714,13 @@ it is repaired again, depends on the type of item; see the
 [%header,cols="9,^1,^1,>1"]
 |===
 | Name                  | IS| HP| Cost
+//----------------------|---|---|-----------
 | Heavy Shield          | 3 | 6 | 216   gp
 | Heavy Helmet          | 3 | 6 | 216   gp
 | Heavy Cuirass         | 4 | 7 | 343   gp
 | Heavy Gauntlets       | 3 | 6 | 216   gp
 | Heavy Greaves         | 3 | 6 | 216   gp
+//----------------------|---|---|-----------
 |===
 
 [[lodging]]
@@ -703,9 +728,11 @@ it is repaired again, depends on the type of item; see the
 [%header,cols="10,2"]
 |===
 | Lodging                                   | Cost
+//------------------------------------------|--------
 | Opulent (luxurious rooms and food)        | 1 gp
 | Middle class (small room, decent fare)    | 1 sp
 | Poor (sleep in common room, cheap food)   | 1 cp
+//------------------------------------------|--------
 |===
 
 Light Melee Weapons::
@@ -718,8 +745,10 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 [%header,cols="9,^1,2"]
 |===
 | Melee Weapon                  | IS| Cost
+//------------------------------|---|--------
 | Light Melee Weapon            | 1 | 5 gp
 | Heavy Melee Weapon            | 2 | 8 gp
+//------------------------------|---|--------
 |===
 
 
@@ -727,6 +756,7 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 [%header,cols="8,^1,^1,2"]
 |===
 | Name                          | IS| UP| Cost
+//------------------------------|---|---|---------
 | Darts                         | 1 | 3 | 2  gp
 | Bow                           | 2 | - | 7  gp
 | ↳ quiver of arrows            | 1 | 10| 2  gp
@@ -734,6 +764,7 @@ A two-handed weapon costs 6gp and takes up 2 <<Usage Points,usage points>>.
 | ↳ quiver of bolts             | 1 | 10| 2  gp
 | Sling                         | 0 | - | 4  gp
 | ↳ bag of stones               | 1 | 10| 2  gp
+//------------------------------|---|---|---------
 |===
 
 
@@ -791,30 +822,33 @@ To do so you must make an _intelligence_ check and a _wisdom_ check.
 *   If both are successful, your mapping process is accurate for the entire
     dungeon level, city, or area.
 *   If just one is successful, your scales are incorrect, and using the
-    map is <<difficult,difficult>>.
+    map is <<difficult>>.
 *   If both failed, the map is not accurate at all. Twists and turns are
     wrong, scales are wrong, the cardinal directions are wrong, and there
     are missing areas and notes.
 
-==== Purse
+==== Coin Purse
 Purses aren't real items; they are concepts that can simplify bookkeeping.
 Instead of keeping track of every copper penny and doing a lot of math,
 you just make consumptions whenever you buy something.
 You don't need to buy purses from a merchant - you just "buy" them directly
 from the GM. You cannot sell them or exchange them.
 
+[reftext="copper purse"]
 [[purse_copper]]
 Copper purse:: for 1,000 copper pieces you can buy a copper purse. It has 10
 <<Usage Points,usage points>>. Whenever you buy something costing less than 100
 copper pieces, you make a <<Consumption Check,consumption check>> for the
 copper purse instead.
 
+[reftext="silver purse"]
 [[purse_silver]]
 Silver purse:: for 1,000 silver pieces you can buy a silver purse. It has 10
 <<Usage Points,usage points>>. Whenever you buy something costing less than 100
 silver pieces, you make a <<Consumption Check,consumption check>> for the
 silver purse instead.
 
+[reftext="gold purse"]
 [[purse_gold]]
 Gold purse:: for 1,000 gold pieces you can buy a gold purse. It has 10
 <<Usage Points,usage points>>. Whenever you buy something costing less than 100
@@ -895,7 +929,7 @@ be repaired. The throwing range of a torch is 5 meters.
 
 You can use your torch as a light melee weapon, but it is difficult. If you
 roll a nat20 on your melee attack check, the torch breaks and cannot be
-repaired. If you roll a nat1, the target is set <<on_fire,on fire>>, dealing
+repaired. If you roll a <<nat1>>, the target is set <<on_fire,on fire>>, dealing
 1d4 damage every round until it is put out.
 
 .Light and visibility
@@ -1011,7 +1045,7 @@ When you use ranged weapons, the attack check is an adversarial _wisdom_ check.
 [IMPORTANT]
 ====
 * If you attack someone who is 2 or more levels higher than you, your attack check is difficult.
-* If you are not <<weapon_skills,skilled>> at using your weapon, your check is difficult.
+* If you are not <<Weapon Skills,skilled>> at using your weapon, your check is difficult.
 ====
 
 ==== Damage Roll
@@ -1023,7 +1057,6 @@ See the <<adventurer_damage_rolls_table>> table to find your damage die.
 NOTE: If you have the <<great_weapon_specialist,Great weapon specialist>>
 special ability, you are also skilled in using heavy melee weapons.
 
-[[critical_hit]]
 Critical hits::
 If you roll a <<nat1>> on your attack check, you get an extra action for free.
 You do not get any moves, but you can use your action any way you like,
@@ -1231,13 +1264,13 @@ Conditions can affect characters and baddies.
 
 //START_SORT [[]]
 
-
 [[comatose]]
 Comatose:: You’re in a deep coma. If you receive conventional medical care, you
 will wake up in a matter of hours; make a _constitution_ check every hour to see
 if you wake up. If you receive magical healing, you will wake up in a matter of
 minutes; make a _constitution_ check every minute to see if you wake up.
 
+[reftext="demoralized"]
 [[demoralized]]
 Demoralized::
 On your next turn you must spend all your moves (if possible)
@@ -1247,17 +1280,23 @@ condition goes away.
 [[dying]]
 Dying:: You’re near death; you must roll on the <<Trauma Table>>. Every round,
 at the beginning of your turn, you must make a d20 roll; if you roll a
-<<nat1,nat1>>, you are no longer dying, but <<unconscious,unconscious>>, and if
+<<nat1>>, you are no longer dying, but <<unconscious,unconscious>>, and if
 you rolled a nat20, you are dead.
 
+[[dungeon_mad]]
+Dungeon Mad::
+You've been in complete darkness in a dungeon too long. Every hour you must
+make a _wisdom_ check. If you fail, you lose 1 point from a random stat.
+
+[reftext="encumbered"]
 [[encumbered]]
 Encumbered:: 
-All checks become <<difficult,difficult>>, meaning that you
+All checks become <<difficult>>, meaning that you
 have to roll 3 points lower than you normally would to succeed.
 
 [[exhausted]]
 Exhausted:: 
-Same as encumbered AND your number of moves is halved, rounded down.
+Same as <<encumbered>> AND your number of moves is halved, rounded down.
 
 [[frightened]]
 Frightened::
@@ -1271,14 +1310,20 @@ you take 1d4 points of damage, and then you roll a _constitution_ check. If you
 succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a nat20, the damage die increases (for instance, from 1d4 to 1d6).
 
-
 [[poisoned]]
 Poisoned::
-You temporarily lose 1d4 points of a random stat every minute. After
-rolling your stat loss, you make a _constitution_ check with disadvantage. If
-successful, the poisoned condition is removed. You die if any of your stats are
-reduced to zero. If you die from poison, only Greater Revival can restore you
-back to life.
+You temporarily lose 1d4 points of a random stat every minute. After rolling
+your stat loss, you make a _constitution_ check with
+<<disadvantage,disadvantage>>. If successful, the poisoned condition is
+removed. You die if any of your stats are reduced to zero. If you die from
+poison, only Greater Revival can restore you back to life.
+
+[reftext="Restrained"]
+[[restrained]]
+Restrained::
+Your hands and feet are restrained. You have only one <<moves,move>> each round.
+Depending on the circumstances, the GM might allow you to try and escape your
+bonds.
 
 [[unconscious]]
 Unconscious:: You are unconscious; if you receive any kind of healing, you will
@@ -1309,19 +1354,18 @@ and only very powerful tomes have more.
 
 
 === Basic Spellcasting
-Adventurers can cast <<basic,basic>> spells (all spells in this document are
-<<basic,basic>>). But they must have a spellbook containing the given spell
+Adventurers can cast <<basic>> spells (all spells in this document are
+<<basic>>). But they must have a spellbook containing the given spell
 and:
 
 Requirements::
 * The spellbook has at least one <<Usage Points,usage point>>.
 * You are holding the spellbook in both hands.
 * There’s enough light for you to read the text, you are able to speak, and you aren't
-  encumbered or restrained.
+  <<encumbered>> or restrained.
 * The spell’s level isn't higher than yours.
 * It is an action to cast a spell (unless otherwise specified in the spell’s
   description, some spells can take a long time to cast).
-
 
 Procedure::
 * Remove 1 <<Usage Points,usage point>> from the spellbook.
@@ -1331,7 +1375,6 @@ Procedure::
   spellbook instantly loses all its <<Usage Points,usage points>>.
 * If your spell fizzled, you can try again next round if your spellbook still
   has charge.
-
 
 === Basic Ritual Casting
 Some spells can be cast without exhausting the spellbook, but it takes more
@@ -1350,10 +1393,10 @@ Procedure::
   spellbook loses all its <<Usage Points,usage points>>.
 
 === Basic Recharging
-Adventurers can recharge <<basic,basic>> spellbooks, restoring them to their maximum
+Adventurers can recharge <<basic>> spellbooks, restoring them to their maximum
 <<Usage Points,usage points>>.
 
-Requirements:: The spell in the spellbook must be <<basic,basic>>, and its level must
+Requirements:: The spell in the spellbook must be <<basic>>, and its level must
 not be higher than yours.
 
 Procedure:: You start by spending one consumption of magic components, followed
@@ -1367,16 +1410,18 @@ name.
 
 //START_SORT[[]]
 
+[reftext="basic"]
 [[basic]]
 basic::
 All basic spells can be cast by adventurers, and all spells in this document
-are <<basic,basic>>. Higher level characters have access to more advanced types
+are <<basic>>. Higher level characters have access to more advanced types
 of spells.
 
 [[duration]]
 duration::
 The duration of the spell
 
+[reftext="focus"]
 [[focus]]
 focus::
 These spells cut their duration short and stop instantly if you
@@ -1384,11 +1429,13 @@ cast another spell,
 take damage,
 or stop focusing on keeping the spell going.
 
+[reftext="lvl"]
 [[lvl]]
 lvl::
 The level of the caster (i.e. not the spell). The potency, duration, or range
 of certain spell increases with the casters level.
 
+[reftext="multilevel"]
 [[multilevel]]
 multilevel::
 There are many versions of this spell, each with its own level. +
@@ -1403,6 +1450,7 @@ ritual::
 These spells can be cast via Basic Ritual Casting, but can also be
 cast normally via Basic Spellcasting.
 
+[reftext="trance"]
 [[trance]]
 trance::
 You must be seated to cast a trance spell, and you must remain seated
@@ -1421,7 +1469,7 @@ your position to remain comfortable, and nothing more.
 //END_SORT
 
 [[example_multilevel]]
-.Spells with <<multilevel,multilevel>> tag
+.Spells with <<multilevel>> tag
 ====
 The <<Tragic Missile (X)>> spell is technically not a single spell. It exists
 as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
@@ -1432,14 +1480,13 @@ as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
 
 //{{{SPELLS
 == SPELLS
-All spells listed in this section are <<basic,basic>> and can be used by
+All spells listed in this section are <<basic>> and can be used by
 adventurers.
 
 // START_SORT ===
 
-
 === Alertness (X)
-*Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
+*Level 1, <<multilevel>>, <<focus>>*
 
 Anyone within 3 meters of the caster gets advantage on checks that involve
 spotting hidden things, traps, and enemies, The effect persists even if they
@@ -1447,16 +1494,14 @@ move further away from the caster. The spell ends when it has provided
 advantage to 2·_X_ checks in total (i.e. not to each recipient) or when the
 caster stops focusing on the spell, whichever comes first.
 
-
 === Alluring Attraction (X)
-*Level 1, <<multilevel,multilevel>>, <<ritual,ritual>>, duration: _X_ days*
+*Level 1, <<multilevel>>, <<ritual,ritual>>, duration: _X_ days*
 
 Of the next _X_+1 _charisma_ checks you make, you have advantage on checks that
 have a strong flirting component or involve physical attraction.
 
-
 === Animal Friendship (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>, <<ritual,ritual>>*
+*Level 1, <<focus>>, <<multilevel>>, <<ritual,ritual>>*
 
 Within the next _X_ + 1 hours, all _intelligence_, _wisdom_, and _charisma_
 checks made to befriend animals have <<advantage,advantage>>. On top of that,
@@ -1465,13 +1510,12 @@ towards you, is now simply cautious.
 
 
 === Armor (X)
-*Level 1, <<multilevel,multilevel>>, <<ritual,ritual>>*
+*Level 1, <<multilevel>>, <<ritual,ritual>>*
 
 ?????????????????????????????????????????????????
 
-
 === Banking Transaction (X)
-*Level 3, <<multilevel,multilevel>>, duration: 5 minutes*
+*Level 3, <<multilevel>>, duration: 5 minutes*
 
 You touch a magical Bank Book and transfer coins into- or out of it. You cannot
 bring the book’s balance below zero.
@@ -1482,9 +1526,8 @@ withdraw your money).
 
 The number of coins you can withdraw/deposit is 10·X·X·_X_ (i.e. 10·X³).
 
-
 === Bug Repellent (X)
-*Level 1+, <<multilevel,multilevel>>, duration: _X_ minutes.*
+*Level 1+, <<multilevel>>, duration: _X_ minutes*
 
 You target a nonmagical item within _X_ meters. The item starts emitting sounds
 and odors that repel insects and other vermin. The spells area of influence is
@@ -1502,21 +1545,21 @@ Mundane vermin, such as normal spiders, worms, ants, flies, wasps, etc. are
 level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
 
 === Calm Animal (X)
-*Level 1, <<multilevel,multilevel>>*
+*Level 1, <<multilevel>>*
 
 You calm a hostile animal within 10 + _X_ meters and whose level isn't higher
 than _X_. The animal no longer considers you or your party as threats, and will
 simply wander away if possible.
 
 === Club
-*Level 1, duration: <<lvl,lvl>>+5 rounds.*
+*Level 1, duration: <<lvl>>+5 rounds*
 
 A magical wooden club appears in your hand. You are proficient at wielding this
 one-handed weapon, and your damage die is 1d12 when doing so. The club
-dissolves into dust after <<lvl,lvl>>+5 rounds, or instantly if you let go of it.
+dissolves into dust after <<lvl>>+5 rounds, or instantly if you let go of it.
 
 === Command (X)
-*Level: 1, <<multilevel,multilevel>>, duration: 1 round.*
+*Level: 1, <<multilevel>>, duration: 1 round*
 
 You give a creature within _X_ meters a one-word command and then make a _charisma_
 check. If you’re successful, the target will attempt to execute the command as
@@ -1535,7 +1578,8 @@ can be interpreted in many ways (drop the thing you’re holding, or drop prone,
 or drop the subject).
 
 === Command Fire (X)
-*Level 1, <<trance,trance>>, <<multilevel,multilevel>>, range: 2·_X_ meters, duration: 2·_X_ minutes.*
+*Level 1, <<trance>>, 
+<<multilevel>>, range: 2·_X_ meters, duration: 2·_X_ minutes*
 
 When you've just cast the spell you select a fire. It can be as small as a
 candle and as large as _X_ square meters. You can now give the fire a command:
@@ -1584,49 +1628,54 @@ penetrate cloth and paper, so a magical ring in a pocket or a magical pen
 underneath a sheet of paper can be detected.
 
 === Detect Traps (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 1, <<focus>>, <<multilevel>>*
 
 You can sense if a trap is within 10+_X_ meters, but you only know where it is
 when the trap is within _X_ meters of you.
 
-This spell lasts for 30 minutes, plus _X_·10 minutes, or until you stop focusing
-on it.
+This spell lasts for 30 minutes, plus _X_·10 minutes, or until you stop
+focusing on it.
 
-=== Detect Undead
-*???*
+=== Detect Undead, Lesser
+*Level 1. Duration: _wisdom_ hours*
 
-See undead through walls?
-
-Sense Undead?
+You can feel when one or more undead creatures are within _wisdom_ meters of 
+you. You can detect undead creatures through most walls, but not it cannot
+penetrate more than one meter of rock or one centimeter of lead.
 
 === Fey Flames
-*Faerie Fire ???????????*
+*Level 2*
 
+You target a point within _wisdom_ meters.
+Every object and creature within 5 meters of that
+point glows with a faint light as if on fire.
+Invisible creatures and object can now be seen,
+but attack checks against them are <<difficult>>
 
 === Fierce Fortune (X)
-*Level 1, <<multilevel,multilevel>>*
+*Level 1, <<multilevel>>*
 
 An ally within _X_ meters gets advantage on their next <<Attack Check,attack>>-
 or <<Defense,defense check>>, provided it occurs within _X_+1 rounds.
 
 === Find Flora & Fauna
-*Level 1, <<focus,focus>>,  ??????*
+*Level 1, <<focus>>,  ??????*
 
 
 === Flaming Fingers (X)
-*Level 1, <<multilevel,multilevel>>*
+*Level 1, <<multilevel>>*
 
 Jets of fire spew forth from your burning hands, scorching up to _X_ adjacent
 targets of your choice. If you make a successful _intelligence_ check, each
 target receives 1d6+_X_ damage, otherwise they receive 1d6 damage.
 
 === Friendliness (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 1, <<focus>>, <<multilevel>>*
 
 Your _charisma_ checks are easy for the next _X_ minutes.
 
 === Ghost Mount (X)
-*Level 2, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 2, <<focus>>, <<multilevel>>*
 
 You construct a ghostly, translucent horse that only you can ride. It appears
 instantly under you, so you’re instantly mounted. The horse increases your
@@ -1641,7 +1690,7 @@ The spell lasts up to 3·_X_ rounds, but stops earlier if you stop focusing on i
 or if you dismount.
 
 === Ghost Servant (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 1, <<focus>>, <<multilevel>>*
 
 You construct a ghostly, humanoid that only you can see, hear, or smell. You
 can send it telepathic commands, and it will obey you to the best of its
@@ -1663,14 +1712,14 @@ The spell lasts 10·_X_ minutes, until you stop focusing on it, or the servant
 gets more than 10·_X_ meters away.
 
 === Gills (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>, <<ritual,ritual>>*
+*Level 1, <<focus>>, <<multilevel>>, <<ritual,ritual>>*
 
 You and 1+_X_ willing creatures within 4+_X_ meters can breathe water (and only
 water) for the next 2+_X_ minutes. The spell also ends if you stop focusing on
 it.
 
 === Gloom (X)
-*Level 1+, <<multilevel,multilevel>>, range: 2+_X_ meters*
+*Level 1+, <<multilevel>>, range: 2+_X_ meters*
 
 You target an object within range. The object emits a ghostly dark aura that
 dulls all non-magical sources of light within 5+_X_ meters so much that their
@@ -1689,18 +1738,18 @@ another creature.
 The gloomy area looks like dense fog when seen from the outside.
 
 === Heal (X)
-*Level 1+, <<ritual,ritual>>, <<multilevel,multilevel>>, range: 3+_X_ meters*
+*Level 1+, <<ritual,ritual>>, <<multilevel>>, range: 3+_X_ meters*
 
 You heal a creature within range. It recovers _X_ recovery dice.
 
 === Hurt (X)
-*Level 1+, <<multilevel,multilevel>>, <<ritual,ritual>>, range: _X_+3 meters*
+*Level 1+, <<multilevel>>, <<ritual,ritual>>, range: _X_+3 meters*
 
 You use dark necrotic magic to harm a creature within range. If you make a
 successful _wisdom_ check, the creature loses _X_d8, otherwise it loses _X_d4
 
 === Illuminate (X)
-*Level 1+, <<multilevel,multilevel>>, range: 2+_X_ meters, duration: _X_ hours.*
+*Level 1+, <<multilevel>>, range: 2+_X_ meters, duration: _X_ hours*
 
 You target an object within range. The object lights up with a steady and
 bright light that illuminates a radius of 10+_X_ meters.
@@ -1723,13 +1772,13 @@ loud alarm will “ring” inside your head. The alarm is loud enough to wake yo
 up, but quiet enough that you don’t wake up screaming.
 
 === Invisibility to Stupidity (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>, duration: 5·_X_ Rounds.*
+*Level 1, <<focus>>, <<multilevel>>, duration: 5·_X_ Rounds*
 
 Creatures with an _intelligence_ lower than _X_+2 cannot see you, smell you, or
 detect you in any way, not even by touch.
 
 === Jump (X)
-*Level 1, <<multilevel,multilevel>>*
+*Level 1, <<multilevel>>*
 
 When you cast this spell, you instantly jump _X_+1 meters in a direction of your
 choice. You cannot reduce the length of the jump, but you can jump into a wall
@@ -1737,7 +1786,7 @@ or other obstacle. Doing so causes you to take 1d6 damage for each meter the
 obstacle reduces your jump.
 
 === Lightning Touch (X)
-*Level 1+, <<multilevel,multilevel>>*
+*Level 1+, <<multilevel>>*
 
 You touch an adjacent target, who then takes _X_d6 damage. After rolling damage,
 you make a _wisdom_ check. If successful, the target is knocked prone, and must
@@ -1747,14 +1796,13 @@ If the target is wearing three or more pieces of metal armor, you have
 advantage on the damage roll and the _wisdom_ check.
 
 === Mage Might (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 1, <<focus>>, <<multilevel>>*
 
 For the next _X_ rounds, your _strength_ score becomes 15+_X_*0.5 (rounded
 down).
 
-
 === Mage Torch (X)
-*Level 2, <<focus,focus>>, <<multilevel,multilevel>>, range: _X_×5 meters*
+*Level 2, <<focus>>, <<multilevel>>, range: _X_×5 meters*
 
 You target a spot you can see within range. At that spot a magical ghostly
 torch appears. By spending one <<moves,move>> you can move the torch up to 5
@@ -1785,7 +1833,7 @@ stone and the baddie. It cannot curve or fly around obstacles.
 
 
 === Mend (X)
-*Level 1, <<multilevel,multilevel>>*
+*Level 1, <<multilevel>>*
 
 You instantly repair a break, crack, scratch, or tear up to 5 + _X_ centimeters
 from an object within _X_ meters that weighs no more than _X_ kg.  Mending a
@@ -1794,7 +1842,7 @@ has been mended, it becomes slightly magical for 1 day; it cannot be mend-ed in
 that period, and it will be detectable with <<Detect Magic>>.
 
 === Mind Message (X)
-*Level 1, <<multilevel,multilevel>>*
+*Level 1, <<multilevel>>*
 
 You target a creature within 5 plus 5_X_ meters, and telepathically send 10 plus
 10_X_ words to it. It can telepathically reply with the same number of words. If
@@ -1823,7 +1871,7 @@ Observers with a level higher than _X_ can detect that this spell has been
 cast, and that the item is nonmagical.
 
 === Phantasm (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 1, <<focus>>, <<multilevel>>*
 
 You create a purely visual illusion of an object, creature, thing, or
 phenomenon no bigger than 3 cubic meters. You can make the phantasm appear
@@ -1840,7 +1888,7 @@ is 2 or more higher than the caster's level, and difficult of the creatures
 level is 2 or more lower than the caster's level.
 
 === Purify Rations (X)
-*Level 2, <<ritual,ritual>>, <<multilevel,multilevel>>*
+*Level 2, <<ritual,ritual>>, <<multilevel>>*
 
 You purify 1 ration pack and 1 water skin’s worth of liquid per level of this
 spell. The food and drink is completely safe to eat and drink; it does not
@@ -1854,10 +1902,10 @@ You can read and understand any written language. This spell does not decode
 cryptographic cipher text, but it does let you understand secret languages.
 
 === Remove Fear (X)
-*Level 2, <<multilevel,multilevel>>, range: _charisma_ meters*
+*Level 2, <<multilevel>>, range: _charisma_ meters*
 
 You target an ally within _charisma_ meters of you. The spell automatically
-removes _X_ fear-based conditions such as <<demoralized,demoralized>>.
+removes _X_ fear-based conditions such as <<demoralized>>.
 
 If the target suffers from more than _X_ fear effects, the GM chooses which to
 remove.
@@ -1865,7 +1913,7 @@ remove.
 NOTE: There are more fear effects than the ones described in this guide.
 
 === Shield
-*Level 1, <<multilevel,multilevel>>, <<focus,focus>>*
+*Level 1, <<multilevel>>, <<focus>>*
 
 For the next 5·_X_ rounds, all damage you receive is halved (rounded down).
 
@@ -1873,7 +1921,7 @@ If a baddie hits you for 5 points of damage, you only take 2 points of damage.
 And if you’re hit for 1 point of damage, you take zero points of damage.
 
 === Slow Fall (X)
-*Level 1, <<multilevel,multilevel>>, <<ritual,ritual>>*
+*Level 1, <<multilevel>>, <<ritual,ritual>>*
 
 You touch  a nonmagical wearable item, weighing at least 1
 <<Item Slots,item slot>> and worth at least _X_ silver pieces.
@@ -1885,7 +1933,7 @@ When the wearer has landed, the item loses one Usage Point. When all the item’
 Usage Points have been spent, the item crumbles to dust.
 
 === Snooze (X)
-*Level 1+, : <<multilevel,multilevel>>*
+*Level 1+, : <<multilevel>>*
 
 This spell can send one or more creatures to sleep, but it can only affect
 creatures that need regular sleep, and whose level isn't higher than _X_.
@@ -1904,7 +1952,7 @@ Creatures sleep for a number of rounds equal to your _charisma_, however a
 sleeping baddie wakes up if they take damage.
 
 === Spenser’s levitating Bowl
-*Level 1, <<ritual,ritual>>, duration: _intelligence_ · 10 minutes.*
+*Level 1, <<ritual,ritual>>, duration: _intelligence_ · 10 minutes*
 
 You conjure a large vaguely bowl-shape plate that can carry as many
 <<Item Slots,item slots>> as your _strength_ score.
@@ -1914,26 +1962,26 @@ adventurer. It is able to “climb” stairs and hills, but cannot scale walls o
 steep cliffs.
 
 === Spider Climb (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 1, <<focus>>, <<multilevel>>*
 
 This spell enables you to cling to almost any surface as long as it is not
 overly wet, oily, or slippery. You can spend 3 moves to spider-move 1 meter.
 The spell lasts _X_ minutes, but ends if you stop focusing on it.
 
 === Spout (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 1, <<focus>>, <<multilevel>>*
 
 You cause 10·_X_ liters of water to pour out of a wineskin, teapot, keg, or
 similar; at a speed of about 1 liter per round (10 liters per minute)
 
 === Strength of Stone (X)
-*Level 1, <<focus,focus>>, <<multilevel,multilevel>>, <<ritual,ritual>>*
+*Level 1, <<focus>>, <<multilevel>>, <<ritual,ritual>>*
 
 You target a willing ally within 2·_X_ meters, making all their _strength_ checks
 easy for a 2·_X_ rounds.
 
 === Taunt
-*Level 1, <<multilevel,multilevel>>, duration: 1 round*
+*Level 1, <<multilevel>>, duration: 1 round*
 
 You target _X_ creatures within 10+_X_ meters. For each target, if you can make a
 successful adversarial _charisma_ check (which is difficult if the target’s level
@@ -1941,15 +1989,15 @@ is higher than yours), the target will rush and attack you in melee combat on
 its next turn.
 
 === Tragic Missile (X)
-*Level 1+, <<multilevel,multilevel>>, range: _wisdom+X_ meters*
+*Level 1+, <<multilevel>>, range: _wisdom+X_ meters*
 
 You fire a frightening magical missile against a baddie within range. When
 struck, the baddie takes _X_ d4 damage, and then you make an
 <<adversarial_checks,adversarial>> _charisma_ check; if successful the baddie
-becomes <<demoralized,demoralized>>.
+becomes <<demoralized>>.
 
 === Vines (X)
-*Level 2, <<focus,focus>>, <<multilevel,multilevel>>*
+*Level 2, <<focus>>, <<multilevel>>*
 
 You target a point within 10+_X_ meters. Vines and wild growth sprouts from the
 ground in  a radius of _X_ meters around that point. Each creature inside the
@@ -1957,7 +2005,7 @@ affected area must make a successful _strength_, _dexterity_ or _intelligence_
 check (their choice) each round, or all they have zero moves that round.
 
 === Wizard’s Mark
-*Level 1, <<ritual,ritual>>, <<focus,focus>>*
+*Level 1, <<ritual,ritual>>, <<focus>>*
 
 Makes a piece of chalk magical so it makes invisible marks that only you can
 see.
@@ -1973,9 +2021,6 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //{{{DICTIONARY
 //START_SORT::
-
-
-
 
 Adventurer::
 All PCs start out as adventurers and have to level up to level 3 before they
@@ -2060,10 +2105,6 @@ successful check.
 
 Y.A.R.I.S::
 It’s an acronym: Yet Another Reduced Instruction Set.
-
-//END_SORT
-//}}}
-uction Set.
 
 //END_SORT
 

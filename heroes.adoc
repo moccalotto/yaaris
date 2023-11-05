@@ -10,3 +10,13 @@
 
 
 HEROES
+
+
+== Spells
+
+=== Detect Undead, Major
+*Level 4. Duration: _wisdom_ hours.*
+
+This spell works like Detect Undead, Minor, except that when you detect an
+undead creature, you roll a _intelligence_ check, and if it succeeds you
+discern whether the creature's level is higher than your own.
