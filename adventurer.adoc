@@ -1416,7 +1416,7 @@ again.
 The properties of a spell is listed in bold font right underneath the spell's
 name.
 
-//START_SORT//KEY
+//START_SORT//KEY:
 
 //KEY:
 [reftext="basic"]
