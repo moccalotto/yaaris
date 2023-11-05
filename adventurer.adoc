@@ -1262,8 +1262,9 @@ recovery dice.
 
 Conditions can affect characters and baddies.
 
-//START_SORT [[]]
+//START_SORT//KEY:
 
+//KEY:
 [reftext="comatose"]
 [[comatose]]
 Comatose:: You’re in a deep coma. If you receive conventional medical care, you
@@ -1271,6 +1272,7 @@ will wake up in a matter of hours; make a _constitution_ check every hour to see
 if you wake up. If you receive magical healing, you will wake up in a matter of
 minutes; make a _constitution_ check every minute to see if you wake up.
 
+//KEY:
 [reftext="demoralized"]
 [[demoralized]]
 Demoralized::
@@ -1278,12 +1280,15 @@ On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
 
+//KEY:
+[reftext="dying"]
 [[dying]]
 Dying:: You’re near death; you must roll on the <<Trauma Table>>. Every round,
 at the beginning of your turn, you must make a d20 roll; if you roll a
 <<nat1>>, you are no longer dying, but <<unconscious,unconscious>>, and if
 you rolled a nat20, you are dead.
 
+//KEY:
 [reftext="dungeon_mad"]
 [[dungeon_mad]]
 Dungeon Mad::
@@ -1296,17 +1301,20 @@ Encumbered::
 All checks become <<difficult>>, meaning that you
 have to roll 3 points lower than you normally would to succeed.
 
+//KEY:
 [reftext="exhausted"]
 [[exhausted]]
 Exhausted:: 
 Same as <<encumbered>> AND your number of moves is halved, rounded down.
 
+//KEY:
 [reftext="frightened"]
 [[frightened]]
 Frightened::
 You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
 
+//KEY:
 [reftext="on_fire"]
 [[on_fire]]
 On Fire::
@@ -1315,6 +1323,7 @@ you take 1d4 points of damage, and then you roll a _constitution_ check. If you
 succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a nat20, the damage die increases (for instance, from 1d4 to 1d6).
 
+//KEY:
 [reftext="poisoned"]
 [[poisoned]]
 Poisoned::
@@ -1324,7 +1333,7 @@ your stat loss, you make a _constitution_ check with
 removed. You die if any of your stats are reduced to zero. If you die from
 poison, only Greater Revival can restore you back to life.
 
-[reftext="Restrained"]
+//KEY:
 [reftext="restrained"]
 [[restrained]]
 Restrained::
@@ -1332,11 +1341,11 @@ Your hands and feet are restrained. You have only one <<moves,move>> each round.
 Depending on the circumstances, the GM might allow you to try and escape your
 bonds.
 
+//KEY:
 [reftext="unconscious"]
 [[unconscious]]
 Unconscious:: You are unconscious; if you receive any kind of healing, you will
 wake up right away, otherwise you will wake up within 2d6 hours.
-
 
 //END_SORT
 //}}}
