@@ -1152,7 +1152,7 @@ You roll a d6 to find out which stat to reduce. You rolled a 2, so your
 _dexterity_ is reduced by 1.
 
 You now have to roll on the <<death_table,Death Table>>: You roll a 53, meaning
-you're unconscious and <<dying,dying>>, which in turn means you will have to roll a
+you're unconscious and <<dying>>, which in turn means you will have to roll a
 d20 every round from now on, and a nat20 will result in your death.
 --
 
@@ -1185,10 +1185,10 @@ not suffer any trauma effects, you lucky bastard.
 | d100          | Effect
 | 100           | You’re destroyed.
 | 99            | You’re dead.
-| 76-98         | You’re comatose and dying.
-| 25-75         | You’re unconscious and dying.
-| 02-25         | You’re unconscious.
-| 1             | You’re still awake. At 1 HP, but prone.
+| 76-98         | You’re <<comatose>> and <<dying>>.
+| 25-75         | You’re <<unconscious>> and <<dying>>.
+| 02-25         | You’re <<unconscious>>.
+| 1             | You’re still awake. At 1 HP, but <<prone>>.
 |===
 
 Destroyed:: You’re extremely dead; You must roll twice on the Trauma Table and
@@ -1199,8 +1199,8 @@ so are grave.
 Dead:: You’re dead; you must roll on the <<trauma_table,trauma table>> (in case
 you are revived or turn into an undead).
 
-Dead, Dying, and Comatose:: These conditions are described in detail the
-<<CONDITIONS>>
+Dead, Dying, and Comatose:: These conditions are described in detail in the
+<<CONDITIONS>> section.
 
 ==== Trauma Table
 The trauma table is used when you take damage after being reduced to 0 hit points.
