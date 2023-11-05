@@ -1264,6 +1264,7 @@ Conditions can affect characters and baddies.
 
 //START_SORT [[]]
 
+[reftext="comatose"]
 [[comatose]]
 Comatose:: You’re in a deep coma. If you receive conventional medical care, you
 will wake up in a matter of hours; make a _constitution_ check every hour to see
@@ -1283,6 +1284,7 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 <<nat1>>, you are no longer dying, but <<unconscious,unconscious>>, and if
 you rolled a nat20, you are dead.
 
+[reftext="dungeon_mad"]
 [[dungeon_mad]]
 Dungeon Mad::
 You've been in complete darkness in a dungeon too long. Every hour you must
@@ -1294,15 +1296,18 @@ Encumbered::
 All checks become <<difficult>>, meaning that you
 have to roll 3 points lower than you normally would to succeed.
 
+[reftext="exhausted"]
 [[exhausted]]
 Exhausted:: 
 Same as <<encumbered>> AND your number of moves is halved, rounded down.
 
+[reftext="frightened"]
 [[frightened]]
 Frightened::
 You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
 
+[reftext="on_fire"]
 [[on_fire]]
 On Fire::
 You are on fire. At the start of every round, just before you get to act,
@@ -1310,6 +1315,7 @@ you take 1d4 points of damage, and then you roll a _constitution_ check. If you
 succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a nat20, the damage die increases (for instance, from 1d4 to 1d6).
 
+[reftext="poisoned"]
 [[poisoned]]
 Poisoned::
 You temporarily lose 1d4 points of a random stat every minute. After rolling
@@ -1319,12 +1325,14 @@ removed. You die if any of your stats are reduced to zero. If you die from
 poison, only Greater Revival can restore you back to life.
 
 [reftext="Restrained"]
+[reftext="restrained"]
 [[restrained]]
 Restrained::
 Your hands and feet are restrained. You have only one <<moves,move>> each round.
 Depending on the circumstances, the GM might allow you to try and escape your
 bonds.
 
+[reftext="unconscious"]
 [[unconscious]]
 Unconscious:: You are unconscious; if you receive any kind of healing, you will
 wake up right away, otherwise you will wake up within 2d6 hours.
@@ -1408,8 +1416,9 @@ again.
 The properties of a spell is listed in bold font right underneath the spell's
 name.
 
-//START_SORT[[]]
+//START_SORT//KEY
 
+//KEY:
 [reftext="basic"]
 [[basic]]
 basic::
@@ -1417,10 +1426,13 @@ All basic spells can be cast by adventurers, and all spells in this document
 are <<basic>>. Higher level characters have access to more advanced types
 of spells.
 
+//KEY:
+[reftext="duration"]
 [[duration]]
 duration::
 The duration of the spell
 
+//KEY:
 [reftext="focus"]
 [[focus]]
 focus::
@@ -1429,27 +1441,35 @@ cast another spell,
 take damage,
 or stop focusing on keeping the spell going.
 
+//KEY:
+[reftext="eftext="lvl"]
 [reftext="lvl"]
 [[lvl]]
 lvl::
 The level of the caster (i.e. not the spell). The potency, duration, or range
 of certain spell increases with the casters level.
 
+//KEY:
 [reftext="multilevel"]
 [[multilevel]]
 multilevel::
 There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example for an illustration.
 
+//KEY:
+[reftext="range"]
 [[range]]
 range::
 The range of the spell.
 
+//KEY:
+[reftext="ritual"]
 [[ritual]]
 ritual::
-These spells can be cast via Basic Ritual Casting, but can also be
+These spells can be cast via <<Basic Ritual Casting>>, but can also be
 cast normally via Basic Spellcasting.
 
+//KEY:
 [reftext="trance"]
 [[trance]]
 trance::
