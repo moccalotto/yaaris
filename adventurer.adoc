@@ -414,7 +414,7 @@ You always have some chalk. You always know the cardinal directions. You have
 advantage on checks that involve navigation in caves and dungeons. One of the
 ropes you carry does not take up an item slot. Aside from being unable to see,
 you do not suffer any debilitating effects from being alone in total darkness
-(which can otherwise cause you to suffer from dungeon madness ??????). You have
+(which can otherwise cause you to suffer from dungeon madness ???). You have
 advantage on consumption checks for <<Lamp Oil>> and <<Torch,Torches>>.
 
 //KEY:
@@ -956,22 +956,14 @@ restore 1 <<Usage Points,usage point>> to a torch. This cannot be done while
 the torch is lit. After revitalizing your torch, you roll a difficult _wisdom_
 check. If unsuccessful, the torch is destroyed, and cannot be lit.
 
-You can throw a torch and use it as a ranged weapon, but it is difficult. If
-you rolled a nat20 on your attack check, the torch is broken and cannot
-be repaired. The throwing range of a torch is 5 meters.
-
 You can use your torch as a light melee weapon, but it is difficult. If you
-roll a nat20 on your melee attack check, the torch breaks and cannot be
-repaired. If you roll a <<nat1>>, the target is set <<on_fire,on fire>>, dealing
-1d4 damage every round until it is put out.
+roll a <<nat20>> on your melee attack check, the torch breaks and cannot be
+repaired. If you roll a <<nat1>>, the target is set <<on_fire,on fire>>,
+dealing 1d4 damage every round until it is put out.
 
-.Light and visibility
-[sidebar]
-The radius/area of light from torches, lamps, lanterns, and even magical spells
-strongly depends on the setting; fog reduces the light's radius, terrain
-features might obscure visibility in general, and other factors, such as magic,
-also comes into play. It is therefore up to the GM, and not the rules, to
-determine what the PCs can see, based on these factors.
+You can throw a torch and use it as a ranged weapon, but it is difficult. If
+you rolled a <<nat20>> on your attack check, the torch is broken and cannot be
+repaired. The throwing range of a torch is 5 meters.
 
 //END_SORT
 
@@ -1004,21 +996,21 @@ result.
 This section is all about fighting 🤺
 
 === Rounds
-Combat is divided into 10-second rounds. At the beginning of each round, the
-initiative is rolled to determine who goes first. After that, each combatant
-gets to act once per round; this is called their turn.
+Combat is divided into 10-second rounds. At the beginning of every round, 
+the adventurers roll _initiative_, to determine in which order they get to
+act.
 
 During their turn, a combatant can do the following things in order.
 . Make up to 5 moves.
 . Take one action.
 
 === Initiative
-At the beginning of each round each PC makes an _intelligence_ check. If the PCs
-have more failed checks than there are combat capable baddies on the
-battlefield, the baddies get to go first that round.
+At the beginning of every round each adventurer makes an _intelligence_ check.
+If the adventurers have more failed checks than there are combat capable
+baddies on the battlefield, the baddies get to go first that round.
 
 The players act in the order in which they sit around the gaming table,
-clockwise from the GMs. The baddies act in whatever order the GM wishes.
+clockwise from the GM, and the baddies act in whatever order the GM wishes.
 
 === Moves
 You have 5 moves you can take before you take your main action.
@@ -1569,7 +1561,7 @@ towards you, is now simply cautious.
 === Armor (X)
 *Level 1, <<multilevel>>, <<ritual>>*
 
-?????????????????????????????????????????????????
+???
 
 === Banking Transaction (X)
 *Level 3, <<multilevel>>, duration: 5 minutes*
@@ -1717,7 +1709,7 @@ Check,attack>>- or <<Defense,defense check>>, provided it occurs within _X_+1
 rounds.
 
 === Find Flora & Fauna
-*Level 1, <<focus>>,  ??????*
+*Level 1, <<focus>>,  ???*
 
 
 === Flaming Fingers (X)
