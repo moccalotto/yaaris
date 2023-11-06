@@ -2105,6 +2105,14 @@ You roll your d20 against a given target number (usually one of your stats). +
 _For example: when rolling a strength check you roll a d20 and must roll lower
 than your strength to succeed._
 
+Defense check, melee::
+A check to avoid being hit by melee attacks. This is an <<adversarial>>
+_dexterity_ check.
+
+Defense ranged, melee::
+A check to avoid being hit by ranged attack. This is an <<adversarial>>
+_wisdom_ check.
+
 Difficult::
 Difficult checks have a target number that’s 3 lower than normal checks.
 
@@ -2127,14 +2135,6 @@ first.
 Level (lvl)::
 A character can have a level between 1 and 10. Baddies, traps, locks, spells,
 and various tasks can also have a level.
-
-Defense check, melee::
-A check to avoid being hit by melee attacks. This is an <<adversarial>>
-_dexterity_ check.
-
-Defense ranged, melee::
-A check to avoid being hit by ranged attack. This is an <<adversarial>>
-_wisdom_ check.
 
 NPC and NPCs::
 Non player character(s). These persons and creatures are played by the GM.
