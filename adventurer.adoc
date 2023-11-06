@@ -7,6 +7,7 @@
 :toc-placement!:
 :experimental:
 :stem:
+:xrefstyle: basic
 
 This document contains character creation and game mechanics, as well as gear,
 spells, and abilities for characters of first and second level.
@@ -21,12 +22,13 @@ you’re done, you’re ready for adventure.
 === Stats
 Your character has 6 primary stats:
 
-Strength::      is used for melee attacks, jock stuff and carrying gear.
-Dexterity::     is used for stealth, melee defense, and tricky tasks.
-Constitution::  is used for carrying gear and surviving bad trauma.
-Intelligence::  is used for initiative, magic, and managing resources.
-Wisdom::        is used for ranged attack, ranged defense, and perception.
-Charisma::      is used for luck, negotiation, charm magic, and selling treasure.
+[horizontal]
+Strength::      melee attacks, jock stuff and carrying gear.
+Dexterity::     stealth, melee defense, and tricky tasks.
+Constitution::  carrying gear and surviving bad trauma.
+Intelligence::  initiative, magic, and managing resources.
+Wisdom::        ranged attack, ranged defense, and perception.
+Charisma::      luck, negotiation, charm magic, and selling treasure.
 
 === Extra Stuff
 
@@ -37,12 +39,14 @@ also have levels
 Hit points (HP):: is your current number of hit points. Bad stuff happens if
 you <<zero_hp,run out of HP>>.
 
+[reftext="hit point total"]
 [[hit_point_total]]
 Hit point total:: is the maximum number of hit points you can have. I.e. the
 number of HP you have when you're at full health. This number increases every
 time you gain a new level, and wearing armor
 can also increase this number
 
+[reftext="recovery die"]
 [[recovery_die]]
 Recovery die:: is the die you roll (one or more of) to regain hit points when
 you rest or receive magical healing. You start with a recovery die of d8.
@@ -222,9 +226,11 @@ Roll twice on the <<utility_gear_2>> table.
 If the second roll is the same as the first roll,
 reroll it.
 
+[%unbreakable]
+--
 [[utility_gear_2]]
 .Utility Gear 2
-[%header,cols="^1,11",grid=none,frame=none,stripes=even]
+[%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
 //-----|-----------
 | 1d10 | Item
@@ -241,6 +247,7 @@ reroll it.
 | 10   | <<Map Making Tools>>
 //-----|-----------
 |===
+--
 
 === All Done
 Now it’s time to read about the adventurer class and then check out the
@@ -273,8 +280,9 @@ have to roll on the death table.
 
 ==== Armor Skills
 You  are skilled at using light shields and light armors. If you are wearing an
-armor you're not skilled at using, you become <<encumbered,encumbered>>.
-See the <<Armor>> section for more info.
+armor you're not skilled at using, you lose one <<Moves,move>>.
+See the <<Armor>> section for more info and pay attention to what happens if you're
+wearing broken armor.
 
 ==== Weapon Skills
 You are skilled at using light melee weapons and ranged weapons. On the
@@ -325,14 +333,14 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 
 //START_SORT//KEY:
 
-KEY:
+//KEY:
 [reftext="armorer"]
 [[armorer]]
 Armorer:: 
 You can repair a piece of broken armor if you have the right tools. See
 <<Tinkering Tools>> for more information.
 
-KEY:
+//KEY:
 [reftext="everdeen"]
 [[everdeen]]
 Everdeen::
@@ -342,13 +350,13 @@ you’re ready to fire. If unsuccessful, you cannot use this ability before you
 have stocked up on ammunition. This ability also works with bolts, slingshots,
 and darts.
 
-KEY:
+//KEY:
 [reftext="great_weapon_specialist"]
 [[great_weapon_specialist]]
 Great weapon specialist::
 You are skilled at using heavy melee weapons.
 
-KEY:
+//KEY:
 [reftext="monstrous_gourmand"]
 [[monstrous_gourmand]]
 Monstrous Gourmand::
@@ -361,14 +369,14 @@ to eat fresh, uncooked, monster meat without getting sick. It requires a sharp
 cutting tool, 3d6 minutes, and a successful _constitution_ check to create and
 eat such a “meal”.
 
-KEY:
+//KEY:
 [reftext="negotiator"]
 [[negotiator]]
 Negotiator::
 You have advantage on checks that involve negotiation. You also have advantage
 on haggle checks (see <<the_haggling_check,The haggling check>>).
 
-KEY:
+//KEY:
 [reftext="pugilist"]
 [[pugilist]]
 Pugilist::
@@ -379,7 +387,7 @@ or heavy armor pieces, your unarmed damage die is increased to 1d6.
 WARNING: Striking certain dangerous monsters (such as fire elementals) with
 your body can have grave consequences.
 
-KEY:
+//KEY:
 [reftext="rider"]
 [[rider]]
 Rider::
@@ -389,7 +397,7 @@ You have advantage on <<Consumption Check,consumption checks>>for animal feed.
 When you reach level 5 your riding proficiency expands to all rideable land
 creatures. At level 8, you can ride virtually any tame creature.
 
-KEY:
+//KEY:
 [reftext="shady"]
 [[shady]]
 Shady::
@@ -398,7 +406,7 @@ or… somewhere. If your check fails, you cannot do it again for the rest of the
 session. In combat, this feat requires 3 moves. You are also skilled at using a
 <<Kosh,kosh>>, something normal adventurers are not.
 
-KEY:
+//KEY:
 [reftext="spelunker"]
 [[spelunker]]
 Spelunker::
@@ -409,13 +417,13 @@ you do not suffer any debilitating effects from being alone in total darkness
 (which can otherwise cause you to suffer from dungeon madness ??????). You have
 advantage on consumption checks for <<Lamp Oil>> and <<Torch,Torches>>.
 
-KEY:
+//KEY:
 [reftext="thrifty"]
 [[thrifty]]
 Thrifty::
 You have advantage on consumption checks with <<Purse,coin purses>>.
 
-KEY:
+//KEY:
 [reftext="traveler"]
 [[traveler]]
 Traveler::
@@ -426,8 +434,8 @@ take up an item slot.
 
 === Level 3: Graduation
 It is time for you to move on. You’re no longer just an adventurer, you’re a
-Hero. Choose a hero class from the 
-xref:heroes#[Hero’s Guide to doom & destruction & stuff].
+Hero. Choose a hero class from the xref:heroes#[Hero’s Guide to doom &
+destruction & stuff].
 
 //}}}
 
@@ -437,7 +445,8 @@ You begin at level 1, and you can gain levels until you reach level 10. You
 gain levels by acquiring suitable treasures. For a team of level _X_
 adventurers to gain a new level, they must acquire _X_ suitable treasures. This
 document only deals with levels 1 and 2. Once you reach level 3, you become a
-hero; see xref:heroes#[Hero’s Guide to doom & destruction & stuff] for more info.
+hero; see xref:heroes#[Hero’s Guide to doom & destruction & stuff] for more
+info.
 
 [discrete]
 ==== Acquire
@@ -488,18 +497,18 @@ check was successful, otherwise it was unsuccessful.
 
 [reftext="nat1"]
 [[nat1]]
-Rolling a 1::
-Checks are always successful if you roll a 1 on your d20, this is called a _nat1_.
+Rolling a 1:: Checks are always successful if you roll a 1 on your d20, this is
+called a _nat1_.
 
 [reftext="nat20"]
 [[nat20]]
-Rolling a 20::
-Checks are always unsuccessful if you roll a 20 on your d20. This is called a _nat20_.
+Rolling a 20:: Checks are always unsuccessful if you roll a 20 on your d20.
+This is called a _nat20_.
 
 [reftext="easy"]
 [[easy]]
-Easy checks::
-are checks where the target number is 3 higher than what it would normally be.
+Easy checks:: are checks where the target number is 3 higher than what it would
+normally be.
 
 .Easy strength check
 ====
@@ -508,16 +517,16 @@ if your _strength_ is 9, making an easy _strength_ check would need to roll unde
 
 [reftext="difficult"]
 [[difficult]]
-Difficult checks::
-are checks where the target number is 3 lower than what it normally would be.
+Difficult checks:: are checks where the target number is 3 lower than what it
+normally would be.
 
 .Difficult strength check
 [example]
 if your _strength_ is 9, making a difficult _strength_ check would need to roll under 6.
 
-Both = Difficult::
-If one or more conditions make a check <<difficult>>, it remains difficult if
-there are other many other circumstances that would have made the check
+Both = Difficult:: If one or more conditions make a check <<difficult>>, it
+remains difficult if there are other many other circumstances that would have
+made the check
 <<easy>>.
 
 .Both = Difficult
@@ -657,12 +666,12 @@ Repairable Items:: A repairable item (such as a piece of armor or a spellbook)
 has a maximum number of <<Usage Points,usage points>>, and a current number of
 <<Usage Points,usage points>>. As a repairable item is used, it loses its
 Current <<Usage Points,usage points>>, and it becomes unusable when it reaches
-zero. It can be repaired, but never regain more than its Maximum
-<<Usage Points,usage points>>.
+zero. It can be repaired, but never regain more than its Maximum <<Usage
+Points,usage points>>.
 
 Exactly how a repairable item loses its <<Usage Points,usage points>>, and how
 it is repaired again, depends on the type of item; see the
-<<Basic Spellcasting>>, and <<Weapon Damage>> for more info.
+<<Basic Spellcasting>>, and <<Weapon Wear>> for more info.
 
 === Gear
 
@@ -1012,31 +1021,35 @@ The players act in the order in which they sit around the gaming table,
 clockwise from the GMs. The baddies act in whatever order the GM wishes.
 
 === Moves
-An adventurer has 5 moves, and here are some examples on how to use them.
+You have 5 moves you can take before you take your main action.
+You can use them in many ways, and here's some examples.
+
+.Moves
+[%header,cols="11,^1"]
+|===
+| Description                                   | Moves
+//----------------------------------------------|------
+| Move 1 meter in good terrain                  |   1
+| Ready a potion from a belt pouch              |   1
+| Draw a weapon from your sheath or equivalent  |   1
+| Switch to a new quiver                        |   1
+| Drop a light shield [[drop_light_shield]]     |   1
+| Open a door                                   |   2
+| Mount or dismount                             |   2
+| Move 1 meter in bad terrain                   |   2
+| Get up from a prone position                  |   2
+| Remove your gauntlets                         |   4
+| Remove your helmet                            |   4
+| Drop a functional heavy shield                |   5
+| Ready a spellbook from your backpack          |   5
+//----------------------------------------------|------
+|===
 
 IMPORTANT: Moves do not carry over to the next round; use them or lose them.
 
-.Moves
-[%header,cols="^1,11"]
-|===
-| Moves | Description
-| 1     | Move 1 meter in good terrain
-| 1     | Ready a potion from a belt pouch
-| 1     | Draw a weapon from your sheath or equivalent
-| 1     | Switch to a new quiver
-| 1     | Drop a light shield
-| 2     | Open a door
-| 2     | Mount or dismount
-| 2     | Move 1 meter in bad terrain
-| 2     | Get up from a prone position
-| 4     | Remove your helmet
-| 5     | Drop a functional heavy shield
-| 5     | Ready a spellbook from your backpack
-|===
-
 === Actions
-When a character has performed their moves, they get to take their action.
-Here are some examples of actions:
+When you have made your moves, you can take your action. 
+Here's some examples:
 
 * Attack with a readied weapon.
 * Unarmed attack.
@@ -1044,37 +1057,21 @@ Here are some examples of actions:
 * Cast a spell with a readied spellbook via <<Basic Spellcasting>>.
 * Drop an heavy shield.
 * Use a special ability.
+* Get three extra moves.
 
-An action can also be converted to 3 moves that must be used right away, and do
-not carry over to the next round.
-
+[[attack_and_damage]]
 === Attacks & Damage
 
-Whenever you attack someone, you must first make an attack check.
-After that, you make your damage roll, which depends on the type of weapon you're using,
-and whether or not you are skilled at using said weapon.
+When you attack a baddie, you make an attack check. If you're making a ranged 
+attack, you make an <<adversarial>> _wisdom_ check, and if you're making 
+a melee attack you make an <<adversarial>> _dexterity_ check.
 
-==== Attack Check
-
-To hit a baddie you must roll an attack check. There are two types of attack check:
-ranged and melee.
-
-Melee::
-When you use melee weapons or unarmed combat, the attack check is an
-<<adversarial>> _strength_ check.
-
-Ranged::
-When you use ranged weapons, the attack check is an <<adversarial>> _wisdom_ check.
-
-[IMPORTANT]
-====
-* If you attack someone who is 2 or more levels higher than you, your attack check is difficult.
-* If you are not <<Weapon Skills,skilled>> at using your weapon, your check is difficult.
-====
+IMPORTANT: Your attack check is _difficult_ if you're not <<skilled>>
+at using your weapon.
 
 ==== Damage Roll
-When you hit a baddie, you roll a die to see how much damage you deal.
-The die depends on the type of weapon you used.
+When you've made an attack, and your attack check succeeded, you roll damage,
+and the baddie loses that many <<Hit Points,hit points>>
 
 See the <<adventurer_damage_rolls_table>> table to find your damage die.
 
@@ -1093,16 +1090,9 @@ repaired before it can be used again. It can be repaired by a weaponsmith, a
 process that takes hours of work and requires a weaponsmith workshop.
 
 === Defense
-When a baddie attacks you, you make a defense check to see if you avoid the
-damage. The GM does not make an attack check for the baddie.
-
-Melee Defense Check:: When a baddie attacks you in melee combat, you make a
-_dexterity_ check. If successful, you dodge the attack. If you’re unsuccessful,
-you lose a number of hit points equal to the attacker’s damage check.
-
-Ranged Defense Check:: When a baddie attacks you at range, you make a _wisdom_
-check. If you succeed, you dodge the attack, but if you fail the check, you’re
-hit and take damage.
+When a baddie tries to attack you, you make a defense check. If it was a
+ranged attack, you make an <<adversarial>> _wisdom_ check, and if it was
+a melee attack, you make an <<adversarial>> _dexterity_ check.
 
 ==== Armor
 You can wear up to five pieces of armor: a helmet, a cuirass, a gauntlet, of
@@ -1112,35 +1102,57 @@ greaves, and a shield.
 Each piece of armor you wear increases your hit point total by a number of
 points. The better the armor piece, the more hit points you get.
 
-When you don armor, your <<hit_point_total,hit point total>> and your current
+When you don armor, your <<hit_point_total>> and your current
 number of hit points both increase by the number of hit points provided by the
 armor piece.
 
-When you doff armor, your <<hit_point_total,hit point total>> and your current
+When you doff armor, your <<hit_point_total>> and your current
 number of hit points both decrease by the number of hit points provided by the
 armor piece. (which means that, technically, you can die if you are very low on
 hit points and remove an armor piece).
 
 ===== Armor Requires Skill
-If you are wearing one or more armor pieces that you are not proficient with,
-you become <<encumbered,encumbered>>, which makes every check you make difficult.
+For every piece of armor you're wearing, that you're not skilled at using, 
+you lose one <<Moves,move>>.
 
 ===== Armor Wears Out
-If you roll a <<nat20,nat20>> on you Defense Check, and the damage dealt
-was higher than your worst armor piece (the one that provided fewest hit points),
-that armor piece becomes broken, and no longer provides any hit points.
+If you roll a <<nat20>> on your <<Defense,defense check>>, one of the armor
+pieces you're wearing (your choice) takes as much damage as you did from that
+attack, which means that the number of extra Hit Points it grants is reduced by
+that amount. If an armor piece is reduced to zero hit points, it becomes
+broken, and for each broken piece of armor you're wearing, you lose one
+<<Moves,move>>.
 
-WARNING: if you're wearing two or more pieces of broken armor, you become
-<<encumbered,encumbered>>.
+NOTE: yes, if you're wearing a piece of broken armor that you're not using, you
+lose a _two_ <<Moves,moves>>; one because you're unskilled, and the other
+because the armor piece is broken.
 
-IMPORTANT:
 ====
-The armor can be repaired. So you should make a note of how many HP the armor
-piece granted initially.
+You've just been attacked and rolled a natural twenty on your defense check,
+and you take 5 points of damage. You must now select an armor piece that has
+at least one hit point, and reduce its hit points by 5.
 
-But Only an <<armorer,armorer>> can restore the armor piece to its former
-glory.
+You have a Light Shield (2 hp), a Light Helmet (2 hp) and a Light Cuirass (3 hp).
+You also have Light Gauntlets that normally provides 2 hp, but they were broken
+earlier in this battle, so you cannot chose them. You choose the shield,
+and mark it as providing zero hit points, which also means it's broken.
+You're now wearing two broken pieces of armor, which makes you have two
+less <<Moves,moves>> (you normally have 5 moves, but now you only have 3).
+
+Lucky for you, it only requires a single move to <<drop_light_shield,drop a
+Light Shield>>, so you can easily get up to having 4 moves. If you want to get
+back up to 5 moves, you
+would have to remove your gauntlets, a task that would require 4 moves.
 ====
+
+.Armor can be repaired
+[sidebar]
+--
+Armor pieces can be repaired. So you should make a note of how many hit points
+the armor piece initially provided.
+
+But only an <<armorer>> can restore the armor piece to its former glory.
+--
 
 === Damage and Death
 When you hit a baddie, you roll a damage roll to see how many points of damage
@@ -1266,7 +1278,7 @@ The Hero's guide and Elite's guide.
 
 === Healing and regeneration
 You can regain hit points in various ways, but you can never heal or be healed
-beyond your <<hit_point_total,hit point total>>.
+beyond your <<hit_point_total>>.
 
 Resting:: Resting for 8 hours, at least six of which are spent sleeping, will
 allow you to regenerate a bit; roll your <<recovery_die,recovery die>>, and
@@ -2116,8 +2128,13 @@ Level (lvl)::
 A character can have a level between 1 and 10. Baddies, traps, locks, spells,
 and various tasks can also have a level.
 
-Melee defense check::
-A check to avoid being hit. This is an <<adversarial>> _dexterity_ check.
+Defense check, melee::
+A check to avoid being hit by melee attacks. This is an <<adversarial>>
+_dexterity_ check.
+
+Defense ranged, melee::
+A check to avoid being hit by ranged attack. This is an <<adversarial>>
+_wisdom_ check.
 
 NPC and NPCs::
 Non player character(s). These persons and creatures are played by the GM.
