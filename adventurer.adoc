@@ -22,43 +22,46 @@ you’re done, you’re ready for adventure.
 === Stats
 Your character has 6 primary stats:
 
+[%unbreakable]
+--
 [horizontal]
-Strength::      melee attacks, jock stuff and carrying gear.
-Dexterity::     stealth, melee defense, and tricky tasks.
-Constitution::  carrying gear and surviving bad trauma.
-Intelligence::  initiative, magic, and managing resources.
-Wisdom::        ranged attack, ranged defense, and perception.
-Charisma::      luck, negotiation, charm magic, and selling treasure.
+Strength     :: melee attacks, jock stuff and carrying gear.
+Dexterity    :: stealth, melee defense, and tricky tasks.
+Constitution :: carrying gear and surviving bad trauma.
+Intelligence :: initiative, magic, and managing resources.
+Wisdom       :: ranged attack, ranged defense, and perception.
+Charisma     :: luck, negotiation, charm magic, and selling treasure.
+--
 
 === Extra Stuff
 
-Level:: your character's level is a measure of their badassity. You start at
+*Level*: your character's level is a measure of their badassity. You start at
 level 1 and max out at level 10. Baddies, spells, certain items and tasks
-also have levels
+also have levels.
 
-Hit points (HP):: is your current number of hit points. Bad stuff happens if
-you <<zero_hp,run out of HP>>.
+*Hit points (HP)*: is your current number of hit points. Bad stuff happens if
+you <<zero_hp,run out of hit points>>.
 
 [reftext="hit point total"]
 [[hit_point_total]]
-Hit point total:: is the maximum number of hit points you can have. I.e. the
+*Hit point total*: is the maximum number of hit points you can have. I.e. the
 number of HP you have when you're at full health. This number increases every
 time you gain a new level, and wearing armor
-can also increase this number
+can also increase this number.
 
 [reftext="recovery die"]
 [[recovery_die]]
-Recovery die:: is the die you roll (one or more of) to regain hit points when
+*Recovery die*: is the die you roll (one or more of) to regain hit points when
 you rest or receive magical healing. You start with a recovery die of d8.
 
-Total item slots:: is the maximum number of <<item_slots,items>> you can carry.
-This number is the highest of your _strength_ and _constitution_.
+*Total item slots*: is the maximum number of <<item_slots,items>> you can
+carry. This number is the highest of your _strength_ and _constitution_.
 
-Unencumbered item slots:: is the number of items you can carry without being
+*Unencumbered item slots*: is the number of items you can carry without being
 encumbered. This number is the lowest of your _strength_ and _constitution_.
 
-Moves:: is the number of meters you can move in a round. You can also use moves
-to do other interesting <<Moves,things>>.
+*Moves*: is the number of meters you can move in a round. You can also use
+moves to do other interesting <<Moves,things>>.
 // }}}
 
 // {{{ CREATE YOUR ADVENTURER
@@ -180,8 +183,8 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 
 [%header,cols="^2,10"]
 |===
-//------|-----------
 |d6     | Weapon
+//------|-----------
 |1-3:   | No Ranged Weapon.
 |4:     | Slingshot + Bag of stones.
 |5:     | Bow + Quiver of arrows.
@@ -206,8 +209,8 @@ Roll once on the <<utility_gear_1>> table.
 .Utility Gear 1
 [%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
-//-----|-----------
 | 1d10 | Item
+//-----|-----------
 | 1    | <<ration_pack_iron,Ration pack, iron>>
 | 2    | grappling hook
 | 3    | <<storm_lantern>>
@@ -402,6 +405,9 @@ sleeve or… somewhere. If your check fails, you cannot do it again for the rest
 of the session. In combat, this feat requires 3 moves. You are also skilled at
 using a <<Kosh,kosh>>, something normal adventurers are not.
 
+WARNING: The gods do not smile on people who use this ability to get rich by selling
+daggers.
+
 //KEY:
 [reftext="spelunker"]
 [[spelunker]]
@@ -447,7 +453,7 @@ info.
 Acquiring a treasure means, recovering it (possibly by liberating it from
 baddies), and getting it safely back to your base of operations. Since a
 hundred coins take up an entire item slot, it can be necessary to make multiple
-trips to recover a large treasure. 
+trips to recover a large treasure.
 
 [discrete]
 ==== Suitable
@@ -596,9 +602,9 @@ items and equipment exist.
 
 === Money
 The weight of a few coins is negligible, but in large quantities, 100 coins
-take up one <<item_slots,item slot>>. 
+take up one <<item_slots,item slot>>.
 A gold piece is equivalent to 100 silver pieces, a silver piece is 100 copper
-pieces. 
+pieces.
 
 [reftext="item slots"]
 [[item_slots]]
@@ -662,11 +668,11 @@ the shot.
 has a maximum number of <<usage_points>>, and a current number of
 <<usage_points>>. As a repairable item is used, it loses its
 Current <<usage_points>>, and it becomes unusable when it reaches
-zero. It can be repaired, but never regain more than its Maximum 
+zero. It can be repaired, but never regain more than its Maximum
 <<usage_points>>.
 
 Exactly how a repairable item loses its <<usage_points>>,
-and how it is repaired again, depends on the type of item; see the 
+and how it is repaired again, depends on the type of item; see the
 <<basic_spellcasting>>, and <<weapon_wear>> for more info.
 
 === Gear
@@ -674,18 +680,18 @@ and how it is repaired again, depends on the type of item; see the
 .General Gear
 [%header,cols="10,^1,^1"]
 |===
-//----------------------|---|---------
 | Name                  | IS| Cost
-| Pole, 3m foldable     | 2 | 5  cp
-| Ladder, 2m            | 2 | 10 cp
-| Rope, 25m             | 2 |
-| Rope, 10m             | 1 |
-| Shovel                | 1 |
-| Clothing, poor        | 1 |
-| Clothing moderate     | 1 |
-| Clothing, wealthy     | 1 |
-| Backpack              | 1 |
-| Flint and steel       | 0 | 1  cp
+//----------------------|---|---------
+| pole, 3m foldable     | 2 | 5  cp
+| ladder, 2m            | 2 | 10 cp
+| rope, 25m             | 2 |
+| rope, 10m             | 1 |
+| shovel                | 1 |
+| clothing, poor        | 1 |
+| clothing moderate     | 1 |
+| clothing, wealthy     | 1 |
+| backpack              | 1 |
+| flint and steel       | 0 | 1  cp
 //----------------------|---|---------
 |===
 
@@ -717,7 +723,7 @@ and how it is repaired again, depends on the type of item; see the
 .Light Armor
 [%header,cols="9,^1,^1,^1"]
 |===
-| Name                  | IS| HP| Cost
+| Armor Piece           | IS| HP| Cost
 //----------------------|---|---|-----------
 | Light Shield          | 1 | 2 | 8     gp
 | Light Helmet          | 1 | 2 | 8     gp
@@ -730,7 +736,7 @@ and how it is repaired again, depends on the type of item; see the
 .Medium Armor
 [%header,cols="9,^1,^1,^1"]
 |===
-| Name                  | IS| HP| Cost
+| Armor Piece           | IS| HP| Cost
 //----------------------|---|---|-----------
 | Medium Shield         | 2 | 4 | 64    gp
 | Medium Helmet         | 2 | 4 | 64    gp
@@ -744,7 +750,7 @@ and how it is repaired again, depends on the type of item; see the
 .Heavy Armor
 [%header,cols="9,^1,^1,^1"]
 |===
-| Name                  | IS| HP| Cost
+| Armor Piece           | IS| HP| Cost
 //----------------------|---|---|-----------
 | Heavy Shield          | 3 | 6 | 216   gp
 | Heavy Helmet          | 3 | 6 | 216   gp
@@ -801,8 +807,8 @@ A two-handed weapon costs 6gp and takes up 2 <<usage_points>>.
 |===
 
 [quote]
-You can target baddies who are 2·_wisdom_ meters away, but if they are more
-than _wisdom_ meters away, the <<attack_and_damage,attack check>> is
+You can attack baddies who are up to 2·_wisdom_ meters away, but if they are
+more than _wisdom_ meters away, the <<attack_and_damage,attack check>> is
 <<difficult>>.
 
 === Special Items
@@ -854,7 +860,7 @@ gold purse instead.
 [[coins]]
 ==== Coins
 
-Small amounts of counts do not take up any room, but 100 coins 
+Small amounts of counts do not take up any room, but 100 coins
 take up 1 <<item_slots,item slot>>, and generally requires a coin
 sack to contain.
 
@@ -1075,7 +1081,7 @@ result.
 This section is all about fighting 🤺
 
 === Rounds
-Combat is divided into 10-second rounds. At the beginning of every round, 
+Combat is divided into 10-second rounds. At the beginning of every round,
 the adventurers roll _initiative_, to determine in which order they get to
 act.
 
@@ -1119,7 +1125,7 @@ You can use them in many ways, and here's some examples.
 IMPORTANT: Moves do not carry over to the next round; use them or lose them.
 
 === Actions
-When you have made your moves, you can take your action. 
+When you have made your moves, you can take your action.
 Here's some examples:
 
 * Attack with a readied weapon.
@@ -1133,8 +1139,8 @@ Here's some examples:
 [[attack_and_damage]]
 === Attacks & Damage
 
-When you attack a baddie, you make an attack check. If you're making a ranged 
-attack, you make an <<adversarial>> _wisdom_ check, and if you're making 
+When you attack a baddie, you make an attack check. If you're making a ranged
+attack, you make an <<adversarial>> _wisdom_ check, and if you're making
 a melee attack you make an <<adversarial>> _dexterity_ check.
 
 IMPORTANT: Your attack check is _difficult_ if you're not
@@ -1186,7 +1192,7 @@ armor piece. (which means that, technically, you can die if you are very low on
 hit points and remove an armor piece).
 
 ===== Armor Requires Skill
-For every piece of armor you're wearing, that you're not skilled at using, 
+For every piece of armor you're wearing, that you're not skilled at using,
 you lose one <<Moves,move>>.
 
 ===== Armor Wears Out
@@ -1289,20 +1295,22 @@ You then roll on the <<trauma_table>> and add 5 to your d100 roll
 not suffer any trauma effects, you lucky bastard.
 --
 
-==== Death table
+==== Death Table
 
 [reftext="death table"]
 [[death_table]]
 .Death Table
-[%header,cols="^1,11",grid=none,frame=none,stripes=odd]
+[%header,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
 | d100          | Effect
+//--------------|--------------------------------------------------
 | 100           | You’re destroyed.
 | 99            | You’re dead.
 | 76-98         | You’re <<comatose>> and <<dying>>.
 | 25-75         | You’re <<unconscious>> and <<dying>>.
 | 02-25         | You’re <<unconscious>>.
 | 1             | You’re still awake. At 1 HP, but <<prone>>.
+//--------------|--------------------------------------------------
 |===
 
 *Destroyed*: You’re extremely dead; You must roll twice on the Trauma Table and
@@ -1326,6 +1334,7 @@ points.
 [%header,cols="^1,^2,8",stripes=even,frame=none,grid=none]
 |===
 | Roll      | Type          | Effect
+//----------|---------------|------------------------------
 | 101+      | Amputation    | Lose a random limb
 | 100       | Permanent     | -1d4 to random stat
 | 89-99     | Permanent     | -1d8 maximum hit points
@@ -1338,6 +1347,7 @@ points.
 | 31-40     | Temporary     | 1d8 to maximum hit points
 | 21-30     | Reversible    | Battle scar
 | 01-20     | -             | No trauma.
+//----------|---------------|------------------------------
 |===
 
 [horizontal]
@@ -1367,7 +1377,7 @@ increase your hit points by that number. Aside from sleeping, eating, and
 keeping watch, you cannot do anything of consequence while resting.
 
 ____
-You can regenerate 1d8 hit points after a meal, 6 hours of sleep, 
+You can regenerate 1d8 hit points after a meal, 6 hours of sleep,
 and two hours of rest.
 ____
 
@@ -1472,7 +1482,7 @@ wake up right away, otherwise you will wake up within 2d6 hours.
 == MAGIC
 
 === Spellbooks
-A spellbook is a magical tome, book, or scroll. It takes up one 
+A spellbook is a magical tome, book, or scroll. It takes up one
 <<item_slots,item slot>>, contains a single spell and can only be used if it
 has enough magical charge.
 
@@ -1732,7 +1742,7 @@ can be interpreted in many ways (drop the thing you’re holding, or drop prone,
 or drop the subject).
 
 === Command Fire (X)
-*Level 1, <<trance>>, 
+*Level 1, <<trance>>,
 <<multilevel>>, range: 2·_X_ meters, duration: 2·_X_ minutes*
 
 When you've just cast the spell you select a fire. It can be as small as a
@@ -1794,7 +1804,7 @@ focusing on it.
 === Detect Undead, Lesser
 *Level 1. Duration: _wisdom_ hours*
 
-You can feel when one or more undead creatures are within _wisdom_ meters of 
+You can feel when one or more undead creatures are within _wisdom_ meters of
 you. You can detect undead creatures through most walls, but not it cannot
 penetrate more than one meter of rock or one centimeter of lead.
 
@@ -2081,7 +2091,7 @@ And if you’re hit for 1 point of damage, you take zero points of damage.
 === Slow Fall (X)
 *Level 1, <<multilevel>>, <<ritual>>*
 
-You touch  a nonmagical wearable item, weighing at least 1 
+You touch  a nonmagical wearable item, weighing at least 1
 <<item_slots,item slot>> and worth at least _X_ silver pieces. The item becomes
 a consumable magical item with _X_ <<usage_points>>. When the
 wearer of such an item falls more than one meter, the magic in the item
@@ -2177,96 +2187,76 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 //}}}
 
 //{{{DICTIONARY
+
+== DICTIONARY
+
 //START_SORT::
 
-Adventurer::
-All PCs start out as adventurers and have to level up to level 3 before they
-can get their hero class.
-
-Adversarial check::
-A check that is affected by the level of the opposition. For instance, if
+*Adventurer*: All PCs start out as adventurers and have to level up to level 3 before they
+can get their hero class. +
+//
+*Adversarial check*: A check that is affected by the level of the opposition. For instance, if
 you're attacking a baddie who is 2 or more levels higher than you, your check
-is difficult.
-
-Attack check, melee::
-A check to hit an opponent. It's an <<adversarial>> _strength_ check, and it is
-difficult if you're not skilled at using the given weapon.
-
-Attack check, ranged::
-A check to hit an opponent. It's an <<adversarial>> _wisdom_ check, and it is
-difficult if you're not skilled at using the given weapon.
-
-Baddie::
-A person, creature, or monster that is hostile or otherwise considered to be
-your enemy.
-
-Check::
-You roll your d20 against a given target number (usually one of your stats). +
+is difficult. +
+//
+*Attack check, melee*: A check to hit an opponent. It's an <<adversarial>> _strength_ check, and it is
+difficult if you're not skilled at using the given weapon. +
+//
+*Attack check, ranged*: A check to hit an opponent. It's an <<adversarial>> _wisdom_ check, and it is
+difficult if you're not skilled at using the given weapon. +
+//
+*Baddie*: A person, creature, or monster that is hostile or otherwise considered to be
+your enemy. +
+//
+*Check*: You roll your d20 against a given target number (usually one of your stats). +
 _For example: when rolling a strength check you roll a d20 and must roll lower
-than your strength to succeed._
-
-Defense check, melee::
-A check to avoid being hit by melee attacks. This is an <<adversarial>>
-_dexterity_ check.
-
-Defense ranged, melee::
-A check to avoid being hit by ranged attack. This is an <<adversarial>>
-_wisdom_ check.
-
-Difficult::
-Difficult checks have a target number that’s 3 lower than normal checks.
-
-Easy::
-Easy checks have a target number that's 3 higher than normal checks.
-
-GM::
-The Game Master.
-
-Hit Points (HP)::
-A unit of health: your character has a number of hit points, you lose some of
-them when you take damage, and if you lose all of them, you must roll on the
-<<death_table>>.  + Baddies and NPCs also have hit points, and
-when they lose all of them, they die.
-
-Initiative::
-A check made at the beginning of a combat round to see which side gets to act
-first.
-
-Level (lvl)::
-A character can have a level between 1 and 10. Baddies, traps, locks, spells,
-and various tasks can also have a level.
-
-NPC and NPCs::
-Non player character(s). These persons and creatures are played by the GM.
-
-Nat 1::
-If you roll a d20 and it shows the number 1, you rolled a natural (nat) one.
-
-Nat 20::
-If you roll a d20 and it shows the number 20, you've rolled a natural (nat)
-twenty.
-
-PC and PCs::
-Player Character(s).
-
-Proficient::
-It is difficult or impossible to use an armor, weapon, or specialist tool you
-are not proficient with.
-
-Roll::
-Rolls are generic die rolls where you roll one or more specified dice, such as
+than your strength to succeed. +
+//
+*Defense check, melee*: A check to avoid being hit by melee attacks. This is an <<adversarial>>
+_dexterity_ check. +
+//
+*Defense ranged, melee*: A check to avoid being hit by ranged attack. This is an <<adversarial>>
+_wisdom_ check. +
+//
+*Difficult*: Difficult checks have a target number that’s 3 lower than normal checks. +
+//
+*Easy*: Easy checks have a target number that's 3 higher than normal checks. +
+//
+*GM*: The Game Master. +
+//
+*Hit Points (HP)*: A unit of health: your character has a number of hit points,
+you lose some of them when you take damage, and if you lose all of them, you
+must roll on the <<death_table>>.  _Baddies and NPCs also have hit points, and
+when they lose all of them, they die._ +
+//
+*Initiative*: A check made at the beginning of a combat round to see which side gets to act
+first. +
+//
+*Level (lvl)*: A character can have a level between 1 and 10. Baddies, traps, locks, spells,
+and various tasks can also have a level. +
+//
+*NPC and NPCs*: Non player character(s). These persons and creatures are played by the GM. +
+//
+*Nat 1*: If you roll a d20 and it shows the number 1, you rolled a natural (nat) one. +
+//
+*Nat 20*: If you roll a d20 and it shows the number 20, you've rolled a natural (nat)
+twenty. +
+//
+*PC and PCs*: Player Character(s). +
+//
+*Proficient*: It is difficult or impossible to use an armor, weapon, or specialist tool you
+are not proficient with. +
+//
+*Roll*: Rolls are generic die rolls where you roll one or more specified dice, such as
 _3d6_, _1d10_, _2d8+2_, etc. The most common type of roll is the damage roll,
-where you roll your damage die for the type of weapon you're using.
-
-TN::
-Abbreviation of Target Number.
-
-Target number::
-The number you must roll below (usually with your d20) in order to make a
-successful check.
-
-Y.A.R.I.S::
-It’s an acronym: Yet Another Reduced Instruction Set.
+where you roll your damage die for the type of weapon you're using. +
+//
+*TN*: Abbreviation of Target Number. +
+//
+*Target number*: The number you must roll below (usually with your d20) in order to make a
+successful check. +
+//
+*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
 
 //END_SORT
 
