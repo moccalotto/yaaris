@@ -375,8 +375,7 @@ eat such a “meal”.
 [reftext="negotiator"]
 [[negotiator]]
 *Negotiator*: You have advantage on checks that involve negotiation. You also
-have advantage on haggle checks (see <<the_haggling_check,The haggling
-check>>).
+have advantage on your <<haggling_check>>.
 
 //KEY:
 [reftext="pugilist"]
@@ -1056,16 +1055,17 @@ This item takes up 1 item slot.
 You buy things for price listed in this guide, but you cannot sell items at
 that price. When selling something trivial or cheap, you sell it for 50% of the
 listed value, but if you’re selling more precious things, you must make a
-<<the_haggling_check,haggling check>>.
+<<haggling_check>>.
 
-[[the_haggling_check]]
-The Haggling Check::
+[reftext="haggling check"]
+[[haggling_check]]
+*The Haggling Check*:
 If you’re selling expensive items, or if you’re selling things in bulk, you
 must haggle to get a good price. You first roll a _charisma_ check, and
 refer to the table below, and do what it says, even if you don't like the
 result.
 
-[cols=">1s,10",grid=none,grid=none,frame=none]
+[cols=">1s,11",grid=none,grid=none,frame=none]
 |===
 | Nat20     | You sell the item(s) for 25% of local list price.
 | Failure   | You sell the item(s) for 50% of local list price.
