@@ -235,16 +235,16 @@ reroll it.
 //-----|-----------
 | 1d10 | Item
 | 1    | 2d4 gold pieces
-| 2    | <<Spellbook>> with 1 <<usage_points,usage point>>
+| 2    | <<spellbook>> with 1 <<usage_points,usage point>>
          and a spell of your choice
-| 3    | <<Torch>>
+| 3    | <<torch>>
 | 4    | <<spikes>>
 | 5    | <<tinkering_tools>>
 | 6    | Pole, 3m, foldable
 | 7    | Chalk
-| 8    | <<ration_pack_normal,Ration pack, normal>>
-| 9    | <<lamp_oil,Lamp oil>>
-| 10   | <<Map Making Tools>>
+| 8    | <<ration_pack,ration pack, normal>>
+| 9    | <<lamp_oil,lamp oil>>
+| 10   | <<map_making_tools>>
 //-----|-----------
 |===
 --
@@ -809,7 +809,7 @@ than _wisdom_ meters away, the <<attack_and_damage,attack check>> is
 //START_SORT //KEY:
 
 //KEY:
-[reftext="bank book]"]
+[reftext="bank book"]
 [[bank_book]]
 ==== Bank book
 A bank book is a magical book that can contain money. There is a magical ritual
@@ -819,7 +819,7 @@ out of the book.
 This item takes up 1 item slot.
 
 //KEY:
-[reftext="coin purse]"]
+[reftext="coin purse"]
 [[coin_purse]]
 ==== Coin Purse
 Purses aren't real items; they are concepts that can simplify bookkeeping.
@@ -916,7 +916,7 @@ spellbooks
 This item takes up 1 item slot.
 
 //KEY:
-[reftext="map making tools]"]
+[reftext="map making tools"]
 [[map_making_tools]]
 ==== Map Making Tools
 You can use these tools to maps of dungeons, cities, and various land areas.
@@ -1900,8 +1900,9 @@ You heal a creature within range. It recovers _X_ recovery dice.
 === Hurt (X)
 *Level 1+, <<multilevel>>, <<ritual>>, range: _X_+3 meters*
 
-You use dark necrotic magic to harm a creature within range. If you make a
-successful _wisdom_ check, the creature loses _X_d8, otherwise it loses _X_d4
+You target a creature in range. If you succeed an <<adversarial>> _wisdom_
+check, the creature loses _X_d8 <<hit_points>>, otherwise it loses _X_d4
+<<hit_points>>.
 
 === Illuminate (X)
 *Level 1+, <<multilevel>>, range: 2+_X_ meters, duration: _X_ hours*
