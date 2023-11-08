@@ -96,20 +96,20 @@ right.
 
 .Ancestral Traits
 ====
-A roll of 1 and 6 would give you gnome hands. And a roll of one and one you
+A roll of 1 and 6 would give you gnome hands, and a roll of one and one you
 troll hands (claws, maybe?) and a roll of 4 and 3 would give you an elven nose.
 ====
 
 ==== Vice
 Roll a d12. If you roll a number that isn't on the table, you don’t have a vice.
 
-. Two vices: Roll twice.
-. Drinking
+. Attention seeking
 . Bar fighting
-. Attention
+. Drinking
+. Fornicating
 . Gambling
 . Stealing
-. Fornicating
+. Two vices: Roll twice.
 
 
 ==== Background
@@ -211,11 +211,11 @@ Roll once on the <<utility_gear_1>> table.
 |===
 | 1d10 | Item
 //-----|-----------
-| 1    | <<ration_pack_iron,Ration pack, iron>>
+| 1    | <<iron_rations>>
 | 2    | grappling hook
 | 3    | <<storm_lantern>>
 | 4    | rope, 10 meters
-| 5    | <<Kosh>>
+| 5    | <<kosh>>
 | 6    | ball bearings
 | 7    | shovel
 | 8    | <<lockpicking_tools>>
@@ -238,8 +238,8 @@ reroll it.
 //-----|-----------
 | 1d10 | Item
 | 1    | 2d4 gold pieces
-| 2    | <<spellbook>> with 1 <<usage_points,usage point>>
-         and a spell of your choice
+| 2    | <<Spellbooks,spellbook>> with 1 <<usage_points,usage point>>
+         and a spell of your choice.
 | 3    | <<torch>>
 | 4    | <<spikes>>
 | 5    | <<tinkering_tools>>
@@ -314,11 +314,11 @@ Becoming skilled with such weapons require special training or abilities (such
 as <<shady>>).
 
 ==== Spellcasting
-You can use <<Spellbooks,spellbooks>> to cast <<basic>> spells. You can
-cast these spells on the fly (this is called <<basic_spellcasting>>), and you
-can cast certain spells as rituals (this is called <<basic_ritual_casting>>).
-In addition to using spellbooks to cast spells, you can also recharge the books
-via <<basic_recharging>>.
+You can use <<basic_spellcasting>> to cast <<basic>> spells directly
+from a <<Spellbooks,spellbook>>. You can also use <<basic_ritual_casting>>
+to cast <<basic>> spells more slowly; it still requires a spellbook, but it
+does not drain the spellbook as fast. You can also use <<basic_recharging>>
+to recharge depleted spellbooks.
 
 === Level 2
 When you reach second level, you gain more hit points, better stats, and a
@@ -416,7 +416,7 @@ dungeons. One of the ropes you carry does not take up an item slot. Aside from
 being unable to see, you do not suffer any debilitating effects from being
 alone in total darkness (which can otherwise cause you to suffer from dungeon
 madness ???). You have advantage on consumption checks for <<lamp_oil>> and
-<<Torch,Torches>>.
+<<torch,torches>>.
 
 //KEY:
 [reftext="thrifty"]
@@ -447,29 +447,23 @@ document only deals with levels 1 and 2. Once you reach level 3, you become a
 hero; see xref:heroes#[Hero’s Guide to doom & destruction & stuff] for more
 info.
 
-[discrete]
-==== Acquire
-Acquiring a treasure means, recovering it (possibly by liberating it from
-baddies), and getting it safely back to your base of operations. Since a
-hundred coins take up an entire item slot, it can be necessary to make multiple
-trips to recover a large treasure.
+*Treasure*: A treasure is a big horde, often situated in one location. It is up
+to the GM to decide what is an actual treasure, and what is just general loot.
 
-[discrete]
-==== Suitable
-A treasure is _suitable_ if it is worth 100 gold pieces times the sum of the
-levels of all the characters in the party.
+*Suitable*: A _suitable_ treasure is worth at least 100 gold pieces times the
+sum of the levels of all the characters in the party. 
 
-[discrete]
-==== Treasure
-A treasure is a big horde, often situated in one location. It is up to the GM
-to decide what is an actual treasure, and what is just general loot.
+*Acquire*: 
+You have _acquired_ a treasure when you have transported at least two thirds of
+it (by value) safely back to your base of operations. It can be necessary to
+make multiple trips to recover a large treasure. 
 
 .Leveling up
 ====
-. In order to level up, a party of 5 first level characters must recover a
+- In order to level up, a party of 5 first level characters must acquire a
   single treasure worth _5·1·100=500_ gold pieces.
 
-. In order to level up, a party of 4 PCs at 6th level must recover six
+- In order to level up, a party of 4 PCs at 6th level must acquire six
   treasures in order to advance. Each treasure must be worth at least
   _4·6·100=2,400_ gold pieces.
 
@@ -494,15 +488,13 @@ _strength_ check. You roll a d20. If you rolled lower than your _strength_, the
 check was successful, otherwise it was unsuccessful.
 ====
 
-[reftext="nat1"]
+[reftext="1"]
 [[nat1]]
-*Rolling a 1*: Checks are always successful if you roll a 1 on your d20, this
-*: called a _nat1_.
+*Rolling a 1*: Checks are always successful if you roll a 1 on your d20.
 
-[reftext="nat20"]
+[reftext="20"]
 [[nat20]]
-*Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d2*:
-This is called a _nat20_.
+*Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d20.
 
 [reftext="easy"]
 [[easy]]
@@ -536,7 +528,6 @@ the roll <<easy>>, but you're also <<encumbered>>, which makes the check
 <<difficult>>, so, overall, your check remains _difficult_.
 ====
 
-
 [reftext="adversarial"]
 [[adversarial]]
 === Adversarial Checks
@@ -565,7 +556,6 @@ check is <<easy>>.
 
 You are attacking a zombie. You are level 2, and the zombie is level 1, so
 your are within one level of each other, and thus your check is normal.
-
 ====
 
 === Advantage & Disadvantage
@@ -708,16 +698,21 @@ and how it is repaired again, depends on the type of item; see the
 | quiver of arrows              | 1 | 3 |
 | quiver of bolts               | 1 | 3 |
 | <<magic_components>>          | 1 | 2 | 1 gp
-| ration pack, iron             | 1 | 2 | 4 sp   [[ration_pack_iron]]
-| ration pack, normal           | 1 | 1 | 1 sp   [[ration_pack_normal]]
+| <<iron_rations>>              | 1 | 2 | 4 sp
+| <<rations>>                   | 1 | 1 | 1 sp
 | <<spikes>>                    | 1 | 2 |
 | <<lockpicking_tools>>         | 1 | 4 |
 | <<tinkering_tools>>           | 1 | 4 |
-| <<Torch>>                     | 1 | 2 | 5 cp
+| <<torch>>                     | 1 | 2 | 5 cp
 //------------------------------|---|---|-----------
 |===
 
-// Price of armor is typically (hp)³
+////
+PRICE OF ARMOR
+
+Price of armor is typically (hp)³
+////
+
 [[light_armor_table]]
 .Light Armor
 [%header,cols="9,^1,^1,^1"]
@@ -772,10 +767,10 @@ and how it is repaired again, depends on the type of item; see the
 |===
 
 Light Melee Weapons::
-A light weapon costs 5gp and takes up 1 <<usage_points,usage point>>.
+A light weapon costs 5 gold pieces and takes up 1 <<usage_points,usage point>>.
 
 Heavy Melee Weapons::
-A two-handed weapon costs 6gp and takes up 2 <<usage_points>>.
+A two-handed weapon costs 6 gold pieces and takes up 2 <<usage_points>>.
 
 .Melee Weapons
 [%header,cols="10,^1,^1"]
@@ -805,10 +800,12 @@ A two-handed weapon costs 6gp and takes up 2 <<usage_points>>.
 //------------------------------|---|---|---------
 |===
 
-[quote]
+.Range of ranged attacks
+****
 You can attack baddies who are up to 2·_wisdom_ meters away, but if they are
 more than _wisdom_ meters away, the <<attack_and_damage,attack check>> is
 <<difficult>>.
+****
 
 === Special Items
 //START_SORT //KEY:
@@ -907,7 +904,7 @@ _intelligence_ check.
 * If both are successful, you open the lock.
 * If one is successful, the lock does not open, but you get to try again.
 * If none are successful, the lock becomes jammed, and can only be opened by a
-real key.
+  real key.
 
 This item takes up 1 item slot.
 
@@ -932,8 +929,8 @@ To do so you must make an _intelligence_ check and a _wisdom_ check.
 *   If just one is successful, your scales are incorrect, and using the
     map is <<difficult>>.
 *   If both failed, the map is not accurate at all. Twists and turns are
-    wrong, scales are wrong, the cardinal directions are wrong, and there
-    are missing areas and notes.
+    wrong, scales are wrong, the cardinal directions are wrong, and there are
+    missing areas and notes.
 
 This item takes up 1 item slot.
 
@@ -941,33 +938,12 @@ This item takes up 1 item slot.
 [reftext="rations"]
 [[rations]]
 ==== Rations
-Can sustain you. You must use one <<consumption>> of rations every
-day to stay healthy.
+Rations sustain you on your adventures. You must use one <<consumption>> of
+rations every day, otherwise you become <<starving>>.
 
 [reftext="iron rations"]
 [[iron_rations]]
-*Iron Rations*: are a kind of rations that takes up less room so that have
-more <<usage_points>> per <<item_slots,item slot>>.
-
-WARNING: if you do not eat, you become <<starving>>.
-
-//KEY:
-[reftext="spellbook"]
-[[spellbook]]
-==== Spellbook
-A spellbook is a magical book or tome that contains a single spell and
-takes up a single item slot.
-
-Spellbook prices vary greatly from place to place and on which type of spell
-is inscribed in the book. They are rarely cheaper than 25 gold pieces,
-and prices skyrocket as the spell's level and/or the number of usage points
-increases.
-
-Spellbooks usually only have a single usage point.
-
-See more about them in the <<Spellbooks>> section.
-
-This item takes up 1 item slot.
+*Iron Rations*: have twice as many usage points as normal rations.
 
 //KEY:
 [reftext="spikes"]
@@ -1067,10 +1043,10 @@ result.
 
 [cols=">1s,11",grid=none,grid=none,frame=none]
 |===
-| Nat20     | You sell the item(s) for 25% of local list price.
+| <<nat20>> | You sell the item(s) for 25% of local list price.
 | Failure   | You sell the item(s) for 50% of local list price.
 | Success   | You sell the item(s) for 75% of local list price.
-| Nat1      | You sell the item(s) for 100% of local list price.
+| <<nat1>>  | You sell the item(s) for 100% of local list price.
 |===
 
 //}}}
@@ -1164,8 +1140,8 @@ including attacking the same opponent again.
 [reftext="weapon wear"]
 [[weapon_wear]]
 ==== Weapon Wear
-If you roll a <<nat20>> on your attack check, you must roll your damage die. If you
-roll the minimum possible value, your weapon becomes unusable and must be
+If you roll a <<nat20>> on your attack check, you must roll your damage die. If
+you roll the minimum possible value, your weapon becomes unusable and must be
 repaired before it can be used again. It can be repaired by a weaponsmith, a
 process that takes hours of work and requires a weaponsmith workshop.
 
@@ -1210,7 +1186,7 @@ because the armor piece is broken.
 
 .Armor wear
 ====
-You've just been attacked and rolled a <<nat20,natural twenty>>on your defense
+You've just been attacked and rolled a <<nat20>> on your defense
 check, and you take 5 points of damage. You must now select an armor piece that
 has at least one hit point, and reduce its hit points by 5 (like you, armor
 pieces can never have less than zero hit points).
@@ -1272,7 +1248,7 @@ _dexterity_ is reduced by 1.
 
 You now have to roll on the <<death_table>>: You roll a 53, meaning
 you're unconscious and <<dying>>, which in turn means you will have to roll a
-d20 every round from now on, and a nat20 will result in your death.
+d20 every round from now on, and a <<nat20>> will result in your death.
 --
 
 ===== Taking Damage At Zero Hit Points
@@ -1363,7 +1339,7 @@ spell is used.
 *Temporary*: lasts for 1d20 days or it can be reversed with restoration magic.
 
 [quote]
-The restoration spells referred to here are not basic, and adventurers
+The restoration spells referred to here are not <<basic>>, and adventurers
 cannot cast them themselves. You can find more info on such spells in
 xref:heroes#[Hero’s Guide to doom & destruction & stuff].
 
@@ -1393,7 +1369,6 @@ Conditions can affect characters and baddies.
 
 //KEY:
 [reftext="comatose"]
-
 [[comatose]]
 *Comatose*: You’re in a deep coma. If you receive conventional medical care,
 you will wake up in a matter of hours; make a _constitution_ check every hour
@@ -1647,7 +1622,7 @@ as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
 All spells listed in this section are <<basic>> and can be used by
 adventurers.
 
-// START_SORT ===
+// START_SORT===
 
 === Alertness (X)
 *Level 1, <<multilevel>>, <<focus>>*
@@ -2236,11 +2211,6 @@ first. +
 and various tasks can also have a level. +
 //
 *NPC and NPCs*: Non player character(s). These persons and creatures are played by the GM. +
-//
-*Nat 1*: If you roll a d20 and it shows the number 1, you rolled a natural (nat) one. +
-//
-*Nat 20*: If you roll a d20 and it shows the number 20, you've rolled a natural (nat)
-twenty. +
 //
 *PC and PCs*: Player Character(s). +
 //
