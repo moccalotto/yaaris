@@ -103,6 +103,7 @@ troll hands (claws, maybe?) and a roll of 4 and 3 would give you an elven nose.
 ==== Vice
 Roll a d12. If you roll a number that isn't on the table, you don’t have a vice.
 
+--
 . Attention seeking
 . Bar fighting
 . Drinking
@@ -110,6 +111,7 @@ Roll a d12. If you roll a number that isn't on the table, you don’t have a vic
 . Gambling
 . Stealing
 . Two vices: Roll twice.
+--
 
 
 ==== Background
@@ -235,16 +237,16 @@ reroll it.
 .Utility Gear 2
 [%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
-//-----|-----------
 | 1d10 | Item
+//-----|-----------
 | 1    | 2d4 gold pieces
 | 2    | <<Spellbooks,spellbook>> with 1 <<usage_points,usage point>>
          and a spell of your choice.
 | 3    | <<torch>>
 | 4    | <<spikes>>
 | 5    | <<tinkering_tools>>
-| 6    | Pole, 3m, foldable
-| 7    | Chalk
+| 6    | pole, 3m, foldable
+| 7    | chalk
 | 8    | <<ration_pack,ration pack, normal>>
 | 9    | <<lamp_oil,lamp oil>>
 | 10   | <<map_making_tools>>
@@ -279,10 +281,11 @@ recovery dice at once.
 [reftext="hit points"]
 [[hit_points]]
 ==== Hit Points
-Your hit point total is 8, which means that, under normal circumstances, you
-can’t have more than 8 hit points. When you have lost all your hit points, you
-have to roll on the death table.
+At first level, your hit point total is 8, which means that, under normal
+circumstances, you can’t have more than 8 hit points. When you have lost all
+your hit points, you have to roll on the <<death_table>>.
 
+[[armor_skills]]
 ==== Armor Skills
 You  are skilled at using light shields and light armors. If you are wearing an
 armor you're not skilled at using, you lose one <<Moves,move>>.
@@ -293,7 +296,7 @@ wearing broken armor.
 ==== Weapon Skills
 You are skilled at using light melee weapons and ranged weapons. On the
 <<adventurer_damage_rolls_table,table below>> you can see how much damage you
-deal with each weapon category.
+deal with each weapon category. See also the rules on <<attack_range>>.
 
 [[adventurer_damage_rolls_table]]
 .Adventurer Damage Rolls
@@ -342,8 +345,8 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 //KEY:
 [reftext="armorer"]
 [[armorer]]
-*Armorer*: You can repair a piece of broken armor if you have the right tools. See
-<<tinkering_tools>> for more information.
+*Armorer*: You can repair a piece of broken armor if you have
+<<tinkering_tools>>.
 
 //KEY:
 [reftext="everdeen"]
@@ -390,11 +393,21 @@ your body can have grave consequences.
 //KEY:
 [reftext="rider"]
 [[rider]]
-*Rider*: You acquire a trained horse (for free, as a gift, or similar). You
-become proficient at riding horses. You have advantage on all riding-related
-checks. You have advantage on <<consumption_check>>for
-animal feed. When you reach level 5 your riding proficiency expands to all
-rideable land creatures. At level 8, you can ride virtually any tame creature.
+*Rider*: You acquire a trained horse for free (tamed wild horse, a gift, or
+similar). You become proficient at riding horses. You have <<advantage>> on all
+riding-related checks. You have <<advantage>> on
+<<consumption_check,consumption checks>> for animal feed. When you reach level
+5 your riding proficiency expands to all rideable land creatures. At level 8,
+you can ride virtually any tame creature.
+
+****
+*_Your horse_* can drag a cart that can carry you and two others, or you and 20
+<<item_slots>> of cargo. It can move 2 meters for every <<moves,move>> you
+make, and it has the same stats and hit points as you, except for
+_intelligence_, which is 2. The horse generally does what you want when you're
+in the saddle, but you have to succeed a _charisma_ (with advantage) check to
+command it when you're not.
+****
 
 //KEY:
 [reftext="shady"]
@@ -410,13 +423,14 @@ daggers.
 //KEY:
 [reftext="spelunker"]
 [[spelunker]]
-*Spelunker*: You always have some chalk. You always know the cardinal
-directions. You have advantage on checks that involve navigation in caves and
-dungeons. One of the ropes you carry does not take up an item slot. Aside from
-being unable to see, you do not suffer any debilitating effects from being
-alone in total darkness (which can otherwise cause you to suffer from dungeon
-madness ???). You have advantage on consumption checks for <<lamp_oil>> and
-<<torch,torches>>.
+*Spelunker*: 
+You cannot go <<dungeon_mad>>.
+You always have some chalk.
+You always know the cardinal directions. 
+One of the ropes you carry does not take up an <<item_slots,item slot>>.
+You have <<advantage>> on <<consumption_check,consumption checks>> checks 
+for <<lamp_oil>>, <<lamp,lamps>>, and <<torch,torches>>. You have <<advantage>>
+on checks that involve navigation in caves and dungeons.
 
 //KEY:
 [reftext="thrifty"]
@@ -609,34 +623,30 @@ fill/carry more than your item slots total.
 
 .Calculating item slots
 ====
-If your _strength_ is 7 and your _constitution_ is 16, you have 16 item slots,
-and 7 of those are unencumbered item slots. This means that, if you use 8 or
-more of your item slots, you become encumbered.
+If your _strength_ is 7 and your _constitution_ is 16, you have 16 _item
+slots_, and 7 of those are _unencumbered item slots_. This means that, if you
+use 8 or more of your item slots, you become <<encumbered>>.
 ====
 
 [reftext="usage points"]
 [[usage_points]]
 === Usage Points
-Certain items have usage points, which are, among other
-things, the minimum number of times they can be used before they are used up.
-
-[[consumable]]
-Consumables:: Items that can be completely used up (such as rations, arrows,
-<<lamp_oil>>) have usage points. Once these items run out of <<usage_points>>,
-they’re gone, completely used up.
-
-Repairables:: Items that can be worn out (such as armor pieces, weapons, and
-spellbooks) have usage points to track when they will wear out. Once these
-items run out of <<usage_points>>, they stop working, but they can
-be repaired.
+Items that can be consumed or depleted (such as rations, arrows, <<lamp_oil>>)
+have usage points. When you have used such an item you make a consumption check
+to see if it loses a usage point. If the item run out of <<usage_points>>, it
+is completely used up: no more arrows in the quiver, and no more food in the
+ration pack.
 
 [reftext="consumption check"]
 [[consumption_check]]
-=== Consumption Check
-Consumption is an unspecified amount of a consumable item. When you use/consume
-a consumption of an item, you make a consumption check, which is just a check
-with a target number of 11, and if it is unsuccessful, the item loses a
-<<usage_points,usage point>>.
+=== Consumption & Consumption Checks
+A _consumption_ happens whenever you consume, use, or deplete an item
+with usage points.
+
+After you have made a consumption, you must make a _consumption check_.
+
+A _consumption check_ is a check with a target number of 11, and if you aren't
+successful, the item in question loses a <<usage_points,usage point>>.
 
 .Using Magic Components
 ====
@@ -645,24 +655,12 @@ magic components and then you make a consumption check. And if the check was
 unsuccessful, your magic components lose a usage point.
 ====
 
-*Consumable Projectiles*: In Combat, projectiles (such as arrows, bolts,
+*Consumable Projectiles*: Projectiles (such as arrows, bolts,
 slingshots, etc.) are consumables. You do not roll a consumption check every
 time you fire an arrow, bolt, or slingshot during combat. Instead you make one
-consumption check after the combat ends; if you used more than one type of
-projectile, make consumption checks for each type. If you fire a projectile
-when not in combat, you make a consumption check with advantage after you fired
-the shot.
-
-*Repairable Items*: A repairable item (such as a piece of armor or a spellbook)
-has a maximum number of <<usage_points>>, and a current number of
-<<usage_points>>. As a repairable item is used, it loses its
-Current <<usage_points>>, and it becomes unusable when it reaches
-zero. It can be repaired, but never regain more than its Maximum
-<<usage_points>>.
-
-Exactly how a repairable item loses its <<usage_points>>,
-and how it is repaired again, depends on the type of item; see the
-<<basic_spellcasting>>, and <<weapon_wear>> for more info.
+consumption check after the combat ends (one for each type of projectile you
+used). When you fire a projectile while not in combat, you make a consumption
+check with <<advantage>> after each projectile fired.
 
 === Gear
 
@@ -767,10 +765,10 @@ Price of armor is typically (hp)³
 |===
 
 Light Melee Weapons::
-A light weapon costs 5 gold pieces and takes up 1 <<usage_points,usage point>>.
+A light weapon costs 5 gold pieces and takes up 1 <<item_points,item point>>.
 
 Heavy Melee Weapons::
-A two-handed weapon costs 6 gold pieces and takes up 2 <<usage_points>>.
+A two-handed weapon costs 6 gold pieces and takes up 2 <<item_points>>.
 
 .Melee Weapons
 [%header,cols="10,^1,^1"]
@@ -782,15 +780,14 @@ A two-handed weapon costs 6 gold pieces and takes up 2 <<usage_points>>.
 //------------------------------|---|--------
 |===
 
-
-
-
 .Ranged Weapons
 [%header,cols="9,^1,^1,^1"]
 |===
 | Name                          | IS| UP| Cost
 //------------------------------|---|---|---------
-| Darts                         | 1 | 3 | 3  gp
+| Dagger                        | 1 | 1 | 3  gp
+| Spear                         | 1 | 1 | 3  gp
+| Darts                         | 1 | 4 | 3  gp
 | Bow                           | 2 | - | 7  gp
 | ↳ quiver of arrows            | 1 | 10| 2  gp
 | Crossbow                      | 1 | - | 12 gp
@@ -800,11 +797,12 @@ A two-handed weapon costs 6 gold pieces and takes up 2 <<usage_points>>.
 //------------------------------|---|---|---------
 |===
 
-.Range of ranged attacks
+.Attack range
+[[attack_range]]
 ****
-You can attack baddies who are up to 2·_wisdom_ meters away, but if they are
-more than _wisdom_ meters away, the <<attack_and_damage,attack check>> is
-<<difficult>>.
+A weapon's range is a number of meters equal to its cost in gold pieces. You
+can go beyond this range, up to _wisdom_ meters in total, but then your
+<<attack_and_damage,attack checks>> would be <<difficult>>.
 ****
 
 === Special Items
@@ -976,17 +974,22 @@ This item takes up 1 item slot.
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
 
-Repairing items and armor pieces:: To repair a broken armor piece, trap,
-mechanism, stuck door, or similar, you spend 10 minutes and one
-<<consumption,consumption>> of tinkering tools. Then you make a _dexterity_
-check and an _intelligence_ check.
+Repairing mechanism:: To repair a trap, mechanism, stuck door, or similar,
+you spend 10 minutes and one <<consumption,consumption>> of tinkering tools.
+Then you make a _dexterity_ check and an _intelligence_ check.
 
 * If both are successful, you have repaired the item.
 * If one is successful, the item is still damage, but you may try again.
 * If both failed, you cannot fix this item until you've gained a new level.
 
-IMPORTANT: _light armor_ can be repair using only tinkering tools, but _medium_ and
-_heavy_ armor also requires a rudimentary smithy:
+Repairing armors:: This is like repairing mechanisms, except: only
+<<armorer,armorers>> can repair armors, and only _light armor_ can be repaired
+using tinkering tools alone; _medium_ and _heavy_ armor also requires a
+furnace (or the <<Furnace>> spell).
+
+Repairing weapons:: This is like repairing mechanisms, except:
+only <<armorer,armorers>> can repair weapons, and it requires both tinkering
+tools and a furnace (or the <<Furnace>> spell).
 
 Disarming traps:: To disarm a trap you spend 10 minutes and one
 <<consumption,consumption>> of tinkering tools. Then you make a _dexterity_ and
@@ -1154,34 +1157,44 @@ a melee attack, you make an <<adversarial>> _dexterity_ check.
 You can wear up to five pieces of armor: a helmet, a cuirass, a gauntlet, of
 greaves, and a shield.
 
+[[armor_hit_points]]
 ===== Armor Grants Hit Points
 Each piece of armor you wear increases your hit point total by a number of
 points. The better the armor piece, the more hit points you get.
 
-When you don armor, your <<hit_point_total>> and your current
-number of hit points both increase by the number of hit points provided by the
-armor piece.
+[quote]
+A shield is also an armor piece.
 
-When you doff armor, your <<hit_point_total>> and your current
-number of hit points both decrease by the number of hit points provided by the
-armor piece. (which means that, technically, you can die if you are very low on
-hit points and remove an armor piece).
+When you don an armor piece, your <<hit_point_total>> and your current number
+of hit points both increase by the number of hit points provided by the armor
+piece.
+
+When you doff armor, your <<hit_point_total>> and your current number of hit
+points both decrease by the number of hit points provided by the armor piece.
+
+WARNING: you can die if you are very low on hit points and remove a functional armor
+piece.
 
 ===== Armor Requires Skill
 For every piece of armor you're wearing, that you're not skilled at using,
 you lose one <<Moves,move>>.
 
 ===== Armor Wears Out
-If you roll a <<nat20>> on your <<Defense,defense check>>, one of the armor
-pieces you're wearing (your choice) takes as much damage as you did from that
-attack, which means that the number of extra Hit Points it grants is reduced by
-that amount. If an armor piece is reduced to zero hit points, it becomes
-broken, and for each broken piece of armor you're wearing, you lose one
-<<Moves,move>>.
+If you roll a <<nat20>> on your <<Defense,defense check>>, one of the
+<<Armor,armor pieces>> you're wearing takes damage and provides one less
+_hit point_. Once an armor piece is reduced to zero hit points, it becomes
+broken. This has two major side effects:
+
+. Your <<hit_point_total>> goes down by one.
+. Your current number of hit points also goes down by one, on top of
+  the damage you received from the attack.
+  Your number of <<Moves,moves>> is reduced by 1 per broken
+  piece of armor you're wearing.
 
 [quote]
-yes, if you're wearing a piece of broken armor that you're not using, you
-lose a _two_ <<Moves,moves>>; one because you're unskilled, and the other
+If you're wearing a piece of broken armor that you're not
+<<armor_skills,skilled>> at using, that piece of armor is responsible for you
+losing _two_ <<Moves,moves>>; one because you're unskilled, and the other
 because the armor piece is broken.
 
 .Armor wear
@@ -1199,7 +1212,7 @@ You're now wearing two broken pieces of armor, which makes you have two
 fewer <<Moves,moves>> (you normally have 5 moves, but now you only have 3).
 
 Lucky for you, it only requires a single move to <<drop_light_shield,drop a
-Light Shield>>, so you can easily get up to having 4 moves. If you want to get
+light shield>>, so you can easily get up to having 4 moves. If you want to get
 back up to 5 moves, you would have to remove your gauntlets, a task that
 requires 4 moves.
 ====
@@ -1384,10 +1397,12 @@ retreating from your opponents. When you have done that, the demoralized
 condition goes away.
 
 //KEY:
-[reftext="dungeon_mad"]
+[reftext="dungeon mad"]
 [[dungeon_mad]]
-*Dungeon Mad*: You've been in complete darkness in a dungeon too long. Every hour you must
-make a _wisdom_ check. If you fail, you lose 1 point from a random stat.
+*Dungeon Mad*: You've been in complete darkness in a dungeon or cave for too
+long. Every hour you spend in total darkness in a dungeon or similar situation,
+you must make a _wisdom_ check. If you fail, you lose 1 point from a random
+stat. This check is <<difficult>> if you are alone in the darkness.
 
 [reftext="encumbered"]
 [[encumbered]]
@@ -1540,67 +1555,63 @@ name.
 //KEY:
 [reftext="basic"]
 [[basic]]
-basic::
-All basic spells can be cast by adventurers, and all spells in this document
-are <<basic>>. Higher level characters have access to more advanced types
-of spells.
+Basic:: All basic spells can be cast by adventurers, and all spells in this
+document are <<basic>>. Higher level characters have access to more advanced
+types of spells.
 
 //KEY:
 [reftext="duration"]
 [[duration]]
-duration::
-The duration of the spell
+Duration:: The duration of the spell.
 
 //KEY:
-[reftext="eftext="lvl"]
-[reftext="lvl"]
-[[lvl]]
-lvl::
-The level of the caster (i.e. not the spell). The potency, duration, or range
-of certain spell increases with the casters level.
+[reftext="caster level"]
+[[caster_level]]
+Caster level:: The level of the caster (i.e. not the spell). The potency, duration, or
+range of certain spell increases with the casters level.
+
+//KEY:
+[reftext="level"]
+[[spell_level]]
+Level:: The level of the spell. If the spell also has the <<multilevel>> property,
+_level_ is the level of the weakest version of the spell, meaning no versions
+of the spell exists at a lower level that that.
 
 //KEY:
 [reftext="focus"]
 [[focus]]
-focus::
-These spells cut their duration short and stop instantly if you
-cast another spell,
-take damage,
-or stop focusing on keeping the spell going.
+Focus:: These spells cut their duration short and stop instantly if you cast
+another spell, take damage, or stop focusing on keeping the spell going.
 
 //KEY:
 [reftext="multilevel"]
 [[multilevel]]
-multilevel::
-There are many versions of this spell, each with its own level. +
+Multilevel:: There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example for an illustration.
 
 //KEY:
 [reftext="range"]
 [[range]]
-range::
-The range of the spell.
+Range:: The range of the spell.
 
 //KEY:
 [reftext="ritual"]
 [[ritual]]
-ritual::
-These spells can be cast via <<basic_ritual_casting>>, but can also be
+Ritual:: These spells can be cast via <<basic_ritual_casting>>, but can also be
 cast normally via Basic Spellcasting.
 
 //KEY:
 [reftext="trance"]
 [[trance]]
-trance::
-You must be seated to cast a trance spell, and you must remain seated
+Trance:: You must be seated to cast a trance spell, and you must remain seated
 for its duration. +
 //
 The spell stops instantly if you:
     a) take damage,
     b) make a defense check,
     c) get up,
-    d) move,
-    or e) take an action. +
+    d) make a <<moves,move>>,
+    or e) take an <<Actions,action>>. +
 //
 You can speak, breathe, and adjust
 your position to remain comfortable, and nothing more.
@@ -1613,6 +1624,11 @@ your position to remain comfortable, and nothing more.
 The <<Tragic Missile (X)>> spell is technically not a single spell. It exists
 as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
 10. Tragic Missile 10 is much more powerful than Tragic Missile 1.
+
+---
+The <<Ghost Mount (X)>> spell is also multiple spells, but since its
+description says it's level 2, there is no Ghost Mount 1. Only a Ghost Mount 2,
+Ghost Mount 3, and so on.
 ====
 
 //}}}
@@ -1691,11 +1707,11 @@ than _X_. The animal no longer considers you or your party as threats, and will
 simply wander away if possible.
 
 === Club
-*Level 1, duration: <<lvl>>+5 rounds*
+*Level 1, duration: <<caster_level>>+5 rounds*
 
 A magical wooden club appears in your hand. You are proficient at wielding this
 one-handed weapon, and your damage die is 1d12 when doing so. The club
-dissolves into dust after <<lvl>>+5 rounds, or instantly if you let go of it.
+dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go of it.
 
 === Command (X)
 *Level: 1, <<multilevel>>, duration: 1 round*
@@ -1737,6 +1753,14 @@ Reduce:: If the fire is larger than 1 square meter, it shrinks by 1 square
 meter. If the fire is 1 square meter in size, it shrinks to the size of a
 bonfire. If the fire is the size of a bonfire, it goes out, not producing any
 additional smoke in the process.
+
+=== Furnace
+*Level 2, <<trance>>, duration: up to 8 hours*
+
+A bonfire within 10 meters becomes hot enough heat metal enough for forging.
+The bonfire does not consume more wood that it would normally do, and
+it does not radiate more heat than it normally would; it becomes hot by
+keeping the heat close to the fire.
 
 === Cure Exhaustion
 *Level 1, <<ritual>>, range: _wisdom_ meter*
@@ -1787,9 +1811,9 @@ penetrate more than one meter of rock or one centimeter of lead.
 *Level 2*
 
 You target a point within _wisdom_ meters. Every object and creature within
-<<lvl>> meters of that point glows with a faint light as if on fire. Invisible
-creatures and object can now be seen, but attack checks against them remain
-<<difficult>>
+<<caster_level>> meters of that point glows with a faint light as if on fire.
+Invisible creatures and object can now be seen, but attack checks against them
+remain <<difficult>>.
 
 === Fierce Fortune (X)
 *Level 1, <<multilevel>>*
@@ -1885,9 +1909,9 @@ You heal a creature within range. It recovers _X_ recovery dice.
 === Hurt (X)
 *Level 1+, <<multilevel>>, <<ritual>>, range: _X_+3 meters*
 
-You target a creature in range. If you succeed an <<adversarial>> _wisdom_
-check, the creature loses _X_d8 <<hit_points>>, otherwise it loses _X_d4
-<<hit_points>>.
+You target a creature in range that you can see. If you succeed an
+<<adversarial>> _wisdom_ check, the creature loses __X__d8 <<hit_points>>,
+otherwise it loses __X__d4 <<hit_points>>.
 
 === Illuminate (X)
 *Level 1+, <<multilevel>>, range: 2+_X_ meters, duration: _X_ hours*
@@ -1929,9 +1953,9 @@ obstacle reduces your jump.
 === Lightning Touch (X)
 *Level 1+, <<multilevel>>*
 
-You touch an adjacent target, who then takes _X_d6 damage. After rolling damage,
-you make a _wisdom_ check. If successful, the target is knocked prone, and must
-spend a number of moves next round to get up.
+You touch an adjacent target, who then takes __X__d6 damage. After rolling
+damage, you make a _wisdom_ check. If successful, the target is knocked prone,
+and must spend a number of moves next round to get up.
 
 If the target is wearing three or more pieces of metal armor, you have
 advantage on the damage roll and the _wisdom_ check.
@@ -1979,9 +2003,10 @@ stone and the baddie. It cannot curve or fly around obstacles.
 
 You instantly repair a break, crack, scratch, or tear up to 5 + _X_ centimeters
 from an object within _X_ meters that weighs no more than _X_ kg.  Mending a
-nonmagical Armor Piece, Weapon, or Tool restores _X_ Usage Points. Once an item
-has been mended, it becomes slightly magical for 1 day; it cannot be mend-ed in
-that period, and it will be detectable with <<Detect Magic>>.
+nonmagical <<Armor,armor piece>> restores _X_ of the piece's
+<<armor_hit_points>>. Once an item has been mended, it becomes slightly magical
+for 1 day; it cannot be mended in that period, and it will be detectable with
+<<Detect Magic>>.
 
 === Mind Message (X)
 *Level 1, <<multilevel>>*
