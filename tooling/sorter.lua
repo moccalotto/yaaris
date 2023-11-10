@@ -1,5 +1,5 @@
 -- Some variables to help us
-local str = ""            -- Output buffer
+local result = ""         -- Output buffer
 local MODE_SCAN = 0       -- State machine: scanning for START_SORT commands
 local MODE_SORTING = 1    -- State machine: sorting, and looking for END_SORT commands.
 local mode = MODE_SCAN    -- State machine: current mode
@@ -12,6 +12,7 @@ local preface = ""        -- contains the text in a chunk that comes before the 
 ---@return string|nil  The sorted string. Nil if error
 local function sorter(lines)
     for line in lines do
+        line = line .. "\n"
         --
         -- SCANNING
         --
@@ -21,10 +22,6 @@ local function sorter(lines)
             if sortArg then -- We've encountered a "start sort" command. So we enter sorting-mode
                 if string.sub(sortArg, 1, 1) == "=" then
                     sortKeyPattern = "^" .. sortArg .. "%s+"
-                elseif sortArg == "::" then
-                    sortKeyPattern = "::%s*$"
-                elseif sortArg == "[[]]" then
-                    sortKeyPattern = "^%[%[[%w_]+%]%]"
                 elseif sortArg == "//KEY:" then
                     sortKeyPattern = "^%s*//KEY:"
                 else
@@ -37,11 +34,7 @@ local function sorter(lines)
                 preface = ""
             end
 
-            if str == "" then
-                str = line
-            else
-                str = str .. "\n" .. line
-            end
+            result = result .. line
 
             goto continue
         end
@@ -62,17 +55,17 @@ local function sorter(lines)
                 -- and insert the lines into the output.
 
                 table.sort(sections)
-                local sorted = table.concat(sections, "\n")
+                local sorted = table.concat(sections, "")
 
                 -- is there a preface?
-                if #preface > 0 then
+                if preface ~= "" then
                     -- yes, so add preface text to beginning of sorted chunk
-                    str = str .. "\n" .. preface
-                    str = str .. sorted         -- add the sorted sections without extra newline
+                    result = result .. preface .. sorted
                 else
-                    str = str .. "\n" .. sorted -- add the sorted sections
+                    -- no, so just add the sorted text to the output text
+                    result = result .. sorted -- add the sorted sections
                 end
-                str = str .. "\n" .. line       -- add "//END_SORT" line
+                result = result .. line       -- add "//END_SORT" line
                 mode = MODE_SCAN
                 sections = {}
                 preface = ""
@@ -81,13 +74,13 @@ local function sorter(lines)
 
             -- This happens if we have preface text before the first heading/sortkey
             if nil == sections[#sections] then
-                preface = preface .. "\n" .. line
+                preface = preface .. line
                 goto continue
             end
 
             -- This line is a normal line within the section.
             -- Add it to the current section.
-            sections[#sections] = sections[#sections] .. "\n" .. line
+            sections[#sections] = sections[#sections] .. line
         end
 
         ::continue::
@@ -98,7 +91,7 @@ local function sorter(lines)
         return nil
     end
 
-    return str
+    return result
 end
 
 return sorter
