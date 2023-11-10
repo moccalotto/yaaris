@@ -340,7 +340,7 @@ stat by 1 point. If no stats are lower than your die roll, nothing happens.
 Choose one of the abilities below. You can switch this ability at levels 4, 6,
 8, and 10.
 
-//START_SORT//KEY:
+//START_SORT //KEY:
 
 //KEY:
 [reftext="armorer"]
@@ -1162,8 +1162,7 @@ greaves, and a shield.
 Each piece of armor you wear increases your hit point total by a number of
 points. The better the armor piece, the more hit points you get.
 
-[quote]
-A shield is also an armor piece.
+NOTE: A shield is also an armor piece.
 
 When you don an armor piece, your <<hit_point_total>> and your current number
 of hit points both increase by the number of hit points provided by the armor
@@ -1172,7 +1171,7 @@ piece.
 When you doff armor, your <<hit_point_total>> and your current number of hit
 points both decrease by the number of hit points provided by the armor piece.
 
-WARNING: you can die if you are very low on hit points and remove a functional armor
+WARNING: You can die if you are very low on hit points and remove a functional armor
 piece.
 
 ===== Armor Requires Skill
@@ -1180,10 +1179,12 @@ For every piece of armor you're wearing, that you're not skilled at using,
 you lose one <<Moves,move>>.
 
 ===== Armor Wears Out
-If you roll a <<nat20>> on your <<Defense,defense check>>, one of the
-<<Armor,armor pieces>> you're wearing takes damage and provides one less
-_hit point_. Once an armor piece is reduced to zero hit points, it becomes
-broken. This has two major side effects:
+If you are wearing at least one functional piece of armor, and you roll a
+<<nat20>> on your <<Defense,defense check>>, one of the functional
+<<Armor,armor pieces>> you are wearing takes damage and provides
+one less _hit point_. You choose which armor piece takes damage.
+Once an armor piece is reduced to zero hit points, it becomes
+broken, which has two major side effects:
 
 . Your <<hit_point_total>> goes down by one.
 . Your current number of hit points also goes down by one, on top of
@@ -1191,30 +1192,23 @@ broken. This has two major side effects:
   Your number of <<Moves,moves>> is reduced by 1 per broken
   piece of armor you're wearing.
 
-[quote]
-If you're wearing a piece of broken armor that you're not
+NOTE: If you're wearing a piece of broken armor that you're not
 <<armor_skills,skilled>> at using, that piece of armor is responsible for you
 losing _two_ <<Moves,moves>>; one because you're unskilled, and the other
 because the armor piece is broken.
 
 .Armor wear
 ====
-You've just been attacked and rolled a <<nat20>> on your defense
-check, and you take 5 points of damage. You must now select an armor piece that
-has at least one hit point, and reduce its hit points by 5 (like you, armor
-pieces can never have less than zero hit points).
+You've just been attacked and rolled a <<nat20>> on your defense check, and you
+take 5 points of damage. You must now select an armor piece that has at least
+one hit point, and that armor piece will also take some damage.
 
-You have a Light Shield (2 hp), a Light Helmet (2 hp) and a Light Cuirass (3 hp).
-You also have Light Gauntlets that normally provides 2 hp, but they were broken
-earlier in this battle, so you cannot chose them. You choose the shield,
-and mark it as providing zero hit points, which also means it's broken.
-You're now wearing two broken pieces of armor, which makes you have two
-fewer <<Moves,moves>> (you normally have 5 moves, but now you only have 3).
+You have a Light Shield (2 hp), a Light Helmet (2 hp) and a Light Cuirass (3
+hp). You choose the shield, and mark it as providing only one zero hit point,
 
-Lucky for you, it only requires a single move to <<drop_light_shield,drop a
-light shield>>, so you can easily get up to having 4 moves. If you want to get
-back up to 5 moves, you would have to remove your gauntlets, a task that
-requires 4 moves.
+On top of the 5 points of damage you've just received, your total hit point
+amount goes down by one, and your current number of hit points goes down by
+one due to the armor damage.
 ====
 
 .Armor can be repaired
@@ -1378,7 +1372,7 @@ recovery dice.
 
 Conditions can affect characters and baddies.
 
-//START_SORT//KEY:
+//START_SORT //KEY:
 
 //KEY:
 [reftext="comatose"]
@@ -1550,7 +1544,7 @@ again.
 The properties of a spell is listed in bold font right underneath the spell's
 name.
 
-//START_SORT//KEY:
+//START_SORT //KEY:
 
 //KEY:
 [reftext="basic"]
@@ -1638,7 +1632,7 @@ Ghost Mount 3, and so on.
 All spells listed in this section are <<basic>> and can be used by
 adventurers.
 
-// START_SORT===
+// START_SORT ===
 
 === Alertness (X)
 *Level 1, <<multilevel>>, <<focus>>*
@@ -2190,7 +2184,7 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 == DICTIONARY
 
-//START_SORT::
+//START_SORT //KEY:
 
 *Adventurer*: All PCs start out as adventurers and have to level up to level 3 before they
 can get their hero class. +
