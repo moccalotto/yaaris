@@ -2188,86 +2188,107 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //
 //KEY:
+//
+*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
+//
+//KEY:
+//
 *Adventurer*: All PCs start out as adventurers and have to level up to level 3 before they
 can get their hero class. +
 //
 //KEY:
+//
 *Adversarial check*: A check that is affected by the level of the opposition. For instance, if
 you're attacking a baddie who is 2 or more levels higher than you, your check
 is difficult. +
 //
 //KEY:
+//
 *Attack check, melee*: A check to hit an opponent. It's an <<adversarial>> _strength_ check, and it is
 difficult if you're not skilled at using the given weapon. +
 //
 //KEY:
+//
 *Attack check, ranged*: A check to hit an opponent. It's an <<adversarial>> _wisdom_ check, and it is
 difficult if you're not skilled at using the given weapon. +
 //
 //KEY:
+//
 *Baddie*: A person, creature, or monster that is hostile or otherwise considered to be
 your enemy. +
 //
 //KEY:
+//
 *Check*: You roll your d20 against a given target number (usually one of your stats). +
 _For example: when rolling a strength check you roll a d20 and must roll lower
 than your strength to succeed. +
 //
 //KEY:
+//
 *Defense check, melee*: A check to avoid being hit by melee attacks. This is an <<adversarial>>
 _dexterity_ check. +
 //
 //KEY:
+//
 *Defense ranged, melee*: A check to avoid being hit by ranged attack. This is an <<adversarial>>
 _wisdom_ check. +
 //
 //KEY:
+//
 *Difficult*: Difficult checks have a target number that’s 3 lower than normal checks. +
 //
 //KEY:
+//
 *Easy*: Easy checks have a target number that's 3 higher than normal checks. +
 //
 //KEY:
+//
 *GM*: The Game Master. +
 //
 //KEY:
+//
 *Hit Points (HP)*: A unit of health: your character has a number of hit points,
 you lose some of them when you take damage, and if you lose all of them, you
 must roll on the <<death_table>>.  _Baddies and NPCs also have hit points, and
 when they lose all of them, they die._ +
 //
 //KEY:
+//
 *Initiative*: A check made at the beginning of a combat round to see which side gets to act
 first. +
 //
 //KEY:
+//
 *Level (lvl)*: A character can have a level between 1 and 10. Baddies, traps, locks, spells,
 and various tasks can also have a level. +
 //
 //KEY:
+//
 *NPC and NPCs*: Non player character(s). These persons and creatures are played by the GM. +
 //
 //KEY:
+//
 *PC and PCs*: Player Character(s). +
 //
 //KEY:
+//
 *Proficient*: It is difficult or impossible to use an armor, weapon, or specialist tool you
 are not proficient with. +
 //
 //KEY:
+//
 *Roll*: Rolls are generic die rolls where you roll one or more specified dice, such as
 _3d6_, _1d10_, _2d8+2_, etc. The most common type of roll is the damage roll,
 where you roll your damage die for the type of weapon you're using. +
 //
 //KEY:
+//
 *TN*: Abbreviation of Target Number. +
 //
 //KEY:
+//
 *Target number*: The number you must roll below (usually with your d20) in order to make a
 successful check. +
-//
-//KEY:
-*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
 
 //END_SORT
 
