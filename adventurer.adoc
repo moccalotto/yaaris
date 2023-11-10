@@ -871,6 +871,22 @@ condition, which means they’ll wake up within 2d6 hours unless they're healed.
 This item takes up 1 item slot.
 
 //KEY:
+[reftext="lamp oil"]
+[[lamp_oil]]
+=== Lamp Oil
+This <<consumable,consumable>> item is flammable; you can use it as fuel for your
+lantern or storm lantern, and you can use it to light things on fire.
+
+You can throw lamp oil to cover an area; You first roll a _dexterity_ check. If
+successful, the oil bottle (or skin or jug) lands where you want it (within
+_strength_ meters), ruptures, and covers an area of 1d4 square meters.
+//
+At this point the oil is not on fire; you must light it yourself with torch,
+a spell, or similar fashion.
+
+This item takes up 1 item slot.
+
+//KEY:
 [reftext="lantern"]
 [[lantern]]
 ==== Lantern
@@ -949,22 +965,6 @@ rations every day, otherwise you become <<starving>>.
 ==== Spikes
 When hammered in between the door and the wall or jamb, these 30 centimeter
 spikes can wedge a door shut until the spikes are removed.
-
-This item takes up 1 item slot.
-
-//KEY:
-[reftext="lamp oil"]
-[[lamp_oil]]
-=== Lamp Oil
-This <<consumable,consumable>> item is flammable; you can use it as fuel for your
-lantern or storm lantern, and you can use it to light things on fire.
-
-You can throw lamp oil to cover an area; You first roll a _dexterity_ check. If
-successful, the oil bottle (or skin or jug) lands where you want it (within
-_strength_ meters), ruptures, and covers an area of 1d4 square meters.
-//
-At this point the oil is not on fire; you must light it yourself with torch,
-a spell, or similar fashion.
 
 This item takes up 1 item slot.
 
@@ -1554,15 +1554,21 @@ document are <<basic>>. Higher level characters have access to more advanced
 types of spells.
 
 //KEY:
+[reftext="caster level"]
+[[caster_level]]
+Caster level:: The level of the caster (i.e. not the spell). The potency, duration, or
+range of certain spell increases with the casters level.
+
+//KEY:
 [reftext="duration"]
 [[duration]]
 Duration:: The duration of the spell.
 
 //KEY:
-[reftext="caster level"]
-[[caster_level]]
-Caster level:: The level of the caster (i.e. not the spell). The potency, duration, or
-range of certain spell increases with the casters level.
+[reftext="focus"]
+[[focus]]
+Focus:: These spells cut their duration short and stop instantly if you cast
+another spell, take damage, or stop focusing on keeping the spell going.
 
 //KEY:
 [reftext="level"]
@@ -1570,12 +1576,6 @@ range of certain spell increases with the casters level.
 Level:: The level of the spell. If the spell also has the <<multilevel>> property,
 _level_ is the level of the weakest version of the spell, meaning no versions
 of the spell exists at a lower level that that.
-
-//KEY:
-[reftext="focus"]
-[[focus]]
-Focus:: These spells cut their duration short and stop instantly if you cast
-another spell, take damage, or stop focusing on keeping the spell going.
 
 //KEY:
 [reftext="multilevel"]
@@ -1748,14 +1748,6 @@ meter. If the fire is 1 square meter in size, it shrinks to the size of a
 bonfire. If the fire is the size of a bonfire, it goes out, not producing any
 additional smoke in the process.
 
-=== Furnace
-*Level 2, <<trance>>, duration: up to 8 hours*
-
-A bonfire within 10 meters becomes hot enough heat metal enough for forging.
-The bonfire does not consume more wood that it would normally do, and
-it does not radiate more heat than it normally would; it becomes hot by
-keeping the heat close to the fire.
-
 === Cure Exhaustion
 *Level 1, <<ritual>>, range: _wisdom_ meter*
 
@@ -1831,6 +1823,14 @@ target receives 1d6+_X_ damage, otherwise they receive 1d6 damage.
 *Level 1, <<focus>>, <<multilevel>>*
 
 Your _charisma_ checks are easy for the next _X_ minutes.
+
+=== Furnace
+*Level 2, <<trance>>, duration: up to 8 hours*
+
+A bonfire within 10 meters becomes hot enough heat metal enough for forging.
+The bonfire does not consume more wood that it would normally do, and
+it does not radiate more heat than it normally would; it becomes hot by
+keeping the heat close to the fire.
 
 === Ghost Mount (X)
 *Level 2, <<focus>>, <<multilevel>>*
@@ -2189,10 +2189,6 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 //
 //KEY:
 //
-*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
-//
-//KEY:
-//
 *Adventurer*: All PCs start out as adventurers and have to level up to level 3 before they
 can get their hero class. +
 //
@@ -2290,6 +2286,10 @@ where you roll your damage die for the type of weapon you're using. +
 *Target number*: The number you must roll below (usually with your d20) in order to make a
 successful check. +
 
+//KEY:
+//
+*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
+//
 //END_SORT
 
 //}}}
