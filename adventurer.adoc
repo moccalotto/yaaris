@@ -2185,7 +2185,6 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 == DICTIONARY
 
 //START_SORT //KEY:
-
 //
 //KEY:
 //
@@ -2268,6 +2267,10 @@ and various tasks can also have a level. +
 //
 //KEY:
 //
+*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
+//
+//KEY:
+//
 *Proficient*: It is difficult or impossible to use an armor, weapon, or specialist tool you
 are not proficient with. +
 //
@@ -2286,10 +2289,6 @@ where you roll your damage die for the type of weapon you're using. +
 *Target number*: The number you must roll below (usually with your d20) in order to make a
 successful check. +
 
-//KEY:
-//
-*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
-//
 //END_SORT
 
 //}}}
