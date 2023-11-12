@@ -1,6 +1,7 @@
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
 :doctype: article
+:icons: font
 :sectlinks:
 :toc:
 :toclevels: 1
@@ -103,15 +104,19 @@ troll hands (claws, maybe?) and a roll of 4 and 3 would give you an elven nose.
 ==== Vice
 Roll a d12. If you roll a number that isn't on the table, you don’t have a vice.
 
---
-. Attention seeking
-. Bar fighting
-. Drinking
-. Fornicating
-. Gambling
-. Stealing
-. Two vices: Roll twice.
---
+[%header,cols="^1,11"]
+|===
+| 1d12  | Vice
+//------|--------------------------
+| 1-6   | No vice
+| 7     | Attention seeking
+| 8     | Bar fighting
+| 9     | Drinking
+| 10    | Fornicating
+| 11    | Gambling
+| 12    | Stealing
+//------|--------------------------
+|===
 
 
 ==== Background
@@ -185,15 +190,17 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 
 [%header,cols="^2,10"]
 |===
-|d6     | Weapon
+| d6    | Weapon
 //------|-----------
-|1-3:   | No Ranged Weapon.
-|4:     | Slingshot + Bag of stones.
-|5:     | Bow + Quiver of arrows.
-|6:     | Crossbow + Quiver of bolts.
+| 1-3   | No Ranged Weapon
+| 4     | Slingshot + Bag of stones
+| 5     | Bow + Quiver of arrows
+| 6     | Crossbow + Quiver of bolts
 //------|-----------
 |===
 
+// Turn automatic section id off. We want <<Armor>> to link 
+// to a later section
 :!sectids:
 ==== Armor
 :sectids:
@@ -240,7 +247,7 @@ reroll it.
 | 1d10 | Item
 //-----|-----------
 | 1    | 2d4 gold pieces
-| 2    | <<Spellbooks,spellbook>> with 1 <<usage_points,usage point>>
+| 2    | <<Spellbooks,spellbook>> with 2 <<usage_points,usage point>>
          and a spell of your choice.
 | 3    | <<torch>>
 | 4    | <<spikes>>
@@ -296,7 +303,7 @@ wearing broken armor.
 ==== Weapon Skills
 You are skilled at using light melee weapons and ranged weapons. On the
 <<adventurer_damage_rolls_table,table below>> you can see how much damage you
-deal with each weapon category. See also the rules on <<attack_range>>.
+deal with each weapon category. 
 
 [[adventurer_damage_rolls_table]]
 .Adventurer Damage Rolls
@@ -310,6 +317,17 @@ deal with each weapon category. See also the rules on <<attack_range>>.
 | Heavy Melee Weapons   | Unskilled   | 1d10
 //----------------------|-------------|------------
 |===
+
+.Attack range
+[reftext="attack range"]
+[[attack_range]]
+[NOTE]
+--
+A weapon's range is a number of meters equal to its cost in gold pieces. You
+can go beyond this range, up to _wisdom_ meters in total, but then your
+<<attack_and_damage,attack checks>> would be <<difficult>>.
+--
+
 
 ==== Exotic Weapon Skills
 You are not skilled at using exotic weapons such as the <<Kosh,kosh>>.
@@ -358,12 +376,12 @@ have stocked up on ammunition. This ability also works with bolts, slingshots,
 and darts.
 
 //KEY:
-[reftext="great_weapon_specialist"]
+[reftext="great weapon specialist"]
 [[great_weapon_specialist]]
 *Great weapon specialist*: You are skilled at using heavy melee weapons.
 
 //KEY:
-[reftext="monstrous_gourmand"]
+[reftext="monstrous gourmand"]
 [[monstrous_gourmand]]
 *Monstrous Gourmand*: You can make edible ration packs from fresh monster parts (any recently dead
 creature will do) It requires sharp cutting instruments, a large pot, a bonfire
@@ -387,7 +405,8 @@ have advantage on your <<haggling_check>>.
 normal instead of difficult. If you're not weapon a shield, and not wearing any
 medium or heavy armor pieces, your unarmed damage die is increased to 1d6.
 
-WARNING: Striking certain dangerous monsters (such as fire elementals) with
+[quote]
+Striking certain dangerous monsters (such as fire elementals) with
 your body can have grave consequences.
 
 //KEY:
@@ -417,7 +436,8 @@ sleeve or… somewhere. If your check fails, you cannot do it again for the rest
 of the session. In combat, this feat requires 3 moves. You are also skilled at
 using a <<Kosh,kosh>>, something normal adventurers are not.
 
-WARNING: The gods do not smile on people who use this ability to get rich by selling
+[quote]
+The gods do not smile on people who use this ability to get rich by selling
 daggers.
 
 //KEY:
@@ -435,14 +455,15 @@ on checks that involve navigation in caves and dungeons.
 //KEY:
 [reftext="thrifty"]
 [[thrifty]]
-*Thrifty*: You have advantage on consumption checks with <<Purse,coin purses>>.
+*Thrifty*: You have advantage on <<consumption_check,consumption checks>> with
+<<Purse,coin purses>>.
 
 //KEY:
 [reftext="traveler"]
 [[traveler]]
-*Traveler*: You have advantage on consumption checks for rations and animal
-feed. You have advantage on geography related checks. One of the ration packs
-you carry does’t take up an item slot.
+*Traveler*: You have advantage on <<consumption_check,consumption checks>> for
+rations and animal feed. You have advantage on geography related checks. One of
+the ration packs you carry does’t take up an <<item_slots,item slot>>
 //END_SORT
 
 === Level 3: Graduation
@@ -631,36 +652,42 @@ use 8 or more of your item slots, you become <<encumbered>>.
 [reftext="usage points"]
 [[usage_points]]
 === Usage Points
-Items that can be consumed or depleted (such as rations, arrows, <<lamp_oil>>)
-have usage points. When you have used such an item you make a consumption check
-to see if it loses a usage point. If the item run out of <<usage_points>>, it
-is completely used up: no more arrows in the quiver, and no more food in the
-ration pack.
+Items that can be consumed or depleted (such as <<rations>>, arrows,
+<<lamp_oil>>) have usage points. When you have used such an item you make a
+consumption check to see if it loses a usage point. If the item run out of
+<<usage_points>>, it is completely used up: no more arrows in the quiver, and
+no more food in the ration pack.
 
 [reftext="consumption check"]
 [[consumption_check]]
 === Consumption & Consumption Checks
-A _consumption_ happens whenever you consume, use, or deplete an item
-with usage points.
-
-After you have made a consumption, you must make a _consumption check_.
-
-A _consumption check_ is a check with a target number of 11, and if you aren't
+You are sometimes asked to spend a _consumption_ of a given consumable item.
+When making a _consumption_ of an item, you first roll a _consumption check_,
+which is a <<Checks,check>> with a target number of 11, and if the check wasn't
 successful, the item in question loses a <<usage_points,usage point>>.
 
-.Using Magic Components
-====
+*Magic components*: 
 A consumption of magic components means you use some unspecified amount of your
 magic components and then you make a consumption check. And if the check was
 unsuccessful, your magic components lose a usage point.
-====
 
-*Consumable Projectiles*: Projectiles (such as arrows, bolts,
-slingshots, etc.) are consumables. You do not roll a consumption check every
-time you fire an arrow, bolt, or slingshot during combat. Instead you make one
-consumption check after the combat ends (one for each type of projectile you
-used). When you fire a projectile while not in combat, you make a consumption
-check with <<advantage>> after each projectile fired.
+*Rations*:
+You must spend one _consumption_ of <<rations>> every day if you don't want to
+<<starving,starve>>. This means that, once a day, you must make a _consumption
+check_, and if it fails, one of your ration packs loses a <<usage_points,usage
+point>>.
+
+*Consumable Projectiles*: 
+You do not roll a _consumption check_ every time you fire an arrow, bolt, or
+slingshot during combat. Instead you make one consumption check after the
+combat ends (one for each type of projectile you used). When you fire a
+projectile while not in combat, you make a consumption check with <<advantage>>
+after each projectile fired.
+
+*Consumable Thrown Weapons*:
+Items that can be used in melee combat _and_ ranged combat, such as knives,
+spears, and javelins, do not have usage points; when you have thrown them,
+they cannot be used any more during that combat.
 
 === Gear
 
@@ -700,7 +727,7 @@ check with <<advantage>> after each projectile fired.
 | <<rations>>                   | 1 | 1 | 1 sp
 | <<spikes>>                    | 1 | 2 |
 | <<lockpicking_tools>>         | 1 | 4 |
-| <<tinkering_tools>>           | 1 | 4 |
+| <<tinkering_tools>>           | 2 | 4 |
 | <<torch>>                     | 1 | 2 | 5 cp
 //------------------------------|---|---|-----------
 |===
@@ -765,10 +792,10 @@ Price of armor is typically (hp)³
 |===
 
 Light Melee Weapons::
-A light weapon costs 5 gold pieces and takes up 1 <<item_points,item point>>.
+A light weapon costs 5 gold pieces and takes up 1 <<item_slots,item slot>>.
 
 Heavy Melee Weapons::
-A two-handed weapon costs 6 gold pieces and takes up 2 <<item_points>>.
+A two-handed weapon costs 6 gold pieces and takes up 2 <<item_slots>>.
 
 .Melee Weapons
 [%header,cols="10,^1,^1"]
@@ -797,13 +824,12 @@ A two-handed weapon costs 6 gold pieces and takes up 2 <<item_points>>.
 //------------------------------|---|---|---------
 |===
 
-.Attack range
-[[attack_range]]
-****
-A weapon's range is a number of meters equal to its cost in gold pieces. You
-can go beyond this range, up to _wisdom_ meters in total, but then your
-<<attack_and_damage,attack checks>> would be <<difficult>>.
-****
+.Attack Range
+[TIP]
+--
+See <<attack_range>> for more info on how far your
+ranged attacks can reach.
+--
 
 === Special Items
 //START_SORT //KEY:
@@ -912,7 +938,7 @@ either, as they are designed to go out when they aren't upright.
 ==== Lockpicking Tools
 These tools allow you to pick various locks. They can be used up, and therefore
 have <<usage_points>>. To Open a Lock, you first spend 5 minutes and one
-consumption of lockpicking tools. Then you make both a _dexterity_- and an
+<<consumption_check,consumption>> of lockpicking tools. Then you make both a _dexterity_- and an
 _intelligence_ check.
 
 * If both are successful, you open the lock.
@@ -952,12 +978,14 @@ This item takes up 1 item slot.
 [reftext="rations"]
 [[rations]]
 ==== Rations
-Rations sustain you on your adventures. You must use one <<consumption>> of
-rations every day, otherwise you become <<starving>>.
+Rations sustain you on your adventures. You must use one
+<<consumption_check,consumption>> of rations every day, otherwise you become
+<<starving>>.
 
 [reftext="iron rations"]
 [[iron_rations]]
-*Iron Rations*: have twice as many usage points as normal rations.
+*Iron Rations* have more <<usage_points>> that normal rations, but don't
+require more <<item_slots>>.
 
 //KEY:
 [reftext="spikes"]
@@ -965,8 +993,6 @@ rations every day, otherwise you become <<starving>>.
 ==== Spikes
 When hammered in between the door and the wall or jamb, these 30 centimeter
 spikes can wedge a door shut until the spikes are removed.
-
-This item takes up 1 item slot.
 
 //KEY:
 [reftext="tinkering tools"]
@@ -1034,23 +1060,27 @@ This item takes up 1 item slot.
 You buy things for price listed in this guide, but you cannot sell items at
 that price. When selling something trivial or cheap, you sell it for 50% of the
 listed value, but if you’re selling more precious things, you must make a
-<<haggling_check>>.
+_haggling check_.
 
 [reftext="haggling check"]
 [[haggling_check]]
-*The Haggling Check*:
+*Haggling Check*:
 If you’re selling expensive items, or if you’re selling things in bulk, you
 must haggle to get a good price. You first roll a _charisma_ check, and
 refer to the table below, and do what it says, even if you don't like the
 result.
 
-[cols=">1s,11",grid=none,grid=none,frame=none]
+[cols=">1s,11",grid=none,stripes=none,frame=none]
 |===
 | <<nat20>> | You sell the item(s) for 25% of local list price.
 | Failure   | You sell the item(s) for 50% of local list price.
 | Success   | You sell the item(s) for 75% of local list price.
 | <<nat1>>  | You sell the item(s) for 100% of local list price.
 |===
+
+.Negotiator Ability
+TIP: If you have the <<negotiator>> ability, you have <<advantage>>
+on your haggling check.
 
 //}}}
 
@@ -1077,8 +1107,8 @@ The players act in the order in which they sit around the gaming table,
 clockwise from the GM, and the baddies act in whatever order the GM wishes.
 
 === Moves
-You have 5 moves you can take before you take your main action.
-You can use them in many ways, and here's some examples.
+You have 5 moves you can take before you take your main action. You can use
+them in many ways, and here's some examples.
 
 .Moves
 [%header,cols="11,^1"]
@@ -1089,7 +1119,7 @@ You can use them in many ways, and here's some examples.
 | Ready a potion from a belt pouch              |   1
 | Draw a weapon from your sheath or equivalent  |   1
 | Switch to a new quiver                        |   1
-| Drop a light shield [[drop_light_shield]]     |   1
+| Drop a light shield                           |   1
 | Open a door                                   |   2
 | Mount or dismount                             |   2
 | Move 1 meter in bad terrain                   |   2
@@ -1122,7 +1152,7 @@ When you attack a baddie, you make an attack check. If you're making a ranged
 attack, you make an <<adversarial>> _wisdom_ check, and if you're making
 a melee attack you make an <<adversarial>> _dexterity_ check.
 
-IMPORTANT: Your attack check is _difficult_ if you're not
+IMPORTANT: Your attack check is <<difficult>> if you're not
 <<weapon_skills,skilled>> at using your weapon.
 
 ==== Damage Roll
@@ -1131,9 +1161,8 @@ and the baddie loses that many <<hit_points>>
 
 See the <<adventurer_damage_rolls_table>> table to find your damage die.
 
-[quote]
-If you have the <<great_weapon_specialist,Great weapon specialist>>
-special ability, you are also skilled in using heavy melee weapons.
+TIP: If you have the <<great_weapon_specialist>> special ability, you are also
+skilled in using heavy melee weapons.
 
 Critical hits::
 If you roll a <<nat1>> on your attack check, you get an extra action for free.
@@ -1143,10 +1172,11 @@ including attacking the same opponent again.
 [reftext="weapon wear"]
 [[weapon_wear]]
 ==== Weapon Wear
-If you roll a <<nat20>> on your attack check, you must roll your damage die. If
-you roll the minimum possible value, your weapon becomes unusable and must be
-repaired before it can be used again. It can be repaired by a weaponsmith, a
-process that takes hours of work and requires a weaponsmith workshop.
+If you roll a <<nat20>> on your attack check, you must roll a _charisma_ check.
+If it failed, your weapon becomes unusable and must be repaired before it can
+be used again. It can be repaired by an <<armorer>> or a weaponsmith, a process
+that takes hours of work and requires a weaponsmith workshop.
+
 
 === Defense
 When a baddie tries to attack you, you make a defense check. If it was a
@@ -1162,7 +1192,8 @@ greaves, and a shield.
 Each piece of armor you wear increases your hit point total by a number of
 points. The better the armor piece, the more hit points you get.
 
-NOTE: A shield is also an armor piece.
+[quote]
+A shield is an armor piece.
 
 When you don an armor piece, your <<hit_point_total>> and your current number
 of hit points both increase by the number of hit points provided by the armor
@@ -1171,28 +1202,24 @@ piece.
 When you doff armor, your <<hit_point_total>> and your current number of hit
 points both decrease by the number of hit points provided by the armor piece.
 
-WARNING: You can die if you are very low on hit points and remove a functional armor
-piece.
+[quote]
+You can die if you are very low on hit points and remove a functional
+armor piece.
 
 ===== Armor Requires Skill
-For every piece of armor you're wearing, that you're not skilled at using,
+For each piece of armor you're wearing, if you're not skilled at using it,
 you lose one <<Moves,move>>.
 
 ===== Armor Wears Out
 If you are wearing at least one functional piece of armor, and you roll a
 <<nat20>> on your <<Defense,defense check>>, one of the functional
-<<Armor,armor pieces>> you are wearing takes damage and provides
-one less _hit point_. You choose which armor piece takes damage.
-Once an armor piece is reduced to zero hit points, it becomes
-broken, which has two major side effects:
+<<Armor,armor pieces>> you are wearing (your choice) breaks and becomes
+nonfunctional. A broken armor piece still provides <<hit_points>>, but
+wearing it reduces your number of <<Moves,moves>> by one. This is cumulative
+so if you're wearing 3 pieces of broken armor, you lose 3 moves.
 
-. Your <<hit_point_total>> goes down by one.
-. Your current number of hit points also goes down by one, on top of
-  the damage you received from the attack.
-  Your number of <<Moves,moves>> is reduced by 1 per broken
-  piece of armor you're wearing.
-
-NOTE: If you're wearing a piece of broken armor that you're not
+[quote]
+If you're wearing a piece of broken armor that you're not
 <<armor_skills,skilled>> at using, that piece of armor is responsible for you
 losing _two_ <<Moves,moves>>; one because you're unskilled, and the other
 because the armor piece is broken.
@@ -1204,21 +1231,18 @@ take 5 points of damage. You must now select an armor piece that has at least
 one hit point, and that armor piece will also take some damage.
 
 You have a Light Shield (2 hp), a Light Helmet (2 hp) and a Light Cuirass (3
-hp). You choose the shield, and mark it as providing only one zero hit point,
+hp). You choose the shield, and mark it as providing only one one hit point.
 
 On top of the 5 points of damage you've just received, your total hit point
 amount goes down by one, and your current number of hit points goes down by
 one due to the armor damage.
 ====
 
-.Armor can be repaired
-[sidebar]
---
+==== Armor can be repaired
 Armor pieces can be repaired. So you should make a note of how many hit points
 the armor piece initially provided.
 
 But only an <<armorer>> can restore the armor piece to its former glory.
---
 
 === Damage and Death
 When you hit a baddie, you roll a damage roll to see how many points of damage
@@ -1375,6 +1399,11 @@ Conditions can affect characters and baddies.
 //START_SORT //KEY:
 
 //KEY:
+[reftext="prone"]
+[[prone]]
+*Prone*: You're prone on the ground, you must spend 1 <<moves,move>> to get up.
+
+//KEY:
 [reftext="comatose"]
 [[comatose]]
 *Comatose*: You’re in a deep coma. If you receive conventional medical care,
@@ -1400,16 +1429,16 @@ stat. This check is <<difficult>> if you are alone in the darkness.
 
 [reftext="encumbered"]
 [[encumbered]]
-*Encumbered*: All checks become <<difficult>>, meaning that you
-have to roll 3 points lower than you normally would to succeed.
+*Encumbered*: All checks become <<difficult>>, meaning that you have to roll 3
+points lower than you normally would to succeed.
 
 //KEY:
 [reftext="dying"]
 [[dying]]
 *Dying*: You’re near death; you must roll on the <<trauma_table>>. Every round,
 at the beginning of your turn, you must make a d20 roll; if you roll a
-<<nat1>>, you are no longer dying, but <<unconscious>>, and if you
-rolled a <<nat20>>, you are dead.
+<<nat1>>, you are no longer dying, but <<unconscious>>, and if you rolled a
+<<nat20>>, you are dead.
 
 //KEY:
 [reftext="exhausted"]
@@ -1434,10 +1463,11 @@ rolled a <<nat20>>, the damage die increases (for instance, from 1d4 to 1d6).
 //KEY:
 [reftext="poisoned"]
 [[poisoned]]
-*Poisoned*: You temporarily lose 1d4 points of a random stat every minute. Aft*: rolling your stat loss, you make a _constitution_ check with <<disadvantage>>.
-If successful, the poisoned condition is removed. You die if any of your stats
-are reduced to zero. If you die from poison, only Greater Revival can restore
-you back to life.
+*Poisoned*: You temporarily lose 1d4 points of a random stat every minute.
+After rolling your stat loss, you make a _constitution_ check with
+<<disadvantage>>. If successful, the poisoned condition is removed. You die if
+any of your stats are reduced to zero. If you die from poison, only Greater
+Revival can restore you back to life.
 
 //KEY:
 [reftext="restrained"]
@@ -1456,8 +1486,8 @@ under a stat, that stat is reduced by 1.
 //KEY:
 [reftext="unconscious"]
 [[unconscious]]
-*Unconscious*: You are unconscious; if you receive any kind of healing, you will
-wake up right away, otherwise you will wake up within 2d6 hours.
+*Unconscious*: You are unconscious; if you receive any kind of healing, you
+will wake up right away, otherwise you will wake up within 2d6 hours.
 
 //END_SORT
 //}}}
@@ -1503,7 +1533,7 @@ Procedure::
 * Remove 1 <<usage_points,usage point>> from the spellbook.
 * Then make an _intelligence_ check:
 * If your _intelligence_ check was successful, you cast the spell, and it takes
-  effect. If unsuccessful, the spell fizzles. If you rolled a nat20, the
+  effect. If unsuccessful, the spell fizzles. If you rolled a <<nat20>>, the
   spellbook instantly loses all its <<usage_points>>.
 * If your spell fizzled, you can try again next round if your spellbook still
   has charge.
@@ -1520,11 +1550,11 @@ Requirements::
 * The spellbook must have at least one <<usage_points,usage point>>.
 
 Procedure::
-* You spend 10 minutes chanting and reading from the spellbook.
-* Then you spend one consumption of magic components.
-* Then you make an _intelligence_ check; if successful, you cast the spell. If
-  unsuccessful, the spell fizzles, but you can try again later. If nat20, the
-  spellbook loses all its <<usage_points>>.
+* You spend 10 minutes chanting and reading from the spellbook. Then you spend
+* one <<consumption_check,consumption>> of magic components. Then you make an
+* _intelligence_ check; if successful, you cast the spell. If unsuccessful, the
+  spell fizzles, but you can try again later. If nat20, the spellbook loses all
+  its <<usage_points>>.
 
 [reftext="basic recharging"]
 [[basic_recharging]]
@@ -1535,10 +1565,10 @@ Adventurers can recharge <<basic>> spellbooks, restoring them to their maximum
 Requirements:: The spell in the spellbook must be <<basic>>, and its level must
 not be higher than yours.
 
-Procedure:: You start by spending one consumption of magic components, followed
-by 30 minutes of ritualistic work. Then you make an _intelligence_ check. If
-the check succeeds, you have recharged the spellbook, otherwise you must try
-again.
+Procedure:: You start by spending one <<consumption_check,consumption>> of
+magic components, followed by 30 minutes of ritualistic work. Then you make an
+_intelligence_ check. If the check succeeds, you have recharged the spellbook,
+back to its maximum <<usage_points>> otherwise you must try again.
 
 ==== Spell Properties
 The properties of a spell is listed in bold font right underneath the spell's
@@ -1646,22 +1676,29 @@ caster stops focusing on the spell, whichever comes first.
 === Alluring Attraction (X)
 *Level 1, <<multilevel>>, <<ritual>>, duration: _X_ days*
 
-Of the next _X_+1 _charisma_ checks you make, you have advantage on checks that
-have a strong flirting component or involve physical attraction.
+Of the next `_X_+1` _charisma_ checks you make, you have advantage on checks
+that have a strong flirting component or involve physical attraction.
 
 === Animal Friendship (X)
 *Level 1, <<focus>>, <<multilevel>>, <<ritual>>*
 
 Within the next _X_ + 1 hours, all _intelligence_, _wisdom_, and _charisma_
-checks made to befriend animals have <<advantage>>. On top of that,
-there is a 50% chance that an animal that would have otherwise been hostile
-towards you, is now simply cautious.
-
+checks made to befriend animals have <<advantage>>. On top of that, there is a
+50% chance that an animal that would have otherwise been hostile towards you,
+is now simply cautious.
 
 === Armor (X)
 *Level 1, <<multilevel>>, <<ritual>>*
 
-???
+You turn a nonmagical piece of clothing that you wear into a functional armor
+piece that provides _X_ <<armor_hit_points,hit points>>. You are skilled at
+using the armor.
+
+You can create a cuirass, gauntlets, greaves, and a helmet, but you cannot
+create a shield.
+
+The armor becomes nonmagical if it breaks during combat, if you remove it, or
+if you sleep.
 
 === Banking Transaction (X)
 *Level 3, <<multilevel>>, duration: 5 minutes*
@@ -1705,7 +1742,8 @@ simply wander away if possible.
 
 A magical wooden club appears in your hand. You are proficient at wielding this
 one-handed weapon, and your damage die is 1d12 when doing so. The club
-dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go of it.
+dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go
+of it.
 
 === Command (X)
 *Level: 1, <<multilevel>>, duration: 1 round*
@@ -1723,8 +1761,8 @@ Any creature targeted by this spell will become hostile towards you, regardless
 if they executed the command or not.
 
 Commands such as flee and run are straight forward, but a command such as drop
-can be interpreted in many ways (drop the thing you’re holding, or drop prone,
-or drop the subject).
+can be interpreted in many ways (drop the thing you’re holding, or drop
+<<prone>>, or drop the subject).
 
 === Command Fire (X)
 *Level 1, <<trance>>,
@@ -1764,6 +1802,7 @@ If you make a successful _charisma_ check, you get a sense, on a scale of 1 to
 5, of how dangerous a given foe, group, situation, mechanism, substance, or
 task.
 
+[quote]
 Context is important: a high level paladin might be dangerous to her foes, but
 completely harmless to her friends.
 
@@ -1771,11 +1810,11 @@ completely harmless to her friends.
 *Level 1, <<ritual>>, duration: _intelligence_ minutes*
 
 You can see magic items, and items that are affected by spells, such as an item
-with light cast on it. The item must be within _wisdom_ meters. To you, magical
-items start to glow after you've looked directly at them for a while. You need
-to take things slow if you want to scan everything around you. The “glow” can
-penetrate cloth and paper, so a magical ring in a pocket or a magical pen
-underneath a sheet of paper can be detected.
+with <<Illuminate (X)>> cast on it. The item must be within _wisdom_ meters. To
+you, magical items start to glow after you've looked directly at them for a
+while. You need to take things slow if you want to scan everything around you.
+The “glow” can penetrate clothes and paper, so a magical ring in a pocket or a
+magical pen underneath a sheet of paper can be detected.
 
 === Detect Traps (X)
 *Level 1, <<focus>>, <<multilevel>>*
@@ -1880,12 +1919,12 @@ it.
 *Level 1+, <<multilevel>>, range: 2+_X_ meters*
 
 You target an object within range. The object emits a ghostly dark aura that
-dulls all non-magical sources of light within 5+_X_ meters so much that their
-radius is reduced to 1 meter while they are within the effective range of the
-gloomy object.
+dulls all non-magical sources of light within 5+_X_ meters reducing their
+radius to 1 meter while they are within the effective range of the gloomy
+object.
 
-This spell can also dull magical light sources if their spell level or item
-level is lower than _X_.
+This spell also dulls magical light sources if their spell level or item level
+is lower than _X_.
 
 The dulled light sources cannot be seen by creatures more than 1 meter away
 from them.
@@ -1927,7 +1966,7 @@ level is higher than _X_, the spell fizzles.
 
 Upon casting the spell, you touch a door, tent flap, a lock, or similar
 moveable object. If the object is disturbed by a creature (but not the wind), a
-loud alarm will “ring” inside your head. The alarm is loud enough to wake you
+loud alarm will "`ring`" inside your head. The alarm is loud enough to wake you
 up, but quiet enough that you don’t wake up screaming.
 
 === Invisibility to Stupidity (X)
@@ -1948,8 +1987,8 @@ obstacle reduces your jump.
 *Level 1+, <<multilevel>>*
 
 You touch an adjacent target, who then takes __X__d6 damage. After rolling
-damage, you make a _wisdom_ check. If successful, the target is knocked prone,
-and must spend a number of moves next round to get up.
+damage, you make a _wisdom_ check. If successful, the target is knocked
+<<prone>>, and must spend a number of moves next round to get up.
 
 If the target is wearing three or more pieces of metal armor, you have
 advantage on the damage roll and the _wisdom_ check.
@@ -1996,10 +2035,12 @@ stone and the baddie. It cannot curve or fly around obstacles.
 *Level 1, <<multilevel>>*
 
 You instantly repair a break, crack, scratch, or tear up to 5 + _X_ centimeters
-from an object within _X_ meters that weighs no more than _X_ kg.  Mending a
-nonmagical <<Armor,armor piece>> restores _X_ of the piece's
-<<armor_hit_points>>. Once an item has been mended, it becomes slightly magical
-for 1 day; it cannot be mended in that period, and it will be detectable with
+from an object within _X_ meters that weighs no more than _X_ kg. A nonmagical
+<<Armor,armor piece>> can be mended, becoming fully functional, if it provides
+no more than _X_ <<armor_hit_points,hit points>>. A nonmagical weapon can be
+mended, becoming fully functional, if it takes up less than _X_
+<<item_slots>>. Once an item has been mended, it becomes slightly magical for
+1 day; it cannot be mended in that period, and it will be detectable with
 <<Detect Magic>>.
 
 === Mind Message (X)
@@ -2079,6 +2120,7 @@ There are more fear effects than the ones described in this guide.
 
 For the next 5·_X_ rounds, all damage you receive is halved (rounded down).
 
+[example]
 If a baddie hits you for 5 points of damage, you only take 2 points of damage.
 And if you’re hit for 1 point of damage, you take zero points of damage.
 
@@ -2185,110 +2227,92 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 == DICTIONARY
 
 //START_SORT //KEY:
-//
+
 //KEY:
-//
-*Adventurer*: All PCs start out as adventurers and have to level up to level 3 before they
-can get their hero class. +
-//
+*Adventurer*: All PCs start out as adventurers and have to level up to level 3
+before they can get their hero class. 
+
 //KEY:
-//
-*Adversarial check*: A check that is affected by the level of the opposition. For instance, if
-you're attacking a baddie who is 2 or more levels higher than you, your check
-is difficult. +
-//
+*Adversarial check*: A check that is affected by the level of the opposition.
+For instance, if you're attacking a baddie who is 2 or more levels higher than
+you, your check is difficult. 
+
 //KEY:
-//
-*Attack check, melee*: A check to hit an opponent. It's an <<adversarial>> _strength_ check, and it is
-difficult if you're not skilled at using the given weapon. +
-//
+*Attack check, melee*: A check to hit an opponent. It's an <<adversarial>>
+_strength_ check, and it is difficult if you're not skilled at using the given
+weapon. 
+
 //KEY:
-//
-*Attack check, ranged*: A check to hit an opponent. It's an <<adversarial>> _wisdom_ check, and it is
-difficult if you're not skilled at using the given weapon. +
-//
+*Attack check, ranged*: A check to hit an opponent. It's an <<adversarial>>
+_wisdom_ check, and it is difficult if you're not skilled at using the given
+weapon. 
+
 //KEY:
-//
-*Baddie*: A person, creature, or monster that is hostile or otherwise considered to be
-your enemy. +
-//
+*Baddie*: A person, creature, or monster that is hostile or otherwise
+considered to be your enemy. 
+
 //KEY:
-//
-*Check*: You roll your d20 against a given target number (usually one of your stats). +
-_For example: when rolling a strength check you roll a d20 and must roll lower
-than your strength to succeed. +
-//
+*Check*: You roll your d20 against a given target number (usually one of your
+stats). _For example: when rolling a strength check you roll a d20 and must
+roll lower than your strength to succeed. 
+
 //KEY:
-//
-*Defense check, melee*: A check to avoid being hit by melee attacks. This is an <<adversarial>>
-_dexterity_ check. +
-//
+*Defense check, melee*: A check to avoid being hit by melee attacks. This is an
+<<adversarial>> _dexterity_ check. 
+
 //KEY:
-//
-*Defense ranged, melee*: A check to avoid being hit by ranged attack. This is an <<adversarial>>
-_wisdom_ check. +
-//
+*Defense ranged, melee*: A check to avoid being hit by ranged attack. This is
+an <<adversarial>> _wisdom_ check. 
+
 //KEY:
-//
-*Difficult*: Difficult checks have a target number that’s 3 lower than normal checks. +
-//
+*Difficult*: Difficult checks have a target number that’s 3 lower than normal
+checks. 
+
 //KEY:
-//
-*Easy*: Easy checks have a target number that's 3 higher than normal checks. +
-//
+*Easy*: Easy checks have a target number that's 3 higher than normal checks. 
+
 //KEY:
-//
-*GM*: The Game Master. +
-//
+*GM*: The Game Master. 
+
 //KEY:
-//
 *Hit Points (HP)*: A unit of health: your character has a number of hit points,
 you lose some of them when you take damage, and if you lose all of them, you
 must roll on the <<death_table>>.  _Baddies and NPCs also have hit points, and
-when they lose all of them, they die._ +
-//
+when they lose all of them, they die._ 
+
 //KEY:
-//
-*Initiative*: A check made at the beginning of a combat round to see which side gets to act
-first. +
-//
+*Initiative*: A check made at the beginning of a combat round to see which side
+gets to act first. 
+
 //KEY:
-//
-*Level (lvl)*: A character can have a level between 1 and 10. Baddies, traps, locks, spells,
-and various tasks can also have a level. +
-//
+*Level (lvl)*: A character can have a level between 1 and 10. Baddies, traps,
+locks, spells, and various tasks can also have a level. 
+
 //KEY:
-//
-*NPC and NPCs*: Non player character(s). These persons and creatures are played by the GM. +
-//
+*NPC and NPCs*: Non player character(s). These persons and creatures are played
+by the GM. 
+
 //KEY:
-//
-*PC and PCs*: Player Character(s). +
-//
+*PC and PCs*: Player Character(s). 
+
 //KEY:
-//
-*Proficient*: It is difficult or impossible to use an armor, weapon, or specialist tool you
-are not proficient with. +
-//
+*Proficient*: It is difficult or impossible to use an armor, weapon, or
+specialist tool you are not proficient with. 
+
 //KEY:
-//
-*Roll*: Rolls are generic die rolls where you roll one or more specified dice, such as
-_3d6_, _1d10_, _2d8+2_, etc. The most common type of roll is the damage roll,
-where you roll your damage die for the type of weapon you're using. +
-//
+*Roll*: Rolls are generic die rolls where you roll one or more specified dice,
+such as _3d6_, _1d10_, _2d8+2_, etc. The most common type of roll is the damage
+roll, where you roll your damage die for the type of weapon you're using. 
+
 //KEY:
-//
-*TN*: Abbreviation of Target Number. +
-//
+*TN*: Abbreviation of Target Number. 
+
 //KEY:
-//
-*Target number*: The number you must roll below (usually with your d20) in order to make a
-successful check. +
-//
+*Target number*: The number you must roll below (usually with your d20) in
+order to make a successful check. 
+
 //KEY:
-//
-*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set. +
-//
+*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set.
 //END_SORT
 
 //}}}

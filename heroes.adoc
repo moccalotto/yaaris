@@ -12,16 +12,15 @@
 == HERO CLASSES
 
 === Cleric
-
 ==== Level 3
 
-Hit Points:: Increase by 8
+Hit Points:: Your Hit Point Total increases by 8.
 Stats:: Increase your _constitution_ and _wisdom_ by one point each,
 and increase one other stat by one point as well.
-Recovery Die:: 1d8
-Armor skills:: Skilled at using light and medium armor and shields.
+Recovery Die:: Your recovery die is 1d8.
+Armor skills:: You are skilled at using light and medium armor and shields.
 Magic:: Aside from using conventional spellbooks to cast _basic_ spells, 
-you gain access to <<holy_magic>> that is a more effective and powerful
+you gain access to <<holy_tablets>> that is a more effective and powerful
 way to cast _basic_ and _holy_ spells.
 
 .Cleric Damage Rolls
@@ -36,8 +35,78 @@ way to cast _basic_ and _holy_ spells.
 //----------------------|-------------|------------
 |===
 
-[[holy_magic]]
-===== Holy Magic
+===== Holy Tablets
+A holy tablet is a cleric’s version of a spellbook:
+* It contains one #basic or #cleric spell.
+* It has a number of _usage points_, depending on the skill of its creator.
+* It can be read by all clerics, but only its creator can use it to cast spells.
+* It can be used with one hand. 
+
+===== Create Holy Tablet
+When you create a holy tablet you copy (transcribe) a #basic or #cleric spell
+whose level isn't higher than yours,  onto a blank tablet.
+
+The process takes an hour and per spell level. At the end of each hour you use
+a consumption of holy components, and then you make a Wisdom check. If
+successful, you proceed to the next hour, but if unsuccessful you have to retry
+this hour. 
+
+.Transcription
+====
+Transcribing a 3rd level spell requires 3 successful Wisdom checks, and
+requires 3 consumptions of holy components plus one extra consumption per
+failed Wisdom check.
+
+---
+
+If you fail 3 Wisdom checks while transcribing a 4th level spell, it will have
+taken 7 hours and cost 7 consumptions of holy components.
+====
+
+The maximum number of usage points a newly created holy tablet has, is equal to
+your level minus the number of unsuccessful Wisdom checks you made during its
+creation. 
+
+====
+A 4th level cleric is creating a tablet. The cleric failed their Wisdom check 3
+times. This means the tablet has `4-3=1` usage point.
+====
+
+Regardless of a tablet’s maximum number of usage points, when a tablet is newly
+created, it has zero usage points, and must be recharged with Holy Recharging. 
+
+===== Recharge Holy Tablet
+You can restore a holy tablet of your creation to maximum usage points. It
+takes 10 minutes of work per spell level and requires 1 consumption of holy
+components.
+
+===== Cleric Casting
+You can cast <<basic>> and <<holy>> spells through your holy tablets.
+
+Requirements::
+* The tablet has at least one usage point.
+* You’re the creator of the tablet.
+* You’re holding the tablet in one hand.
+* You aren't encumbered.
+* You are able to speak.
+* The spell’s level isn't higher than yours.
+* The spell has the <<holy>> and/or <<basic>> property.
+
+Casting Time::
+Casting a spell is an action unless otherwise specified in the spell’s
+description. Certain spells take anywhere from a few rounds to many minutes to
+cast.
+
+____
+Remember you must have the tablet in your hand the entire time.
+____
+
+Procedure::
+To cast a spell you make a Wisdom check with advantage.
+* If successful, the spell takes effect, and the tablet loses a Usage Point. 
+* If unsuccessful, the spell fizzles. 
+* If <<nat20>> the holy tablet is reduced to 0 usage points.
+
 
 
 ==== Level 4
