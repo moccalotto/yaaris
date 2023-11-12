@@ -254,7 +254,7 @@ reroll it.
 | 5    | <<tinkering_tools>>
 | 6    | pole, 3m, foldable
 | 7    | chalk
-| 8    | <<ration_pack,ration pack, normal>>
+| 8    | <<rations,ration pack, normal>>
 | 9    | <<lamp_oil,lamp oil>>
 | 10   | <<map_making_tools>>
 //-----|-----------
@@ -330,7 +330,7 @@ can go beyond this range, up to _wisdom_ meters in total, but then your
 
 
 ==== Exotic Weapon Skills
-You are not skilled at using exotic weapons such as the <<Kosh,kosh>>.
+You are not skilled at using exotic weapons such as the <<kosh>>.
 Becoming skilled with such weapons require special training or abilities (such
 as <<shady>>).
 
@@ -369,11 +369,11 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 //KEY:
 [reftext="everdeen"]
 [[everdeen]]
-*Everdeen*: If you are without arrows during combat, you can spend 3 moves, and make a
-_charisma_ check. If successful, you somehow have a single extra arrow and
-you’re ready to fire. If unsuccessful, you cannot use this ability before you
-have stocked up on ammunition. This ability also works with bolts, slingshots,
-and darts.
+*Everdeen*: If you are without arrows during combat, you can spend 3 moves, and
+make a _charisma_ check. If successful, you somehow have a single extra arrow
+and you’re ready to fire. If unsuccessful, you cannot use this ability before
+you have stocked up on ammunition. This ability also works with bolts,
+slingshots, and darts.
 
 //KEY:
 [reftext="great weapon specialist"]
@@ -421,7 +421,7 @@ you can ride virtually any tame creature.
 
 ****
 *_Your horse_* can drag a cart that can carry you and two others, or you and 20
-<<item_slots>> of cargo. It can move 2 meters for every <<moves,move>> you
+<<item_slots>> of cargo. It can move 2 meters for every <<Moves,move>> you
 make, and it has the same stats and hit points as you, except for
 _intelligence_, which is 2. The horse generally does what you want when you're
 in the saddle, but you have to succeed a _charisma_ (with advantage) check to
@@ -434,7 +434,7 @@ command it when you're not.
 *Shady*: On a successful _charisma_ check you pull out a dagger from a boot, a
 sleeve or… somewhere. If your check fails, you cannot do it again for the rest
 of the session. In combat, this feat requires 3 moves. You are also skilled at
-using a <<Kosh,kosh>>, something normal adventurers are not.
+using a <<kosh>>, something normal adventurers are not.
 
 [quote]
 The gods do not smile on people who use this ability to get rich by selling
@@ -449,14 +449,14 @@ You always have some chalk.
 You always know the cardinal directions. 
 One of the ropes you carry does not take up an <<item_slots,item slot>>.
 You have <<advantage>> on <<consumption_check,consumption checks>> checks 
-for <<lamp_oil>>, <<lamp,lamps>>, and <<torch,torches>>. You have <<advantage>>
-on checks that involve navigation in caves and dungeons.
+for <<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>. You have
+<<advantage>> on checks that involve navigation in caves and dungeons.
 
 //KEY:
 [reftext="thrifty"]
 [[thrifty]]
 *Thrifty*: You have advantage on <<consumption_check,consumption checks>> with
-<<Purse,coin purses>>.
+<<coin_purse,coin purses>>.
 
 //KEY:
 [reftext="traveler"]
@@ -567,7 +567,7 @@ the roll <<easy>>, but you're also <<encumbered>>, which makes the check
 [[adversarial]]
 === Adversarial Checks
 These are checks where the difficulty depends on the level of the adversary. In
-this context, and adversary can be a baddie, an <<NPC>>, a lock, a trap, a
+this context, and adversary can be a baddie, a lock, a trap, a
 riddle, or similar.
 
 If the adversary is two or more levels above you, the check is
@@ -839,7 +839,7 @@ ranged attacks can reach.
 [[bank_book]]
 ==== Bank book
 A bank book is a magical book that can contain money. There is a magical ritual
-called <<Banking Transaction (X)>>, that allows you to transfer money into and
+called <<_banking_transaction_x>>, that allows you to transfer money into and
 out of the book.
 
 This item takes up 1 item slot.
@@ -900,7 +900,7 @@ This item takes up 1 item slot.
 [reftext="lamp oil"]
 [[lamp_oil]]
 === Lamp Oil
-This <<consumable,consumable>> item is flammable; you can use it as fuel for your
+This <<consumption_check,consumable>> item is flammable; you can use it as fuel for your
 lantern or storm lantern, and you can use it to light things on fire.
 
 You can throw lamp oil to cover an area; You first roll a _dexterity_ check. If
@@ -1001,7 +1001,7 @@ spikes can wedge a door shut until the spikes are removed.
 Tinkering tools can be used to disarm traps and repair broken items.
 
 Repairing mechanism:: To repair a trap, mechanism, stuck door, or similar,
-you spend 10 minutes and one <<consumption,consumption>> of tinkering tools.
+you spend 10 minutes and one <<consumption_check,consumption>> of tinkering tools.
 Then you make a _dexterity_ check and an _intelligence_ check.
 
 * If both are successful, you have repaired the item.
@@ -1011,14 +1011,14 @@ Then you make a _dexterity_ check and an _intelligence_ check.
 Repairing armors:: This is like repairing mechanisms, except: only
 <<armorer,armorers>> can repair armors, and only _light armor_ can be repaired
 using tinkering tools alone; _medium_ and _heavy_ armor also requires a
-furnace (or the <<Furnace>> spell).
+furnace (or the <<_furnace>> spell).
 
 Repairing weapons:: This is like repairing mechanisms, except:
 only <<armorer,armorers>> can repair weapons, and it requires both tinkering
-tools and a furnace (or the <<Furnace>> spell).
+tools and a furnace (or the <<_furnace>> spell).
 
 Disarming traps:: To disarm a trap you spend 10 minutes and one
-<<consumption,consumption>> of tinkering tools. Then you make a _dexterity_ and
+<<consumption_check,consumption>> of tinkering tools. Then you make a _dexterity_ and
 _wisdom_ check.
 
 * If both are successful, you have disarmed the trap.
@@ -1131,7 +1131,16 @@ them in many ways, and here's some examples.
 //----------------------------------------------|------
 |===
 
-IMPORTANT: Moves do not carry over to the next round; use them or lose them.
+.Move economy
+[IMPORTANT]
+====
+* Moves do not carry over to the next round; use them or lose them.
+
+* Effects and conditions, such as being <<prone>> or wearing broken armor
+  can reduce your number of moves. But they can never be reduced to less than
+  zero. So you can always convert your main action into moves and get three
+  moves that way.
+====
 
 === Actions
 When you have made your moves, you can take your action.
@@ -1357,8 +1366,7 @@ points.
 //----------|---------------|------------------------------
 |===
 
-[horizontal]
-*Amputation*: You lose an arm or a limb. Roll 1d4 to find out which. Roll
+*Amputation*: You lose an arm or a leg. Roll 1d4 to find out which. Roll
 _dexterity_ or _constitution_ (your choice) if you succeed, you only lose half
 the limb. Otherwise you lose all of it. Your limb can regrow if the restoration
 spell is used.
@@ -1379,16 +1387,16 @@ You can regain hit points in various ways, but you can never heal or be healed
 beyond your <<hit_point_total>>.
 
 *Resting*: Resting for 8 hours, at least six of which are spent sleeping, will
-allow you to regenerate a bit; roll your <<recovery_die>>, and
-increase your hit points by that number. Aside from sleeping, eating, and
-keeping watch, you cannot do anything of consequence while resting.
+allow you to regenerate a bit; roll your <<recovery_die>>, and increase your
+hit points by that number. Aside from sleeping, eating, and keeping watch, you
+cannot do anything of consequence while resting.
 
 ____
 You can regenerate 1d8 hit points after a meal, 6 hours of sleep,
 and two hours of rest.
 ____
 
-*Magical Healing*: Spells (such as <<Heal (X)>>), potions, and powers often
+*Magical Healing*: Spells (such as <<_heal_x>>), potions, and powers often
 allow you to instantly recover hit points, usually by rolling a number of
 recovery dice.
 
@@ -1467,20 +1475,26 @@ Revival can restore you back to life.
 //KEY:
 [reftext="prone"]
 [[prone]]
-*Prone*: You're prone on the ground, you must spend 1 <<moves,move>> to get up.
+*Prone*: You're prone on the ground, you must spend 1 <<Moves,move>> to get up.
+While you are prone, you have four fewer <<Moves,moves>> than normal.
+
+[WARNING]
+If you're suffering from other effects that lower your number of <<Moves,moves>>, 
+you can be reduced to zero moves. Forcing you to convert your <<Actions,action>>
+into more moves just to get up.
 
 //KEY:
 [reftext="restrained"]
 [[restrained]]
 *Restrained*: Your hands and feet are restrained. You have only one
-<<moves,move>> each round. Depending on the circumstances, the GM might allow
+<<Moves,move>> each round. Depending on the circumstances, the GM might allow
 you to try and escape your bonds.
 
 //KEY:
 [reftext="starving"]
 [[starving]]
 *Starving*: Every day that you do not get at least one consumption of
-<<rations>> or similar, you roll 1d20 for each of your <<stats>>. If you rolled
+<<rations>> or similar, you roll 1d20 for each of your <<Stats,stats>>. If you rolled
 under a stat, that stat is reduced by 1.
 
 //KEY:
@@ -1634,7 +1648,7 @@ The spell stops instantly if you:
     a) take damage,
     b) make a defense check,
     c) get up,
-    d) make a <<moves,move>>,
+    d) make a <<Moves,move>>,
     or e) take an <<Actions,action>>. +
 //
 You can speak, breathe, and adjust
@@ -1645,12 +1659,12 @@ your position to remain comfortable, and nothing more.
 [[example_multilevel]]
 .Spells with <<multilevel>> tag
 ====
-The <<Tragic Missile (X)>> spell is technically not a single spell. It exists
+The <<_tragic_missile_x>> spell is technically not a single spell. It exists
 as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
 10. Tragic Missile 10 is much more powerful than Tragic Missile 1.
 
 ---
-The <<Ghost Mount (X)>> spell is also multiple spells, but since its
+The <<_ghost_mount_x>> spell is also multiple spells, but since its
 description says it's level 2, there is no Ghost Mount 1. Only a Ghost Mount 2,
 Ghost Mount 3, and so on.
 ====
@@ -1719,7 +1733,7 @@ You target a nonmagical item within _X_ meters. The item starts emitting sounds
 and odors that repel insects and other vermin. The spells area of influence is
 a sphere with a radius of 2·_X_ meters
 
-This spell has no negative effects on non-vermin.
+This spell has no effects on non-vermin.
 
 Vermin whose level is _X_ or higher are completely unaffected.
 
@@ -1736,6 +1750,10 @@ level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
 You calm a hostile animal within 10 + _X_ meters and whose level isn't higher
 than _X_. The animal no longer considers you or your party as threats, and will
 simply wander away if possible.
+
+[quote]
+Some monsters look like animals. But they're monsters, and are not affected
+by this spell.
 
 === Club
 *Level 1, duration: <<caster_level>>+5 rounds*
@@ -1764,6 +1782,7 @@ Commands such as flee and run are straight forward, but a command such as drop
 can be interpreted in many ways (drop the thing you’re holding, or drop
 <<prone>>, or drop the subject).
 
+
 === Command Fire (X)
 *Level 1, <<trance>>,
 <<multilevel>>, range: 2·_X_ meters, duration: 2·_X_ minutes*
@@ -1786,6 +1805,7 @@ meter. If the fire is 1 square meter in size, it shrinks to the size of a
 bonfire. If the fire is the size of a bonfire, it goes out, not producing any
 additional smoke in the process.
 
+
 === Cure Exhaustion
 *Level 1, <<ritual>>, range: _wisdom_ meter*
 
@@ -1794,6 +1814,7 @@ the exhausted condition is removed from the target.
 
 A creature that has been targeted by this spell becomes immune to it for 1
 hour.
+
 
 === Danger Sense
 *Level 2*
@@ -1806,15 +1827,19 @@ task.
 Context is important: a high level paladin might be dangerous to her foes, but
 completely harmless to her friends.
 
+
 === Detect Magic
 *Level 1, <<ritual>>, duration: _intelligence_ minutes*
 
-You can see magic items, and items that are affected by spells, such as an item
-with <<Illuminate (X)>> cast on it. The item must be within _wisdom_ meters. To
-you, magical items start to glow after you've looked directly at them for a
-while. You need to take things slow if you want to scan everything around you.
-The “glow” can penetrate clothes and paper, so a magical ring in a pocket or a
-magical pen underneath a sheet of paper can be detected.
+You can see magical items, and items that are affected by spells, such as an
+item with <<_illuminate_x>> cast on it. The item must be within _wisdom_
+meters. To you, magical items start to glow after you've looked directly at
+them for a bit. You need to take things slow if you want to scan everything
+around you. The “glow” can penetrate clothes and paper, so a magical ring in a
+pocket or a magical pen underneath a sheet of paper can be detected.
+
+TIP: Items that have recently been repaired with <<_mend_x>> also glow faintly.
+
 
 === Detect Traps (X)
 *Level 1, <<focus>>, <<multilevel>>*
@@ -1825,12 +1850,14 @@ when the trap is within _X_ meters of you.
 This spell lasts for 30 minutes, plus _X_·10 minutes, or until you stop
 focusing on it.
 
+
 === Detect Undead, Lesser
 *Level 1. Duration: _wisdom_ hours*
 
 You can feel when one or more undead creatures are within _wisdom_ meters of
 you. You can detect undead creatures through most walls, but not it cannot
 penetrate more than one meter of rock or one centimeter of lead.
+
 
 === Fey Flames (X)
 *Level 2*
@@ -2003,7 +2030,7 @@ down).
 *Level 2, <<focus>>, <<multilevel>>, range: _X_·5 meters*
 
 You target a spot you can see within range. At that spot a magical ghostly
-torch appears. By spending one <<moves,move>> you can move the torch up to 5
+torch appears. By spending one <<Moves,move>> you can move the torch up to 5
 meters to a spot you can see and that is within range.
 
 If you move so that the torch comes out of range, the spell stops and the torch
@@ -2041,7 +2068,7 @@ no more than _X_ <<armor_hit_points,hit points>>. A nonmagical weapon can be
 mended, becoming fully functional, if it takes up less than _X_
 <<item_slots>>. Once an item has been mended, it becomes slightly magical for
 1 day; it cannot be mended in that period, and it will be detectable with
-<<Detect Magic>>.
+<<_detect_magic>>.
 
 === Mind Message (X)
 *Level 1, <<multilevel>>*
@@ -2066,7 +2093,7 @@ has been used to hide it.
 You select a nonmagical item within range, weighing no more than _X_ kg.
 
 You give the item an invisible magical aura of your design. Anyone who uses
-<<Detect Magic>>, identify or similar detection magic will think the item is
+<<_detect_magic>>, identify or similar detection magic will think the item is
 magical, and they will think the item has magical properties of your choosing.
 
 Observers with a level higher than _X_ can detect that this spell has been
@@ -2182,6 +2209,14 @@ similar; at a speed of about 1 liter per round (10 liters per minute)
 
 You target a willing ally within 2·_X_ meters, making all their _strength_ checks
 easy for a 2·_X_ rounds.
+
+=== Slow (X)
+*Level 1, <<focus>>, <<multilevel>>*
+
+You target a creature within _wisdom_+_X_ meters and roll an <<adversarial>>
+_charisma_ check. If successful, your target has _X_ fewer moves each round for
+the next _LVL_+_X_ rounds
+
 
 === Taunt
 *Level 1, <<multilevel>>, duration: 1 round*
