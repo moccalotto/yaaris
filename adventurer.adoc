@@ -1399,11 +1399,6 @@ Conditions can affect characters and baddies.
 //START_SORT //KEY:
 
 //KEY:
-[reftext="prone"]
-[[prone]]
-*Prone*: You're prone on the ground, you must spend 1 <<moves,move>> to get up.
-
-//KEY:
 [reftext="comatose"]
 [[comatose]]
 *Comatose*: You’re in a deep coma. If you receive conventional medical care,
@@ -1468,6 +1463,11 @@ After rolling your stat loss, you make a _constitution_ check with
 <<disadvantage>>. If successful, the poisoned condition is removed. You die if
 any of your stats are reduced to zero. If you die from poison, only Greater
 Revival can restore you back to life.
+
+//KEY:
+[reftext="prone"]
+[[prone]]
+*Prone*: You're prone on the ground, you must spend 1 <<moves,move>> to get up.
 
 //KEY:
 [reftext="restrained"]
