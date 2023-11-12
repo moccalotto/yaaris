@@ -2151,6 +2151,14 @@ For the next 5·_X_ rounds, all damage you receive is halved (rounded down).
 If a baddie hits you for 5 points of damage, you only take 2 points of damage.
 And if you’re hit for 1 point of damage, you take zero points of damage.
 
+=== Slow (X)
+*Level 1, <<focus>>, <<multilevel>>*
+
+You target a creature within _wisdom_+_X_ meters and roll an <<adversarial>>
+_charisma_ check. If successful, your target has _X_ fewer moves each round for
+the next _LVL_+_X_ rounds
+
+
 === Slow Fall (X)
 *Level 1, <<multilevel>>, <<ritual>>*
 
@@ -2209,14 +2217,6 @@ similar; at a speed of about 1 liter per round (10 liters per minute)
 
 You target a willing ally within 2·_X_ meters, making all their _strength_ checks
 easy for a 2·_X_ rounds.
-
-=== Slow (X)
-*Level 1, <<focus>>, <<multilevel>>*
-
-You target a creature within _wisdom_+_X_ meters and roll an <<adversarial>>
-_charisma_ check. If successful, your target has _X_ fewer moves each round for
-the next _LVL_+_X_ rounds
-
 
 === Taunt
 *Level 1, <<multilevel>>, duration: 1 round*
