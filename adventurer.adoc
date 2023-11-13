@@ -328,6 +328,18 @@ can go beyond this range, up to _wisdom_ meters in total, but then your
 <<attack_and_damage,attack checks>> would be <<difficult>>.
 --
 
+==== Adventurer's Blessing
+Adventurers generally don't get sick from mundane illnesses, they can
+generally take much more punishment than other creatures, and they are
+more or less the only people who can be revived with magic.
+
+.Jobs
+[%collapsible]
+====
+Because of the Adventurer's Blessing, many nations seek to have high-level
+former adventurers in key military and governing positions, as the ability to
+be revived can be critical (or vital) for the continuation of the position.
+====
 
 ==== Exotic Weapon Skills
 You are not skilled at using exotic weapons such as the <<kosh>>.
