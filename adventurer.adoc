@@ -199,7 +199,7 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 //------|-----------
 |===
 
-// Turn automatic section id off. We want <<Armor>> to link 
+// Turn automatic section id off. We want <<Armor>> to link
 // to a later section
 :!sectids:
 ==== Armor
@@ -303,7 +303,7 @@ wearing broken armor.
 ==== Weapon Skills
 You are skilled at using light melee weapons and ranged weapons. On the
 <<adventurer_damage_rolls_table,table below>> you can see how much damage you
-deal with each weapon category. 
+deal with each weapon category.
 
 [[adventurer_damage_rolls_table]]
 .Adventurer Damage Rolls
@@ -443,12 +443,12 @@ daggers.
 //KEY:
 [reftext="spelunker"]
 [[spelunker]]
-*Spelunker*: 
+*Spelunker*:
 You cannot go <<dungeon_mad>>.
 You always have some chalk.
-You always know the cardinal directions. 
+You always know the cardinal directions.
 One of the ropes you carry does not take up an <<item_slots,item slot>>.
-You have <<advantage>> on <<consumption_check,consumption checks>> checks 
+You have <<advantage>> on <<consumption_check,consumption checks>> checks
 for <<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>. You have
 <<advantage>> on checks that involve navigation in caves and dungeons.
 
@@ -476,8 +476,8 @@ destruction & stuff].
 //{{{ LEVELS
 == LEVELS
 You begin at level 1, and you can gain levels until you reach level 10. You
-gain levels by acquiring suitable treasures. For a team of level _X_
-adventurers to gain a new level, they must acquire _X_ suitable treasures. This
+gain levels by acquiring suitable treasures. For a team of level <<X>>
+adventurers to gain a new level, they must acquire <<X>> suitable treasures. This
 document only deals with levels 1 and 2. Once you reach level 3, you become a
 hero; see xref:heroes#[Hero’s Guide to doom & destruction & stuff] for more
 info.
@@ -486,12 +486,12 @@ info.
 to the GM to decide what is an actual treasure, and what is just general loot.
 
 *Suitable*: A _suitable_ treasure is worth at least 100 gold pieces times the
-sum of the levels of all the characters in the party. 
+sum of the levels of all the characters in the party.
 
-*Acquire*: 
+*Acquire*:
 You have _acquired_ a treasure when you have transported at least two thirds of
 it (by value) safely back to your base of operations. It can be necessary to
-make multiple trips to recover a large treasure. 
+make multiple trips to recover a large treasure.
 
 .Leveling up
 ====
@@ -666,7 +666,7 @@ When making a _consumption_ of an item, you first roll a _consumption check_,
 which is a <<Checks,check>> with a target number of 11, and if the check wasn't
 successful, the item in question loses a <<usage_points,usage point>>.
 
-*Magic components*: 
+*Magic components*:
 A consumption of magic components means you use some unspecified amount of your
 magic components and then you make a consumption check. And if the check was
 unsuccessful, your magic components lose a usage point.
@@ -677,7 +677,7 @@ You must spend one _consumption_ of <<rations>> every day if you don't want to
 check_, and if it fails, one of your ration packs loses a <<usage_points,usage
 point>>.
 
-*Consumable Projectiles*: 
+*Consumable Projectiles*:
 You do not roll a _consumption check_ every time you fire an arrow, bolt, or
 slingshot during combat. Instead you make one consumption check after the
 combat ends (one for each type of projectile you used). When you fire a
@@ -837,7 +837,7 @@ ranged attacks can reach.
 //KEY:
 [reftext="bank book"]
 [[bank_book]]
-==== Bank book
+==== Bank Book
 A bank book is a magical book that can contain money. There is a magical ritual
 called <<_banking_transaction_x>>, that allows you to transfer money into and
 out of the book.
@@ -1219,6 +1219,7 @@ armor piece.
 For each piece of armor you're wearing, if you're not skilled at using it,
 you lose one <<Moves,move>>.
 
+[[armor_wear]]
 ===== Armor Wears Out
 If you are wearing at least one functional piece of armor, and you roll a
 <<nat20>> on your <<Defense,defense check>>, one of the functional
@@ -1479,7 +1480,7 @@ Revival can restore you back to life.
 While you are prone, you have four fewer <<Moves,moves>> than normal.
 
 [WARNING]
-If you're suffering from other effects that lower your number of <<Moves,moves>>, 
+If you're suffering from other effects that lower your number of <<Moves,moves>>,
 you can be reduced to zero moves. Forcing you to convert your <<Actions,action>>
 into more moves just to get up.
 
@@ -1536,7 +1537,7 @@ and:
 
 Requirements::
 * The spellbook has at least one <<usage_points,usage point>>.
-* You are holding the spellbook in both hands.
+* You are holding the spellbook open in both hands.
 * There’s enough light for you to read the text, you are able to speak, and you aren't
   <<encumbered>> or restrained.
 * The spell’s level isn't higher than yours.
@@ -1617,7 +1618,7 @@ another spell, take damage, or stop focusing on keeping the spell going.
 //KEY:
 [reftext="level"]
 [[spell_level]]
-Level:: The level of the spell. If the spell also has the <<multilevel>> property,
+Level:: The level of the spell. If the spell also has the  property,
 _level_ is the level of the weakest version of the spell, meaning no versions
 of the spell exists at a lower level that that.
 
@@ -1625,6 +1626,12 @@ of the spell exists at a lower level that that.
 [reftext="multilevel"]
 [[multilevel]]
 Multilevel:: There are many versions of this spell, each with its own level. +
+See the <<example_multilevel>> example for an illustration.
+
+//KEY:
+[reftext="X"]
+[[X]]
+X:: There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example for an illustration.
 
 //KEY:
@@ -1657,87 +1664,87 @@ your position to remain comfortable, and nothing more.
 //END_SORT
 
 [[example_multilevel]]
-.Spells with <<multilevel>> tag
+.Spells with  tag
 ====
-The <<_tragic_missile_x>> spell is technically not a single spell. It exists
-as Tragic Missile 1, Tragic Missile 2, and so on all the way to Tragic Missile
-10. Tragic Missile 10 is much more powerful than Tragic Missile 1.
+The <<_tragic_missile_x>> spell is technically not a single spell. It exists as
+_Tragic Missile 1_, _Tragic Missile 2_, and so on all the way to _Tragic
+Missile 10_, each level being more powerful than the last.
 
 ---
-The <<_ghost_mount_x>> spell is also multiple spells, but since its
-description says it's level 2, there is no Ghost Mount 1. Only a Ghost Mount 2,
-Ghost Mount 3, and so on.
+The <<_ghost_mount_x>> spell is also multiple spells, but since its description
+says it's level 2, there is no _Ghost Mount 1_. Only a _Ghost Mount 2_, _Ghost
+Mount 3_, and so on.
 ====
 
 //}}}
 
 //{{{SPELLS
 == SPELLS
-All spells listed in this section are <<basic>> and can be used by
-adventurers.
+All spells listed in this section are <<basic>> and can be used by adventurers.
 
 // START_SORT ===
 
 === Alertness (X)
-*Level 1, <<multilevel>>, <<focus>>*
+*Level 1, , <<focus>>*
 
-Anyone within 3 meters of the caster gets advantage on checks that involve
-spotting hidden things, traps, and enemies, The effect persists even if they
-move further away from the caster. The spell ends when it has provided
-advantage to 2·_X_ checks in total (i.e. not to each recipient) or when the
+Everyone within 3 meters of the caster gets <<advantage>> on checks that
+involve spotting hidden things, traps, and enemies, The effect persists even if
+they move further away from the caster. The spell ends when it has provided
+advantage to 2·<<X>> checks in total (i.e. not to each recipient) or when the
 caster stops focusing on the spell, whichever comes first.
 
 === Alluring Attraction (X)
-*Level 1, <<multilevel>>, <<ritual>>, duration: _X_ days*
+*Level 1, , <<ritual>>, duration: <<X>> days*
 
-Of the next `_X_+1` _charisma_ checks you make, you have advantage on checks
-that have a strong flirting component or involve physical attraction.
+Of the next <<X>>+1 _charisma_ checks you make, you have <<advantage>> on
+checks that have a strong flirting component or involve physical attraction.
 
 === Animal Friendship (X)
-*Level 1, <<focus>>, <<multilevel>>, <<ritual>>*
+*Level 1, , <<ritual>>, duration: <<X>>+1 hours (<<focus>>)*
 
-Within the next _X_ + 1 hours, all _intelligence_, _wisdom_, and _charisma_
-checks made to befriend animals have <<advantage>>. On top of that, there is a
-50% chance that an animal that would have otherwise been hostile towards you,
-is now simply cautious.
+You have <<advantage>> on all _intelligence_, _wisdom_, and _charisma_ checks
+made to befriend or calm animals. If you meet a hostile animal, there is a
+fifty percent chance that it becomes cautious instead of hostile when it sees
+you
 
 === Armor (X)
-*Level 1, <<multilevel>>, <<ritual>>*
+*Level 1, , <<ritual>>*
 
 You turn a nonmagical piece of clothing that you wear into a functional armor
-piece that provides _X_ <<armor_hit_points,hit points>>. You are skilled at
+piece that provides <<X>> <<armor_hit_points,hit points>>. You are skilled at
 using the armor.
 
 You can create a cuirass, gauntlets, greaves, and a helmet, but you cannot
 create a shield.
 
-The armor becomes nonmagical if it breaks during combat, if you remove it, or
-if you sleep.
+The armor becomes nonmagical if it <<armor_wear,breaks>> during combat, if you
+remove it, or if you sleep.
 
 === Banking Transaction (X)
-*Level 3, <<multilevel>>, duration: 5 minutes*
+*Level 3, , duration: 5 minutes*
 
-You touch a magical Bank Book and transfer coins into- or out of it. You cannot
-bring the book’s balance below zero.
+You touch a magical <<bank_book>> and transfer coins into- or out of it. You
+cannot bring the book’s balance below zero.
 
-It takes _X_ minutes to cast this spell, and it requires _X_ gold pieces, which
-are consumed by the spell (yes, you must have at least _X_ gold coins on hand
-to withdraw your money).
+It takes <<X>> minutes to cast this spell, and it requires <<X>> gold pieces,
+which are consumed by the spell (yes, you must have at least <<X>> gold pieces
+on hand to withdraw your money).
 
-The number of coins you can withdraw/deposit is 10·X·X·_X_ (i.e. 10·X³).
+The number of coins you can withdraw/deposit is 10·<<X>>·<<X>>·<<X>>
+(i.e. 10·X³).
 
 === Bug Repellent (X)
-*Level 1+, <<multilevel>>, duration: _X_ minutes*
+*Level 1+, , duration: <<X>> minutes*
 
-You target a nonmagical item within _X_ meters. The item starts emitting sounds
+You target a nonmagical item within <<X>> meters. The item starts emitting sounds
 and odors that repel insects and other vermin. The spells area of influence is
-a sphere with a radius of 2·_X_ meters
+a sphere with a radius of 2·<<X>> meters
 
 This spell has no effects on non-vermin.
 
-Vermin whose level is _X_ or higher are completely unaffected.
+Vermin whose level is <<X>> or higher are completely unaffected.
 
-Vermin whose level is lower than _X_ must make a normal _wisdom_ check or move
+Vermin whose level is lower than <<X>> must make a normal _wisdom_ check or move
 out of the repellent area. Even if the check is successful, any other checks
 made within the repellent area are <<difficult>>.
 
@@ -1745,62 +1752,66 @@ Mundane vermin, such as normal spiders, worms, ants, flies, wasps, etc. are
 level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
 
 === Calm Animal (X)
-*Level 1, <<multilevel>>*
+*Level 1, *
 
-You calm a hostile animal within 10 + _X_ meters and whose level isn't higher
-than _X_. The animal no longer considers you or your party as threats, and will
-simply wander away if possible.
+You calm a hostile animal within 10+<<X>> meters and whose level isn't higher
+than <<X>>. The animal no longer considers you and your party as threats, and
+will simply wander away if possible.
 
-[quote]
-Some monsters look like animals. But they're monsters, and are not affected
-by this spell.
+[CAUTION]
+Some monsters look like animals. But they're monsters, and are not affected by
+this spell.
 
 === Club
 *Level 1, duration: <<caster_level>>+5 rounds*
 
-A magical wooden club appears in your hand. You are proficient at wielding this
+A magical wooden club appears in your hand. You are skilled at wielding this
 one-handed weapon, and your damage die is 1d12 when doing so. The club
 dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go
 of it.
 
-=== Command (X)
-*Level: 1, <<multilevel>>, duration: 1 round*
+=== Instruction (X)
+*Level: 1, , duration: 1 round*
 
-You give a creature within _X_ meters a one-word command and then make a
+You give a creature within <<X>> meters a one-word command and then make a
 _charisma_ check. If you’re successful, the target will attempt to execute the
 command as best it can, and as it understands the command, but only for one
 round, and only if the command would not result in self harm.
 
-This spell does not affect targets whose level is higher than _X_.
+This spell does not affect targets whose level is higher than <<X>>.
 
-If the target’s level is lower than _X_ the _charisma_ check is <<easy>>.
+If the target’s level is lower than <<X>> the _charisma_ check is <<easy>>.
 
 Any creature targeted by this spell will become hostile towards you, regardless
 if they executed the command or not.
 
+[CAUTION]
 Commands such as flee and run are straight forward, but a command such as drop
 can be interpreted in many ways (drop the thing you’re holding, or drop
 <<prone>>, or drop the subject).
 
 
 === Command Fire (X)
-*Level 1, <<trance>>,
-<<multilevel>>, range: 2·_X_ meters, duration: 2·_X_ minutes*
+*Level 1, 
+,
+range: 2·<<X>> meters, 
+duration: 2·<<X>> minutes (<<trance>>)*
 
 When you've just cast the spell you select a fire. It can be as small as a
-candle and as large as _X_ square meters. You can now give the fire a command:
+candle and as large as <<X>> square meters. You can now give the fire a
+command:
 
-Candle:: You shrink a bonfire to the size of a candle.
+*Candle*: You shrink a bonfire to the size of a candle.
 
-Bonfire:: You make a candle grow to the size of a bonfire, provided there is
+*Bonfire*: You make a candle grow to the size of a bonfire, provided there is
 sufficient fuel available.
 
-Grow:: If the fire is the size of a bonfire, it expands to take up an entire
+*Grow*: If the fire is the size of a bonfire, it expands to take up an entire
 square meter. If the fire is 1 square meter or larger, it expands a further
 square meter. You can control the direction of the fire’s growth, but you can
 only make it expand to areas where there is plenty of fuel.
 
-Reduce:: If the fire is larger than 1 square meter, it shrinks by 1 square
+*Reduce*: If the fire is larger than 1 square meter, it shrinks by 1 square
 meter. If the fire is 1 square meter in size, it shrinks to the size of a
 bonfire. If the fire is the size of a bonfire, it goes out, not producing any
 additional smoke in the process.
@@ -1809,8 +1820,8 @@ additional smoke in the process.
 === Cure Exhaustion
 *Level 1, <<ritual>>, range: _wisdom_ meter*
 
-You target a willing person. If you make a successful <<easy>> _wisdom_ check,
-the exhausted condition is removed from the target.
+You target a willing person within range, and remove the <<exhausted>>
+condition from them.
 
 A creature that has been targeted by this spell becomes immune to it for 1
 hour.
@@ -1842,53 +1853,48 @@ TIP: Items that have recently been repaired with <<_mend_x>> also glow faintly.
 
 
 === Detect Traps (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, , <<duration>>: <<X>> hours (<<focus>>)*
 
-You can sense if a trap is within 10+_X_ meters, but you only know where it is
-when the trap is within _X_ meters of you.
+You can sense if a trap is within 10+<<X>> meters, but you only know where it
+is when the trap is within <<X>> meters of you.
 
-This spell lasts for 30 minutes, plus _X_·10 minutes, or until you stop
-focusing on it.
-
-
-=== Detect Undead, Lesser
-*Level 1. Duration: _wisdom_ hours*
+=== Detect Undead (X)
+*Level 1, , Duration: _wisdom_ hours*
 
 You can feel when one or more undead creatures are within _wisdom_ meters of
 you. You can detect undead creatures through most walls, but not it cannot
-penetrate more than one meter of rock or one centimeter of lead.
+penetrate more than one meter of rock or one centimeter of lead. 
 
+If the undead creature's level is lower than <<X>>, you are able to ascertain
+its direction, otherwise you only know that the creature is present, not where
+it might be.
 
 === Fey Flames (X)
 *Level 2*
 
 You target a point within _wisdom_ meters. Every object and creature within
 <<caster_level>> meters of that point glows with a faint light as if on fire.
-Invisible creatures and object can now be seen, but attack checks against them
-remain <<difficult>>.
+Invisible creatures and object can now be seen and targeted, but attack checks
+against them remain <<difficult>>.
 
 === Fierce Fortune (X)
-*Level 1, <<multilevel>>*
+*Level 1, *
 
-An ally within _X_ meters gets <<advantage>>on their next <<attack_and_damage,attack>>
-- or <<Defense,defense check>>, provided it occurs within _X_+1
-rounds.
-
-=== Find Flora & Fauna
-*Level 1, <<focus>>,  ???*
-
+An ally within <<X>> meters gets <<advantage>>on their next
+<<attack_and_damage,attack>> or <<Defense,defense check>>, provided it occurs
+within <<X>>+1 rounds.
 
 === Flaming Fingers (X)
-*Level 1, <<multilevel>>*
+*Level 1, *
 
-Jets of fire spew forth from your burning hands, scorching up to _X_ adjacent
+Jets of fire spew forth from your burning hands, scorching up to <<X>> adjacent
 targets of your choice. If you make a successful _intelligence_ check, each
-target receives 1d6+_X_ damage, otherwise they receive 1d6 damage.
+target receives 1d6+<<X>> damage, otherwise they receive 1d6 damage.
 
 === Friendliness (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, <<focus>>
 
-Your _charisma_ checks are easy for the next _X_ minutes.
+Your _charisma_ checks are <<easy>> for the next <<X>> minutes.
 
 === Furnace
 *Level 2, <<trance>>, duration: up to 8 hours*
@@ -1899,59 +1905,58 @@ it does not radiate more heat than it normally would; it becomes hot by
 keeping the heat close to the fire.
 
 === Ghost Mount (X)
-*Level 2, <<focus>>, <<multilevel>>*
+*Level 2, <<focus>>, *
 
 You construct a ghostly, translucent horse that only you can ride. It appears
 instantly under you, so you’re instantly mounted. The horse increases your
-movement rate such that, whenever you spend one move, you move up to _X_ meters.
-The mount has 2·_X_ hit points, all its primary stats are 8+X.
+movement rate such that, whenever you spend one move, you move up to <<X>> meters.
+The mount has 2·<<X>> hit points, all its primary stats are 8+<<X>>.
 
-A constructed being, a Ghost Horse is immune to charm, sleep, fear, illusions,
+A constructed being, a Ghost Mount is immune to charm, sleep, fear, illusions,
 demoralization, and other mind-based spells, as well as spells where
 _intelligence_, or _charisma_ checks affect the spell’s outcome.
 
-The spell lasts up to 3·_X_ rounds, but stops earlier if you stop focusing on it
+The spell lasts up to 3·<<X>> rounds, but stops earlier if you stop focusing on it
 or if you dismount.
 
 === Ghost Servant (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, <<focus>>, *
 
 You construct a ghostly, humanoid that only you can see, hear, or smell. You
 can send it telepathic commands, and it will obey you to the best of its
 abilities, and without question or hesitation.
 
-The servant appears within 3·_X_ meters, and must stay within 10·_X_ meters.
+The servant appears within 3·<<X>> meters, and must stay within 10·<<X>> meters.
 
-* It can move up to _X_ meters per round.
+* It can move up to <<X>> meters per round.
 * Its primary stats are all 2·X, and its hit point total is also 2·X.
 * It cannot hear, speak, read, write, or make sounds, but it does understand
-  your telepathic commands. It can lift and carry _X_ item slots.
+  your telepathic commands. It can lift and carry <<X>> item slots.
 * It cannot do difficult or demanding things such as disarming traps, but it
   can do simple tasks such as moving stuff or doing the dishes.
 * It is immune to charm, sleep, fear, illusions, demoralization, and other
   mind-based spells, as well as spells where _intelligence_, or _charisma_
   checks affect the spell’s outcome.
 
-The spell lasts 10·_X_ minutes, until you stop focusing on it, or the servant
-gets more than 10·_X_ meters away.
+The spell lasts 10·<<X>> minutes, until you stop focusing on it, or the servant
+gets more than 10·<<X>> meters away.
 
 === Gills (X)
-*Level 1, <<focus>>, <<multilevel>>, <<ritual>>*
+*Level 1, , <<ritual>>, duration:2+<<X>> minutes (<<focus>>)*
 
-You and 1+_X_ willing creatures within 4+_X_ meters can breathe water (and only
-water) for the next 2+_X_ minutes. The spell also ends if you stop focusing on
-it.
+You and 1+<<X>> willing creatures within 4+<<X>> meters can breathe in water
+(and only water).
 
 === Gloom (X)
-*Level 1+, <<multilevel>>, range: 2+_X_ meters*
+*Level 1+, , range: 2+<<X>> meters*
 
 You target an object within range. The object emits a ghostly dark aura that
-dulls all non-magical sources of light within 5+_X_ meters reducing their
+dulls all non-magical sources of light within 5+<<X>> meters reducing their
 radius to 1 meter while they are within the effective range of the gloomy
 object.
 
 This spell also dulls magical light sources if their spell level or item level
-is lower than _X_.
+is lower than <<X>>.
 
 The dulled light sources cannot be seen by creatures more than 1 meter away
 from them.
@@ -1962,31 +1967,31 @@ another creature.
 The gloomy area looks like dense fog when seen from the outside.
 
 === Heal (X)
-*Level 1+, <<ritual>>, <<multilevel>>, range: 3+_X_ meters*
+*Level 1+, <<ritual>>, , range: 3+<<X>> meters*
 
-You heal a creature within range. It recovers _X_ recovery dice.
+You heal a creature within range. It recovers <<X>> recovery dice.
 
 === Hurt (X)
-*Level 1+, <<multilevel>>, <<ritual>>, range: _X_+3 meters*
+*Level 1+, , <<ritual>>, range: <<X>>+3 meters*
 
 You target a creature in range that you can see. If you succeed an
-<<adversarial>> _wisdom_ check, the creature loses __X__d8 <<hit_points>>,
-otherwise it loses __X__d4 <<hit_points>>.
+<<adversarial>> _wisdom_ check, the creature loses <<X>>d8 <<hit_points>>,
+otherwise it loses <<X>>d4 <<hit_points>>.
 
 === Illuminate (X)
-*Level 1+, <<multilevel>>, range: 2+_X_ meters, duration: _X_ hours*
+*Level 1+, , range: 2+<<X>> meters, duration: <<X>> hours*
 
 You target an object within range. The object lights up with a steady and
-bright light that illuminates a radius of 10+_X_ meters.
+bright light that illuminates a radius of 10+<<X>> meters.
 
 You can attempt to cast this spell on the eyes of a creature within range,
 effectively blinding it (if it uses eyes and light to see). It requires a
 successful difficult _charisma_ check, and if the creature’s level is higher
-than _X_, the spell fizzles.
+than <<X>>, the spell fizzles.
 
 You must make a successful _charisma_ check to cast this spell on an item
 currently held, worn, or touched by a living creature, and if the creature’s
-level is higher than _X_, the spell fizzles.
+level is higher than <<X>>, the spell fizzles.
 
 === Intruder Alert
 *Level 1, <<ritual>>, duration: _wisdom_ hours*
@@ -1997,23 +2002,23 @@ loud alarm will "`ring`" inside your head. The alarm is loud enough to wake you
 up, but quiet enough that you don’t wake up screaming.
 
 === Invisibility to Stupidity (X)
-*Level 1, <<focus>>, <<multilevel>>, duration: 5·_X_ Rounds*
+*Level 1, <<focus>>, , duration: 5·<<X>> Rounds*
 
-Creatures with an _intelligence_ lower than _X_+2 cannot see you, smell you, or
+Creatures with an _intelligence_ lower than <<X>>+2 cannot see you, smell you, or
 detect you in any way, not even by touch.
 
 === Jump (X)
-*Level 1, <<multilevel>>*
+*Level 1, *
 
-When you cast this spell, you instantly jump _X_+1 meters in a direction of your
+When you cast this spell, you instantly jump <<X>>+1 meters in a direction of your
 choice. You cannot reduce the length of the jump, but you can jump into a wall
 or other obstacle. Doing so causes you to take 1d6 damage for each meter the
 obstacle reduces your jump.
 
 === Lightning Touch (X)
-*Level 1+, <<multilevel>>*
+*Level 1+, *
 
-You touch an adjacent target, who then takes __X__d6 damage. After rolling
+You touch an adjacent target, who then takes <<X>>d6 damage. After rolling
 damage, you make a _wisdom_ check. If successful, the target is knocked
 <<prone>>, and must spend a number of moves next round to get up.
 
@@ -2021,13 +2026,13 @@ If the target is wearing three or more pieces of metal armor, you have
 advantage on the damage roll and the _wisdom_ check.
 
 === Mage Might (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, <<focus>>, *
 
-For the next _X_ rounds, your _strength_ score becomes 15+_X_*0.5 (rounded
+For the next <<X>> rounds, your _strength_ score becomes 15+<<X>>*0.5 (rounded
 down).
 
 === Mage Torch (X)
-*Level 2, <<focus>>, <<multilevel>>, range: _X_·5 meters*
+*Level 2, <<focus>>, , range: <<X>>·5 meters*
 
 You target a spot you can see within range. At that spot a magical ghostly
 torch appears. By spending one <<Moves,move>> you can move the torch up to 5
@@ -2059,55 +2064,57 @@ stone and the baddie. It cannot curve or fly around obstacles.
 
 
 === Mend (X)
-*Level 1, <<multilevel>>*
+*Level 1, *
 
-You instantly repair a break, crack, scratch, or tear up to 5 + _X_ centimeters
-from an object within _X_ meters that weighs no more than _X_ kg. A nonmagical
+You instantly repair a break, crack, scratch, or tear up to 5 + <<X>> centimeters
+from an object within <<X>> meters that weighs no more than <<X>> kg. A nonmagical
 <<Armor,armor piece>> can be mended, becoming fully functional, if it provides
-no more than _X_ <<armor_hit_points,hit points>>. A nonmagical weapon can be
-mended, becoming fully functional, if it takes up less than _X_
+no more than <<X>> <<armor_hit_points,hit points>>. A nonmagical weapon can be
+mended, becoming fully functional, if it takes up less than <<X>>
 <<item_slots>>. Once an item has been mended, it becomes slightly magical for
 1 day; it cannot be mended in that period, and it will be detectable with
 <<_detect_magic>>.
 
 === Mind Message (X)
-*Level 1, <<multilevel>>*
+*Level 1, *
 
-You target a creature within 5 plus 5_X_ meters, and telepathically send 10 plus
-10_X_ words to it. It can telepathically reply with the same number of words. If
+You target a creature within 5 plus 5<<X>> meters, and telepathically send 10 plus
+10<<X>> words to it. It can telepathically reply with the same number of words. If
 the recipient makes a successful _charisma_ check, no one notices its distraction
 while receiving and replying.
 
 === Mustrum’s Mundane Shroud (X)
-*Level 2, <<ritual>>, duration: _X_ days*
+*Level 2, <<ritual>>, duration: <<X>> days*
 
-You select a magical item within 2 meters of you, weighing no more than _X_ kg.
+You select a magical item within 2 meters of you, weighing no more than <<X>> kg.
 
 This spell completely hides the fact that the item is magical; only observers
-with a level higher than _X_ can detect the item’s magic, and that this spell
+with a level higher than <<X>> can detect the item’s magic, and that this spell
 has been used to hide it.
 
 === Nostrum’s Magical Aura (X)
-*Level 1, <<ritual>>, duration: _X_ days, range: 2 meters*
+*Level 1, <<ritual>>, duration: <<X>> days, range: 2 meters*
 
-You select a nonmagical item within range, weighing no more than _X_ kg.
+You select a nonmagical item within range, weighing no more than <<X>> kg.
 
 You give the item an invisible magical aura of your design. Anyone who uses
 <<_detect_magic>>, identify or similar detection magic will think the item is
 magical, and they will think the item has magical properties of your choosing.
 
-Observers with a level higher than _X_ can detect that this spell has been
+Observers with a level higher than <<X>> can detect that this spell has been
 cast, and that the item is nonmagical.
 
 === Phantasm (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, <<focus>>, *
 
 You create a purely visual illusion of an object, creature, thing, or
-phenomenon no bigger than 3 cubic meters. You can make the phantasm appear
-anywhere you can see within 10·_X_ meters, and it must remain within that
-radius at all times. You can move the phantasm 1·_X_ meters per round. The
-spell ends after 5·_X_ minutes, if you stop focusing on it, or if something
-substantial touches the phantasm (heavy smoke, sandstorm, a creature, etc.).
+phenomenon no bigger than <<X>> cubic meters and no longer than <<X>> meters on
+a side.
+You can make the phantasm appear anywhere you can see within 10·<<X>> meters,
+and it must remain within that radius at all times. You can move the phantasm
+<<X>> meters per round. The spell ends after 5·<<X>> minutes, if you stop
+focusing on it, or if something substantial touches the phantasm (heavy smoke,
+sandstorm, a creature, etc.).
 
 Creatures that have a reason to disbelieve the phantasm (such as creatures that
 rely heavily on scent and sound, or people who find the phantasm incompatible
@@ -2117,7 +2124,7 @@ level is 2 or more higher than the caster's level, and difficult of the
 creatures level is 2 or more lower than the caster's level.
 
 === Purify Rations (X)
-*Level 2, <<ritual>>, <<multilevel>>*
+*Level 2, <<ritual>>, *
 
 You purify 1 ration pack and 1 water skin’s worth of liquid per level of this
 spell. The food and drink is completely safe to eat and drink; it does not
@@ -2131,56 +2138,55 @@ You can read and understand any written language. This spell does not decode
 cryptographic cipher text, but it does let you understand secret languages.
 
 === Remove Fear (X)
-*Level 2, <<multilevel>>, range: _charisma_ meters*
+*Level 2, , range: _charisma_ meters*
 
 You target an ally within _charisma_ meters of you. The spell automatically
-removes _X_ fear-based conditions such as <<demoralized>>.
+removes <<X>> fear-based conditions such as <<demoralized>>.
 
-If the target suffers from more than _X_ fear effects, the GM chooses which to
+If the target suffers from more than <<X>> fear effects, the GM chooses which to
 remove.
 
 [quote]
 There are more fear effects than the ones described in this guide.
 
-=== Shield
-*Level 1, <<multilevel>>, <<focus>>*
+=== Shield (X)
+*Level 1, , <<focus>>*
 
-For the next 5·_X_ rounds, all damage you receive is halved (rounded down).
+For the next 5·<<X>> rounds, all damage you receive is halved (rounded down).
 
 [example]
 If a baddie hits you for 5 points of damage, you only take 2 points of damage.
 And if you’re hit for 1 point of damage, you take zero points of damage.
 
 === Slow (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, , <<focus>>: _X_ rounds*
 
-You target a creature within _wisdom_+_X_ meters and roll an <<adversarial>>
-_charisma_ check. If successful, your target has _X_ fewer moves each round for
-the next _LVL_+_X_ rounds
+You target a baddie within 2·<<X>> meters. For the duration of
+this spell, the target creature has zero <<Moves,moves>>.
 
 
 === Slow Fall (X)
-*Level 1, <<multilevel>>, <<ritual>>*
+*Level 1, , <<ritual>>*
 
-You touch  a nonmagical wearable item, weighing at least 1
-<<item_slots,item slot>> and worth at least _X_ silver pieces. The item becomes
-a consumable magical item with _X_ <<usage_points>>. When the
-wearer of such an item falls more than one meter, the magic in the item
-activates and the fall is slowed so the wearer does not take any damage. When
-the wearer has landed, the item loses one Usage Point. When all the item’s
-Usage Points have been spent, the item crumbles to dust.
+You touch  a nonmagical wearable item, weighing at least one
+<<item_slots,item slot>> and worth at least <<X>> silver pieces. The item
+becomes a <<consumption_check,consumable>> magical item with <<X>>
+<<usage_points>>. When the wearer of such an item falls more than one meter,
+the magic in the item activates and the fall is slowed so the wearer does not
+take any damage. When the wearer has landed, the item loses one usage point.
+When all the item’s usage points have been spent, the item crumbles to dust.
 
 === Snooze (X)
-*Level 1+, : <<multilevel>>*
+*Level 1+, : *
 
 This spell can send one or more creatures to sleep, but it can only affect
-creatures that need regular sleep, and whose level isn't higher than _X_.
+creatures that need regular sleep, and whose level isn't higher than <<X>>.
 
 Select a baddie within 10 meters. If the target has more hit points than your
 _charisma_, the spell fizzles, otherwise the baddie falls asleep.
 
 If the spell didn't fizzle, you may make another _charisma_ check, and if it
-succeeds, the spell affects _X_ additional creatures within 5 meters of the
+succeeds, the spell affects <<X>> additional creatures within 5 meters of the
 first target.
 //
 This spell affects baddies and allies alike; these extra affected creatures are
@@ -2200,45 +2206,45 @@ adventurer. It is able to “climb” stairs and hills, but cannot scale walls o
 steep cliffs.
 
 === Spider Climb (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, <<focus>>, *
 
 This spell enables you to cling to almost any surface as long as it is not
 overly wet, oily, or slippery. You can spend 3 moves to spider-move 1 meter.
-The spell lasts _X_ minutes, but ends if you stop focusing on it.
+The spell lasts <<X>> minutes, but ends if you stop focusing on it.
 
 === Spout (X)
-*Level 1, <<focus>>, <<multilevel>>*
+*Level 1, <<focus>>, *
 
-You cause 10·_X_ liters of water to pour out of a wineskin, teapot, keg, or
+You cause 10·<<X>> liters of water to pour out of a wineskin, teapot, keg, or
 similar; at a speed of about 1 liter per round (10 liters per minute)
 
 === Strength of Stone (X)
-*Level 1, <<focus>>, <<multilevel>>, <<ritual>>*
+*Level 1, <<focus>>, , <<ritual>>*
 
-You target a willing ally within 2·_X_ meters, making all their _strength_ checks
-easy for a 2·_X_ rounds.
+You target a willing ally within 2·<<X>> meters, making all their _strength_ checks
+easy for a 2·<<X>> rounds.
 
 === Taunt
-*Level 1, <<multilevel>>, duration: 1 round*
+*Level 1, , duration: 1 round*
 
-You target _X_ creatures within 10+_X_ meters. For each target, if you can make
+You target <<X>> creatures within 10+<<X>> meters. For each target, if you can make
 a successful <<adversarial>> _charisma_ check (which is difficult if the
 target’s level is higher than yours), the target will rush and attack you in
 melee combat on its next turn.
 
 === Tragic Missile (X)
-*Level 1+, <<multilevel>>, range: _wisdom+X_ meters*
+*Level 1+, , range: _wisdom+X_ meters*
 
 You fire a frightening magical missile against a baddie within range. When
-struck, the baddie takes _X_ d4 damage, and then you make an
+struck, the baddie takes <<X>> d4 damage, and then you make an
 <<adversarial>> _charisma_ check; if successful the baddie
 becomes <<demoralized>>.
 
 === Vines (X)
-*Level 2, <<focus>>, <<multilevel>>*
+*Level 2, <<focus>>*
 
-You target a point within 10+_X_ meters. Vines and wild growth sprouts from the
-ground in  a radius of _X_ meters around that point. Each creature inside the
+You target a point within 10+<<X>> meters. Vines and wild growth sprouts from the
+ground in  a radius of <<X>> meters around that point. Each creature inside the
 affected area must make a successful _strength_, _dexterity_ or _intelligence_
 check (their choice) each round, or all they have zero moves that round.
 
@@ -2255,6 +2261,7 @@ The chalk stops being magical once you stop focusing on the spell, or after
 _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //END_SORT
+
 //}}}
 
 //{{{DICTIONARY
@@ -2265,86 +2272,86 @@ _charisma_ hours. But the marks remain visible to you, and invisible to others.
 
 //KEY:
 *Adventurer*: All PCs start out as adventurers and have to level up to level 3
-before they can get their hero class. 
+before they can get their hero class.
 
 //KEY:
 *Adversarial check*: A check that is affected by the level of the opposition.
 For instance, if you're attacking a baddie who is 2 or more levels higher than
-you, your check is difficult. 
+you, your check is difficult.
 
 //KEY:
 *Attack check, melee*: A check to hit an opponent. It's an <<adversarial>>
 _strength_ check, and it is difficult if you're not skilled at using the given
-weapon. 
+weapon.
 
 //KEY:
 *Attack check, ranged*: A check to hit an opponent. It's an <<adversarial>>
 _wisdom_ check, and it is difficult if you're not skilled at using the given
-weapon. 
+weapon.
 
 //KEY:
 *Baddie*: A person, creature, or monster that is hostile or otherwise
-considered to be your enemy. 
+considered to be your enemy.
 
 //KEY:
 *Check*: You roll your d20 against a given target number (usually one of your
 stats). _For example: when rolling a strength check you roll a d20 and must
-roll lower than your strength to succeed. 
+roll lower than your strength to succeed.
 
 //KEY:
 *Defense check, melee*: A check to avoid being hit by melee attacks. This is an
-<<adversarial>> _dexterity_ check. 
+<<adversarial>> _dexterity_ check.
 
 //KEY:
 *Defense ranged, melee*: A check to avoid being hit by ranged attack. This is
-an <<adversarial>> _wisdom_ check. 
+an <<adversarial>> _wisdom_ check.
 
 //KEY:
 *Difficult*: Difficult checks have a target number that’s 3 lower than normal
-checks. 
+checks.
 
 //KEY:
-*Easy*: Easy checks have a target number that's 3 higher than normal checks. 
+*Easy*: Easy checks have a target number that's 3 higher than normal checks.
 
 //KEY:
-*GM*: The Game Master. 
+*GM*: The Game Master.
 
 //KEY:
 *Hit Points (HP)*: A unit of health: your character has a number of hit points,
 you lose some of them when you take damage, and if you lose all of them, you
 must roll on the <<death_table>>.  _Baddies and NPCs also have hit points, and
-when they lose all of them, they die._ 
+when they lose all of them, they die._
 
 //KEY:
 *Initiative*: A check made at the beginning of a combat round to see which side
-gets to act first. 
+gets to act first.
 
 //KEY:
 *Level (lvl)*: A character can have a level between 1 and 10. Baddies, traps,
-locks, spells, and various tasks can also have a level. 
+locks, spells, and various tasks can also have a level.
 
 //KEY:
 *NPC and NPCs*: Non player character(s). These persons and creatures are played
-by the GM. 
+by the GM.
 
 //KEY:
-*PC and PCs*: Player Character(s). 
+*PC and PCs*: Player Character(s).
 
 //KEY:
 *Proficient*: It is difficult or impossible to use an armor, weapon, or
-specialist tool you are not proficient with. 
+specialist tool you are not proficient with.
 
 //KEY:
 *Roll*: Rolls are generic die rolls where you roll one or more specified dice,
 such as _3d6_, _1d10_, _2d8+2_, etc. The most common type of roll is the damage
-roll, where you roll your damage die for the type of weapon you're using. 
+roll, where you roll your damage die for the type of weapon you're using.
 
 //KEY:
-*TN*: Abbreviation of Target Number. 
+*TN*: Abbreviation of Target Number.
 
 //KEY:
 *Target number*: The number you must roll below (usually with your d20) in
-order to make a successful check. 
+order to make a successful check.
 
 //KEY:
 *Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set.
