@@ -834,12 +834,9 @@ Price of armor is typically (hp)³
 //------------------------------|---|---|---------
 |===
 
-.Attack Range
-[TIP]
---
+[quote]
 See <<attack_range>> for more info on how far your
 ranged attacks can reach.
---
 
 === Special Items
 //START_SORT //KEY:
@@ -1085,9 +1082,8 @@ result.
 | <<nat1>>  | You sell the item(s) for 100% of local list price.
 |===
 
-.Negotiator Ability
-TIP: If you have the <<negotiator>> ability, you have <<advantage>>
-on your haggling check.
+[quote]
+<<negotiator,Negotiators>> have <<advantage>> on haggling checks.
 
 //}}}
 
@@ -1106,6 +1102,7 @@ act.
 During their turn, a combatant can do the following things in order.
 . Make up to 5 moves.
 . Take one action.
+
 
 === Initiative
 At the beginning of every round each adventurer makes an _intelligence_ check.
@@ -1141,16 +1138,16 @@ them in many ways, and here's some examples.
 |===
 
 .Move economy
-[IMPORTANT]
-====
-* Moves do not carry over to the next round; use them or lose them, they're
-  gone as soon as you take your <<Actions,action>>.
-//
-* Effects and conditions, such as being <<prone>> or wearing broken armor
-  can reduce your number of moves. But they can never be reduced to less than
-  zero. So you can always convert your <<Actions,action>> into moves and get
-  three moves that way.
-====
+****
+Moves do not carry over to the next round; use them or lose them, they're gone
+as soon as you take your <<Actions,action>>.
+
+Effects and conditions, such as being <<prone>>, <<exhausted>>,
+<<armor_wear,wearing broken armor>>, or being affected by spells such as
+<<_slow_x>> can reduce your number of moves. But they can never be reduced to
+less than zero. So you can always convert your <<Actions,action>> into moves
+and get three moves that way.
+****
 
 === Actions
 When you have made your moves, you can take your action.
@@ -1180,8 +1177,9 @@ and the baddie loses that many <<hit_points>>
 
 See the <<adventurer_damage_rolls_table>> table to find your damage die.
 
-TIP: If you have the <<great_weapon_specialist>> special ability, you are also
-skilled in using heavy melee weapons.
+[quote]
+<<great_weapon_specialist,Great weapon specialists>> are also skilled in using
+heavy melee weapons.
 
 Critical hits::
 If you roll a <<nat1>> on your attack check, you get an extra action for free.
@@ -1248,7 +1246,7 @@ because the armor piece is broken.
 ====
 You've just been attacked and rolled a <<nat20>> on your defense check, and you
 take 5 points of damage. You must now select an armor piece that has at least
-one hit point, and that armor piece will also take some damage.
+one hit point, and that armor piece will also take damage.
 
 You have a Light Shield (2 hp), a Light Helmet (2 hp) and a Light Cuirass (3
 hp). You choose the shield, and mark it as providing only one one hit point.
@@ -1427,13 +1425,6 @@ matter of minutes; make a _constitution_ check every minute to see if you wake
 up.
 
 //KEY:
-[reftext="invisible"]
-[[invisible]]
-*invisible*: You are invisible. You cannot be targeted by creatures who rely
-primarily on sight, and even so, if the creature relies partially on sight,
-its <<attack_and_damage,attack checks>> against you are <<difficult>>.
-
-//KEY:
 [reftext="demoralized"]
 [[demoralized]]
 *Demoralized*: On your next turn you must spend all your moves (if possible)
@@ -1472,6 +1463,13 @@ down.
 [[frightened]]
 *Frightened*: You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
+
+//KEY:
+[reftext="invisible"]
+[[invisible]]
+*invisible*: You are invisible. You cannot be targeted by creatures who rely
+primarily on sight, and even so, if the creature relies partially on sight,
+its <<attack_and_damage,attack checks>> against you are <<difficult>>.
 
 //KEY:
 [reftext="on fire"]
@@ -1613,6 +1611,12 @@ name.
 //START_SORT //KEY:
 
 //KEY:
+[reftext="𝑥"]
+[[X]]
+*X*: There are many versions of this spell, each with its own level. +
+See the <<example_multilevel>> example.
+
+//KEY:
 [reftext="basic"]
 [[basic]]
 *Basic*: All basic spells can be cast by adventurers, and all spells in this
@@ -1630,6 +1634,13 @@ range of certain spell increases with the casters level.
 [[duration]]
 *Duration*: The duration of the spell.
 
+.Cancelling a spell
+****
+A spell that has a given duration must run its course. It cannot be cancelled
+unless it also has the <<focus>> property, or if it is explicitly allowed in
+the spell's description.
+****
+
 //KEY:
 [reftext="focus"]
 [[focus]]
@@ -1642,12 +1653,6 @@ another spell, take damage, or stop focusing on keeping the spell going.
 *Level*: The level of the spell. If the spell also has the  property,
 _level_ is the level of the weakest version of the spell, meaning no versions
 of the spell exists at a lower level that that.
-
-//KEY:
-[reftext="X"]
-[[X]]
-*X*: There are many versions of this spell, each with its own level. +
-See the <<example_multilevel>> example.
 
 //KEY:
 [reftext="range"]
@@ -1766,6 +1771,13 @@ made within the repellent area are <<difficult>>.
 Mundane vermin, such as normal spiders, worms, ants, flies, wasps, etc. are
 level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
 
+=== Burial (X)
+*Level 1+, <<ritual>>*
+
+<<X>> corpses of your choice within _charisma_ meters will not automatically
+become undead. This spell doesn't work if the corpse's level is higher than
+yours.
+
 === Calm Animal (X)
 *Level 1+*
 
@@ -1785,29 +1797,6 @@ A magical wooden club appears in your hand. You are skilled at wielding this
 one-handed weapon, and your damage die is 1d12 when doing so. The club
 dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go
 of it.
-
-=== Instruction (X)
-*Level: 1+, duration: 1 round*
-
-You give a creature within <<X>> meters a one-word command and then make a
-_charisma_ check. If you’re successful, the target will attempt to execute the
-command as best it can, and as it understands the command, but only for one
-round, and only if the command would not result in self harm.
-
-This spell does not affect targets whose level is higher than <<X>>.
-
-If the target’s level is lower than <<X>> the _charisma_ check is <<easy>>.
-
-Any creature targeted by this spell will become hostile towards you, regardless
-if they executed the command or not.
-
-____
-Commands such as »flee« and »run« are straight forward, but a command such as
-»drop« can be interpreted in many ways (drop the thing you’re holding, or drop
-<<prone>>, or drop the subject). Don't take for granted that the target of
-this spell will fully understand the meaning or spirit your command.
-____
-
 
 === Command Fire (X)
 *Level 1, 
@@ -1929,15 +1918,15 @@ keeping the heat close to the fire.
 
 You construct a ghostly, translucent horse that only you can ride. It appears
 instantly under you, so you’re instantly mounted. The horse increases your
-movement rate such that, whenever you spend one move, you move up to <<X>> meters.
-The mount has 2·<<X>> hit points, all its primary stats are 8+<<X>>.
+movement rate such that, whenever you spend one move, you move up to <<X>>
+meters. The mount has 2·<<X>> hit points, all its primary stats are 8+<<X>>.
 
 A constructed being, a Ghost Mount is immune to charm, sleep, fear, illusions,
 demoralization, and other mind-based spells, as well as spells where
 _intelligence_, or _charisma_ checks affect the spell’s outcome.
 
-The spell lasts up to 3·<<X>> rounds, but stops earlier if you stop focusing on it
-or if you dismount.
+The spell lasts up to 3·<<X>> rounds, but stops earlier if you stop focusing on
+it or if you dismount.
 
 === Ghost Servant (X)
 *Level 1, <<focus>>, *
@@ -2012,6 +2001,30 @@ than <<X>>, the spell fizzles.
 You must make a successful _charisma_ check to cast this spell on an item
 currently held, worn, or touched by a living creature, and if the creature’s
 level is higher than <<X>>, the spell fizzles.
+
+=== Instruction (X)
+*Level: 1+, duration: 1 round*
+
+You give a creature within <<X>> meters a one-word instruction and then make a
+_charisma_ check. If you’re successful, the target will attempt to execute the
+instruction as best it can, and as it understands the command, but only for one
+round, and only if the instruction would not result in self harm.
+
+You cannot affect creatures whose level is higher than <<X>>. But they become
+hostile as soon as you have cast the spell.
+
+If the target’s level is lower than <<X>> your _charisma_ check is <<easy>>.
+
+Any creature targeted by this spell will become hostile towards you, regardless
+if they executed the instruction or not.
+
+____
+Instructions such as »flee« and »run« are straight forward, but a instruction such as
+»drop« can be interpreted in many ways (drop the thing you’re holding, or drop
+<<prone>>, or drop the subject). Don't assume that the target of this spell
+will fully understand the meaning or spirit your instruction.
+____
+
 
 === Intruder Alert
 *Level 1, <<ritual>>, duration: _wisdom_ hours*
@@ -2170,7 +2183,7 @@ remove.
 There are more fear effects than the ones described in this guide.
 
 === Shield (X)
-*Level 1+, <<focus>>*
+*Level 1+, <<focus>> (up to 5·<<X>> rounds)*
 
 For the next 5·<<X>> rounds, all damage you receive is halved (rounded down).
 
@@ -2179,7 +2192,7 @@ If a baddie hits you for 5 points of damage, you only take 2 points of damage.
 And if you’re hit for 1 point of damage, you take zero points of damage.
 
 === Slow (X)
-*Level 1+, <<focus>>: _X_ rounds*
+*Level 1+, <<focus>> (up to <<X>> rounds)*
 
 You target a baddie within 2·<<X>> meters. For the duration of
 this spell, the target creature has zero <<Moves,moves>>.
@@ -2279,13 +2292,6 @@ they can be rubbed out or washed away with water.
 
 The chalk stops being magical once you stop focusing on the spell, or after
 _charisma_ hours. But the marks remain visible to you, and invisible to others.
-
-=== Burial (X)
-*Level 1+, <<ritual>>*
-
-<<X>> corpses of your choice within _charisma_ meters will not automatically
-become undead. This spell doesn't work if the corpse's level is higher than
-yours.
 
 //END_SORT
 
