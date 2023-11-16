@@ -46,9 +46,9 @@ you <<zero_hp,run out of hit points>>.
 [reftext="hit point total"]
 [[hit_point_total]]
 *Hit point total*: is the maximum number of hit points you can have. I.e. the
-number of HP you have when you're at full health. This number increases every
-time you gain a new level, and wearing armor
-can also increase this number.
+number of hit points you have when you're at full health. This number increases
+every time you gain a new level; armor and unused <<item_slots>> also increase
+your number of hit points.
 
 [reftext="recovery die"]
 [[recovery_die]]
@@ -290,6 +290,10 @@ recovery dice at once.
 At first level, your hit point total is 8, which means that, under normal
 circumstances, you can’t have more than 8 hit points. When you have lost all
 your hit points, you have to roll on the <<death_table>>.
+
+[quote]
+You also gain one hit point for every <<unused_item_slot,unused item slot>> you
+have. 
 
 [[armor_skills]]
 ==== Armor Skills
@@ -649,7 +653,7 @@ pieces.
 [reftext="item slots"]
 [[item_slots]]
 === Item Slots
-An average item takes up one item slot. Bulky or heavy items, such as heavy
+An average item uses up one item slot. Bulky or heavy items, such as heavy
 armor, can take up multiple item slots. Your number of item slots is determined
 by your _strength_ and _constitution_. The lower of these two numbers is your
 number of unencumbered item slots, and the higher number is your total number
@@ -1194,11 +1198,34 @@ If it failed, your weapon becomes unusable and must be repaired before it can
 be used again. It can be repaired by an <<armorer>> or a weaponsmith, a process
 that takes hours of work and requires a weaponsmith workshop.
 
-
 === Defense
 When a baddie tries to attack you, you make a defense check. If it was a
 ranged attack, you make an <<adversarial>> _wisdom_ check, and if it was
 a melee attack, you make an <<adversarial>> _dexterity_ check.
+
+[[unused_item_slots]]
+==== Unused  Item Slots
+You unused item slots is equal to your __unencumbered item slots__ minus 
+the number of item slots that are currently in use.
+
+You gain one extra hit point for every unused <<item_slots,item slot>> you
+have. It's a bit like wearing armor.
+
+Dropping an item will cause your <<hit_point_total>> and your current number
+of hit points to increase by a number equal to the weight (in <<item_slots>>)
+of the item.
+
+[quote]
+If you're critically low on hit points, you can drop the weapon you're
+currently wielding, and gain one or two extra hit points.
+
+Equipping or carrying an item will cause your <<hit_point_total>> and your
+current number of hit points to decrease by number of points equal to the
+weight (in <<item_slots>>) of the item.
+
+[quote]
+Beware that equipping an item can reduce you to <<zero_hp,zero hit points>>,
+which can be lethal.
 
 ==== Armor
 You can wear up to five pieces of armor: a helmet, a cuirass, a gauntlet, of
@@ -1220,8 +1247,8 @@ When you doff armor, your <<hit_point_total>> and your current number of hit
 points both decrease by the number of hit points provided by the armor piece.
 
 [quote]
-You can die if you are very low on hit points and remove a functional
-armor piece.
+You can reach <<zero_hp,zero hit points>> if you doff armor, and this can be
+deadly.
 
 ===== Armor Requires Skill
 For each piece of armor you're wearing, if you're not skilled at using it,
@@ -1273,13 +1300,14 @@ reduced to zero hit points (or below) they die instantly.
 The GM tells you what the damage die is, and you roll it, and subtract the
 result from your hit points.
 
-IMPORTANT: You can never go below zero hit points; when you have reached
-0 HP, any further damage will result in <<trauma_table>>.
+[quote]
+You can never go below zero hit points. But taking further
+<<damage_at_zero_hp,damage>> is <<_trauma_table,traumatic>>.
 
 ==== Baddies With Zero Hit Points
-Baddies die when they reach 0 HP. The only way to bring them back is to revive
-or resurrect them with powerful magic. If you want to stun a baddie, you can
-use certain items, spells, and abilities.
+Baddies die when they reach 0 hit points. The only way to bring them back is to
+revive or resurrect them with powerful magic. If you want to stun a baddie, you
+can use certain items, spells, and abilities.
 
 [[zero_hp]]
 ==== Adventurers With Zero Hit Points
@@ -1287,23 +1315,23 @@ If you reach 0 hit points, you permanently decrease a random stat by one point,
 and then you must roll on the <<death_table>>.
 
 .Reaching zero hit points
-[example]
---
-You have 4 HP left, and an angry troll hits you for 12 points of damage. You're
-brought down to zero HP.
+====
+You have 4 hit points left, and an angry troll hits you for 12 points of
+damage. You're brought down to zero hit points.
 
 You roll a d6 to find out which stat to reduce. You rolled a 2, so your
 _dexterity_ is reduced by 1.
 
-You now have to roll on the <<death_table>>: You roll a 53, meaning
-you're unconscious and <<dying>>, which in turn means you will have to roll a
-d20 every round from now on, and a <<nat20>> will result in your death.
---
+You now roll on the <<death_table>>: You roll a 53, meaning you're
+<<unconscious>> and <<dying>>, which in turn means you will have to roll a d20
+every round from now on, and a <<nat20>> will result in your death.
+====
 
+[[damage_at_zero_hp]]
 ===== Taking Damage At Zero Hit Points
 If you take damage and you are already at zero hit points, you lose 1d4 points
-from a random stat, and you must roll on the <<trauma_table>> and add the amount of
-damage taken to your d100 roll.
+from a random stat, and you must roll on the <<trauma_table>> and add the
+amount of damage taken to your d100 roll.
 
 .Kicking a player character while they're down
 [example]
@@ -1322,6 +1350,9 @@ not suffer any trauma effects, you lucky bastard.
 
 ==== Death Table
 
+You're sure to receive a negative _condition_ or two when rolling on the death
+table. Check the <<CONDITIONS>> section for more info.
+
 [reftext="death table"]
 [[death_table]]
 .Death Table
@@ -1329,8 +1360,8 @@ not suffer any trauma effects, you lucky bastard.
 |===
 | d100          | Effect
 //--------------|--------------------------------------------------
-| 100           | You’re destroyed.
-| 99            | You’re dead.
+| 100           | You’re <<destroyed>>.
+| 99            | You’re <<dead>>.
 | 76-98         | You’re <<comatose>> and <<dying>>.
 | 25-75         | You’re <<unconscious>> and <<dying>>.
 | 02-25         | You’re <<unconscious>>.
@@ -1338,16 +1369,6 @@ not suffer any trauma effects, you lucky bastard.
 //--------------|--------------------------------------------------
 |===
 
-*Destroyed*: You’re extremely dead; You must roll twice on the Trauma Table and
-mark any temporary losses as Reversible. Only great resurrection magic,
-accessible only to elites, can bring you back to life, and the costs of doing
-so are grave.
-+
-*Dead*: You’re dead; you must roll on the <<trauma_table>> (in case
-you are revived or turn into an undead).
-
-*Dead, Dying, and Comatose*: These conditions are described in detail in the
-<<CONDITIONS>> section.
 
 ==== Trauma Table
 The trauma table is used when you take damage after being reduced to 0 hit
@@ -1380,9 +1401,13 @@ _dexterity_ or _constitution_ (your choice) if you succeed, you only lose half
 the limb. Otherwise you lose all of it. Your limb can regrow if the restoration
 spell is used.
 
-*Permanent*: This trauma is permanent. There is no way to undo it or reverse it.
+*Permanent*: This trauma is permanent. There is no way to undo it or reverse
+it.
 
-*Reversible*: This type of trauma can be reversed with powerful restoration magic.
+[reftext="reversible"]
+[[reversible]]
+*Reversible*: This type of trauma can be reversed with powerful restoration
+magic.
 
 *Temporary*: lasts for 1d20 days or it can be reversed with restoration magic.
 
@@ -1401,8 +1426,8 @@ hit points by that number. Aside from sleeping, eating, and keeping watch, you
 cannot do anything of consequence while resting.
 
 ____
-You can regenerate 1d8 hit points after a meal, 6 hours of sleep,
-and two hours of rest.
+You can regenerate 1d8 hit points after a meal, 6 hours of sleep, and two hours
+of rest.
 ____
 
 *Magical Healing*: Spells (such as <<_heal_x>>), potions, and powers often
@@ -1414,6 +1439,20 @@ recovery dice.
 Conditions can affect characters and baddies.
 
 //START_SORT //KEY:
+
+//KEY:
+[reftext="destroyed"]
+[[destroyed]]
+*Destroyed*: You’re extremely dead; You must roll twice on the <<trauma_table>>
+but all temporary effects are "`upgraded`" to <<reversible>>. Only great
+resurrection magic, accessible only to elites, can bring you back to life, and
+the costs of doing so are grave.
+
+//KEY:
+[reftext="dead"]
+[[dead]]
+*Dead*: You're dead. You can be brought back to life with resurrection magic,
+which is only available to heroes and elites. If you are not buried or 
 
 //KEY:
 [reftext="comatose"]
@@ -1611,9 +1650,9 @@ name.
 //START_SORT //KEY:
 
 //KEY:
-[reftext="𝑥"]
+[reftext="_x_"]
 [[X]]
-*X*: There are many versions of this spell, each with its own level. +
+*x*: There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example.
 
 //KEY:
@@ -1632,14 +1671,7 @@ range of certain spell increases with the casters level.
 //KEY:
 [reftext="duration"]
 [[duration]]
-*Duration*: The duration of the spell.
-
-.Cancelling a spell
-****
-A spell that has a given duration must run its course. It cannot be cancelled
-unless it also has the <<focus>> property, or if it is explicitly allowed in
-the spell's description.
-****
+*Duration*: The duration of the spell. See also <<cancelling_spell>>.
 
 //KEY:
 [reftext="focus"]
@@ -1657,7 +1689,7 @@ of the spell exists at a lower level that that.
 //KEY:
 [reftext="range"]
 [[range]]
-*Range*: The range of the spell.
+*Range*: The range of the spell. See also <<targeting_spell>>.
 
 //KEY:
 [reftext="ritual"]
@@ -1695,6 +1727,23 @@ each level being more powerful than the last.
 says it's <<spell_level,level>> stem:[2+], there is no _Ghost Mount 1_. Only a _Ghost
 Mount 2_, _Ghost Mount 3_, and so on.
 ====
+
+[[cancelling_spell]]
+.Cancelling a spell
+****
+You cannot cancel or stop a spell with a <<duration>> unless the spell has
+the <<focus>> or <<trance>> property, or if cancellation is allowed in the
+spell's description.
+****
+
+
+[[targeting_spell]]
+.Targeting a spell
+****
+Unless specifically allowed in the spell's description, you cannot target stuff
+you can't see, and spells that create projectiles, beams, or similar effects
+always travel in a direct line, completely unable to avoid obstacles.
+****
 
 //}}}
 
@@ -1750,8 +1799,8 @@ It takes <<X>> minutes to cast this spell, and it requires <<X>> gold pieces,
 which are consumed by the spell (yes, you must have at least <<X>> gold pieces
 on hand to withdraw your money).
 
-The number of coins you can withdraw/deposit is 10·<<X>>·<<X>>·<<X>>
-(i.e. 10·X³).
+The number of coins you can withdraw/deposit is `10·<<X>>·<<X>>·<<X>>`
+(i.e. 10·<<X>>³).
 
 === Bug Repellent (X)
 *Level 1+, duration: <<X>> minutes*
@@ -1856,9 +1905,8 @@ them for a bit. You need to take things slow if you want to scan everything
 around you. The “glow” can penetrate clothes and paper, so a magical ring in a
 pocket or a magical pen underneath a sheet of paper can be detected.
 
-____
-Items that have recently been repaired with <<_mend_x>> also glow faintly.
-____
+[[quote]]
+Items that have recently been repaired with <<_repair_x>> also glow faintly.
 
 
 === Detect Traps (X)
@@ -1914,7 +1962,7 @@ it does not radiate more heat than it normally would; it becomes hot by
 keeping the heat close to the fire.
 
 === Ghost Mount (X)
-*Level 2, <<focus>>, *
+*Level 2, <<focus>> (special)*
 
 You construct a ghostly, translucent horse that only you can ride. It appears
 instantly under you, so you’re instantly mounted. The horse increases your
@@ -1925,11 +1973,11 @@ A constructed being, a Ghost Mount is immune to charm, sleep, fear, illusions,
 demoralization, and other mind-based spells, as well as spells where
 _intelligence_, or _charisma_ checks affect the spell’s outcome.
 
-The spell lasts up to 3·<<X>> rounds, but stops earlier if you stop focusing on
-it or if you dismount.
+The spell lasts up to 3·<<X>> rounds, but stops if you stop <<focus,focusing>>
+on it or if you dismount.
 
 === Ghost Servant (X)
-*Level 1, <<focus>>, *
+*Level 1, <<focus>>*
 
 You construct a ghostly, humanoid that only you can see, hear, or smell. You
 can send it telepathic commands, and it will obey you to the best of its
@@ -2032,49 +2080,55 @@ ____
 Upon casting the spell, you touch a door, tent flap, a lock, or similar
 moveable object. If the object is disturbed by a creature (but not the wind), a
 loud alarm will "`ring`" inside your head. The alarm is loud enough to wake you
-up, but quiet enough that you don’t wake up screaming.
+up, but soft enough that you don’t wake up screaming or startled.
 
 === Invisibility to Stupidity (X)
 *Level 1+, <<focus>>, duration: 5·<<X>> Rounds*
 
-Creatures with an _intelligence_ lower than <<X>>+2 cannot see you, smell you, or
-detect you in any way, not even by touch.
+Creatures with an _intelligence_ lower than <<X>>+2 cannot see you, smell you,
+or detect you in any way, not even by touch. If such a creature touches you,
+it will rationalize the sensation away.
 
 === Jump (X)
-*Level 1, *
+*Level 1+*
 
-When you cast this spell, you instantly jump <<X>>+1 meters in a direction of your
-choice. You cannot reduce the length of the jump, but you can jump into a wall
-or other obstacle. Doing so causes you to take 1d6 damage for each meter the
-obstacle reduces your jump.
+When you cast this spell, you instantly jump <<X>>+1 meters in a direction of
+your choice. You cannot reduce the length of the jump, but you can jump into a
+wall or other obstacle. Doing so causes you to take 1d6 damage for each meter
+the obstacle reduces your jump.
+
+If you jump into a creature, you each suffer 1d4 damage for each meter 
+the collision shortened your jump. If the creature succeeds a _dexterity_
+check, they're able to avoid you, and you fly right past it.
 
 === Lightning Touch (X)
-*Level 1+, *
+*Level 1+*
 
 You touch an adjacent target, who then takes <<X>>d6 damage. After rolling
 damage, you make a _wisdom_ check. If successful, the target is knocked
-<<prone>>, and must spend a number of moves next round to get up.
+<<prone>>, and must spend <<Moves>> to get up.
 
 If the target is wearing three or more pieces of metal armor, you have
-advantage on the damage roll and the _wisdom_ check.
+<<advantage>> on the damage roll and the _wisdom_ check.
+
+[quote]
+Medium- and heavy armor is made of metal unless otherwise specified.
 
 === Mage Might (X)
-*Level 1, <<focus>>, *
+*Level 1+, <<focus>> (duration up to <<X>> rounds)*
 
-For the next <<X>> rounds, your _strength_ score becomes 15+<<X>>*0.5 (rounded
-down).
+Your _strength_ score becomes 15+<<X>>*0.5 (rounded down).
 
-=== Mage Torch (X)
+=== Otto Luke's Torch (X)
 *Level 2+, <<focus>>, range: <<X>>·5 meters*
 
 You target a spot you can see within range. At that spot a magical ghostly
 torch appears. By spending one <<Moves,move>> you can move the torch up to 5
 meters to a spot you can see and that is within range.
 
-If you move so that the torch comes out of range, the spell stops and the torch
-vanishes.
+The torch disappears after 8 hours, or earlier if you move so that the torch
+comes out of range.
 
-The torch disappears after 8 hours.
 
 === Magical Reading
 *Level 1, <<ritual>>, duration: 8 hours*
@@ -2082,39 +2136,42 @@ The torch disappears after 8 hours.
 You cast this spell on a spellbook or mundane book. It allows you to safely
 read the book without falling for any mental magical traps the text may hold.
 It also allows you to decipher (but not cast) spells in spellbooks whose level
-is three levels higher than yours.
+is up to three levels higher than yours.
+
 
 === Magical Stone
 *Level 1*
 You touch a nonmagical stone or slingshot no larger than your fist. It becomes
-magical, and flies towards an enemy within _wisdom_ meters at great speed. The
-stone automatically hits the opponent, dealing damage equal to three times your
-level.
-
-[quote]
-The stone can only hit the baddie if there is a direct line between the
-stone and the baddie. It cannot curve or fly around obstacles.
+magical, and flies in a direct line towards an enemy within _wisdom_ meters at
+great speed. The stone automatically hits the opponent, dealing damage equal to
+three times your <<caster_level,level>>.
 
 
-=== Mend (X)
-*Level 1, *
+=== Repair (X)
+*Level 1, range: 5+<<X>> meters*
 
-You instantly repair a break, crack, scratch, or tear up to 5 + <<X>> centimeters
-from an object within <<X>> meters that weighs no more than <<X>> kg. A nonmagical
-<<Armor,armor piece>> can be mended, becoming fully functional, if it provides
-no more than <<X>> <<armor_hit_points,hit points>>. A nonmagical weapon can be
-mended, becoming fully functional, if it takes up less than <<X>>
-<<item_slots>>. Once an item has been mended, it becomes slightly magical for
-1 day; it cannot be mended in that period, and it will be detectable with
+You instantly repair a break, crack, scratch, or tear up to 5+<<X>> centimeters
+on an object within range.
+
+A <<armor_wear,broken>> <<Armor,piece of armor>> can be repaired if it isn't
+magical, and it provides no more than 2·<<X>> <<armor_hit_points,hit points>>.
+
+A <<weapon_wear,broken>> weapon can be repaired if it isn't magical, and it
+takes up no more than <<X>>÷2 <<item_slots>> (rounded down).
+
+Other items can be repaired if they weigh no more than <<X>> kg.
+
+Once an item has been repaired, it becomes slightly magical for 1 day; it
+cannot be repaired in that period, and it will be detectable with
 <<_detect_magic>>.
 
 === Mind Message (X)
-*Level 1, *
+*Level 1+*
 
-You target a creature within 5 plus 5<<X>> meters, and telepathically send 10 plus
-10<<X>> words to it. It can telepathically reply with the same number of words. If
-the recipient makes a successful _charisma_ check, no one notices its distraction
-while receiving and replying.
+You target a creature within 10 plus 10·<<X>> meters, and telepathically send
+10·<<X>> words to it. It can telepathically reply with the same number of
+words. If the recipient makes a successful _charisma_ check, no one notices its
+distraction while receiving and replying.
 
 === Mustrum’s Mundane Shroud (X)
 *Level 2, <<ritual>>, duration: <<X>> days*
@@ -2157,12 +2214,13 @@ level is 2 or more higher than the caster's level, and difficult of the
 creatures level is 2 or more lower than the caster's level.
 
 === Purify Rations (X)
-*Level 2, <<ritual>>*
+*Level 1+, <<ritual>>*
 
-You purify 1 ration pack and 1 water skin’s worth of liquid per level of this
-spell. The food and drink is completely safe to eat and drink; it does not
-taste bad, and it is nourishing. This spell does not remove curses or other
-magical effects that may affect the food and drink.
+You purify <<X>> ration packs, making them completely safe, nourishing, and
+even tasty to eat, no matter how old, stale, and nasty they were. 
+
+This spell does not remove curses or other magical effects that may affect the
+food and drink.
 
 === Read Script
 *Level 2, <<ritual>>, duration: 10·_intelligence_ minutes*
