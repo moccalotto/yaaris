@@ -121,7 +121,24 @@ This spell works like Detect Undead, Minor, except that when you detect an
 undead creature, you roll a _intelligence_ check, and if it succeeds you
 discern whether the creature's level is higher than your own.
 
-
-=== Trauma (X) ===
+=== Trauma (X)
 *Level 6*
 You touch a baddie who must roll on the trauma table: 1d100+_X_.
+
+
+=== Money Talks (X)
+*Level 5+*
+
+You chant for <<X>> minutes, and then you touch a pair of golden clipboards
+worth at least 100·<<X>> gold pieces each. The clipboards become enchanted so
+when a piece of paper is placed on top of each board, anything written on
+either paper also shows up on the other papers.
+
+This only works if the two plates are within 100·<<X>> kilometers of each
+other.
+
+The enchantment lasts 100·<<X>> days, but you can cast this spell on the
+clipboards again later, as long as they are both undamaged and close enough to
+touch.
+
+Destroying or severely damaging either clipboard breaks the spell.

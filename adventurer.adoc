@@ -2135,7 +2135,6 @@ magical, and flies in a direct line towards an enemy within _wisdom_ meters at
 great speed. The stone automatically hits the opponent, dealing damage equal to
 three times your <<caster_level,level>>.
 
-
 === Mind Message (X)
 *Level 1+*
 
@@ -2312,14 +2311,14 @@ similar; at a speed of about 1 liter per round (10 liters per minute)
 === Strength of Stone (X)
 *Level 1+, <<focus>>, <<ritual>>*
 
-You target a willing ally within 2·<<X>> meters, making all their _strength_ checks
-easy for a 2·<<X>> rounds.
+You target a willing ally within 2·<<X>> meters, making all their _strength_
+checks easy for a 2·<<X>> rounds.
 
 === Taunt
 *Level 1+, duration: 1 round*
 
-You target <<X>> creatures within 10+<<X>> meters. For each target, if you can make
-a successful <<adversarial>> _charisma_ check (which is difficult if the
+You target <<X>> creatures within 10+<<X>> meters. For each target, if you can
+make a successful <<adversarial>> _charisma_ check (which is difficult if the
 target’s level is higher than yours), the target will rush and attack you in
 melee combat on its next turn.
 
@@ -2327,17 +2326,17 @@ melee combat on its next turn.
 *Level 1+, range: _wisdom+X_ meters*
 
 You fire a frightening magical missile against a baddie within range. When
-struck, the baddie takes <<X>> d4 damage, and then you make an
-<<adversarial>> _charisma_ check; if successful the baddie
-becomes <<demoralized>>.
+struck, the baddie takes <<X>> d4 damage, and then you make an <<adversarial>>
+_charisma_ check; if successful the baddie becomes <<demoralized>>.
 
 === Vines (X)
 *Level 2, <<focus>>*
 
-You target a point within 10+<<X>> meters. Vines and wild growth sprouts from the
-ground in  a radius of <<X>> meters around that point. Each creature inside the
-affected area must make a successful _strength_, _dexterity_ or _intelligence_
-check (their choice) each round, or all they have zero moves that round.
+You target a point within 10+<<X>> meters. Vines and wild growth sprouts from
+the ground in  a radius of <<X>> meters around that point. Each creature inside
+the affected area must make a successful _strength_, _dexterity_ or
+_intelligence_ check (their choice) each round, or all they have zero moves
+that round.
 
 === Wizard’s Mark
 *Level 1, <<ritual>>, <<focus>>*
