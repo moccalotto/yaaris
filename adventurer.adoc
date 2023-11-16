@@ -1441,20 +1441,6 @@ Conditions can affect characters and baddies.
 //START_SORT //KEY:
 
 //KEY:
-[reftext="destroyed"]
-[[destroyed]]
-*Destroyed*: You’re extremely dead; You must roll twice on the <<trauma_table>>
-but all temporary effects are "`upgraded`" to <<reversible>>. Only great
-resurrection magic, accessible only to elites, can bring you back to life, and
-the costs of doing so are grave.
-
-//KEY:
-[reftext="dead"]
-[[dead]]
-*Dead*: You're dead. You can be brought back to life with resurrection magic,
-which is only available to heroes and elites. If you are not buried or 
-
-//KEY:
 [reftext="comatose"]
 [[comatose]]
 *Comatose*: You’re in a deep coma. If you receive conventional medical care,
@@ -1464,11 +1450,25 @@ matter of minutes; make a _constitution_ check every minute to see if you wake
 up.
 
 //KEY:
+[reftext="dead"]
+[[dead]]
+*Dead*: You're dead. You can be brought back to life with resurrection magic,
+which is only available to heroes and elites. If you are not buried or 
+
+//KEY:
 [reftext="demoralized"]
 [[demoralized]]
 *Demoralized*: On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
+
+//KEY:
+[reftext="destroyed"]
+[[destroyed]]
+*Destroyed*: You’re extremely dead; You must roll twice on the <<trauma_table>>
+but all temporary effects are "`upgraded`" to <<reversible>>. Only great
+resurrection magic, accessible only to elites, can bring you back to life, and
+the costs of doing so are grave.
 
 //KEY:
 [reftext="dungeon mad"]
@@ -2119,17 +2119,6 @@ Medium- and heavy armor is made of metal unless otherwise specified.
 
 Your _strength_ score becomes 15+<<X>>*0.5 (rounded down).
 
-=== Otto Luke's Torch (X)
-*Level 2+, <<focus>>, range: <<X>>·5 meters*
-
-You target a spot you can see within range. At that spot a magical ghostly
-torch appears. By spending one <<Moves,move>> you can move the torch up to 5
-meters to a spot you can see and that is within range.
-
-The torch disappears after 8 hours, or earlier if you move so that the torch
-comes out of range.
-
-
 === Magical Reading
 *Level 1, <<ritual>>, duration: 8 hours*
 
@@ -2146,24 +2135,6 @@ magical, and flies in a direct line towards an enemy within _wisdom_ meters at
 great speed. The stone automatically hits the opponent, dealing damage equal to
 three times your <<caster_level,level>>.
 
-
-=== Repair (X)
-*Level 1, range: 5+<<X>> meters*
-
-You instantly repair a break, crack, scratch, or tear up to 5+<<X>> centimeters
-on an object within range.
-
-A <<armor_wear,broken>> <<Armor,piece of armor>> can be repaired if it isn't
-magical, and it provides no more than 2·<<X>> <<armor_hit_points,hit points>>.
-
-A <<weapon_wear,broken>> weapon can be repaired if it isn't magical, and it
-takes up no more than <<X>>÷2 <<item_slots>> (rounded down).
-
-Other items can be repaired if they weigh no more than <<X>> kg.
-
-Once an item has been repaired, it becomes slightly magical for 1 day; it
-cannot be repaired in that period, and it will be detectable with
-<<_detect_magic>>.
 
 === Mind Message (X)
 *Level 1+*
@@ -2193,6 +2164,17 @@ magical, and they will think the item has magical properties of your choosing.
 
 Observers with a level higher than <<X>> can detect that this spell has been
 cast, and that the item is nonmagical.
+
+=== Otto Luke's Torch (X)
+*Level 2+, <<focus>>, range: <<X>>·5 meters*
+
+You target a spot you can see within range. At that spot a magical ghostly
+torch appears. By spending one <<Moves,move>> you can move the torch up to 5
+meters to a spot you can see and that is within range.
+
+The torch disappears after 8 hours, or earlier if you move so that the torch
+comes out of range.
+
 
 === Phantasm (X)
 *Level 1, <<focus>>*
@@ -2239,6 +2221,24 @@ remove.
 
 [quote]
 There are more fear effects than the ones described in this guide.
+
+=== Repair (X)
+*Level 1, range: 5+<<X>> meters*
+
+You instantly repair a break, crack, scratch, or tear up to 5+<<X>> centimeters
+on an object within range.
+
+A <<armor_wear,broken>> <<Armor,piece of armor>> can be repaired if it isn't
+magical, and it provides no more than 2·<<X>> <<armor_hit_points,hit points>>.
+
+A <<weapon_wear,broken>> weapon can be repaired if it isn't magical, and it
+takes up no more than <<X>>÷2 <<item_slots>> (rounded down).
+
+Other items can be repaired if they weigh no more than <<X>> kg.
+
+Once an item has been repaired, it becomes slightly magical for 1 day; it
+cannot be repaired in that period, and it will be detectable with
+<<_detect_magic>>.
 
 === Shield (X)
 *Level 1+, <<focus>> (up to 5·<<X>> rounds)*
