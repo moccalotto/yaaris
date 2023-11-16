@@ -174,12 +174,13 @@ the left column, otherwise pick your background from the right column
 === 3. Adventuring Gear
 All characters start with the following equipment:
 
-* A backpack
-* 2 × <<torch>>
-* A <<light_melee_weapon>>
-* Two normal <<rations,ration packs>>
-* A set of common clothing
-* A bedroll
+* A backpack.
+* An <<adventurers_logbook>>.
+* 2 × <<torch>>.
+* A <<light_melee_weapon>>.
+* Two normal <<rations,ration packs>>.
+* A set of common clothing.
+* A bedroll.
 
 *In addition to that:* Roll on each of the following tables to find out what
 equipment your character starts with. 
@@ -197,6 +198,7 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 | 6     | Crossbow + Quiver of bolts
 //------|-----------
 |===
+
 
 ==== Shield
 Roll 1d6. If you rolled 5 or 6, you have a light shield. Otherwise, you don’t
@@ -713,7 +715,7 @@ they cannot be used any more during that combat.
 //----------------------|---|---------
 | backpack              | 1 | 1  gp
 | bedroll               | 1 | 1  sp
-| clothing moderate     | 1 | 3  sp
+| clothing, common      | 1 | 3  sp
 | clothing, poor        | 1 | 3  cp
 | clothing, wealthy     | 1 | 3  gp
 | flint and steel       | 0 | 2  cp
@@ -731,29 +733,24 @@ they cannot be used any more during that combat.
 |===
 | Name                          | IS| UP| Cost
 //------------------------------|---|---|-----------
+| Adventurer's Logbook          | 1 | 10| 20 gp
 | animal feed                   | 2 | 1 | 15 cp
-| bag of slingshots             | 1 | 3 |
-| ball bearings                 | 1 | 2 |
-| candles                       | 1 | 6 |
-| chalk                         | 1 | 12|
-| <<lamp_oil>>                  | 1 | 2 | 5 cp
-| quiver of arrows              | 1 | 3 |
-| quiver of bolts               | 1 | 3 |
-| <<magic_components>>          | 1 | 2 | 1 gp
-| <<iron_rations>>              | 1 | 2 | 4 sp
-| <<rations>>                   | 1 | 1 | 1 sp
-| <<spikes>>                    | 1 | 2 |
-| <<lockpicking_tools>>         | 1 | 4 |
-| <<tinkering_tools>>           | 2 | 4 |
-| <<torch>>                     | 1 | 2 | 5 cp
+| bag of slingshots             | 1 | 3 | 10 cp
+| ball bearings                 | 1 | 2 | 15 cp
+| candles                       | 1 | 6 | 10 cp
+| chalk                         | 1 | 12| 3  cp
+| <<lamp_oil>>                  | 1 | 2 | 5  cp
+| quiver of arrows              | 1 | 3 | 5  sp
+| quiver of bolts               | 1 | 3 | 10 sp
+| <<magic_components>>          | 1 | 2 | 1  gp
+| <<iron_rations>>              | 1 | 2 | 4  sp
+| <<rations>>                   | 1 | 1 | 1  sp
+| <<spikes>>                    | 1 | 2 | 1  sp
+| <<lockpicking_tools>>         | 1 | 4 | 5  gp
+| <<tinkering_tools>>           | 2 | 4 | 10 gp
+| <<torch>>                     | 1 | 2 | 5  cp
 //------------------------------|---|---|-----------
 |===
-
-////
-PRICE OF ARMOR
-
-Price of armor is typically (hp)³
-////
 
 [[light_armor_table]]
 .Light Armor
@@ -814,36 +811,44 @@ Price of armor is typically (hp)³
 .Melee Weapons
 [%header,cols="10,^1,^1"]
 |===
-| Melee Weapon                  | IS| Cost
-//------------------------------|---|--------
-| Light Melee Weapon            | 1 | 3 gp
-| Heavy Melee Weapon            | 2 | 8 gp
-//------------------------------|---|--------
+| Melee Weapon                  | IS | Cost
+//------------------------------|----|--------
+| Light Melee Weapon            | 1  | 3 gp
+| Heavy Melee Weapon            | 2  | 8 gp
+//------------------------------|----|--------
 |===
+
 
 .Ranged Weapons
 [%header,cols="9,^1,^1,^1"]
 |===
-| Name                          | IS| UP| Cost
-//------------------------------|---|---|---------
-| Dagger                        | 1 | 1 | 3  gp
-| Spear                         | 1 | 1 | 3  gp
-| Darts                         | 1 | 4 | 3  gp
-| Bow                           | 2 | - | 7  gp
-| ↳ quiver of arrows            | 1 | 10| 2  gp
-| Crossbow                      | 1 | - | 12 gp
-| ↳ quiver of bolts             | 1 | 10| 2  gp
-| Sling                         | 0 | - | 4  gp
-| ↳ bag of stones               | 1 | 10| 2  gp
-//------------------------------|---|---|---------
+| Name                          | IS | UP | Cost
+//------------------------------|----|----|---------
+| Dagger                        | 1  | 1  | 3  gp
+| Spear                         | 1  | 1  | 3  gp
+| Darts                         | 1  | 4  | 3  gp
+| Bow                           | 2  | -  | 7  gp
+| ↳ quiver of arrows            | 1  | 10 | 2  gp
+| Crossbow                      | 1  | -  | 12 gp
+| ↳ quiver of bolts             | 1  | 10 | 2  gp
+| Sling                         | 0  | -  | 4  gp
+| ↳ bag of stones               | 1  | 10 | 2  gp
+//------------------------------|----|----|---------
 |===
 
 [quote]
-See <<attack_range>> for more info on how far your
-ranged attacks can reach.
+See <<attack_range>> for more info on how far your ranged attacks can reach.
 
 === Special Items
 //START_SORT //KEY:
+
+//NO KEY HERE
+[reftext="coins"]
+[[coins]]
+==== Coins
+Small amounts of counts do not take up any room, but 100 coins take up 1
+<<item_slots,item slot>>, and generally requires a small sack to contain.
+
 
 //KEY:
 [reftext="bank book"]
@@ -853,7 +858,16 @@ A bank book is a magical book that can contain money. There is a magical ritual
 called <<_banking_transaction_x>>, that allows you to transfer money into and
 out of the book.
 
-This item takes up 1 item slot.
+
+//KEY:
+[reftext="adventurer's logbook"]
+[[adventurers_logbook]]
+==== Adventurer's Logbook
+This special book is made from parchment from magical creatures. It highly
+resistant to fire, water, and wear and tear. An adventurer use this book to
+take notes on their adventures. The writings in this book can be easily and
+magically transferred to other books.
+
 
 //KEY:
 [reftext="coin purse"]
@@ -865,11 +879,13 @@ just make consumptions whenever you buy something. You don't need to buy purses
 from a merchant - you just "buy" them directly from the GM. You cannot sell
 them or exchange them.
 
+
 [reftext="copper purse"]
 [[purse_copper]]
 *Copper purse*: for 1,000 copper pieces you can buy a copper purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 copper
 pieces, you make a <<consumption_check>> for the copper purse instead.
+
 
 [reftext="silver purse"]
 [[purse_silver]]
@@ -877,19 +893,13 @@ pieces, you make a <<consumption_check>> for the copper purse instead.
 <<usage_points>>. Whenever you buy something costing less than 100 silver
 pieces, you make a <<consumption_check>> for the silver purse instead.
 
+
 [reftext="gold purse"]
 [[purse_gold]]
 *Gold purse*: for 1,000 gold pieces you can buy a gold purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 gold pieces,
 you make a <<consumption_check>> for the gold purse instead.
 
-//KEY:
-[reftext="coins"]
-[[coins]]
-==== Coins
-
-Small amounts of counts do not take up any room, but 100 coins take up 1
-<<item_slots,item slot>>, and generally requires a small sack to contain.
 
 //KEY:
 [reftext="kosh"]
@@ -901,7 +911,6 @@ loses 1 hit point. You then roll your damage die. If your roll was higher than
 the target’s remaining hit points, the target gains the <<unconscious>>
 condition, which means they’ll wake up within 2d6 hours unless they're healed.
 
-This item takes up 1 item slot.
 
 //KEY:
 [reftext="lamp oil"]
@@ -917,7 +926,6 @@ _strength_ meters), ruptures, and covers an area of 1d4 square meters.
 At this point the oil is not on fire; you must light it yourself with torch,
 a spell, or similar fashion.
 
-This item takes up 1 item slot.
 
 //KEY:
 [reftext="lantern"]
@@ -931,6 +939,7 @@ You can throw a lantern, using it to ignite an area. You roll a _dexterity_
 check. If successful, the lantern lands where you want it to (within _strength_
 meters), and covers 1d4 square meters in flaming oil. Anyone inside the affected
 area is set <<on_fire>>.
+
 
 [reftext="storm lantern"]
 [[storm_lantern]]
@@ -953,7 +962,6 @@ _intelligence_ check.
 * If none are successful, the lock becomes jammed, and can only be opened by a
   real key.
 
-This item takes up 1 item slot.
 
 //KEY:
 [reftext="magic components"]
@@ -980,7 +988,6 @@ To do so you must make an _intelligence_ check and a _wisdom_ check.
     wrong, scales are wrong, the cardinal directions are wrong, and there are
     missing areas and notes.
 
-This item takes up 1 item slot.
 
 //KEY
 [reftext="rations"]
@@ -989,11 +996,11 @@ This item takes up 1 item slot.
 Rations sustain you on your adventures. You must use one
 <<consumption_check,consumption>> of rations every day, otherwise you become
 <<starving>>.
-
 [reftext="iron rations"]
 [[iron_rations]]
 *Iron Rations* have more <<usage_points>> that normal rations, but don't
 require more <<item_slots>>.
+
 
 //KEY:
 [reftext="spikes"]
@@ -1001,6 +1008,7 @@ require more <<item_slots>>.
 ==== Spikes
 When hammered in between the door and the wall or jamb, these 30 centimeter
 spikes can wedge a door shut until the spikes are removed.
+
 
 //KEY:
 [reftext="tinkering tools"]
@@ -1034,7 +1042,6 @@ _wisdom_ check.
 * If both failed, the trap triggers, and you are not able to dodge the effects
   (if the trap is aimed at you).
 
-This item takes up 2 item slots.
 
 //KEY:
 [reftext="torch"]

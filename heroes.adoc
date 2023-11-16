@@ -26,13 +26,13 @@ way to cast _basic_ and _holy_ spells.
 .Cleric Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
-| Weapon Type           | Skill level | Damage Roll
-//----------------------|-------------|------------
-| Light Melee Weapons   | Skilled     | 1d6
-| Ranged Weapons        | Skilled     | 1d6
-| Unarmed Combat        | Unskilled   | 1d3
-| Heavy Melee Weapons   | Unskilled   | 1d10
-//----------------------|-------------|------------
+| Weapon Type             | Skill level | Damage Roll
+//------------------------|-------------|------------
+| Light Melee Weapons     | Skilled     | 1d6
+| Ranged Weapons          | Skilled     | 1d6
+| Unarmed Combat          | Unskilled   | 1d3
+| Heavy Melee Weapons     | Unskilled   | 1d10
+//------------------------|-------------|------------
 |===
 
 ===== Holy Tablets
