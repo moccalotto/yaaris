@@ -1,0 +1,305 @@
+= Y.A.R.I.S: Hero's guide to doom & destruction & stuff
+
+:stylesheet: style.css
+:doctype: article
+:icons: font
+:sectlinks:
+:toc:
+:toclevels: 1
+:toc-placement!:
+:experimental:
+:stem:
+:xrefstyle: basic
+
+This document contains classes, abilities, spells, and gear for characters of
+levels 3 through 5.
+
+// {{{ HERO CLASSES
+== HERO CLASSES
+
+// {{{ Cleric
+=== Cleric
+
+[quote, Pontius LeDik]
+The cleric is pious, steadfast, and dangerous.
+
+The cleric is a special kind of spellcaster that specializes in casting
+spells from the front line.
+
+==== Level 3
+
+* Increase your _hit point total_ by 8.
+* Increase your _constitution_ and _wisdom_ by one point each,
+  and increase one other stat by one point as well.
+* Your recovery die is 1d8.
+* You are skilled at using light and medium armor, as well as light and medium
+  shields.
+* Aside from using conventional spellbooks to cast _basic_ spells, you
+  gain access to <<holy_tablets>> allowing you to store and cast many <<holy>>
+  spell that is a more effective and powerful way to cast _basic_ and _holy_
+  spells.
+
+.Cleric Damage Rolls
+[%header,cols="8,^2,^2"]
+|===
+| Weapon Type             | Skill level | Damage Roll
+//------------------------|-------------|------------
+| Light Melee Weapons     | Skilled     | 1d6
+| Ranged Weapons          | Skilled     | 1d6
+| Unarmed Combat          | Unskilled   | 1d3
+| Heavy Melee Weapons     | Unskilled   | 1d10
+//------------------------|-------------|------------
+|===
+
+
+[reftext="holy tablets"]
+[[holy_tablets]]
+===== Holy Tablet
+
+A holy tablet is a tablet made of polished stone or noble wood with
+one face covered in holy writing.
+
+When you become a cleric, you automatically procure a holy tablet.
+
+* It is attuned to you; only you can use it.
+* It can contain spells as if it was are spellbook, 
+  but unlike a spellbook, it can contain more than one spell.
+* It can contain a number of <<holy>> spells equal to your level.
+* It has a number of _usage points_ equal to your level.
+* It cannot contains spells whose level is higher than yours.
+* You must hold the tablet in _one_ hand, and recite the holy words
+  to cast spells from the tablet.
+* You must be able to move your arms, speak, see, and read.
+
+
+Procedure::
+* You equip the tablet in one hand,
+* You spend an action to speak the holy words.
+* You spend one _consumption_ of _magic components_.
+* You roll a _wisdom_ check.
+.. If unsuccessful, the spell fizzles and your 
+   holy tablet loses one usage point per level of spell you tried to cast.
+.. If you rolled a <<nat20>> the spell fizzles and your
+   holy tablet instantly loses all its remaining _usage points_.
+.. If successful, the spell takes effect.
+.. If you rolled a <<nat1>> the spell takes effect and your tablet
+   _regains_ one usage point.
+
+==== Level 4
+I dunndunno.
+
+==== Level 5
+I dunndunno.
+
+// Cleric }}}
+
+// {{{ Mage
+=== Mage
+
+==== Level 3
+
+* Increase your _hit point total_ by 6.
+* Increase your _intelligence_ and _wisdom_ by one point each,
+  and increase one other stat by one point as well.
+* Your recovery die is 1d6.
+* You are skilled at using light armor, but no shields.
+* Aside from using conventional spellbooks to cast _basic_ spells, you
+  gain access to <<mage_books>> allowing you to store and cast many <<mage>>
+  spell that is a more effective and powerful way to cast _basic_ and _holy_
+  spells.
+
+
+==== Level 4
+
+* Increase your _hit point total_ by 6.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
+* You may switch your _Adventurer's Special Ability_ if you want.
+
+==== Level 5
+* Increase your _hit point total_ by 6.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
+
+// Mage }}}
+
+// {{{ Rogue 
+=== Rogue
+
+==== Level 3
+
+* Increase your _hit point total_ by 8.
+* Increase your _dexterity_ and _wisdom_ by one point each,
+  and increase one other stat by one point as well.
+* Your recovery die is 1d8.
+* You are skilled at using light armor, but not shields.
+* You are skilled at using light weapons, unarmed combat, as well 
+  throwing daggers.
+* You gain a Rogue's Ability.
+
+===== Rogue's Ability
+
+Lockpicker:: 
+You have <<advantage>> on all checks (including _consumption checks_ when
+using lockpicking tools to pick locks.
+
+
+Tinkerer::
+You have advantage on all checks (including _consumption checks_ when
+using lockpicking tools to pick locks.
+
+
+Absent::
+You have _advantage_ on all checks related to sneaking, hiding, stealth,
+and camouflage.
+
+
+==== Level 4
+
+* Increase your _hit point total_ by 8.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
+* You may switch your _Adventurer's Special Ability_ if you want.
+
+==== Level 5
+* Increase your _hit point total_ by 8.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
+
+
+// }}}
+
+// {{{ Warrior
+=== Warrior
+
+==== Level 3
+
+* Increase your _hit point total_ by 10.
+* Increase your _constitution_ and _strength_ by one point each,
+  and increase one other stat by one point as well.
+* Your recovery die is 1d10.
+* You are skilled at using light and medium armor, as well as light and medium
+  shields.
+
+.Warrior Damage Rolls
+[%header,cols="8,^2,^2"]
+|===
+| Weapon Type             | Skill level | Damage Roll
+//------------------------|-------------|------------
+| Light Melee Weapons     | Skilled     | 1d8
+| Ranged Weapons          | Skilled     | 1d6
+| Unarmed Combat          | Unskilled   | 1d3
+| Heavy Melee Weapons     | Skilled     | 1d12
+//------------------------|-------------|------------
+|===
+
+
+===== Warrior Special Ability
+Chose one:
+
+Shield Fighter::
+If you attack a baddie, but failed your attack check, you
+are allowed to make an attack with your shield. It behaves
+like a light weapon. 
+
+[quote]
+If you roll a _20_ on your shield slice, your shield becomes
+_broken_, which means you lose one _move_.
+
+Critter::
+If you roll a _1_ on your attack check, you roll your damage with
+_advantage_, and then you make a second attack with the same weapon
+against a foe of your choice. If your bonus attack hits, you also
+roll that damage with _advantage_.
+
+Tank::
+You are skilled at using heavy armor.
+
+Hauler::
+Your number of total number of item slots and your  _unencumbered_ item slots
+is increased by 3.
+
+Basher::
+If you have landed a successful hit with a blunt weapon on a baddie, you can
+push them one meter away from you. 
+
+[quote]
+A basher`'s push can cause a baddie to fall off a cliff or into a pit trap. It
+also ensure that the pushed baddie must use at least one _move_ to get back
+into melee range with you.
+
+Sniper::
+Your ranged damage is increased to 1d10, you can attack baddies up to
+_wisdom_ meters away with a _normal_ check, and
+up to 2·__wisdom__ meters away with _difficult_ checks.
+
+Pugilist::
+You are skilled at unarmed combat, and your unarmed damage is 1d8.
+
+Backstabber::
+If an adjacent baddie moves away from you, you can make a melee attack
+against them.
+
+// Barbarians only have unencumbered item slots. Because they are badass.
+
+==== Level 4
+
+* Increase your _hit point total_ by 10.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
+* You may switch your _Adventurer's Special Ability_ if you want.
+
+==== Level 5
+
+* Increase your _hit point total_ by 10.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
+
+// Warrior }}}
+
+// HERO CLASSES }}}
+
+// {{{ HERO GEAR
+== HERO GEAR
+
+// }}}
+
+// {{{ HERO SPELLS
+== HERO SPELLS
+
+//START_SORT //KEY:
+
+//KEY:
+=== Detect Undead, Major
+*Level 4. Duration: _wisdom_ hours.*
+
+This spell works like Detect Undead, Minor, except that when you detect an
+undead creature, you roll a _intelligence_ check, and if it succeeds you
+discern whether the creature's level is higher than your own.
+
+
+//KEY:
+=== Trauma (X)
+*Level 6*
+You touch a baddie who must roll on the trauma table: 1d100+_X_.
+
+
+//KEY:
+=== Money Talks (X)
+*Level 5+*
+
+You chant for <<X>> minutes, and then you touch a pair of golden clipboards
+worth at least 100·<<X>> gold pieces each. The clipboards become enchanted so
+when a piece of paper is placed on top of each board, anything written on
+either paper also shows up on the other papers.
+
+This only works if the two plates are within 100·<<X>> kilometers of each
+other.
+
+The enchantment lasts 100·<<X>> days, but you can cast this spell on the
+clipboards again later, as long as they are both undamaged and close enough to
+touch.
+
+Destroying or severely damaging either clipboard breaks the spell.
+
+// SPELLS }}}

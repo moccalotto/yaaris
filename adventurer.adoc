@@ -1,4 +1,5 @@
 = Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
+
 :stylesheet: style.css
 :doctype: article
 :icons: font
@@ -183,7 +184,7 @@ All characters start with the following equipment:
 * A bedroll.
 
 *In addition to that:* Roll on each of the following tables to find out what
-equipment your character starts with. 
+equipment your character starts with.
 
 ==== Ranged weapon
 Roll 1d6 on this table to find out if you have a ranged weapon.
@@ -209,7 +210,7 @@ have a shield.
 :!sectids:
 ==== Armor
 :sectids:
-Armors give you extra hit points; you have 1d3-1 
+Armors give you extra hit points; you have 1d3-1
 <<light_armor_table,light armor pieces>> of your choice.
 
 ==== Utility Gear
@@ -248,8 +249,7 @@ reroll it.
 | 1d10 | Item
 //-----|-----------
 | 1    | 2d4 gold pieces
-| 2    | <<spellbook>> with 2 <<usage_points>>
-         and a spell of your choice.
+| 2    | <<spellbook>> with 2 <<usage_points>> and a spell of your choice.
 | 3    | <<torch>>
 | 4    | <<spikes>>
 | 5    | <<tinkering_tools>>
@@ -272,9 +272,7 @@ sections on dice checks and combat.
 == ADVENTURER
 
 [quote, Baron LeDik]
-____
-Adventurers are brave, eager, and dangerous
-____
+Adventurers are brave, eager, and dangerous.
 
 All characters start out with the same class: Adventurer.
 
@@ -295,7 +293,7 @@ your hit points, you have to roll on the <<death_table>>.
 
 [quote]
 You also gain one hit point for every <<unused_item_slot,unused item slot>> you
-have. 
+have.
 
 [[armor_skills]]
 ==== Armor Skills
@@ -333,16 +331,21 @@ its price in gold pieces), your attacks are <<difficult>>.
 ****
 
 ==== Adventurer's Blessing
-Adventurers generally don't get sick from mundane illnesses, they can
-generally take much more punishment than other creatures, and they are
-more or less the only people who can be revived with magic.
+* You can fight at full capacity until you're at death's door.
+* You have an extremely high pain tolerance.
+* You generally don't suffer from mundane illnesses and ailments such as the
+  flu, ulcers, food poisoning, arthritis, bad teeth, and even cancers.
+* You are almost immune to long-term effects of physical trauma such as
+  brain damage, poorly healed bone fractures, and torn ligaments.
+* You are almost immune to mental health problems such as anxiety and PTSD.
+* You can be revived with magic (most other creatures can't).
 
 [quote,Margot LeDik]
-____
-Because of the Adventurer's Blessing, many nations seek to have high-level
-former adventurers in key military and governing positions, as the ability to
-be revived can be vital, excuse the pun, for the continuation of the position.
-____
+The Adventurer's Blessing is stunningly powerful, many nations seek to have
+high-level former adventurers in key military and governing positions, as the
+ability to be revived can be vital, excuse the pun, for the continuation of the
+position.
+
 
 ==== Exotic Weapon Skills
 You are *not skilled* at using exotic weapons such as the <<kosh>>.
@@ -365,9 +368,12 @@ Your hit point total is increased by 1d8. Roll with advantage.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point. And an even more betterer stat Roll a d20
-and select a stat that is lower than the result of the die roll. Increase that
-stat by 1 point. If no stats are lower than your die roll, nothing happens.
+that stat is increased by 1 point.
+
+==== An even more betterer stat
+Roll a d20 and select a stat that is lower than the result of the die roll.
+Increase that stat by 1 point. If no stats are lower than your die roll,
+nothing happens.
 
 ==== Adventurer’s Special Ability
 Choose one of the abilities below. You can switch this ability at levels 4, 6,
@@ -435,7 +441,7 @@ riding-related checks. You have <<advantage>> on
 you can ride virtually any tame creature.
 
 ****
-*_Your horse_* can drag a cart that can either carry you and two others, or you
+*Your horse* can drag a cart that can either carry you and two others, or you
 and 20 <<item_slots>> of cargo. When you ride it or direct it, it can move 2
 meters for every <<Moves,move>> you make, and it has the same stats and hit
 points as you, except for _intelligence_, which is 2. The horse generally does
@@ -446,8 +452,8 @@ what you want when you're in the saddle, but you have to succeed a _charisma_
 <<rations>>, but the horse eats so much that you will have to make two
 <<consumption_check,consumption checks>> per day.
 
-*Species*: In some areas horses and ponies are rare. In such areas, you'd
-get the most common riding animal instead of a horse.
+*Species*: Horses and ponies are rare in some areas of the world. In such
+areas, you get the most common riding animal instead of a horse.
 ****
 
 
@@ -575,8 +581,7 @@ under 6.
 
 *Both = Difficult*: If one or more conditions make a check <<difficult>>, it
 remains difficult if there are other many other circumstances that would have
-made the check
-<<easy>>.
+made the check <<easy>>.
 
 .Both = Difficult
 ====
@@ -589,18 +594,16 @@ the roll <<easy>>, but you're also <<encumbered>>, which makes the check
 [[adversarial]]
 === Adversarial Checks
 These are checks where the difficulty depends on the level of the adversary. In
-this context, and adversary can be a baddie, a lock, a trap, a
-riddle, or similar.
+this context, and adversary can be a baddie, a lock, a trap, a riddle, or
+similar.
 
-If the adversary is two or more levels above you, the check is
-<<difficult>>, and if the adversary is two or more levels
-below you, the check is <<easy>>.
+If the adversary is two or more levels above you, the check is <<difficult>>,
+and if the adversary is two or more levels below you, the check is <<easy>>.
 
 .Adversarial Checks
 ====
-
-A second level adventurer is trying to attack an evil orc who is level 5.
-This attack is <<difficult>> because the orc is two or more levels above the
+A second level adventurer is trying to attack an evil orc who is level 5. This
+attack is <<difficult>> because the orc is two or more levels above the
 adventurer.
 
 ---
@@ -611,8 +614,8 @@ check is <<easy>>.
 
 ---
 
-You are attacking a zombie. You are level 2, and the zombie is level 1, so
-your are within one level of each other, and thus your check is normal.
+You are attacking a zombie. You are level 2, and the zombie is level 1, so your
+are within one level of each other, and thus your check is normal.
 ====
 
 === Advantage & Disadvantage
@@ -621,8 +624,8 @@ or disadvantage, which changes the way you roll the dice.
 
 [reftext="advantage"]
 [[advantage]]
-*Advantage*: If a roll has advantage, you roll the dice twice, and pick the result you like
-best.
+*Advantage*: If a roll has advantage, you roll the dice twice, and pick the
+result you like best.
 
 .Damage roll with advantage
 ====
@@ -632,25 +635,25 @@ the roll you like best.
 
 [reftext="disadvantage"]
 [[disadvantage]]
-*Disadvantage*: If a roll has disadvantage, you roll the dice twice, and the GM picks the
-result they like.
+*Disadvantage*: If a roll has disadvantage, you roll the dice twice, and the GM
+picks the result they like.
 
-*Both = neither*: If at least one advantage and at least one disadvantage applies to the same
-roll, it becomes a normal without any advantage or disadvantage roll.
+*Both = neither*: If at least one advantage and at least one disadvantage
+applies to the same roll, it becomes a normal without any advantage or
+disadvantage roll.
 
 //}}}
 
 //{{{EQUIPMENT
 == EQUIPMENT
-This section contains info on item slots, <<usage_points>>, and
-several lists of equipment. These lists are not exhaustive, and other types of
-items and equipment exist.
+This section contains info on item slots, <<usage_points>>, and several lists
+of equipment. These lists are not exhaustive, and other types of items and
+equipment exist.
 
 === Money
 The weight of a few coins is negligible, but in large quantities, 100 coins
-take up one <<item_slots,item slot>>.
-A gold piece is equivalent to 100 silver pieces, a silver piece is 100 copper
-pieces.
+take up one <<item_slots,item slot>>. A gold piece is equivalent to 100 silver
+pieces, a silver piece is 100 copper pieces.
 
 [reftext="item slots"]
 [[item_slots]]
@@ -668,7 +671,7 @@ fill/carry more than your item slots total.
 ====
 If your _strength_ is 7 and your _constitution_ is 16, you have 16 _item
 slots_, and 7 of those are _unencumbered item slots_. This means that, if you
-use 8 or more of your item slots, you become <<encumbered>>.
+use 8 or more of your _item slots_, you become <<encumbered>>.
 ====
 
 [reftext="usage points"]
@@ -694,7 +697,7 @@ You must spend one _consumption_ of <<rations>> every day if you don't want to
 check_, and if it fails, one of your ration packs loses a <<usage_points,usage
 point>>.
 
-*Consumable Projectiles*:
+*Projectiles*:
 You do not roll a _consumption check_ every time you fire an arrow, bolt, or
 slingshot during combat. Instead you make one consumption check after the
 combat ends (one for each type of projectile you used). When you fire a
@@ -703,8 +706,8 @@ after each projectile fired.
 
 *Consumable Thrown Weapons*:
 Items that can be used in melee combat _and_ ranged combat, such as knives,
-spears, and javelins, do not have usage points; when you have thrown them,
-they cannot be used any more during that combat.
+spears, and javelins, do not have usage points; when you have thrown them, they
+cannot be used any more during that combat.
 
 === Gear
 
@@ -733,7 +736,7 @@ they cannot be used any more during that combat.
 |===
 | Name                          | IS| UP| Cost
 //------------------------------|---|---|-----------
-| Adventurer's Logbook          | 1 | 10| 20 gp
+| <<adventurers_logbook>>       | 1 | 10| 20 gp
 | animal feed                   | 2 | 1 | 15 cp
 | bag of slingshots             | 1 | 3 | 10 cp
 | ball bearings                 | 1 | 2 | 15 cp
@@ -781,6 +784,7 @@ they cannot be used any more during that combat.
 
 
 .Heavy Armor
+[[heavy_armor]]
 [%header,cols="9,^1,^1,^1"]
 |===
 | Armor Piece           | IS| HP| Cost
@@ -864,9 +868,20 @@ out of the book.
 [[adventurers_logbook]]
 ==== Adventurer's Logbook
 This special book is made from parchment from magical creatures. It highly
-resistant to fire, water, and wear and tear. An adventurer use this book to
-take notes on their adventures. The writings in this book can be easily and
-magically transferred to other books.
+resistant to fire, water, and wear and tear. You can write impossibly fast in
+this book; up to ten times your normal writing speed. You can easily and
+swiftly transcribe writing from this book to another _adventurer's logbook_,
+writing at up to fifty times your normal writing speed. Even when writing at
+full speed, anything you write in this book is very legible, but this only
+applies to text; any drawings you make depend completely on your drawing
+skills.
+
+.Drawing
+****
+When you want to draw something, you make an _wisdom_ and _dexterity_ check.
+The GM determines the quality of your drawing, based on the complexity of the
+drawing, the number of successes, failures, <<nat1>>s and <<nat20>>s
+****
 
 
 //KEY:
@@ -954,8 +969,8 @@ either, as they are designed to go out when they aren't upright.
 ==== Lockpicking Tools
 These tools allow you to pick various locks. They can be used up, and therefore
 have <<usage_points>>. To Open a Lock, you first spend 5 minutes and one
-<<consumption_check,consumption>> of lockpicking tools. Then you make both a _dexterity_- and an
-_intelligence_ check.
+<<consumption_check,consumption>> of lockpicking tools. Then you make both a
+_dexterity_- and an _intelligence_ check.
 
 * If both are successful, you open the lock.
 * If one is successful, the lock does not open, but you get to try again.
@@ -969,16 +984,16 @@ _intelligence_ check.
 ==== Magic Components
 Magic components are used when casting rituals and when recharging spellbooks.
 A consumption of magic components means you use some unspecified amount of your
-magic components and then you make a consumption check. And if the check was
-unsuccessful, your magic components lose a usage point.
+magic components which costs one <<consumption_check,consumption>> of your
+magic components.
 
 
 //KEY:
 [reftext="map making tools"]
 [[map_making_tools]]
 ==== Map Making Tools
-You can use these tools to maps of dungeons, cities, and various land areas.
-To do so you must make an _intelligence_ check and a _wisdom_ check.
+You can use these tools to maps of dungeons, cities, and various land areas. To
+do so you must make an _intelligence_ check and a _wisdom_ check.
 
 *   If both are successful, your mapping process is accurate for the entire
     dungeon level, city, or area.
@@ -1212,7 +1227,7 @@ a melee attack, you make an <<adversarial>> _dexterity_ check.
 
 [[unused_item_slots]]
 ==== Unused  Item Slots
-You unused item slots is equal to your __unencumbered item slots__ minus 
+You unused item slots is equal to your __unencumbered item slots__ minus
 the number of item slots that are currently in use.
 
 You gain one extra hit point for every unused <<item_slots,item slot>> you
@@ -1427,6 +1442,8 @@ xref:heroes#[Hero’s Guide to doom & destruction & stuff].
 You can regain hit points in various ways, but you can never heal or be healed
 beyond your <<hit_point_total>>.
 
+[reftext="rest"]
+[[rest]]
 *Resting*: Resting for 8 hours, at least six of which are spent sleeping, will
 allow you to regenerate a bit; roll your <<recovery_die>>, and increase your
 hit points by that number. Aside from sleeping, eating, and keeping watch, you
@@ -1459,8 +1476,23 @@ up.
 //KEY:
 [reftext="dead"]
 [[dead]]
-*Dead*: You're dead. You can be brought back to life with resurrection magic,
-which is only available to heroes and elites. If you are not buried or 
+*Dead*: You're dead. You can be brought back to life with resurrection magic
+(not available in this document). If you are not buried or are treated with
+burial rites, you will rise as an undead within 2d6 days.
+
+.The Undead Curse
+[[the_undead_curse]]
+[reftex="the undead curse"]
+[sidebar]
+Anyone (any intelligent, living creature) who dies will almost certainly rise
+again as an undead within a few days or even hours. This can be completely
+prevented by cremation, or by use of the _burial_x spell. Decapitation has a
+high probability of success, but it is not guaranteed.
+
+[quote,Sybia LeDik]
+The horror of the battlefield is magnified, multiplied, and intensified as you
+have to fight your foes twice and your late friends once.
+
 
 //KEY:
 [reftext="demoralized"]
@@ -1501,8 +1533,8 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 //KEY:
 [reftext="exhausted"]
 [[exhausted]]
-*Exhausted*: Same as <<encumbered>> AND your number of moves is halved, rounded
-down.
+*Exhausted*: Same as <<encumbered>> _and_ your number of moves is halved,
+rounded down.
 
 //KEY:
 [reftext="frightened"]
@@ -1514,8 +1546,8 @@ your fear. You have 2 fewer moves than normal.
 [reftext="invisible"]
 [[invisible]]
 *invisible*: You are invisible. You cannot be targeted by creatures who rely
-primarily on sight, and even so, if the creature relies partially on sight,
-its <<attack_and_damage,attack checks>> against you are <<difficult>>.
+primarily on sight. Even so, if a creature relies just partially on sight, its
+<<attack_and_damage,attack checks>> against you are <<difficult>>.
 
 //KEY:
 [reftext="on fire"]
@@ -1555,9 +1587,10 @@ you to try and escape your bonds.
 //KEY:
 [reftext="starving"]
 [[starving]]
-*Starving*: Every day that you do not get at least one consumption of
-<<rations>> or similar, you roll 1d20 for each of your <<Stats,stats>>. If you rolled
-under a stat, that stat is reduced by 1.
+*Starving*: Every day that you do not get at least one
+<<consumption_check,consumption>> of <<rations>> or similar, you roll 1d20 for
+each of your <<Stats,stats>>. If you rolled under a stat, that stat is reduced
+by 1 until you get food and <<rest>>.
 
 //KEY:
 [reftext="unconscious"]
@@ -1602,12 +1635,16 @@ Requirements::
 * You must not have cast any spells previously in this <<round>>.
 * The <<spellbook>> must have at least one <<usage_points,usage point>>.
 * You must be holding the <<spellbook>> open in both hands.
-* You must be able to see, speak, read, and move your arms freely.
+* You must be able to see, speak, read, and move your hards, hands, and fingers
+  freely.
+* You must not be <<encumbered>>, <<exhausted>>, <<on_fire>>, or <<prone>>.
 
 Procedure::
 * Make an _intelligence_ check:
-.. If successful, the spell takes effect, 
+.. If successful, the spell takes effect,
    and the spellbook loses one of its <<usage_points>>.
+.. If you rolled a <<nat1>>, the spell takes effect, and the spellbook
+   does not lose a <<usage_point>>.
 .. If unsuccessful, the spell fizzles, but no <<usage_points>> are lost.
 .. If you rolled a <<nat20>>, spell fizzles and the spellbook instantly loses
    all its <<usage_points>>.
@@ -1629,11 +1666,11 @@ Requirements::
   ritual.
 
 Procedure::
-. Spend 10 minutes chanting and reading from the spellbook. 
+. Spend 10 minutes chanting and reading from the spellbook.
 . Spend one <<consumption_check,consumption>> of <<magic_components>>.
 . Make an _intelligence_ check:
 .. If successful, you cast the spell.
-.. If unsuccessful, the spell fizzles, but you can try again later. 
+.. If unsuccessful, the spell fizzles, but you can try again later.
 .. If you rolled a <<nat20>>, the spellbook loses all its <<usage_points>>.
 
 [reftext="basic recharging"]
@@ -1831,8 +1868,8 @@ level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
 *Level 1+, <<ritual>>*
 
 <<X>> corpses of your choice within _charisma_ meters will not automatically
-become undead. This spell doesn't work if the corpse's level is higher than
-yours.
+become undead (see <<the_undead_curse>>. This spell doesn't work if the
+corpse's level is higher than yours.
 
 === Calm Animal (X)
 *Level 1+*
@@ -1855,9 +1892,9 @@ dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go
 of it.
 
 === Command Fire (X)
-*Level 1, 
+*Level 1,
 ,
-range: 2·<<X>> meters, 
+range: 2·<<X>> meters,
 duration: 2·<<X>> minutes (<<trance>>)*
 
 When you've just cast the spell you select a fire. It can be as small as a
@@ -1927,7 +1964,7 @@ is when the trap is within <<X>> meters of you.
 
 You can feel when one or more undead creatures are within _wisdom_ meters of
 you. You can detect undead creatures through most walls, but not it cannot
-penetrate more than one meter of rock or one centimeter of lead. 
+penetrate more than one meter of rock or one centimeter of lead.
 
 If the undead creature's level is lower than <<X>>, you are able to ascertain
 its direction, otherwise you only know that the creature is present, not where
@@ -2104,7 +2141,7 @@ your choice. You cannot reduce the length of the jump, but you can jump into a
 wall or other obstacle. Doing so causes you to take 1d6 damage for each meter
 the obstacle reduces your jump.
 
-If you jump into a creature, you each suffer 1d4 damage for each meter 
+If you jump into a creature, you each suffer 1d4 damage for each meter
 the collision shortened your jump. If the creature succeeds a _dexterity_
 check, they're able to avoid you, and you fly right past it.
 
@@ -2205,7 +2242,7 @@ creatures level is 2 or more lower than the caster's level.
 *Level 1+, <<ritual>>*
 
 You purify <<X>> ration packs, making them completely safe, nourishing, and
-even tasty to eat, no matter how old, stale, and nasty they were. 
+even tasty to eat, no matter how old, stale, and nasty they were.
 
 This spell does not remove curses or other magical effects that may affect the
 food and drink.
