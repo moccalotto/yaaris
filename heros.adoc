@@ -18,15 +18,18 @@ levels 3 through 5.
 == HERO CLASSES
 
 // {{{ Cleric
-=== Cleric
+=== Champion
 
 [quote, Pontius LeDik]
-The cleric is pious, steadfast, and dangerous.
+The champion is pious, steadfast, and dangerous.
 
-The cleric is a special kind of spellcaster that specializes in casting
+The champion is a special kind of spellcaster that specializes in casting
 spells from the front line.
 
 ==== Level 3
+
+At this level your weapon abilities and damage rolls change.
+
 
 * Increase your _hit point total_ by 8.
 * Increase your _constitution_ and _wisdom_ by one point each,
@@ -38,8 +41,10 @@ spells from the front line.
   gain access to <<holy_tablets>> allowing you to store and cast many <<holy>>
   spell that is a more effective and powerful way to cast _basic_ and _holy_
   spells.
+* Adjust your weapon skills and damage dice according to the table below.
 
-.Cleric Damage Rolls
+
+.Champion Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
 | Weapon Type             | Skill level | Damage Roll
@@ -51,45 +56,21 @@ spells from the front line.
 //------------------------|-------------|------------
 |===
 
-
 [reftext="holy tablets"]
 [[holy_tablets]]
 ===== Holy Tablet
 
-A holy tablet is a tablet made of polished stone or noble wood with
-one face covered in holy writing.
 
-When you become a cleric, you automatically procure a holy tablet.
-
-* It is attuned to you; only you can use it.
-* It can contain spells as if it was are spellbook, 
-  but unlike a spellbook, it can contain more than one spell.
-* It can contain a number of <<holy>> spells equal to your level.
-* It has a number of _usage points_ equal to your level.
-* It cannot contains spells whose level is higher than yours.
-* You must hold the tablet in _one_ hand, and recite the holy words
-  to cast spells from the tablet.
-* You must be able to move your arms, speak, see, and read.
-
-
-Procedure::
-* You equip the tablet in one hand,
-* You spend an action to speak the holy words.
-* You spend one _consumption_ of _magic components_.
-* You roll a _wisdom_ check.
-.. If unsuccessful, the spell fizzles and your 
-   holy tablet loses one usage point per level of spell you tried to cast.
-.. If you rolled a <<nat20>> the spell fizzles and your
-   holy tablet instantly loses all its remaining _usage points_.
-.. If successful, the spell takes effect.
-.. If you rolled a <<nat1>> the spell takes effect and your tablet
-   _regains_ one usage point.
 
 ==== Level 4
-I dunndunno.
+
+* Lay on hands
+* Burial
+
 
 ==== Level 5
-I dunndunno.
+
+* Turn undead
 
 // Cleric }}}
 
