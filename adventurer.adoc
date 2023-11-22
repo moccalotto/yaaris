@@ -38,8 +38,8 @@ Charisma     :: luck, negotiation, charm magic, and selling treasure.
 === Extra Stuff
 
 *Level*: your character's level is a measure of their badassity. You start at
-level 1 and max out at level 10. Baddies, spells, certain items and tasks
-also have levels.
+level 1 and max out at level 10. Baddies, spells, certain items and tasks also
+have levels.
 
 *Hit points (HP)*: is your current number of hit points. Bad stuff happens if
 you <<zero_hp,run out of hit points>>.
@@ -404,14 +404,14 @@ slingshots, and darts.
 //KEY:
 [reftext="monstrous gourmand"]
 [[monstrous_gourmand]]
-*Monstrous Gourmand*: You can make edible ration packs from fresh monster parts (any recently dead
-creature will do) It requires sharp cutting instruments, a large pot, a bonfire
-(or equivalent source of heat), one hour of work, and a successful
-_intelligence_ check to create one ration pack. A medium sized creature
-“contains” 2 ration packs. In addition to creating rations, you are also able
-to eat fresh, uncooked, monster meat without getting sick. It requires a sharp
-cutting tool, 3d6 minutes, and a successful _constitution_ check to create and
-eat such a “meal”.
+*Monstrous Gourmand*: You can make edible ration packs from fresh monster parts
+(any recently dead creature will do) It requires sharp cutting instruments, a
+large pot, a bonfire (or equivalent source of heat), one hour of work, and a
+successful _intelligence_ check to create one ration pack. A medium sized
+creature “contains” 2 ration packs. In addition to creating rations, you are
+also able to eat fresh, uncooked, monster meat without getting sick. It
+requires a sharp cutting tool, 3d6 minutes, and a successful _constitution_
+check to create and eat such a “meal”.
 
 //KEY:
 [reftext="negotiator"]
@@ -422,13 +422,12 @@ have advantage on your <<haggling_check>>.
 //KEY:
 [reftext="pugilist"]
 [[pugilist]]
-*Pugilist*: You are skilled at unarmed combat, meaning your attack checks are
-normal instead of difficult. If you're not weapon a shield, and not wearing any
-medium or heavy armor pieces, your unarmed damage die is increased to 1d6.
+*Pugilist*: You are skilled at unarmed combat, and your unarmed combat damage
+die is 1d6.
 
 [quote]
-Striking certain dangerous monsters (such as fire elementals) with
-your body can have grave consequences.
+Striking certain monsters (such as fire elementals) with your body can have
+grave consequences.
 
 //KEY:
 [reftext="rider"]
@@ -566,7 +565,8 @@ would normally be.
 
 .Easy strength check
 ====
-if your _strength_ is 9, making an easy _strength_ check would need to roll under 12.
+if your _strength_ is 9, making an easy _strength_ check would need to roll
+under 12.
 ====
 
 [reftext="difficult"]
@@ -894,20 +894,17 @@ just make consumptions whenever you buy something. You don't need to buy purses
 from a merchant - you just "buy" them directly from the GM. You cannot sell
 them or exchange them.
 
-
 [reftext="copper purse"]
 [[purse_copper]]
 *Copper purse*: for 1,000 copper pieces you can buy a copper purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 copper
 pieces, you make a <<consumption_check>> for the copper purse instead.
 
-
 [reftext="silver purse"]
 [[purse_silver]]
 *Silver purse*: for 1,000 silver pieces you can buy a silver purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 silver
 pieces, you make a <<consumption_check>> for the silver purse instead.
-
 
 [reftext="gold purse"]
 [[purse_gold]]
