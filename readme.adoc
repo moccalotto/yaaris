@@ -1,4 +1,4 @@
-= Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
+= Yet Another Reduced Instruction Set for Doom & Destruction & Stuff.
 Kim Ravn Hansen <moccalotto@gmail.com>
 :stylesheet: style.css
 :sectlinks:
