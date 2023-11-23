@@ -1,4 +1,4 @@
-= Y.A.R.I.S: Hero's guide to doom & destruction & stuff
+= Hero's guide to doom & destruction & stuff
 
 :stylesheet: style.css
 :doctype: article
@@ -22,6 +22,7 @@ levels 3 through 5.
 
 [quote, Pontius LeDik]
 The champion is pious, steadfast, and dangerous.
+
 
 The champion is a special kind of spellcaster that specializes in casting
 spells from the front line.

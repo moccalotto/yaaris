@@ -1,7 +1,4 @@
-= Monsters's Guide To Doom & Destruction & Stuff
-
-== Garg Oil
-Gargoyle made out of heavy oil
+= Monster's Guide To Doom & Destruction & Stuff
 
 == Gargle Oil
 Very thin and wet version of Garg Oil
@@ -10,7 +7,35 @@ Very thin and wet version of Garg Oil
 Thicker and sticker version of Garg Oil
 
 == Far Goyle
-Gargoyle with powerful ranged attacks and spells.
+Tar Goyle with powerful ranged attacks and spells.
+
 
 == Mummy Troll
+A kind of undead troll that has been preserved.
 
+== Orcs
+
+Orcs are created when trees are felled or toppled without the proper rituals in
+place. Trees that are completely burnt, and stubs that are burnt and the trunk
+made into timber are do not create orcs.
+
+Orcs are basically orcs, goblins, trolls, cyclops, etc. made completely from
+plant matter.
+
+They exude a kind of blight that slowly kills vegetation, this makes the orcs
+stronger. Orcs also actively destroy forests to create more orcs.
+
+Orcs generally don't become undead unless they are specially powerful or
+intelligent.
+
+
+== Undeads from the sea.
+
+Sailors and enlightened sea creatures can become undead. Sailors tend to walk
+towards shore and become a menace on the beaches and harbours of the world.
+Sea creatures tend to patrol their old territories and make a mess there.
+
+=== Old George 
+There is an undead kraken called Old George. He's an undead, elderly guy, who
+is slow and not as young as he was. Sailors have learned to navigate around
+him, and generally avoid him.

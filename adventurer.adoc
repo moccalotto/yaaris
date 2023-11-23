@@ -1,5 +1,4 @@
-= Y.A.R.I.S: Adventurer's guide to doom & destruction & stuff
-
+= Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
 :doctype: article
 :icons: font
@@ -48,8 +47,8 @@ you <<zero_hp,run out of hit points>>.
 [[hit_point_total]]
 *Hit point total*: is the maximum number of hit points you can have. I.e. the
 number of hit points you have when you're at full health. This number increases
-every time you gain a new level; armor and unused <<item_slots>> also increase
-your number of hit points.
+every time you gain a new level, if you're wearing armor, and if you have
+<<unused_item_slots>>.
 
 [reftext="recovery die"]
 [[recovery_die]]
@@ -126,6 +125,7 @@ the left column, otherwise pick your background from the right column
 
 [%header,cols=2*a]
 |===
+//---------------------|------------------------
 | d6 rolled 1, 3, or 5 | d6 rolled 2, 4, or 6
 |
 . Apothecary
@@ -169,6 +169,7 @@ the left column, otherwise pick your background from the right column
 . Squire
 . Street urchin
 . Thief
+//---------------------|------------------------
 |===
 
 
@@ -280,27 +281,30 @@ All characters start out with the same class: Adventurer.
 
 ==== Recovery Die
 Your recovery die is d8. This means that you regenerate 1d8 hit points when you
-get a good long rest. Spells and potions may let you regenerate several
-recovery dice at once.
+get a good rest. Spells and potions may let you regenerate several recovery
+dice at once.
+
+[quote]
+Non-adventurers usually only recover 1 hit point when they get a good rest.
 
 
 [reftext="hit points"]
 [[hit_points]]
 ==== Hit Points
-At first level, your hit point total is 8, which means that, under normal
+At first level, your _hit point_total_ is 8, which means that, under normal
 circumstances, you can’t have more than 8 hit points. When you have lost all
 your hit points, you have to roll on the <<death_table>>.
 
 [quote]
-You also gain one hit point for every <<unused_item_slot,unused item slot>> you
-have.
+Your _hit point total_ is increased by 1 for every <<unused_item_slots,unused
+item slot>> you have.
 
 [[armor_skills]]
 ==== Armor Skills
-You  are skilled at using light shields and light armors. If you are wearing an
-armor you're not skilled at using, you lose one <<Moves,move>>.
-See the <<Armor>> section for more info and pay attention to what happens if you're
-wearing broken armor.
+You are skilled at using light shields and light armors. If you are wearing an
+armor you're not skilled at using, you lose one <<Moves,move>>. See the
+<<Armor>> section for more info and pay attention to what happens if you're
+<<armor_wear,wearing broken armor>>.
 
 [[weapon_skills]]
 ==== Weapon Skills
@@ -331,19 +335,31 @@ its price in gold pieces), your attacks are <<difficult>>.
 ****
 
 ==== Adventurer's Blessing
-* You can fight at full capacity until you're at death's door.
-* You have an extremely high pain tolerance.
-* You generally don't suffer from mundane illnesses and ailments such as the
-  flu, ulcers, food poisoning, arthritis, bad teeth, and even cancers.
-* You are almost immune to long-term effects of physical trauma such as
-  brain damage, poorly healed bone fractures, and torn ligaments.
-* You are almost immune to mental health problems such as anxiety and PTSD.
-* You can be revived with magic (most other creatures can't).
+
+An adventurer is not just someone who chooses to go on adventures, the blood in
+their veins is magical, and it makes them very formidable.
+
+* Adventurers almost never get sick from mundane illnesses and ailments such as
+  the flu, ulcers, food poisoning, arthritis, bad teeth, and cancers.
+
+* They have extremely high pain tolerances.
+
+* They are almost completely immune to long-term effects of battle and physical
+  trauma such as brain damage, bone fractures, torn ligaments, and the like.
+
+* They are almost immune to mental health problems such as anxiety and post
+  traumatic stress disorder.
+
+* Unlike most creatures, adventurers can be revived with restoration magic.
+
+The adventurer's blessing often gets more powerful over time, and further
+facets of this blessing can reveal themselves as the adventurer gains
+experience and levels.
 
 [quote,Margot LeDik]
 The Adventurer's Blessing is stunningly powerful, many nations seek to have
 high-level former adventurers in key military and governing positions, as the
-ability to be revived can be vital, excuse the pun, for the continuation of the
+ability to be revived can be, well, vital for the continuation of such
 position.
 
 
@@ -364,7 +380,7 @@ When you reach second level, you gain more hit points, better stats, and a
 special ability.
 
 ==== More Hit Points More Better
-Your hit point total is increased by 1d8. Roll with advantage.
+Your _hit point_total_ is increased by 1d8. Roll with advantage.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -716,7 +732,7 @@ cannot be used any more during that combat.
 |===
 | Name                  | IS| Cost
 //----------------------|---|---------
-| backpack              | 1 | 1  gp
+| backpack              | 0 | 1  gp
 | bedroll               | 1 | 1  sp
 | clothing, common      | 1 | 3  sp
 | clothing, poor        | 1 | 3  cp
@@ -928,15 +944,15 @@ condition, which means they’ll wake up within 2d6 hours unless they're healed.
 [reftext="lamp oil"]
 [[lamp_oil]]
 === Lamp Oil
-This <<consumption_check,consumable>> item is flammable; you can use it as fuel for your
-lantern or storm lantern, and you can use it to light things on fire.
+This <<consumption_check,consumable>> item is flammable; you can use it as fuel
+for your lantern or storm lantern, and you can use it to light things on fire.
 
 You can throw lamp oil to cover an area; You first roll a _dexterity_ check. If
 successful, the oil bottle (or skin or jug) lands where you want it (within
 _strength_ meters), ruptures, and covers an area of 1d4 square meters.
 //
-At this point the oil is not on fire; you must light it yourself with torch,
-a spell, or similar fashion.
+At this point the oil is not on fire; you must light it yourself with torch, a
+spell, or similar fashion.
 
 
 //KEY:
@@ -949,8 +965,8 @@ hour.
 
 You can throw a lantern, using it to ignite an area. You roll a _dexterity_
 check. If successful, the lantern lands where you want it to (within _strength_
-meters), and covers 1d4 square meters in flaming oil. Anyone inside the affected
-area is set <<on_fire>>.
+meters), and covers 1d4 square meters in flaming oil. Anyone inside the
+affected area is set <<on_fire>>.
 
 
 [reftext="storm lantern"]
@@ -1008,6 +1024,7 @@ do so you must make an _intelligence_ check and a _wisdom_ check.
 Rations sustain you on your adventures. You must use one
 <<consumption_check,consumption>> of rations every day, otherwise you become
 <<starving>>.
+
 [reftext="iron rations"]
 [[iron_rations]]
 *Iron Rations* have more <<usage_points>> that normal rations, but don't
@@ -1099,10 +1116,12 @@ result.
 
 [cols=">1s,11",grid=none,stripes=none,frame=none]
 |===
+//----------|----------------------------------------------------
 | <<nat20>> | You sell the item(s) for 25% of local list price.
 | Failure   | You sell the item(s) for 50% of local list price.
 | Success   | You sell the item(s) for 75% of local list price.
 | <<nat1>>  | You sell the item(s) for 100% of local list price.
+//----------|----------------------------------------------------
 |===
 
 [quote]
@@ -1176,8 +1195,9 @@ and get three moves that way.
 When you have made your moves, you can take your action.
 Here's some examples:
 
-* Attack with a readied weapon.
-* Unarmed attack.
+* Attack an adjacent baddie with a readied melee weapon.
+* Attack a non-adjacent baddie with a ranged weapon.
+* Unarmed attack against adjacent baddie.
 * Drink a readied potion.
 * Cast a spell with a readied spellbook via <<basic_spellcasting>>.
 * Drop an heavy shield.
@@ -1222,6 +1242,7 @@ When a baddie tries to attack you, you make a defense check. If it was a
 ranged attack, you make an <<adversarial>> _wisdom_ check, and if it was
 a melee attack, you make an <<adversarial>> _dexterity_ check.
 
+[reftext="unused item slots"]
 [[unused_item_slots]]
 ==== Unused  Item Slots
 You unused item slots is equal to your __unencumbered item slots__ minus
@@ -1252,7 +1273,7 @@ greaves, and a shield.
 
 [[armor_hit_points]]
 ===== Armor Grants Hit Points
-Each piece of armor you wear increases your hit point total by a number of
+Each piece of armor you wear increases your _hit point_total_ by a number of
 points. The better the armor piece, the more hit points you get.
 
 [quote]
@@ -2027,13 +2048,13 @@ abilities, and without question or hesitation.
 The servant appears within 3·<<X>> meters, and must stay within 10·<<X>> meters.
 
 * It can move up to <<X>> meters per round.
-* Its primary stats are all 2·X, and its hit point total is also 2·X.
+* Its primary stats are all 2·X, and its _hit point_total_ is also 2·X.
 * It cannot hear, speak, read, write, or make sounds, but it does understand
   your telepathic commands. It can lift and carry <<X>> item slots.
 * It cannot do difficult or demanding things such as disarming traps, but it
   can do simple tasks such as moving stuff or doing the dishes.
 * It is immune to charm, sleep, fear, illusions, demoralization, and other
-  mind-based spells, as well as spells where _intelligence_, or _charisma_
+  mind-based spells, as well as spells where _intelligence_ or _charisma_
   checks affect the spell’s outcome.
 
 The spell lasts 10·<<X>> minutes, until you stop focusing on it, or the servant
@@ -2378,6 +2399,13 @@ the ground in  a radius of <<X>> meters around that point. Each creature inside
 the affected area must make a successful _strength_, _dexterity_ or
 _intelligence_ check (their choice) each round, or all they have zero moves
 that round.
+
+=== Orgasm (X)
+*Level 2*
+
+You touch a willing target, who instantly gets an orgasm, the intensity of
+which depends on <<X>>. Once a target has been affected by this spell, they
+are immune to this spell for 1d6 hours.
 
 === Wizard’s Mark
 *Level 1, <<ritual>>, <<focus>>*
