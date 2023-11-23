@@ -1045,9 +1045,9 @@ spikes can wedge a door shut until the spikes are removed.
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
 
-Repairing mechanism:: To repair a trap, mechanism, stuck door, or similar,
-you spend 10 minutes and one <<consumption_check,consumption>> of tinkering tools.
-Then you make a _dexterity_ check and an _intelligence_ check.
+Repairing mechanism:: To repair a trap, mechanism, stuck door, or similar, you
+spend 10 minutes and one <<consumption_check,consumption>> of _tinkering
+tools_. Then you make a _dexterity_ check and an _intelligence_ check.
 
 * If both are successful, you have repaired the item.
 * If one is successful, the item is still damage, but you may try again.
@@ -1055,16 +1055,16 @@ Then you make a _dexterity_ check and an _intelligence_ check.
 
 Repairing armors:: This is like repairing mechanisms, except: only
 <<armorer,armorers>> can repair armors, and only _light armor_ can be repaired
-using tinkering tools alone; _medium_ and _heavy_ armor also requires a
-furnace (or the <<_furnace>> spell).
+using tinkering tools alone; _medium_ and _heavy_ armor also requires a furnace
+(or the <<_furnace>> spell).
 
-Repairing weapons:: This is like repairing mechanisms, except:
-only <<armorer,armorers>> can repair weapons, and it requires both tinkering
-tools and a furnace (or the <<_furnace>> spell).
+Repairing weapons:: This is like repairing mechanisms, except: only
+<<armorer,armorers>> can repair weapons, and it takes twice as long if the
+weapon is broken rather than damaged.
 
 Disarming traps:: To disarm a trap you spend 10 minutes and one
-<<consumption_check,consumption>> of tinkering tools. Then you make a _dexterity_ and
-_wisdom_ check.
+<<consumption_check,consumption>> of tinkering tools. Then you make a
+_dexterity_ and _wisdom_ check.
 
 * If both are successful, you have disarmed the trap.
 * If one is successful, you did not disarm the trap, but you may try again.
@@ -1232,10 +1232,13 @@ including attacking the same opponent again.
 [reftext="weapon wear"]
 [[weapon_wear]]
 ==== Weapon Wear
-If you roll a <<nat20>> on your attack check, you must roll a _charisma_ check.
-If it failed, your weapon becomes unusable and must be repaired before it can
-be used again. It can be repaired by an <<armorer>> or a weaponsmith, a process
-that takes hours of work and requires a weaponsmith workshop.
+If you roll a <<nat20>> on your attack check, your weapon becomes damaged,
+which causes all your subsequent attack checks with that weapon to become
+<<difficult>>. You you roll a <<nat20>> when using a damaged weapon, your
+weapon becomes unusable and must be repaired before it can be used again. 
+
+Damaged and broken weapons can be repaired by an <<armorer>> (or a
+weaponsmith).
 
 === Defense
 When a baddie tries to attack you, you make a defense check. If it was a
@@ -1299,9 +1302,9 @@ you lose one <<Moves,move>>.
 If you are wearing at least one functional piece of armor, and you roll a
 <<nat20>> on your <<Defense,defense check>>, one of the functional
 <<Armor,armor pieces>> you are wearing (your choice) breaks and becomes
-nonfunctional. A broken armor piece still provides <<hit_points>>, but
-wearing it reduces your number of <<Moves,moves>> by one. This is cumulative
-so if you're wearing 3 pieces of broken armor, you lose 3 moves.
+nonfunctional. A broken armor piece still provides <<hit_points>>, but wearing
+it reduces your number of <<Moves,moves>> by one. This is cumulative so if
+you're wearing 3 pieces of broken armor, you lose 3 moves.
 
 [quote]
 If you're wearing a piece of broken armor that you're not
@@ -1960,15 +1963,15 @@ completely harmless to her friends.
 === Detect Magic
 *Level 1, <<ritual>>, duration: _intelligence_ minutes*
 
-You can see magical items, and items that are affected by spells, such as an
+You can sense magical items, and items that are affected by spells, such as an
 item with <<_illuminate_x>> cast on it. The item must be within _wisdom_
-meters. To you, magical items start to glow after you've looked directly at
-them for a bit. You need to take things slow if you want to scan everything
-around you. The “glow” can penetrate clothes and paper, so a magical ring in a
-pocket or a magical pen underneath a sheet of paper can be detected.
+meters. Your magical sense works almost like a sense of smell. This means that
+it is relatively hard to detect the direction of magical items, and it is
+exceptionally hard to distinguish magical items from each other. In general,
+it is only possible to detect the direction of the most powerful magical item.
 
-[[quote]]
-Items that have recently been repaired with <<_repair_x>> also glow faintly.
+[[quote]] It can be advantageous to keep you and your party's items away from
+you while you're using this spell.
 
 
 === Detect Traps (X)
@@ -1977,16 +1980,16 @@ Items that have recently been repaired with <<_repair_x>> also glow faintly.
 You can sense if a trap is within 10+<<X>> meters, but you only know where it
 is when the trap is within <<X>> meters of you.
 
-=== Detect Undead (X)
-*Level 1+, Duration: _wisdom_ hours*
+=== Detect Undead
+*Level 1, Duration: _wisdom_ hours*
 
 You can feel when one or more undead creatures are within _wisdom_ meters of
 you. You can detect undead creatures through most walls, but not it cannot
 penetrate more than one meter of rock or one centimeter of lead.
 
-If the undead creature's level is lower than <<X>>, you are able to ascertain
-its direction, otherwise you only know that the creature is present, not where
-it might be.
+You are not able to detect the direction of the undead; but nothing prohibits
+you from traversing the area and probing when you feel the presence of the
+undead creature, and discerning its location that way.
 
 === Fey Flames (X)
 *Level 2*
@@ -2227,7 +2230,7 @@ Observers with a level higher than <<X>> can detect that this spell has been
 cast, and that the item is nonmagical.
 
 === Orgasm (X)
-*Level 2*
+*Level 2+*
 
 You touch a willing target, who instantly gets an orgasm, the intensity of
 which depends on <<X>>. Once a target has been affected by this spell, they
@@ -2512,8 +2515,6 @@ roll, where you roll your damage die for the type of weapon you're using.
 *Target number*: The number you must roll below (usually with your d20) in
 order to make a successful check.
 
-//KEY:
-*Y.A.R.I.S*: It’s an acronym: Yet Another Reduced Instruction Set.
 //END_SORT
 
 //}}}

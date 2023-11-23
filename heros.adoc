@@ -11,14 +11,11 @@
 :stem:
 :xrefstyle: basic
 
-This document contains classes, abilities, spells, and gear for characters of
-levels 3 through 5.
+When you reach your third level, you can choose a heroic class, which allows
+you to obtain more powerful abilities, spells, and gear.
 
-// {{{ HERO CLASSES
-== HERO CLASSES
-
-// {{{ Cleric
-=== Champion
+// {{{ CHAMPION
+== Champion
 
 [quote, Pontius LeDik]
 The champion is pious, steadfast, and dangerous.
@@ -27,23 +24,20 @@ The champion is pious, steadfast, and dangerous.
 The champion is a special kind of spellcaster that specializes in casting
 spells from the front line.
 
-==== Level 3
+=== Level 3
 
-At this level your weapon abilities and damage rolls change.
+==== Recovery Die
+Your recovery die is 1d8.
+
+==== Hit Points
+Your _hit point total_ is increased by 8.
+
+==== Stats
+Increase your _constitution_ and _wisdom_ by one point each, and increase one
+other stat by one point as well.
 
 
-* Increase your _hit point total_ by 8.
-* Increase your _constitution_ and _wisdom_ by one point each,
-  and increase one other stat by one point as well.
-* Your recovery die is 1d8.
-* You are skilled at using light and medium armor, as well as light and medium
-  shields.
-* Aside from using conventional spellbooks to cast _basic_ spells, you
-  gain access to <<holy_tablets>> allowing you to store and cast many <<holy>>
-  spell that is a more effective and powerful way to cast _basic_ and _holy_
-  spells.
-* Adjust your weapon skills and damage dice according to the table below.
-
+==== Weapon Skills
 
 .Champion Damage Rolls
 [%header,cols="8,^2,^2"]
@@ -57,28 +51,38 @@ At this level your weapon abilities and damage rolls change.
 //------------------------|-------------|------------
 |===
 
-[reftext="holy tablets"]
-[[holy_tablets]]
-===== Holy Tablet
+==== Armor Skills
+You are skilled at using light and medium armor, as well as light and medium
+shields.
+
+==== Holy Tablets
+Aside from using conventional spellbooks to cast _basic_ spells, you gain the
+ability to create and use holy tablets. These tablets are made of wood or slate,
+they take up a single _item slot_, they can contain a single spell, and they
+have a single _usage point_.
+
+Create Holy Tablet::
+If you have a spellbook with a <<holy>> spell on it, you can use that book to
+create a holy tablet. You need a tablet-like piece of wood or 
 
 
 
-==== Level 4
+=== Level 4
 
 * Lay on hands
 * Burial
 
 
-==== Level 5
+=== Level 5
 
 * Turn undead
 
-// Cleric }}}
+// CHAMPION }}}
 
-// {{{ Mage
-=== Mage
+// {{{ MAGE
+== MAGE
 
-==== Level 3
+=== Level 3
 
 * Increase your _hit point total_ by 6.
 * Increase your _intelligence_ and _wisdom_ by one point each,
@@ -91,24 +95,24 @@ At this level your weapon abilities and damage rolls change.
   spells.
 
 
-==== Level 4
+=== Level 4
 
 * Increase your _hit point total_ by 6.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 * You may switch your _Adventurer's Special Ability_ if you want.
 
-==== Level 5
+=== Level 5
 * Increase your _hit point total_ by 6.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 
-// Mage }}}
+// MAGE }}}
 
-// {{{ Rogue 
-=== Rogue
+// {{{ ROGUE 
+== ROGUE
 
-==== Level 3
+=== Level 3
 
 * Increase your _hit point total_ by 8.
 * Increase your _dexterity_ and _wisdom_ by one point each,
@@ -119,7 +123,7 @@ At this level your weapon abilities and damage rolls change.
   throwing daggers.
 * You gain a Rogue's Ability.
 
-===== Rogue's Ability
+==== Rogue's Ability
 
 Lockpicker:: 
 You have <<advantage>> on all checks (including _consumption checks_ when
@@ -136,25 +140,25 @@ You have _advantage_ on all checks related to sneaking, hiding, stealth,
 and camouflage.
 
 
-==== Level 4
+=== Level 4
 
 * Increase your _hit point total_ by 8.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 * You may switch your _Adventurer's Special Ability_ if you want.
 
-==== Level 5
+=== Level 5
 * Increase your _hit point total_ by 8.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 
 
-// }}}
+// ROGUE }}}
 
-// {{{ Warrior
-=== Warrior
+// {{{ WARRIOR
+== WARRIOR
 
-==== Level 3
+=== Level 3
 
 * Increase your _hit point total_ by 10.
 * Increase your _constitution_ and _strength_ by one point each,
@@ -176,7 +180,7 @@ and camouflage.
 |===
 
 
-===== Warrior Special Ability
+==== Warrior Special Ability
 Chose one:
 
 Shield Fighter::
@@ -224,22 +228,20 @@ against them.
 
 // Barbarians only have unencumbered item slots. Because they are badass.
 
-==== Level 4
+=== Level 4
 
 * Increase your _hit point total_ by 10.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 * You may switch your _Adventurer's Special Ability_ if you want.
 
-==== Level 5
+=== Level 5
 
 * Increase your _hit point total_ by 10.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 
-// Warrior }}}
-
-// HERO CLASSES }}}
+// WARRIOR }}}
 
 // {{{ HERO GEAR
 == HERO GEAR
@@ -253,27 +255,31 @@ against them.
 
 //KEY:
 === Detect Undead, Major
-*Level 4. Duration: _wisdom_ hours.*
+*<<holy>>, Level 4. Duration: _wisdom_ hours.*
 
-This spell works like Detect Undead, Minor, except that when you detect an
-undead creature, you roll a _intelligence_ check, and if it succeeds you
-discern whether the creature's level is higher than your own.
+You can feel when one or more undead creatures are within _wisdom_ meters of
+you. You can detect undead creatures through most walls, but not it cannot
+penetrate more than one meter of rock or one centimeter of lead.
+
+If the undead creature's level is lower than <<X>>, you are able to ascertain
+its direction, otherwise you only know that the creature is present, not where
+it might be.
 
 
 //KEY:
 === Trauma (X)
 *Level 6*
-You touch a baddie who must roll on the trauma table: 1d100+_X_.
+You touch a baddie who must roll on the _trauma table_: 1d100+<<X>>.
 
 
 //KEY:
 === Money Talks (X)
-*Level 5+*
+*<<basic>>, Level 5+*
 
-You chant for <<X>> minutes, and then you touch a pair of golden clipboards
+You chant for <<X>> minutes and then you touch a pair of gilded clipboards
 worth at least 100·<<X>> gold pieces each. The clipboards become enchanted so
 when a piece of paper is placed on top of each board, anything written on
-either paper also shows up on the other papers.
+either paper also shows up on its counterpart on the other clipboard.
 
 This only works if the two plates are within 100·<<X>> kilometers of each
 other.
@@ -284,4 +290,36 @@ touch.
 
 Destroying or severely damaging either clipboard breaks the spell.
 
+//KEY:
+=== Create Holy Tablet (X)
+*<<holy>>, level 3+*
+
+You chant for <<X>> minutes and then you touch a spellbook within range. The
+spell fizzles if the level of the spell in the spell in the spellbook is higher
+than <<X>> or if the spellbook has less that 1 _usage point_ left.
+
+After touching the spellbook you touch a piece of paper, parchment, or papyrus.
+The paper turns into a stone tablet with holy writing on it. It is magical, can
+be detected with a _Detect Magic_ spell, and weighs one <<item_slot>>.
+
 // SPELLS }}}
+
+// {{{ DICTIONARY
+== DICTIONARY
+
+//START_SORT //KEY:
+
+//KEY:
+[reftext="_holy_"]
+[[holy]]
+*holy*: A type of spell that can be cast by <<_champion,champions>>.
+
+[reftext="_x_"]
+[[X]]
+*X*: The level of the spell.
+
+[reftext="item slot"]
+[[item_slot]]
+*Item slot*: See xref:adventurer#item_slots[item slots] in the adventurer's guide.
+//END_SORT
+// }}}
