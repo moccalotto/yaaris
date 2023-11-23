@@ -871,15 +871,6 @@ Small amounts of counts do not take up any room, but 100 coins take up 1
 
 
 //KEY:
-[reftext="bank book"]
-[[bank_book]]
-==== Bank Book
-A bank book is a magical book that can contain money. There is a magical ritual
-called <<_banking_transaction_x>>, that allows you to transfer money into and
-out of the book.
-
-
-//KEY:
 [reftext="adventurer's logbook"]
 [[adventurers_logbook]]
 ==== Adventurer's Logbook
@@ -898,6 +889,15 @@ When you want to draw something, you make an _wisdom_ and _dexterity_ check.
 The GM determines the quality of your drawing, based on the complexity of the
 drawing, the number of successes, failures, <<nat1>>s and <<nat20>>s
 ****
+
+
+//KEY:
+[reftext="bank book"]
+[[bank_book]]
+==== Bank Book
+A bank book is a magical book that can contain money. There is a magical ritual
+called <<_banking_transaction_x>>, that allows you to transfer money into and
+out of the book.
 
 
 //KEY:
@@ -2226,6 +2226,13 @@ magical, and they will think the item has magical properties of your choosing.
 Observers with a level higher than <<X>> can detect that this spell has been
 cast, and that the item is nonmagical.
 
+=== Orgasm (X)
+*Level 2*
+
+You touch a willing target, who instantly gets an orgasm, the intensity of
+which depends on <<X>>. Once a target has been affected by this spell, they
+are immune to this spell for 1d6 hours.
+
 === Otto Luke's Torch (X)
 *Level 2+, <<focus>>, range: <<X>>·5 meters*
 
@@ -2399,13 +2406,6 @@ the ground in  a radius of <<X>> meters around that point. Each creature inside
 the affected area must make a successful _strength_, _dexterity_ or
 _intelligence_ check (their choice) each round, or all they have zero moves
 that round.
-
-=== Orgasm (X)
-*Level 2*
-
-You touch a willing target, who instantly gets an orgasm, the intensity of
-which depends on <<X>>. Once a target has been affected by this spell, they
-are immune to this spell for 1d6 hours.
 
 === Wizard’s Mark
 *Level 1, <<ritual>>, <<focus>>*
