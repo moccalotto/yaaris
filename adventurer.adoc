@@ -26,12 +26,12 @@ Your character has 6 primary stats:
 [%unbreakable]
 --
 [horizontal]
-Strength     :: melee attacks, jock stuff and carrying gear.
-Dexterity    :: stealth, melee defense, and tricky tasks.
-Constitution :: carrying gear and surviving bad trauma.
-Intelligence :: initiative, magic, and managing resources.
-Wisdom       :: ranged attack, ranged defense, and perception.
-Charisma     :: luck, negotiation, charm magic, and selling treasure.
+*Strength*: melee attacks, jock stuff and carrying gear. +
+*Dexterity*: stealth, melee defense, and tricky tasks. +
+*Constitution*: carrying gear and surviving bad trauma. +
+*Intelligence*: initiative, magic, and managing resources. +
+*Wisdom*: ranged attack, ranged defense, and perception. +
+*Charisma*: luck, negotiation, charm magic, and selling treasure.
 --
 
 === Extra Stuff
@@ -56,10 +56,10 @@ every time you gain a new level, if you're wearing armor, and if you have
 you rest or receive magical healing. You start with a recovery die of d8.
 
 *Total item slots*: is the maximum number of <<item_slots,items>> you can
-carry. This number is the highest of your _strength_ and _constitution_.
+carry. This number is the highest of your __strength__ and __constitution__.
 
 *Unencumbered item slots*: is the number of items you can carry without being
-encumbered. This number is the lowest of your _strength_ and _constitution_.
+encumbered. This number is the lowest of your __strength__ and __constitution__.
 
 *Moves*: is the number of meters you can move in a round. You can also use
 moves to do other interesting <<Moves,things>>.
@@ -272,7 +272,7 @@ sections on dice checks and combat.
 // {{{ ADVENTURER
 == ADVENTURER
 
-[quote, Baron LeDik]
+[quote,Baron LeDique]
 Adventurers are brave, eager, and dangerous.
 
 All characters start out with the same class: Adventurer.
@@ -291,12 +291,12 @@ Non-adventurers usually only recover 1 hit point when they get a good rest.
 [reftext="hit points"]
 [[hit_points]]
 ==== Hit Points
-At first level, your _hit point_total_ is 8, which means that, under normal
+At first level, your __hit point total__ is 8, which means that, under normal
 circumstances, you can’t have more than 8 hit points. When you have lost all
 your hit points, you have to roll on the <<death_table>>.
 
 [quote]
-Your _hit point total_ is increased by 1 for every <<unused_item_slots,unused
+Your __hit point total__ is increased by 1 for every <<unused_item_slots,unused
 item slot>> you have.
 
 [[armor_skills]]
@@ -329,7 +329,7 @@ deal with each weapon category.
 [reftext="attack range"]
 [[attack_range]]
 ****
-When using ranged weapons, you can attack creatures that are up to _wisdom_
+When using ranged weapons, you can attack creatures that are up to __wisdom__
 meters away. But if you go beyond the weapon's base range (which is equal to
 its price in gold pieces), your attacks are <<difficult>>.
 ****
@@ -347,8 +347,8 @@ their veins is magical, and it makes them very formidable.
 * They are almost completely immune to long-term effects of battle and physical
   trauma such as brain damage, bone fractures, torn ligaments, and the like.
 
-* They are almost immune to mental health problems such as anxiety and post
-  traumatic stress disorder.
+* They are almost immune to mental health problems such as addiction, anxiety,
+  dementia, depression and post traumatic stress disorder.
 
 * Unlike most creatures, adventurers can be revived with restoration magic.
 
@@ -356,10 +356,10 @@ The adventurer's blessing often gets more powerful over time, and further
 facets of this blessing can reveal themselves as the adventurer gains
 experience and levels.
 
-[quote,Margot LeDik]
+[quote,Margot LeDique]
 The Adventurer's Blessing is stunningly powerful, many nations seek to have
-high-level former adventurers in key military and governing positions, as the
-ability to be revived can be, well, vital for the continuation of such
+former adventurers of high levels in key military and governing positions, as
+the ability to be revived can be, well, vital for the continuation of such
 position.
 
 
@@ -380,7 +380,7 @@ When you reach second level, you gain more hit points, better stats, and a
 special ability.
 
 ==== More Hit Points More Better
-Your _hit point_total_ is increased by 1d8. Roll with advantage.
+Your __hit point_total__ is increased by 1d8. Roll with <<advantage>>.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -407,7 +407,7 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 [reftext="everdeen"]
 [[everdeen]]
 *Everdeen*: If you are without arrows during combat, you can spend 3 moves, and
-make a _charisma_ check. If successful, you somehow have a single extra arrow
+make a __charisma__ check. If successful, you somehow have a single extra arrow
 and you’re ready to fire. If unsuccessful, you cannot use this ability before
 you have stocked up on ammunition. This ability also works with bolts,
 slingshots, and darts.
@@ -423,10 +423,10 @@ slingshots, and darts.
 *Monstrous Gourmand*: You can make edible ration packs from fresh monster parts
 (any recently dead creature will do) It requires sharp cutting instruments, a
 large pot, a bonfire (or equivalent source of heat), one hour of work, and a
-successful _intelligence_ check to create one ration pack. A medium sized
-creature “contains” 2 ration packs. In addition to creating rations, you are
+successful __intelligence__ check to create one ration pack. A medium sized
+creature “contains” 3 ration packs. In addition to creating rations, you are
 also able to eat fresh, uncooked, monster meat without getting sick. It
-requires a sharp cutting tool, 3d6 minutes, and a successful _constitution_
+requires a sharp cutting tool, 3d6 minutes, and a successful __constitution__
 check to create and eat such a “meal”.
 
 //KEY:
@@ -459,8 +459,8 @@ you can ride virtually any tame creature.
 *Your horse* can drag a cart that can either carry you and two others, or you
 and 20 <<item_slots>> of cargo. When you ride it or direct it, it can move 2
 meters for every <<Moves,move>> you make, and it has the same stats and hit
-points as you, except for _intelligence_, which is 2. The horse generally does
-what you want when you're in the saddle, but you have to succeed a _charisma_
+points as you, except for __intelligence__, which is 2. The horse generally does
+what you want when you're in the saddle, but you have to succeed a __charisma__
 (with <<advantage>>) check to command it when you're not.
 
 *Feed*: You can feed your horse animal feed, and if you can't you can feed it with
@@ -475,7 +475,7 @@ areas, you get the most common riding animal instead of a horse.
 //KEY:
 [reftext="shady"]
 [[shady]]
-*Shady*: On a successful _charisma_ check you pull out a dagger from a boot, a
+*Shady*: On a successful __charisma__ check you pull out a dagger from a boot, a
 sleeve or… somewhere. If your check fails, you cannot do it again for the rest
 of the session. In combat, this feat requires 3 moves. You are also skilled at
 using a <<kosh>>, something normal adventurers are not.
@@ -515,6 +515,13 @@ It is time for you to move on. You’re no longer just an adventurer, you’re a
 Hero. Choose a hero class from the xref:heroes#[Hero’s Guide to doom &
 destruction & stuff].
 
+[quote]
+Even though you gain a heroic class at 3rd level, you're still an adventurer;
+you still have the <<_adventurers_special_ability>>, the
+<<_adventurers_blessing>>, as well as the other abilities adventurers have,
+such as <<basic_spellcasting>>. You only lose an ability if your heroic class
+explicitly prevents you from having it.
+
 //}}}
 
 //{{{ LEVELS
@@ -529,22 +536,22 @@ info.
 *Treasure*: A treasure is a big horde, often situated in one location. It is up
 to the GM to decide what is an actual treasure, and what is just general loot.
 
-*Suitable*: A _suitable_ treasure is worth at least 100 gold pieces times the
+*Suitable*: A __suitable__ treasure is worth at least 100 gold pieces times the
 sum of the levels of all the characters in the party.
 
 *Acquire*:
-You have _acquired_ a treasure when you have transported at least two thirds of
+You have __acquired__ a treasure when you have transported at least two thirds of
 it (by value) safely back to your base of operations. It can be necessary to
 make multiple trips to recover a large treasure.
 
 .Leveling up
 ====
 - In order to level up, a party of 5 first level characters must acquire a
-  single treasure worth _5·1·100=500_ gold pieces.
+  single treasure worth __5·1·100=500__ gold pieces.
 
 - In order to level up, a party of 4 PCs at 6th level must acquire six
   treasures in order to advance. Each treasure must be worth at least
-  _4·6·100=2,400_ gold pieces.
+  __4·6·100=2,400__ gold pieces.
 ====
 
 // }}}
@@ -557,12 +564,12 @@ as 1d6, 2d4, 3d6+3, etc. A check is a special kind of roll described below.
 === Checks
 You make checks to see if your character can successfully do something
 non-trivial; you roll your d20. The check is successful if you roll under a
-specified *_target number_*, which is usually one of your stats.
+specified *__target number__*, which is usually one of your stats.
 
 .Target Number
 ====
 You want to lift something really heavy, so the GM tells you to make a
-_strength_ check. You roll a d20. If you rolled lower than your _strength_, the
+__strength__ check. You roll a d20. If you rolled lower than your __strength__, the
 check was successful, otherwise it was unsuccessful.
 ====
 
@@ -581,7 +588,7 @@ would normally be.
 
 .Easy strength check
 ====
-if your _strength_ is 9, making an easy _strength_ check would need to roll
+if your __strength__ is 9, making an easy __strength__ check would need to roll
 under 12.
 ====
 
@@ -592,7 +599,7 @@ normally would be.
 
 .Difficult strength check
 [example]
-if your _strength_ is 9, making a difficult _strength_ check would need to roll
+if your __strength__ is 9, making a difficult __strength__ check would need to roll
 under 6.
 
 *Both = Difficult*: If one or more conditions make a check <<difficult>>, it
@@ -603,7 +610,7 @@ made the check <<easy>>.
 ====
 You are battling an orc whose level is 2 below yours. This would normally make
 the roll <<easy>>, but you're also <<encumbered>>, which makes the check
-<<difficult>>, so, overall, your check remains _difficult_.
+<<difficult>>, so, overall, your check remains __difficult__.
 ====
 
 [reftext="adversarial"]
@@ -676,7 +683,7 @@ pieces, a silver piece is 100 copper pieces.
 === Item Slots
 An average item uses up one item slot. Bulky or heavy items, such as heavy
 armor, can take up multiple item slots. Your number of item slots is determined
-by your _strength_ and _constitution_. The lower of these two numbers is your
+by your __strength__ and __constitution__. The lower of these two numbers is your
 number of unencumbered item slots, and the higher number is your total number
 of item slots. You can use all your unencumbered item slots without any side
 effects, but If you use any of your remaining item slots, you become
@@ -685,9 +692,9 @@ fill/carry more than your item slots total.
 
 .Calculating item slots
 ====
-If your _strength_ is 7 and your _constitution_ is 16, you have 16 _item
-slots_, and 7 of those are _unencumbered item slots_. This means that, if you
-use 8 or more of your _item slots_, you become <<encumbered>>.
+If your __strength__ is 7 and your __constitution__ is 16, you have 16 __item
+slots__, and 7 of those are __unencumbered item slots__. This means that, if you
+use 8 or more of your __item slots__, you become <<encumbered>>.
 ====
 
 [reftext="usage points"]
@@ -702,26 +709,26 @@ no more food in the ration pack.
 [reftext="consumption check"]
 [[consumption_check]]
 === Consumption & Consumption Checks
-You are sometimes asked to spend a _consumption_ of a given consumable item.
-When making a _consumption_ of an item, you first roll a _consumption check_,
+You are sometimes asked to spend a __consumption__ of a given consumable item.
+When making a __consumption__ of an item, you first roll a __consumption check__,
 which is a <<Checks,check>> with a target number of 11, and if the check wasn't
 successful, the item in question loses a <<usage_points,usage point>>.
 
 *Rations*:
-You must spend one _consumption_ of <<rations>> every day if you don't want to
-<<starving,starve>>. This means that, once a day, you must make a _consumption
-check_, and if it fails, one of your ration packs loses a <<usage_points,usage
+You must spend one __consumption__ of <<rations>> every day if you don't want to
+<<starving,starve>>. This means that, once a day, you must make a __consumption
+check__, and if it fails, one of your ration packs loses a <<usage_points,usage
 point>>.
 
 *Projectiles*:
-You do not roll a _consumption check_ every time you fire an arrow, bolt, or
+You do not roll a __consumption check__ every time you fire an arrow, bolt, or
 slingshot during combat. Instead you make one consumption check after the
 combat ends (one for each type of projectile you used). When you fire a
 projectile while not in combat, you make a consumption check with <<advantage>>
 after each projectile fired.
 
 *Consumable Thrown Weapons*:
-Items that can be used in melee combat _and_ ranged combat, such as knives,
+Items that can be used in melee combat __and__ ranged combat, such as knives,
 spears, and javelins, do not have usage points; when you have thrown them, they
 cannot be used any more during that combat.
 
@@ -743,6 +750,7 @@ cannot be used any more during that combat.
 | rope, 10m             | 1 | 2  cp
 | rope, 25m             | 2 | 10 cp
 | shovel                | 1 | 2  cp
+| steel bottle          | 1 | 25 sp
 //----------------------|---|---------
 |===
 
@@ -775,42 +783,42 @@ cannot be used any more during that combat.
 .Light Armor
 [%header,cols="9,^1,^1,^1"]
 |===
-| Armor Piece           | IS| HP| Cost
-//----------------------|---|---|-----------
-| Light Shield          | 1 | 4 | 8     gp
-| Light Helmet          | 1 | 3 | 8     gp
-| Light Cuirass         | 2 | 4 | 27    gp
-| Light Gauntlets       | 1 | 3 | 8     gp
-| Light Greaves         | 1 | 3 | 8     gp
-//----------------------|---|---|-----------
+| Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
+//----------------------|--------------|-------------------------|------
+| Light Shield          |       1      |          4              | 8  gp
+| Light Helmet          |       1      |          3              | 8  gp
+| Light Cuirass         |       2      |          4              | 27 gp
+| Light Gauntlets       |       1      |          3              | 8  gp
+| Light Greaves         |       1      |          3              | 8  gp
+//----------------------|--------------|-------------------------|------
 |===
 
 .Medium Armor
 [%header,cols="9,^1,^1,^1"]
 |===
-| Armor Piece           | IS| HP| Cost
-//----------------------|---|---|-----------
-| Medium Shield         | 2 | 5 | 64    gp
-| Medium Helmet         | 2 | 5 | 64    gp
-| Medium Cuirass        | 3 | 6 | 125   gp
-| Medium Gauntlets      | 2 | 5 | 64    gp
-| Medium Greaves        | 2 | 5 | 64    gp
-//----------------------|---|---|-----------
+| Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
+//----------------------|--------------|-------------------------|------
+| Medium Shield         |       2      |          5              | 64  gp
+| Medium Helmet         |       2      |          5              | 64  gp
+| Medium Cuirass        |       3      |          6              | 125 gp
+| Medium Gauntlets      |       2      |          5              | 64  gp
+| Medium Greaves        |       2      |          5              | 64  gp
+//----------------------|--------------|-------------------------|------
 |===
 
 
 .Heavy Armor
 [[heavy_armor]]
-[%header,cols="9,^1,^1,^1"]
+[%header,cols="8,^2,^1,^1"]
 |===
-| Armor Piece           | IS| HP| Cost
-//----------------------|---|---|-----------
-| Heavy Shield          | 3 | 7 | 216   gp
-| Heavy Helmet          | 3 | 7 | 216   gp
-| Heavy Cuirass         | 4 | 8 | 343   gp
-| Heavy Gauntlets       | 3 | 7 | 216   gp
-| Heavy Greaves         | 3 | 7 | 216   gp
-//----------------------|---|---|-----------
+| Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
+//----------------------|--------------|-------------------------|------
+| Heavy Shield          |      3       |          7              | 216 gp
+| Heavy Helmet          |      3       |          7              | 216 gp
+| Heavy Cuirass         |      4       |          8              | 343 gp
+| Heavy Gauntlets       |      3       |          7              | 216 gp
+| Heavy Greaves         |      3       |          7              | 216 gp
+//----------------------|--------------|-------------------------|------
 |===
 
 [[lodging]]
@@ -825,35 +833,33 @@ cannot be used any more during that combat.
 //------------------------------------------|--------
 |===
 
-
 [reftext="light melee weapon"]
 [[light_melee_weapon]]
 .Melee Weapons
-[%header,cols="10,^1,^1"]
+[%header,cols="9,^2,^1"]
 |===
-| Melee Weapon                  | IS | Cost
-//------------------------------|----|--------
-| Light Melee Weapon            | 1  | 3 gp
-| Heavy Melee Weapon            | 2  | 8 gp
-//------------------------------|----|--------
+| Melee Weapon                  | <<item_slots>> | Cost
+//------------------------------|----------------|--------
+| Light Melee Weapon            |        1       | 3 gp
+| Heavy Melee Weapon            |        2       | 8 gp
+//------------------------------|----------------|--------
 |===
-
 
 .Ranged Weapons
-[%header,cols="9,^1,^1,^1"]
+[%header,cols="7,^2,^2,^1"]
 |===
-| Name                          | IS | UP | Cost
-//------------------------------|----|----|---------
-| Dagger                        | 1  | 1  | 3  gp
-| Spear                         | 1  | 1  | 3  gp
-| Darts                         | 1  | 4  | 3  gp
-| Bow                           | 2  | -  | 7  gp
-| ↳ quiver of arrows            | 1  | 10 | 2  gp
-| Crossbow                      | 1  | -  | 12 gp
-| ↳ quiver of bolts             | 1  | 10 | 2  gp
-| Sling                         | 0  | -  | 4  gp
-| ↳ bag of stones               | 1  | 10 | 2  gp
-//------------------------------|----|----|---------
+| Name                          | <<item_slots>> | <<usage_points>> | Cost
+//------------------------------|----------------|------------------|------
+| Dagger                        |       1        |        1         | 3  gp
+| Spear                         |       1        |        1         | 3  gp
+| Darts                         |       1        |        4         | 3  gp
+| Bow                           |       2        |        -         | 7  gp
+| ↳ quiver of arrows            |       1        |        10        | 2  gp
+| Crossbow                      |       1        |        -         | 12 gp
+| ↳ quiver of bolts             |       1        |        10        | 2  gp
+| Sling                         |       0        |        -         | 4  gp
+| ↳ bag of stones               |       1        |        10        | 2  gp
+//------------------------------|----------------|------------------|------
 |===
 
 [quote]
@@ -877,7 +883,7 @@ Small amounts of counts do not take up any room, but 100 coins take up 1
 This special book is made from parchment from magical creatures. It highly
 resistant to fire, water, and wear and tear. You can write impossibly fast in
 this book; up to ten times your normal writing speed. You can easily and
-swiftly transcribe writing from this book to another _adventurer's logbook_,
+swiftly transcribe writing from this book to another __adventurer's logbook__,
 writing at up to fifty times your normal writing speed. Even when writing at
 full speed, anything you write in this book is very legible, but this only
 applies to text; any drawings you make depend completely on your drawing
@@ -885,9 +891,9 @@ skills.
 
 .Drawing
 ****
-When you want to draw something, you make an _wisdom_ and _dexterity_ check.
-The GM determines the quality of your drawing, based on the complexity of the
-drawing, the number of successes, failures, <<nat1>>s and <<nat20>>s
+When you want to draw something, you make an __wisdom__ and __dexterity__
+check. The GM determines the quality of your drawing, based on the complexity
+of the drawing, the number of successes, failures, <<nat1>>s and <<nat20>>s
 ****
 
 
@@ -947,9 +953,9 @@ condition, which means they’ll wake up within 2d6 hours unless they're healed.
 This <<consumption_check,consumable>> item is flammable; you can use it as fuel
 for your lantern or storm lantern, and you can use it to light things on fire.
 
-You can throw lamp oil to cover an area; You first roll a _dexterity_ check. If
-successful, the oil bottle (or skin or jug) lands where you want it (within
-_strength_ meters), ruptures, and covers an area of 1d4 square meters.
+You can throw lamp oil to cover an area; You first roll a __dexterity__ check.
+If successful, the oil bottle (or skin or jug) lands where you want it (within
+__strength__ meters), ruptures, and covers an area of 1d4 square meters.
 //
 At this point the oil is not on fire; you must light it yourself with torch, a
 spell, or similar fashion.
@@ -963,10 +969,10 @@ Lanterns illuminates the area around you. The lantern does not have have any
 usage points itself, but it it does <<lamp_oil>>; it uses one consumption every
 hour.
 
-You can throw a lantern, using it to ignite an area. You roll a _dexterity_
-check. If successful, the lantern lands where you want it to (within _strength_
-meters), and covers 1d4 square meters in flaming oil. Anyone inside the
-affected area is set <<on_fire>>.
+You can throw a lantern, using it to ignite an area. You roll a __dexterity__
+check. If successful, the lantern lands where you want it to (within
+__strength__ meters), and covers 1d4 square meters in flaming oil. Anyone
+inside the affected area is set <<on_fire>>.
 
 
 [reftext="storm lantern"]
@@ -983,7 +989,7 @@ either, as they are designed to go out when they aren't upright.
 These tools allow you to pick various locks. They can be used up, and therefore
 have <<usage_points>>. To Open a Lock, you first spend 5 minutes and one
 <<consumption_check,consumption>> of lockpicking tools. Then you make both a
-_dexterity_- and an _intelligence_ check.
+__dexterity__- and an __intelligence__ check.
 
 * If both are successful, you open the lock.
 * If one is successful, the lock does not open, but you get to try again.
@@ -1006,7 +1012,7 @@ magic components.
 [[map_making_tools]]
 ==== Map Making Tools
 You can use these tools to maps of dungeons, cities, and various land areas. To
-do so you must make an _intelligence_ check and a _wisdom_ check.
+do so you must make an __intelligence__ check and a __wisdom__ check.
 
 *   If both are successful, your mapping process is accurate for the entire
     dungeon level, city, or area.
@@ -1021,14 +1027,13 @@ do so you must make an _intelligence_ check and a _wisdom_ check.
 [reftext="rations"]
 [[rations]]
 ==== Rations
-Rations sustain you on your adventures. You must use one
-<<consumption_check,consumption>> of rations every day, otherwise you become
-<<starving>>.
+Rations sustain you on your adventures. You must use one <<consumption_check,
+consumption>> of rations every day, otherwise you become <<starving>>.
 
 [reftext="iron rations"]
 [[iron_rations]]
-*Iron Rations* have more <<usage_points>> that normal rations, but don't
-require more <<item_slots>>.
+*Iron Rations* have more <<usage_points>> that normal rations, while still only
+requiring one <<item_slots,item slot>>.
 
 
 //KEY:
@@ -1046,17 +1051,17 @@ spikes can wedge a door shut until the spikes are removed.
 Tinkering tools can be used to disarm traps and repair broken items.
 
 Repairing mechanism:: To repair a trap, mechanism, stuck door, or similar, you
-spend 10 minutes and one <<consumption_check,consumption>> of _tinkering
-tools_. Then you make a _dexterity_ check and an _intelligence_ check.
+spend 10 minutes and one <<consumption_check,consumption>> of __tinkering
+tools__. Then you make a __dexterity__ check and an __intelligence__ check.
 
 * If both are successful, you have repaired the item.
 * If one is successful, the item is still damage, but you may try again.
 * If both failed, you cannot fix this item until you've gained a new level.
 
 Repairing armors:: This is like repairing mechanisms, except: only
-<<armorer,armorers>> can repair armors, and only _light armor_ can be repaired
-using tinkering tools alone; _medium_ and _heavy_ armor also requires a furnace
-(or the <<_furnace>> spell).
+<<armorer,armorers>> can repair armors, and only __light armor__ can be
+repaired using tinkering tools alone; __medium__ and __heavy__ armor also
+requires a furnace (or the <<_furnace>> spell).
 
 Repairing weapons:: This is like repairing mechanisms, except: only
 <<armorer,armorers>> can repair weapons, and it takes twice as long if the
@@ -1064,7 +1069,7 @@ weapon is broken rather than damaged.
 
 Disarming traps:: To disarm a trap you spend 10 minutes and one
 <<consumption_check,consumption>> of tinkering tools. Then you make a
-_dexterity_ and _wisdom_ check.
+__dexterity__ and __wisdom__ check.
 
 * If both are successful, you have disarmed the trap.
 * If one is successful, you did not disarm the trap, but you may try again.
@@ -1079,18 +1084,18 @@ _dexterity_ and _wisdom_ check.
 Aside from illuminating the area around you, torches can be used for a number
 of things.
 
-Torches have 2 <<usage_points>>, and you must make a consumption
-check every hour.
+Torches have 2 <<usage_points>>, and you must make a <<consumption_check>>
+every hour.
 
 Torches can be revitalized; it requires one consumption of <<lamp_oil>> to
 restore 1 <<usage_points,usage point>> to a torch. This cannot be done while
-the torch is lit. After revitalizing your torch, you roll a difficult _wisdom_
-check. If unsuccessful, the torch is destroyed, and cannot be lit.
+the torch is lit. After revitalizing your torch, you roll a difficult
+__wisdom__ check. If unsuccessful, the torch is destroyed, and cannot be lit.
 
 You can use your torch as a light melee weapon, but it is difficult. If you
 roll a <<nat20>> on your melee attack check, the torch breaks and cannot be
-repaired. If you roll a <<nat1>>, the target is set <<on_fire>>,
-dealing 1d4 damage every round until it is put out.
+repaired. If you roll a <<nat1>>, the target is set <<on_fire>>, dealing 1d4
+damage every round until it is put out.
 
 You can throw a torch and use it as a ranged weapon, but it is difficult. If
 you rolled a <<nat20>> on your attack check, the torch is broken and cannot be
@@ -1104,15 +1109,14 @@ This item takes up 1 item slot.
 You buy things for price listed in this guide, but you cannot sell items at
 that price. When selling something trivial or cheap, you sell it for 50% of the
 listed value, but if you’re selling more precious things, you must make a
-_haggling check_.
+__haggling check__.
 
 [reftext="haggling check"]
 [[haggling_check]]
 *Haggling Check*:
 If you’re selling expensive items, or if you’re selling things in bulk, you
-must haggle to get a good price. You first roll a _charisma_ check, and
-refer to the table below, and do what it says, even if you don't like the
-result.
+must haggle to get a good price. You first roll a __charisma__ check, and refer
+to the table below, and do what it says, even if you don't like the result.
 
 [cols=">1s,11",grid=none,stripes=none,frame=none]
 |===
@@ -1138,7 +1142,7 @@ This section is all about fighting 🤺
 [[round]]
 === Rounds
 Combat is divided into 10-second rounds. At the beginning of every round,
-the adventurers roll _initiative_, to determine in which order they get to
+the adventurers roll __initiative__, to determine in which order they get to
 act.
 
 During their turn, a combatant can do the following things in order.
@@ -1147,7 +1151,7 @@ During their turn, a combatant can do the following things in order.
 
 
 === Initiative
-At the beginning of every round each adventurer makes an _intelligence_ check.
+At the beginning of every round each adventurer makes an __intelligence__ check.
 If the adventurers have more failed checks than there are combat capable
 baddies on the battlefield, the baddies get to go first that round.
 
@@ -1208,8 +1212,8 @@ Here's some examples:
 === Attacks & Damage
 
 When you attack a baddie, you make an attack check. If you're making a ranged
-attack, you make an <<adversarial>> _wisdom_ check, and if you're making
-a melee attack you make an <<adversarial>> _dexterity_ check.
+attack, you make an <<adversarial>> __wisdom__ check, and if you're making
+a melee attack you make an <<adversarial>> __dexterity__ check.
 
 IMPORTANT: Your attack check is <<difficult>> if you're not
 <<weapon_skills,skilled>> at using your weapon.
@@ -1242,8 +1246,8 @@ weaponsmith).
 
 === Defense
 When a baddie tries to attack you, you make a defense check. If it was a
-ranged attack, you make an <<adversarial>> _wisdom_ check, and if it was
-a melee attack, you make an <<adversarial>> _dexterity_ check.
+ranged attack, you make an <<adversarial>> __wisdom__ check, and if it was
+a melee attack, you make an <<adversarial>> __dexterity__ check.
 
 [reftext="unused item slots"]
 [[unused_item_slots]]
@@ -1276,7 +1280,7 @@ greaves, and a shield.
 
 [[armor_hit_points]]
 ===== Armor Grants Hit Points
-Each piece of armor you wear increases your _hit point_total_ by a number of
+Each piece of armor you wear increases your <<hit_point_total>> by a number of
 points. The better the armor piece, the more hit points you get.
 
 [quote]
@@ -1318,12 +1322,13 @@ You've just been attacked and rolled a <<nat20>> on your defense check, and you
 take 5 points of damage. You must now select an armor piece that has at least
 one hit point, and that armor piece will also take damage.
 
-You have a Light Shield (2 hp), a Light Helmet (2 hp) and a Light Cuirass (3
-hp). You choose the shield, and mark it as providing only one one hit point.
+You have a Light Shield (2 __hp__), a Light Helmet (2 __hp__) and a Light
+Cuirass (3 __hp__). You choose the shield, and mark it as providing only one
+one __hit point__.
 
-On top of the 5 points of damage you've just received, your total hit point
-amount goes down by one, and your current number of hit points goes down by
-one due to the armor damage.
+On top of the 5 points of damage you've just received, your <<hit_point_total>>
+goes down by one, and your current number of hit points goes down by one due to
+the armor damage.
 ====
 
 ==== Armor can be repaired
@@ -1363,7 +1368,7 @@ You have 4 hit points left, and an angry troll hits you for 12 points of
 damage. You're brought down to zero hit points.
 
 You roll a d6 to find out which stat to reduce. You rolled a 2, so your
-_dexterity_ is reduced by 1.
+__dexterity__ is reduced by 1.
 
 You now roll on the <<death_table>>: You roll a 53, meaning you're
 <<unconscious>> and <<dying>>, which in turn means you will have to roll a d20
@@ -1384,16 +1389,16 @@ You’re have zero hit points, you have already rolled on the
 5 damage.
 
 You first roll a d6 and a d4 to reduce one of your stats, you rolled a 6 and a
-3, meaning your _charisma_ is lowered by 3 points.
+3, meaning your __charisma__ is lowered by 3 points.
 
 You then roll on the <<trauma_table>> and add 5 to your d100 roll
-(because you received 5 points of damage). You rolled _7+5=12_, meaning you did
+(because you received 5 points of damage). You rolled __7+5=12__, meaning you did
 not suffer any trauma effects, you lucky bastard.
 --
 
 ==== Death Table
 
-You're sure to receive a negative _condition_ or two when rolling on the death
+You're sure to receive a negative __condition__ or two when rolling on the death
 table. Check the <<CONDITIONS>> section for more info.
 
 [reftext="death table"]
@@ -1408,7 +1413,8 @@ table. Check the <<CONDITIONS>> section for more info.
 | 76-98         | You’re <<comatose>> and <<dying>>.
 | 25-75         | You’re <<unconscious>> and <<dying>>.
 | 02-25         | You’re <<unconscious>>.
-| 1             | You’re still awake. At 1 HP, but <<prone>>.
+| 1             | You’re still awake, but you are <<prone>> and only have 
+                  one <<hit_points,hit point>>.
 //--------------|--------------------------------------------------
 |===
 
@@ -1428,7 +1434,7 @@ points.
 | 100       | Permanent     | -1d4 to random stat
 | 89-99     | Permanent     | -1d8 maximum hit points
 | 90-98     | Reversible    | -1 moves
-| 81-89     | Reversible    | -1 to _charisma_
+| 81-89     | Reversible    | -1 to __charisma__
 | 71-80     | Reversible    | -1 unencumbered item slot
 | 61-70     | Temporary     | -1 moves
 | 51-60     | Temporary     | All checks are difficult
@@ -1440,7 +1446,7 @@ points.
 |===
 
 *Amputation*: You lose an arm or a leg. Roll 1d4 to find out which. Roll
-_dexterity_ or _constitution_ (your choice) if you succeed, you only lose half
+__dexterity__ or __constitution__ (your choice) if you succeed, you only lose half
 the limb. Otherwise you lose all of it. Your limb can regrow if the restoration
 spell is used.
 
@@ -1470,10 +1476,9 @@ allow you to regenerate a bit; roll your <<recovery_die>>, and increase your
 hit points by that number. Aside from sleeping, eating, and keeping watch, you
 cannot do anything of consequence while resting.
 
-____
+[quote]
 You can regenerate 1d8 hit points after a meal, 6 hours of sleep, and two hours
 of rest.
-____
 
 *Magical Healing*: Spells (such as <<_heal_x>>), potions, and powers often
 allow you to instantly recover hit points, usually by rolling a number of
@@ -1489,9 +1494,9 @@ Conditions can affect characters and baddies.
 [reftext="comatose"]
 [[comatose]]
 *Comatose*: You’re in a deep coma. If you receive conventional medical care,
-you will wake up in a matter of hours; make a _constitution_ check every hour
+you will wake up in a matter of hours; make a __constitution__ check every hour
 to see if you wake up. If you receive magical healing, you will wake up in a
-matter of minutes; make a _constitution_ check every minute to see if you wake
+matter of minutes; make a __constitution__ check every minute to see if you wake
 up.
 
 //KEY:
@@ -1507,12 +1512,12 @@ burial rites, you will rise as an undead within 2d6 days.
 [sidebar]
 Anyone (any intelligent, living creature) who dies will almost certainly rise
 again as an undead within a few days or even hours. This can be completely
-prevented by cremation, or by use of the _burial_x spell. Decapitation has a
-high probability of success, but it is not guaranteed.
+prevented by cremation, or by use of the <<_burial_x>> spell. Decapitation has
+a high probability of success, but it is not guaranteed.
 
-[quote,Sybia LeDik]
+[quote,Sybia LeDique]
 The horror of the battlefield is magnified, multiplied, and intensified as you
-have to fight your foes twice and your late friends once.
+have to fight your foes twice and your late friends on top of that.
 
 
 //KEY:
@@ -1535,7 +1540,7 @@ the costs of doing so are grave.
 [[dungeon_mad]]
 *Dungeon Mad*: You've been in complete darkness in a dungeon or cave for too
 long. Every hour you spend in total darkness in a dungeon or similar situation,
-you must make a _wisdom_ check. If you fail, you lose 1 point from a random
+you must make a __wisdom__ check. If you fail, you lose 1 point from a random
 stat. This check is <<difficult>> if you are alone in the darkness.
 
 [reftext="encumbered"]
@@ -1554,7 +1559,7 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 //KEY:
 [reftext="exhausted"]
 [[exhausted]]
-*Exhausted*: Same as <<encumbered>> _and_ your number of moves is halved,
+*Exhausted*: Same as <<encumbered>> __and__ your number of moves is halved,
 rounded down.
 
 //KEY:
@@ -1574,7 +1579,7 @@ primarily on sight. Even so, if a creature relies just partially on sight, its
 [reftext="on fire"]
 [[on_fire]]
 *On Fire*: You are on fire. At the start of every round, just before you get to
-act, you take 1d4 points of damage, and then you roll a _constitution_ check.
+act, you take 1d4 points of damage, and then you roll a __constitution__ check.
 If you succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a <<nat20>>, the damage die increases (for instance, from 1d4 to 1d6).
 
@@ -1582,7 +1587,7 @@ rolled a <<nat20>>, the damage die increases (for instance, from 1d4 to 1d6).
 [reftext="poisoned"]
 [[poisoned]]
 *Poisoned*: You temporarily lose 1d4 points of a random stat every minute.
-After rolling your stat loss, you make a _constitution_ check with
+After rolling your stat loss, you make a __constitution__ check with
 <<disadvantage>>. If successful, the poisoned condition is removed. You die if
 any of your stats are reduced to zero. If you die from poison, only Greater
 Revival can restore you back to life.
@@ -1593,7 +1598,7 @@ Revival can restore you back to life.
 *Prone*: You're prone on the ground, you must spend 1 <<Moves,move>> to get up.
 While you are prone, you have four fewer <<Moves,moves>> than normal.
 
-[WARNING]
+[quote]
 If you're suffering from other effects that lower your number of <<Moves,moves>>,
 you can be reduced to zero moves. Forcing you to convert your <<Actions,action>>
 into more moves just to get up.
@@ -1661,7 +1666,7 @@ Requirements::
 * You must not be <<encumbered>>, <<exhausted>>, <<on_fire>>, or <<prone>>.
 
 Procedure::
-* Make an _intelligence_ check:
+* Make an __intelligence__ check:
 .. If successful, the spell takes effect,
    and the spellbook loses one of its <<usage_points>>.
 .. If you rolled a <<nat1>>, the spell takes effect, and the spellbook
@@ -1689,7 +1694,7 @@ Requirements::
 Procedure::
 . Spend 10 minutes chanting and reading from the spellbook.
 . Spend one <<consumption_check,consumption>> of <<magic_components>>.
-. Make an _intelligence_ check:
+. Make an __intelligence__ check:
 .. If successful, you cast the spell.
 .. If unsuccessful, the spell fizzles, but you can try again later.
 .. If you rolled a <<nat20>>, the spellbook loses all its <<usage_points>>.
@@ -1705,7 +1710,7 @@ not be higher than yours.
 
 *Procedure*: You start by spending one <<consumption_check,consumption>> of
 magic components, followed by 30 minutes of ritualistic work. Then you make an
-_intelligence_ check. If the check succeeds, you have recharged the spellbook,
+__intelligence__ check. If the check succeeds, you have recharged the spellbook,
 back to its maximum <<usage_points>> otherwise you must try again.
 
 ==== Spell Properties
@@ -1783,14 +1788,14 @@ your position to remain comfortable, and nothing more.
 [[example_multilevel]]
 .Multilevel spells (X)
 ====
-<<_tragic_missile_x>> is technically not a single spell. It exists as _Tragic
-Missile 1_, _Tragic Missile 2_, and so on all the way to _Tragic Missile 10_,
-each level being more powerful than the last.
+<<_tragic_missile_x>> is technically not a single spell. It exists as __Tragic
+Missile 1__, __Tragic Missile 2__, and so on all the way to __Tragic Missile
+10__, each level being more powerful than the last.
 
 ---
 <<_ghost_mount_x>> also represents multiple spells, but since its description
-says it's <<spell_level,level>> stem:[2+], there is no _Ghost Mount 1_. Only a _Ghost
-Mount 2_, _Ghost Mount 3_, and so on.
+says it's <<spell_level,level>> stem:[2+], there is no __Ghost Mount 1__. Only a
+__Ghost Mount 2__, __Ghost Mount 3__, and so on.
 ====
 
 [[cancelling_spell]]
@@ -1830,13 +1835,13 @@ caster stops focusing on the spell, whichever comes first.
 === Alluring Attraction (X)
 *Level 1+, <<ritual>>, duration: <<X>> days*
 
-Of the next <<X>>+1 _charisma_ checks you make, you have <<advantage>> on
+Of the next <<X>>+1 __charisma__ checks you make, you have <<advantage>> on
 checks that have a strong flirting component or involve physical attraction.
 
 === Animal Friendship (X)
 *Level 1+, <<ritual>>, duration: <<X>>+1 hours (<<focus>>)*
 
-You have <<advantage>> on all _intelligence_, _wisdom_, and _charisma_ checks
+You have <<advantage>> on all __intelligence__, __wisdom__, and __charisma__ checks
 made to befriend or calm animals. If you meet a hostile animal, there is a
 fifty percent chance that it becomes cautious instead of hostile when it sees
 you
@@ -1878,7 +1883,7 @@ This spell has no effects on non-vermin.
 
 Vermin whose level is <<X>> or higher are completely unaffected.
 
-Vermin whose level is lower than <<X>> must make a normal _wisdom_ check or move
+Vermin whose level is lower than <<X>> must make a normal __wisdom__ check or move
 out of the repellent area. Even if the check is successful, any other checks
 made within the repellent area are <<difficult>>.
 
@@ -1888,7 +1893,7 @@ level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
 === Burial (X)
 *Level 1+, <<ritual>>*
 
-<<X>> corpses of your choice within _charisma_ meters will not automatically
+<<X>> corpses of your choice within __charisma__ meters will not automatically
 become undead (see <<the_undead_curse>>. This spell doesn't work if the
 corpse's level is higher than yours.
 
@@ -1899,10 +1904,9 @@ You calm a hostile animal within 10+<<X>> meters and whose level isn't higher
 than <<X>>. The animal no longer considers you and your party as threats, and
 will simply wander away if possible.
 
-____
+[quote]
 Just because a monster may look like an animal, doesn't  mean it is affected
 by this spell.
-____
 
 === Club
 *Level 1, duration: <<caster_level>>+5 rounds*
@@ -1939,7 +1943,7 @@ additional smoke in the process.
 
 
 === Cure Exhaustion
-*Level 1, <<ritual>>, range: _wisdom_ meter*
+*Level 1, <<ritual>>, range: __wisdom__ meter*
 
 You target a willing person within range, and remove the <<exhausted>>
 condition from them.
@@ -1951,7 +1955,7 @@ hour.
 === Danger Sense
 *Level 2*
 
-If you make a successful _charisma_ check, you get a sense, on a scale of 1 to
+If you make a successful __charisma__ check, you get a sense, on a scale of 1 to
 5, of how dangerous a given foe, group, situation, mechanism, substance, or
 task.
 
@@ -1961,10 +1965,10 @@ completely harmless to her friends.
 
 
 === Detect Magic
-*Level 1, <<ritual>>, duration: _intelligence_ minutes*
+*Level 1, <<ritual>>, duration: __intelligence__ minutes*
 
 You can sense magical items, and items that are affected by spells, such as an
-item with <<_illuminate_x>> cast on it. The item must be within _wisdom_
+item with <<_illuminate_x>> cast on it. The item must be within __wisdom__
 meters. Your magical sense works almost like a sense of smell. This means that
 it is relatively hard to detect the direction of magical items, and it is
 exceptionally hard to distinguish magical items from each other. In general,
@@ -1981,9 +1985,9 @@ You can sense if a trap is within 10+<<X>> meters, but you only know where it
 is when the trap is within <<X>> meters of you.
 
 === Detect Undead
-*Level 1, Duration: _wisdom_ hours*
+*Level 1, Duration: __wisdom__ hours*
 
-You can feel when one or more undead creatures are within _wisdom_ meters of
+You can feel when one or more undead creatures are within __wisdom__ meters of
 you. You can detect undead creatures through most walls, but not it cannot
 penetrate more than one meter of rock or one centimeter of lead.
 
@@ -1994,7 +1998,7 @@ undead creature, and discerning its location that way.
 === Fey Flames (X)
 *Level 2*
 
-You target a point within _wisdom_ meters. Every object and creature within
+You target a point within __wisdom__ meters. Every object and creature within
 <<caster_level>> meters of that point glows with a faint light as if on fire.
 <<invisible,Invisible>> creatures and object can now be seen and targeted, but
 attack checks against them remain <<difficult>>.
@@ -2010,13 +2014,13 @@ within <<X>>+1 rounds.
 *Level 1, *
 
 Jets of fire spew forth from your burning hands, scorching up to <<X>> adjacent
-targets of your choice. If you make a successful _intelligence_ check, each
+targets of your choice. If you make a successful __intelligence__ check, each
 target receives 1d6+<<X>> damage, otherwise they receive 1d6 damage.
 
 === Friendliness (X)
 *Level 1, <<focus>>
 
-Your _charisma_ checks are <<easy>> for the next <<X>> minutes.
+Your __charisma__ checks are <<easy>> for the next <<X>> minutes.
 
 === Furnace
 *Level 2, <<trance>>, duration: up to 8 hours*
@@ -2036,7 +2040,7 @@ meters. The mount has 2·<<X>> hit points, all its primary stats are 8+<<X>>.
 
 A constructed being, a Ghost Mount is immune to charm, sleep, fear, illusions,
 demoralization, and other mind-based spells, as well as spells where
-_intelligence_, or _charisma_ checks affect the spell’s outcome.
+__intelligence__, or __charisma__ checks affect the spell’s outcome.
 
 The spell lasts up to 3·<<X>> rounds, but stops if you stop <<focus,focusing>>
 on it or if you dismount.
@@ -2051,13 +2055,13 @@ abilities, and without question or hesitation.
 The servant appears within 3·<<X>> meters, and must stay within 10·<<X>> meters.
 
 * It can move up to <<X>> meters per round.
-* Its primary stats are all 2·X, and its _hit point_total_ is also 2·X.
+* Its primary stats are all 2·X, and its __hit point_total__ is also 2·X.
 * It cannot hear, speak, read, write, or make sounds, but it does understand
   your telepathic commands. It can lift and carry <<X>> item slots.
 * It cannot do difficult or demanding things such as disarming traps, but it
   can do simple tasks such as moving stuff or doing the dishes.
 * It is immune to charm, sleep, fear, illusions, demoralization, and other
-  mind-based spells, as well as spells where _intelligence_ or _charisma_
+  mind-based spells, as well as spells where __intelligence__ or __charisma__
   checks affect the spell’s outcome.
 
 The spell lasts 10·<<X>> minutes, until you stop focusing on it, or the servant
@@ -2097,7 +2101,7 @@ You heal a creature within range. It recovers <<X>> recovery dice.
 *Level 1+, <<ritual>>, range: <<X>>+3 meters*
 
 You target a creature in range that you can see. If you succeed an
-<<adversarial>> _wisdom_ check, the creature loses <<X>>d8 <<hit_points>>,
+<<adversarial>> __wisdom__ check, the creature loses <<X>>d8 <<hit_points>>,
 otherwise it loses <<X>>d4 <<hit_points>>.
 
 === Illuminate (X)
@@ -2108,10 +2112,10 @@ bright light that illuminates a radius of 10+<<X>> meters.
 
 You can attempt to cast this spell on the eyes of a creature within range,
 effectively blinding it (if it uses eyes and light to see). It requires a
-successful difficult _charisma_ check, and if the creature’s level is higher
+successful difficult __charisma__ check, and if the creature’s level is higher
 than <<X>>, the spell fizzles.
 
-You must make a successful _charisma_ check to cast this spell on an item
+You must make a successful __charisma__ check to cast this spell on an item
 currently held, worn, or touched by a living creature, and if the creature’s
 level is higher than <<X>>, the spell fizzles.
 
@@ -2119,28 +2123,27 @@ level is higher than <<X>>, the spell fizzles.
 *Level: 1+, duration: 1 round*
 
 You give a creature within <<X>> meters a one-word instruction and then make a
-_charisma_ check. If you’re successful, the target will attempt to execute the
+__charisma__ check. If you’re successful, the target will attempt to execute the
 instruction as best it can, and as it understands the command, but only for one
 round, and only if the instruction would not result in self harm.
 
 You cannot affect creatures whose level is higher than <<X>>. But they become
 hostile as soon as you have cast the spell.
 
-If the target’s level is lower than <<X>> your _charisma_ check is <<easy>>.
+If the target’s level is lower than <<X>> your __charisma__ check is <<easy>>.
 
 Any creature targeted by this spell will become hostile towards you, regardless
 if they executed the instruction or not.
 
-____
+[quote]
 Instructions such as »flee« and »run« are straight forward, but a instruction such as
 »drop« can be interpreted in many ways (drop the thing you’re holding, or drop
 <<prone>>, or drop the subject). Don't assume that the target of this spell
 will fully understand the meaning or spirit your instruction.
-____
 
 
 === Intruder Alert
-*Level 1, <<ritual>>, duration: _wisdom_ hours*
+*Level 1, <<ritual>>, duration: __wisdom__ hours*
 
 Upon casting the spell, you touch a door, tent flap, a lock, or similar
 moveable object. If the object is disturbed by a creature (but not the wind), a
@@ -2150,7 +2153,7 @@ up, but soft enough that you don’t wake up screaming or startled.
 === Invisibility to Stupidity (X)
 *Level 1+, <<focus>>, duration: 5·<<X>> Rounds*
 
-Creatures with an _intelligence_ lower than <<X>>+2 cannot see you, smell you,
+Creatures with an __intelligence__ lower than <<X>>+2 cannot see you, smell you,
 or detect you in any way, not even by touch. If such a creature touches you,
 it will rationalize the sensation away.
 
@@ -2163,18 +2166,18 @@ wall or other obstacle. Doing so causes you to take 1d6 damage for each meter
 the obstacle reduces your jump.
 
 If you jump into a creature, you each suffer 1d4 damage for each meter
-the collision shortened your jump. If the creature succeeds a _dexterity_
+the collision shortened your jump. If the creature succeeds a __dexterity__
 check, they're able to avoid you, and you fly right past it.
 
 === Lightning Touch (X)
 *Level 1+*
 
 You touch an adjacent target, who then takes <<X>>d6 damage. After rolling
-damage, you make a _wisdom_ check. If successful, the target is knocked
+damage, you make a __wisdom__ check. If successful, the target is knocked
 <<prone>>, and must spend <<Moves>> to get up.
 
 If the target is wearing three or more pieces of metal armor, you have
-<<advantage>> on the damage roll and the _wisdom_ check.
+<<advantage>> on the damage roll and the __wisdom__ check.
 
 [quote]
 Medium- and heavy armor is made of metal unless otherwise specified.
@@ -2182,7 +2185,7 @@ Medium- and heavy armor is made of metal unless otherwise specified.
 === Mage Might (X)
 *Level 1+, <<focus>> (duration up to <<X>> rounds)*
 
-Your _strength_ score becomes 15+<<X>>*0.5 (rounded down).
+Your __strength__ score becomes 15+<<X>>*0.5 (rounded down).
 
 === Magical Reading
 *Level 1, <<ritual>>, duration: 8 hours*
@@ -2196,7 +2199,7 @@ is up to three levels higher than yours.
 === Magical Stone
 *Level 1*
 You touch a nonmagical stone or slingshot no larger than your fist. It becomes
-magical, and flies in a direct line towards an enemy within _wisdom_ meters at
+magical, and flies in a direct line towards an enemy within __wisdom__ meters at
 great speed. The stone automatically hits the opponent, dealing damage equal to
 three times your <<caster_level,level>>.
 
@@ -2205,7 +2208,7 @@ three times your <<caster_level,level>>.
 
 You target a creature within 10 plus 10·<<X>> meters, and telepathically send
 10·<<X>> words to it. It can telepathically reply with the same number of
-words. If the recipient makes a successful _charisma_ check, no one notices its
+words. If the recipient makes a successful __charisma__ check, no one notices its
 distraction while receiving and replying.
 
 === Mustrum’s Mundane Shroud (X)
@@ -2261,7 +2264,7 @@ sandstorm, a creature, etc.).
 
 Creatures that have a reason to disbelieve the phantasm (such as creatures that
 rely heavily on scent and sound, or people who find the phantasm incompatible
-with their sense of “what ought to be” can make an <<adversarial>> _charisma_
+with their sense of “what ought to be” can make an <<adversarial>> __charisma__
 check to see the phantasm for what it is. The check is easy if the creature's
 level is 2 or more higher than the caster's level, and difficult of the
 creatures level is 2 or more lower than the caster's level.
@@ -2276,15 +2279,15 @@ This spell does not remove curses or other magical effects that may affect the
 food and drink.
 
 === Read Script
-*Level 2, <<ritual>>, duration: 10·_intelligence_ minutes*
+*Level 2, <<ritual>>, duration: 10·__intelligence__ minutes*
 
 You can read and understand any written language. This spell does not decode
 cryptographic cipher text, but it does let you understand secret languages.
 
 === Remove Fear (X)
-*Level 2+, range: _charisma_ meters*
+*Level 2+, range: __charisma__ meters*
 
-You target an ally within _charisma_ meters of you. The spell automatically
+You target an ally within range. The spell automatically
 removes <<X>> fear-based conditions such as <<demoralized>>.
 
 If the target suffers from more than <<X>> fear effects, the GM chooses which to
@@ -2345,23 +2348,23 @@ This spell can send one or more creatures to sleep, but it can only affect
 creatures that need regular sleep, and whose level isn't higher than <<X>>.
 
 Select a baddie within 10 meters. If the target has more hit points than your
-_charisma_, the spell fizzles, otherwise the baddie falls asleep.
+__charisma__, the spell fizzles, otherwise the baddie falls asleep.
 
-If the spell didn't fizzle, you may make another _charisma_ check, and if it
+If the spell didn't fizzle, you may make another __charisma__ check, and if it
 succeeds, the spell affects <<X>> additional creatures within 5 meters of the
 first target.
 //
 This spell affects baddies and allies alike; these extra affected creatures are
 selected in order of closeness to the first target.
 
-Creatures sleep for a number of rounds equal to your _charisma_, however a
+Creatures sleep for a number of rounds equal to your __charisma__, however a
 sleeping baddie wakes up if they take damage.
 
 === Spenser’s levitating Bowl
-*Level 1, <<ritual>>, duration: _intelligence_ · 10 minutes*
+*Level 1, <<ritual>>, duration: __intelligence__ · 10 minutes*
 
 You conjure a large vaguely bowl-shape plate that can carry as many
-<<item_slots>> as your _strength_ score.
+<<item_slots>> as your __strength__ score.
 
 It levitates about a meter above the ground, and can move half as fast as an
 adventurer. It is able to “climb” stairs and hills, but cannot scale walls or
@@ -2383,31 +2386,31 @@ similar; at a speed of about 1 liter per round (10 liters per minute)
 === Strength of Stone (X)
 *Level 1+, <<focus>>, <<ritual>>*
 
-You target a willing ally within 2·<<X>> meters, making all their _strength_
+You target a willing ally within 2·<<X>> meters, making all their __strength__
 checks easy for a 2·<<X>> rounds.
 
 === Taunt
 *Level 1+, duration: 1 round*
 
 You target <<X>> creatures within 10+<<X>> meters. For each target, if you can
-make a successful <<adversarial>> _charisma_ check (which is difficult if the
+make a successful <<adversarial>> __charisma__ check (which is difficult if the
 target’s level is higher than yours), the target will rush and attack you in
 melee combat on its next turn.
 
 === Tragic Missile (X)
-*Level 1+, range: _wisdom+X_ meters*
+*Level 1+, range: __wisdom+X__ meters*
 
 You fire a frightening magical missile against a baddie within range. When
 struck, the baddie takes <<X>> d4 damage, and then you make an <<adversarial>>
-_charisma_ check; if successful the baddie becomes <<demoralized>>.
+__charisma__ check; if successful the baddie becomes <<demoralized>>.
 
 === Vines (X)
 *Level 2, <<focus>>*
 
 You target a point within 10+<<X>> meters. Vines and wild growth sprouts from
 the ground in  a radius of <<X>> meters around that point. Each creature inside
-the affected area must make a successful _strength_, _dexterity_ or
-_intelligence_ check (their choice) each round, or all they have zero moves
+the affected area must make a successful __strength__, __dexterity__ or
+__intelligence__ check (their choice) each round, or all they have zero moves
 that round.
 
 === Wizard’s Mark
@@ -2420,7 +2423,7 @@ Other than being invisible, the marks behave as normal chalk marks, which means
 they can be rubbed out or washed away with water.
 
 The chalk stops being magical once you stop focusing on the spell, or after
-_charisma_ hours. But the marks remain visible to you, and invisible to others.
+__charisma__ hours. But the marks remain visible to you, and invisible to others.
 
 //END_SORT
 
@@ -2443,13 +2446,13 @@ you, your check is difficult.
 
 //KEY:
 *Attack check, melee*: A check to hit an opponent. It's an <<adversarial>>
-_strength_ check, and it is difficult if you're not skilled at using the given
-weapon.
+__strength__ check, and it is <<difficult>> if you're not skilled at using the
+given weapon.
 
 //KEY:
 *Attack check, ranged*: A check to hit an opponent. It's an <<adversarial>>
-_wisdom_ check, and it is difficult if you're not skilled at using the given
-weapon.
+__wisdom__ check, and it is <<difficult>> if you're not skilled at using the
+given weapon.
 
 //KEY:
 *Baddie*: A person, creature, or monster that is hostile or otherwise
@@ -2457,16 +2460,16 @@ considered to be your enemy.
 
 //KEY:
 *Check*: You roll your d20 against a given target number (usually one of your
-stats). _For example: when rolling a strength check you roll a d20 and must
-roll lower than your strength to succeed.
+stats). __For example: when rolling a strength check you roll a d20 and must
+roll lower than your strength to succeed.__
 
 //KEY:
 *Defense check, melee*: A check to avoid being hit by melee attacks. This is an
-<<adversarial>> _dexterity_ check.
+<<adversarial>> __dexterity__ check.
 
 //KEY:
 *Defense ranged, melee*: A check to avoid being hit by ranged attack. This is
-an <<adversarial>> _wisdom_ check.
+an <<adversarial>> __wisdom__ check.
 
 //KEY:
 *Difficult*: Difficult checks have a target number that’s 3 lower than normal
@@ -2481,8 +2484,8 @@ checks.
 //KEY:
 *Hit Points (HP)*: A unit of health: your character has a number of hit points,
 you lose some of them when you take damage, and if you lose all of them, you
-must roll on the <<death_table>>.  _Baddies and NPCs also have hit points, and
-when they lose all of them, they die._
+must roll on the <<death_table>>.  __Baddies and NPCs also have hit points, and
+when they lose all of them, they die.__
 
 //KEY:
 *Initiative*: A check made at the beginning of a combat round to see which side
@@ -2505,8 +2508,9 @@ specialist tool you are not proficient with.
 
 //KEY:
 *Roll*: Rolls are generic die rolls where you roll one or more specified dice,
-such as _3d6_, _1d10_, _2d8+2_, etc. The most common type of roll is the damage
-roll, where you roll your damage die for the type of weapon you're using.
+such as __3d6__, __1d10__, __2d8+2__, etc. The most common type of roll is the
+damage roll, where you roll your damage die for the type of weapon you're
+using.
 
 //KEY:
 *TN*: Abbreviation of Target Number.
