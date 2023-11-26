@@ -112,6 +112,7 @@ the spell.
 
 // CHAMPION }}}
 
+
 // {{{ MAGE
 == MAGE
 
@@ -142,6 +143,7 @@ the spell.
   rolled.
 
 // MAGE }}}
+
 
 // {{{ ROGUE
 == ROGUE
@@ -270,6 +272,7 @@ Some baddies, such as undeads and mechanoids, are immune to poison.
 
 // ROGUE }}}
 
+
 // {{{ WARRIOR
 == WARRIOR
 
@@ -359,10 +362,12 @@ creatures with resistance to non-magical attacks.
 
 // WARRIOR }}}
 
+
 // {{{ HERO GEAR
 == HERO GEAR
 
 // }}}
+
 
 // {{{ HERO SPELLS
 == HERO SPELLS
@@ -423,6 +428,7 @@ Destroying or severely damaging either clipboard breaks the spell.
 
 
 // SPELLS }}}
+
 
 // {{{ DICTIONARY
 == DICTIONARY
