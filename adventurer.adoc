@@ -398,16 +398,16 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 //START_SORT //KEY:
 
 //KEY:
-[reftext="armorer"]
-[[armorer]]
-*Armorer*: You can repair a piece of broken armor if you have
-<<tinkering_tools>>.
-
-//KEY:
 *Backstabber*:
 If an adjacent baddie moves away from you, you can make a melee attack against
 them with a readied melee weapon you are skilled at using. When you do so, you
 have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll.
+
+//KEY:
+[reftext="armorer"]
+[[armorer]]
+*Armorer*: You can repair a piece of broken armor if you have
+<<tinkering_tools>>.
 
 //KEY:
 [reftext="everdeen"]
@@ -961,25 +961,6 @@ hours unless they're healed.
 Aside from losing a single hit point, and potentially falling unconscious,
 the target suffers no other ill effects from being struck with a kosh.
 
-//KEY: 
-[reftext="healing salve"]
-[[healing_salve]]
-==== Healing Salve
-These salves can heal minor wounds.
-You spend one <<consumption_check,consumption>> of salve, and five minutes
-to apply it to a willing recipient. Once applied, the recipient is allowed
-to roll their <<recovery_die>>, and regain that many hit points.
-
-//KEY: 
-[reftext="restoration salve"]
-[[restoration_salve]]
-==== Restoration Salve
-These salves can reverse the effects of <<reversible>> trauma. You spend one
-<<consumption_check,consumption>> of salve, and 30 minutes to apply it to a
-willing recipient. Once applied, one <<reversible>> trauma condition is removed
-from the recipient.
-
-
 //KEY:
 [reftext="lamp oil"]
 [[lamp_oil]]
@@ -1136,6 +1117,25 @@ you rolled a <<nat20>> on your attack check, the torch is broken and cannot be
 repaired. The throwing range of a torch is 5 meters.
 
 This item takes up 1 item slot.
+
+//KEY: 
+[reftext="healing salve"]
+[[healing_salve]]
+==== Healing Salve
+These salves can heal minor wounds.
+You spend one <<consumption_check,consumption>> of salve, and five minutes
+to apply it to a willing recipient. Once applied, the recipient is allowed
+to roll their <<recovery_die>>, and regain that many hit points.
+
+//KEY: 
+[reftext="restoration salve"]
+[[restoration_salve]]
+==== Restoration Salve
+These salves can reverse the effects of <<reversible>> trauma. You spend one
+<<consumption_check,consumption>> of salve, and 30 minutes to apply it to a
+willing recipient. Once applied, one <<reversible>> trauma condition is removed
+from the recipient.
+
 
 //END_SORT
 

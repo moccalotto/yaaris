@@ -176,26 +176,27 @@ You are skilled at using light armor, but not shields.
 //START_SORT //KEY:
 
 //KEY:
-*Lockpicker*:
-You have __advantage__ on all checks (including __consumption checks__) when
-using your lockpicking tools, and one of the sets of lockpicking tools you
-carry do not take up an __item slot__.
-
-
-//KEY:
-*Tinkerer*:
-You have __advantage__ on all checks (including __consumption checks__ when
-using your tinkering tools, and one of the sets of tinkering tools you carry do
-not take up an __item slot__.
-
-
-//KEY:
 *Absent*:
 You have __advantage__ on all checks related to sneaking, hiding, stealth,
 and camouflage. All attempts to track you are __difficult__; even animals have
 trouble finding your scent. If you attack someone who is completely unaware of
 your presence, you have __advantage__ on both your attack check and your
 damage roll, as long as you are skilled with the weapon you are using.
+
+
+//KEY:
+*Dagger Master*:
+You do not need to use any __moves__ to ready a dagger, as long as you have one
+on you, and you are not __encumbered__, __exhausted__, or similar. You can
+spend three __moves__ to make a ranged attack with a dagger, as long as the
+target is within __L__ meters, where __L__ is your level.
+
+
+//KEY:
+*Lockpicker*:
+You have __advantage__ on all checks (including __consumption checks__) when
+using your lockpicking tools, and one of the sets of lockpicking tools you
+carry do not take up an __item slot__.
 
 
 //KEY:
@@ -207,20 +208,19 @@ When you chose this ability, and you already have the "`__shady__`" adventurer's
 ability, you may switch that ability for something else if you want.
 
 //KEY:
+*Tinkerer*:
+You have __advantage__ on all checks (including __consumption checks__ when
+using your tinkering tools, and one of the sets of tinkering tools you carry do
+not take up an __item slot__.
+
+
+//KEY:
 *Tracker*:
 You mark a baddie within __charisma__ meters. As long as the baddie is within
 __charisma__ kilometers of you, you are able to sense in which direction it is,
 and if you make a successful __adversarial__ __wisdom__ check and you are
 within __charisma__ meters of the "path" of the baddie, you are able to track
 the actual path of the target.
-
-//KEY:
-*Dagger Master*:
-You do not need to use any __moves__ to ready a dagger, as long as you have one
-on you, and you are not __encumbered__, __exhausted__, or similar. You can
-spend three __moves__ to make a ranged attack with a dagger, as long as the
-target is within __L__ meters, where __L__ is your level.
-
 
 //KEY:
 *Venom Specialist*:
@@ -382,12 +382,6 @@ it might be.
 
 
 //KEY:
-=== Trauma (X)
-*Level 6*
-You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
-
-
-//KEY:
 === Money Talks (X)
 *<<basic>>, Level 5+*
 
@@ -412,6 +406,12 @@ Destroying or severely damaging either clipboard breaks the spell.
 == DICTIONARY
 
 //START_SORT //KEY:
+
+//KEY:
+=== Trauma (X)
+*Level 6*
+You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
+
 
 //KEY:
 [reftext="holy"]
