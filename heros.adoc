@@ -63,6 +63,7 @@ basic spellbooks into __Champion's Spellbooks__.
 been imbued with the fire of your spirit, linking them to you so you alone can
 use them, and you can cast them much more easily.
 
+
 *Creating a champion's spellbook* is done by upgrading an existing basic
 spellbook. The spell in the source book must not have a higher level than
 yours, it takes an hour per spell level, and it requires one __consumption__ of
@@ -72,9 +73,10 @@ magical rituals that can convert a champion's spellbook back into a basic
 spellbook, and there are also rituals that can attune champion's spellbook to
 another champion.
 
-[quote]
+[NOTE]
 Like basic spellbooks, the champion's spellbook is faintly magical, and can be
 detected with __Detect Magic__ spells.
+
 
 *You can cast a spell with a champion's spellbook* by grasping the spellbook
 firmly in one hand, holding it up, and __shouting__ an incantation from memory.
@@ -85,20 +87,28 @@ the spell.
 * You can upgrade a basic spellbook into a champion's spellbook.
 * It can only be used by _you_.
 * You use it with only one hand, by holding it up and __shouting__ a champion's
-  prayer. 
+  prayer.
 * You do not need to see or read.
 * You still have to speak and move.
 * It is recharged with __holy components__ instead of __magic components__.
 
+
 === Level 4
 
-* Lay on hands
-* Burial
+* Lay on hands ????
+* Burial ????
+* Increase your __hit point total__ by 1d8.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
+* You may switch your __Adventurer's Special Ability__ if you want.
 
 
 === Level 5
 
-* Turn undead
+* Turn undead and/or orc and/or demons ????
+* Increase your __hit point total__ by 1d8.
+* Roll a d20. Increase one of the stats (if any) that are lower than what you
+  rolled.
 
 // CHAMPION }}}
 
@@ -124,6 +134,7 @@ the spell.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 * You may switch your __Adventurer's Special Ability__ if you want.
+
 
 === Level 5
 * Increase your __hit point total__ by 6.
@@ -176,58 +187,60 @@ You are skilled at using light armor, but not shields.
 //START_SORT //KEY:
 
 //KEY:
-*Absent*:
-You have __advantage__ on all checks related to sneaking, hiding, stealth,
-and camouflage. All attempts to track you are __difficult__; even animals have
-trouble finding your scent. If you attack someone who is completely unaware of
-your presence, you have __advantage__ on both your attack check and your
-damage roll, as long as you are skilled with the weapon you are using.
+*Absent*: You have __advantage__ on all checks related to sneaking, hiding,
+stealth, and camouflage. All attempts to track you are __difficult__; even
+animals have trouble finding your scent. If you attack someone who is
+completely unaware of your presence, you have __advantage__ on both your attack
+check and your damage roll, as long as you are skilled with the weapon you are
+using.
 
 
 //KEY:
-*Dagger Master*:
-You do not need to use any __moves__ to ready a dagger, as long as you have one
-on you, and you are not __encumbered__, __exhausted__, or similar. You can
-spend three __moves__ to make a ranged attack with a dagger, as long as the
-target is within __L__ meters, where __L__ is your level.
+*Acrobat*: By spending an __action__ you can jump up to __dexterity__ meters
+horizontally, or up to __L__ meters vertically, where __L__ is your level.
+You cannot do this if you're __encumbered__, __exhausted__, or similarly
+affected.
 
 
 //KEY:
-*Lockpicker*:
-You have __advantage__ on all checks (including __consumption checks__) when
-using your lockpicking tools, and one of the sets of lockpicking tools you
-carry do not take up an __item slot__.
+*Dagger Master*: You do not need to use any __moves__ to ready a dagger, as
+long as you have one on you, and you are not __encumbered__, __exhausted__, or
+similar. You can spend three __moves__ to make a ranged attack with a dagger,
+as long as the target is within __L__ meters, where __L__ is your level.
 
 
 //KEY:
-*Subduer*:
-You are skilled at using the __kosh__, and when you use it, the die you
-use to determine if the baddie goes unconscious is 1d10, and if the baddie's
-level is lower than yours, you roll with __advantage__.
-When you chose this ability, and you already have the "`__shady__`" adventurer's
-ability, you may switch that ability for something else if you want.
-
-//KEY:
-*Tinkerer*:
-You have __advantage__ on all checks (including __consumption checks__ when
-using your tinkering tools, and one of the sets of tinkering tools you carry do
-not take up an __item slot__.
+*Lockpicker*: You have __advantage__ on all checks (including __consumption
+checks__) when using your lockpicking tools, and one of the sets of lockpicking
+tools you carry do not take up an __item slot__.
 
 
 //KEY:
-*Tracker*:
-You mark a baddie within __charisma__ meters. As long as the baddie is within
-__charisma__ kilometers of you, you are able to sense in which direction it is,
-and if you make a successful __adversarial__ __wisdom__ check and you are
-within __charisma__ meters of the "path" of the baddie, you are able to track
-the actual path of the target.
+*Subduer*: You are skilled at using the __kosh__, and when you use it, the die
+you use to determine if the baddie goes unconscious is 1d10, and if the
+baddie's level is lower than yours, you roll with __advantage__. When you chose
+this ability, and you already have the "`__shady__`" adventurer's ability, you
+may switch that ability for something else if you want.
 
 //KEY:
-*Venom Specialist*:
-You can make poisonous venom from dead monster parts. It requires a dead
-monster, a bonfire or similar, one hour of preparation, one __consumption__ of
-<<alchemist_tools>>, and one steel bottle to create a dose of venom that can
-coat the business end of a slashing or piercing weapon.
+*Tinkerer*: You have __advantage__ on all checks (including __consumption
+checks__ when using your tinkering tools, and one of the sets of tinkering
+tools you carry do not take up an __item slot__.
+
+
+//KEY:
+*Tracker*: You mark a baddie within __charisma__ meters. As long as the baddie
+is within __charisma__ kilometers of you, you are able to sense in which
+direction it is, and if you make a successful __adversarial__ __wisdom__ check
+and you are within __charisma__ meters of the "path" of the baddie, you are
+able to track the actual path of the target.
+
+
+//KEY:
+*Venom Specialist*: You can make poisonous venom from dead monster parts. It
+requires a dead monster, a bonfire or similar, one hour of preparation, one
+__consumption__ of <<alchemist_tools>>, and one steel bottle to create a dose
+of venom that can coat the business end of a slashing or piercing weapon.
 
 It takes one __action__ to apply a readied bottle of venom to a readied weapon,
 and it lasts for up to one week one the weapon.
@@ -244,13 +257,13 @@ Some baddies, such as undeads and mechanoids, are immune to poison.
 
 === Level 4
 
-* Increase your __hit point total__ by 6.
+* Increase your __hit point total__ by 1d6.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 * You may switch your __Adventurer's Special Ability__ if you want.
 
 === Level 5
-* Increase your __hit point total__ by 8.
+* Increase your __hit point total__ by 1d6.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 
@@ -299,34 +312,40 @@ the damage roll.
 Chose one of the abilities below. You may switch this ability every time you
 gain a level.
 
-Shield Fighter::
-If you failed an attack check with a light melee weapon, and your are wearing a
-shield, you are allowed to make an attack with your shield. In your hands, a
-shield is the same as a light melee weapon.
+//START_SORT //KEY:
+
+//KEY:
+*Shield Fighter*: If you failed an attack check with a light melee weapon, and
+your are wearing a shield, you are allowed to make an attack with your shield.
+In your hands, a shield is the same as a light melee weapon.
 
 [quote]
 If you roll a __20__ on your shield attack, your shield becomes __broken__,
 which means you lose one __move__.
 
-Critter::
-Normally you will have to roll a __1__ to make a __critical hit__. But you
-only have to roll lower than or equal to your level.
+
+//KEY:
+*Critter*: Normally you will have to roll a __1__ to make a __critical hit__.
+But you only have to roll lower than or equal to your level.
 
 [quote]
 This means that, on average, every 6th attack check would be a critical hit,
-which gives you an extra action. 
+which gives you an extra action.
 
-Tank::
-You are skilled at using heavy armor, and one of the armor pieces you carry
-does not take up an __item slot__.
 
-Hauler::
-Your number of total number of item slots and your __unencumbered__ item slots
-is increased by __L__, where __L__ is your level.
+//KEY:
+*Tank*: You are skilled at using heavy armor, and one of the armor pieces you
+carry does not take up an __item slot__.
 
-Basher::
-If you have landed a successful hit with a blunt weapon on a baddie, you may
-push them stem:[L/2] meter away from you, where __L__ is your level.
+
+//KEY:
+*Hauler*: Your number of total number of item slots and your __unencumbered__
+item slots is increased by __L__, where __L__ is your level.
+
+
+//KEY:
+*Basher*: If you have landed a successful hit with a blunt weapon on a baddie,
+you may push them __L__ meter away from you, where __L__ is your level.
 
 [quote]
 A basher`'s push can cause a baddie to fall off a cliff or into a pit trap, or
@@ -334,25 +353,28 @@ it can ensure that the pushed baddie must use at least __moves__ to get back
 into melee range with you. If you push a baddie away from one of your allies
 who has the __backstabber__ ability.
 
-Sniper::
-Your ranged damage is increased to 1d10, you can attack baddies up to
+
+//KEY:
+*Sniper*: Your ranged damage is increased to 1d10, you can attack baddies up to
 __wisdom__ meters away with a __normal__ check, and up to 2·__wisdom__ meters
 away with __difficult__ checks.
 
-Pugilist::
-You are skilled at unarmed combat, your unarmed damage is 1d8, and you are allowed
-to add the warrior's Bonus Damage.
+
+//KEY:
+*Pugilist*: You are skilled at unarmed combat, your unarmed damage is 1d8, you
+are allowed to add the warrior's Bonus Damage, and you are able to fully damage
+creatures with resistance to non-magical attacks.
 
 === Level 4
 
-* Increase your __hit point total__ by 10.
+* Increase your __hit point total__ by 1d10.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 * You may switch your __Adventurer's Special Ability__ if you want.
 
 === Level 5
 
-* Increase your __hit point total__ by 10.
+* Increase your __hit point total__ by 1d10.
 * Roll a d20. Increase one of the stats (if any) that are lower than what you
   rolled.
 
