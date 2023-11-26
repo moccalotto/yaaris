@@ -339,32 +339,32 @@ its price in gold pieces), your attacks are <<difficult>>.
 An adventurer is not just someone who chooses to go on adventures, the blood in
 their veins is magical, and it makes them very formidable.
 
-* Adventurers almost never get sick from mundane illnesses and ailments such as
+* You have an extremely high pain tolerance, and you are able to fight at
+  full capacity right up until you draw your last breath.
+
+* You almost never get sick from mundane illnesses and ailments such as
   the flu, ulcers, food poisoning, arthritis, bad teeth, and cancers.
 
-* They have extremely high pain tolerances.
-
-* They are almost completely immune to long-term effects of battle and physical
+* You are almost completely immune to long-term effects of battle and physical
   trauma such as brain damage, bone fractures, torn ligaments, and the like.
 
-* They are almost immune to mental health problems such as addiction, anxiety,
+* You are almost immune to mental health problems such as addiction, anxiety,
   dementia, depression and post traumatic stress disorder.
 
-* Unlike most creatures, adventurers can be revived with restoration magic.
+* Unlike most creatures, You can be revived and rejuvenated with restoration
+  magic.
 
-The adventurer's blessing often gets more powerful over time, and further
-facets of this blessing can reveal themselves as the adventurer gains
-experience and levels.
+The effects of this blessing get more powerful over time, and further facets of
+this blessing can reveal themselves as you gain experience and levels.
 
 [quote,Margot LeDique]
-The Adventurer's Blessing is stunningly powerful, many nations seek to have
-former adventurers of high levels in key military and governing positions, as
-the ability to be revived can be, well, vital for the continuation of such
-position.
+The Adventurer's Blessing is stunningly powerful; many nations want former
+adventurers of high levels in key military and governing positions, as the
+ability to be revived can be, well, vital for the continuation of the position.
 
 
 ==== Exotic Weapon Skills
-You are *not skilled* at using exotic weapons such as the <<kosh>>.
+You are __not__ skilled at using any exotic weapons such as the <<kosh>>.
 Becoming skilled with such weapons require special training or abilities (such
 as <<shady>>).
 
@@ -402,6 +402,12 @@ Choose one of the abilities below. You can switch this ability at levels 4, 6,
 [[armorer]]
 *Armorer*: You can repair a piece of broken armor if you have
 <<tinkering_tools>>.
+
+//KEY:
+*Backstabber*:
+If an adjacent baddie moves away from you, you can make a melee attack against
+them with a readied melee weapon you are skilled at using. When you do so, you
+have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll.
 
 //KEY:
 [reftext="everdeen"]
@@ -527,29 +533,32 @@ explicitly prevents you from having it.
 //{{{ LEVELS
 == LEVELS
 You begin at level 1, and you can gain levels until you reach level 10. You
-gain levels by acquiring suitable treasures. For a team of level <<X>>
-adventurers to gain a new level, they must acquire <<X>> suitable treasures. This
-document only deals with levels 1 and 2. Once you reach level 3, you become a
-hero; see xref:heroes#[Hero’s Guide to doom & destruction & stuff] for more
-info.
+gain levels by acquiring suitable treasures. In order for a team of adventurers
+to gain a level, they must <<lvl_acquire>> a number of <<lvl_suitable>>
+<<lvl_treasures>> equal to the typical level of the team's members.
 
+[reftext="treasures"]
+[[lvl_treasures]]
 *Treasure*: A treasure is a big horde, often situated in one location. It is up
 to the GM to decide what is an actual treasure, and what is just general loot.
 
+[reftext="suitable"]
+[[lvl_suitable]]
 *Suitable*: A __suitable__ treasure is worth at least 100 gold pieces times the
 sum of the levels of all the characters in the party.
 
-*Acquire*:
-You have __acquired__ a treasure when you have transported at least two thirds of
-it (by value) safely back to your base of operations. It can be necessary to
-make multiple trips to recover a large treasure.
+[reftext="acquire"]
+[[lvl_acquire]]
+*Acquire*: You have __acquired__ a treasure when you have transported at least
+two thirds of it (by value) safely back to your base of operations. It can be
+necessary to make multiple trips to recover a large treasure.
 
 .Leveling up
 ====
-- In order to level up, a party of 5 first level characters must acquire a
+* In order to level up, a party of 5 first level characters must acquire a
   single treasure worth __5·1·100=500__ gold pieces.
 
-- In order to level up, a party of 4 PCs at 6th level must acquire six
+* In order to level up, a party of 4 PCs at 6th level must acquire six
   treasures in order to advance. Each treasure must be worth at least
   __4·6·100=2,400__ gold pieces.
 ====
@@ -594,17 +603,18 @@ under 12.
 
 [reftext="difficult"]
 [[difficult]]
-*Difficult checks*: are checks where the target number is 3 lower than what *:
+*Difficult checks*: are checks where the target number is 3 lower than what it
 normally would be.
 
 .Difficult strength check
-[example]
-if your __strength__ is 9, making a difficult __strength__ check would need to roll
-under 6.
+====
+if your __strength__ is 9, making a difficult __strength__ check would need to
+roll under 6.
+====
 
 *Both = Difficult*: If one or more conditions make a check <<difficult>>, it
-remains difficult if there are other many other circumstances that would have
-made the check <<easy>>.
+remains difficult even if there are other many other conditions that make the
+check <<easy>>.
 
 .Both = Difficult
 ====
@@ -631,14 +641,14 @@ adventurer.
 
 ---
 
-A level 3 player character is trying to haggle with a merchant to get a good
-price on some loot. The PC is level 3, and the merchant is level 1, so the
-check is <<easy>>.
+A level 3 adventurer is trying to haggle with a level 1 merchant to get a good
+price on some loot. This <<haggling_check>> is <<easy>> because the adventurer
+is two levels above the merchant.
 
 ---
 
-You are attacking a zombie. You are level 2, and the zombie is level 1, so your
-are within one level of each other, and thus your check is normal.
+A first level adventurer is attacking a second level zombie. The attack check
+is normal because the level difference is less than 2.
 ====
 
 === Advantage & Disadvantage
@@ -939,11 +949,35 @@ you make a <<consumption_check>> for the gold purse instead.
 [reftext="kosh"]
 [[kosh]]
 ==== Kosh
-Adventurers with the <<shady>> special ability are skilled at using koshes. To
-use a target, you make an attack check; if you hit the target, it immediately
-loses 1 hit point. You then roll your damage die. If your roll was higher than
-the target’s remaining hit points, the target gains the <<unconscious>>
-condition, which means they’ll wake up within 2d6 hours unless they're healed.
+Adventurers with the <<shady>> special ability are <<weapon_skills,skilled>> at
+using the these weapons. To use a kosh, you make an attack check against the
+baddie; if you hit it, it immediately loses 1 <<hit_points,hit point>>. You
+then roll your damage die for light melee weapons. The baddie does not lose any
+<<hit_points>>, but if the damage roll was higher than the baddie’s remaining
+hit points, it falls <<unconscious>>, which means they’ll wake up within 2d6
+hours unless they're healed.
+
+[quote]
+Aside from losing a single hit point, and potentially falling unconscious,
+the target suffers no other ill effects from being struck with a kosh.
+
+//KEY: 
+[reftext="healing salve"]
+[[healing_salve]]
+==== Healing Salve
+These salves can heal minor wounds.
+You spend one <<consumption_check,consumption>> of salve, and five minutes
+to apply it to a willing recipient. Once applied, the recipient is allowed
+to roll their <<recovery_die>>, and regain that many hit points.
+
+//KEY: 
+[reftext="restoration salve"]
+[[restoration_salve]]
+==== Restoration Salve
+These salves can reverse the effects of <<reversible>> trauma. You spend one
+<<consumption_check,consumption>> of salve, and 30 minutes to apply it to a
+willing recipient. Once applied, one <<reversible>> trauma condition is removed
+from the recipient.
 
 
 //KEY:
@@ -1211,12 +1245,12 @@ Here's some examples:
 [[attack_and_damage]]
 === Attacks & Damage
 
-When you attack a baddie, you make an attack check. If you're making a ranged
-attack, you make an <<adversarial>> __wisdom__ check, and if you're making
-a melee attack you make an <<adversarial>> __dexterity__ check.
+When you attack a baddie, you make a so-called __attack check__. If you're
+using a ranged weapon, you make an <<adversarial>> __wisdom__ check, and if
+you're making a melee attack you make an <<adversarial>> __dexterity__ check.
 
-IMPORTANT: Your attack check is <<difficult>> if you're not
-<<weapon_skills,skilled>> at using your weapon.
+If you are not <<weapon_skills,skilled>> at using a weapon, attacks with that
+weapon are <<difficult>>
 
 ==== Damage Roll
 When you've made an attack, and your attack check succeeded, you roll damage,
@@ -1228,10 +1262,14 @@ See the <<adventurer_damage_rolls_table>> table to find your damage die.
 <<great_weapon_specialist,Great weapon specialists>> are also skilled in using
 heavy melee weapons.
 
-Critical hits::
-If you roll a <<nat1>> on your attack check, you get an extra action for free.
-You do not get any <<moves>>, but you can use your action any way you like,
-including attacking the same opponent again.
+===== Critical hits
+If you roll a <<nat1>> on your attack check, and you're skilled at using your
+weapon, you get an extra action for free. You do not get any <<moves>>, but you
+can use your action any way you like, including attacking the same opponent
+again.
+
+[quote]
+If you're lucky, you can roll more than one critical hit in a single round.
 
 [reftext="weapon wear"]
 [[weapon_wear]]
@@ -1239,7 +1277,7 @@ including attacking the same opponent again.
 If you roll a <<nat20>> on your attack check, your weapon becomes damaged,
 which causes all your subsequent attack checks with that weapon to become
 <<difficult>>. You you roll a <<nat20>> when using a damaged weapon, your
-weapon becomes unusable and must be repaired before it can be used again. 
+weapon becomes unusable and must be repaired before it can be used again.
 
 Damaged and broken weapons can be repaired by an <<armorer>> (or a
 weaponsmith).
@@ -1413,7 +1451,7 @@ table. Check the <<CONDITIONS>> section for more info.
 | 76-98         | You’re <<comatose>> and <<dying>>.
 | 25-75         | You’re <<unconscious>> and <<dying>>.
 | 02-25         | You’re <<unconscious>>.
-| 1             | You’re still awake, but you are <<prone>> and only have 
+| 1             | You’re still awake, but you are <<prone>> and only have
                   one <<hit_points,hit point>>.
 //--------------|--------------------------------------------------
 |===
@@ -1428,42 +1466,47 @@ points.
 .Trauma table
 [%header,cols="^1,^2,8",stripes=even,frame=none,grid=none]
 |===
-| Roll      | Type          | Effect
-//----------|---------------|------------------------------
-| 101+      | Amputation    | Lose a random limb
-| 100       | Permanent     | -1d4 to random stat
-| 89-99     | Permanent     | -1d8 maximum hit points
-| 90-98     | Reversible    | -1 moves
-| 81-89     | Reversible    | -1 to __charisma__
-| 71-80     | Reversible    | -1 unencumbered item slot
-| 61-70     | Temporary     | -1 moves
-| 51-60     | Temporary     | All checks are difficult
-| 41-50     | Temporary     | -1d6 to random stat
-| 31-40     | Temporary     | 1d8 to maximum hit points
-| 21-30     | Reversible    | Battle scar
-| 01-20     | -             | No trauma.
-//----------|---------------|------------------------------
+| Roll      | Type       | Effect
+//----------|------------|------------------------------
+| 101+      | Amputation | Lose a random limb
+| 100       | Permanent  | -1d4 to random stat
+| 89-99     | Permanent  | -1d8 maximum hit points
+| 90-98     | Reversible | -1 <<Moves,moves>>
+| 81-89     | Reversible | -1 to __charisma__
+| 71-80     | Reversible | -1 unencumbered item slot
+| 61-70     | Temporary  | -1 moves
+| 51-60     | Temporary  | All checks are <<difficult>>
+| 41-50     | Temporary  | -1d6 to random stat
+| 31-40     | Temporary  | -1d8 <<hit_point_total>> and current hit points
+| 21-30     | Reversible | Battle scar
+| 01-20     | -          | No trauma.
+//----------|------------|------------------------------
 |===
 
 *Amputation*: You lose an arm or a leg. Roll 1d4 to find out which. Roll
-__dexterity__ or __constitution__ (your choice) if you succeed, you only lose half
-the limb. Otherwise you lose all of it. Your limb can regrow if the restoration
-spell is used.
+__dexterity__ or __constitution__ (your choice) if you succeed, you only lose
+half the limb. Otherwise you lose all of it. Your limb can regrow if you 
+use high-level <<restoration_magic>>.
 
 *Permanent*: This trauma is permanent. There is no way to undo it or reverse
 it.
 
 [reftext="reversible"]
 [[reversible]]
-*Reversible*: This type of trauma can be reversed with powerful restoration
-magic.
+*Reversible*: This type of trauma is permanent, but it can be reversed with
+<<restoration_salve,restoration salves>> or by using high-level
+<<restoration_magic>>.
 
 *Temporary*: lasts for 1d20 days or it can be reversed with restoration magic.
 
+
+[reftext="restoration magic"]
+.Restoration Magic
+[[restoration_magic]]
 [quote]
-The restoration spells referred to here are not <<basic>>, and adventurers
-cannot cast them themselves. You can find more info on such spells in
-xref:heroes#[Hero’s Guide to doom & destruction & stuff].
+The xref:heroes#[Hero’s Guide to doom & destruction & stuff]  and the
+xref:elites#[Elites’s Guide to doom & destruction & stuff] contain restoration
+and rejuvenation spells that can also restore or remove the effects of trauma.
 
 === Healing and regeneration
 You can regain hit points in various ways, but you can never heal or be healed
@@ -1531,9 +1574,9 @@ condition goes away.
 [reftext="destroyed"]
 [[destroyed]]
 *Destroyed*: You’re extremely dead; You must roll twice on the <<trauma_table>>
-but all temporary effects are "`upgraded`" to <<reversible>>. Only great
-resurrection magic, accessible only to elites, can bring you back to life, and
-the costs of doing so are grave.
+and upgrade all temporary effects to <<reversible>>. Only very powerful
+resurrection magic, accessible only to xref:elites#[elites], can bring you back
+to life, and the costs of doing so are grave for both you can the caster.
 
 //KEY:
 [reftext="dungeon mad"]

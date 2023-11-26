@@ -14,3 +14,29 @@
 == Barbarian (Warrior Specialization)
 
 * Only has unencumbered item slots.
+
+
+
+=== Great Resurrection (X)
+*Level 7+, Holy*
+
+This spell can revive anyone with the adventurer's blessing who has not yet
+been turned undead and whose level is lower than X.
+
+You must first fast for at least a day, and then you cast this spell,
+chanting for <<X>> hours, upon which you touch the corpse of the creature
+you wish to revive.
+
+You then permanently lose one point from a random stat - this loss cannot be
+undone in any way.
+The recipient must roll 1d20 for every stat. If they roll __above__ a stat's
+score, that stat is reduced by 1. This usually means that the recipients worst
+stats get even worse. These losses are permanent and cannot be undone.
+
+This spell requires a diamond worth at least 400·<<X>> gold pieces, which is
+consumed by the spell.
+
+[[quote]]
+Since this spell takes a permanent toll on the caster, it is difficult to find
+a caster who is willing to cast this spell, and if they can be persuaded, it 
+will most likely be extremely expensive.

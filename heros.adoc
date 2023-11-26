@@ -147,8 +147,8 @@ Your recovery die is 1d8.
 Your __hit point total__ is increased by 8.
 
 ==== Stats
-Increase your __dexterity__ and __wisdom__ by one point each,
-  and increase one other stat by one point as well.
+Increase your __dexterity__ and __wisdom__ by one point each, and increase one
+other stat by one point as well.
 
 ==== Weapon skills
 You are skilled at using light weapons, unarmed combat, as well throwing
@@ -176,36 +176,71 @@ You are skilled at using light armor, but not shields.
 //START_SORT //KEY:
 
 //KEY:
-Lockpicker::
-You have __advantage__ on all checks (including __consumption checks__ when
-using lockpicking tools to pick locks.
+*Lockpicker*:
+You have __advantage__ on all checks (including __consumption checks__) when
+using your lockpicking tools, and one of the sets of lockpicking tools you
+carry do not take up an __item slot__.
 
 
 //KEY:
-Tinkerer::
+*Tinkerer*:
 You have __advantage__ on all checks (including __consumption checks__ when
-using lockpicking tools to pick locks.
+using your tinkering tools, and one of the sets of tinkering tools you carry do
+not take up an __item slot__.
 
 
 //KEY:
-Absent::
+*Absent*:
 You have __advantage__ on all checks related to sneaking, hiding, stealth,
-and camouflage.
+and camouflage. All attempts to track you are __difficult__; even animals have
+trouble finding your scent. If you attack someone who is completely unaware of
+your presence, you have __advantage__ on both your attack check and your
+damage roll, as long as you are skilled with the weapon you are using.
+
 
 //KEY:
-Backstabber::
-If an adjacent baddie moves away from you, you can make a melee attack against
-them with a readied melee weapon.
+*Subduer*:
+You are skilled at using the __kosh__, and when you use it, the die you
+use to determine if the baddie goes unconscious is 1d10, and if the baddie's
+level is lower than yours, you roll with __advantage__.
+When you chose this ability, and you already have the "`__shady__`" adventurer's
+ability, you may switch that ability for something else if you want.
 
 //KEY:
-Venom Specialist::
+*Tracker*:
+You mark a baddie within __charisma__ meters. As long as the baddie is within
+__charisma__ kilometers of you, you are able to sense in which direction it is,
+and if you make a successful __adversarial__ __wisdom__ check and you are
+within __charisma__ meters of the "path" of the baddie, you are able to track
+the actual path of the target.
+
+//KEY:
+*Dagger Master*:
+You do not need to use any __moves__ to ready a dagger, as long as you have one
+on you, and you are not __encumbered__, __exhausted__, or similar. You can
+spend three __moves__ to make a ranged attack with a dagger, as long as the
+target is within __L__ meters, where __L__ is your level.
+
+
+//KEY:
+*Venom Specialist*:
 You can make poisonous venom from dead monster parts. It requires a dead
 monster, a bonfire or similar, one hour of preparation, one __consumption__ of
-<<alchemist_tools>>, and one glass bottle to create a dose of venom that can
+<<alchemist_tools>>, and one steel bottle to create a dose of venom that can
 coat the business end of a slashing or piercing weapon.
 
-Once a weapon has been coated, the first attack you make with it has
-__advantage__ on its damage.
+It takes one __action__ to apply a readied bottle of venom to a readied weapon,
+and it lasts for up to one week one the weapon.
+
+Once a weapon has been coated, you add __L__d6 to the damage of the next
+successful attack with that weapon, where __L__ is the level of the person who
+created the poison.
+
+[quote]
+Some baddies, such as undeads and mechanoids, are immune to poison.
+
+//END_SORT
+
 
 === Level 4
 
@@ -267,34 +302,37 @@ gain a level.
 Shield Fighter::
 If you failed an attack check with a light melee weapon, and your are wearing a
 shield, you are allowed to make an attack with your shield. In your hands, a
-shield is the same as a light weapon.
+shield is the same as a light melee weapon.
 
 [quote]
 If you roll a __20__ on your shield attack, your shield becomes __broken__,
 which means you lose one __move__.
 
 Critter::
-If you roll a __1__ on an attack check with a weapon you're skilled at using,
-you roll your damage with __advantage__, and then you make a second attack with
-the same weapon against a foe of your choice. If this extra attack hits, you
-also roll that damage with __advantage__. You can keep making these bonus
-attacks as long as you keep rolling __1__s.
+Normally you will have to roll a __1__ to make a __critical hit__. But you
+only have to roll lower than or equal to your level.
+
+[quote]
+This means that, on average, every 6th attack check would be a critical hit,
+which gives you an extra action. 
 
 Tank::
-You are skilled at using heavy armor.
+You are skilled at using heavy armor, and one of the armor pieces you carry
+does not take up an __item slot__.
 
 Hauler::
-Your number of total number of item slots and your  __unencumbered__ item slots
-is increased by 3.
+Your number of total number of item slots and your __unencumbered__ item slots
+is increased by __L__, where __L__ is your level.
 
 Basher::
-If you have landed a successful hit with a blunt weapon on a baddie, you can
-push them one meter away from you.
+If you have landed a successful hit with a blunt weapon on a baddie, you may
+push them stem:[L/2] meter away from you, where __L__ is your level.
 
 [quote]
 A basher`'s push can cause a baddie to fall off a cliff or into a pit trap, or
-it can ensure that the pushed baddie must use at least one __move__ to get back
-into melee range with you.
+it can ensure that the pushed baddie must use at least __moves__ to get back
+into melee range with you. If you push a baddie away from one of your allies
+who has the __backstabber__ ability.
 
 Sniper::
 Your ranged damage is increased to 1d10, you can attack baddies up to
@@ -304,12 +342,6 @@ away with __difficult__ checks.
 Pugilist::
 You are skilled at unarmed combat, your unarmed damage is 1d8, and you are allowed
 to add the warrior's Bonus Damage.
-
-Backstabber::
-If an adjacent baddie moves away from you, you can make a melee attack against
-them with a readied melee weapon that you are skilled at using.
-
-// Barbarians only have unencumbered item slots. Because they are badass.
 
 === Level 4
 
