@@ -1,0 +1,16 @@
+= Elite's guide to doom & destruction & stuff
+:stylesheet: style.css
+:doctype: article
+:icons: font
+:sectlinks:
+:toc:
+:toclevels: 1
+:toc-placement!:
+:experimental:
+:stem:
+:xrefstyle: basic
+
+
+== Barbarian (Warrior Specialization)
+
+* Only has unencumbered item slots.
