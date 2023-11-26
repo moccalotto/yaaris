@@ -73,7 +73,7 @@ magical rituals that can convert a champion's spellbook back into a basic
 spellbook, and there are also rituals that can attune champion's spellbook to
 another champion.
 
-[NOTE]
+[quote]
 Like basic spellbooks, the champion's spellbook is faintly magical, and can be
 detected with __Detect Magic__ spells.
 
@@ -315,13 +315,14 @@ gain a level.
 //START_SORT //KEY:
 
 //KEY:
-*Shield Fighter*: If you failed an attack check with a light melee weapon, and
-your are wearing a shield, you are allowed to make an attack with your shield.
-In your hands, a shield is the same as a light melee weapon.
+*Basher*: If you have landed a successful hit with a blunt weapon on a baddie,
+you may push them __L__ meter away from you, where __L__ is your level.
 
 [quote]
-If you roll a __20__ on your shield attack, your shield becomes __broken__,
-which means you lose one __move__.
+A basher`'s push can cause a baddie to fall off a cliff or into a pit trap, or
+it can ensure that the pushed baddie must use at least __moves__ to get back
+into melee range with you. If you push a baddie away from one of your allies
+who has the __backstabber__ ability.
 
 
 //KEY:
@@ -334,30 +335,8 @@ which gives you an extra action.
 
 
 //KEY:
-*Tank*: You are skilled at using heavy armor, and one of the armor pieces you
-carry does not take up an __item slot__.
-
-
-//KEY:
 *Hauler*: Your number of total number of item slots and your __unencumbered__
 item slots is increased by __L__, where __L__ is your level.
-
-
-//KEY:
-*Basher*: If you have landed a successful hit with a blunt weapon on a baddie,
-you may push them __L__ meter away from you, where __L__ is your level.
-
-[quote]
-A basher`'s push can cause a baddie to fall off a cliff or into a pit trap, or
-it can ensure that the pushed baddie must use at least __moves__ to get back
-into melee range with you. If you push a baddie away from one of your allies
-who has the __backstabber__ ability.
-
-
-//KEY:
-*Sniper*: Your ranged damage is increased to 1d10, you can attack baddies up to
-__wisdom__ meters away with a __normal__ check, and up to 2·__wisdom__ meters
-away with __difficult__ checks.
 
 
 //KEY:
@@ -389,6 +368,27 @@ creatures with resistance to non-magical attacks.
 == HERO SPELLS
 
 //START_SORT //KEY:
+
+//KEY:
+*Shield Fighter*: If you failed an attack check with a light melee weapon, and
+your are wearing a shield, you are allowed to make an attack with your shield.
+In your hands, a shield is the same as a light melee weapon.
+
+[quote]
+If you roll a __20__ on your shield attack, your shield becomes __broken__,
+which means you lose one __move__.
+
+
+//KEY:
+*Sniper*: Your ranged damage is increased to 1d10, you can attack baddies up to
+__wisdom__ meters away with a __normal__ check, and up to 2·__wisdom__ meters
+away with __difficult__ checks.
+
+
+//KEY:
+*Tank*: You are skilled at using heavy armor, and one of the armor pieces you
+carry does not take up an __item slot__.
+
 
 //KEY:
 === Detect Undead, Major
