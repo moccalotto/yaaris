@@ -312,18 +312,29 @@ You are skilled at using light melee weapons and ranged weapons. On the
 <<adventurer_damage_rolls_table,table below>> you can see how much damage you
 deal with each weapon category.
 
+[%unbreakable]
+--
 [[adventurer_damage_rolls_table]]
 .Adventurer Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
 | Weapon Type           | Skill level | Damage Roll
 //----------------------|-------------|------------
-| Light Melee Weapons   | Skilled     | 1d6
-| Ranged Weapons        | Skilled     | 1d6
+| Light Melee Weapons¹  | Skilled     | 1d6
+| Ranged Weapons²       | Skilled     | 1d6
 | Unarmed Combat        | Unskilled   | 1d3
-| Heavy Melee Weapons   | Unskilled   | 1d10
+| Heavy Melee Weapons³  | Unskilled   | 1d10
 //----------------------|-------------|------------
 |===
+
+<1> Most light melee weapons are one-handed, with notable exceptions such as
+the quarterstaff.
+<2> Throwing-weapons can often be used as light melee weapons (such as daggers,
+javelins), and these weapons only require one hand.  Almost all weapons that
+have ammunition (such as bows, crossbows, slings) require two hands to use.
+<3> Heavy melee weapons always require two hands, and can never be used as
+throwing weapons.
+--
 
 .Range
 [reftext="attack range"]
@@ -2017,8 +2028,10 @@ it is relatively hard to detect the direction of magical items, and it is
 exceptionally hard to distinguish magical items from each other. In general,
 it is only possible to detect the direction of the most powerful magical item.
 
-[[quote]] It can be advantageous to keep you and your party's items away from
-you while you're using this spell.
+[quote]
+It can be advantageous to keep you and your party's items, including
+your magical items, and spellbooks, away from you while you're using this
+spell.
 
 
 === Detect Traps (X)

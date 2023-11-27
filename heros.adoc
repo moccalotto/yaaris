@@ -14,6 +14,7 @@
 When you reach your third level, you can choose a heroic class, which allows
 you to obtain more powerful abilities, spells, and gear.
 
+
 // {{{ CHAMPION
 == Champion
 
@@ -26,15 +27,14 @@ undead, casting spells from the front lines, and healing their comrades.
 === Level 3
 
 ==== Recovery Die
-Your recovery die is 1d8.
+Your __recovery die__ is 1d8.
 
-==== Hit Points
+==== More Hit Points
 Your __hit point total__ is increased by 8.
 
-==== Stats
-Increase your __constitution__ and __wisdom__ by one point each, and increase
+==== Better Stats
+Increase your __constitution__ and __charisma__ by one point each, and increase
 one other stat by one point as well.
-
 
 ==== Weapon Skills
 
@@ -56,44 +56,60 @@ shields.
 
 ==== Champion Spellcasting
 
-As a champion, you get an improved magical ability where you can upgrade your
-basic spellbooks into __Champion's Spellbooks__.
-
-*Champion's spellbooks* are an upgraded version of basic spellbooks; they have
-been imbued with the fire of your spirit, linking them to you so you alone can
-use them, and you can cast them much more easily.
+As a champion, you can use __champion's spellbooks__ to cast spells more
+efficiently.
 
 
-*Creating a champion's spellbook* is done by upgrading an existing basic
-spellbook. The spell in the source book must not have a higher level than
-yours, it takes an hour per spell level, and it requires one __consumption__ of
-__magic components__ per spell level. Once upgraded, the book is completely
-attuned to you, and only you can use it to cast spells. There are, however,
-magical rituals that can convert a champion's spellbook back into a basic
-spellbook, and there are also rituals that can attune champion's spellbook to
-another champion.
+*Champion's spellbooks* are an upgraded version of basic spellbooks, that have
+the following properties:
+
+* They can contain both __basic__ and __champion__ spells.
+* They can only be used by the champion they are attuned to.
+* They allow for more fast an easy spellcasting.
+
+*Champion's spellcasting* is done by by grasping a one of your champion's
+spellbooks firmly in one hand, holding it up, and __shouting__ an incantation
+from memory. Once this is done, you roll a __charisma__ check, and if it
+succeeds, you cast the spell. As opposed to __basic spellcasting__, you only
+need one free hand, and you do not need the ability to read the text in the
+book.
+
+*Creating a champion's spellbook* is done by upgrading one of your basic
+spellbooks. It takes one hour per spell level and requires one __consumption__
+of __magic components__ per spell level. The spell in the source book must not
+have a higher level than you. Once upgraded, the spellbook is attuned to you,
+and only you can use it.
 
 [quote]
 Like basic spellbooks, the champion's spellbook is faintly magical, and can be
 detected with __Detect Magic__ spells.
 
+*Reattuning a champion's spellbook* from one champion to you requires an hour
+per spell level, one consumption of __magic components__ per spell level, and
+can only be done if your level is at least as high as the spell's level.
 
-*You can cast a spell with a champion's spellbook* by grasping the spellbook
-firmly in one hand, holding it up, and __shouting__ an incantation from memory.
-Once this is done, you roll a __charisma__ check, and if it succeeds, you cast
-the spell.
-
-
-* You can upgrade a basic spellbook into a champion's spellbook.
-* It can only be used by _you_.
-* You use it with only one hand, by holding it up and __shouting__ a champion's
-  prayer.
-* You do not need to see or read.
-* You still have to speak and move.
-* It is recharged with __holy components__ instead of __magic components__.
-
+==== Peaceful Rest
+You acquire a champion's spellbook with the spell <<_peaceful_rest_x>> on it.
+It has 1 __usage point__, and when you carry it, it does not take up any __item
+slots__.
 
 === Level 4
+
+==== More Hit Points
+Increase your __hit point total__ by 1d8. Roll with __advantage__.
+
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
+
+
+
+.. Foe of Undead
+.. Foe of Orcs
+.. Foe of Demons 
+.. Foe of Mechanoids
+
+asdasd
 
 * Lay on hands ????
 * Burial ????
@@ -105,10 +121,14 @@ the spell.
 
 === Level 5
 
-* Turn undead and/or orc and/or demons ????
-* Increase your __hit point total__ by 1d8.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
+==== More Hit Points
+Increase your __hit point total__ by 1d8. Roll with __advantage__.
+
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
+
+* ?????? Turn undead and/or orc and/or demons ????
 
 // CHAMPION }}}
 
@@ -118,29 +138,62 @@ the spell.
 
 === Level 3
 
-* Increase your __hit point total__ by 6.
-* Increase your __intelligence__ and __wisdom__ by one point each,
-  and increase one other stat by one point as well.
-* Your recovery die is 1d6.
-* You are skilled at using light armor, but no shields.
-* Aside from using conventional spellbooks to cast __basic__ spells, you
-  gain access to <<mage_books>> allowing you to store and cast many <<mage>>
-  spell that is a more effective and powerful way to cast __basic__ and __holy_
-  spells.
+==== Recovery Die
+Your __recovery die__ is 1d6.
+
+==== More Hit Points
+Your __hit point total__ is increased by 6.
+
+==== Better Stats
+Increase your __intelligence__ and __wisdom__ by one point each, and increase
+one other stat by one point as well.
+
+==== Weapon Skills
+You are only skilled at using daggers and quarterstaffs, both of which are
+__light melee weapons__, even though a quarterstaff is two-handed. You are not
+skilled at throwing daggers.
+
+.Rogue Damage Rolls
+[%header,cols="8,^2,^2"]
+|===
+| Weapon Type             | Skill level | Damage Roll
+//------------------------|-------------|------------
+| Light Melee Weapons     | Unskilled   | 1d4
+| Ranged Weapons          | Unskilled   | 1d4
+| Unarmed Combat          | Unskilled   | 1d4
+| Heavy Melee Weapons     | Unskilled   | 1d8
+| Quarterstaffs           | Skilled     | 1d8
+| Daggers                 | Skilled     | 1d6
+//------------------------|-------------|------------
+|===
+
+==== Armor Skills
+You are skilled at using light armor, but not shields.
+
+
+==== Mage Casting
+
+* ???? When rolling a __1__ on your spellcasting check, you cast the spell
+  completely for free, and you get a free action.
 
 
 === Level 4
 
-* Increase your __hit point total__ by 6.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
-* You may switch your __Adventurer's Special Ability__ if you want.
+==== More Hit Points
+Increase your __hit point total__ by 1d6. Roll with __advantage__.
 
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
 
 === Level 5
-* Increase your __hit point total__ by 6.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
+
+==== More Hit Points
+Increase your __hit point total__ by 1d6. Roll with __advantage__.
+
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
 
 // MAGE }}}
 
@@ -156,10 +209,10 @@ The rogue is stealthy, clever, and dangerous.
 ==== Recovery Die
 Your recovery die is 1d8.
 
-==== Hit Points
+==== More Hit Points
 Your __hit point total__ is increased by 8.
 
-==== Stats
+==== Better Stats
 Increase your __dexterity__ and __wisdom__ by one point each, and increase one
 other stat by one point as well.
 
@@ -220,13 +273,14 @@ tools you carry do not take up an __item slot__.
 //KEY:
 *Subduer*: You are skilled at using the __kosh__, and when you use it, the die
 you use to determine if the baddie goes unconscious is 1d10, and if the
-baddie's level is lower than yours, you roll with __advantage__. When you chose
-this ability, and you already have the "`__shady__`" adventurer's ability, you
-may switch that ability for something else if you want.
+baddie's level is lower than yours, you roll your d10 with __advantage__. When
+you chose this ability, and you already have the "`__shady__`" adventurer's
+ability, you may switch that ability for something else if you want.
+
 
 //KEY:
 *Tinkerer*: You have __advantage__ on all checks (including __consumption
-checks__ when using your tinkering tools, and one of the sets of tinkering
+checks__) when using your tinkering tools, and one of the sets of tinkering
 tools you carry do not take up an __item slot__.
 
 
@@ -259,16 +313,21 @@ Some baddies, such as undeads and mechanoids, are immune to poison.
 
 === Level 4
 
-* Increase your __hit point total__ by 1d6.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
-* You may switch your __Adventurer's Special Ability__ if you want.
+==== More Hit Points
+Increase your __hit point total__ by 1d8. Roll with __advantage__.
+
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
 
 === Level 5
-* Increase your __hit point total__ by 1d6.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
 
+==== More Hit Points
+Increase your __hit point total__ by 1d8. Roll with __advantage__.
+
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
 
 // ROGUE }}}
 
@@ -281,10 +340,10 @@ Some baddies, such as undeads and mechanoids, are immune to poison.
 ==== Recovery Die
 Your recovery die is 1d10.
 
-==== Hit Points
+==== More Hit Points
 Your __hit point total__ is increased by 10.
 
-==== Stats
+==== Better Stats
 Increase your __constitution__ and __strength__ by one point each, and increase
 one other stat by one point as well.
 
@@ -317,6 +376,7 @@ gain a level.
 
 //START_SORT //KEY:
 
+
 //KEY:
 *Basher*: If you have landed a successful hit with a blunt weapon on a baddie,
 you may push them __L__ meter away from you, where __L__ is your level.
@@ -341,38 +401,10 @@ which gives you an extra action.
 *Hauler*: Your number of total number of item slots and your __unencumbered__
 item slots is increased by __L__, where __L__ is your level.
 
-
 //KEY:
 *Pugilist*: You are skilled at unarmed combat, your unarmed damage is 1d8, you
 are allowed to add the warrior's Bonus Damage, and you are able to fully damage
 creatures with resistance to non-magical attacks.
-
-=== Level 4
-
-* Increase your __hit point total__ by 1d10.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
-* You may switch your __Adventurer's Special Ability__ if you want.
-
-=== Level 5
-
-* Increase your __hit point total__ by 1d10.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
-
-// WARRIOR }}}
-
-
-// {{{ HERO GEAR
-== HERO GEAR
-
-// }}}
-
-
-// {{{ HERO SPELLS
-== HERO SPELLS
-
-//START_SORT //KEY:
 
 //KEY:
 *Shield Fighter*: If you failed an attack check with a light melee weapon, and
@@ -394,8 +426,48 @@ away with __difficult__ checks.
 *Tank*: You are skilled at using heavy armor, and one of the armor pieces you
 carry does not take up an __item slot__.
 
+//END_SORT
 
-//KEY:
+=== Level 4
+
+==== More Hit Points
+Increase your __hit point total__ by 1d10. Roll with __advantage__.
+
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
+
+=== Level 5
+
+==== More Hit Points
+Increase your __hit point total__ by 1d10. Roll with __advantage__.
+
+==== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
+
+// WARRIOR }}}
+
+
+// {{{ HERO GEAR
+== HERO GEAR
+
+// }}}
+
+
+// {{{ HERO SPELLS
+== HERO SPELLS
+
+//START_SORT ===
+
+
+=== Peaceful Rest (X)
+*<<holy>>, Level 3. __ritual__*
+
+You touch a inanimate corpse that has died within the last __charisma__ hours.
+That corpse will not rise as an undead unless a sufficiently powerful
+necromancer uses dark magic on it.
+
 === Detect Undead, Major
 *<<holy>>, Level 4. Duration: __wisdom__ hours.*
 
@@ -408,7 +480,6 @@ its direction, otherwise you only know that the creature is present, not where
 it might be.
 
 
-//KEY:
 === Money Talks (X)
 *<<basic>>, Level 5+*
 
@@ -426,6 +497,7 @@ touch.
 
 Destroying or severely damaging either clipboard breaks the spell.
 
+//END_SORT
 
 // SPELLS }}}
 
