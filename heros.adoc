@@ -261,11 +261,6 @@ You gain one of the abilities below:
 
 
 //KEY:
-*Librarian*: Three of the __mage's spellbooks__ you're carrying do not take up
-any __item slots__.
-
-
-//KEY:
 *Blood Mage*: When casting a spell, you can chose to sacrifice a bit of your
 life force to improve its effect. You take 5 points of damage, but all
 checks you make in conjunction with casting your spells have __advantage__.
@@ -282,6 +277,11 @@ make, such as the __charisma__ checks you must make when casting the __Snooze
 
 //KEY:
 *Librarian*: ????
+
+//KEY:
+*Librarian*: Three of the __mage's spellbooks__ you're carrying do not take up
+any __item slots__.
+
 
 //END_SORT
 

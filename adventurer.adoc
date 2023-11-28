@@ -2314,14 +2314,6 @@ Observers with a level higher than <<X>> can detect that this spell has been
 cast, and that the item is nonmagical.
 
 
-=== Pleasure (X)
-*Level 2+*
-
-You touch a willing person, who instantly gets an orgasm, the intensity of
-which depends on <<X>>. Once a target has been affected by this spell, they are
-immune to this spell for 1d6 hours.
-
-
 === Otto Luke's Torch (X)
 *Level 2+, <<focus>>, range: <<X>>·5 meters*
 
@@ -2351,6 +2343,14 @@ with their sense of “what ought to be” can make an <<adversarial>> __charism
 check to see the phantasm for what it is. The check is easy if the creature's
 level is 2 or more higher than the caster's level, and difficult of the
 creatures level is 2 or more lower than the caster's level.
+
+
+=== Pleasure (X)
+*Level 2+*
+
+You touch a willing person, who instantly gets an orgasm, the intensity of
+which depends on <<X>>. Once a target has been affected by this spell, they are
+immune to this spell for 1d6 hours.
 
 
 === Purify Rations (X)
