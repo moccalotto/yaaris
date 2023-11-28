@@ -592,6 +592,12 @@ up any __item slots__.
 
 
 //KEY:
+*Hunter*: Your ranged damage is increased to 1d10, you can attack baddies up to
+__wisdom__ meters away with a __normal__ check, and up to 2·__wisdom__ meters
+away with __difficult__ checks.
+
+
+//KEY:
 *Pugilist*: You are __skilled__ at unarmed combat, your unarmed damage is 1d10,
 you are allowed to add the warrior's <<Bonus Damage>>, and you are able to
 fully damage creatures with resistance to non-magical attacks. In addition to
@@ -607,12 +613,6 @@ your shield. In your hands, a shield is the same as a light melee weapon.
 [quote]
 If you roll a __20__ on your shield attack, your shield becomes __broken__,
 which means you lose one __move__.
-
-
-//KEY:
-*Hunter*: Your ranged damage is increased to 1d10, you can attack baddies up to
-__wisdom__ meters away with a __normal__ check, and up to 2·__wisdom__ meters
-away with __difficult__ checks.
 
 
 //KEY:
