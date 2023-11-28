@@ -389,66 +389,105 @@ You gain one of the abilities below.
 //KEY:
 *Absent*: You have __advantage__ on all checks related to sneaking, hiding,
 stealth, and camouflage. All attempts to track you are __difficult__; even
-animals have trouble finding your scent. If you attack someone who is
-completely unaware of your presence, you have __advantage__ on both your attack
-check and your damage roll, as long as you are __skilled__ with the weapon you
-are using.
+animals have trouble finding your scent, and you cannot be marked by someone
+with the __tracker__ ability.
+
+If you attack someone who is completely unaware of your presence you have
+__advantage__ on both your attack check and your damage roll, provided you are
+__skilled__ with the weapon you are using.
 
 
 //KEY:
 *Acrobat*: By spending an __action__ you can jump up to __dexterity__ meters
 horizontally, or up to __L__ meters vertically, where __L__ is your level.
 You cannot do this if you're __encumbered__, __exhausted__, or similarly
-affected.
+affected. Your acrobatic skills also enables you to move at full speed in
+difficult terrain.
 
 
 //KEY:
-*Dagger Master*: You do not need to use any __moves__ to ready a dagger, as
-long as you have one on you, and you are not __encumbered__, __exhausted__, or
-similar. You can spend three __moves__ to make a ranged attack with a dagger,
-as long as the target is within __L__ meters, where __L__ is your level.
+*Dagger Master*: You do not need to use any __moves__ to ready a dagger as long
+as you have one on you, and you are not __encumbered__, __exhausted__,
+__restrained__ or similar. You can spend three __moves__ (instead of an
+__action__) to make a ranged attack with a dagger, as long as the target is
+within __L__ meters, where __L__ is your level.
 
 
 //KEY:
 *Lockpicker*: You have __advantage__ on all checks (including __consumption__
 __checks__) when using your lockpicking tools, and one of the sets of
 lockpicking tools you carry do not take up an __item slot__.
+If you do not have a set of lockpicking tools already, you receive one when
+you pick this ability.
+
+Using your lockpicking tools you are able to pseudo-jam a lock such that it can
+only be opened by you, or by a lockpicker who is at least two levels higher
+than you. It cannot even be opened with the key. It takes 10 minutes and one
+__consumption__ of lockpicking tools to do pseudo-jam a lock.
 
 
 //KEY:
-*Subduer*: You are __skilled__ at using the __kosh__, and when you use it, the
-die you use to determine if the baddie goes unconscious is 1d10, and if the
-baddie's level is lower than yours, you roll your d10 with __advantage__. When
-you chose this ability, and you already have the "`__shady__`" adventurer's
-ability, you may switch that ability for something else if you want.
+*Pacifier*: If you don't have a kosh when you chose this ability you receive
+one. You are __skilled__ at using the __kosh__, and when you use it, the die
+you use to determine if the baddie goes unconscious is 1d10, and if the
+baddie's level is lower than yours, you roll your d10 with __advantage__. If
+you combine this ability with the __shady__ adventurer's ability, the you roll
+1d12 with __advantage__ to test for unconsciousness regardless of the level of
+the baddie.
 
 
 //KEY:
-*Tinkerer*: You have __advantage__ on all checks (including __consumption
-checks__) when using your tinkering tools, and one of the sets of tinkering
+*Tinkerer*: You have __advantage__ on all checks (including __consumption__
+__checks__) when using your tinkering tools, and one of the sets of tinkering
 tools you carry do not take up an __item slot__.
 
+You can repair weapons and armor pieces just as if you had the __armorer__ 
+adventurer's ability.
+
+Your attack checks and damage rolls against mechanoid creatures are made with
+__advantage__. You also completely ignore any and all damage resistances these
+creatures have.
+
+You have __advantage__ on all checks involved in detecting traps, certain
+hidden doors, and other hidden mechanical installations.
+
+You can make and install simple traps. It takes one hour and one __usage__
+__point__ of tinkering tools to create a simple trap that deals 1d6+__L__
+points of damage, where __L__ is your level. Such traps can be installed on
+doors, in alcoves, in chests, and similar places. The trap only deals damage
+once, and if someone knows where it is, they can generally avoid (but not
+disarm) it. In general, traps created so fast stop working after a number of
+weeks equal to your level.
+
 
 //KEY:
-*Tracker*: You mark a baddie within __charisma__ meters. As long as the baddie
-is within __charisma__ kilometers of you, you are able to sense in which
-direction it is, and if you make a successful __adversarial__ __wisdom__ check
-and you are within __charisma__ meters of the "path" of the baddie, you are
-able to track the actual path of the target.
+*Tracker*: You magically mark a baddie within __charisma__ meters. You can only
+have one creature marked at a time. You have __advantage__ on all ranged attack
+checks you make against a marked baddie.
+
+As long as the baddie is within __charisma__ kilometers of you, you are able to
+sense in which direction it is, and if you make a successful __adversarial__
+__wisdom__ check and you are within __charisma__ meters of the "path" of the
+baddie, you are able to track the actual path of the target for the next 10
+minutes.
+
+[quote]
+Some creatures have special abilities that allow them to avoid or remove the
+tracker's mark.
 
 
 //KEY:
 *Venom Specialist*: You can make poisonous venom from dead monster parts. It
-requires a dead monster, a bonfire or similar, one hour of preparation, one
-__consumption__ of <<_alchemist_tools>>, and one steel bottle to create a dose
-of venom that can coat the business end of a slashing or piercing weapon.
+requires a recently deceased monster, a bonfire or similar, one hour of
+preparation, one __consumption__ of <<_alchemist_tools>>, and one steel bottle
+to create a dose of venom that can coat the business end of a slashing or
+piercing weapon, including arrowheads.
 
 It takes one __action__ to apply a readied bottle of venom to a readied weapon,
 and it lasts for up to one week one the weapon.
 
-Once a weapon has been coated, you add __L__d6 to the damage of the next
-successful attack with that weapon, where __L__ is the level of the person who
-created the poison.
+Once you have coated your weapon, you add __L__d6 to the damage of the next
+successful attack with that weapon, where __L__ is your level.
 
 [quote]
 Some baddies, such as undeads and mechanoids, are immune to poison.
@@ -531,41 +570,39 @@ gain a level.
 
 
 //KEY:
-*Basher*: If you have landed a successful hit with a blunt weapon on a baddie,
-you may push them __L__ meter away from you, where __L__ is your level.
-
-[quote]
-A basher`'s push can cause a baddie to fall off a cliff or into a pit trap, or
-it can ensure that the pushed baddie must use at least __moves__ to get back
-into melee range with you. If you push a baddie away from one of your allies
-who has the __backstabber__ ability.
-
-
-//KEY:
-*Critter*: Normally you will have to roll a __1__ to make a __critical hit__.
-But you only have to roll lower than or equal to your level.
-
-[quote]
-If you're level 4, on average, every 6th attack check would be a critical hit,
-which gives you an extra action.
+*Basher*: If you have landed a successful hit with a non-broken blunt heavy
+melee weapon on a baddie no larger than you, you may push them 2 meters away
+from you. If your attack was a __critical hit__ you can push a creature of any
+size and weight. Pushing a baddie past or away from an ally with the
+__backstabber__ ability will trigger their bonus attack, but if __you__
+yourself have that ability, you do not get a bonus attack. 
+When you reach level 6 you can push a baddie 3 meters away from you, when you
+reach level 8 the distance is 4 meters, and a 10th level character with this
+ability can push an enemy up to 5 meters.
 
 
 //KEY:
-*Hauler*: Three of your items does not take up any __item slots__.
+*Critter*: you only have to roll lower than or equal to your level in order to
+get a __critical __hit.
+
+
+//KEY:
+*Hauler*: At any point in time, the three heaviest items you carry do not take
+up any __item slots__.
 
 
 //KEY:
 *Pugilist*: You are __skilled__ at unarmed combat, your unarmed damage is 1d10,
-you are allowed to add the warrior's Bonus Damage, and you are able to fully
-damage creatures with resistance to non-magical attacks. In addition to these
-benefits, you are able to use a light or medium shield along with your unarmed
-combat, but your damage is only 1d8 if doing so.
+you are allowed to add the warrior's <<Bonus Damage>>, and you are able to
+fully damage creatures with resistance to non-magical attacks. In addition to
+these benefits, you are able to use a light or medium shield along with your
+unarmed combat, but your damage is only 1d8 if doing so.
 
 
 //KEY:
 *Shield Fighter*: If you failed an attack check with a light melee weapon, and
-your are wearing a shield, you are allowed to make an attack with your shield.
-In your hands, a shield is the same as a light melee weapon.
+your are wearing an non-broken shield, you are allowed to make an attack with
+your shield. In your hands, a shield is the same as a light melee weapon. 
 
 [quote]
 If you roll a __20__ on your shield attack, your shield becomes __broken__,
@@ -573,7 +610,7 @@ which means you lose one __move__.
 
 
 //KEY:
-*Sniper*: Your ranged damage is increased to 1d10, you can attack baddies up to
+*Hunter*: Your ranged damage is increased to 1d10, you can attack baddies up to
 __wisdom__ meters away with a __normal__ check, and up to 2·__wisdom__ meters
 away with __difficult__ checks.
 
@@ -616,6 +653,7 @@ xref:elites#[Elite’s Guide to doom & destruction & stuff].
 
 === Alchemist tools
 Blaaaaaahahaaahah
+
 
 // }}}
 
@@ -679,6 +717,13 @@ You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
 
 
 //KEY:
+[reftext="basic"]
+[[basic]]
+*Basic (spell property)*: Spells with this property are basic, and have no
+specific class requirements.
+
+
+//KEY:
 [reftext="champion"]
 [[champion]]
 *Champion (spell property)*: Spells with this property can only be cast by
@@ -697,13 +742,6 @@ You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
 [[X]]
 *X (spell property)*: The level of the spell. See xref:adventurer#X[X] in the
 adventurer's guide.
-
-
-//KEY:
-[reftext="basic"]
-[[basic]]
-*Basic (spell property)*: Spells with this property are basic, and have no
-specific class requirements.
 
 
 //END_SORT

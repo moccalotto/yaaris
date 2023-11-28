@@ -977,6 +977,15 @@ you make a <<consumption_check>> for the gold purse instead.
 
 
 //KEY:
+[reftext="healing salve"]
+[[healing_salve]]
+==== Healing Salve
+These salves can heal minor wounds.
+You spend one <<consumption_check,consumption>> of salve, and five minutes
+to apply it to a willing recipient. Once applied, the recipient is allowed
+to roll their <<recovery_die>>, and regain that many hit points.
+
+//KEY:
 [reftext="kosh"]
 [[kosh]]
 ==== Kosh
@@ -1040,7 +1049,7 @@ __dexterity__- and an __intelligence__ check.
 * If both are successful, you open the lock.
 * If one is successful, the lock does not open, but you get to try again.
 * If none are successful, the lock becomes jammed, and can only be opened by a
-  real key.
+  real key or by a lock picker who is at least two levels higher than you.
 
 
 //KEY:
@@ -1080,6 +1089,16 @@ consumption>> of rations every day, otherwise you become <<starving>>.
 [[iron_rations]]
 *Iron Rations* have more <<usage_points>> that normal rations, while still only
 requiring one <<item_slots,item slot>>.
+
+
+//KEY:
+[reftext="restoring salve"]
+[[restoring_salve]]
+==== Restoring Salve
+These salves can reverse the effects of <<reversible>> trauma. You spend one
+<<consumption_check,consumption>> of salve, and 30 minutes to apply it to a
+willing recipient. Once applied, one <<reversible>> trauma condition is removed
+from the recipient.
 
 
 //KEY:
@@ -1148,25 +1167,6 @@ you rolled a <<nat20>> on your attack check, the torch is broken and cannot be
 repaired. The throwing range of a torch is 5 meters.
 
 This item takes up 1 item slot.
-
-//KEY:
-[reftext="healing salve"]
-[[healing_salve]]
-==== Healing Salve
-These salves can heal minor wounds.
-You spend one <<consumption_check,consumption>> of salve, and five minutes
-to apply it to a willing recipient. Once applied, the recipient is allowed
-to roll their <<recovery_die>>, and regain that many hit points.
-
-//KEY:
-[reftext="restoration salve"]
-[[restoration_salve]]
-==== Restoration Salve
-These salves can reverse the effects of <<reversible>> trauma. You spend one
-<<consumption_check,consumption>> of salve, and 30 minutes to apply it to a
-willing recipient. Once applied, one <<reversible>> trauma condition is removed
-from the recipient.
-
 
 //END_SORT
 
@@ -1525,7 +1525,7 @@ it.
 [reftext="reversible"]
 [[reversible]]
 *Reversible*: This type of trauma is permanent, but it can be reversed with
-<<restoration_salve,restoration salves>> or by using high-level
+<<restoring_salve,restoring salves>> or by using high-level
 <<restoration_magic>>.
 
 *Temporary*: lasts for 1d20 days or it can be reversed with restoration magic.
