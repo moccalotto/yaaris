@@ -549,7 +549,7 @@ slot>>
 
 === Level 3: Graduation
 It is time for you to move on. You’re no longer just an adventurer, you’re a
-Hero. Choose a hero class from the 
+Hero. Choose a hero class from the
 xref:heros#[Hero’s Guide to doom & destruction & stuff].
 
 [quote]
@@ -1149,7 +1149,7 @@ repaired. The throwing range of a torch is 5 meters.
 
 This item takes up 1 item slot.
 
-//KEY: 
+//KEY:
 [reftext="healing salve"]
 [[healing_salve]]
 ==== Healing Salve
@@ -1158,7 +1158,7 @@ You spend one <<consumption_check,consumption>> of salve, and five minutes
 to apply it to a willing recipient. Once applied, the recipient is allowed
 to roll their <<recovery_die>>, and regain that many hit points.
 
-//KEY: 
+//KEY:
 [reftext="restoration salve"]
 [[restoration_salve]]
 ==== Restoration Salve
@@ -1516,7 +1516,7 @@ points.
 
 *Amputation*: You lose an arm or a leg. Roll 1d4 to find out which. Roll
 __dexterity__ or __constitution__ (your choice) if you succeed, you only lose
-half the limb. Otherwise you lose all of it. Your limb can regrow if you 
+half the limb. Otherwise you lose all of it. Your limb can regrow if you
 use high-level <<restoration_magic>>.
 
 *Permanent*: This trauma is permanent. There is no way to undo it or reverse
@@ -1724,29 +1724,32 @@ have more.
 [reftext="basic spellcasting"]
 [[basic_spellcasting]]
 === Basic Spellcasting
-You can cast <<basic>> spells directly from a <<spellbook>> if you
-meet the requirements below. Unless otherwise specified in the spell's
-description, it is an <<Actions,action>> to cast a spell.
+You can cast <<basic>> spells directly from a <<spellbook>> if you meet the
+requirements below. It is an <<Actions,action>> to cast a spell (unless
+otherwise specified in the spell's description).
 
-Requirements::
+*Requirements*:
+
 * You must have a <<spellbook>> with the given spell inscribed in it.
 * The spell's level must not be higher than yours,
 * You must not have cast any spells previously in this <<round>>.
 * The <<spellbook>> must have at least one <<usage_points,usage point>>.
 * You must be holding the <<spellbook>> open in both hands.
 * You must be able to see, speak, read, and move your arms, hands, and fingers.
-* You must not be <<encumbered>>, <<exhausted>>, <<on_fire>>, <<prone>>, 
+* You must not be <<encumbered>>, <<exhausted>>, <<on_fire>>, <<prone>>,
   <<restrained>>, or <<prone>>.
 
-Procedure::
-Make an __intelligence__ check:
-.. If successful, the spell takes effect,
-   and the spellbook loses one of its <<usage_points>>.
-.. If you rolled a <<nat1>>, the spell takes effect, and the spellbook
-   does not lose a <<usage_points>>.
-.. If unsuccessful, the spell fizzles, but no <<usage_points>> are lost.
-.. If you rolled a <<nat20>>, spell fizzles and the spellbook instantly loses
-   all its <<usage_points>>.
+*Procedure*: You make an __intelligence__ check:
+If it was successful the spell takes effect and the spellbook loses one of its
+<<usage_points>>.
+//
+If you rolled a <<nat1>> the spell takes effect, and the spellbook does not
+lose a <<usage_points>>.
+//
+If the check failed the spell fizzles, but no <<usage_points>> are lost.
+//
+If you rolled a <<nat20>> spell fizzles and the spellbook instantly loses all
+its <<usage_points>>.
 
 
 [reftext="basic ritual casting"]
@@ -1755,7 +1758,8 @@ Make an __intelligence__ check:
 Some spells can be cast without exhausting the spellbook, but it takes more
 time to do so.
 
-Requirements::
+*Requirements*:
+
 * The spell must have the <<ritual>> property,
 * The spellbook must have at least one <<usage_points,usage point>>.
 * You must be able to see, read, speak, and move about.
@@ -1764,13 +1768,16 @@ Requirements::
 * You must have your <<magic_components>> on you, as you'll need them for your
   ritual.
 
-Procedure::
-. Spend 10 minutes chanting and reading from the spellbook.
-. Spend one <<consumption_check,consumption>> of <<magic_components>>.
-. Make an __intelligence__ check:
-.. If successful, you cast the spell.
-.. If unsuccessful, the spell fizzles, but you can try again later.
-.. If you rolled a <<nat20>>, the spellbook loses all its <<usage_points>>.
+*Procedure*: You spend 10 minutes and one <<consumption_check,consumption>> of
+<<magic_components>>, and then you make an __intelligence__ check. 
+//
+If the check was a success the spell takes effect.
+//
+If the check wasn't a success the spell fizzles, but you can try later.
+//
+If you rolled a <<nat20>> the spell fizzles, and the spellbook looses all its
+<<usage_points>>.
+
 
 [reftext="basic recharging"]
 [[basic_recharging]]

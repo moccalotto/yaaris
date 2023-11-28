@@ -63,13 +63,13 @@ lines without even opening the books.
 they can only be used by the champion they are attuned to, and they can be used
 without being opened.
 
-*Spellcasting requirements:* 
+*Spellcasting requirements:*
 
 * You must have the __champion's spellbook__ with the given spell inscribed
   in it.
 * The spell's level must not be higher than yours.
 * The book must be attuned to you.
-* The book must have at least one __usage point__. 
+* The book must have at least one __usage point__.
 * You must be holding the book up high in one hand.
 * You must be able to speak, and move one arm, hands, and fingers.
 * You must not be __exhausted__, __on fire__, or __restrained__.
@@ -84,11 +84,14 @@ without being opened.
 .. If you rolled a __20__, the spell fizzles, and the book loses all its
    __usage points__.
 
-*Creating a champion's spellbook* is done by upgrading one of your basic
-spellbooks. It takes one hour per spell level and requires one __consumption__
-of __magic components__ per spell level. The spell in the source book must not
-have a higher level than you. Once upgraded, the spellbook is attuned to you,
-and only you can use it.
+*Champion's Ritual Casting* works exactly like __basic ritual casting__, except
+you're using a __champion's spellbook__, and can cast <<champion>> spells,
+provided they have the __ritual__ property.
+
+*Upgrade Basic Spellbooks* takes one hour per spell level and requires one
+__consumption__ of __magic components__ per spell level. The spell in the
+source book must not have a higher level than you. Once upgraded, the spellbook
+is attuned to you, and only you can use it.
 
 [quote]
 Like basic spellbooks, the champion's spellbook is faintly magical, and can be
@@ -98,12 +101,16 @@ detected with __Detect Magic__ spells.
 per spell level, one consumption of __magic components__ per spell level, and
 can only be done if your level is at least as high as the spell's level.
 
-==== Peaceful Rest
-You acquire a champion's spellbook with the spell <<_peaceful_rest>> on it. It
-has 1 __usage point__, and when you carry it, it does not take up any __item__
-__slots__. The spellbook gains an extra usage point when you reach level 5, 7,
-and 9.
+==== New Spellbook
+You acquire a __champion's spellbook__; it is already attuned to you, and it
+has two __usage points__. The spell in the book is one that you do not already
+posses, it has the <<champion>> property, and its level is no higher than
+yours.
 
+==== Peaceful Rest
+You acquire a __champion's spellbook__ with the spell <<_peaceful_rest>> on it.
+It has 1 __usage point__, and when you carry it, it does not take up any __item
+slots__. 
 
 === Level 4
 
@@ -116,6 +123,12 @@ that stat is increased by 1 point.
 
 ==== Adventurer's Ability
 You may change your __Adventurer's Ability__ if you want.
+
+==== New Spellbook
+You acquire a __champion's spellbook__; it is already attuned to you, and it
+has two __usage points__. The spell in the book is one that you do not already
+posses, it has the <<champion>> property, and its level is no higher than
+yours.
 
 ==== Champion's Special Ability
 You gain one of the abilities below.
@@ -167,6 +180,11 @@ Increase your __hit point total__ by 1d8. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
+==== New Spellbook
+You acquire a __champion's spellbook__; it is already attuned to you, and it
+has two __usage points__. The spell in the book is one that you do not already
+posses, it has the <<champion>> property, and its level is no higher than
+yours.
 
 === Level 6: Graduation
 It is time for you to move on. You’re no longer just an hero, you’re an Elite.
@@ -178,6 +196,11 @@ xref:elites#[Elite’s Guide to doom & destruction & stuff].
 
 // {{{ MAGE
 == MAGE
+
+[quote,Feya LeDique]
+The mage is clever, mystical, and dangerous.
+
+The mage is a scholar that solely specializes in spellcasting.
 
 === Level 3
 
@@ -214,7 +237,6 @@ skilled at throwing daggers.
 You are __skilled__ at using light armor, but not shields.
 
 ==== Mage Spellcasting
-
 You can use __mage's spellbooks__ to cast spells much more efficiently.
 
 *Mage's spellbooks* can contain both __basic__ and __mage__ spells, they can
@@ -229,17 +251,26 @@ only be used by mages, and they are more efficient than __basic spellbooks__.
 * You must be able to see, speak, read, and move your arms, hands, and fingers.
 * You must not be __exhausted__, __on fire__, __prone__, or __restrained__.
 
+
 *Spellcasting procedure*: You cast the spell and the book loses one __usage__
 __point__. Unlike __basic spellcasting__, there is no __intelligence check__
 involved.
 
+
 *Recharging*: You can recharge a __mage's spellbook__ if the spell's level
 isn't higher than yours. Your start by spending one __consumption__ of magic
-components, and then you perform a 15-minute ritual. When it is complete, 
+components, and then you perform a 15-minute ritual. When it is complete,
 you have recharged the spellbook back to full capacity.
 
-*Mage's Ritual Casting* works exactly like __basic ritual casting__.
 
+*Mage's Ritual Casting* has the same requirements as basic ritual casting, but
+the procedure is the following: you spend 10 minutes chanting and reading from
+the spellbook, then you spend one __consumption__ of __magic_components__, and
+then the spell takes
+
+==== New Spellbook
+You acquire a __mage's spellbook__ with two __usage points__. The spell in the
+book has the <<mage>> property, and its level is no higher than yours.
 
 === Level 4
 
@@ -250,13 +281,15 @@ Increase your __hit point total__ by 1d6. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
+==== New Spellbook
+You acquire a __mage's spellbook__ with two __usage points__. The spell in the
+book has the <<mage>> property, and its level is no higher than yours.
+
 ==== Adventurer's Ability
 You may change your __Adventurer's Ability__ if you want.
 
-
 ==== Mage's Ability
 You gain one of the abilities below:
-
 //START_SORT //KEY:
 
 
@@ -285,6 +318,7 @@ any __item slots__.
 
 //END_SORT
 
+
 === Level 5
 
 ==== More Hit Points
@@ -294,6 +328,9 @@ Increase your __hit point total__ by 1d6. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
+==== New Spellbook
+You acquire a __mage's spellbook__ with two __usage points__. The spell in the
+book has the <<mage>> property, and its level is no higher than yours.
 
 === Level 6: Graduation
 It is time for you to move on. You’re no longer just an hero, you’re an Elite.
@@ -644,13 +681,29 @@ You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
 //KEY:
 [reftext="champion"]
 [[champion]]
-*champion*: A type of spell that can be cast by <<_champion,champions>>.
+*Champion (spell property)*: Spells with this property can only be cast by
+<<_champion,champions>>.
+
+
+//KEY:
+[reftext="mage"]
+[[mage]]
+*Mage (spell property)*: Spells with this property can only be cast by
+<<_mage,mages>>.
+
 
 //KEY:
 [reftext="x"]
 [[X]]
-*X*: The level of the spell. See xref:adventurer#X[X] in the adventurer's
-guide.
+*X (spell property)*: The level of the spell. See xref:adventurer#X[X] in the
+adventurer's guide.
+
+
+//KEY:
+[reftext="basic"]
+[[basic]]
+*Basic (spell property)*: Spells with this property are basic, and have no
+specific class requirements.
 
 
 //END_SORT
