@@ -41,38 +41,48 @@ one other stat by one point as well.
 .Champion Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
-| Weapon Type             | Skill level | Damage Roll
-//------------------------|-------------|------------
-| Light Melee Weapons     | Skilled     | 1d6
-| Ranged Weapons          | Skilled     | 1d6
-| Unarmed Combat          | Unskilled   | 1d3
-| Heavy Melee Weapons     | Unskilled   | 1d10
-//------------------------|-------------|------------
+| Weapon Type             | Skill level   | Damage Roll
+//------------------------|---------------|------------
+| Light Melee Weapons     | __skilled__   | 1d6
+| Ranged Weapons          | __skilled__   | 1d6
+| Unarmed Combat          | __unskilled__ | 1d3
+| Heavy Melee Weapons     | __unskilled__ | 1d10
+//------------------------|---------------|------------
 |===
 
 ==== Armor Skills
-You are skilled at using light and medium armor, as well as light and medium
-shields.
+You are __skilled__ at using light and medium armor, as well as light and
+medium shields.
 
 ==== Champion Spellcasting
 
-As a champion, you can use __champion's spellbooks__ to cast spells more
-efficiently.
+You can use __champion's spellbooks__ to cast spells directly from the front
+lines without even opening the books.
 
+*Champion's spellbooks* can contain both __basic__ and __champion__ spells,
+they can only be used by the champion they are attuned to, and they can be used
+without being opened.
 
-*Champion's spellbooks* are an upgraded version of basic spellbooks, that have
-the following properties:
+*Spellcasting requirements:* 
 
-* They can contain both __basic__ and __champion__ spells.
-* They can only be used by the champion they are attuned to.
-* They allow for more fast an easy spellcasting.
+* You must have the __champion's spellbook__ with the given spell inscribed
+  in it.
+* The spell's level must not be higher than yours.
+* The book must be attuned to you.
+* The book must have at least one __usage point__. 
+* You must be holding the book up high in one hand.
+* You must be able to speak, and move one arm, hands, and fingers.
+* You must not be __exhausted__, __on fire__, or __restrained__.
 
-*Champion's spellcasting* is done by by grasping a one of your champion's
-spellbooks firmly in one hand, holding it up, and __shouting__ an incantation
-from memory. Once this is done, you roll a __charisma__ check, and if it
-succeeds, you cast the spell. As opposed to __basic spellcasting__, you only
-need one free hand, and you do not need the ability to read the text in the
-book.
+*Spellcasting procedure:*: Make a __charisma__ check:
+
+.. If you rolled a __1__, the spell takes effect, and the book does not lose
+   any __usage points__.
+.. If your check was a success, the spell spell takes effect, and the book
+   loses one __usage point__.
+.. If your check failed, the spell fizzles, but no __usage points__ are lost.
+.. If you rolled a __20__, the spell fizzles, and the book loses all its
+   __usage points__.
 
 *Creating a champion's spellbook* is done by upgrading one of your basic
 spellbooks. It takes one hour per spell level and requires one __consumption__
@@ -89,9 +99,11 @@ per spell level, one consumption of __magic components__ per spell level, and
 can only be done if your level is at least as high as the spell's level.
 
 ==== Peaceful Rest
-You acquire a champion's spellbook with the spell <<_peaceful_rest_x>> on it.
-It has 1 __usage point__, and when you carry it, it does not take up any __item
-slots__.
+You acquire a champion's spellbook with the spell <<_peaceful_rest>> on it. It
+has 1 __usage point__, and when you carry it, it does not take up any __item__
+__slots__. The spellbook gains an extra usage point when you reach level 5, 7,
+and 9.
+
 
 === Level 4
 
@@ -102,21 +114,48 @@ Increase your __hit point total__ by 1d8. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
+==== Adventurer's Ability
+You may change your __Adventurer's Ability__ if you want.
+
+==== Champion's Special Ability
+You gain one of the abilities below.
+
+//START_SORT //KEY:
+
+//KEY:
+*Bane of Demons*: When you attack an demonic creature (such as the various
+dungeon guards and dungeon masters), your __attach check__ and __damage roll__
+is made with __advantage__.
 
 
-.. Foe of Undead
-.. Foe of Orcs
-.. Foe of Demons 
-.. Foe of Mechanoids
+//KEY:
+*Bane of Mechanoids*: When you attack an mechanoid creature (such as golems and
+iron guards), your __attach check__ and __damage roll__ is made with
+__advantage__.
 
-asdasd
 
-* Lay on hands ????
-* Burial ????
-* Increase your __hit point total__ by 1d8.
-* Roll a d20. Increase one of the stats (if any) that are lower than what you
-  rolled.
-* You may switch your __Adventurer's Special Ability__ if you want.
+//KEY:
+*Bane of Orcs*: When you attack an orcish creature (orc, troll, bugbear, etc.),
+your __attach__ __check__ and __damage__ __roll__ is made with __advantage__.
+
+
+//KEY:
+*Bane of Undeads*: When you attack an undead creature, your __attach__
+__check__ and __damage__ __roll__ is made with __advantage__.
+
+
+//KEY:
+*Healer*: You obtain a champion's spellbook with the spell __Heal 4__ on it.
+
+* It starts as __Heal{nbsp}4__, and its level increases by one whenever you
+  gain a level.
+* It does not take up any __item slots__.
+* It has 1 __usage point__, and gains one extra __usage point__ when
+  you reach level 5, 7, and 9.
+* If you lose or change this ability, you keep the book as it is, but it begins
+  taking up one __item slot__, and it does not gain any more spell levels.
+
+//END_SORT
 
 
 === Level 5
@@ -128,7 +167,11 @@ Increase your __hit point total__ by 1d8. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
-* ?????? Turn undead and/or orc and/or demons ????
+
+=== Level 6: Graduation
+It is time for you to move on. You’re no longer just an hero, you’re an Elite.
+See how this affects you in the
+xref:elites#[Elite’s Guide to doom & destruction & stuff].
 
 // CHAMPION }}}
 
@@ -149,32 +192,53 @@ Increase your __intelligence__ and __wisdom__ by one point each, and increase
 one other stat by one point as well.
 
 ==== Weapon Skills
-You are only skilled at using daggers and quarterstaffs, both of which are
+You are only __skilled__ at using daggers and quarterstaffs, both of which are
 __light melee weapons__, even though a quarterstaff is two-handed. You are not
 skilled at throwing daggers.
 
 .Rogue Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
-| Weapon Type             | Skill level | Damage Roll
-//------------------------|-------------|------------
-| Light Melee Weapons     | Unskilled   | 1d4
-| Ranged Weapons          | Unskilled   | 1d4
-| Unarmed Combat          | Unskilled   | 1d4
-| Heavy Melee Weapons     | Unskilled   | 1d8
-| Quarterstaffs           | Skilled     | 1d8
-| Daggers                 | Skilled     | 1d6
-//------------------------|-------------|------------
+| Weapon Type             | Skill level   | Damage Roll
+//------------------------|---------------|------------
+| Light Melee Weapons     | __unskilled__ | 1d4
+| Ranged Weapons          | __unskilled__ | 1d4
+| Unarmed Combat          | __unskilled__ | 1d4
+| Heavy Melee Weapons     | __unskilled__ | 1d8
+| Quarterstaffs           | __skilled__   | 1d8
+| Daggers                 | __skilled__   | 1d6
+//------------------------|---------------|------------
 |===
 
 ==== Armor Skills
-You are skilled at using light armor, but not shields.
+You are __skilled__ at using light armor, but not shields.
 
+==== Mage Spellcasting
 
-==== Mage Casting
+You can use __mage's spellbooks__ to cast spells much more efficiently.
 
-* ???? When rolling a __1__ on your spellcasting check, you cast the spell
-  completely for free, and you get a free action.
+*Mage's spellbooks* can contain both __basic__ and __mage__ spells, they can
+only be used by mages, and they are more efficient than __basic spellbooks__.
+
+*Spellcasting requirements*:
+
+* You must have a __mage's spellbook__ with the given spell inscribed in it.
+* The spell's level must not be higher than yours.
+* The spellbook must have at least one __usage point__.
+* You must be holding the spellbook open in both hands.
+* You must be able to see, speak, read, and move your arms, hands, and fingers.
+* You must not be __exhausted__, __on fire__, __prone__, or __restrained__.
+
+*Spellcasting procedure*: You cast the spell and the book loses one __usage__
+__point__. Unlike __basic spellcasting__, there is no __intelligence check__
+involved.
+
+*Recharging*: You can recharge a __mage's spellbook__ if the spell's level
+isn't higher than yours. Your start by spending one __consumption__ of magic
+components, and then you perform a 15-minute ritual. When it is complete, 
+you have recharged the spellbook back to full capacity.
+
+*Mage's Ritual Casting* works exactly like __basic ritual casting__.
 
 
 === Level 4
@@ -186,6 +250,41 @@ Increase your __hit point total__ by 1d6. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
+==== Adventurer's Ability
+You may change your __Adventurer's Ability__ if you want.
+
+
+==== Mage's Ability
+You gain one of the abilities below:
+
+//START_SORT //KEY:
+
+
+//KEY:
+*Librarian*: Three of the __mage's spellbooks__ you're carrying do not take up
+any __item slots__.
+
+
+//KEY:
+*Blood Mage*: When casting a spell, you can chose to sacrifice a bit of your
+life force to improve its effect. You take 5 points of damage, but all
+checks you make in conjunction with casting your spells have __advantage__.
+This includes damage rolls and the various checks some spells require you to
+make, such as the __charisma__ checks you must make when casting the __Snooze
+(X)__ spell.
+
+
+//KEY:
+*Librarian*: ????
+
+//KEY:
+*Librarian*: ????
+
+//KEY:
+*Librarian*: ????
+
+//END_SORT
+
 === Level 5
 
 ==== More Hit Points
@@ -194,6 +293,12 @@ Increase your __hit point total__ by 1d6. Roll with __advantage__.
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
+
+
+=== Level 6: Graduation
+It is time for you to move on. You’re no longer just an hero, you’re an Elite.
+See how this affects you in the
+xref:elites#[Elite’s Guide to doom & destruction & stuff].
 
 // MAGE }}}
 
@@ -217,27 +322,30 @@ Increase your __dexterity__ and __wisdom__ by one point each, and increase one
 other stat by one point as well.
 
 ==== Weapon skills
-You are skilled at using light weapons, unarmed combat, as well throwing
+You are __skilled__ at using light weapons, unarmed combat, as well throwing
 daggers.
 
 .Rogue Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
-| Weapon Type             | Skill level | Damage Roll
-//------------------------|-------------|------------
-| Light Melee Weapons     | Skilled     | 1d6
-| Throwing Daggers        | Skilled     | 1d6
-| Other Ranged Weapons    | Unskilled   | 1d4
-| Unarmed Combat          | Unskilled   | 1d4
-| Heavy Melee Weapons     | Unskilled   | 1d8
-//------------------------|-------------|------------
+| Weapon Type             | Skill level   | Damage Roll
+//------------------------|---------------|------------
+| Light Melee Weapons     | __skilled__   | 1d6
+| Throwing Daggers        | __skilled__   | 1d6
+| Other Ranged Weapons    | __unskilled__ | 1d4
+| Unarmed Combat          | __unskilled__ | 1d4
+| Heavy Melee Weapons     | __unskilled__ | 1d8
+//------------------------|---------------|------------
 |===
 
 ==== Armor Skills
-You are skilled at using light armor, but not shields.
+You are __skilled__ at using light armor, but not shields.
 
+==== Adventurer's Ability
+You may change your __Adventurer's Ability__ if you want.
 
 ==== Rogue's Ability
+You gain one of the abilities below.
 
 //START_SORT //KEY:
 
@@ -246,8 +354,8 @@ You are skilled at using light armor, but not shields.
 stealth, and camouflage. All attempts to track you are __difficult__; even
 animals have trouble finding your scent. If you attack someone who is
 completely unaware of your presence, you have __advantage__ on both your attack
-check and your damage roll, as long as you are skilled with the weapon you are
-using.
+check and your damage roll, as long as you are __skilled__ with the weapon you
+are using.
 
 
 //KEY:
@@ -265,14 +373,14 @@ as long as the target is within __L__ meters, where __L__ is your level.
 
 
 //KEY:
-*Lockpicker*: You have __advantage__ on all checks (including __consumption
-checks__) when using your lockpicking tools, and one of the sets of lockpicking
-tools you carry do not take up an __item slot__.
+*Lockpicker*: You have __advantage__ on all checks (including __consumption__
+__checks__) when using your lockpicking tools, and one of the sets of
+lockpicking tools you carry do not take up an __item slot__.
 
 
 //KEY:
-*Subduer*: You are skilled at using the __kosh__, and when you use it, the die
-you use to determine if the baddie goes unconscious is 1d10, and if the
+*Subduer*: You are __skilled__ at using the __kosh__, and when you use it, the
+die you use to determine if the baddie goes unconscious is 1d10, and if the
 baddie's level is lower than yours, you roll your d10 with __advantage__. When
 you chose this ability, and you already have the "`__shady__`" adventurer's
 ability, you may switch that ability for something else if you want.
@@ -295,7 +403,7 @@ able to track the actual path of the target.
 //KEY:
 *Venom Specialist*: You can make poisonous venom from dead monster parts. It
 requires a dead monster, a bonfire or similar, one hour of preparation, one
-__consumption__ of <<alchemist_tools>>, and one steel bottle to create a dose
+__consumption__ of <<_alchemist_tools>>, and one steel bottle to create a dose
 of venom that can coat the business end of a slashing or piercing weapon.
 
 It takes one __action__ to apply a readied bottle of venom to a readied weapon,
@@ -329,6 +437,12 @@ Increase your __hit point total__ by 1d8. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
+
+=== Level 6: Graduation
+It is time for you to move on. You’re no longer just an hero, you’re an Elite.
+See how this affects you in the
+xref:elites#[Elite’s Guide to doom & destruction & stuff].
+
 // ROGUE }}}
 
 
@@ -347,28 +461,30 @@ Your __hit point total__ is increased by 10.
 Increase your __constitution__ and __strength__ by one point each, and increase
 one other stat by one point as well.
 
-
 ==== Weapon Skills
 
 .Warrior Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
-| Weapon Type             | Skill level | Damage Roll
-//------------------------|-------------|------------
-| Light Melee Weapons     | Skilled     | 1d8
-| Ranged Weapons          | Skilled     | 1d6
-| Unarmed Combat          | Unskilled   | 1d4
-| Heavy Melee Weapons     | Skilled     | 1d12
-//------------------------|-------------|------------
+| Weapon Type             | Skill level   | Damage Roll
+//------------------------|---------------|------------
+| Light Melee Weapons     | __skilled__   | 1d8
+| Ranged Weapons          | __skilled__   | 1d6
+| Unarmed Combat          | __unskilled__ | 1d4
+| Heavy Melee Weapons     | __skilled__   | 1d12
+//------------------------|---------------|------------
 |===
 
 ==== Armor Skills
-You are skilled at using light and medium armor, as well as light and medium
-shields.
+You are __skilled__ at using light and medium armor, as well as light and
+medium shields.
 
 ==== Bonus Damage
-When you strike with a weapon you're skilled with, you add your __level__ to
-the damage roll.
+When you strike with a weapon you're __skilled__ with, you add your __level__
+to the damage roll.
+
+==== Adventurer's Ability
+You may change your __Adventurer's Ability__ if you want.
 
 ==== Warrior Special Ability
 Chose one of the abilities below. You may switch this ability every time you
@@ -393,18 +509,21 @@ who has the __backstabber__ ability.
 But you only have to roll lower than or equal to your level.
 
 [quote]
-This means that, on average, every 6th attack check would be a critical hit,
+If you're level 4, on average, every 6th attack check would be a critical hit,
 which gives you an extra action.
 
 
 //KEY:
-*Hauler*: Your number of total number of item slots and your __unencumbered__
-item slots is increased by __L__, where __L__ is your level.
+*Hauler*: Three of your items does not take up any __item slots__.
+
 
 //KEY:
-*Pugilist*: You are skilled at unarmed combat, your unarmed damage is 1d8, you
-are allowed to add the warrior's Bonus Damage, and you are able to fully damage
-creatures with resistance to non-magical attacks.
+*Pugilist*: You are __skilled__ at unarmed combat, your unarmed damage is 1d10,
+you are allowed to add the warrior's Bonus Damage, and you are able to fully
+damage creatures with resistance to non-magical attacks. In addition to these
+benefits, you are able to use a light or medium shield along with your unarmed
+combat, but your damage is only 1d8 if doing so.
+
 
 //KEY:
 *Shield Fighter*: If you failed an attack check with a light melee weapon, and
@@ -423,8 +542,8 @@ away with __difficult__ checks.
 
 
 //KEY:
-*Tank*: You are skilled at using heavy armor, and one of the armor pieces you
-carry does not take up an __item slot__.
+*Tank*: You are __skilled__ at using heavy armor, and one of the armor pieces
+you carry does not take up any __item slots__.
 
 //END_SORT
 
@@ -446,11 +565,20 @@ Increase your __hit point total__ by 1d10. Roll with __advantage__.
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
+
+=== Level 6: Graduation
+It is time for you to move on. You’re no longer just an hero, you’re an Elite.
+See how this affects you in the
+xref:elites#[Elite’s Guide to doom & destruction & stuff].
+
 // WARRIOR }}}
 
 
 // {{{ HERO GEAR
 == HERO GEAR
+
+=== Alchemist tools
+Blaaaaaahahaaahah
 
 // }}}
 
@@ -461,15 +589,8 @@ that stat is increased by 1 point.
 //START_SORT ===
 
 
-=== Peaceful Rest (X)
-*<<holy>>, Level 3. __ritual__*
-
-You touch a inanimate corpse that has died within the last __charisma__ hours.
-That corpse will not rise as an undead unless a sufficiently powerful
-necromancer uses dark magic on it.
-
 === Detect Undead, Major
-*<<holy>>, Level 4. Duration: __wisdom__ hours.*
+*<<champion>>, Level 4. Duration: __wisdom__ hours.*
 
 You can feel when one or more undead creatures are within __wisdom__ meters of
 you. You can detect undead creatures through most walls, but not it cannot
@@ -497,6 +618,18 @@ touch.
 
 Destroying or severely damaging either clipboard breaks the spell.
 
+
+=== Peaceful Rest
+*<<champion>>, Level 3. __ritual__*
+
+You touch a inanimate corpse that has died within the last __charisma__ hours.
+That corpse will not rise as an undead unless a sufficiently powerful
+necromancer uses dark magic on it.
+
+=== Trauma (X)
+*Level 6*
+You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
+
 //END_SORT
 
 // SPELLS }}}
@@ -507,22 +640,18 @@ Destroying or severely damaging either clipboard breaks the spell.
 
 //START_SORT //KEY:
 
-//KEY:
-=== Trauma (X)
-*Level 6*
-You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
-
 
 //KEY:
-[reftext="holy"]
-[[holy]]
-*holy*: A type of spell that can be cast by <<_champion,champions>>.
+[reftext="champion"]
+[[champion]]
+*champion*: A type of spell that can be cast by <<_champion,champions>>.
 
 //KEY:
 [reftext="x"]
 [[X]]
 *X*: The level of the spell. See xref:adventurer#X[X] in the adventurer's
 guide.
+
 
 //END_SORT
 // }}}

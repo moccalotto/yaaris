@@ -322,8 +322,8 @@ deal with each weapon category.
 //----------------------|-------------|------------
 | Light Melee Weapons¹  | Skilled     | 1d6
 | Ranged Weapons²       | Skilled     | 1d6
-| Unarmed Combat        | Unskilled   | 1d3
 | Heavy Melee Weapons³  | Unskilled   | 1d10
+| Unarmed Combat⁴       | Unskilled   | 1d3
 //----------------------|-------------|------------
 |===
 
@@ -334,6 +334,7 @@ javelins), and these weapons only require one hand.  Almost all weapons that
 have ammunition (such as bows, crossbows, slings) require two hands to use.
 <3> Heavy melee weapons always require two hands, and can never be used as
 throwing weapons.
+<4> Unarmed combat requires two free hands.
 --
 
 .Range
@@ -403,8 +404,9 @@ Increase that stat by 1 point. If no stats are lower than your die roll,
 nothing happens.
 
 ==== Adventurer’s Special Ability
-Choose one of the abilities below. You can switch this ability at levels 4, 6,
-8, and 10.
+Choose one of the abilities below. You can switch this ability at later levels,
+depending on which heroic class you pick. See the
+xref:heros#[Hero’s Guide to doom & destruction & stuff].
 
 //START_SORT //KEY:
 
@@ -414,11 +416,13 @@ If an adjacent baddie moves away from you, you can make a melee attack against
 them with a readied melee weapon you are skilled at using. When you do so, you
 have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll.
 
+
 //KEY:
 [reftext="armorer"]
 [[armorer]]
-*Armorer*: You can repair a piece of broken armor if you have
-<<tinkering_tools>>.
+*Armorer*: You obtain a set of <<tinkering_tools>>, and you can can repair a
+piece of broken weapons and armor pieces using such tools.
+
 
 //KEY:
 [reftext="everdeen"]
@@ -427,12 +431,15 @@ have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll
 make a __charisma__ check. If successful, you somehow have a single extra arrow
 and you’re ready to fire. If unsuccessful, you cannot use this ability before
 you have stocked up on ammunition. This ability also works with bolts,
-slingshots, and darts.
+slingshot, and darts, but not thrown weapons such as daggers and javelins.
+
 
 //KEY:
 [reftext="great weapon specialist"]
 [[great_weapon_specialist]]
-*Great weapon specialist*: You are skilled at using heavy melee weapons.
+*Heavy weapon specialist*: You are skilled at using heavy melee weapons, and
+when doing so, your damage die is 1d12.
+
 
 //KEY:
 [reftext="monstrous gourmand"]
@@ -446,11 +453,13 @@ also able to eat fresh, uncooked, monster meat without getting sick. It
 requires a sharp cutting tool, 3d6 minutes, and a successful __constitution__
 check to create and eat such a “meal”.
 
+
 //KEY:
 [reftext="negotiator"]
 [[negotiator]]
 *Negotiator*: You have advantage on checks that involve negotiation. You also
 have advantage on your <<haggling_check>>.
+
 
 //KEY:
 [reftext="pugilist"]
@@ -462,6 +471,7 @@ die is 1d6.
 Striking certain monsters (such as fire elementals) with your body can have
 grave consequences.
 
+
 //KEY:
 [reftext="rider"]
 [[rider]]
@@ -471,6 +481,10 @@ riding-related checks. You have <<advantage>> on
 <<consumption_check,consumption checks>> for animal feed. When you reach level
 5 your riding proficiency expands to all rideable land creatures. At level 8,
 you can ride virtually any tame creature.
+
+[IMPORTANT]
+If you lose this ability (by changing it at later levels), you do not lose your
+mount, but you lose all your <<advantage,advantages>>.
 
 ****
 *Your horse* can drag a cart that can either carry you and two others, or you
@@ -501,6 +515,7 @@ using a <<kosh>>, something normal adventurers are not.
 The gods do not smile on people who use this ability to get rich by selling
 daggers.
 
+
 //KEY:
 [reftext="spelunker"]
 [[spelunker]]
@@ -509,28 +524,33 @@ You cannot go <<dungeon_mad>>.
 You always have some chalk.
 You always know the cardinal directions.
 One of the ropes you carry does not take up an <<item_slots,item slot>>.
-You have <<advantage>> on <<consumption_check,consumption checks>> checks
-for <<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>. You have
-<<advantage>> on checks that involve navigation in caves and dungeons.
+You have <<advantage>> on <<consumption_check,consumption checks>> checks for
+<<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>.
+You have <<advantage>> on checks that involve navigation in caves and dungeons.
+
 
 //KEY:
 [reftext="thrifty"]
 [[thrifty]]
-*Thrifty*: You have advantage on <<consumption_check,consumption checks>> with
-<<coin_purse,coin purses>>.
+*Thrifty*: You have <<advantage>> on <<consumption_check,consumption checks>>
+with <<coin_purse,coin purses>>.
+
 
 //KEY:
 [reftext="traveler"]
 [[traveler]]
-*Traveler*: You have advantage on <<consumption_check,consumption checks>> for
-rations and animal feed. You have advantage on geography related checks. One of
-the ration packs you carry does’t take up an <<item_slots,item slot>>
+*Traveler*: You have <<advantage>> on <<consumption_check,consumption checks>>
+for <<rations>> and animal feed. You have <<advantage>> on geography related
+checks. One of the ration packs you carry does’t take up an <<item_slots,item
+slot>>
+
 //END_SORT
+
 
 === Level 3: Graduation
 It is time for you to move on. You’re no longer just an adventurer, you’re a
-Hero. Choose a hero class from the xref:heroes#[Hero’s Guide to doom &
-destruction & stuff].
+Hero. Choose a hero class from the 
+xref:heros#[Hero’s Guide to doom & destruction & stuff].
 
 [quote]
 Even though you gain a heroic class at 3rd level, you're still an adventurer;
@@ -589,8 +609,8 @@ specified *__target number__*, which is usually one of your stats.
 .Target Number
 ====
 You want to lift something really heavy, so the GM tells you to make a
-__strength__ check. You roll a d20. If you rolled lower than your __strength__, the
-check was successful, otherwise it was unsuccessful.
+__strength__ check. You roll a d20. If you rolled lower than your __strength__,
+the check was successful, otherwise it was unsuccessful.
 ====
 
 [reftext="1"]
@@ -1077,8 +1097,8 @@ spikes can wedge a door shut until the spikes are removed.
 Tinkering tools can be used to disarm traps and repair broken items.
 
 Repairing mechanism:: To repair a trap, mechanism, stuck door, or similar, you
-spend 10 minutes and one <<consumption_check,consumption>> of __tinkering
-tools__. Then you make a __dexterity__ check and an __intelligence__ check.
+spend 10 minutes and one <<consumption_check,consumption>> of tinkering tools.
+Then you make a __dexterity__ check and an __intelligence__ check.
 
 * If both are successful, you have repaired the item.
 * If one is successful, the item is still damage, but you may try again.
@@ -1710,21 +1730,20 @@ description, it is an <<Actions,action>> to cast a spell.
 
 Requirements::
 * You must have a <<spellbook>> with the given spell inscribed in it.
-* The spell must be <<basic>> (all spells in this document are <<basic>>),
-  and it's level must not be higher than yours,
+* The spell's level must not be higher than yours,
 * You must not have cast any spells previously in this <<round>>.
 * The <<spellbook>> must have at least one <<usage_points,usage point>>.
 * You must be holding the <<spellbook>> open in both hands.
-* You must be able to see, speak, read, and move your hards, hands, and fingers
-  freely.
-* You must not be <<encumbered>>, <<exhausted>>, <<on_fire>>, or <<prone>>.
+* You must be able to see, speak, read, and move your arms, hands, and fingers.
+* You must not be <<encumbered>>, <<exhausted>>, <<on_fire>>, <<prone>>, 
+  <<restrained>>, or <<prone>>.
 
 Procedure::
-* Make an __intelligence__ check:
+Make an __intelligence__ check:
 .. If successful, the spell takes effect,
    and the spellbook loses one of its <<usage_points>>.
 .. If you rolled a <<nat1>>, the spell takes effect, and the spellbook
-   does not lose a <<usage_point>>.
+   does not lose a <<usage_points>>.
 .. If unsuccessful, the spell fizzles, but no <<usage_points>> are lost.
 .. If you rolled a <<nat20>>, spell fizzles and the spellbook instantly loses
    all its <<usage_points>>.
@@ -2206,12 +2225,14 @@ moveable object. If the object is disturbed by a creature (but not the wind), a
 loud alarm will "`ring`" inside your head. The alarm is loud enough to wake you
 up, but soft enough that you don’t wake up screaming or startled.
 
+
 === Invisibility to Stupidity (X)
 *Level 1+, <<focus>>, duration: 5·<<X>> Rounds*
 
 Creatures with an __intelligence__ lower than <<X>>+2 cannot see you, smell you,
 or detect you in any way, not even by touch. If such a creature touches you,
 it will rationalize the sensation away.
+
 
 === Jump (X)
 *Level 1+*
@@ -2238,6 +2259,7 @@ If the target is wearing three or more pieces of metal armor, you have
 [quote]
 Medium- and heavy armor is made of metal unless otherwise specified.
 
+
 === Mage Might (X)
 *Level 1+, <<focus>> (duration up to <<X>> rounds)*
 
@@ -2259,6 +2281,7 @@ magical, and flies in a direct line towards an enemy within __wisdom__ meters at
 great speed. The stone automatically hits the opponent, dealing damage equal to
 three times your <<caster_level,level>>.
 
+
 === Mind Message (X)
 *Level 1+*
 
@@ -2266,6 +2289,7 @@ You target a creature within 10 plus 10·<<X>> meters, and telepathically send
 10·<<X>> words to it. It can telepathically reply with the same number of
 words. If the recipient makes a successful __charisma__ check, no one notices its
 distraction while receiving and replying.
+
 
 === Mustrum’s Mundane Shroud (X)
 *Level 2, <<ritual>>, duration: <<X>> days*
@@ -2275,6 +2299,7 @@ You select a magical item within 2 meters of you, weighing no more than <<X>> kg
 This spell completely hides the fact that the item is magical; only observers
 with a level higher than <<X>> can detect the item’s magic, and that this spell
 has been used to hide it.
+
 
 === Nostrum’s Magical Aura (X)
 *Level 1, <<ritual>>, duration: <<X>> days*
@@ -2288,12 +2313,14 @@ magical, and they will think the item has magical properties of your choosing.
 Observers with a level higher than <<X>> can detect that this spell has been
 cast, and that the item is nonmagical.
 
-=== Orgasm (X)
+
+=== Pleasure (X)
 *Level 2+*
 
-You touch a willing target, who instantly gets an orgasm, the intensity of
-which depends on <<X>>. Once a target has been affected by this spell, they
-are immune to this spell for 1d6 hours.
+You touch a willing person, who instantly gets an orgasm, the intensity of
+which depends on <<X>>. Once a target has been affected by this spell, they are
+immune to this spell for 1d6 hours.
+
 
 === Otto Luke's Torch (X)
 *Level 2+, <<focus>>, range: <<X>>·5 meters*
@@ -2325,6 +2352,7 @@ check to see the phantasm for what it is. The check is easy if the creature's
 level is 2 or more higher than the caster's level, and difficult of the
 creatures level is 2 or more lower than the caster's level.
 
+
 === Purify Rations (X)
 *Level 1+, <<ritual>>*
 
@@ -2334,11 +2362,13 @@ even tasty to eat, no matter how old, stale, and nasty they were.
 This spell does not remove curses or other magical effects that may affect the
 food and drink.
 
+
 === Read Script
 *Level 2, <<ritual>>, duration: 10·__intelligence__ minutes*
 
 You can read and understand any written language. This spell does not decode
 cryptographic cipher text, but it does let you understand secret languages.
+
 
 === Remove Fear (X)
 *Level 2+, range: __charisma__ meters*
@@ -2351,6 +2381,7 @@ remove.
 
 [quote]
 There are more fear effects than the ones described in this guide.
+
 
 === Repair (X)
 *Level 1, range: 5+<<X>> meters*
@@ -2370,6 +2401,7 @@ Once an item has been repaired, it becomes slightly magical for 1 day; it
 cannot be repaired in that period, and it will be detectable with
 <<_detect_magic>>.
 
+
 === Shield (X)
 *Level 1+, <<focus>> (up to 5·<<X>> rounds)*
 
@@ -2378,6 +2410,7 @@ For the next 5·<<X>> rounds, all damage you receive is halved (rounded down).
 [example]
 If a baddie hits you for 5 points of damage, you only take 2 points of damage.
 And if you’re hit for 1 point of damage, you take zero points of damage.
+
 
 === Slow (X)
 *Level 1+, <<focus>> (up to <<X>> rounds)*
@@ -2397,6 +2430,7 @@ the magic in the item activates and the fall is slowed so the wearer does not
 take any damage. When the wearer has landed, the item loses one usage point.
 When all the item’s usage points have been spent, the item crumbles to dust.
 
+
 === Snooze (X)
 *Level 1+*
 
@@ -2406,7 +2440,7 @@ creatures that need regular sleep, and whose level isn't higher than <<X>>.
 Select a baddie within 10 meters. If the target has more hit points than your
 __charisma__, the spell fizzles, otherwise the baddie falls asleep.
 
-If the spell didn't fizzle, you may make another __charisma__ check, and if it
+If the spell didn't fizzle, you may make a __charisma__ check, and if it
 succeeds, the spell affects <<X>> additional creatures within 5 meters of the
 first target.
 //
@@ -2415,6 +2449,7 @@ selected in order of closeness to the first target.
 
 Creatures sleep for a number of rounds equal to your __charisma__, however a
 sleeping baddie wakes up if they take damage.
+
 
 === Spenser’s levitating Bowl
 *Level 1, <<ritual>>, duration: __intelligence__ · 10 minutes*
