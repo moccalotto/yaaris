@@ -268,9 +268,15 @@ the procedure is the following: you spend 10 minutes chanting and reading from
 the spellbook, then you spend one __consumption__ of __magic_components__, and
 then the spell takes
 
+*Upgrade Basic Spellbooks* takes one hour per spell level and requires one
+__consumption__ of __magic components__ per spell level. The spell in the
+source book must not have a higher level than you.
+
+
 ==== New Spellbook
 You acquire a __mage's spellbook__ with two __usage points__. The spell in the
 book has the <<mage>> property, and its level is no higher than yours.
+
 
 === Level 4
 
@@ -294,26 +300,52 @@ You gain one of the abilities below:
 
 
 //KEY:
-*Blood Mage*: When casting a spell, you can chose to sacrifice a bit of your
-life force to improve its effect. You take 5 points of damage, but all
-checks you make in conjunction with casting your spells have __advantage__.
-This includes damage rolls and the various checks some spells require you to
-make, such as the __charisma__ checks you must make when casting the __Snooze
-(X)__ spell.
+*Blood Mage*: When casting a spell, you can chose to sacrifice some of your
+life force to improve its effect. You take 5 points of damage, but all checks
+you make in conjunction with casting your spells have __advantage__. This
+includes damage rolls and any checks some spells require you to make, such as
+the __charisma__ check you must make when casting the __Snooze (X)__ spell.
 
 
 //KEY:
-*Librarian*: ????
+*Scholar*: You acquire a special __mage's spellbook__ with a number of __usage
+points__ equal to your level and it contains a spell of your level or less. As
+long as you are a __scholar__ the book does not take up any __item slots__, its
+__usage points__ continues to match your level, and you can to change the spell
+every time you gain a new level. When changing the spell in the book you must
+have some knowledge of the new spell; for instance, you can change Heal 4 into
+Heal 5, but you cannot change your spell into Money Talks 5 if you haven't used
+a book with that spell or one of its multilevel variants before.
+
 
 //KEY:
-*Librarian*: ????
+*Collector*: When you become a __collector__,  and every time you as a
+__collector__ gain a new level, you acquire a new __mage's spellbook__ with a
+new spell on it; the spell is of your level or less and it has two __usage
+points__.
+
 
 //KEY:
-*Librarian*: ????
+*Efficient Caster*: Whenever you cast a spell you make a roll. If you roll
+below or equal your __level__ your book does not lose a __usage point__ and you
+gain a new action right away, allowing you to, among other things, cast the same
+spell again.
+
 
 //KEY:
-*Librarian*: Three of the __mage's spellbooks__ you're carrying do not take up
-any __item slots__.
+*Savant*: You can attempt to cast any one of your spells directly from memory a
+without using its spellbook. This means you don't have to have the book in your
+hands, and you need not be able to see and read. To do so you first lose a
+number of __hit points__ equal to the spell's level, and then you must succeed
+a __difficult__ __intelligence__ check; if that check succeeded you cast the
+spell successfully. When casting a spell from memory you don't need to have its
+book on you, but you must have had it on you sometime within __L__ days, where
+__L__ is your level.
+
+
+//KEY:
+*Librarian*: At any point in time, three of your __mage's spellbooks__ do not
+take up any __item slots__. 
 
 
 //END_SORT
