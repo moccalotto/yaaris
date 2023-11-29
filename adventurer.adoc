@@ -961,19 +961,22 @@ them or exchange them.
 [[purse_copper]]
 *Copper purse*: for 1,000 copper pieces you can buy a copper purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 copper
-pieces, you make a <<consumption_check>> for the copper purse instead.
+pieces (i.e. less than 1 silver piece), you can spend one
+<<consumption_check,consumption>> of this purse instead of spending coin.
 
 [reftext="silver purse"]
 [[purse_silver]]
 *Silver purse*: for 1,000 silver pieces you can buy a silver purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 silver
-pieces, you make a <<consumption_check>> for the silver purse instead.
+pieces (i.e. less than 1 gold piece), you can spend one
+<<consumption_check,consumption>> of this purse instead of spending coin.
 
 [reftext="gold purse"]
 [[purse_gold]]
 *Gold purse*: for 1,000 gold pieces you can buy a gold purse. It has 10
-<<usage_points>>. Whenever you buy something costing less than 100 gold pieces,
-you make a <<consumption_check>> for the gold purse instead.
+<<usage_points>>. Whenever you buy something costing less than 100 gold
+pieces you can spend one <<consumption_check,consumption>> of this purse
+instead of spending coin.
 
 
 //KEY:
@@ -1000,6 +1003,7 @@ hours unless they're healed.
 [quote]
 Aside from losing a single hit point, and potentially falling unconscious,
 the target suffers no other ill effects from being struck with a kosh.
+
 
 //KEY:
 [reftext="lamp oil"]
