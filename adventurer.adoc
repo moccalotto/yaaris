@@ -1293,7 +1293,7 @@ See the <<adventurer_damage_rolls_table>> table to find your damage die.
 <<great_weapon_specialist,Great weapon specialists>> are also skilled in using
 heavy melee weapons.
 
-===== Critical hits
+===== Critical Hits
 If you roll a <<nat1>> on your attack check, and you're skilled at using your
 weapon, you get an extra action for free. You do not get any <<moves>>, but you
 can use your action any way you like, including attacking the same opponent

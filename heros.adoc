@@ -13,13 +13,17 @@
 
 // {{{ VARIABLES
 :X: xref:adventurer#X[x]
+:action: xref:adventurer#_actions[action]
 :advantage: xref:adventurer#advantage[advantage]
 :adversarial: xref:adventurer#adversarial[adversarial]
 :armorer: xref:adventurer#armorer[armorer]
+:backstabber: xref:adventurer#backstabber[backstabber]
 :basic: xref:adventurer#basic[basic]
+:difficult: xref:adventurer#difficult[difficult]
 :consumption: xref:adventurer#consumption_check[consumption]
 :consumption_check: xref:adventurer#consumption_check[consumption check]
 :consumption_checks: xref:adventurer#consumption_check[consumption checks]
+:critical_hit: xref:adventurer#_critical_hits[critical hit]
 :encumbered: xref:adventurer#encumbered[encumbered]
 :exhausted: xref:adventurer#exhausted[exhausted]
 :hit_point_total: xref:adventurer#hit_point_total[hit point total]
@@ -458,7 +462,7 @@ __skilled__ with the weapon you are using.
 
 
 //KEY:
-*Acrobat*: By spending an __action__ you can jump up to __dexterity__ meters
+*Acrobat*: By spending an {action} you can jump up to __dexterity__ meters
 horizontally, or up to __L__ meters vertically, where __L__ is your level.
 You cannot do this if you're {encumbered}, {exhausted}, or similarly
 affected. Your acrobatic skills also enables you to move at full speed in
@@ -469,7 +473,7 @@ difficult terrain.
 *Dagger Master*: You do not need to use any __moves__ to ready a dagger as long
 as you have one on you, and you are not {encumbered}, {exhausted},
 {restrained} or similar. You can spend three __moves__ (instead of an
-__action__) to make a ranged attack with a dagger, as long as the target is
+{action}) to make a ranged attack with a dagger, as long as the target is
 within __L__ meters, where __L__ is your level.
 
 
@@ -490,7 +494,7 @@ than you. It cannot even be opened with the key. It takes 10 minutes and one
 one. You are __skilled__ at using the __kosh__, and when you use it, the die
 you use to determine if the baddie goes unconscious is 1d10, and if the
 baddie's level is lower than yours, you roll your d10 with {advantage}. If
-you combine this ability with the __shady__ adventurer's ability, the you roll
+you combine this ability with the {shady} adventurer's ability, the you roll
 1d12 with {advantage} to test for unconsciousness regardless of the level of
 the baddie.
 
@@ -542,7 +546,7 @@ preparation, one {consumption} of <<_alchemist_tools>>, and one steel bottle
 to create a dose of venom that can coat the business end of a slashing or
 piercing weapon, including arrowheads.
 
-It takes one __action__ to apply a readied bottle of venom to a readied weapon,
+It takes one {action} to apply a readied bottle of venom to a readied weapon,
 and it lasts for up to one week one the weapon.
 
 Once you have coated your weapon, you add __L__d6 to the damage of the next
@@ -631,13 +635,13 @@ gain a level.
 //KEY:
 *Basher*: If you have landed a successful hit with a non-broken blunt heavy
 melee weapon on a baddie no larger than you, you may push them 2 meters away
-from you. If your attack was a __critical hit__ you can push a creature of any
+from you. If your attack was a {critical_hit} you can push a creature of any
 size and weight. Pushing a baddie past or away from an ally with the
-__backstabber__ ability will trigger their bonus attack, but if __you__
-yourself have that ability, you do not get a bonus attack. 
-When you reach level 6 you can push a baddie 3 meters away from you, when you
-reach level 8 the distance is 4 meters, and a 10th level character with this
-ability can push an enemy up to 5 meters.
+{backstabber} ability will trigger their bonus attack, but if __you__ yourself
+have that ability, you do not get a bonus attack. When you reach level 6 you
+can push a baddie 3 meters away from you, when you reach level 8 the distance
+is 4 meters, and a 10th level character with this ability can push an enemy up
+to 5 meters.
 
 
 //KEY:
@@ -653,12 +657,12 @@ up any {item_slots}.
 //KEY:
 *Hunter*: Your ranged damage is increased to 1d10, you can attack baddies up to
 __wisdom__ meters away with a __normal__ check, and up to 2·__wisdom__ meters
-away with __difficult__ checks.
+away with {difficult} checks.
 
 
 //KEY:
 *Pugilist*: You are __skilled__ at unarmed combat, your unarmed damage is 1d10,
-you are allowed to add the warrior's <<Bonus Damage>>, and you are able to
+you are allowed to add the warrior's <<_bonus_damage>>, and you are able to
 fully damage creatures with resistance to non-magical attacks. In addition to
 these benefits, you are able to use a light or medium shield along with your
 unarmed combat, but your damage is only 1d8 if doing so.
@@ -670,7 +674,7 @@ your are wearing an non-broken shield, you are allowed to make an attack with
 your shield. In your hands, a shield is the same as a light melee weapon. 
 
 [quote]
-If you roll a __20__ on your shield attack, your shield becomes __broken__,
+If you roll a {nat20} on your shield attack, your shield becomes __broken__,
 which means you lose one __move__.
 
 
