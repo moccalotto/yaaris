@@ -308,17 +308,6 @@ the __charisma__ check you must make when casting the __Snooze (X)__ spell.
 
 
 //KEY:
-*Scholar*: You acquire a special __mage's spellbook__ with a number of __usage
-points__ equal to your level and it contains a spell of your level or less. As
-long as you are a __scholar__ the book does not take up any __item slots__, its
-__usage points__ continues to match your level, and you can to change the spell
-every time you gain a new level. When changing the spell in the book you must
-have some knowledge of the new spell; for instance, you can change Heal 4 into
-Heal 5, but you cannot change your spell into Money Talks 5 if you haven't used
-a book with that spell or one of its multilevel variants before.
-
-
-//KEY:
 *Collector*: When you become a __collector__,  and every time you as a
 __collector__ gain a new level, you acquire a new __mage's spellbook__ with a
 new spell on it; the spell is of your level or less and it has two __usage
@@ -333,6 +322,11 @@ spell again.
 
 
 //KEY:
+*Librarian*: At any point in time, three of your __mage's spellbooks__ do not
+take up any __item slots__. 
+
+
+//KEY:
 *Savant*: You can attempt to cast any one of your spells directly from memory a
 without using its spellbook. This means you don't have to have the book in your
 hands, and you need not be able to see and read. To do so you first lose a
@@ -344,8 +338,14 @@ __L__ is your level.
 
 
 //KEY:
-*Librarian*: At any point in time, three of your __mage's spellbooks__ do not
-take up any __item slots__. 
+*Scholar*: You acquire a special __mage's spellbook__ with a number of __usage
+points__ equal to your level and it contains a spell of your level or less. As
+long as you are a __scholar__ the book does not take up any __item slots__, its
+__usage points__ continues to match your level, and you can to change the spell
+every time you gain a new level. When changing the spell in the book you must
+have some knowledge of the new spell; for instance, you can change Heal 4 into
+Heal 5, but you cannot change your spell into Money Talks 5 if you haven't used
+a book with that spell or one of its multilevel variants before.
 
 
 //END_SORT
