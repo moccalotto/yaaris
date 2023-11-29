@@ -11,6 +11,21 @@
 :stem:
 :xrefstyle: basic
 
+// {{{ VARIABLES
+:X: xref:adventurer#X[x]
+:advantage: xref:adventurer#advantage[advantage]
+:basic: xref:adventurer#basic[basic]
+:exhausted: xref:adventurer#exhausted[exhausted]
+:hit_point_total: xref:adventurer#hit_point_total[hit point total]
+:nat1: xref:adventurer#nat1[1]
+:nat20: xref:adventurer#nat20[20]
+:on_fire: xref:adventurer#on_fire[on_fire]
+:recovery_die: xref:adventurer#recovery_die[recovery die]
+:restrained: xref:adventurer#restrained[restrained]
+:ritual: xref:adventurer#ritual[ritual]
+:trauma_table: xref:adventurer#trauma_table[trauma table]
+// }}}
+
 When you reach your third level, you can choose a heroic class, which allows
 you to obtain more powerful abilities, spells, and gear.
 
@@ -27,10 +42,10 @@ undead, casting spells from the front lines, and healing their comrades.
 === Level 3
 
 ==== Recovery Die
-Your __recovery die__ is 1d8.
+Your {recovery_die} is 1d8.
 
 ==== More Hit Points
-Your __hit point total__ is increased by 8.
+Your {hit_point_total} is increased by 8.
 
 ==== Better Stats
 Increase your __constitution__ and __charisma__ by one point each, and increase
@@ -59,7 +74,7 @@ medium shields.
 You can use __champion's spellbooks__ to cast spells directly from the front
 lines without even opening the books.
 
-*Champion's spellbooks* can contain both __basic__ and __champion__ spells,
+*Champion's spellbooks* can contain both {basic} and __champion__ spells,
 they can only be used by the champion they are attuned to, and they can be used
 without being opened.
 
@@ -72,21 +87,24 @@ without being opened.
 * The book must have at least one __usage point__.
 * You must be holding the book up high in one hand.
 * You must be able to speak, and move one arm, hands, and fingers.
-* You must not be __exhausted__, __on fire__, or __restrained__.
+* You must not be {exhausted}, {on_fire}, or {restrained}.
 
-*Spellcasting procedure:*: Make a __charisma__ check:
+*Spellcasting procedure:*: Make a __charisma__ check and refer to the table
+below.
 
-.. If you rolled a __1__, the spell takes effect, and the book does not lose
-   any __usage points__.
-.. If your check was a success, the spell spell takes effect, and the book
-   loses one __usage point__.
-.. If your check failed, the spell fizzles, but no __usage points__ are lost.
-.. If you rolled a __20__, the spell fizzles, and the book loses all its
-   __usage points__.
+[cols="^1s,11",stripes=odd]
+|===
+//----------|----------------------------------------------------
+| {nat1}    | The spell takes effect.
+| Success   | The spell takes effect, and the book loses a __usage point__.
+| Failure   | The spell fizzles.
+| {nat20}   | The spell fizzles, and the book loses all its __usage points__.
+//----------|----------------------------------------------------
+|===
 
 *Champion's Ritual Casting* works exactly like __basic ritual casting__, except
 you're using a __champion's spellbook__, and can cast <<champion>> spells,
-provided they have the __ritual__ property.
+provided they have the {ritual} property.
 
 *Upgrade Basic Spellbooks* takes one hour per spell level and requires one
 __consumption__ of __magic components__ per spell level. The spell in the
@@ -115,7 +133,7 @@ slots__.
 === Level 4
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d8. Roll with __advantage__.
+Increase your {hit_point_total} by 1d8. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -138,23 +156,23 @@ You gain one of the abilities below.
 //KEY:
 *Bane of Demons*: When you attack an demonic creature (such as the various
 dungeon guards and dungeon masters), your __attach check__ and __damage roll__
-is made with __advantage__.
+is made with {advantage}.
 
 
 //KEY:
 *Bane of Mechanoids*: When you attack an mechanoid creature (such as golems and
 iron guards), your __attach check__ and __damage roll__ is made with
-__advantage__.
+{advantage}.
 
 
 //KEY:
 *Bane of Orcs*: When you attack an orcish creature (orc, troll, bugbear, etc.),
-your __attach__ __check__ and __damage__ __roll__ is made with __advantage__.
+your __attach__ __check__ and __damage__ __roll__ is made with {advantage}.
 
 
 //KEY:
 *Bane of Undeads*: When you attack an undead creature, your __attach__
-__check__ and __damage__ __roll__ is made with __advantage__.
+__check__ and __damage__ __roll__ is made with {advantage}.
 
 
 //KEY:
@@ -174,7 +192,7 @@ __check__ and __damage__ __roll__ is made with __advantage__.
 === Level 5
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d8. Roll with __advantage__.
+Increase your {hit_point_total} by 1d8. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -205,10 +223,10 @@ The mage is a scholar that solely specializes in spellcasting.
 === Level 3
 
 ==== Recovery Die
-Your __recovery die__ is 1d6.
+Your {recovery_die} is 1d6.
 
 ==== More Hit Points
-Your __hit point total__ is increased by 6.
+Your {hit_point_total} is increased by 6.
 
 ==== Better Stats
 Increase your __intelligence__ and __wisdom__ by one point each, and increase
@@ -239,7 +257,7 @@ You are __skilled__ at using light armor, but not shields.
 ==== Mage Spellcasting
 You can use __mage's spellbooks__ to cast spells much more efficiently.
 
-*Mage's spellbooks* can contain both __basic__ and __mage__ spells, they can
+*Mage's spellbooks* can contain both {basic} and <<mage>> spells, they can
 only be used by mages, and they are more efficient than __basic spellbooks__.
 
 *Spellcasting requirements*:
@@ -281,7 +299,7 @@ book has the <<mage>> property, and its level is no higher than yours.
 === Level 4
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d6. Roll with __advantage__.
+Increase your {hit_point_total} by 1d6. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -302,7 +320,7 @@ You gain one of the abilities below:
 //KEY:
 *Blood Mage*: When casting a spell, you can chose to sacrifice some of your
 life force to improve its effect. You take 5 points of damage, but all checks
-you make in conjunction with casting your spells have __advantage__. This
+you make in conjunction with casting your spells have {advantage}. This
 includes damage rolls and any checks some spells require you to make, such as
 the __charisma__ check you must make when casting the __Snooze (X)__ spell.
 
@@ -354,7 +372,7 @@ a book with that spell or one of its multilevel variants before.
 === Level 5
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d6. Roll with __advantage__.
+Increase your {hit_point_total} by 1d6. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -384,7 +402,7 @@ The rogue is stealthy, clever, and dangerous.
 Your recovery die is 1d8.
 
 ==== More Hit Points
-Your __hit point total__ is increased by 8.
+Your {hit_point_total} is increased by 8.
 
 ==== Better Stats
 Increase your __dexterity__ and __wisdom__ by one point each, and increase one
@@ -419,13 +437,13 @@ You gain one of the abilities below.
 //START_SORT //KEY:
 
 //KEY:
-*Absent*: You have __advantage__ on all checks related to sneaking, hiding,
+*Absent*: You have {advantage} on all checks related to sneaking, hiding,
 stealth, and camouflage. All attempts to track you are __difficult__; even
 animals have trouble finding your scent, and you cannot be marked by someone
 with the __tracker__ ability.
 
 If you attack someone who is completely unaware of your presence you have
-__advantage__ on both your attack check and your damage roll, provided you are
+{advantage} on both your attack check and your damage roll, provided you are
 __skilled__ with the weapon you are using.
 
 
@@ -446,7 +464,7 @@ within __L__ meters, where __L__ is your level.
 
 
 //KEY:
-*Lockpicker*: You have __advantage__ on all checks (including __consumption__
+*Lockpicker*: You have {advantage} on all checks (including __consumption__
 __checks__) when using your lockpicking tools, and one of the sets of
 lockpicking tools you carry do not take up an __item slot__.
 If you do not have a set of lockpicking tools already, you receive one when
@@ -462,14 +480,14 @@ __consumption__ of lockpicking tools to do pseudo-jam a lock.
 *Pacifier*: If you don't have a kosh when you chose this ability you receive
 one. You are __skilled__ at using the __kosh__, and when you use it, the die
 you use to determine if the baddie goes unconscious is 1d10, and if the
-baddie's level is lower than yours, you roll your d10 with __advantage__. If
+baddie's level is lower than yours, you roll your d10 with {advantage}. If
 you combine this ability with the __shady__ adventurer's ability, the you roll
-1d12 with __advantage__ to test for unconsciousness regardless of the level of
+1d12 with {advantage} to test for unconsciousness regardless of the level of
 the baddie.
 
 
 //KEY:
-*Tinkerer*: You have __advantage__ on all checks (including __consumption__
+*Tinkerer*: You have {advantage} on all checks (including __consumption__
 __checks__) when using your tinkering tools, and one of the sets of tinkering
 tools you carry do not take up an __item slot__.
 
@@ -477,10 +495,10 @@ You can repair weapons and armor pieces just as if you had the __armorer__
 adventurer's ability.
 
 Your attack checks and damage rolls against mechanoid creatures are made with
-__advantage__. You also completely ignore any and all damage resistances these
+{advantage}. You also completely ignore any and all damage resistances these
 creatures have.
 
-You have __advantage__ on all checks involved in detecting traps, certain
+You have {advantage} on all checks involved in detecting traps, certain
 hidden doors, and other hidden mechanical installations.
 
 You can make and install simple traps. It takes one hour and one __usage__
@@ -494,7 +512,7 @@ weeks equal to your level.
 
 //KEY:
 *Tracker*: You magically mark a baddie within __charisma__ meters. You can only
-have one creature marked at a time. You have __advantage__ on all ranged attack
+have one creature marked at a time. You have {advantage} on all ranged attack
 checks you make against a marked baddie.
 
 As long as the baddie is within __charisma__ kilometers of you, you are able to
@@ -530,7 +548,7 @@ Some baddies, such as undeads and mechanoids, are immune to poison.
 === Level 4
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d8. Roll with __advantage__.
+Increase your {hit_point_total} by 1d8. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -539,7 +557,7 @@ that stat is increased by 1 point.
 === Level 5
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d8. Roll with __advantage__.
+Increase your {hit_point_total} by 1d8. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -563,7 +581,7 @@ xref:elites#[Elite’s Guide to doom & destruction & stuff].
 Your recovery die is 1d10.
 
 ==== More Hit Points
-Your __hit point total__ is increased by 10.
+Your {hit_point_total} is increased by 10.
 
 ==== Better Stats
 Increase your __constitution__ and __strength__ by one point each, and increase
@@ -656,7 +674,7 @@ you carry does not take up any __item slots__.
 === Level 4
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d10. Roll with __advantage__.
+Increase your {hit_point_total} by 1d10. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -665,7 +683,7 @@ that stat is increased by 1 point.
 === Level 5
 
 ==== More Hit Points
-Increase your __hit point total__ by 1d10. Roll with __advantage__.
+Increase your {hit_point_total} by 1d10. Roll with {advantage}.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
@@ -703,23 +721,23 @@ You can feel when one or more undead creatures are within __wisdom__ meters of
 you. You can detect undead creatures through most walls, but not it cannot
 penetrate more than one meter of rock or one centimeter of lead.
 
-If the undead creature's level is lower than <<X>>, you are able to ascertain
+If the undead creature's level is lower than {X}, you are able to ascertain
 its direction, otherwise you only know that the creature is present, not where
 it might be.
 
 
 === Money Talks (X)
-*<<basic>>, Level 5+*
+*{basic}, Level 5+*
 
-You chant for <<X>> minutes and then you touch a pair of gilded clipboards
-worth at least 100·<<X>> gold pieces each. The clipboards become enchanted so
+You chant for {X} minutes and then you touch a pair of gilded clipboards
+worth at least 100·{X} gold pieces each. The clipboards become enchanted so
 when a piece of paper is placed on top of each board, anything written on
 either paper also shows up on its counterpart on the other clipboard.
 
-This only works if the two plates are within 100·<<X>> kilometers of each
+This only works if the two plates are within 100·{X} kilometers of each
 other.
 
-The enchantment lasts 100·<<X>> days, but you can cast this spell on the
+The enchantment lasts 100·{X} days, but you can cast this spell on the
 clipboards again later, as long as they are both undamaged and close enough to
 touch.
 
@@ -727,15 +745,15 @@ Destroying or severely damaging either clipboard breaks the spell.
 
 
 === Peaceful Rest
-*<<champion>>, Level 3. __ritual__*
+*<<champion>>, Level 3. {ritual}*
 
 You touch a inanimate corpse that has died within the last __charisma__ hours.
 That corpse will not rise as an undead unless a sufficiently powerful
 necromancer uses dark magic on it.
 
 === Trauma (X)
-*Level 6*
-You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
+*[basic}, Level 6*
+You touch a baddie who must roll on the {trauma_table}: 1d100+{X}.
 
 //END_SORT
 
@@ -746,13 +764,6 @@ You touch a baddie who must roll on the __trauma table_: 1d100+<<X>>.
 == DICTIONARY
 
 //START_SORT //KEY:
-
-
-//KEY:
-[reftext="basic"]
-[[basic]]
-*Basic (spell property)*: Spells with this property are basic, and have no
-specific class requirements.
 
 
 //KEY:
@@ -767,13 +778,6 @@ specific class requirements.
 [[mage]]
 *Mage (spell property)*: Spells with this property can only be cast by
 <<_mage,mages>>.
-
-
-//KEY:
-[reftext="x"]
-[[X]]
-*X (spell property)*: The level of the spell. See xref:adventurer#X[X] in the
-adventurer's guide.
 
 
 //END_SORT

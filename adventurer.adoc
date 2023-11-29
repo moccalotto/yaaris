@@ -178,9 +178,9 @@ All characters start with the following equipment:
 
 * A backpack.
 * An <<adventurers_logbook>>.
-* 2 × <<torch>>.
+* 2 <<torch,torches>>.
 * A <<light_melee_weapon>>.
-* Two normal <<rations,ration packs>>.
+* Three normal <<rations,ration packs>>.
 * A set of common clothing.
 * A bedroll.
 
@@ -193,12 +193,12 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 [%header,cols="^2,10"]
 |===
 | d6    | Weapon
-//------|-----------
+//------|----------------------------
 | 1-3   | No Ranged Weapon
 | 4     | Slingshot + Bag of stones
 | 5     | Bow + Quiver of arrows
 | 6     | Crossbow + Quiver of bolts
-//------|-----------
+//------|----------------------------
 |===
 
 
@@ -222,18 +222,18 @@ Roll once on the <<utility_gear_1>> table.
 [%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
 | 1d10 | Item
-//-----|-----------
-| 1    | <<iron_rations>>
-| 2    | grappling hook
-| 3    | <<storm_lantern>>
-| 4    | rope, 10 meters
-| 5    | <<kosh>>
-| 6    | ball bearings
-| 7    | shovel
-| 8    | <<lockpicking_tools>>
-| 9    | <<lantern>>
-| 10   | <<purse_copper>>
-//-----|-----------
+//-----|-----------------------
+|   1  | <<iron_rations>>
+|   2  | grappling hook
+|   3  | <<storm_lantern>>
+|   4  | rope, 10 meters
+|   5  | <<kosh>>
+|   6  | ball bearings
+|   7  | shovel
+|   8  | <<lockpicking_tools>>
+|   9  | <<lantern>>
+|   10 | <<purse_copper>>
+//-----|-----------------------
 |===
 
 
@@ -248,7 +248,7 @@ reroll it.
 [%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
 | 1d10 | Item
-//-----|-----------
+//-----|-----------------------------
 | 1    | 2d4 gold pieces
 | 2    | <<spellbook>> with 2 <<usage_points>> and a spell of your choice.
 | 3    | <<torch>>
@@ -259,7 +259,7 @@ reroll it.
 | 8    | <<rations,ration pack, normal>>
 | 9    | <<lamp_oil,lamp oil>>
 | 10   | <<map_making_tools>>
-//-----|-----------
+//-----|-----------------------------
 |===
 --
 
@@ -327,14 +327,14 @@ deal with each weapon category.
 //----------------------|-------------|------------
 |===
 
-<1> Most light melee weapons are one-handed, with notable exceptions such as
-the quarterstaff.
-<2> Throwing-weapons can often be used as light melee weapons (such as daggers,
-javelins), and these weapons only require one hand.  Almost all weapons that
-have ammunition (such as bows, crossbows, slings) require two hands to use.
-<3> Heavy melee weapons always require two hands, and can never be used as
-throwing weapons.
-<4> Unarmed combat requires two free hands.
+. Most light melee weapons are one-handed, with notable exceptions such as
+  the quarterstaff.
+. Throwing-weapons can often be used as light melee weapons (such as daggers,
+  javelins), and these weapons only require one hand.  Almost all weapons that
+  have ammunition (such as bows, crossbows, slings) require two hands to use.
+. Heavy melee weapons always require two hands, and can never be used as
+  throwing weapons.
+. Unarmed combat requires two free hands.
 --
 
 .Range
@@ -1183,7 +1183,7 @@ If you’re selling expensive items, or if you’re selling things in bulk, you
 must haggle to get a good price. You first roll a __charisma__ check, and refer
 to the table below, and do what it says, even if you don't like the result.
 
-[cols=">1s,11",grid=none,stripes=none,frame=none]
+[cols="^1s,11",stripes=odd]
 |===
 //----------|----------------------------------------------------
 | <<nat20>> | You sell the item(s) for 25% of local list price.

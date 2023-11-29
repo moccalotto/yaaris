@@ -1171,7 +1171,7 @@ html{
     margin-bottom:0
 }
  li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{
-    margin-bottom:.625em
+    margin-bottom:.250em
 }
  ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{
     list-style-type:none
