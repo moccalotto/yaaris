@@ -14,9 +14,17 @@
 // {{{ VARIABLES
 :X: xref:adventurer#X[x]
 :advantage: xref:adventurer#advantage[advantage]
+:adversarial: xref:adventurer#adversarial[adversarial]
+:armorer: xref:adventurer#armorer[armorer]
 :basic: xref:adventurer#basic[basic]
+:consumption: xref:adventurer#consumption_check[consumption]
+:consumption_check: xref:adventurer#consumption_check[consumption check]
+:consumption_checks: xref:adventurer#consumption_check[consumption checks]
+:encumbered: xref:adventurer#encumbered[encumbered]
 :exhausted: xref:adventurer#exhausted[exhausted]
 :hit_point_total: xref:adventurer#hit_point_total[hit point total]
+:item_slot: xref:adventurer#item_slots[item slot]
+:item_slots: xref:adventurer#item_slots[item slots]
 :nat1: xref:adventurer#nat1[1]
 :nat20: xref:adventurer#nat20[20]
 :on_fire: xref:adventurer#on_fire[on_fire]
@@ -24,6 +32,8 @@
 :restrained: xref:adventurer#restrained[restrained]
 :ritual: xref:adventurer#ritual[ritual]
 :trauma_table: xref:adventurer#trauma_table[trauma table]
+:usage_points: xref:adventurer#usage_points[usage points]
+:usage_point: xref:adventurer#usage_points[usage point]
 // }}}
 
 When you reach your third level, you can choose a heroic class, which allows
@@ -107,7 +117,7 @@ you're using a __champion's spellbook__, and can cast <<champion>> spells,
 provided they have the {ritual} property.
 
 *Upgrade Basic Spellbooks* takes one hour per spell level and requires one
-__consumption__ of __magic components__ per spell level. The spell in the
+{consumption} of __magic components__ per spell level. The spell in the
 source book must not have a higher level than you. Once upgraded, the spellbook
 is attuned to you, and only you can use it.
 
@@ -127,8 +137,8 @@ yours.
 
 ==== Peaceful Rest
 You acquire a __champion's spellbook__ with the spell <<_peaceful_rest>> on it.
-It has 1 __usage point__, and when you carry it, it does not take up any __item
-slots__. 
+It has 1 __usage point__, and when you carry it, it does not take up any
+{item_slots}.
 
 === Level 4
 
@@ -180,11 +190,11 @@ __check__ and __damage__ __roll__ is made with {advantage}.
 
 * It starts as __Heal{nbsp}4__, and its level increases by one whenever you
   gain a level.
-* It does not take up any __item slots__.
+* It does not take up any {item_slots}.
 * It has 1 __usage point__, and gains one extra __usage point__ when
   you reach level 5, 7, and 9.
 * If you lose or change this ability, you keep the book as it is, but it begins
-  taking up one __item slot__, and it does not gain any more spell levels.
+  taking up one {item_slot}, and it does not gain any more spell levels.
 
 //END_SORT
 
@@ -267,7 +277,7 @@ only be used by mages, and they are more efficient than __basic spellbooks__.
 * The spellbook must have at least one __usage point__.
 * You must be holding the spellbook open in both hands.
 * You must be able to see, speak, read, and move your arms, hands, and fingers.
-* You must not be __exhausted__, __on fire__, __prone__, or __restrained__.
+* You must not be {exhausted}, __on fire__, __prone__, or __restrained__.
 
 
 *Spellcasting procedure*: You cast the spell and the book loses one __usage__
@@ -276,18 +286,18 @@ involved.
 
 
 *Recharging*: You can recharge a __mage's spellbook__ if the spell's level
-isn't higher than yours. Your start by spending one __consumption__ of magic
+isn't higher than yours. Your start by spending one {consumption} of magic
 components, and then you perform a 15-minute ritual. When it is complete,
 you have recharged the spellbook back to full capacity.
 
 
 *Mage's Ritual Casting* has the same requirements as basic ritual casting, but
 the procedure is the following: you spend 10 minutes chanting and reading from
-the spellbook, then you spend one __consumption__ of __magic_components__, and
+the spellbook, then you spend one {consumption} of __magic_components__, and
 then the spell takes
 
 *Upgrade Basic Spellbooks* takes one hour per spell level and requires one
-__consumption__ of __magic components__ per spell level. The spell in the
+{consumption} of __magic components__ per spell level. The spell in the
 source book must not have a higher level than you.
 
 
@@ -341,7 +351,7 @@ spell again.
 
 //KEY:
 *Librarian*: At any point in time, three of your __mage's spellbooks__ do not
-take up any __item slots__. 
+take up any {item_slots}. 
 
 
 //KEY:
@@ -358,7 +368,7 @@ __L__ is your level.
 //KEY:
 *Scholar*: You acquire a special __mage's spellbook__ with a number of __usage
 points__ equal to your level and it contains a spell of your level or less. As
-long as you are a __scholar__ the book does not take up any __item slots__, its
+long as you are a __scholar__ the book does not take up any {item_slots}, its
 __usage points__ continues to match your level, and you can to change the spell
 every time you gain a new level. When changing the spell in the book you must
 have some knowledge of the new spell; for instance, you can change Heal 4 into
@@ -450,30 +460,29 @@ __skilled__ with the weapon you are using.
 //KEY:
 *Acrobat*: By spending an __action__ you can jump up to __dexterity__ meters
 horizontally, or up to __L__ meters vertically, where __L__ is your level.
-You cannot do this if you're __encumbered__, __exhausted__, or similarly
+You cannot do this if you're {encumbered}, {exhausted}, or similarly
 affected. Your acrobatic skills also enables you to move at full speed in
 difficult terrain.
 
 
 //KEY:
 *Dagger Master*: You do not need to use any __moves__ to ready a dagger as long
-as you have one on you, and you are not __encumbered__, __exhausted__,
-__restrained__ or similar. You can spend three __moves__ (instead of an
+as you have one on you, and you are not {encumbered}, {exhausted},
+{restrained} or similar. You can spend three __moves__ (instead of an
 __action__) to make a ranged attack with a dagger, as long as the target is
 within __L__ meters, where __L__ is your level.
 
 
 //KEY:
-*Lockpicker*: You have {advantage} on all checks (including __consumption__
-__checks__) when using your lockpicking tools, and one of the sets of
-lockpicking tools you carry do not take up an __item slot__.
-If you do not have a set of lockpicking tools already, you receive one when
-you pick this ability.
+*Lockpicker*: You have {advantage} on all checks (including
+{consumption_checks}) when using your lockpicking tools, and one of the sets of
+lockpicking tools you carry do not take up an {item_slot}. If you do not have a
+set of lockpicking tools already, you receive one when you pick this ability.
 
 Using your lockpicking tools you are able to pseudo-jam a lock such that it can
 only be opened by you, or by a lockpicker who is at least two levels higher
 than you. It cannot even be opened with the key. It takes 10 minutes and one
-__consumption__ of lockpicking tools to do pseudo-jam a lock.
+{consumption} of lockpicking tools to do pseudo-jam a lock.
 
 
 //KEY:
@@ -487,11 +496,11 @@ the baddie.
 
 
 //KEY:
-*Tinkerer*: You have {advantage} on all checks (including __consumption__
-__checks__) when using your tinkering tools, and one of the sets of tinkering
-tools you carry do not take up an __item slot__.
+*Tinkerer*: You have {advantage} on all checks (including {consumption_checks})
+when using your tinkering tools, and one of the sets of tinkering tools you
+carry do not take up an {item_slot}.
 
-You can repair weapons and armor pieces just as if you had the __armorer__ 
+You can repair weapons and armor pieces just as if you had the {armorer} 
 adventurer's ability.
 
 Your attack checks and damage rolls against mechanoid creatures are made with
@@ -501,13 +510,13 @@ creatures have.
 You have {advantage} on all checks involved in detecting traps, certain
 hidden doors, and other hidden mechanical installations.
 
-You can make and install simple traps. It takes one hour and one __usage__
-__point__ of tinkering tools to create a simple trap that deals 1d6+__L__
-points of damage, where __L__ is your level. Such traps can be installed on
-doors, in alcoves, in chests, and similar places. The trap only deals damage
-once, and if someone knows where it is, they can generally avoid (but not
-disarm) it. In general, traps created so fast stop working after a number of
-weeks equal to your level.
+You can make and install simple traps. It takes one hour and one {usage_point}
+of tinkering tools to create a simple trap that deals 1d6+__L__ points of
+damage, where __L__ is your level. Such traps can be installed on doors, in
+alcoves, in chests, and similar places. The trap only deals damage once, and if
+someone knows where it is, they can generally avoid (but not disarm) it. In
+general, traps created so fast stop working after a number of weeks equal to
+your level.
 
 
 //KEY:
@@ -516,7 +525,7 @@ have one creature marked at a time. You have {advantage} on all ranged attack
 checks you make against a marked baddie.
 
 As long as the baddie is within __charisma__ kilometers of you, you are able to
-sense in which direction it is, and if you make a successful __adversarial__
+sense in which direction it is, and if you make a successful {adversarial}
 __wisdom__ check and you are within __charisma__ meters of the "path" of the
 baddie, you are able to track the actual path of the target for the next 10
 minutes.
@@ -529,7 +538,7 @@ tracker's mark.
 //KEY:
 *Venom Specialist*: You can make poisonous venom from dead monster parts. It
 requires a recently deceased monster, a bonfire or similar, one hour of
-preparation, one __consumption__ of <<_alchemist_tools>>, and one steel bottle
+preparation, one {consumption} of <<_alchemist_tools>>, and one steel bottle
 to create a dose of venom that can coat the business end of a slashing or
 piercing weapon, including arrowheads.
 
@@ -638,7 +647,7 @@ get a __critical __hit.
 
 //KEY:
 *Hauler*: At any point in time, the three heaviest items you carry do not take
-up any __item slots__.
+up any {item_slots}.
 
 
 //KEY:
@@ -667,7 +676,7 @@ which means you lose one __move__.
 
 //KEY:
 *Tank*: You are __skilled__ at using heavy armor, and one of the armor pieces
-you carry does not take up any __item slots__.
+you carry does not take up any {item_slots}.
 
 //END_SORT
 
