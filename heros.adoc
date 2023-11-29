@@ -183,6 +183,22 @@ You gain one of the abilities below.
 //START_SORT //KEY:
 
 //KEY:
+*Healer*: You obtain a champion's spellbook with the spell {heal4} on
+it.
+
+
+* It starts as {heal4}, and its level increases by one whenever you
+  gain a level.
+* It starts with 4 {usage_points}, and it gains one extra point whenever you
+  gain a level.
+* It does not take up any {item_slots}.
+* You do not need to make a spellcasting (__charisma__) check when casting from 
+  this book.
+* If you lose or change this ability, you keep the book as it is, but it starts
+  taking up one {item_slot}, and it does not gain any more spell levels or 
+  {usage_points}.
+
+//KEY:
 *Terror of Demons*: When you attack an demonic creature (such as the various
 dungeon guards and dungeon masters), your __attach check__ and __damage roll__
 is made with {advantage}, and when you successfully hit a such a creature it
@@ -209,22 +225,6 @@ __check__ and __damage__ __roll__ is made with {advantage}, and when you
 successfully hit a such a creature it becomes {demoralized} if its level is
 lower than yours.
 
-
-//KEY:
-*Healer*: You obtain a champion's spellbook with the spell {heal4} on
-it.
-
-
-* It starts as {heal4}, and its level increases by one whenever you
-  gain a level.
-* It starts with 4 {usage_points}, and it gains one extra point whenever you
-  gain a level.
-* It does not take up any {item_slots}.
-* You do not need to make a spellcasting (__charisma__) check when casting from 
-  this book.
-* If you lose or change this ability, you keep the book as it is, but it starts
-  taking up one {item_slot}, and it does not gain any more spell levels or 
-  {usage_points}.
 
 //END_SORT
 
@@ -769,6 +769,14 @@ its direction, otherwise you only know that the creature is present, not where
 it might be.
 
 
+=== Last Rites
+*<<champion>>, Level 3. {ritual}*
+
+You touch a corpse that has died within the last __charisma__ hours. This
+prevents the corpse from automatically rising as an undead. A sufficiently
+powerful necromancer can still turn this corpse into an undead creature.
+
+
 === Money Talks (X)
 *{basic}, Level 5+*
 
@@ -785,14 +793,6 @@ clipboards again later, as long as they are both undamaged and close enough to
 touch.
 
 Destroying or severely damaging either clipboard breaks the spell.
-
-
-=== Last Rites
-*<<champion>>, Level 3. {ritual}*
-
-You touch a corpse that has died within the last __charisma__ hours. This
-prevents the corpse from automatically rising as an undead. A sufficiently
-powerful necromancer can still turn this corpse into an undead creature.
 
 
 === Trauma (X)
