@@ -54,7 +54,7 @@ When you reach your third level, you can choose a heroic class, which allows
 you to obtain more powerful abilities, spells, and gear.
 
 // {{{ CHAMPION
-== Champion
+== CHAMPION
 
 [quote,Pontius LeDique]
 The champion is pious, steadfast, and dangerous.

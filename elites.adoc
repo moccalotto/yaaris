@@ -12,8 +12,10 @@
 
 :moves: xref:adventurer#moves[moves]
 
+//{{{ WARRIORS
+== ELITE WARRIORS
 
-== Berserker (Warrior Specialization)
+=== Berserker (Warrior Specialization)
 * Does not wear armor.
 * Does not wear shields.
 * Gains stem:[(L-3)] hp per unused item slot if not wearing any armor or shield.
@@ -28,7 +30,7 @@
 ** Damage output increases as health decreases.
 
 
-== War Dancer (Warrior Specialization)
+=== War Dancer (Warrior Specialization)
 * Only proficient in light armor.
 * Can only use light melee weapons and throwing weapons.
 * Does not wear armor.
@@ -48,7 +50,7 @@
    costs 4 moves and readying only costs 1 move.
 
 
-== Fighter (Warrior Specialization)
+=== Fighter (Warrior Specialization)
 * Can wear all armor and shields.
 * Can use all non-exotic weapons.
 * All item slots are unencumbered.
@@ -73,7 +75,7 @@
    few points of damage to the fighter.
 
 
-== Shaman (Champion Specialization)
+=== Shaman (Champion Specialization)
 * Nature Spells.
 * Totems instead of spellbooks.
 * Only non-metal armor.
@@ -85,15 +87,13 @@
 ** Elemental Summoning: elementals and elemental creatures.
 
 
-== Paladin (Champion Specialization)
+=== Paladin (Champion Specialization)
 * Basically a continuation of champion, but primarily
   strengthening melee ability.
 * Heavy Armor
 * Shield is a must.
 * All item slots are unencumbered.
 
-
-== 
 
 
 //{{{SPELLS
