@@ -12,7 +12,7 @@
 
 :moves: xref:adventurer#moves[moves]
 
-//{{{ WARRIORS
+//{{{ ELITE WARRIORS
 == ELITE WARRIORS
 
 === Berserker (Warrior Specialization)
@@ -25,7 +25,7 @@
 ** Does not roll on death table, stays alive and "fine" at 0 HP.
 ** Can take {trauma}, and must roll on trauma table every time damage taken
    when at zero hp.
-** Can technically be destroyed if too much trauma.
+** Can be defeated if too much trauma.
 ** Very high damage output.
 ** Damage output increases as health decreases.
 
@@ -74,17 +74,21 @@
    Ranged Attack: Attack an enemy 2-3 meters away, may damage weapon, causes a
    few points of damage to the fighter.
 
+// ELITE WARRIORS }}}
+
+// {{{ ELITE CHAMPIONS
+== ELITE CHAMPIONS
 
 === Shaman (Champion Specialization)
 * Nature Spells.
 * Totems instead of spellbooks.
 * Only non-metal armor.
-* Abilities (choose one)
+* Abilities (choose one, maybe more at later levels).
 ** Use medium and heavy natural armor such as dragon scale, hydra skin, etc.
-** Shape shifting.
-** Spirit Summoning. Has spirit companion "stored" in totem.
+** Shape shifting into animals and elementals. High regeneration.
+** Spirit Companion. Has spirit companion "stored" in totem.
    Cannot die, but can be temporarily sent back to the spirit world.
-** Elemental Summoning: elementals and elemental creatures.
+** Elemental Summoner: elementals and elemental creatures.
 
 
 === Paladin (Champion Specialization)
@@ -93,8 +97,34 @@
 * Heavy Armor
 * Shield is a must.
 * All item slots are unencumbered.
+* Abilities
+.. Spirit Mount
+    Conjure mount and lance at will.
+    Mounted charge is fucking insane.
+.. Commander:
+    As an action: 
+...  Give an ally an extra action.
+...  Give many allies extra moves.
+    Passive:
+     Nearby allies have an extra move.
+.. Bane of X:
+    Vastly Upgraded version of Terror of X
+    Deal __L__ extra points of damage.
+    All nearby X become frightened unless their level is higher than __L__.
+.. Spirit Blade:
+    Summon blade
 
 
+=== Paragon
+* Better (than champion) at casting spells
+* Only light armor?
+* Faster/better spellcasting.
+* Need have book readied.
+* Abilities
+.. Virtual Library where many books can be kept.
+
+
+// }}} ELITE CHAMPIONS
 
 //{{{SPELLS
 == Spells
