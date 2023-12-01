@@ -10,15 +10,106 @@
 :stem:
 :xrefstyle: basic
 
-
-== Barbarian (Warrior Specialization)
-
-* Only has unencumbered item slots.
+:moves: xref:adventurer#moves[moves]
 
 
+== Berserker (Warrior Specialization)
+* Does not wear armor.
+* Does not wear shields.
+* Gains __L__ hp per unused item slot if not wearing any armor or shield.
+* High Damage with heavy weapons.
+* Rage:
+** stem:[(L-5)] extra {moves}.
+** Does not roll on death table, stays alive and "fine" at 0 HP.
+** Can take {trauma}, and must roll on trauma table every time damage taken
+   when at zero hp.
+** Can technically be destroyed if too much trauma.
+** Very high damage output.
+** Damage output increases as health decreases.
+
+
+== War Dancer (Warrior Specialization)
+* Only proficient in light armor.
+* Can only use light melee weapons and throwing weapons.
+* Does not wear armor.
+* Does not wear shields.
+* Gains 3 hp per unused item slot if not wearing any armor or shield.
+* Extra {moves}
+* Can wield two weapons and get an extra attack by spending X moves.
+* Specialization
+.. Martial Arts: 
+   High damage with fists. Extra attack costs 2 moves.
+.. Dual Wielding: 
+   Extra attack costs 4 moves.
+.. Meteor:
+   Can use Gogo's Meteor Hammer
+.. Throwing: 
+   Can use two melee+throwing weapons at the same time. Extra attack
+   costs 4 moves and readying only costs 1 move.
+
+
+== Fighter (Warrior Specialization)
+* Can wear all armor and shields.
+* Can use all non-exotic weapons.
+* All item slots are unencumbered.
+* Skilled in heavy weapons
+* Expertise
+.. Armor:
+   Skilled in heavy armor.
+   For each heavy armor piece worn, the armor expert gains __L__ extra hit
+   pints. 
+.. Shields:
+   Shield Bash
+   Shield Block [extra defense roll when wearing shield, may damage shield,
+   causes a bit of damage to fighter]
+.. Archery:
+   Long range. Can spend {moves} to __aim__ to add damage.
+   High damage with ranged weapons.
+   Ultra Range Shot  shot with extreme range, may damage bow, uses an arrow
+   usage point right away, causes X points of damage to the fighter.
+.. Zweihänder:
+   Expert in using heavy weapons.
+   Ranged Attack: Attack an enemy 2-3 meters away, may damage weapon, causes a
+   few points of damage to the fighter.
+
+
+== Shaman (Champion Specialization)
+* Nature Spells.
+* Totems instead of spellbooks.
+* Only non-metal armor.
+* Abilities (choose one)
+** Use medium and heavy natural armor such as dragon scale, hydra skin, etc.
+** Shape shifting.
+** Spirit Summoning. Has spirit companion "stored" in totem.
+   Cannot die, but can be temporarily sent back to the spirit world.
+** Elemental Summoning: elementals and elemental creatures.
+
+
+== Paladin (Champion Specialization)
+* Basically a continuation of champion, but primarily
+  strengthening melee ability.
+* Heavy Armor
+* Shield is a must.
+* All item slots are unencumbered.
+
+
+== 
+
+
+//{{{SPELLS
+== Spells
+
+=== Gate (X)
+*Level 7+, mage*
+
+* Magical portal opens within {X} meters of you.
+* A similar magical portal opens within 10·{X} kilometers of you in a place
+  you have been to within the last {X} days.
+* The two portals connect the two places like a wormhole, a tunnel of zero
+  length.
 
 === Great Resurrection (X)
-*Level 7+, Holy*
+*Level 7+, champion*
 
 This spell can revive anyone with the adventurer's blessing who has not yet
 been turned undead and whose level is lower than X.
@@ -38,5 +129,6 @@ consumed by the spell.
 
 [[quote]]
 Since this spell takes a permanent toll on the caster, it is difficult to find
-a caster who is willing to cast this spell, and if they can be persuaded, it 
+a caster who is willing to cast this spell, and if they can be persuaded, it
 will most likely be extremely expensive.
+//}}}

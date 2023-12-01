@@ -62,7 +62,7 @@ carry. This number is the highest of your __strength__ and __constitution__.
 encumbered. This number is the lowest of your __strength__ and __constitution__.
 
 *Moves*: is the number of meters you can move in a round. You can also use
-moves to do other interesting <<Moves,things>>.
+moves to do other interesting <<moves,things>>.
 // }}}
 
 // {{{ CREATE YOUR ADVENTURER
@@ -302,7 +302,7 @@ item slot>> you have.
 [[armor_skills]]
 ==== Armor Skills
 You are skilled at using light shields and light armors. If you are wearing an
-armor you're not skilled at using, you lose one <<Moves,move>>. See the
+armor you're not skilled at using, you lose one <<moves,move>>. See the
 <<Armor>> section for more info and pay attention to what happens if you're
 <<armor_wear,wearing broken armor>>.
 
@@ -489,7 +489,7 @@ mount, but you lose all your <<advantage,advantages>>.
 ****
 *Your horse* can drag a cart that can either carry you and two others, or you
 and 20 <<item_slots>> of cargo. When you ride it or direct it, it can move 2
-meters for every <<Moves,move>> you make, and it has the same stats and hit
+meters for every <<moves,move>> you make, and it has the same stats and hit
 points as you, except for __intelligence__, which is 2. The horse generally does
 what you want when you're in the saddle, but you have to succeed a __charisma__
 (with <<advantage>>) check to command it when you're not.
@@ -828,7 +828,7 @@ cannot be used any more during that combat.
 //----------------------|--------------|-------------------------|------
 | Light Shield          |       1      |          4              | 8  gp
 | Light Helmet          |       1      |          3              | 8  gp
-| Light Cuirass         |       2      |          4              | 27 gp
+| Light Cuirass         |       2      |          6              | 27 gp
 | Light Gauntlets       |       1      |          3              | 8  gp
 | Light Greaves         |       1      |          3              | 8  gp
 //----------------------|--------------|-------------------------|------
@@ -839,11 +839,11 @@ cannot be used any more during that combat.
 |===
 | Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
 //----------------------|--------------|-------------------------|------
-| Medium Shield         |       2      |          5              | 64  gp
-| Medium Helmet         |       2      |          5              | 64  gp
-| Medium Cuirass        |       3      |          6              | 125 gp
-| Medium Gauntlets      |       2      |          5              | 64  gp
-| Medium Greaves        |       2      |          5              | 64  gp
+| Medium Shield         |       2      |          6              | 64  gp
+| Medium Helmet         |       2      |          6              | 64  gp
+| Medium Cuirass        |       3      |          9              | 125 gp
+| Medium Gauntlets      |       2      |          6              | 64  gp
+| Medium Greaves        |       2      |          6              | 64  gp
 //----------------------|--------------|-------------------------|------
 |===
 
@@ -854,11 +854,11 @@ cannot be used any more during that combat.
 |===
 | Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
 //----------------------|--------------|-------------------------|------
-| Heavy Shield          |      3       |          7              | 216 gp
-| Heavy Helmet          |      3       |          7              | 216 gp
-| Heavy Cuirass         |      4       |          8              | 343 gp
-| Heavy Gauntlets       |      3       |          7              | 216 gp
-| Heavy Greaves         |      3       |          7              | 216 gp
+| Heavy Shield          |      3       |          9              | 216 gp
+| Heavy Helmet          |      3       |          9              | 216 gp
+| Heavy Cuirass         |      4       |          12             | 343 gp
+| Heavy Gauntlets       |      3       |          9              | 216 gp
+| Heavy Greaves         |      3       |          9              | 216 gp
 //----------------------|--------------|-------------------------|------
 |===
 
@@ -1227,6 +1227,8 @@ baddies on the battlefield, the baddies get to go first that round.
 The players act in the order in which they sit around the gaming table,
 clockwise from the GM, and the baddies act in whatever order the GM wishes.
 
+[reftext="moves"]
+[[moves]]
 === Moves
 You have 5 moves you can take before you take your main action. You can use
 them in many ways, and here's some examples.
@@ -1372,7 +1374,7 @@ deadly.
 
 ===== Armor Requires Skill
 For each piece of armor you're wearing, if you're not skilled at using it,
-you lose one <<Moves,move>>.
+you lose one <<moves,move>>.
 
 [[armor_wear]]
 ===== Armor Wears Out
@@ -1380,13 +1382,13 @@ If you are wearing at least one functional piece of armor, and you roll a
 <<nat20>> on your <<Defense,defense check>>, one of the functional
 <<Armor,armor pieces>> you are wearing (your choice) breaks and becomes
 nonfunctional. A broken armor piece still provides <<hit_points>>, but wearing
-it reduces your number of <<Moves,moves>> by one. This is cumulative so if
+it reduces your number of <<moves>> by one. This is cumulative so if
 you're wearing 3 pieces of broken armor, you lose 3 moves.
 
 [quote]
 If you're wearing a piece of broken armor that you're not
 <<armor_skills,skilled>> at using, that piece of armor is responsible for you
-losing _two_ <<Moves,moves>>; one because you're unskilled, and the other
+losing _two_ <<moves>>; one because you're unskilled, and the other
 because the armor piece is broken.
 
 .Armor wear
@@ -1506,9 +1508,9 @@ points.
 | 101+      | Amputation | Lose a random limb
 | 100       | Permanent  | -1d4 to random stat
 | 89-99     | Permanent  | -1d8 maximum hit points
-| 90-98     | Reversible | -1 <<Moves,moves>>
+| 90-98     | Reversible | -1 <<moves>>
 | 81-89     | Reversible | -1 to __charisma__
-| 71-80     | Reversible | -1 unencumbered item slot
+| 71-80     | Reversible | -1 item slot
 | 61-70     | Temporary  | -1 moves
 | 51-60     | Temporary  | All checks are <<difficult>>
 | 41-50     | Temporary  | -1d6 to random stat
@@ -1533,7 +1535,6 @@ it.
 <<restoration_magic>>.
 
 *Temporary*: lasts for 1d20 days or it can be reversed with restoration magic.
-
 
 [reftext="restoration magic"]
 .Restoration Magic
@@ -1673,11 +1674,11 @@ Revival can restore you back to life.
 //KEY:
 [reftext="prone"]
 [[prone]]
-*Prone*: You're prone on the ground, you must spend 1 <<Moves,move>> to get up.
-While you are prone, you have four fewer <<Moves,moves>> than normal.
+*Prone*: You're prone on the ground, you must spend 1 <<moves,move>> to get up.
+While you are prone, you have four fewer <<moves>> than normal.
 
 [quote]
-If you're suffering from other effects that lower your number of <<Moves,moves>>,
+If you're suffering from other effects that lower your number of <<moves>>,
 you can be reduced to zero moves. Forcing you to convert your <<Actions,action>>
 into more moves just to get up.
 
@@ -1685,7 +1686,7 @@ into more moves just to get up.
 [reftext="restrained"]
 [[restrained]]
 *Restrained*: Your hands and feet are restrained. You have only one
-<<Moves,move>> each round. Depending on the circumstances, the GM might allow
+<<moves,move>> each round. Depending on the circumstances, the GM might allow
 you to try and escape your bonds.
 
 //KEY:
@@ -1861,7 +1862,7 @@ The spell stops instantly if you:
     a) take damage,
     b) make a defense check,
     c) get up,
-    d) make a <<Moves,move>>,
+    d) make a <<moves,move>>,
     or e) take an <<Actions,action>>. +
 //
 You can speak, breathe, and adjust
@@ -2262,7 +2263,7 @@ check, they're able to avoid you, and you fly right past it.
 
 You touch an adjacent target, who then takes <<X>>d6 damage. After rolling
 damage, you make a __wisdom__ check. If successful, the target is knocked
-<<prone>>, and must spend <<Moves>> to get up.
+<<prone>>, and must spend <<moves>> to get up.
 
 If the target is wearing three or more pieces of metal armor, you have
 <<advantage>> on the damage roll and the __wisdom__ check.
@@ -2329,7 +2330,7 @@ cast, and that the item is nonmagical.
 *Level 2+, <<focus>>, range: <<X>>·5 meters*
 
 You target a spot you can see within range. At that spot a magical ghostly
-torch appears. By spending one <<Moves,move>> you can move the torch up to 5
+torch appears. By spending one <<moves,move>> you can move the torch up to 5
 meters to a spot you can see and that is within range.
 
 The torch disappears after 8 hours, or earlier if you move so that the torch
@@ -2427,7 +2428,7 @@ And if you’re hit for 1 point of damage, you take zero points of damage.
 *Level 1+, <<focus>> (up to <<X>> rounds)*
 
 You target a baddie within 2·<<X>> meters. For the duration of
-this spell, the target creature has zero <<Moves,moves>>.
+this spell, the target creature has zero <<moves>>.
 
 
 === Slow Fall (X)

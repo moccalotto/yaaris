@@ -25,72 +25,21 @@ Gargle Oil::
     * Spray attack.
     * Organic Compound Spray Attack.
 
-Far Goyle:: 
+Far Goyle::
     * Gargle Oil with powerful ranged attacks and spells.
 
+Slime::
+A semi-intelligent monster that can be made out of anything from rainwater to
+lava, these monsters are often highly caustic, and can constrict their
+opponents.
 
-== Orcs
+When a slime is born, it is usually a few cubic centimeters in size, but as it
+consumes more and more material, it grows larger. Many slimes like to feed on
+living organic matter (people, plants, animals, etc.).
 
-Green-skinned creatures that are created when trees and large plants die from
-unnatural causes.
-
-* Orcs are a category containing  orcs, goblins, trolls, cyclops.
-* Created completely from plant matter => green skins.
-* They exude a kind of blight that slowly degenerates vegetation, which makes
-  the orcs stronger.
-* Sometimes destroy forests to create more orcs.
-* Only become undead if some outside force (such as an evil mage) turns them.
-* Tough, extreme pain tolerance, and high morale.
-* Clans sometimes have a great leader that controls them via mind link.
-
-== Sleeper
-Attacks a female pregnant mammal. Injects something wicked into the embryo.
-Then leaves.
-When the embryo is born and has reached adulthood, it will become one of the
-Sleeper variants.
-
-Berserker:: As soon as a creature mutates into a berserker they go, well,
-berserk and attacks and eats any nearby creatures. A berserker somewhat
-resembles the creature it was made from, except it has extremely large muscles,
-tough hide, and the sharp and pointy teeth of a predator. They usually have
-read eyes.
-
-Wasp::
-* Looks like the host creature.
-* Can form needle-tipped tentacles used to inject seed poison into embryos.
-* Stealthy.
-* Sedation.
-* Infiltration.
-
-
-== Undeads 
-
-* Undead creatures rise automatically. Especially if they have died from
-  traumatic events such as war, assault, and magical accidents.
-* Once slain, some undeads can rise again. Usually as less powerful beings.
-* Undeads almost always have worse stats than when they were alive.
-* Generally immune to fear.
-* Generally slower.
-* Generally able to see/sense in darkness.
-* Powerful undeads, such as liches, generally do not rise spontaneously.
-
-=== Mummy Troll
-A troll that has been magically preserved and turned undead.
-
-
-=== Undeads of the Sea
-Sailors and enlightened sea creatures can become undead. Sailors tend to walk
-towards shore and become a menace on the beaches and harbours of the world. Sea
-creatures tend to patrol their old territories and make a mess there.
-
-Old George:: There is an undead Kraken called Old George. He's an undead,
-elderly guy, who is slow and not as young as he was. Sailors have learned to
-navigate around him, and generally avoid him.
-
-
-== Pooh-ma
-* A vicious wolf-like monster born in the sewers and waste pits of cities, military
-camps.
+Pooh-ma::
+A vicious wolf-like monster born in the sewers and waste pits of cities,
+military camps, and similar concentrations of feces.
 
 * Basically a dire-wolf made of feces.
 * Can technically be classified as an undead, an orc, an elemental, and a
@@ -107,10 +56,70 @@ camps.
 * It does not like the light (all checks are difficult when in bright light).
 
 
-== Slime
-A semi-intelligent monster that can be made out of anything from rainwater to lava,
-these monsters are often highly caustic, and can constrict their opponents.
+== Mechanoids
+Golems
 
-When a slime is born, it is usually a few cubic centimeters in size, but as it
-consumes more and more material, it grows larger. Many slimes like to feed on
-living organic matter (people, plants, animals, etc.).
+
+== Orcs
+Green-skinned creatures that are created when trees and large plants die from
+unnatural causes.
+
+* Orcs are a category containing  orcs, goblins, trolls, cyclops.
+* Created completely from plant matter => green skins.
+* They exude a kind of blight that slowly degenerates vegetation, which makes
+  the orcs stronger.
+* Sometimes destroy forests to create more orcs.
+* Only become undead if some outside force (such as an evil mage) turns them.
+* Tough, extreme pain tolerance, and high morale.
+* Clans sometimes have a great leader that controls them via mind link.
+
+
+== Sleeper
+Attacks a female pregnant mammal. Injects something wicked into the embryo and
+then leaves. When the embryo is born and has reached adulthood, it mutates into
+one of the Sleeper variants.
+
+Berserker::
+As soon as a creature mutates into a berserker they go berserk and
+attacks and eats any nearby creatures. A berserker somewhat resembles the
+creature it was made from, except it is much larger, has extremely large
+muscles, tough hide, and the sharp and pointy teeth of a predator. They usually
+have read eyes. They are very hungry carnivores and prefer to prey on the
+species they used to have. They grow when they eat a lot.
+
+If a berserker survives for long enough, it can mutate into another type of
+sleeper.
+
+Wasp::
+* Looks like the host creature.
+* Can form needle-tipped tentacles used to inject seed poison into embryos.
+* Stealthy.
+* Sedation.
+* Infiltration.
+
+
+== Undeads
+* Undead creatures rise automatically. Especially if they have died from
+  traumatic events such as war, assault, and magical accidents.
+* Once slain, some undeads can rise again. Usually as less powerful beings.
+* Undeads almost always have worse stats than when they were alive.
+* Generally immune to fear.
+* Generally slower.
+* Generally able to see/sense in darkness.
+* Powerful undeads, such as liches, generally do not rise spontaneously.
+
+Mummy Troll::
+A troll that has been magically preserved and turned undead.
+
+Undeads of the Sea::
+Sailors and enlightened sea creatures can become undead.
+Sailors tend to walk towards shore and become a menace on the beaches and
+harbours of the world. Sea creatures tend to patrol their old territories and
+make a mess there.
+
+Old George::
+There is an undead Kraken called Old George. He's an undead,
+elderly guy, who is slow and not as young as he was. Sailors have learned to
+navigate around him, and generally avoid him.
+
+
