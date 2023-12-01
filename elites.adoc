@@ -16,7 +16,7 @@
 == Berserker (Warrior Specialization)
 * Does not wear armor.
 * Does not wear shields.
-* Gains __L__ hp per unused item slot if not wearing any armor or shield.
+* Gains stem:[(L-3)] hp per unused item slot if not wearing any armor or shield.
 * High Damage with heavy weapons.
 * Rage:
 ** stem:[(L-5)] extra {moves}.

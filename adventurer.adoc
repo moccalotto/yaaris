@@ -1510,13 +1510,13 @@ points.
 | 89-99     | Permanent  | -1d8 maximum hit points
 | 90-98     | Reversible | -1 <<moves>>
 | 81-89     | Reversible | -1 to __charisma__
-| 71-80     | Reversible | -1 item slot
+| 71-80     | Reversible | <<weighed_down>>
 | 61-70     | Temporary  | -1 moves
 | 51-60     | Temporary  | All checks are <<difficult>>
 | 41-50     | Temporary  | -1d6 to random stat
 | 31-40     | Temporary  | -1d8 <<hit_point_total>> and current hit points
 | 21-30     | Reversible | Battle scar
-| 01-20     | -          | No trauma.
+| 01-20     | -          | No trauma
 //----------|------------|------------------------------
 |===
 
@@ -1600,11 +1600,21 @@ have to fight your foes twice and your late friends on top of that.
 
 
 //KEY:
+[reftext="weighed down"]
+[[weighed_down]]
+*Weighed Down*: While you have this condition you are carrying a virtual "load"
+that takes up one <<item_slots,item slot>>. You can receive this condition
+multiple times, forcing you to carry many virtual weights; this can happen if
+you receive the __weighed down__ <<trauma_table,trauma>> more than once.
+
+
+//KEY:
 [reftext="demoralized"]
 [[demoralized]]
 *Demoralized*: On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
+
 
 //KEY:
 [reftext="destroyed"]
@@ -1613,6 +1623,7 @@ condition goes away.
 and upgrade all temporary effects to <<reversible>>. Only very powerful
 resurrection magic, accessible only to xref:elites#[elites], can bring you back
 to life, and the costs of doing so are grave for both you can the caster.
+
 
 //KEY:
 [reftext="dungeon mad"]
@@ -1627,6 +1638,7 @@ stat. This check is <<difficult>> if you are alone in the darkness.
 *Encumbered*: All checks become <<difficult>>, meaning that you have to roll 3
 points lower than you normally would to succeed.
 
+
 //KEY:
 [reftext="dying"]
 [[dying]]
@@ -1635,11 +1647,13 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 <<nat1>>, you are no longer dying, but <<unconscious>>, and if you rolled a
 <<nat20>>, you are dead.
 
+
 //KEY:
 [reftext="exhausted"]
 [[exhausted]]
 *Exhausted*: Same as <<encumbered>> __and__ your number of moves is halved,
 rounded down.
+
 
 //KEY:
 [reftext="frightened"]
@@ -1647,12 +1661,14 @@ rounded down.
 *Frightened*: You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
 
+
 //KEY:
 [reftext="invisible"]
 [[invisible]]
 *invisible*: You are invisible. You cannot be targeted by creatures who rely
 primarily on sight. Even so, if a creature relies just partially on sight, its
 <<attack_and_damage,attack checks>> against you are <<difficult>>.
+
 
 //KEY:
 [reftext="on fire"]
@@ -1662,6 +1678,7 @@ act, you take 1d4 points of damage, and then you roll a __constitution__ check.
 If you succeed, the fire goes out. If you failed, the fire persists, and if you
 rolled a <<nat20>>, the damage die increases (for instance, from 1d4 to 1d6).
 
+
 //KEY:
 [reftext="poisoned"]
 [[poisoned]]
@@ -1670,6 +1687,7 @@ After rolling your stat loss, you make a __constitution__ check with
 <<disadvantage>>. If successful, the poisoned condition is removed. You die if
 any of your stats are reduced to zero. If you die from poison, only Greater
 Revival can restore you back to life.
+
 
 //KEY:
 [reftext="prone"]
@@ -1682,12 +1700,14 @@ If you're suffering from other effects that lower your number of <<moves>>,
 you can be reduced to zero moves. Forcing you to convert your <<Actions,action>>
 into more moves just to get up.
 
+
 //KEY:
 [reftext="restrained"]
 [[restrained]]
 *Restrained*: Your hands and feet are restrained. You have only one
 <<moves,move>> each round. Depending on the circumstances, the GM might allow
 you to try and escape your bonds.
+
 
 //KEY:
 [reftext="starving"]
@@ -1696,6 +1716,7 @@ you to try and escape your bonds.
 <<consumption_check,consumption>> of <<rations>> or similar, you roll 1d20 for
 each of your <<Stats,stats>>. If you rolled under a stat, that stat is reduced
 by 1 until you get food and <<rest>>.
+
 
 //KEY:
 [reftext="unconscious"]
