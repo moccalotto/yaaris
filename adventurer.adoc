@@ -1600,15 +1600,6 @@ have to fight your foes twice and your late friends on top of that.
 
 
 //KEY:
-[reftext="weighed down"]
-[[weighed_down]]
-*Weighed Down*: While you have this condition you are carrying a virtual "load"
-that takes up one <<item_slots,item slot>>. You can receive this condition
-multiple times, forcing you to carry many virtual weights; this can happen if
-you receive the __weighed down__ <<trauma_table,trauma>> more than once.
-
-
-//KEY:
 [reftext="demoralized"]
 [[demoralized]]
 *Demoralized*: On your next turn you must spend all your moves (if possible)
@@ -1723,6 +1714,15 @@ by 1 until you get food and <<rest>>.
 [[unconscious]]
 *Unconscious*: You are unconscious; if you receive any kind of healing, you
 will wake up right away, otherwise you will wake up within 2d6 hours.
+
+//KEY:
+[reftext="weighed down"]
+[[weighed_down]]
+*Weighed Down*: While you have this condition you are carrying a virtual "load"
+that takes up one <<item_slots,item slot>>. You can receive this condition
+multiple times, forcing you to carry many virtual weights; this can happen if
+you receive the __weighed down__ <<trauma_table,trauma>> more than once.
+
 
 //END_SORT
 //}}}
