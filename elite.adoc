@@ -31,23 +31,21 @@
 
 
 === War Dancer (Warrior Specialization)
-* Only proficient in light armor.
+* Only wears light helmet and light, medium, or heavy cuirass.
 * Can only use light melee weapons and throwing weapons.
-* Does not wear armor.
-* Does not wear shields.
 * Gains 3 hp per unused item slot if not wearing any armor or shield.
 * Extra {moves}
 * Can wield two weapons and get an extra attack by spending X moves.
 * Specialization
-.. Martial Arts: 
-   High damage with fists. Extra attack costs 2 moves.
-.. Dual Wielding: 
-   Extra attack costs 4 moves.
-.. Meteor:
+.. MARTIAL ARTS:
+   Multiple attacks.
+   High damage chi strikes.
+.. METEOR:
    Can use Gogo's Meteor Hammer
-.. Throwing: 
-   Can use two melee+throwing weapons at the same time. Extra attack
-   costs 4 moves and readying only costs 1 move.
+.. THROWING: 
+   Only uses throwable melee weapons.
+   Always has an extra throwing weapon.
+   Can make multiple attacks and throws.
 
 
 === Fighter (Warrior Specialization)
@@ -56,20 +54,18 @@
 * All item slots are unencumbered.
 * Skilled in heavy weapons
 * Expertise
-.. Armor:
+.. DEFENSE:
    Skilled in heavy armor.
    For each heavy armor piece worn, the armor expert gains __L__ extra hit
    pints. 
-.. Shields:
    Shield Bash
-   Shield Block [extra defense roll when wearing shield, may damage shield,
-   causes a bit of damage to fighter]
-.. Archery:
+   Backstabber
+.. ARCHERY:
    Long range. Can spend {moves} to __aim__ to add damage.
    High damage with ranged weapons.
    Ultra Range Shot  shot with extreme range, may damage bow, uses an arrow
    usage point right away, causes X points of damage to the fighter.
-.. Zweihänder:
+.. ZWEIHÄNDER:
    Expert in using heavy weapons.
    Ranged Attack: Attack an enemy 2-3 meters away, may damage weapon, causes a
    few points of damage to the fighter.
@@ -84,11 +80,18 @@
 * Totems instead of spellbooks.
 * Only non-metal armor.
 * Abilities (choose one, maybe more at later levels).
-** Use medium and heavy natural armor such as dragon scale, hydra skin, etc.
-** Shape shifting into animals and elementals. High regeneration.
-** Spirit Companion. Has spirit companion "stored" in totem.
-   Cannot die, but can be temporarily sent back to the spirit world.
-** Elemental Summoner: elementals and elemental creatures.
+** SHAPE SHIFTER:
+   Shift into animals and elementals.
+   Very high damage.
+   Very high regeneration.
+** SPIRIT ANIMAL. 
+   It cannot die, but can be temporarily sent back to the spirit world.
+   Competent fighter.
+   Completely silent.
+   Immune to fear, charm, etc.
+** ELEMENTAL SUMMONER:
+   Can summon elemental creatures.
+   Maintaining the creatures does not require {focus}.
 
 
 === Paladin (Champion Specialization)
@@ -98,30 +101,44 @@
 * Shield is a must.
 * All item slots are unencumbered.
 * Abilities
-.. Spirit Mount
+.. SPIRIT MOUNT
     Conjure mount and lance at will.
     Mounted charge is fucking insane.
-.. Commander:
+    Disappears when not mounted.
+.. COMMANDER:
     As an action: 
-...  Give an ally an extra action.
-...  Give many allies extra moves.
+     a) Give an ally an extra action.
+     b) Give many allies extra moves.
     Passive:
      Nearby allies have an extra move.
-.. Bane of X:
-    Vastly Upgraded version of Terror of X
-    Deal __L__ extra points of damage.
-    All nearby X become frightened unless their level is higher than __L__.
-.. Spirit Blade:
-    Summon blade
+.. SPIRIT ARMORY:
+    Summon blade and shield. Uses no item slots. Is badass.
 
 
 === Paragon
-* Better (than champion) at casting spells
+* Better (than a champion) at casting spells
 * Only light armor?
 * Faster/better spellcasting.
-* Need have book readied.
+* Need not have book readied.
+* Automatically get more books.
 * Abilities
-.. Virtual Library where many books can be kept.
+.. TOME KEEPER
+   Storage dimension where many books can be kept 
+   Automatically get more books.
+   Able to keep more than {focus} spell alive at the same time.
+.. DESTROYER:
+   Has all the Terror of X abilities.
+   Can free cast certain spells against X at any time without any books.
+   Gains access to the spells mentioned above.
+.. SPIRIT COMPANION:
+   Humanoid
+   Can heal
+   Can attack
+   Is only active for a limited number of rounds at a time.
+   Takes one action to summon.
+   Paragon can cast spells through the companion
+      *) Companion can _touch_ the target.
+      *) Ranged spells can be fired from the companions position.
 
 
 // }}} ELITE CHAMPIONS
