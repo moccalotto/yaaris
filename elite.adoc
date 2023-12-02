@@ -15,22 +15,59 @@
 //{{{ ELITE WARRIORS
 == ELITE WARRIORS
 
-=== Berserker (Warrior Specialization)
-* Does not wear armor.
-* Does not wear shields.
-* Gains stem:[(L-3)] hp per unused item slot if not wearing any armor or shield.
-* High Damage with heavy weapons.
-* Rage:
-** stem:[(L-5)] extra {moves}.
-** Does not roll on death table, stays alive and "fine" at 0 HP.
-** Can take {trauma}, and must roll on trauma table every time damage taken
-   when at zero hp.
-** Can be defeated if too much trauma.
-** Very high damage output.
-** Damage output increases as health decreases.
+=== Berserker
+
+==== Level 6
+
+===== Recovery Die
+Your {recovery_die} is 1d12.
+
+===== More Hit Points
+Your {hit_point_total} is increased by 12.
+
+===== Better Stats
+Increase your __constitution__ and __strength__ by one point each, and increase
+one other stat by one point as well.
+
+===== No Armor
+You fight without armor and shields. If you equip any armor pieces or shields, 
+you lose the ability to go berserk.
+
+===== Bonus Hit Points
+You gain 3 bonus hit points per unused item slot. Other adventurers only get one.
+This hit point bonus increases by one every time you gain a level, such that when
+you're level 10, you gain 7 bonus hit points per unused item slot.
+
+===== Berserker's Rage
+You can choose to go berserk when someone has drawn the blood of one or more of
+you or your, causing at least one hit point of damage. This rage lasts as long
+as someone attacks or your allies. If an entire combat round passes without you
+or your allies being attacked, your rage ends.
+
+Being berserk has the following properties:
+
+* The damage you deal with heavy weapons is doubled.
+* You gain 2 extra moves, and that number increases by one every time you 
+  gain a level, such that when you are level 10, you have 7 extra moves per
+  round.
+* You have {advantage} on all  __strength__, __constitution__, and
+  __dexterity__ checks.
+* You have {disadvantage} on all  __intelligence__, __wisdom__, and
+  __charisma__ checks.
+* You do not roll on the {death_table} when you reach zero hit points;
+  you simply remain alive and kicking. But when you are at zero hit points and
+  take damage, you must roll on the {trauma_table}, just like other adventurers
+  when they take {damage_at_zero_hp}.
+* If you reach zero hit points the damage you deal with heavy weapons is
+  tripled instead of doubled.
+* When your berserker's rage ends, you take __L__d6 damage, where __L__ is your 
+  level.
+* If your rage ends when you are at zero hit pints, you must roll on the 
+  {death_table}.
 
 
-=== War Dancer (Warrior Specialization)
+
+=== War Dancer
 * Only wears light helmet and light, medium, or heavy cuirass.
 * Can only use light melee weapons and throwing weapons.
 * Gains 3 hp per unused item slot if not wearing any armor or shield.
@@ -40,15 +77,16 @@
 .. MARTIAL ARTS:
    Multiple attacks.
    High damage chi strikes.
-.. METEOR:
-   Can use Gogo's Meteor Hammer
-.. THROWING: 
+.. CHAIN WEAPONS:
+   Can use Meteor Hammer, spiked chain, and similar weapons.
+// https://en.wikipedia.org/wiki/Chain_weapon
+.. THROWING WEAPONS:
    Only uses throwable melee weapons.
    Always has an extra throwing weapon.
    Can make multiple attacks and throws.
 
 
-=== Fighter (Warrior Specialization)
+=== Fighter
 * Can wear all armor and shields.
 * Can use all non-exotic weapons.
 * All item slots are unencumbered.

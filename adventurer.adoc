@@ -47,7 +47,7 @@ you <<zero_hp,run out of hit points>>.
 [[hit_point_total]]
 *Hit point total*: is the maximum number of hit points you can have. I.e. the
 number of hit points you have when you're at full health. This number increases
-every time you gain a new level, if you're wearing armor, and if you have
+every time you gain a new level, when you're wearing armor, and when you have
 <<unused_item_slots>>.
 
 [reftext="recovery die"]
@@ -363,7 +363,7 @@ their veins is magical, and it makes them very formidable.
 * You are almost immune to mental health problems such as addiction, anxiety,
   dementia, depression and post traumatic stress disorder.
 
-* Unlike most creatures, You can be revived and rejuvenated with restoration
+* Unlike most creatures, you can be revived and rejuvenated with restoration
   magic.
 
 The effects of this blessing get more powerful over time, and further facets of
@@ -374,6 +374,8 @@ The Adventurer's Blessing is stunningly powerful; many nations want former
 adventurers of high levels in key military and governing positions, as the
 ability to be revived can be, well, vital for the continuation of the position.
 
+==== Bonus Hit Points
+You gain one extra hit point point per <<unused_item_slots,unused item slot>>.
 
 ==== Exotic Weapon Skills
 You are __not__ skilled at using any exotic weapons such as the <<kosh>>.
@@ -401,12 +403,12 @@ that stat is increased by 1 point.
 ==== An even more betterer stat
 Roll a d20 and select a stat that is lower than the result of the die roll.
 Increase that stat by 1 point. If no stats are lower than your die roll,
-nothing happens.
+increase your lowest stat by 1.
 
 ==== Adventurer’s Special Ability
 Choose one of the abilities below. You can switch this ability at later levels,
 depending on which heroic class you pick. See the
-xref:heros#[Hero’s Guide to doom & destruction & stuff].
+xref:hero#[Hero’s Guide to doom & destruction & stuff].
 
 //START_SORT //KEY:
 
@@ -457,8 +459,8 @@ check to create and eat such a “meal”.
 //KEY:
 [reftext="negotiator"]
 [[negotiator]]
-*Negotiator*: You have advantage on checks that involve negotiation. You also
-have advantage on your <<haggling_check>>.
+*Negotiator*: You have <<advantage>> on checks that involve negotiation. You also
+have <<advantage>> on your <<haggling_check>>.
 
 
 //KEY:
@@ -492,10 +494,10 @@ and 20 <<item_slots>> of cargo. When you ride it or direct it, it can move 2
 meters for every <<moves,move>> you make, and it has the same stats and hit
 points as you, except for __intelligence__, which is 2. The horse generally does
 what you want when you're in the saddle, but you have to succeed a __charisma__
-(with <<advantage>>) check to command it when you're not.
+check (with <<advantage>>) to command it when you're not.
 
-*Feed*: You can feed your horse animal feed, and if you can't you can feed it with
-<<rations>>, but the horse eats so much that you will have to make two
+*Feed*: You can feed your horse animal feed, and if you can't you can feed it
+with <<rations>>, but the horse eats so much that you will have to make two
 <<consumption_check,consumption checks>> per day.
 
 *Species*: Horses and ponies are rare in some areas of the world. In such
@@ -550,9 +552,9 @@ slot>>
 === Level 3: Graduation
 It is time for you to move on. You’re no longer just an adventurer, you’re a
 Hero. Choose a hero class from the
-xref:heros#[Hero’s Guide to doom & destruction & stuff].
+xref:hero#[Hero’s Guide to doom & destruction & stuff].
 
-[quote]
+[IMPORTANT]
 Even though you gain a heroic class at 3rd level, you're still an adventurer;
 you still have the <<_adventurers_special_ability>>, the
 <<_adventurers_blessing>>, as well as the other abilities adventurers have,
@@ -580,9 +582,9 @@ sum of the levels of all the characters in the party.
 
 [reftext="acquire"]
 [[lvl_acquire]]
-*Acquire*: You have __acquired__ a treasure when you have transported at least
-two thirds of it (by value) safely back to your base of operations. It can be
-necessary to make multiple trips to recover a large treasure.
+*Acquire*: You have __acquired__ a treasure when you have transported it
+safely back to your base of operations. It can be necessary to make multiple
+trips to recover a large treasure.
 
 .Leveling up
 ====
