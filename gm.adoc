@@ -1,5 +1,25 @@
 = GM's Guide To Doom & Destruction & Stuff
 
+== Equipment
+
+=== Weapons
+
+Lethal:: You can crit on both a __1__ and a __2__.
+Riposte:: If an adjacent foe attacks you, you can poke them for __L__ damage.
+Heavy:: ???
+Brutal:: ???
+
+== Rules
+
+=== Social Encounters.
+Roll first, then describe what happened.
+
+Advanced Encounters::
+Sometimes social encounters require multiple roles
+in order to change an NPCs attitude several steps.
+
+
+
 == Undeath
 Things very easily become undead. To avoid this:
 

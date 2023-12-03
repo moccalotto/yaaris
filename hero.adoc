@@ -38,7 +38,6 @@
 :nat20: xref:adventurer#nat20[20]
 :on_fire: xref:adventurer#on_fire[on_fire]
 :prone: xref:adventurer#prone[prone]
-:recovery_die: xref:adventurer#recovery_die[recovery die]
 :restrained: xref:adventurer#restrained[restrained]
 :ritual: xref:adventurer#ritual[ritual]
 :shady: xref:adventurer#shady[shady]
@@ -63,9 +62,6 @@ The champion is a special kind of hero that specializes in destroying the
 undead, casting spells from the front lines, and healing their comrades.
 
 === Level 3
-
-==== Recovery Die
-Your {recovery_die} is 1d8.
 
 ==== More Hit Points
 Your {hit_point_total} is increased by 8.
@@ -262,9 +258,6 @@ The mage is a scholar that solely specializes in spellcasting.
 
 === Level 3
 
-==== Recovery Die
-Your {recovery_die} is 1d6.
-
 ==== More Hit Points
 Your {hit_point_total} is increased by 6.
 
@@ -443,9 +436,6 @@ The rogue is stealthy, clever, and dangerous.
 
 === Level 3
 
-==== Recovery Die
-Your recovery die is 1d8.
-
 ==== More Hit Points
 Your {hit_point_total} is increased by 8.
 
@@ -619,9 +609,6 @@ xref:elites#[Elite’s Guide to doom & destruction & stuff].
 == WARRIOR
 
 === Level 3
-
-==== Recovery Die
-Your recovery die is 1d10.
 
 ==== More Hit Points
 Your {hit_point_total} is increased by 10.

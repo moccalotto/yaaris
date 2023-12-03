@@ -10,6 +10,14 @@
 :stem:
 :xrefstyle: basic
 
+
+// {{{ VARIABLES 
+:IS: <<item_slots,Item Slots>>
+:UP: <<usage_points,Usage Points>>
+:AHP: <<armor_hit_points,Hit Points>>
+:cost: <<_money,Cost>>
+// VARIABLES }}}
+
 This document contains character creation and game mechanics, as well as gear,
 spells, and abilities for characters of first and second level.
 
@@ -49,11 +57,6 @@ you <<zero_hp,run out of hit points>>.
 number of hit points you have when you're at full health. This number increases
 every time you gain a new level, when you're wearing armor, and when you have
 <<unused_item_slots>>.
-
-[reftext="recovery die"]
-[[recovery_die]]
-*Recovery die*: is the die you roll (one or more of) to regain hit points when
-you rest or receive magical healing. You start with a recovery die of d8.
 
 *Total item slots*: is the maximum number of <<item_slots,items>> you can
 carry. This number is the highest of your __strength__ and __constitution__.
@@ -279,15 +282,6 @@ All characters start out with the same class: Adventurer.
 
 === Level 1
 
-==== Recovery Die
-Your recovery die is d8. This means that you regenerate 1d8 hit points when you
-get a good rest. Spells and potions may let you regenerate several recovery
-dice at once.
-
-[quote]
-Non-adventurers usually only recover 1 hit point when they get a good rest.
-
-
 [reftext="hit points"]
 [[hit_points]]
 ==== Hit Points
@@ -393,14 +387,14 @@ depleted spellbooks.
 When you reach second level, you gain more hit points, better stats, and a
 special ability.
 
-==== More Hit Points More Better
+==== More Hit Points, More Better
 Your __hit point_total__ is increased by 1d8. Roll with <<advantage>>.
 
 ==== Better Stats
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
-==== An even more betterer stat
+==== An Even More Betterer Stat
 Roll a d20 and select a stat that is lower than the result of the die roll.
 Increase that stat by 1 point. If no stats are lower than your die roll,
 increase your lowest stat by 1.
@@ -582,9 +576,9 @@ sum of the levels of all the characters in the party.
 
 [reftext="acquire"]
 [[lvl_acquire]]
-*Acquire*: You have __acquired__ a treasure when you have transported it
-safely back to your base of operations. It can be necessary to make multiple
-trips to recover a large treasure.
+*Acquire*: You have __acquired__ a treasure when it is stored safely at your
+base of operations. Recovering a large treasure in a distant dungeon may
+require a lot of travel and hauling.
 
 .Leveling up
 ====
@@ -718,8 +712,8 @@ equipment exist.
 
 === Money
 The weight of a few coins is negligible, but in large quantities, 100 coins
-take up one <<item_slots,item slot>>. A gold piece is equivalent to 100 silver
-pieces, a silver piece is 100 copper pieces.
+take up one <<item_slots,item slot>>. A gold piece (__gp__) is equivalent to
+100 silver pieces (__sp__), a silver piece is 100 copper pieces (__cp__).
 
 [reftext="item slots"]
 [[item_slots]]
@@ -778,97 +772,97 @@ cannot be used any more during that combat.
 === Gear
 
 .General Gear
-[%header,cols="10,^1,^1"]
+[%header,cols="9,^2,^1"]
 |===
-| Name                  | IS| Cost
-//----------------------|---|---------
-| backpack              | 0 | 1  gp
-| bedroll               | 1 | 1  sp
-| clothing, common      | 1 | 3  sp
-| clothing, poor        | 1 | 3  cp
-| clothing, wealthy     | 1 | 3  gp
-| flint and steel       | 0 | 2  cp
-| ladder, 2m            | 2 | 10 cp
-| pole, 3m foldable     | 2 | 5  cp
-| rope, 10m             | 1 | 2  cp
-| rope, 25m             | 2 | 10 cp
-| shovel                | 1 | 2  cp
-| steel bottle          | 1 | 25 sp
-//----------------------|---|---------
+| Name                  | {IS} | {cost}
+//----------------------|------|---------
+| Backpack              |  0   | 1  gp
+| Bedroll               |  1   | 1  sp
+| Clothing, common      |  1   | 3  sp
+| Clothing, poor        |  1   | 3  cp
+| Clothing, wealthy     |  1   | 3  gp
+| Flint and steel       |  0   | 2  cp
+| Ladder, 2m            |  2   | 10 cp
+| Pole, 3m foldable     |  2   | 5  cp
+| Rope, 10m             |  1   | 2  cp
+| Rope, 25m             |  2   | 10 cp
+| Shovel                |  1   | 2  cp
+| Steel bottle          |  1   | 25 sp
+//----------------------|------|---------
 |===
 
 
 .Consumables
-[%header,cols="9,^1,^1,^1"]
+[%header,cols="7,^2,^2,^1"]
 |===
-| Name                          | IS| UP| Cost
-//------------------------------|---|---|-----------
-| <<adventurers_logbook>>       | 1 | 10| 20 gp
-| animal feed                   | 2 | 1 | 15 cp
-| bag of slingshots             | 1 | 3 | 10 cp
-| ball bearings                 | 1 | 2 | 15 cp
-| candles                       | 1 | 6 | 10 cp
-| chalk                         | 1 | 12| 3  cp
-| <<lamp_oil>>                  | 1 | 2 | 5  cp
-| quiver of arrows              | 1 | 3 | 5  sp
-| quiver of bolts               | 1 | 3 | 10 sp
-| <<magic_components>>          | 1 | 2 | 1  gp
-| <<iron_rations>>              | 1 | 2 | 4  sp
-| <<rations>>                   | 1 | 1 | 1  sp
-| <<spikes>>                    | 1 | 2 | 1  sp
-| <<lockpicking_tools>>         | 1 | 4 | 5  gp
-| <<tinkering_tools>>           | 2 | 4 | 10 gp
-| <<torch>>                     | 1 | 2 | 5  cp
-//------------------------------|---|---|-----------
+| Name                                            | {IS} | {UP} | {cost}
+//------------------------------------------------|------|------|-----------
+| <<adventurers_logbook,Adventurer's Logbook>>    |   1  | 10   | 20 gp
+| Animal Feed                                     |   2  | 1    | 15 cp
+| Bag of Slingshots                               |   1  | 3    | 10 cp
+| Ball bearings                                   |   1  | 2    | 15 cp
+| Candles                                         |   1  | 6    | 10 cp
+| Chalk                                           |   1  | 12   | 3  cp
+| <<lamp_oil,Lamp Oil>>                           |   1  | 2    | 5  cp
+| quiver of arrows                                |   1  | 3    | 5  sp
+| quiver of bolts                                 |   1  | 3    | 10 sp
+| <<magic_components,Magic Components>>           |   1  | 2    | 1  gp
+| <<iron_rations,Iron Rations>>                   |   1  | 2    | 4  sp
+| <<rations,Rations>>                             |   1  | 1    | 1  sp
+| <<spikes,Spikes>>                               |   1  | 2    | 1  sp
+| <<lockpicking_tools,Lockpicking Tools>>         |   1  | 4    | 5  gp
+| <<tinkering_tools,Tinkering Tools>>             |   2  | 4    | 10 gp
+| <<torch,Torch>>                                 |   1  | 2    | 5  cp
+//------------------------------------------------|------|------|-----------
 |===
 
 [[light_armor_table]]
 .Light Armor
-[%header,cols="9,^1,^1,^1"]
+[%header,cols="7,^2,^2,^1"]
 |===
-| Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
-//----------------------|--------------|-------------------------|------
-| Light Shield          |       1      |          4              | 8  gp
-| Light Helmet          |       1      |          3              | 8  gp
-| Light Cuirass         |       2      |          6              | 27 gp
-| Light Gauntlets       |       1      |          3              | 8  gp
-| Light Greaves         |       1      |          3              | 8  gp
-//----------------------|--------------|-------------------------|------
+| Armor Piece           | {IS} | {AHP} | {cost}
+//----------------------|------|-------|------
+| Light Shield          | 1    |  4    | 8  gp
+| Light Helmet          | 1    |  3    | 8  gp
+| Light Cuirass         | 2    |  6    | 27 gp
+| Light Gauntlets       | 1    |  3    | 8  gp
+| Light Greaves         | 1    |  3    | 8  gp
+//----------------------|------|-------|------
 |===
 
 .Medium Armor
-[%header,cols="9,^1,^1,^1"]
+[%header,cols="7,^2,^2,^1"]
 |===
-| Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
-//----------------------|--------------|-------------------------|------
-| Medium Shield         |       2      |          6              | 64  gp
-| Medium Helmet         |       2      |          6              | 64  gp
-| Medium Cuirass        |       3      |          9              | 125 gp
-| Medium Gauntlets      |       2      |          6              | 64  gp
-| Medium Greaves        |       2      |          6              | 64  gp
-//----------------------|--------------|-------------------------|------
+| Armor Piece           | {IS}  | {AHP} | {cost}
+//----------------------|-------|-------|------
+| Medium Shield         |   2   |   6   | 64  gp
+| Medium Helmet         |   2   |   6   | 64  gp
+| Medium Cuirass        |   3   |   9   | 125 gp
+| Medium Gauntlets      |   2   |   6   | 64  gp
+| Medium Greaves        |   2   |   6   | 64  gp
+//----------------------|-------|-------|------
 |===
 
 
 .Heavy Armor
 [[heavy_armor]]
-[%header,cols="8,^2,^1,^1"]
+[%header,cols="7,^2,^2,^1"]
 |===
-| Armor Piece           |<<item_slots>>| <<armor_hit_points,HP>> | Cost
-//----------------------|--------------|-------------------------|------
-| Heavy Shield          |      3       |          9              | 216 gp
-| Heavy Helmet          |      3       |          9              | 216 gp
-| Heavy Cuirass         |      4       |          12             | 343 gp
-| Heavy Gauntlets       |      3       |          9              | 216 gp
-| Heavy Greaves         |      3       |          9              | 216 gp
-//----------------------|--------------|-------------------------|------
+| Armor Piece           | {IS} | {AHP} | {cost}
+//----------------------|------|-------|------
+| Heavy Shield          |   3  |   9   | 216 gp
+| Heavy Helmet          |   3  |   9   | 216 gp
+| Heavy Cuirass         |   4  |   12  | 343 gp
+| Heavy Gauntlets       |   3  |   9   | 216 gp
+| Heavy Greaves         |   3  |   9   | 216 gp
+//----------------------|------|-------|------
 |===
 
 [[lodging]]
 .Food and lodging (per person per night)
-[%header,cols="10,^1"]
+[%header,cols="11,^1"]
 |===
-| Lodging                                   | Cost
+| Lodging                                   | {cost}
 //------------------------------------------|--------
 | Opulent (luxurious rooms and food)        | 1 gp
 | Middle class (small room, decent fare)    | 1 sp
@@ -881,28 +875,28 @@ cannot be used any more during that combat.
 .Melee Weapons
 [%header,cols="9,^2,^1"]
 |===
-| Melee Weapon                  | <<item_slots>> | Cost
-//------------------------------|----------------|--------
-| Light Melee Weapon            |        1       | 3 gp
-| Heavy Melee Weapon            |        2       | 8 gp
-//------------------------------|----------------|--------
+| Melee Weapon                  | {IS} | {cost}
+//------------------------------|------|--------
+| Light Melee Weapon            |   1  | 3 gp
+| Heavy Melee Weapon            |   2  | 8 gp
+//------------------------------|------|--------
 |===
 
 .Ranged Weapons
 [%header,cols="7,^2,^2,^1"]
 |===
-| Name                          | <<item_slots>> | <<usage_points>> | Cost
-//------------------------------|----------------|------------------|------
-| Dagger                        |       1        |        1         | 3  gp
-| Spear                         |       1        |        1         | 3  gp
-| Darts                         |       1        |        4         | 3  gp
-| Bow                           |       2        |        -         | 7  gp
-| ↳ quiver of arrows            |       1        |        10        | 2  gp
-| Crossbow                      |       1        |        -         | 12 gp
-| ↳ quiver of bolts             |       1        |        10        | 2  gp
-| Sling                         |       0        |        -         | 4  gp
-| ↳ bag of stones               |       1        |        10        | 2  gp
-//------------------------------|----------------|------------------|------
+| Name                          | {IS} | {UP} | {cost}
+//------------------------------|------|------|------
+| Dagger                        |   1  |  1   | 3  gp
+| Spear                         |   1  |  1   | 3  gp
+| Darts                         |   1  |  4   | 3  gp
+| Bow                           |   2  |  -   | 7  gp
+| ↳ quiver of arrows            |   1  |  10  | 2  gp
+| Crossbow                      |   1  |  -   | 12 gp
+| ↳ quiver of bolts             |   1  |  10  | 2  gp
+| Sling                         |   0  |  -   | 4  gp
+| ↳ bag of stones               |   1  |  10  | 2  gp
+//------------------------------|------|------|------
 |===
 
 [quote]
@@ -987,8 +981,8 @@ instead of spending coin.
 ==== Healing Salve
 These salves can heal minor wounds.
 You spend one <<consumption_check,consumption>> of salve, and five minutes
-to apply it to a willing recipient. Once applied, the recipient is allowed
-to roll their <<recovery_die>>, and regain that many hit points.
+to apply it to a willing recipient. Once applied, the recipient rolls a number 
+of dice (usually a few d6), and regain that many hit points.
 
 //KEY:
 [reftext="kosh"]
@@ -1093,8 +1087,8 @@ consumption>> of rations every day, otherwise you become <<starving>>.
 
 [reftext="iron rations"]
 [[iron_rations]]
-*Iron Rations* have more <<usage_points>> that normal rations, while still only
-requiring one <<item_slots,item slot>>.
+*Iron Rations* have twice as many <<usage_points>> as normal rations, while
+still only requiring one <<item_slots,item slot>>.
 
 
 //KEY:
@@ -1199,8 +1193,9 @@ to the table below, and do what it says, even if you don't like the result.
 //----------|----------------------------------------------------
 |===
 
-[quote]
+[TIP]
 <<negotiator,Negotiators>> have <<advantage>> on haggling checks.
+
 
 //}}}
 
@@ -1553,7 +1548,7 @@ beyond your <<hit_point_total>>.
 [reftext="rest"]
 [[rest]]
 *Resting*: Resting for 8 hours, at least six of which are spent sleeping, will
-allow you to regenerate a bit; roll your <<recovery_die>>, and increase your
+allow you to regenerate a bit; roll a d6, add your level,  and increase your
 hit points by that number. Aside from sleeping, eating, and keeping watch, you
 cannot do anything of consequence while resting.
 
@@ -1562,8 +1557,8 @@ You can regenerate 1d8 hit points after a meal, 6 hours of sleep, and two hours
 of rest.
 
 *Magical Healing*: Spells (such as <<_heal_x>>), potions, and powers often
-allow you to instantly recover hit points, usually by rolling a number of
-recovery dice.
+allow you to instantly regain hit points, usually by rolling a number of
+d6.
 
 == CONDITIONS
 
@@ -2205,14 +2200,14 @@ The gloomy area looks like dense fog when seen from the outside.
 === Heal (X)
 *Level 1+, <<ritual>>, range: 3+<<X>> meters*
 
-You heal a creature within range. It recovers <<X>> recovery dice.
+You heal a creature within range. It regains <<X>>d6+<<X>>
 
 === Hurt (X)
 *Level 1+, <<ritual>>, range: <<X>>+3 meters*
 
 You target a creature in range that you can see. If you succeed an
-<<adversarial>> __wisdom__ check, the creature loses <<X>>d8 <<hit_points>>,
-otherwise it loses <<X>>d4 <<hit_points>>.
+<<adversarial>> __wisdom__ check, the creature loses <<X>>d6+<<X>>
+<<hit_points>>, otherwise it just loses <<X>>d6 <<hit_points>>.
 
 === Illuminate (X)
 *Level 1+, range: 2+<<X>> meters, duration: <<X>> hours*

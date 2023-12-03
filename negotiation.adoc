@@ -1,0 +1,401 @@
+== Negotiation
+Know what’s more satisfying than punching a devil in the face to send them back
+to the Seven Cities of Hell? Convincing that devil it’s in their best interest
+to willingly head back to Hell with your words and getting them to fork over
+their magic sword before they go. Not because you threatened them, but because
+you negotiated a really ridiculously good deal.
+
+It is I, your James Introcaso, back to show off the latest iteration of the
+MCDM RPG’s negotiation rules. These are the rules we’re currently testing with
+our hard-working playtest coordinators. Join the MCDM Discord server if you’re
+interested in joining an early playtest or head on over to our Patron channel
+to talk with other Patrons about these posts.
+
+We have had a couple other iterations of negotiation before this. In the very
+first iteration, each NPC you negotiated with had three different negotiation
+defenses: Ethos, Pathos, and Logos. You made arguments that appealed to these
+defenses followed by an appropriate Test, and the Target Number (TN) for the
+Test was the negotiation defense. You could end a negotiation with the NPC
+giving one of six different responses to the heroes’ request:
+
+* “Yes, and…” I’m going to help you storm Lord Saxton’s keep, and I’ll lend you
+  the Codex Mortis to help.
+* “Yes.” I’m going to help you storm Lord Saxton’s keep.
+* “Yes, but…” I’m going to help you storm Lord Saxton’s keep, if you can first
+  get rid of the wyvern who keeps harassing merchants on the road outside the
+  forest.
+* “No, but…” I’m not going to help you storm Lord Saxton’s keep, but I do know
+  of a secret tunnel built beneath the keep you could use to sneak inside.
+* “No.” I’m not going to help you storm Lord Saxton’s keep! That is folly and
+  could get me killed.
+* “No, and…” I’m not going to help you storm Lord Saxton’s keep. (mutters to
+  self) And I’m going to warn him that you are coming.
+
+We didn't love that because we don’t want you to have to make a Test to be an
+effective negotiator. A good argument that appeals to an NPC’s specific
+sensibilities SHOULD move the negotiation needle at least a little bit. What we
+did love was the six outcomes, and those have survived in every iteration of
+the rules so far.
+
+Our next system did allow everyone to participate and didn’t require any Tests
+(though they could be made to help get the best outcome in a negotiation). The
+NPC had an Interest score and a Reluctance score. The job of the heroes is to
+increase the NPC’s Interest to maximum and decrease their Reluctance to 0 in
+order to get the best deal possible. They raised Interest by making Arguments
+called Appeals, meant to convince the NPC that working with heroes was in their
+own best interest and/or aligns with their personal moral code. To reduce
+Reluctance, heroes could make Arguments called Enticements, which are basically
+promises of gifts or favors in return for help. To be successful, an Appeal or
+Enticement must invoke one of the NPC’s Motivations, which can be Ethical or
+Emotional, and can be discovered by researching or interacting with the NPC
+before the negotiation or through Intuition-Empathy Tests during the
+negotiation. But beware! The NPC also has Pitfalls, rage-inducing, humiliating,
+or otherwise sore subjects that when brought up decrease the NPC’s Interest and
+increase their Reluctance. The NPC also had a Patience score, which determined
+how many Arguments you could make before they made a final offer to the heroes.
+
+While this system delivered negotiation as a pillar of gameplay that everyone
+could participate in, a lot of testers didn’t love how complicated the
+interactions were and felt that the depth of the rules removed the fun from
+negotiations. They did like some parts of the system: appealing to Motivations,
+avoiding Pitfalls, and the Patience score.
+
+The current iteration of the rules is testing better, though all the results
+aren’t yet in. It uses parts of the two previous iterations that allows
+everyone to participate, allows heroes with social Skills to shine, and allows
+players and GMs to stay in the moment and roleplay while still approaching the
+problem strategically. In fact… why don't I just share the current rules with
+you?
+
+By the way, if you like what you’re reading and want to grab the hardcover
+version of the game, you can sign up here to find out when our BackerKit
+campaign for this game goes live.
+
+== Negotiation
+Negotiation gives players a chance to get what they want without combat … or
+without further combat! You could negotiate with a king to get military support
+against an incursion of demons in a neighboring country, a bandit leader to
+convince her to stop attacking merchant caravans on the road and instead target
+travelers loyal to a tyrant, or to convince an archmage to allow you access to
+their secret library so you can research the location of a dragon-slaying axe.
+
+== When to Negotiate
+In order for a negotiation to occur, an NPC must have an interest in
+negotiating with the heroes and a reason to be reluctant about simply jumping
+on board with whatever the heroes propose. Negotiations only happen when an NPC
+has an internal tension between an interest and a reluctance to work with the
+heroes. For instance, if the heroes ask a king to send his army into a
+neighboring kingdom to battle a demon incursion, the king is conflicted because
+he wants to stop the incursion, but he also doesn’t want to risk the lives of
+his soldiers defending a foreign nation and leave his people unprotected. If
+the heroes want the help of the king’s army, they need to negotiate.
+
+To negotiate successfully, the heroes must make persuasive arguments to get the
+NPC to do what they want. “Do it or we kill you” is a threat—not an argument or
+a negotiation.
+
+We don’t expect heroes to use the negotiation rules every time they try to
+convince an NPC to see things their way. Negotiations happen with important,
+named NPCs who can provide information, items, or services that dramatically
+change the course of an adventure or give the heroes a big benefit.
+Negotiations typically involve all the heroes and occur when they want to gain
+an item of great power, a retainer or companion, the services of an influential
+organization or nation, or a plot-twist-worthy piece of information, or if the
+heroes try to convince a group of potential enemies to stand down.
+
+For instance, if a hero wants information about a cult leader from a captured
+cultist, a single Presence-Deceive or Might-Intimidate Test is likely all that
+is needed to get the desired details and there is no need to use the
+negotiation rules (especially if this is a threat). If a hero wants to flirt
+with the local alchemist to get a free healing potion, they just need to make a
+Presence-Charm Test. But if the heroes want to convince a lich to lend them the
+legendary Codex Mortis or convince a dragon to halt an attack on a wizard’s
+tower, then negotiation is in order.
+
+== Limits of Negotiation
+Some players will naturally think that the negotiation rules should give them
+something akin to mind-control superpowers. They’re not used to imaging NPCs
+complexly. They will attempt to negotiate in situations where negotiation is
+either completely unreasonable or literally impossible. No matter how
+persuasive or well-spoken a hero is, there is no argument to be made that might
+convince the vile Lord Syull to give up his pursuit of evil and become a
+gardener.
+
+Negotiation is not a process that changes an NPC’s character. All the heroes
+are doing is trying to get an NPC to see how behaving differently would be in
+character. You might well be able to get a hitherto loyal lieutenant to
+reconsider the error of their ways—that’s a classic dramatic trope—but even
+then you’re not changing their character. You’re convincing them their current
+evil ways are out of character. “Is this who you are? Is this how you want to
+be remembered?!”
+
+In spite of this advice, some players may still want to use any negotiation
+system as a means to an end, by saying, “JUST DO WHAT WE SAY OR ELSE!!” That’s
+not how most people, including NPCs, work. If you open with that attitude,
+you’ve already lost the negotiation.
+
+== The Threat of Violence
+In the real world, negotiations rarely come with a threat of immediate
+violence. Ambassadors don’t normally get into fist fights. But this is a heroic
+fantasy RPG and the heroes are all armed to the teeth and can alter reality
+with their minds. The threat of violence is already implied. Everyone involved
+knows the heroes could draw steel at any moment.
+
+We can assume that the underlying potential for a negotiation to turn violent
+is already factored in. If, during the course of a negotiation, the heroes
+decide to bring that threat to the forefront of talks, then they’ve exited the
+realm of negotiation and entered the realm of brute force subject and it’s
+probably initiative.
+
+You absolutely can threaten someone with violence and get them to do what you
+want, but this is an incredibly temporary state. You haven’t convinced them of
+anything other than your own power over them, and they will only comply while
+that threat is evident.
+
+That NPC is not willingly doing what you asked. They’re doing it on threat of
+violence and will, therefore, go back to their previous behavior as soon as
+they think they can get away with it.
+
+Negotiation is about persuading someone to help you willingly because you have
+convinced them this is a good idea. It is wise or logical or will make them
+look good.
+
+== Negotiation Stats
+During negotiation, the heroes can strike a favorable deal if they maximize the
+NPC’s Interest by making Arguments that invoke the NPC’s Motivations and avoid
+their Pitfalls before their Patience wears out. You probably noticed that
+Interest, Patience, Motivations, Pitfalls, and Arguments all start with capital
+letters. That’s because they’re actual game terms used during negotiation.
+
+=== Interest
+An NPC’s Interest represents how eager they are to make a deal with the heroes.
+Interest is graded on a scale of 0 (no interest) to 5 (the most possible
+interest). When a negotiation begins, an NPC’s Interest is between 1 and 4.
+When an NPC’s Interest is 5, the NPC makes a final offer and the negotiation
+ends (see “Keep Going or Stop”). When the NPC’s Interest is 0, they end a
+negotiation without offering the heroes any deal.
+
+Interest increases and decreases during the negotiation based on the Arguments
+the heroes make.
+
+=== Patience
+An NPC’s Patience represents how much time and effort the NPC is willing to
+devote to a negotiation. Patience is graded on a scale of 0 to 5. An NPC starts
+a negotiation with their Patience higher than 0. If an NPC’s Patience reaches
+0, the NPC makes a final offer and then negotiation ends (see “Keep Going or
+Stop”).
+
+Patience can decrease each time the heroes make an Argument during a
+negotiation.
+
+=== Motivations
+Every NPC has Motivations that the heroes can appeal to with an Argument. Every
+NPC has at least two Motivations, though some have more. Arguments that appeal
+to an NPC’s Motivations can cause their Interest to increase without the need
+to make a Test. Each Motivation can only be successfully appealed to once
+during a negotiation. To successfully appeal to a Motivation, the heroes must
+use the Motivation in an Argument without mentioning a Pitfall or getting
+caught in a lie.
+
+==== Sample Motivations
+
+Some motivations are the principles determined by the NPC’s personal worldview.
+For instance, a knight sworn to protect the royalty may have the Motivation:
+“Protect the monarch and their family at any cost.” Likewise, a bandit captain
+may have this Motivation: “You deserve whatever you are strong enough to take.”
+
+Other motivations are the instincts and intuitions that drive these NPC’s
+behavior. For instance, an NPC might have the Motivation: “I want history to
+remember me.” Another might have this Motivation: “I love the animals of the
+wode and would do anything to keep them safe and happy.”
+
+=== Pitfalls
+Pitfalls are topics that spark ire, regret, shame, jealousy, fear or another
+negative response in an NPC. Mentioning a Pitfall in a negotiation causes an
+NPC’s Interest to wane. Every NPC has at least two Pitfalls. An NPC’s Pitfalls
+could include an infamous defeat they suffered at the hands of a rival, their
+tumultuous relationship with an estranged family member, or an irrational
+hatred of bunnies.
+
+== Opening a Negotiation
+A negotiation begins when the heroes ask something of an NPC, and the Director
+deems the circumstances require a negotiation. Remember, negotiations should
+only come into play when the heroes require assistance that could change the
+course of an adventure and when the NPC is conflicted about working with them.
+
+=== Stop Combat, Start Negotiation
+If the players are battling an NPC and want to halt combat to negotiate, the
+Director can ask that one of the heroes make a Presence-Charm,
+Presence-Intimidate, or other applicable Test as a Maneuver to stop combat and
+begin a negotiation. The TN of this Test is generally 9 if the NPC is clearly
+losing the battle, 12 if the battle’s outcome is unclear, or 15 if the NPC is
+clearly winning the battle.
+
+=== Starting Stats
+An NPC’s starting negotiation stats depend on their attitude toward the heroes
+as shown on the Negotiation Starting Attitudes table. The Director can adjust
+this table as they see fit. For instance, a naturally impatient NPC might have
+lower Patience, and a hostile NPC who has a greater than usual stake in the
+negotiation topic may have a higher than normal Interest.
+
+.Negotiation Starting Attitudes
+
+TABLE
+TABLE
+TABLE
+TABLE
+TABLE
+TABLE
+
+
+
+== Divining Motivations and Pitfalls
+If a hero wishes to figure out an NPC’s Motivations and Pitfalls, they can make
+an Intuition-Empathy Test while interacting with the NPC during a negotiation.
+The TN for the Test is the same as the NPC’s Argument TN on the Negotiation
+Starting Attitudes table. On a success, the hero learns one of the NPC’s
+Motivations that has yet to be appealed to or one of the NPC’s undiscovered
+Pitfalls (chosen by the hero). After making the Test, the heroes can’t make
+another to determine the NPC’s Motivations or Pitfalls until they make an
+Argument to the NPC or the Negotiation ends.
+
+=== Outside of Negotiation
+While the heroes can discover an NPC’s Motivations or Pitfalls through Tests
+made during negotiation, they can employ other methods of investigating the
+NPC’s Motivations or Pitfalls before negotiation. Research or a little
+reconnaissance (like reading the NPC’s diary or talking to their closest
+friends), can reveal quite a bit about a person!
+
+== Making Arguments
+As part of their initial request to the NPC, a hero should make an argument to
+the NPC as to why the NPC should give the heroes what they want. The hero might
+offer to do something in exchange, like clear bandits from a forest, hand over
+a piece of treasure, or slay a dragon for the NPC as part of an Argument.
+Instead of offering something, the hero could attempt to convince the NPC it is
+in their best interest or a moral imperative to help. For example, the hero
+could appeal to a knight’s sense of duty, the potential wealth a mercenary
+could make, or the final wish of a queen’s dearly departed grandmother as part
+of an Argument.
+
+One hero makes the Argument to the NPC, but the players can discuss the
+Argument out of character before making it. Should they offer something to the
+NPC to sweeten the deal, or should they argue that the NPC is making a decision
+in their own best interest? What argument do they think would best sway the
+NPC? It’s up to the group of players to decide how much out of character
+discussion they want to have before making an argument. Discuss this before you
+actually get into a negotiation, so you know where everyone’s comfort level is.
+
+=== Pitfall Mentioned
+If the argument mentions one of the NPC’s Pitfalls, their Interest and Patience
+decreases by 1. The NPC might also warn the heroes not to bring the subject up
+again.
+
+=== Appeal to Motivation
+If the argument doesn’t include a Pitfall and appeals to one the NPC’s
+Motivations that hasn’t already been appealed to, then the NPC’s Interest
+increases by 1 and their Patience remains the same.
+
+If the heroes attempt to appeal to a motivation that’s already been appealed
+to, the NPC’s Interest remains the same and their Patience decreases by 1.
+
+=== No Pitfall or Motivation Mentioned
+If the argument doesn’t include one of the NPC’s Pitfalls or Motivations, the
+hero who makes the argument must make a Test to appeal to the NPC. Depending on
+the argument, it could be a Reason, Intuition, or Presence Test that uses any
+applicable skill, likely Charm, Deceive, Empathy, Intimidate, or a Knowledge
+skill. At the Director’s discretion, other Characteristics and Skills can be
+used as part of the test. The TN for the Test is determined by the NPC’s
+starting attitude as shown on the Negotiation Starting Attitudes table. On a
+success, the NPC’s Interest increases by 1. On a failure, the target’s Interest
+decreases by 1. At the Director’s discretion, the NPC’s Interest could decrease
+further if the NPC catches a hero who used the Deceive skill in a lie.
+
+Succeed or fail, this method reduces the NPC’s Patience by 1 because it doesn’t
+appeal directly to one of their Motivations.
+
+== NPC Response and Offer
+After a hero makes an Argument, the NPC responds:
+
+* They respond positively if the heroes increase their Interest. “That’s an
+  excellent point.” “You’ve given me much to consider.” “Fair enough.” “Makes
+  sense to me.”
+* They respond negatively if the heroes decrease their Interest. “I don’t buy
+  that.” “Poppycock!” “I hear you, but I disagree.” “That’s not going to sway
+  me.”
+* They respond with impatience if the heroes fail to increase or decrease their
+  Interest. “I’ve heard that before.” “Are you going to offer me anything
+  real?” “This debate is tiresome.” “BORING!”
+
+The initial response should come with an offer (or refusal to make an offer)
+based on the NPC’s current Interest. If the Argument reduced the NPC’s Patience
+to 0, then the NPC lets the heroes know that this is their final offer.
+
+=== Interest 5 (“Yes, and…”)
+If the NPC’s Interest is 5, the NPC offers everything the heroes asked for and
+sweetens the deal. This result is the best possible outcome for the heroes. If
+the heroes offered to perform any services or make payments as part of the
+deal, the NPC might offer to waive those, allowing the heroes to get whatever
+they want from the NPC for free. Alternatively, the NPC might hold the heroes
+to any offers they made and instead offer an extra service or item on top of
+what the heroes asked for. For instance, if the heroes asked the boss of a
+thieves’ guild for the organization’s help in standing against Lord Saxton, the
+guildmaster may pledge to send a unit of elite assassins to aid in the battle
+against Saxton and then offer the heroes a quiver filled with explosive arrows
+to also aid in the fight. The NPC should let the heroes know that this is the
+best offer they can make.
+
+=== Interest 4 (“Yes.”)
+If the NPC’s Interest is 4, the NPC offers the heroes everything they asked for
+without sweetening the deal. The NPC also accepts anything the heroes have
+offered as part of the deal with this result. For instance, if the heroes offer
+to help spring a guild thief from prison in exchange for a unit of the
+organization's elite assassins to stand against Lord Saxton, the guildmaster
+agrees to those terms without attempting to adjust anything. This likely ends
+the negotiation, but it’s possible the heroes could push for a little more,
+provided the NPC has the Patience for another Argument.
+
+=== Interest 3 (“Yes, but…”)
+If the NPC’s Interest is 3, they offer the heroes what they want in exchange
+for everything the heroes offered … plus a little extra, such as a favor or
+payment from the heroes. For instance, if the heroes offered to free a thieves’
+guild member from prison in exchange for a unit of the organization's elite
+assassins to stand against Lord Saxton, the guildmaster might ask them to throw
+in a payment, a magic item, or to free an additional prisoner.
+
+=== Interest 2 (“No, but…”)
+If the NPC’s Interest is 2, the NPC can’t give the heroes what they want.
+However, they are willing to offer some other, less impactful good or service
+in exchange for whatever the heroes have promised. For example, the guildmaster
+might not be willing to spare any troops to fight Lord Saxton but might instead
+offer the latest spy reports on Lord Saxton’s movements for the jailbreak.
+
+=== Interest 1 (“No.”)
+If the NPC’s Interest is 1, they outright reject the heroes’ idea without a
+counteroffer. If the NPC still has Patience, they might push the heroes for a
+better deal, saying something like, “Why should we risk our necks to help Lord
+Saxton? What’s really in it for the thieves’ guild, other than a short, brutal
+end when you inevitably fail?”
+
+=== Interest 0 (“No, and…”)
+If the NPC’s Interest is 0, they offer nothing, refuse to negotiate further,
+and seek to harm the heroes. The NPC might attack immediately, or they could
+take a different approach and wait for the heroes to leave their presence
+before taking action. The NPC might spread malicious rumors about the heroes,
+send assassins after them, or otherwise make the heroes’ lives difficult. If
+the heroes don’t want to be at odds with the NPC, they’ll need to offer an
+expensive gift or undertake a quest just to make amends. It is impossible to
+continue a negotiation when an NPC’s Interest drops to 0.
+
+== Keeping Going or Stop
+If the NPC still has Patience after making an offer and their Interest is
+between 1 and 4, the heroes can make another Argument to attempt to improve the
+deal, or they can accept the offer and end the negotiation.
+
+If the NPC’s Patience is 0 or their Interest is 5, then the offer the NPC makes
+is their final offer to the NPCs. The heroes can accept the offer or not, but
+either way, the negotiation ends.
+
+If the NPC’s Interest is 0, the NPC ends the negotiation without accepting a
+deal.
+
+The heroes can walk away from a negotiation without accepting a deal at any time.

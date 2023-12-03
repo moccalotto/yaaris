@@ -208,7 +208,7 @@ html{
     color:#7a2518;
     font-weight:400;
     margin-top:0;
-    margin-bottom:.25em
+    margin-bottom:.25em;
 }
  div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{
     margin:0;
@@ -322,7 +322,9 @@ html{
 }
  dl dt{
     margin-bottom:.3125em;
-    font-weight:bold
+    font-weight:bold;
+    font-family:"Shadows Into Light Two";
+    font-size:0.87em;
 }
  dl dd{
     margin-bottom:1.25em

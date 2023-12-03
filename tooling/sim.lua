@@ -4,7 +4,7 @@ end
 
 
 local simcount = 100000
-local startVal = 11
+local startVal = 14
 local sum = 0
 
 for _ = 1, simcount, 1 do

@@ -19,9 +19,6 @@
 
 ==== Level 6
 
-===== Recovery Die
-Your {recovery_die} is 1d12.
-
 ===== More Hit Points
 Your {hit_point_total} is increased by 12.
 
@@ -29,14 +26,18 @@ Your {hit_point_total} is increased by 12.
 Increase your __constitution__ and __strength__ by one point each, and increase
 one other stat by one point as well.
 
-===== No Armor
-You fight without armor and shields. If you equip any armor pieces or shields, 
-you lose the ability to go berserk.
-
 ===== Bonus Hit Points
 You gain 3 bonus hit points per unused item slot. Other adventurers only get one.
 This hit point bonus increases by one every time you gain a level, such that when
 you're level 10, you gain 7 bonus hit points per unused item slot.
+
+===== No Armor
+You fight without armor and shields. If you equip any armor pieces or shields, 
+you lose the ability to go berserk.
+
+==== Weapon Skills
+You are skilled at using light melee weapons, heavy melee weapons, and unarmed
+combat.
 
 ===== Berserker's Rage
 You can choose to go berserk when someone has drawn the blood of one or more of
@@ -65,6 +66,40 @@ Being berserk has the following properties:
 * If your rage ends when you are at zero hit pints, you must roll on the 
   {death_table}.
 
+==== Level 7
+
+===== More Hit Points
+Increase your {hit_point_total} by 1d8. Roll with {advantage}.
+
+===== Better Stats
+
+First::
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
+
+Then:: 
+If your strength is lower than 15, increase it by 1, and if your
+constitution is lower than 15, increase it by 1.
+
+===== Bonus Hit Points
+You gain now gain 4 bonus hit points per unused item slot. 
+
+
+==== Level 8
+
+===== More Hit Points
+Increase your {hit_point_total} by 1d8. Roll with {advantage}.
+
+===== Better Stats
+For each of your stats, you roll a d20; if the roll is higher than the stat,
+that stat is increased by 1 point.
+
+===== Bonus Hit Points
+You gain now gain 4 bonus hit points per unused item slot. 
+
+==== Level 9
+
+==== Level 10
 
 
 === War Dancer
