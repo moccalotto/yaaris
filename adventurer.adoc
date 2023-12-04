@@ -209,13 +209,14 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 Roll 1d6. If you rolled 5 or 6, you have a light shield. Otherwise, you don’t
 have a shield.
 
-// Turn automatic section id off. We want <<Armor>> to link
-// to a later section
+// Turn automatic section id off. We want <<Armor>> and <<_armor>> to link to a
+// later section
 :!sectids:
 ==== Armor
 :sectids:
 Armors give you extra hit points; you have 1d3-1
 <<light_armor_table,light armor pieces>> of your choice.
+
 
 ==== Utility Gear
 Roll once on the <<utility_gear_1>> table.
@@ -310,15 +311,15 @@ deal with each weapon category.
 --
 [[adventurer_damage_rolls_table]]
 .Adventurer Damage Rolls
-[%header,cols="8,^2,^2"]
+[%header,cols="6,^2,^2,^2"]
 |===
-| Weapon Type           | Skill level | Damage Roll
-//----------------------|-------------|------------
-| Light Melee Weapons¹  | Skilled     | 1d6
-| Ranged Weapons²       | Skilled     | 1d6
-| Heavy Melee Weapons³  | Unskilled   | 1d10
-| Unarmed Combat⁴       | Unskilled   | 1d3
-//----------------------|-------------|------------
+| Weapon Type           | Stat        | Skill level | Damage
+//----------------------|-------------|-------------|--------
+| Light Melee Weapons¹  | _Dexterity_ | Skilled     | 1d6
+| Ranged Weapons²       | _Wisdom_    | Skilled     | 1d6
+| Heavy Melee Weapons³  | _Strength_  | Unskilled   | 1d10
+| Unarmed Combat⁴       | _Strength_  | Unskilled   | 1d3
+//----------------------|-------------|-------------|--------
 |===
 
 . Most light melee weapons are one-handed, with notable exceptions such as
@@ -423,45 +424,48 @@ piece of broken weapons and armor pieces using such tools.
 //KEY:
 [reftext="everdeen"]
 [[everdeen]]
-*Everdeen*: If you are without arrows during combat, you can spend 3 moves, and
-make a __charisma__ check. If successful, you somehow have a single extra arrow
-and you’re ready to fire. If unsuccessful, you cannot use this ability before
-you have stocked up on ammunition. This ability also works with bolts,
-slingshot, and darts, but not thrown weapons such as daggers and javelins.
+*Everdeen*:
+If you are without arrows during combat, you can spend 3 moves, and make a
+__charisma__ check. If successful, you somehow have a single extra arrow and
+you’re ready to fire. If unsuccessful, you cannot use this ability before you
+have stocked up on ammunition. This ability also works with bolts, slingshot,
+and darts, but not thrown weapons such as daggers and javelins.
 
 
 //KEY:
 [reftext="great weapon specialist"]
 [[great_weapon_specialist]]
-*Heavy weapon specialist*: You are skilled at using heavy melee weapons, and
+*Heavy Weapon Specialist*: You are skilled at using heavy melee weapons, and
 when doing so, your damage die is 1d12.
 
 
 //KEY:
 [reftext="monstrous gourmand"]
 [[monstrous_gourmand]]
-*Monstrous Gourmand*: You can make edible ration packs from fresh monster parts
-(any recently dead creature will do) It requires sharp cutting instruments, a
-large pot, a bonfire (or equivalent source of heat), one hour of work, and a
-successful __intelligence__ check to create one ration pack. A medium sized
-creature “contains” 3 ration packs. In addition to creating rations, you are
-also able to eat fresh, uncooked, monster meat without getting sick. It
-requires a sharp cutting tool, 3d6 minutes, and a successful __constitution__
-check to create and eat such a “meal”.
+*Monstrous Gourmand*: 
+You can make edible ration packs from fresh monster parts (any recently dead
+creature will do) It requires sharp cutting instruments, a large pot, a bonfire
+(or equivalent source of heat), one hour of work, and a successful
+__intelligence__ check to create one ration pack. A medium sized creature
+“contains” 3 ration packs. In addition to creating rations, you are also able
+to eat fresh, uncooked, monster meat without getting sick. It requires a sharp
+cutting tool, 3d6 minutes, and a successful __constitution__ check to create
+and eat such a “meal”.
 
 
 //KEY:
 [reftext="negotiator"]
 [[negotiator]]
-*Negotiator*: You have <<advantage>> on checks that involve negotiation. You also
-have <<advantage>> on your <<haggling_check>>.
+*Negotiator*: 
+You have <<advantage>> on checks that involve negotiation, including
+<<haggling_check>>.
 
 
 //KEY:
 [reftext="pugilist"]
 [[pugilist]]
-*Pugilist*: You are skilled at unarmed combat, and your unarmed combat damage
-die is 1d6.
+*Pugilist*: 
+You are skilled at unarmed combat, and your unarmed combat damage die is 1d6.
 
 [quote]
 Striking certain monsters (such as fire elementals) with your body can have
@@ -471,17 +475,17 @@ grave consequences.
 //KEY:
 [reftext="rider"]
 [[rider]]
-*Rider*: You acquire a trained horse for free (tamed wild horse, a gift, or
-similar). You become proficient at riding horses. You have <<advantage>> on all
-riding-related checks. You have <<advantage>> on
-<<consumption_check,consumption checks>> for animal feed. When you reach level
-5 your riding proficiency expands to all rideable land creatures. At level 8,
-you can ride virtually any tame creature.
+*Rider*: 
+You acquire a trained horse for free (tamed wild horse, a gift, or similar).
+You become proficient at riding horses. You have <<advantage>> on all
+riding-related checks. You have <<advantage>> on <<consumption_check,
+consumption checks>> for animal feed. When you reach level 5 your riding
+proficiency expands to all rideable land creatures. At level 8, you can ride
+virtually any tame creature.
 
 [IMPORTANT]
-If you lose this ability (by changing it at later levels), you do not lose your
-mount, but you lose all your <<advantage,advantages>>.
 
+.A rider's mount
 ****
 *Your horse* can drag a cart that can either carry you and two others, or you
 and 20 <<item_slots>> of cargo. When you ride it or direct it, it can move 2
@@ -490,22 +494,23 @@ points as you, except for __intelligence__, which is 2. The horse generally does
 what you want when you're in the saddle, but you have to succeed a __charisma__
 check (with <<advantage>>) to command it when you're not.
 
-*Feed*: You can feed your horse animal feed, and if you can't you can feed it
-with <<rations>>, but the horse eats so much that you will have to make two
+*Feed*: You can feed your horse __animal feed__, and if you can't you can feed
+it with <<rations>>, but the horse eats so much that you will have to make two
 <<consumption_check,consumption checks>> per day.
 
-*Species*: Horses and ponies are rare in some areas of the world. In such
-areas, you get the most common riding animal instead of a horse.
+*If you lose this ability* (by changing it at later levels), you do not lose
+your mount, but your rolls are no longer made with <<advantage>>.
 ****
 
 
 //KEY:
 [reftext="shady"]
 [[shady]]
-*Shady*: On a successful __charisma__ check you pull out a dagger from a boot, a
-sleeve or… somewhere. If your check fails, you cannot do it again for the rest
-of the session. In combat, this feat requires 3 moves. You are also skilled at
-using a <<kosh>>, something normal adventurers are not.
+*Shady*: 
+On a successful __charisma__ check you pull out a dagger from a boot, a sleeve
+or… somewhere. If your check fails, you cannot do it again for the rest of the
+session. In combat, this feat requires 3 moves. You are also skilled at using a
+<<kosh>>, something normal adventurers are not.
 
 [quote]
 The gods do not smile on people who use this ability to get rich by selling
@@ -516,29 +521,34 @@ daggers.
 [reftext="spelunker"]
 [[spelunker]]
 *Spelunker*:
-You cannot go <<dungeon_mad>>.
-You always have some chalk.
-You always know the cardinal directions.
-One of the ropes you carry does not take up an <<item_slots,item slot>>.
-You have <<advantage>> on <<consumption_check,consumption checks>> checks for
-<<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>.
-You have <<advantage>> on checks that involve navigation in caves and dungeons.
-
+You cannot go <<dungeon_mad>>,
+you always have some chalk,
+you always know the cardinal directions,
+and have <<advantage>> on checks that involve navigation in caves and dungeons.
+//
+You also have <<advantage>> on <<consumption_check,consumption checks>> checks
+for <<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>.
+//
+Moreover, at any time, one of the ropes you carry does not take up any
+<<item_slots>>.
 
 //KEY:
 [reftext="thrifty"]
 [[thrifty]]
-*Thrifty*: You have <<advantage>> on <<consumption_check,consumption checks>>
-with <<coin_purse,coin purses>>.
+*Thrifty*: 
+You have <<advantage>> on <<consumption_check,consumption checks>> with
+<<coin_purse,coin purses>>.
 
 
 //KEY:
 [reftext="traveler"]
 [[traveler]]
-*Traveler*: You have <<advantage>> on <<consumption_check,consumption checks>>
-for <<rations>> and animal feed. You have <<advantage>> on geography related
-checks. One of the ration packs you carry does’t take up an <<item_slots,item
-slot>>
+*Traveler*: 
+You have <<advantage>> on <<consumption_check,consumption checks>> for
+<<rations>> and animal feed, you always know the cardinal directions,
+and you have <<advantage>> on checks related to geography, travel, and
+navigation. Additionally, at any time, one of the ration packs you carry does
+not take up any <<item_slots>>.
 
 //END_SORT
 
@@ -1585,7 +1595,8 @@ burial rites, you will rise as an undead within 2d6 days.
 .The Undead Curse
 [[the_undead_curse]]
 [reftex="the undead curse"]
-[sidebar]
+[%collapsible]
+====
 Anyone (any intelligent, living creature) who dies will almost certainly rise
 again as an undead within a few days or even hours. This can be completely
 prevented by cremation, or by use of the <<_burial_x>> spell. Decapitation has
@@ -1593,7 +1604,8 @@ a high probability of success, but it is not guaranteed.
 
 [quote,Sybia LeDique]
 The horror of the battlefield is magnified, multiplied, and intensified as you
-have to fight your foes twice and your late friends on top of that.
+have to fight your foes twice and your late comrades also.
+====
 
 
 //KEY:
@@ -1618,8 +1630,14 @@ to life, and the costs of doing so are grave for both you can the caster.
 [[dungeon_mad]]
 *Dungeon Mad*: You've been in complete darkness in a dungeon or cave for too
 long. Every hour you spend in total darkness in a dungeon or similar situation,
-you must make a __wisdom__ check. If you fail, you lose 1 point from a random
-stat. This check is <<difficult>> if you are alone in the darkness.
+you must make a __wisdom__ check; if you fail, you temporarily lose 1 point
+from a random stat. This check is <<difficult>> if you are alone in the
+darkness. Your stats will start to regenerate as soon as you are again in the
+presence of light at the rate of one stat point per hour. It goes twice as fast
+if you are outside in the sunlight.
+
+[quote]
+You die if any of your stats reaches zero. 
 
 [reftext="encumbered"]
 [[encumbered]]
@@ -1760,19 +1778,21 @@ otherwise specified in the spell's description).
 * You must be holding the <<spellbook>> open in both hands.
 * You must be able to see, speak, read, and move your arms, hands, and fingers.
 * You must not be <<encumbered>>, <<exhausted>>, <<on_fire>>, <<prone>>,
-  <<restrained>>, or <<prone>>.
+  <<restrained>>, <<prone>>, or similar.
 
-*Procedure*: You make an __intelligence__ check:
-If it was successful the spell takes effect and the spellbook loses one of its
-<<usage_points>>.
-//
-If you rolled a <<nat1>> the spell takes effect, and the spellbook does not
-lose a <<usage_points>>.
-//
-If the check failed the spell fizzles, but no <<usage_points>> are lost.
-//
-If you rolled a <<nat20>> spell fizzles and the spellbook instantly loses all
-its <<usage_points>>.
+*Procedure*: When you have the book open in your hands, you loudly read
+the spell's incantation. Then you make an __intelligence__ check and refer
+to this table:
+
+[cols="^1s,11",stripes=odd]
+|===
+//----------|----------------------------------------------------
+| <<nat20>> | The spell fizzles and the book loses all its <<usage_points>>.
+| Failure   | The spell takes effect and the book loses all its <<usage_points>>.
+| Success   | The spell takes effect and the book looses a single <<usage_points,usage point>>.
+| <<nat1>>  | The spell takes effect and no <<usage_points>> are spent.
+//----------|----------------------------------------------------
+|===
 
 
 [reftext="basic ritual casting"]

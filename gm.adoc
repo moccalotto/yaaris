@@ -1,15 +1,51 @@
 = GM's Guide To Doom & Destruction & Stuff
 
-== Equipment
+:stylesheet: style.css
+:doctype: article
+:icons: font
+:sectlinks:
+:toc:
+:toclevels: 1
+:toc-placement!:
+:experimental:
+:stem:
+:xrefstyle: basic
 
-=== Weapons
+== RULES
 
-Lethal:: You can crit on both a __1__ and a __2__.
-Riposte:: If an adjacent foe attacks you, you can poke them for __L__ damage.
-Heavy:: ???
-Brutal:: ???
+=== Dice
 
-== Rules
+Philosophy::
+as
+
+==== Adventurer Tier
+Roll 1d20 vs stat:
+
+Roll = 1::           Critical Success
+Roll = 20::          Critical Failure
+Roll ≤ target stat:: Success
+Roll > target stat:: Failure
+
+
+==== Hero Tier
+Roll 1d20 vs stat:
+
+Roll = 1::           Critical Success
+Roll = 20::          Critical Failure
+Roll ≤ lowest stat:: Major Success
+Roll ≤ target stat:: Success
+Roll > target stat:: Failure
+
+
+==== Elite Teier
+Roll 1d20 vs stat.
+
+Roll = 1::           Critical Success
+Roll = 20::          Critical Failure
+Roll ≤ level (adv):: Critical Success (requires special Ability)
+Roll ≤ lowest stat:: Major Success
+Roll ≤ target stat:: Success
+Roll > stat::        Failure
 
 === Social Encounters.
 Roll first, then describe what happened.
@@ -31,7 +67,38 @@ e. Give the corpse a proper burial.
 
 == Items
 
-=== Shower in a Bottle
-Makes you clean, but for dogs sake, don't drink it.
-Also, makes you smell "fresh" (lavender, etc.) so it does not hide your scent.
+=== Weapons
 
+Lethal:: You can crit on both a __1__ and a __2__.
+Riposte:: If an adjacent foe attacks you, you can poke them for __L__ damage.
+Heavy:: ???
+Brutal:: ???
+
+
+=== Shower in a Bottle
+Makes you clean, but for dogs sake, don't drink it. Also, makes you smell
+"fresh" (lavender, etc.) so it does not hide your scent.
+
+=== Everdark Gear
+These items allow you to see in the dark without using visible light that could
+give you away.
+
+==== Everdark Torch
+This is a magical torch whose light (called everdark light) can only be seen by
+those inside the illuminated who are wearing Everdark Goggles. 
+
+* The light has a radius of 10 meters.
+* Darkness spells can blot out the everdark light.
+* The torch is a one-handed item that must be readied for it to work; if you
+  drop the torch (for instance, if you are knocked out), the everdark light
+  goes out.
+
+==== Everdark Beacon??
+Like a torch, but with large radius, and can work without being readied.
+
+==== Everdark Goggles
+This magical item allows you to see the light from an everdark torch. The
+goggles only work if they are inside the illuminated radius of an everdark
+torch (10 meters). This means that people cannot see you from far away, even if
+they are also wearing everdark goggles. You cannot wear a helmet at the same
+time as the goggles.

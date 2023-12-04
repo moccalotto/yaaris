@@ -1,4 +1,5 @@
 = Elite's guide to doom & destruction & stuff
+
 :stylesheet: style.css
 :doctype: article
 :icons: font
@@ -61,6 +62,8 @@ Being berserk has the following properties:
   when they take {damage_at_zero_hp}.
 * If you reach zero hit points the damage you deal with heavy weapons is
   tripled instead of doubled.
+* If you are at zero hit points when your rage ends you must roll on the
+  {death_table} again.
 * When your berserker's rage ends, you take __L__d6 damage, where __L__ is your 
   level.
 * If your rage ends when you are at zero hit pints, you must roll on the 
@@ -99,6 +102,7 @@ You gain now gain 4 bonus hit points per unused item slot.
 
 ==== Level 9
 
+
 ==== Level 10
 
 
@@ -107,7 +111,6 @@ You gain now gain 4 bonus hit points per unused item slot.
 * Can only use light melee weapons and throwing weapons.
 * Gains 3 hp per unused item slot if not wearing any armor or shield.
 * Extra {moves}
-* Can wield two weapons and get an extra attack by spending X moves.
 * Specialization
 .. MARTIAL ARTS:
    Multiple attacks.
@@ -162,8 +165,9 @@ You gain now gain 4 bonus hit points per unused item slot.
    Competent fighter.
    Completely silent.
    Immune to fear, charm, etc.
+   Frenzy (à la detonate)
 ** ELEMENTAL SUMMONER:
-   Can summon elemental creatures.
+   Can summon elemental creatures, sometimes multiple.
    Maintaining the creatures does not require {focus}.
 
 
@@ -212,6 +216,8 @@ You gain now gain 4 bonus hit points per unused item slot.
    Paragon can cast spells through the companion
       *) Companion can _touch_ the target.
       *) Ranged spells can be fired from the companions position.
+    Trans Familiar
+    Detonate
 
 
 // }}} ELITE CHAMPIONS
