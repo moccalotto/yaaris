@@ -311,14 +311,14 @@ deal with each weapon category.
 --
 [[adventurer_damage_rolls_table]]
 .Adventurer Damage Rolls
-[%header,cols="6,^2,^2,^2"]
+[%header,cols="7,^2,^2,^1"]
 |===
 | Weapon Type           | Stat        | Skill level | Damage
 //----------------------|-------------|-------------|--------
-| Light Melee Weapons¹  | _Dexterity_ | Skilled     | 1d6
-| Ranged Weapons²       | _Wisdom_    | Skilled     | 1d6
-| Heavy Melee Weapons³  | _Strength_  | Unskilled   | 1d10
-| Unarmed Combat⁴       | _Strength_  | Unskilled   | 1d3
+| Light Melee Weapons¹  | _Dexterity_ | Skilled     | 2
+| Ranged Weapons²       | _Wisdom_    | Skilled     | 2
+| Heavy Melee Weapons³  | _Strength_  | Unskilled   | 3
+| Unarmed Combat⁴       | _Strength_  | Unskilled   | 1
 //----------------------|-------------|-------------|--------
 |===
 
@@ -336,9 +336,10 @@ deal with each weapon category.
 [reftext="attack range"]
 [[attack_range]]
 ****
-When using ranged weapons, you can attack creatures that are up to __wisdom__
-meters away. But if you go beyond the weapon's base range (which is equal to
-its price in gold pieces), your attacks are <<difficult>>.
+
+[horizontal]
+Throwing Weapons:: The max range of throwing weapons is equal to your __strength__.
+Projectile Weapons:: The max range of projectile weapons is equal to your __wisdom__.
 ****
 
 ==== Adventurer's Blessing
@@ -346,6 +347,8 @@ its price in gold pieces), your attacks are <<difficult>>.
 An adventurer is not just someone who chooses to go on adventures, the blood in
 their veins is magical, and it makes them very formidable.
 
+[%collapsible]
+====
 * You have an extremely high pain tolerance, and you are able to fight at
   full capacity right up until you draw your last breath.
 
@@ -368,6 +371,7 @@ this blessing can reveal themselves as you gain experience and levels.
 The Adventurer's Blessing is stunningly powerful; many nations want former
 adventurers of high levels in key military and governing positions, as the
 ability to be revived can be, well, vital for the continuation of the position.
+====
 
 ==== Bonus Hit Points
 You gain one extra hit point point per <<unused_item_slots,unused item slot>>.
@@ -483,10 +487,10 @@ consumption checks>> for animal feed. When you reach level 5 your riding
 proficiency expands to all rideable land creatures. At level 8, you can ride
 virtually any tame creature.
 
-[IMPORTANT]
 
-.A rider's mount
-****
+.About the Rider's Mount
+[%collapsible]
+====
 *Your horse* can drag a cart that can either carry you and two others, or you
 and 20 <<item_slots>> of cargo. When you ride it or direct it, it can move 2
 meters for every <<moves,move>> you make, and it has the same stats and hit
@@ -500,7 +504,7 @@ it with <<rations>>, but the horse eats so much that you will have to make two
 
 *If you lose this ability* (by changing it at later levels), you do not lose
 your mount, but your rolls are no longer made with <<advantage>>.
-****
+====
 
 
 //KEY:
@@ -1193,7 +1197,7 @@ If you’re selling expensive items, or if you’re selling things in bulk, you
 must haggle to get a good price. You first roll a __charisma__ check, and refer
 to the table below, and do what it says, even if you don't like the result.
 
-[cols="^1s,11",stripes=odd]
+[cols="^2s,10",stripes=odd]
 |===
 //----------|----------------------------------------------------
 | <<nat20>> | You sell the item(s) for 25% of local list price.
@@ -1289,12 +1293,70 @@ Here's some examples:
 [[attack_and_damage]]
 === Attacks & Damage
 
-When you attack a baddie, you make a so-called __attack check__. If you're
-using a ranged weapon, you make an <<adversarial>> __wisdom__ check, and if
-you're making a melee attack you make an <<adversarial>> __dexterity__ check.
+When you attack a baddie, you make a so-called __attack check__. 
 
-If you are not <<weapon_skills,skilled>> at using a weapon, attacks with that
-weapon are <<difficult>>
+The outcome of that check depends on whether or not you are
+<<weapon_skills,skilled>> at using the weapon. As an adventurer you are skilled
+at using light melee weapons and ranged weapons, and if you have abilities such
+as <<great_weapon_specialist,Great weapon specialists>> are also skilled in
+using heavy melee weapons.
+
+*Skilled*: If you are skilled at using a weapon, you roll a d20 and consult the
+<<skilled_attack_check>> table.
+
+*Unskilled*: If you are __not__ skilled at using a weapon, roll a d20, and
+consult the <<unskilled_attack_check>> table.
+
+[reftext="stat used"]
+[[attack_check_stat]]
+*Stat Used*: The __stat__ used in the attack check depends on the weapon type:
+The __stat__ for Light Melee Weapons is __dexterity__.
+The __stat__ for Ranged Weapons is __wisdom__.
+The __stat__ for Heavy Melee Weapons is __strength__.
+The __stat__ for Heavy Unarmed Combat is __strength__.
+
+[reftext="weapon's damage"]
+[[attack_check_weapon_damage]]
+*Weapon's Damage*: The base damage of the weapon depends on its type:
+The __weapon damage__ for Light Melee Weapons is 2.
+The __weapon damage__ for Ranged Weapons is 2.
+The __weapon damage__ for Heavy Melee Weapons is 3.
+The __weapon damage__ for Heavy Unarmed Combat is 1.
+
+[reftext="what you rolled"]
+[[attack_check_roll]]
+*What You Rolled*: Sometimes the damage you deal to an opponent depends on what
+you rolled on your d20 for the attack check.
+
+:weapon_damage: <<attack_check_weapon_damage>>
+:roll: <<attack_check_roll>>
+:stat: <<attack_check_stat>>
+
+[[skilled_attack_check]]
+.Skilled Attacks
+[%header,cols="^2s,10"]
+|===
+| Roll      | Damage
+//----------|----------------------------------------------------
+| <<nat20>> | You miss, and your weapon <<weapon_wear,breaks>>
+| Failure   | {weapon_damage}
+| Success   | {roll} + {weapon_damage}
+| <<nat1>>  | {stat} + {weapon_damage}
+//----------|----------------------------------------------------
+|===
+
+[[unskilled_attack_check]]
+.Unskilled Attacks
+[%header,cols="^2s,10"]
+|===
+| Roll      | Damage
+//----------|----------------------------------------------------
+| <<nat20>> | You miss, and your weapon <<weapon_wear,breaks>>
+| Failure   | You miss
+| Success   | {roll} + {weapon_damage}
+| <<nat1>>  | {stat} + {weapon_damage}
+//----------|----------------------------------------------------
+|===
 
 ==== Damage Roll
 When you've made an attack, and your attack check succeeded, you roll damage,
@@ -1599,8 +1661,8 @@ burial rites, you will rise as an undead within 2d6 days.
 ====
 Anyone (any intelligent, living creature) who dies will almost certainly rise
 again as an undead within a few days or even hours. This can be completely
-prevented by cremation, or by use of the <<_burial_x>> spell. Decapitation has
-a high probability of success, but it is not guaranteed.
+prevented by cremation, or by use of the <<_burial_x>> spell. Decapitation also
+has a high probability of success, but it is not guaranteed.
 
 [quote,Sybia LeDique]
 The horror of the battlefield is magnified, multiplied, and intensified as you
@@ -1784,7 +1846,7 @@ otherwise specified in the spell's description).
 the spell's incantation. Then you make an __intelligence__ check and refer
 to this table:
 
-[cols="^1s,11",stripes=odd]
+[cols="^2s,10",stripes=odd]
 |===
 //----------|----------------------------------------------------
 | <<nat20>> | The spell fizzles and the book loses all its <<usage_points>>.
