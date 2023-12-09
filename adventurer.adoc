@@ -376,6 +376,7 @@ xref:hero#[Hero’s Guide to doom & destruction & stuff].
 //START_SORT //KEY:
 
 //KEY:
+[[backstabber,backstabber]]
 *Backstabber*:
 If an adjacent baddie moves away from you, you can make a melee attack against
 them with a readied melee weapon you are skilled at using. When you do so, you
@@ -383,15 +384,13 @@ have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll
 
 
 //KEY:
-[reftext="armorer"]
-[[armorer]]
+[[armorer,armorer]]
 *Armorer*: You obtain a set of <<tinkering_tools>>, and you can can repair
 damaged and broken weapons as well as armor pieces using those tools.
 
 
 //KEY:
-[reftext="everdeen"]
-[[everdeen]]
+[[everdeen,everdeen]]
 *Everdeen*:
 If you are without arrows during combat, you can spend 3 moves, and make a
 __charisma__ check. If successful, you somehow have a single extra arrow and
@@ -401,15 +400,13 @@ and darts, but not thrown weapons such as daggers and javelins.
 
 
 //KEY:
-[reftext="great weapon specialist"]
-[[great_weapon_specialist]]
+[[great_weapon_specialist,great weapon specialist]]
 *Heavy Weapon Specialist*: You are skilled at using heavy melee weapons, and
 when doing so, your damage die is 1d12.
 
 
 //KEY:
-[reftext="monstrous gourmand"]
-[[monstrous_gourmand]]
+[[monstrous_gourmand,monstrous gourmand]]
 *Monstrous Gourmand*:
 You can make edible ration packs from fresh monster parts (any recently dead
 creature will do) It requires sharp cutting instruments, a large pot, a bonfire
@@ -422,27 +419,20 @@ and eat such a “meal”.
 
 
 //KEY:
-[reftext="negotiator"]
-[[negotiator]]
+[[negotiator,negotiator]]
 *Negotiator*:
 You have <<advantage>> on checks that involve negotiation, including
 <<haggling_check>>.
 
 
 //KEY:
-[reftext="pugilist"]
-[[pugilist]]
+[[pugilist,pugilist]]
 *Pugilist*:
 You are skilled at unarmed combat, and your unarmed combat damage die is 1d6.
 
-[quote]
-Striking certain monsters (such as fire elementals) with your body can have
-grave consequences.
-
 
 //KEY:
-[reftext="rider"]
-[[rider]]
+[[rider,rider]]
 *Rider*:
 You acquire a trained horse for free (tamed wild horse, a gift, or similar).
 You become proficient at riding horses. You have <<advantage>> on all
@@ -450,7 +440,6 @@ riding-related checks. You have <<advantage>> on <<consumption_check,
 consumption checks>> for animal feed. When you reach level 5 your riding
 proficiency expands to all rideable land creatures. At level 8, you can ride
 virtually any willing creature.
-
 
 .About the Rider's Mount
 [%collapsible]
@@ -470,16 +459,17 @@ it with <<rations>>, but the horse eats so much that you will have to make two
 your mount, but your rolls are no longer made with <<advantage>>.
 ====
 
-//KEY:
-[reftext="ritualist"]
-[[ritualist]]
-*Ritualist*:
-You have <<advantage>> on <<consumption_check,consumption checks>> with
-<<magic_components>>.
 
 //KEY:
-[reftext="shady"]
-[[shady]]
+[[ritualist,ritualist]]
+*Ritualist*:
+You have <<advantage>> on <<consumption_check,consumption checks>> with
+<<magic_components>> and you have <<advantage>> on the __intelligence__
+check used for <<basic_ritual_casting>>.
+
+
+//KEY:
+[[shady,shady]]
 *Shady*:
 On a successful __charisma__ check you pull out a dagger from a boot, a sleeve
 or… somewhere. If your check fails, you cannot do it again for the rest of the
@@ -492,8 +482,7 @@ daggers.
 
 
 //KEY:
-[reftext="spelunker"]
-[[spelunker]]
+[[spelunker,spelunker]]
 *Spelunker*:
 You cannot go <<dungeon_mad>>,
 you always have some chalk,
@@ -506,17 +495,16 @@ for <<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>.
 Moreover, at any time, one of the ropes you carry does not take up any
 <<item_slots>>.
 
+
 //KEY:
-[reftext="thrifty"]
-[[thrifty]]
+[[thrifty,thrifty]]
 *Thrifty*:
 You have <<advantage>> on <<consumption_check,consumption checks>> with
 <<coin_purse,coin purses>>.
 
 
 //KEY:
-[reftext="traveler"]
-[[traveler]]
+[[traveler,traveler]]
 *Traveler*:
 You have <<advantage>> on <<consumption_check,consumption checks>> for
 <<rations>> and animal feed, you always know the cardinal directions,
@@ -540,7 +528,6 @@ such as <<basic_spellcasting>>. You only lose an ability if your heroic class
 explicitly prevents you from having it.
 
 //}}}
-
 
 //{{{DICE
 == DICE
@@ -1284,13 +1271,12 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 |===
 | Weapon                | Stat        | Skill       | Damage 
 //----------------------|-------------|-------------|-------------
-| Light Melee Weapons   | _Strength_  | Skilled     | 1d8
-| Ranged Weapons        | _Wisdom_    | Skilled     | 1d6
-| Heavy Melee Weapons   | _Strength_  | Unskilled   | 1d12
-| Unarmed Combat        | _Dexterity_ | Unskilled   | 1d4
+| Light Melee Weapons   | _strength_  | Skilled     | 1d6
+| Ranged Weapons        | _wisdom_    | Skilled     | 1d6
+| Heavy Melee Weapons   | _strength_  | Unskilled   | 1d12
+| Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
 //----------------------|-------------|-------------|-------------
 |===
-
 --
 
 [[attack_check_results_table]]
@@ -1799,8 +1785,7 @@ to this table:
 |===
 
 
-[reftext="basic ritual casting"]
-[[basic_ritual_casting]]
+[[basic_ritual_casting,basic ritual casting]]
 === Basic Ritual Casting
 Some spells can be cast without exhausting the spellbook, but it takes more
 time to do so.
@@ -2235,7 +2220,7 @@ You target a creature within range who regains <<X>>d6+<<X>> hit points.
 *Level 1+, <<ritual>>, range: 3+<<X>> meters*
 
 You target a creature in range; if you succeed an <<adversarial>> __wisdom__
-check, the creature loses <<X>>d6+<<X>> <<hit_points>>, otherwise it loses
+check, the creature loses 6·<<X>> <<hit_points>>, otherwise it loses
 <<X>>d6 <<hit_points>>.
 
 
@@ -2259,9 +2244,9 @@ level is higher than <<X>>, the spell fizzles.
 *Level 1, <<ritual>>, duration: __wisdom__ hours*
 
 Upon casting the spell, you touch a door, tent flap, a lock, or similar
-moveable object. If the object is disturbed by a creature (but not the wind), a
-loud alarm will "`ring`" inside your head. The alarm is loud enough to wake you
-up, but soft enough that you don’t wake up screaming or startled.
+moveable object. If the object is disturbed by a creature (but not, for
+instance, the wind), this spell will wake you up swiftly and without startling
+you.
 
 
 === Invisibility to Stupidity (X)
@@ -2323,7 +2308,7 @@ three times your <<caster_level,level>>.
 
 
 === Milf's Caustic Aerosol (X)
-*Level 1+*
+*Level 1+, range: <<X>> meters*
 
 You spray caustic liquid towards a baddie within <<X>> meters. The enemy takes
 <<X>>d6 damage and <<X>> of their nonmagical functional armor pieces becomes
@@ -2368,9 +2353,8 @@ This spell completely hides the fact that the item is magical; only observers
 with a level higher than <<X>> can detect the item’s magic, and that this spell
 has been used to hide it.
 
-Some magical items have a level; this spell only works if the item's level is
-≤ <<X>>.
-
+Some magical items have a level; this spell only works if the item's level is ≤
+<<X>>.
 
 === Order (X)
 *Level: 1+, duration: 1 round*
@@ -2496,8 +2480,9 @@ And if you’re hit for 1 point of damage, you take zero points of damage.
 === Slow (X)
 *Level 1+, <<focus>> (up to <<X>> rounds)*
 
-You target a baddie within 2·<<X>> meters. For the duration of
-this spell, the target creature has zero <<moves>>.
+You target a baddie within 2·<<X>> meters. For the duration of this spell, the
+target creature has zero <<moves>> (but it can convert its <<Actions,action>>
+into moves).
 
 
 === Slow Fall (X)
@@ -2581,7 +2566,7 @@ melee combat on its next turn.
 *Level 1+, range: __wisdom+X__ meters*
 
 You fire a frightening magical missile against a baddie within range. When
-struck, the baddie takes <<X>> d4 damage, and then you make an <<adversarial>>
+struck, the baddie takes <<X>> d6 damage, and then you make an <<adversarial>>
 __charisma__ check; if successful the baddie becomes <<demoralized>>.
 
 
