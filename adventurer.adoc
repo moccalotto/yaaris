@@ -21,6 +21,9 @@
 This document contains character creation and game mechanics, as well as gear,
 spells, and abilities for characters of first and second level.
 
+The first and second level is mainly about gritty survival, you must keep
+track of your consumables such as rations and ammunition.
+
 toc::[]
 
 // {{{ ADVENTURERS SHEET
@@ -467,6 +470,12 @@ it with <<rations>>, but the horse eats so much that you will have to make two
 your mount, but your rolls are no longer made with <<advantage>>.
 ====
 
+//KEY:
+[reftext="ritualist"]
+[[ritualist]]
+*Ritualist*:
+You have <<advantage>> on <<consumption_check,consumption checks>> with
+<<magic_components>>.
 
 //KEY:
 [reftext="shady"]
@@ -860,6 +869,22 @@ Small amounts of counts do not take up any room, but 100 coins take up 1
 
 
 //KEY:
+[[bank_book,bank book]]
+==== Bank Book
+A bank book is a magical book that can contain money. There is a magical ritual
+called <<_banking_transaction_x>>, that allows you to transfer money into and
+out of the book.
+
+
+//KEY:
+[[healing_salve,healing salve]]
+==== Healing Salve
+These salves can heal minor wounds: You spend one
+<<consumption_check,consumption>> of salve, and five minutes to apply it to a
+willing recipient. Once applied, the recipient rolls a number of dice (usually
+a few d6), and regain that many hit points.
+
+//KEY:
 [reftext="adventurer's logbook"]
 [[adventurers_logbook]]
 ==== Adventurer's Logbook
@@ -878,14 +903,6 @@ When you want to draw something, you make an __wisdom__ and __dexterity__
 check. The GM determines the quality of your drawing, based on the complexity
 of the drawing, the number of successes, failures, <<nat1>>s and <<nat20>>s
 ****
-
-
-//KEY:
-[[bank_book,bank book]]
-==== Bank Book
-A bank book is a magical book that can contain money. There is a magical ritual
-called <<_banking_transaction_x>>, that allows you to transfer money into and
-out of the book.
 
 
 //KEY:
@@ -919,14 +936,6 @@ pieces (i.e. less than 1 gold piece), you can spend one
 pieces you can spend one <<consumption_check,consumption>> of this purse
 instead of spending coin.
 
-
-//KEY:
-[[healing_salve,healing salve]]
-==== Healing Salve
-These salves can heal minor wounds: You spend one
-<<consumption_check,consumption>> of salve, and five minutes to apply it to a
-willing recipient. Once applied, the recipient rolls a number of dice (usually
-a few d6), and regain that many hit points.
 
 //KEY:
 [reftext="kosh"]
@@ -1148,6 +1157,39 @@ to the table below, and do what it says, even if you don't like the result.
 
 This section is all about fighting 🤺
 
+.Terms
+****
+*Skilled & Unskilled*:
+Adventurer's are typically skilled at using ranged weapons and light melee
+weapons. If you are not skilled at using a weapon, the
+<<attack_and_damage,attack check>> is <<difficult>>.
+
+*Unarmed Combat*:
+Requires two free hands but does not suffer from <<_weapon_wear,weapon wear
+and tear>>. Only <<pugilist,pugilists>> are skilled at using these weapons.
+
+*Light Melee Weapons*:
+These weapons, except quarterstaves, are one-handed.
+
+*Heavy Melee Weapons*:
+Require two hands. Only <<great_weapon_specialist,great weapon specialists>>
+are skilled at using these weapons.
+
+*Projectile Weapons*:
+A type of ranged weapon, these weapons require ammunition and almost always
+requires two hands.
+
+*Throwing Weapons*:
+A type of ranged weapon, these weapons are typically one-handed. Some of 
+throwing weapons (such as daggers and javelins) can also be used as light melee
+weapons.
+
+*Range*:
+The range of ranged weapons is a number of meters equal to
+the lowest of your __strength__, __dexterity__, and __wisdom__.
+
+****
+
 [reftext="round"]
 [[round]]
 === Rounds
@@ -1230,26 +1272,6 @@ using; consult <<adventurer_damage_rolls_table>> to find out which __stat__ to
 use, whether or not you are skilled at using the given weapon, and what your
 damage roll is.
 
-Unskilled Attacks:: If you are not skilled at using a weapon, the __attack
-check__ is <<difficult>>.
-
-Light Melee Weapons:: These weapons, except quarterstaves, are one-handed.
-
-Heavy Melee Weapons:: Are always two-handed.
-
-Projectile Weapons:: This type of ranged weapon, such as bows, crossbows, and
-slings require ammunition and almost always require two hands.
-
-Throwing Weapons:: This type of ranged weapons are usually one-handed, and some
-of them (such as daggers and javelins) can also be used as light melee weapons.
-
-Unarmed Combat:: requires two free hands, but does not suffer from
-<<damaged_weapon,weapon wear and tear>>.
-
-.Range
-The range of ranged weapons is a number of meters equal to
-the lowest of your __strength__, __dexterity__, and __wisdom__.
-
 When you have made your attack check, consult <<attack_check_results_table>> to
 find out what happens. Unless you rolled poorly on your attack check it is now
 to to roll the damage die and reduce your opponent's hit pints accordingly.
@@ -1260,12 +1282,12 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 .Adventurer's Attack and Damage
 [%header,cols="6,^2,^2,^2"]
 |===
-| Weapon Type           | Stat        | Skill level | Damage Roll
+| Weapon                | Stat        | Skill       | Damage 
 //----------------------|-------------|-------------|-------------
-| Light Melee Weapons¹  | _Strength_  | Skilled     | 1d8
-| Ranged Weapons²       | _Wisdom_    | Skilled     | 1d6
-| Heavy Melee Weapons³  | _Strength_  | Unskilled   | 1d12
-| Unarmed Combat⁴       | _Dexterity_ | Unskilled   | 1d4
+| Light Melee Weapons   | _Strength_  | Skilled     | 1d8
+| Ranged Weapons        | _Wisdom_    | Skilled     | 1d6
+| Heavy Melee Weapons   | _Strength_  | Unskilled   | 1d12
+| Unarmed Combat        | _Dexterity_ | Unskilled   | 1d4
 //----------------------|-------------|-------------|-------------
 |===
 
@@ -1276,9 +1298,9 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 [cols="^2s,10",stripes=odd]
 |===
 //----------|-------------------------------------
-| <<nat20>> | You deal no damage and your weapon <<damaged_weapon,takes damage>>.
-| Failure   | You deal half damage if you are <<weapon_skills,skilled>> with
-              your weapon, otherwise you deal no damage.
+| <<nat20>> | You miss and your weapon <<damaged_weapon,takes damage>>.
+| Failure   | You deal half damage (rounded down) if you are
+              <<weapon_skills,skilled>> with your weapon, otherwise you miss.
 | Success   | You deal normal damage.
 | <<nat1>>  | You deal maximum damage and if you are <<weapon_skills,skilled>>
               at using your weapon you get an extra <<Actions,action>>.
@@ -1286,12 +1308,11 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 |===
 
 ==== Weapon Wear
-If you roll a <<nat20>> on your attack check, your weapon can become damaged or
-unusable.
+If you roll a <<nat20>> on your attack check, your weapon becomes damaged,
 
 [[damaged_weapon,damaged]]
-*Damaged*: attacking with a damaged weapon is <<difficult>> and if you
-roll a <<nat20>> on your attack check, your weapon becomes unusable.
+*Damaged*: attacking with a damaged weapon is <<difficult>> and if you roll a
+<<nat20>> on your attack check, your weapon becomes __unusable__.
 
 [[broken_weapon,broken]]
 *Unusable*: you cannot make attacks with an unusable weapon; it must
@@ -1693,7 +1714,7 @@ into more moves just to get up.
 //KEY:
 [reftext="restrained"]
 [[restrained]]
-*Restrained*: Your hands and feet are restrained. You have only one
+*Restrained*: Your hands and feet are restrained. You can make no more than one
 <<moves,move>> each round. Depending on the circumstances, the GM might allow
 you to try and escape your bonds.
 
@@ -2106,12 +2127,14 @@ You target a point within __wisdom__ meters. Every object and creature within
 <<invisible,Invisible>> creatures and object can now be seen and targeted, but
 attack checks against them remain <<difficult>>.
 
+
 === Fierce Fortune (X)
 *Level 1*
 
 An ally within <<X>> meters gets <<advantage>>on their next
 <<attack_and_damage,attack>> or <<Defense,defense check>>, provided it occurs
 within <<X>>+1 rounds.
+
 
 === Flaming Fingers (X)
 *Level 1*
@@ -2120,10 +2143,12 @@ Jets of fire spew forth from your burning hands, scorching up to <<X>> adjacent
 targets of your choice. If you make a successful __intelligence__ check, each
 target receives 1d6+<<X>> damage, otherwise they receive 1d6 damage.
 
+
 === Friendliness (X)
 *Level 1, <<focus>> (up to <<X>> minutes)*
 
 Your __charisma__ checks are <<easy>>.
+
 
 === Furnace
 *Level 2, <<trance>> (up to 8 hours)*
@@ -2132,6 +2157,7 @@ A bonfire within 10 meters becomes hot enough heat metal enough for forging.
 The bonfire does not consume more wood that it normally would, and it does not
 radiate more heat than it normally would; the intense heat stays very close to
 to the fire.
+
 
 === Ghost Mount (X)
 *Level 2, <<focus>> (special)*
@@ -2147,6 +2173,7 @@ __charisma__ checks affect the spell’s outcome.
 
 The spell lasts up to 3·<<X>> rounds, but stops if you stop <<focus,focusing>>
 on it or if you dismount.
+
 
 === Ghost Servant (X)
 *Level 1, <<focus>> (special)*
@@ -2170,11 +2197,13 @@ The servant appears within 3·<<X>> meters, and must stay within 10·<<X>> meter
 The spell lasts 10·<<X>> minutes, until you stop focusing on it, or the servant
 gets more than 10·<<X>> meters away.
 
+
 === Gills (X)
 *Level 1+, <<ritual>>, <<focus>> (up to 2+<<X>> minutes)*
 
 You and <<X>> willing creatures within 4+<<X>> meters gain the ability to
 breathe in water for the duration of this spell.
+
 
 === Gloom (X)
 *Level 1+, range: 2+<<X>> meters*
@@ -2195,10 +2224,12 @@ another creature.
 
 The gloomy area looks like dense fog when seen from the outside.
 
+
 === Heal (X)
 *Level 1+, <<ritual>>, range: 3+<<X>> meters*
 
 You target a creature within range who regains <<X>>d6+<<X>> hit points.
+
 
 === Hurt (X)
 *Level 1+, <<ritual>>, range: 3+<<X>> meters*
@@ -2206,6 +2237,7 @@ You target a creature within range who regains <<X>>d6+<<X>> hit points.
 You target a creature in range; if you succeed an <<adversarial>> __wisdom__
 check, the creature loses <<X>>d6+<<X>> <<hit_points>>, otherwise it loses
 <<X>>d6 <<hit_points>>.
+
 
 === Illuminate (X)
 *Level 1+, range: 2+<<X>> meters, duration: <<X>> hours*
@@ -2222,13 +2254,14 @@ You must make a successful __charisma__ check to cast this spell on an item
 currently held, worn, or touched by a living creature, and if the creature’s
 level is higher than <<X>>, the spell fizzles.
 
-=== Instruction (X)
+
+=== Order (X)
 *Level: 1+, duration: 1 round*
 
-You give a creature within <<X>> meters a one-word instruction and then make a
-__charisma__ check. If you’re successful, the target will attempt to execute the
-instruction as best it can, and as it understands the command, but only for one
-round, and only if the instruction would not result in self harm.
+You give a creature within <<X>> meters a one-word order and then make a
+__charisma__ check. If you’re successful, the target will attempt to execute
+the order as best it can, and as it understands the command, but only for one
+round, and only if the order would not result in self harm.
 
 You cannot affect creatures whose level is higher than <<X>>. But they become
 hostile as soon as you have cast the spell.
@@ -2236,13 +2269,14 @@ hostile as soon as you have cast the spell.
 If the target’s level is lower than <<X>> your __charisma__ check is <<easy>>.
 
 Any creature targeted by this spell will become hostile towards you, regardless
-if they executed the instruction or not.
+if they executed the order or not.
 
 [quote]
-Instructions such as »flee« and »run« are straight forward, but a instruction such as
+Orders such as »flee« and »run« are straight forward, but a order such as
 »drop« can be interpreted in many ways (drop the thing you’re holding, or drop
 <<prone>>, or drop the subject). Don't assume that the target of this spell
-will fully understand the meaning or spirit your instruction.
+will fully understand the meaning or spirit your order, but don't assume that
+they will misunderstand it either.
 
 
 === Intruder Alert
@@ -2257,9 +2291,9 @@ up, but soft enough that you don’t wake up screaming or startled.
 === Invisibility to Stupidity (X)
 *Level 1+, <<focus>>, duration: 5·<<X>> Rounds*
 
-Creatures with an __intelligence__ lower than <<X>>+2 cannot see you, smell you,
-or detect you in any way, not even by touch. If such a creature touches you,
-it will rationalize the sensation away.
+Creatures with an __intelligence__ lower than <<X>>+5 cannot see you, smell
+you, or detect you in any way, not even by touch. If such a creature touches
+you, it will rationalize the sensation away.
 
 
 === Jump (X)
@@ -2270,16 +2304,17 @@ your choice. You cannot reduce the length of the jump, but you can jump into a
 wall or other obstacle. Doing so causes you to take 1d6 damage for each meter
 the obstacle reduces your jump.
 
-If you jump into a creature, you each suffer 1d4 damage for each meter
-the collision shortened your jump. If the creature succeeds a __dexterity__
-check, they're able to avoid you, and you fly right past it.
+If you jump into a creature, you each suffer 1d4 damage for each meter the
+collision shortened your jump. If the creature succeeds a __dexterity__ check,
+they're able to avoid you, and you fly right past it.
+
 
 === Lightning Touch (X)
 *Level 1+*
 
 You touch an adjacent target, who then takes <<X>>d6 damage. After rolling
 damage, you make a __wisdom__ check. If successful, the target is knocked
-<<prone>>, and must spend <<moves>> to get up.
+<<prone>>.
 
 If the target is wearing three or more pieces of metal armor, you have
 <<advantage>> on the damage roll and the __wisdom__ check.
@@ -2291,7 +2326,8 @@ Medium- and heavy armor is made of metal unless otherwise specified.
 === Mage Might (X)
 *Level 1+, <<focus>> (duration up to <<X>> rounds)*
 
-Your __strength__ score becomes 15+<<X>>*0.5 (rounded down).
+Your __strength__ score becomes __15+0.5·<<X>>__ (rounded down). 
+
 
 === Magical Reading
 *Level 1, <<ritual>>, duration: 8 hours*
@@ -2319,17 +2355,21 @@ words. If the recipient makes a successful __charisma__ check, no one notices it
 distraction while receiving and replying.
 
 
-=== Mustrum’s Mundane Shroud (X)
+=== Mosstrum’s Mundane Shroud (X)
 *Level 2, <<ritual>>, duration: <<X>> days*
 
-You select a magical item within 2 meters of you, weighing no more than <<X>> kg.
+You target a magical item within 2 meters of you, weighing no more than <<X>>
+kg.
 
 This spell completely hides the fact that the item is magical; only observers
 with a level higher than <<X>> can detect the item’s magic, and that this spell
 has been used to hide it.
 
+Some magical items have a level; this spell only works if the item's level is
+≤ <<X>>.
 
-=== Nostrum’s Magical Aura (X)
+
+=== Mosstrum’s Magical Aura (X)
 *Level 1, <<ritual>>, duration: <<X>> days*
 
 You select a nonmagical item within 2 meters, weighing no more than <<X>> kg.
@@ -2449,13 +2489,30 @@ this spell, the target creature has zero <<moves>>.
 === Slow Fall (X)
 *Level 1+, <<ritual>>*
 
-You touch  a nonmagical wearable item, weighing at least one
-<<item_slots,item slot>> and worth at least <<X>> silver pieces. The item
+You touch  a nonmagical wearable item that weighs at least one
+<<item_slots,item slot>> and is worth at least <<X>> silver pieces. The item
 becomes a <<consumption_check,consumable>> magical item with <<X>>
 <<usage_points>>. When the wearer of such an item falls more than one meter,
 the magic in the item activates and the fall is slowed so the wearer does not
-take any damage. When the wearer has landed, the item loses one usage point.
-When all the item’s usage points have been spent, the item crumbles to dust.
+take any damage from the fall. When the wearer has landed, the item loses one
+of its <<usage_points>>. When all the item’s usage points have been spent, the
+item crumbles to dust.
+
+[quote]
+the item is magical so it can be detected with <<_detect_magic>>.
+
+=== Milf's Caustic Aerosol (X)
+*Level 1+*
+
+You spray caustic liquid towards a baddie within <<X>> meters. The enemy takes
+<<X>>d6 damage and <<X>> of their nonmagical functional armor pieces becomes
+unusable.
+
+=== Milf's Magnificent Melons (X)
+*Level 1+*
+
+You create <<X>> edible and nourishing melons. Each melon weighs one
+<<item_slots,item slot>> and has <<X>> usage points.
 
 
 === Snooze (X)
@@ -2482,11 +2539,12 @@ sleeping baddie wakes up if they take damage.
 *Level 1, <<ritual>>, duration: __intelligence__ · 10 minutes*
 
 You conjure a large vaguely bowl-shape plate that can carry as many
-<<item_slots>> as your __strength__ score.
+<<item_slots>> as your __intelligence__ score.
 
 It levitates about a meter above the ground, and can move half as fast as an
 adventurer. It is able to “climb” stairs and hills, but cannot scale walls or
 steep cliffs.
+
 
 === Spider Climb (X)
 *Level 1+, <<focus>>*
@@ -2495,17 +2553,20 @@ This spell enables you to cling to almost any surface as long as it is not
 overly wet, oily, or slippery. You can spend 3 moves to spider-move 1 meter.
 The spell lasts <<X>> minutes, but ends if you stop focusing on it.
 
+
 === Spout (X)
 *Level 1+ <<focus>>*
 
 You cause 10·<<X>> liters of water to pour out of a wineskin, teapot, keg, or
 similar; at a speed of about 1 liter per round (10 liters per minute)
 
+
 === Strength of Stone (X)
 *Level 1+, <<focus>>, <<ritual>>*
 
 You target a willing ally within 2·<<X>> meters, making all their __strength__
 checks easy for a 2·<<X>> rounds.
+
 
 === Taunt
 *Level 1+, duration: 1 round*
@@ -2515,12 +2576,14 @@ make a successful <<adversarial>> __charisma__ check (which is difficult if the
 target’s level is higher than yours), the target will rush and attack you in
 melee combat on its next turn.
 
+
 === Tragic Missile (X)
 *Level 1+, range: __wisdom+X__ meters*
 
 You fire a frightening magical missile against a baddie within range. When
 struck, the baddie takes <<X>> d4 damage, and then you make an <<adversarial>>
 __charisma__ check; if successful the baddie becomes <<demoralized>>.
+
 
 === Vines (X)
 *Level 2, <<focus>>*
@@ -2530,6 +2593,7 @@ the ground in  a radius of <<X>> meters around that point. Each creature inside
 the affected area must make a successful __strength__, __dexterity__ or
 __intelligence__ check (their choice) each round, or all they have zero moves
 that round.
+
 
 === Wizard’s Mark
 *Level 1, <<ritual>>, <<focus>>*
@@ -2616,6 +2680,15 @@ locks, spells, and various tasks can also have a level.
 //KEY:
 *NPC and NPCs*: Non player character(s). These persons and creatures are played
 by the GM.
+
+//KEY:
+*Unskilled (armor)*: When you are not skilled at using a piece of armor you become
+<<weighed_down>>, causing you to lose one <<moves,move>>.
+
+//KEY:
+*Unskilled (weapon)*: When you are not skilled at using a weapon,
+your __attack check__ is <<difficult>>, and the results of your attack checks
+are not as favorable. See <<attack_check_results_table>>.
 
 //KEY:
 *PC and PCs*: Player Character(s).

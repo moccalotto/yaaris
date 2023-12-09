@@ -50,7 +50,12 @@
 // }}}
 
 When you reach your third level, you can choose a heroic class, which allows
-you to obtain more powerful abilities, spells, and gear.
+you to obtain powerful abilities, spells, and gear.
+
+The game now starts to transition from survival into heroic fantasy; your
+character gains powers and special abilities, you can carry more resources, and
+you begin establishing good reputations, bases of operations, and strong
+allies.
 
 // {{{ CHAMPION
 == CHAMPION
