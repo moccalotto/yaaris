@@ -2255,30 +2255,6 @@ currently held, worn, or touched by a living creature, and if the creature’s
 level is higher than <<X>>, the spell fizzles.
 
 
-=== Order (X)
-*Level: 1+, duration: 1 round*
-
-You give a creature within <<X>> meters a one-word order and then make a
-__charisma__ check. If you’re successful, the target will attempt to execute
-the order as best it can, and as it understands the command, but only for one
-round, and only if the order would not result in self harm.
-
-You cannot affect creatures whose level is higher than <<X>>. But they become
-hostile as soon as you have cast the spell.
-
-If the target’s level is lower than <<X>> your __charisma__ check is <<easy>>.
-
-Any creature targeted by this spell will become hostile towards you, regardless
-if they executed the order or not.
-
-[quote]
-Orders such as »flee« and »run« are straight forward, but a order such as
-»drop« can be interpreted in many ways (drop the thing you’re holding, or drop
-<<prone>>, or drop the subject). Don't assume that the target of this spell
-will fully understand the meaning or spirit your order, but don't assume that
-they will misunderstand it either.
-
-
 === Intruder Alert
 *Level 1, <<ritual>>, duration: __wisdom__ hours*
 
@@ -2346,6 +2322,20 @@ great speed. The stone automatically hits the opponent, dealing damage equal to
 three times your <<caster_level,level>>.
 
 
+=== Milf's Caustic Aerosol (X)
+*Level 1+*
+
+You spray caustic liquid towards a baddie within <<X>> meters. The enemy takes
+<<X>>d6 damage and <<X>> of their nonmagical functional armor pieces becomes
+unusable.
+
+=== Milf's Magnificent Melons (X)
+*Level 1+*
+
+You create <<X>> edible and nourishing melons. Each melon weighs one
+<<item_slots,item slot>> and has <<X>> usage points.
+
+
 === Mind Message (X)
 *Level 1+*
 
@@ -2353,6 +2343,19 @@ You target a creature within 10 plus 10·<<X>> meters, and telepathically send
 10·<<X>> words to it. It can telepathically reply with the same number of
 words. If the recipient makes a successful __charisma__ check, no one notices its
 distraction while receiving and replying.
+
+
+=== Mosstrum’s Magical Aura (X)
+*Level 1, <<ritual>>, duration: <<X>> days*
+
+You select a nonmagical item within 2 meters, weighing no more than <<X>> kg.
+
+You give the item an invisible magical aura of your design. Anyone who uses
+<<_detect_magic>>, identify or similar detection magic will think the item is
+magical, and they will think the item has magical properties of your choosing.
+
+Observers with a level higher than <<X>> can detect that this spell has been
+cast, and that the item is nonmagical.
 
 
 === Mosstrum’s Mundane Shroud (X)
@@ -2369,17 +2372,28 @@ Some magical items have a level; this spell only works if the item's level is
 ≤ <<X>>.
 
 
-=== Mosstrum’s Magical Aura (X)
-*Level 1, <<ritual>>, duration: <<X>> days*
+=== Order (X)
+*Level: 1+, duration: 1 round*
 
-You select a nonmagical item within 2 meters, weighing no more than <<X>> kg.
+You give a creature within <<X>> meters a one-word order and then make a
+__charisma__ check. If you’re successful, the target will attempt to execute
+the order as best it can, and as it understands the command, but only for one
+round, and only if the order would not result in self harm.
 
-You give the item an invisible magical aura of your design. Anyone who uses
-<<_detect_magic>>, identify or similar detection magic will think the item is
-magical, and they will think the item has magical properties of your choosing.
+You cannot affect creatures whose level is higher than <<X>>. But they become
+hostile as soon as you have cast the spell.
 
-Observers with a level higher than <<X>> can detect that this spell has been
-cast, and that the item is nonmagical.
+If the target’s level is lower than <<X>> your __charisma__ check is <<easy>>.
+
+Any creature targeted by this spell will become hostile towards you, regardless
+if they executed the order or not.
+
+[quote]
+Orders such as »flee« and »run« are straight forward, but a order such as
+»drop« can be interpreted in many ways (drop the thing you’re holding, or drop
+<<prone>>, or drop the subject). Don't assume that the target of this spell
+will fully understand the meaning or spirit your order, but don't assume that
+they will misunderstand it either.
 
 
 === Otto Luke's Torch (X)
@@ -2500,20 +2514,6 @@ item crumbles to dust.
 
 [quote]
 the item is magical so it can be detected with <<_detect_magic>>.
-
-=== Milf's Caustic Aerosol (X)
-*Level 1+*
-
-You spray caustic liquid towards a baddie within <<X>> meters. The enemy takes
-<<X>>d6 damage and <<X>> of their nonmagical functional armor pieces becomes
-unusable.
-
-=== Milf's Magnificent Melons (X)
-*Level 1+*
-
-You create <<X>> edible and nourishing melons. Each melon weighs one
-<<item_slots,item slot>> and has <<X>> usage points.
-
 
 === Snooze (X)
 *Level 1+*
@@ -2682,15 +2682,6 @@ locks, spells, and various tasks can also have a level.
 by the GM.
 
 //KEY:
-*Unskilled (armor)*: When you are not skilled at using a piece of armor you become
-<<weighed_down>>, causing you to lose one <<moves,move>>.
-
-//KEY:
-*Unskilled (weapon)*: When you are not skilled at using a weapon,
-your __attack check__ is <<difficult>>, and the results of your attack checks
-are not as favorable. See <<attack_check_results_table>>.
-
-//KEY:
 *PC and PCs*: Player Character(s).
 
 //KEY:
@@ -2709,6 +2700,15 @@ using.
 //KEY:
 *Target number*: The number you must roll below (usually with your d20) in
 order to make a successful check.
+
+//KEY:
+*Unskilled (armor)*: When you are not skilled at using a piece of armor you become
+<<weighed_down>>, causing you to lose one <<moves,move>>.
+
+//KEY:
+*Unskilled (weapon)*: When you are not skilled at using a weapon,
+your __attack check__ is <<difficult>>, and the results of your attack checks
+are not as favorable. See <<attack_check_results_table>>.
 
 //END_SORT
 
