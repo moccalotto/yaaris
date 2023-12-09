@@ -8,10 +8,10 @@
 :toc-placement!:
 :experimental:
 :stem:
-:xrefstyle: basic
+:xrefstyle: full
 
 
-// {{{ VARIABLES 
+// {{{ VARIABLES
 :IS: <<item_slots,Item Slots>>
 :UP: <<usage_points,Usage Points>>
 :AHP: <<armor_hit_points,Hit Points>>
@@ -43,22 +43,21 @@ Your character has 6 primary stats:
 
 === Extra Stuff
 
-[reftext="level"]
-[[level]]
-*Level*: your character's level is a measure of their badassity. You start at
-level 1 and max out at level 10. Baddies, spells, certain items and tasks also
-have levels.
+[[level,level]]
+*Level*: your level is a measure of your badassity. You start at a level 1 and
+max out at level 10. Baddies, spells, certain items and challenges also have
+levels. You gain new levels by acquiring treasure and notoriety.
 
-*Hit points (HP)*: is your current number of hit points. Bad stuff happens if
-you <<zero_hp,run out of hit points>>.
+*Hit points*: this is your current number of hit points. You can die or suffer
+permanent injury if you <<zero_hp,run out of hit points>>.
 
-[reftext="hit point total"]
-[[hit_point_total]]
+[[hit_point_total,hit point total]]
 *Hit point total*: is the maximum number of hit points you can have. I.e. the
 number of hit points you have when you're at full health. This number increases
 every time you gain a new level, when you're wearing armor, and when you have
 <<unused_item_slots>>.
 
+[[total_item_slots,total item slots]]
 *Total item slots*: is the maximum number of <<item_slots,items>> you can
 carry. This number is the highest of your __strength__ and __constitution__.
 
@@ -165,8 +164,9 @@ All characters start with the following equipment:
 * A set of common clothing.
 * A bedroll.
 
+
 *In addition to that:* Roll on each of the following tables to find out what
-equipment your character starts with.
+additional equipment your character starts with.
 
 ==== Ranged weapon
 Roll 1d6 on this table to find out if you have a ranged weapon.
@@ -175,17 +175,25 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 |===
 | d6    | Weapon
 //------|----------------------------
-| 1-3   | No Ranged Weapon
-| 4     | Slingshot + Bag of stones
-| 5     | Bow + Quiver of arrows
-| 6     | Crossbow + Quiver of bolts
+| 1-3   | no ranged weapon
+| 4     | slingshot + bag of stones
+| 5     | bow + quiver of arrows
+| 6     | crossbow + quiver of bolts
 //------|----------------------------
 |===
 
 
 ==== Shield
-Roll 1d6. If you rolled 5 or 6, you have a light shield. Otherwise, you don’t
-have a shield.
+Roll 1d6 on this table to find out if you have a shield.
+
+[%header,cols="^2,10"]
+|===
+| d6    | Shield
+//------|----------------------------
+| 1-4   | no shield
+| 5-6   | light shield
+//------|----------------------------
+|===
 
 // Turn automatic section id off. We want <<Armor>> and <<_armor>> to link to a
 // later section
@@ -195,9 +203,20 @@ have a shield.
 Armors give you extra hit points; you have 1d3-1
 <<light_armor_table,light armor pieces>> of your choice.
 
+[%header,cols="^2,10"]
+|===
+| d6    | Armor
+//------|----------------------------
+| 1-2   | no armor
+| 3-4   | light cuirass
+| 5-6   | light cuirass and helmet
+//------|----------------------------
+|===
+
+
 
 ==== Utility Gear
-Roll once on the <<utility_gear_1>> table.
+Roll once on <<utility_gear_1>>.
 
 [[utility_gear_1]]
 .Utility Gear 1
@@ -219,9 +238,8 @@ Roll once on the <<utility_gear_1>> table.
 |===
 
 
-Roll twice on the <<utility_gear_2>> table.
-If the second roll is the same as the first roll,
-reroll it.
+Roll twice on <<utility_gear_2>>. If the second roll is the same as the first
+roll, reroll it.
 
 [%unbreakable]
 --
@@ -264,7 +282,7 @@ All characters start out with the same class: Adventurer.
 [reftext="hit points"]
 [[hit_points]]
 ==== Hit Points
-At first level, your __hit point total__ is 8, which means that, under normal
+Your __hit point total__ is 8, which means that, under normal
 circumstances, you can’t have more than 8 hit points. When you have lost all
 your hit points, you have to roll on the <<death_table>>.
 
@@ -281,39 +299,9 @@ armor you're not skilled at using, you lose one <<moves,move>>. See the
 
 [[weapon_skills]]
 ==== Weapon Skills
-You are skilled at using light melee weapons and ranged weapons. On the
-<<adventurer_damage_rolls_table,table below>> you can see how much damage you
-deal with each weapon category.
-
-[%unbreakable]
---
-[[adventurer_damage_rolls_table]]
-.Adventurer Damage Rolls
-[%header,cols="7,^2,^2,^1"]
-|===
-| Weapon Type           | Stat        | Skill level | Damage
-//----------------------|-------------|-------------|--------
-| Light Melee Weapons¹  | _Dexterity_ | Skilled     | 2
-| Ranged Weapons²       | _Wisdom_    | Skilled     | 2
-| Heavy Melee Weapons³  | _Strength_  | Unskilled   | 3
-| Unarmed Combat⁴       | _Strength_  | Unskilled   | 1
-//----------------------|-------------|-------------|--------
-|===
-
-. Most light melee weapons are one-handed, with notable exceptions such as
-  the quarterstaff.
-. Throwing-weapons can often be used as light melee weapons (such as daggers,
-  javelins), and these weapons only require one hand.  Almost all weapons that
-  have ammunition (such as bows, crossbows, slings) require two hands to use.
-. Heavy melee weapons always require two hands, and can never be used as
-  throwing weapons.
-. Unarmed combat requires two free hands.
---
-
-.Range
-[reftext="attack range"]
-[[attack_range]]
-NOTE: The max range of ranged weapons is equal to your __wisdom__.
+You are skilled at using light melee weapons and ranged weapons. On
+<<adventurer_damage_rolls_table>> you can see how much damage you deal with
+each weapon category.
 
 ==== Adventurer's Blessing
 
@@ -394,7 +382,7 @@ have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll
 //KEY:
 [reftext="armorer"]
 [[armorer]]
-*Armorer*: You obtain a set of <<tinkering_tools>>, and you can can repair 
+*Armorer*: You obtain a set of <<tinkering_tools>>, and you can can repair
 damaged and broken weapons as well as armor pieces using those tools.
 
 
@@ -419,7 +407,7 @@ when doing so, your damage die is 1d12.
 //KEY:
 [reftext="monstrous gourmand"]
 [[monstrous_gourmand]]
-*Monstrous Gourmand*: 
+*Monstrous Gourmand*:
 You can make edible ration packs from fresh monster parts (any recently dead
 creature will do) It requires sharp cutting instruments, a large pot, a bonfire
 (or equivalent source of heat), one hour of work, and a successful
@@ -433,7 +421,7 @@ and eat such a “meal”.
 //KEY:
 [reftext="negotiator"]
 [[negotiator]]
-*Negotiator*: 
+*Negotiator*:
 You have <<advantage>> on checks that involve negotiation, including
 <<haggling_check>>.
 
@@ -441,7 +429,7 @@ You have <<advantage>> on checks that involve negotiation, including
 //KEY:
 [reftext="pugilist"]
 [[pugilist]]
-*Pugilist*: 
+*Pugilist*:
 You are skilled at unarmed combat, and your unarmed combat damage die is 1d6.
 
 [quote]
@@ -452,13 +440,13 @@ grave consequences.
 //KEY:
 [reftext="rider"]
 [[rider]]
-*Rider*: 
+*Rider*:
 You acquire a trained horse for free (tamed wild horse, a gift, or similar).
 You become proficient at riding horses. You have <<advantage>> on all
 riding-related checks. You have <<advantage>> on <<consumption_check,
 consumption checks>> for animal feed. When you reach level 5 your riding
 proficiency expands to all rideable land creatures. At level 8, you can ride
-virtually any tame creature.
+virtually any willing creature.
 
 
 .About the Rider's Mount
@@ -483,7 +471,7 @@ your mount, but your rolls are no longer made with <<advantage>>.
 //KEY:
 [reftext="shady"]
 [[shady]]
-*Shady*: 
+*Shady*:
 On a successful __charisma__ check you pull out a dagger from a boot, a sleeve
 or… somewhere. If your check fails, you cannot do it again for the rest of the
 session. In combat, this feat requires 3 moves. You are also skilled at using a
@@ -512,7 +500,7 @@ Moreover, at any time, one of the ropes you carry does not take up any
 //KEY:
 [reftext="thrifty"]
 [[thrifty]]
-*Thrifty*: 
+*Thrifty*:
 You have <<advantage>> on <<consumption_check,consumption checks>> with
 <<coin_purse,coin purses>>.
 
@@ -520,7 +508,7 @@ You have <<advantage>> on <<consumption_check,consumption checks>> with
 //KEY:
 [reftext="traveler"]
 [[traveler]]
-*Traveler*: 
+*Traveler*:
 You have <<advantage>> on <<consumption_check,consumption checks>> for
 <<rations>> and animal feed, you always know the cardinal directions,
 and you have <<advantage>> on checks related to geography, travel, and
@@ -544,40 +532,6 @@ explicitly prevents you from having it.
 
 //}}}
 
-//{{{ LEVELS
-== LEVELS
-You begin at level 1, and you can gain levels until you reach level 10. You
-gain levels by acquiring suitable treasures. In order for a team of adventurers
-to gain a level, they must <<lvl_acquire>> a number of <<lvl_suitable>>
-<<lvl_treasures>> equal to the typical level of the team's members.
-
-[reftext="treasures"]
-[[lvl_treasures]]
-*Treasure*: A treasure is a big horde, often situated in one location. It is up
-to the GM to decide what is an actual treasure, and what is just general loot.
-
-[reftext="suitable"]
-[[lvl_suitable]]
-*Suitable*: A __suitable__ treasure is worth at least 100 gold pieces times the
-sum of the levels of all the characters in the party.
-
-[reftext="acquire"]
-[[lvl_acquire]]
-*Acquire*: You have __acquired__ a treasure when it is stored safely at your
-base of operations. Recovering a large treasure in a distant dungeon may
-require a lot of travel and hauling.
-
-.Leveling up
-====
-* In order to level up, a party of 5 first level characters must acquire a
-  single treasure worth __5·1·100=500__ gold pieces.
-
-* In order to level up, a party of 4 PCs at 6th level must acquire six
-  treasures in order to advance. Each treasure must be worth at least
-  __4·6·100=2,400__ gold pieces.
-====
-
-// }}}
 
 //{{{DICE
 == DICE
@@ -590,7 +544,7 @@ interesting things; you roll your d20. The check is successful if you roll
 __under__ a specified *__target number__*, which is usually one of your stats.
 
 NOTE: If the target number is 10, you must roll _below_ 10, not equal to 10, to
-succeed, 
+succeed,
 
 .Target Number
 ====
@@ -601,11 +555,13 @@ the check was successful, otherwise it was unsuccessful.
 
 [reftext="1"]
 [[nat1]]
-*Rolling a 1*: Checks are always successful if you roll a 1 on your d20.
+*Rolling a 1*: Checks are always successful if you roll a 1 on your d20 and,
+depending on the type of check, other positive result may happen.
 
 [reftext="20"]
 [[nat20]]
-*Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d20.
+*Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d20
+and, depending on the type of check, other positive result may happen.
 
 [reftext="easy"]
 [[easy]]
@@ -925,8 +881,7 @@ of the drawing, the number of successes, failures, <<nat1>>s and <<nat20>>s
 
 
 //KEY:
-[reftext="bank book"]
-[[bank_book]]
+[[bank_book,bank book]]
 ==== Bank Book
 A bank book is a magical book that can contain money. There is a magical ritual
 called <<_banking_transaction_x>>, that allows you to transfer money into and
@@ -966,13 +921,12 @@ instead of spending coin.
 
 
 //KEY:
-[reftext="healing salve"]
-[[healing_salve]]
+[[healing_salve,healing salve]]
 ==== Healing Salve
-These salves can heal minor wounds.
-You spend one <<consumption_check,consumption>> of salve, and five minutes
-to apply it to a willing recipient. Once applied, the recipient rolls a number 
-of dice (usually a few d6), and regain that many hit points.
+These salves can heal minor wounds: You spend one
+<<consumption_check,consumption>> of salve, and five minutes to apply it to a
+willing recipient. Once applied, the recipient rolls a number of dice (usually
+a few d6), and regain that many hit points.
 
 //KEY:
 [reftext="kosh"]
@@ -1061,8 +1015,8 @@ do so you must make an __intelligence__ check and a __wisdom__ check.
 
 *   If both are successful, your mapping process is accurate for the entire
     dungeon level, city, or area.
-*   If just one is successful, your scales are incorrect, and using the
-    map is <<difficult>>.
+*   If just one is successful, your map is slightly incorrect, and using it
+    is <<difficult>>.
 *   If both failed, the map is not accurate at all. Twists and turns are
     wrong, scales are wrong, the cardinal directions are wrong, and there are
     missing areas and notes.
@@ -1126,10 +1080,10 @@ Disarming traps:: To disarm a trap you spend 10 minutes and one
 <<consumption_check,consumption>> of tinkering tools. Then you make a
 __dexterity__ and __wisdom__ check.
 
-* If both are successful, you have disarmed the trap.
-* If one is successful, you did not disarm the trap, but you may try again.
-* If both failed, the trap triggers, and you are not able to dodge the effects
-  (if the trap is aimed at you).
+*   If both are successful, you have disarmed the trap.
+*   If one is successful, you did not disarm the trap, but you may try again.
+*   If both failed, the trap triggers, and you are not able to dodge the
+    effects (if the trap is aimed at you).
 
 
 //KEY:
@@ -1238,6 +1192,7 @@ them in many ways, and here's some examples.
 | Remove your helmet                            |   4
 | Drop a functional heavy shield                |   5
 | Ready a spellbook from your backpack          |   5
+| Gain an extra <<Actions,action>>              |   5
 //----------------------------------------------|------
 |===
 
@@ -1269,130 +1224,120 @@ Here's some examples:
 [[attack_and_damage]]
 === Attacks & Damage
 
-When you attack a baddie, you make a so-called __attack check__. 
+When you attack a baddie you make a so-called __attack check__ which is an
+<<adversarial>> check with a stat that depends on the type of weapon you are
+using; consult <<adventurer_damage_rolls_table>> to find out which __stat__ to
+use, whether or not you are skilled at using the given weapon, and what your
+damage roll is.
 
-The outcome of that check depends on whether or not you are
-<<weapon_skills,skilled>> at using the weapon. As an adventurer you are skilled
-at using light melee weapons and ranged weapons, and if you have abilities such
-as <<great_weapon_specialist,Great weapon specialists>> are also skilled in
-using heavy melee weapons.
+Unskilled Attacks:: If you are not skilled at using a weapon, the __attack
+check__ is <<difficult>>.
 
-*Skilled*: If you are skilled at using a weapon, you roll a d20 and consult the
-<<skilled_attack_check>> table.
+Light Melee Weapons:: These weapons, except quarterstaves, are one-handed.
 
-*Unskilled*: If you are __not__ skilled at using a weapon, roll a d20, and
-consult the <<unskilled_attack_check>> table.
+Heavy Melee Weapons:: Are always two-handed.
 
-[reftext="stat"]
-[[attack_check_stat]]
-*Stat used*: The __stat__ used in the attack check depends on the weapon type.
-For an adventurer, 
-the __stat__ for Light Melee Weapons is __dexterity__,
-the __stat__ for Ranged Weapons is __wisdom__,
-the __stat__ for Heavy Melee Weapons is __strength__,
-and the __stat__ for Heavy Unarmed Combat is __strength__.
+Projectile Weapons:: This type of ranged weapon, such as bows, crossbows, and
+slings require ammunition and almost always require two hands.
 
-[reftext="weapon's damage"]
-[[attack_check_weapon_damage]]
-*Weapon's damage*: The base damage of the weapon depends on its type. For an
-adventurer, 
-the __weapon damage__ for Light Melee Weapons is 2
-the __weapon damage__ for Ranged Weapons is 2,
-the __weapon damage__ for Heavy Melee Weapons is 3,
-and the __weapon damage__ for Heavy Unarmed Combat is 1.
+Throwing Weapons:: This type of ranged weapons are usually one-handed, and some
+of them (such as daggers and javelins) can also be used as light melee weapons.
 
-[reftext="what you rolled"]
-[[attack_check_roll]]
-*What you rolled*: Sometimes the damage you deal to an opponent depends on what
-you rolled on your d20 for the attack check.
+Unarmed Combat:: requires two free hands, but does not suffer from
+<<damaged_weapon,weapon wear and tear>>.
 
-:weapon_damage: <<attack_check_weapon_damage>>
-:roll: <<attack_check_roll>>
-:stat: <<attack_check_stat>>
+.Range
+The range of ranged weapons is a number of meters equal to
+the lowest of your __strength__, __dexterity__, and __wisdom__.
 
-[[skilled_attack_check]]
-.Skilled Attacks
-[cols="^1s,11"]
+When you have made your attack check, consult <<attack_check_results_table>> to
+find out what happens. Unless you rolled poorly on your attack check it is now
+to to roll the damage die and reduce your opponent's hit pints accordingly.
+
+[%unbreakable]
+--
+[[adventurer_damage_rolls_table]]
+.Adventurer's Attack and Damage
+[%header,cols="6,^2,^2,^2"]
 |===
-//----------|----------------------------------------------------
-| <<nat20>> | Failure: your weapon loses a <<usage_points,usage point>>.
-| Failure   | Partial Hit: you deal __{weapon_damage}__ points of damage.
-| Success   | Hit: you deal __{roll} + {weapon_damage}__ points of damage.
-| <<nat1>>  | Critical Hit: you deal __<<level>> + {stat} + {weapon_damage}__ points of damage.
-//----------|----------------------------------------------------
+| Weapon Type           | Stat        | Skill level | Damage Roll
+//----------------------|-------------|-------------|-------------
+| Light Melee Weapons¹  | _Strength_  | Skilled     | 1d8
+| Ranged Weapons²       | _Wisdom_    | Skilled     | 1d6
+| Heavy Melee Weapons³  | _Strength_  | Unskilled   | 1d12
+| Unarmed Combat⁴       | _Dexterity_ | Unskilled   | 1d4
+//----------------------|-------------|-------------|-------------
 |===
 
-[[unskilled_attack_check]]
-.Unskilled Attacks
-[cols="^1s,11"]
+--
+
+[[attack_check_results_table]]
+.Attack Check Results
+[cols="^2s,10",stripes=odd]
 |===
-//----------|----------------------------------------------------
-| <<nat20>> | Failure: your weapon loses a <<usage_points,usage point>>.
-| Failure   | Miss: you deal no damage.
-| Success   | Hit: you deal __{roll} + {weapon_damage}__ points of damage.
-| <<nat1>>  | Critical Hit: you deal __{stat} + {weapon_damage}__ points of damage.
-//----------|----------------------------------------------------
+//----------|-------------------------------------
+| <<nat20>> | You deal no damage and your weapon <<damaged_weapon,takes damage>>.
+| Failure   | You deal half damage if you are <<weapon_skills,skilled>> with
+              your weapon, otherwise you deal no damage.
+| Success   | You deal normal damage.
+| <<nat1>>  | You deal maximum damage and if you are <<weapon_skills,skilled>>
+              at using your weapon you get an extra <<Actions,action>>.
+//----------|-------------------------------------
 |===
 
-==== Damage Roll
-When you've made an attack, and your attack check succeeded, you roll damage,
-and the baddie loses that many <<hit_points>>
-
-See the <<adventurer_damage_rolls_table>> table to find your damage die.
-
-[quote]
-<<great_weapon_specialist,Great weapon specialists>> are also skilled in using
-heavy melee weapons.
-
-===== Critical Hits
-If you roll a <<nat1>> on your attack check, and you're skilled at using your
-weapon, you get an extra action for free. You do not get any <<moves>>, but you
-can use your action any way you like, including attacking the same opponent
-again.
-
-[quote]
-If you're lucky, you can roll more than one critical hit in a single round.
-
-[reftext="weapon wear"]
-[[weapon_wear]]
 ==== Weapon Wear
-If you roll a <<nat20>> on your attack check, your weapon becomes damaged,
-which causes all your subsequent attack checks with that weapon to become
-<<difficult>>. You you roll a <<nat20>> when using a damaged weapon, your
-weapon becomes unusable and must be repaired before it can be used again.
+If you roll a <<nat20>> on your attack check, your weapon can become damaged or
+unusable.
 
-Damaged and broken weapons can be repaired by an <<armorer>> (or a
-weaponsmith).
+[[damaged_weapon,damaged]]
+*Damaged*: attacking with a damaged weapon is <<difficult>> and if you
+roll a <<nat20>> on your attack check, your weapon becomes unusable.
+
+[[broken_weapon,broken]]
+*Unusable*: you cannot make attacks with an unusable weapon; it must
+be repaired by an <<armorer>> or professional blacksmith.
 
 === Defense
-When a baddie tries to attack you, you make a defense check. If it was a
-ranged attack, you make an <<adversarial>> __wisdom__ check, and if it was
-a melee attack, you make an <<adversarial>> __dexterity__ check.
+When a baddie attacks you, you make a so-called __defense check__; if the
+incoming attack is ranged your __defense check__ is an <<adversarial>>
+__wisdom__ check, and if it is a melee attack the __defense check__ is an
+<<adversarial>> __dexterity__ check.
+
+When you have made your __defense check__ refer to
+<<defense_check_results_table>> below to find out how well you defended
+yourself.
+
+
+[[defense_check_results_table]]
+.Defense Check Results
+[cols="^2s,10",stripes=odd]
+|===
+//----------|-------------------------------------
+| <<nat20>> | You take maximum damage and your best armor piece <<armor_wear,breaks>>.
+| Failure   | You take normal damage.
+| Success   | You take no damage.
+| <<nat1>>  | You take no damage and the enemy's weapon <<broken_weapon,breaks>>.
+//----------|-------------------------------------
+|===
 
 [reftext="unused item slots"]
 [[unused_item_slots]]
 ==== Unused  Item Slots
-You unused item slots is equal to your __unencumbered item slots__ minus
-the number of item slots that are currently in use.
+You unused item slots is equal to your <<total item slots>> minus the number of
+item slots that are currently in use.
 
 You gain one extra hit point for every unused <<item_slots,item slot>> you
 have. It's a bit like wearing armor.
 
 Dropping an item will cause your <<hit_point_total>> and your current number
 of hit points to increase by a number equal to the weight (in <<item_slots>>)
-of the item.
+of the item. It can sometimes be useful to unequip/drop items in battle if you
+are critically low on hit points.
 
-[quote]
-If you're critically low on hit points, you can drop the weapon you're
-currently wielding, and gain one or two extra hit points.
-
-Equipping or carrying an item will cause your <<hit_point_total>> and your
-current number of hit points to decrease by number of points equal to the
-weight (in <<item_slots>>) of the item.
-
-[quote]
-Beware that equipping an item can reduce you to <<zero_hp,zero hit points>>,
-which can be lethal.
+Equipping an item will cause your <<hit_point_total>> and your current number
+of hit points to decrease by number of points equal to the weight (in
+<<item_slots>>) of the item. This can cause you to reach <<zero_hp,zero hit
+pints>>, which can be lethal,
 
 ==== Armor
 You can wear up to five pieces of armor: a helmet, a cuirass, a gauntlet, of
@@ -1423,18 +1368,18 @@ you lose one <<moves,move>>.
 
 [[armor_wear]]
 ===== Armor Wears Out
-If you are wearing at least one functional piece of armor, and you roll a
+If you are wearing at least one functional piece of armor and you roll a
 <<nat20>> on your <<Defense,defense check>>, one of the functional
 <<Armor,armor pieces>> you are wearing (your choice) breaks and becomes
 nonfunctional. A broken armor piece still provides <<hit_points>>, but wearing
-it reduces your number of <<moves>> by one. This is cumulative so if
-you're wearing 3 pieces of broken armor, you lose 3 moves.
+it reduces your number of <<moves>> by one. This is cumulative so if you're
+wearing 3 pieces of broken armor, you lose 3 moves.
 
 [quote]
 If you're wearing a piece of broken armor that you're not
-<<armor_skills,skilled>> at using, that piece of armor is responsible for you
-losing _two_ <<moves>>; one because you're unskilled, and the other
-because the armor piece is broken.
+<<armor_skills,skilled>> at using, that single armor piece causes you to lose
+_two_ <<moves>>; one because you're unskilled, and the other because the armor
+piece is broken.
 
 .Armor wear
 ====
@@ -1501,25 +1446,23 @@ If you take damage and you are already at zero hit points, you lose 1d4 points
 from a random stat, and you must roll on the <<trauma_table>> and add the
 amount of damage taken to your d100 roll.
 
-.Kicking a player character while they're down
-[example]
---
-You’re have zero hit points, you have already rolled on the
-<<death_table>> once (and survived, for now), and some dastardly baddie strikes you for
-5 damage.
+.Kicked while you're down
+====
+You’re at zero hit points, you have already rolled on the <<death_table>> (and
+survived, for now), and some dastardly baddie now strikes you for 5 damage.
 
 You first roll a d6 and a d4 to reduce one of your stats, you rolled a 6 and a
 3, meaning your __charisma__ is lowered by 3 points.
 
-You then roll on the <<trauma_table>> and add 5 to your d100 roll
-(because you received 5 points of damage). You rolled __7+5=12__, meaning you did
-not suffer any trauma effects, you lucky bastard.
---
+You then roll on the <<trauma_table>> and add 5 to your d100 roll (because you
+received 5 points of damage). You rolled __59+5=64__, meaning you lose one
+<<moves,move>> for 1d20 days.
+====
 
 ==== Death Table
 
-You're sure to receive a negative __condition__ or two when rolling on the death
-table. Check the <<CONDITIONS>> section for more info.
+You're sure to receive a negative __condition__ or two when rolling on the
+death table. Check the <<CONDITIONS>> section for more info.
 
 [reftext="death table"]
 [[death_table]]
@@ -1579,7 +1522,8 @@ it.
 <<restoring_salve,restoring salves>> or by using high-level
 <<restoration_magic>>.
 
-*Temporary*: lasts for 1d20 days or it can be reversed with restoration magic.
+*Temporary*: This trauma goes away after 1d20 days. It can also be reversed
+with restoration magic.
 
 [reftext="restoration magic"]
 .Restoration Magic
@@ -1628,7 +1572,8 @@ up.
 [[dead]]
 *Dead*: You're dead. You can be brought back to life with resurrection magic
 (not available in this document). If you are not buried or are treated with
-burial rites, you will rise as an undead within 2d6 days.
+burial rites or the <<_burial_x>> spell you will rise as an undead within 2d6
+days.
 
 .The Undead Curse
 [[the_undead_curse]]
@@ -1675,7 +1620,7 @@ presence of light at the rate of one stat point per hour. It goes twice as fast
 if you are outside in the sunlight.
 
 [quote]
-You die if any of your stats reaches zero. 
+You die if any of your stats reaches zero.
 
 [reftext="encumbered"]
 [[encumbered]]
@@ -1850,7 +1795,7 @@ time to do so.
   ritual.
 
 *Procedure*: You spend 10 minutes and one <<consumption_check,consumption>> of
-<<magic_components>>, and then you make an __intelligence__ check. 
+<<magic_components>>, and then you make an __intelligence__ check.
 //
 If the check was a success the spell takes effect.
 //
@@ -1986,7 +1931,7 @@ All spells listed in this section are <<basic>> and can be used by adventurers.
 // START_SORT ===
 
 === Alertness (X)
-*Level 1+, <<focus>>*
+*Level 1+, <<focus>> (special)*
 
 Everyone within 3 meters of the caster gets <<advantage>> on checks that
 involve spotting hidden things, traps, and enemies, The effect persists even if
@@ -2001,7 +1946,7 @@ Of the next <<X>>+1 __charisma__ checks you make, you have <<advantage>> on
 checks that have a strong flirting component or involve physical attraction.
 
 === Animal Friendship (X)
-*Level 1+, <<ritual>>, duration: <<X>>+1 hours (<<focus>>)*
+*Level 1+, <<ritual>>, <<focus>> (up to <<X>> + 1 hours)*
 
 You have <<advantage>> on all __intelligence__, __wisdom__, and __charisma__ checks
 made to befriend or calm animals. If you meet a hostile animal, there is a
@@ -2031,8 +1976,8 @@ It takes <<X>> minutes to cast this spell, and it requires <<X>> gold pieces,
 which are consumed by the spell (yes, you must have at least <<X>> gold pieces
 on hand to withdraw your money).
 
-The number of coins you can withdraw/deposit is `10·<<X>>·<<X>>·<<X>>`
-(i.e. 10·<<X>>³).
+The number of coins you can withdraw/deposit is __10·<<X>>·<<X>>·<<X>>__ (i.e.
+10·<<X>>³).
 
 === Bug Repellent (X)
 *Level 1+, duration: <<X>> minutes*
@@ -2066,9 +2011,7 @@ You calm a hostile animal within 10+<<X>> meters and whose level isn't higher
 than <<X>>. The animal no longer considers you and your party as threats, and
 will simply wander away if possible.
 
-[quote]
-Just because a monster may look like an animal, doesn't  mean it is affected
-by this spell.
+IMPORTANT: This spell does not affect monsters, even if they look like animals.
 
 === Club
 *Level 1, duration: <<caster_level>>+5 rounds*
@@ -2079,10 +2022,7 @@ dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go
 of it.
 
 === Command Fire (X)
-*Level 1,
-,
-range: 2·<<X>> meters,
-duration: 2·<<X>> minutes (<<trance>>)*
+*Level 1, range: 2·<<X>> meters, <<trance>> (up to 2·<<X>> minutes)*
 
 When you've just cast the spell you select a fire. It can be as small as a
 candle and as large as <<X>> square meters. You can now give the fire a
@@ -2117,8 +2057,8 @@ hour.
 === Danger Sense
 *Level 2*
 
-If you make a successful __charisma__ check, you get a sense, on a scale of 1 to
-5, of how dangerous a given foe, group, situation, mechanism, substance, or
+If you make a successful __charisma__ check, you get a sense, on a scale of 1
+to 5, of how dangerous a given foe, group, situation, mechanism, substance, or
 task.
 
 [quote]
@@ -2127,7 +2067,7 @@ completely harmless to her friends.
 
 
 === Detect Magic
-*Level 1, <<ritual>>, duration: __intelligence__ minutes*
+*Level 1, <<ritual>>, <<focus>> (up to __intelligence__ minutes)*
 
 You can sense magical items, and items that are affected by spells, such as an
 item with <<_illuminate_x>> cast on it. The item must be within __wisdom__
@@ -2137,13 +2077,12 @@ exceptionally hard to distinguish magical items from each other. In general,
 it is only possible to detect the direction of the most powerful magical item.
 
 [quote]
-It can be advantageous to keep you and your party's items, including
-your magical items, and spellbooks, away from you while you're using this
-spell.
+It can be advantageous to keep you and your party's items, including your
+magical items, and spellbooks, away from you while you're using this spell.
 
 
 === Detect Traps (X)
-*Level 1+, <<duration>>: <<X>> hours (<<focus>>)*
+*Level 1+, <<focus>>: ( up to <<X>> hours)*
 
 You can sense if a trap is within 10+<<X>> meters, but you only know where it
 is when the trap is within <<X>> meters of you.
@@ -2168,26 +2107,26 @@ You target a point within __wisdom__ meters. Every object and creature within
 attack checks against them remain <<difficult>>.
 
 === Fierce Fortune (X)
-*Level 1, *
+*Level 1*
 
 An ally within <<X>> meters gets <<advantage>>on their next
 <<attack_and_damage,attack>> or <<Defense,defense check>>, provided it occurs
 within <<X>>+1 rounds.
 
 === Flaming Fingers (X)
-*Level 1, *
+*Level 1*
 
 Jets of fire spew forth from your burning hands, scorching up to <<X>> adjacent
 targets of your choice. If you make a successful __intelligence__ check, each
 target receives 1d6+<<X>> damage, otherwise they receive 1d6 damage.
 
 === Friendliness (X)
-*Level 1, <<duration>>: <<X>> minutes (<<focus>>)*
+*Level 1, <<focus>> (up to <<X>> minutes)*
 
-Your __charisma__ checks are <<easy>> for the duration of this spell.
+Your __charisma__ checks are <<easy>>.
 
 === Furnace
-*Level 2, <<trance>>, duration: up to 8 hours*
+*Level 2, <<trance>> (up to 8 hours)*
 
 A bonfire within 10 meters becomes hot enough heat metal enough for forging.
 The bonfire does not consume more wood that it normally would, and it does not
@@ -2232,10 +2171,10 @@ The spell lasts 10·<<X>> minutes, until you stop focusing on it, or the servant
 gets more than 10·<<X>> meters away.
 
 === Gills (X)
-*Level 1+, <<ritual>>, duration:2+<<X>> minutes (<<focus>>)*
+*Level 1+, <<ritual>>, <<focus>> (up to 2+<<X>> minutes)*
 
-You and 1+<<X>> willing creatures within 4+<<X>> meters can breathe in water
-(and only water, not mud, lava, acid, alcohol).
+You and <<X>> willing creatures within 4+<<X>> meters gain the ability to
+breathe in water for the duration of this spell.
 
 === Gloom (X)
 *Level 1+, range: 2+<<X>> meters*
@@ -2259,14 +2198,14 @@ The gloomy area looks like dense fog when seen from the outside.
 === Heal (X)
 *Level 1+, <<ritual>>, range: 3+<<X>> meters*
 
-You heal a creature within range. It regains <<X>>d6+<<X>>
+You target a creature within range who regains <<X>>d6+<<X>> hit points.
 
 === Hurt (X)
-*Level 1+, <<ritual>>, range: <<X>>+3 meters*
+*Level 1+, <<ritual>>, range: 3+<<X>> meters*
 
-You target a creature in range that you can see. If you succeed an
-<<adversarial>> __wisdom__ check, the creature loses <<X>>d6+<<X>>
-<<hit_points>>, otherwise it just loses <<X>>d6 <<hit_points>>.
+You target a creature in range; if you succeed an <<adversarial>> __wisdom__
+check, the creature loses <<X>>d6+<<X>> <<hit_points>>, otherwise it loses
+<<X>>d6 <<hit_points>>.
 
 === Illuminate (X)
 *Level 1+, range: 2+<<X>> meters, duration: <<X>> hours*
@@ -2481,20 +2420,19 @@ on an object within range.
 A <<armor_wear,broken>> <<Armor,piece of armor>> can be repaired if it isn't
 magical, and it provides no more than 2·<<X>> <<armor_hit_points,hit points>>.
 
-A <<weapon_wear,broken>> weapon can be repaired if it isn't magical, and it
-takes up no more than stem:[X/2] <<item_slots>> (rounded down).
-
-Other items can be repaired if they weigh no more than <<X>> kg.
+A <<damaged_weapon>> or <<broken_weapon>> weapon or item can be repaired if
+they aren't magical, and <<X>> is at least double the item's number of
+<<item_slots>>.
 
 Once an item has been repaired, it becomes slightly magical for 1 day; it
 cannot be repaired in that period, and it will be detectable with
-<<_detect_magic>>.
+<<_detect_magic>> and by baddies who are sensitive to magic.
 
 
 === Shield (X)
 *Level 1+, <<focus>> (up to 5·<<X>> rounds)*
 
-For the next 5·<<X>> rounds, all damage you receive is halved (rounded down).
+All damage you receive is halved (rounded down).
 
 [example]
 If a baddie hits you for 5 points of damage, you only take 2 points of damage.

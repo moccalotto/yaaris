@@ -14,6 +14,38 @@
 
 == RULES
 
+=== Levels
+You begin at level 1, and you can gain levels until you reach level 10. You
+gain levels by acquiring suitable treasures. In order for a team of adventurers
+to gain a level, they must <<lvl_acquire>> a number of <<lvl_suitable>>
+<<lvl_treasures>> equal to the typical level of the team's members.
+
+[reftext="treasures"]
+[[lvl_treasures]]
+*Treasure*: A treasure is a big horde, often situated in one location. It is up
+to the GM to decide what is an actual treasure, and what is just general loot.
+
+[reftext="suitable"]
+[[lvl_suitable]]
+*Suitable*: A __suitable__ treasure is worth at least 100 gold pieces times the
+sum of the levels of all the characters in the party.
+
+[reftext="acquire"]
+[[lvl_acquire]]
+*Acquire*: You have __acquired__ a treasure when it is stored safely at your
+base of operations. Recovering a large treasure in a distant dungeon may
+require a lot of travel and hauling.
+
+.Leveling up
+====
+* In order to level up, a party of 5 first level characters must acquire a
+  single treasure worth __5·1·100=500__ gold pieces.
+
+* In order to level up, a party of 4 PCs at 6th level must acquire six
+  treasures in order to advance. Each treasure must be worth at least
+  __4·6·100=2,400__ gold pieces.
+====
+
 === Social Encounters.
 Roll first, then describe what happened.
 
