@@ -1,6 +1,6 @@
 = Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
-:doctype: article
+:doctype: book
 :icons: font
 :sectlinks:
 :toc:

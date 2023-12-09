@@ -1,0 +1,75 @@
+[cols="2s,^10"]
+|===
+| Name                      |
+| Level                     |
+| Class                     |
+| Background                |
+| Hit Points                | /
+| Item Slots                | /
+| Moves                     |
+|===
+
+
+[%header,cols="3s,^5,^2,^2"]
+|===
+|               | Score | Easy  | Difficult
+//--------------|-------|-------|----------
+| Strength      |       |       |
+| Constitution  |       |       |
+| Dexterity     |       |       |
+| Intelligence  |       |       |
+| Wisdom        |       |       |
+| Charisma      |       |       |
+//--------------|-------|-------|----------
+|===
+
+
+[%header,cols="10,^3,^2,^2,^2,^2,^3"]
+|===
+| Weapon        | Type      | Skilled | Throw     | IS | Damage  | UP
+//--------------|-----------|---------|-----------|----|---------|------
+| Unarmed       | Unarmed   |         |           | ~  |         |  ~
+| {nbsp}        |           |         |           |    |         |  /
+| {nbsp}        |           |         |           |    |         |  /
+| {nbsp}        |           |         |           |    |         |  /
+| {nbsp}        |           |         |           |    |         |  /
+//--------------|-----------|---------|-----------|----|---------|------
+|===
+
+[%header,cols="5,^1,^1, ^1,^2,^2"]
+|===
+| Armor     | Type  | Skilled | IS | UP | HP
+//----------|-------|---------|----|----|----
+| {nbsp}    |       |         |    | /  |
+| {nbsp}    |       |         |    | /  |
+| {nbsp}    |       |         |    | /  |
+| {nbsp}    |       |         |    | /  |
+| {nbsp}    |       |         |    | /  |
+//----------|-------|---------|----|----|----
+|===
+
+:alb: Adventurer's Logbook
+[%header,cols="9,^1,^2"]
+|===
+| Item   | IS | UP
+| {alb}  | 1  |  {nbsp}{nbsp}{nbsp} / 10 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+| {nbsp} |    |  / 
+|===

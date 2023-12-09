@@ -9,7 +9,7 @@
 :toc-placement!:
 :experimental:
 :stem:
-:xrefstyle: basic
+:xrefstyle: full
 
 // {{{ VARIABLES
 :A: xref:adventure#
