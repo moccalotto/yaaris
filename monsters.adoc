@@ -10,12 +10,6 @@ Garg Oil::
     * Oil splash attack.
     * Resistant to piercing weapons.
 
-Tar'g Oil::
-    * Thicker and sticker version of Garg Oil.
-    * Stronger.
-    * Sticky attacks.
-    * Cannot fly, but wings are considered armor pieces.
-
 Gargle Oil::
     * Thinner version of Garg Oil.
     * Very slippery.
@@ -26,7 +20,13 @@ Gargle Oil::
     * Spray attack.
     * Organic Compound Spray Attack.
 
-Far Goyle::
+Targ Oil::
+    * Thicker and sticker version of Garg Oil.
+    * Stronger.
+    * Sticky attacks.
+    * Cannot fly, but wings are considered armor pieces.
+
+Farg Oil::
     * Gargle Oil with powerful ranged attacks and spells.
 
 Slime::
@@ -61,15 +61,17 @@ military camps, and similar concentrations of feces.
 [quote,Oralix LeDique]
 Orcs are to trees what undeads to the Enlightened.
 
+Green and brown skinned creatures that are created when trees and large plants
+die from unnatural causes.
 
-Green-skinned creatures that are created when trees and large plants die from
-unnatural causes.
-
-* Orcs are a category containing  orcs, (hob) goblins, trolls, cyclops
+* Orcs are a category containing  orcs, trolls, cyclops
 * Not gnolls.
-* Created completely from plant matter => green skins.
+* Not Goblins or hob goblin
+* Created completely from plant matter => green and brown skins.
 * They exude a kind of blight that slowly degenerates vegetation, which makes
   the orcs stronger.
+* Boss Orcs can reverse their blight, killing off a few orcs and rapidly
+  increasing plant growth.
 * Sometimes destroy forests to create more orcs.
 * Only become undead if some outside force (such as an evil mage) turns them.
 * Tough, extreme pain tolerance, and high morale.
@@ -97,11 +99,13 @@ Sailors tend to walk towards shore and become a menace on the beaches and
 harbours of the world. Sea creatures tend to patrol their old territories and
 make a mess there.
 
+Crack-Ann:: Undead Kraken.
+
 Old George::
 There is an undead Crack-Ann called Old George. He's an undead,
 elderly guy, who is slow and not as young as he was. Sailors have learned to
 navigate around him, and generally avoid him.
 
 
-== MECHANOIDS
+== AUTOMATA
 Golems

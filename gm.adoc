@@ -9,12 +9,12 @@
 :toc-placement!:
 :experimental:
 :stem:
-:xrefstyle: basic
+:xrefstyle: full
 
-
+// {{{RULES
 == RULES
 
-=== Levels
+=== Leveling Up
 You begin at level 1, and you can gain levels until you reach level 10. You
 gain levels by acquiring suitable treasures. In order for a team of adventurers
 to gain a level, they must <<lvl_acquire>> a number of <<lvl_suitable>>
@@ -36,7 +36,6 @@ sum of the levels of all the characters in the party.
 base of operations. Recovering a large treasure in a distant dungeon may
 require a lot of travel and hauling.
 
-.Leveling up
 ====
 * In order to level up, a party of 5 first level characters must acquire a
   single treasure worth __5·1·100=500__ gold pieces.
@@ -47,32 +46,36 @@ require a lot of travel and hauling.
 ====
 
 === Social Encounters.
-Roll first, then describe what happened.
+Like attacks and most other things, the player rolls their die BEFORE
+they act out what happens.
 
 Advanced Encounters::
-Sometimes social encounters require multiple roles
-in order to change an NPCs attitude several steps.
+Sometimes social encounters require multiple rolls in order to change an NPCs
+attitude several steps.
+
+//}}}
 
 
+// {{{ CAMPAIGN
+== CAMPAIGN 
 
-== Undeath
-Things very easily become undead. To avoid this:
+=== Adventurer Logbook & Logging
+You are expected to keep and use an Adventurer's Logbook at all time,
+and you are expected to transcribe your book's latest pages into any
+town's log you find.
 
-a. Burn the corpse.
-b. Cut off _all_ limbs.
-c. Cut off head and spike heart.
-d. Put a spike it its heart and a silver coin in its mouth.
-e. Give the corpse a proper burial.
+//}}}
 
-== Items
+
+// {{{ ITEMS
+== ITEMS
 
 === Weapons
 
-Lethal:: You can crit on both a __1__ and a __2__.
-Riposte:: If an adjacent foe attacks you, you can poke them for __L__ damage.
-Heavy:: ???
-Brutal:: ???
-
+Lethal (X):: You can crit on both a __1__, __2__, ... , __X+1__.
+Riposte (X):: If an adjacent foe attacks you, you poke them for X + __LEVEL__ damage.
+Heavy (X):: Deal X extra points of damage, requires 12+X strength, takes up one extra item slot.
+Brutal (X):: Deal X extra points of damage.
 
 === Shower in a Bottle
 Makes you clean, but for dogs sake, don't drink it. Also, makes you smell
@@ -110,3 +113,4 @@ light. The distance between the crystals can be many KM.
 Two scrolls. If you write something on one scroll and then burn it, the text
 will show up, flashing with light, on the other scroll. Range is many KM.
 
+//}}}

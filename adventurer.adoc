@@ -1,4 +1,4 @@
-= Adventurer's guide to doom & destruction & stuff
+= Adventurer's Guide to Doom & Destruction & Stuff
 :stylesheet: style.css
 :doctype: article
 :icons: font
@@ -16,6 +16,8 @@
 :UP: <<usage_points,Usage Points>>
 :AHP: <<armor_hit_points,Hit Points>>
 :cost: <<_money,Cost>>
+:hero_book: xref:hero[Hero's Guide To Doom & Destruction & Stuff]
+:elite_book: xref:elite[Elite's Guide To Doom & Destruction & Stuff]
 // VARIABLES }}}
 
 This document contains character creation and game mechanics, as well as gear,
@@ -57,8 +59,7 @@ permanent injury if you <<zero_hp,run out of hit points>>.
 [[hit_point_total,hit point total]]
 *Hit point total*: is the maximum number of hit points you can have. I.e. the
 number of hit points you have when you're at full health. This number increases
-every time you gain a new level, when you're wearing armor, and when you have
-<<unused_item_slots>>.
+every time you gain a new level, and when you're wearing armor.
 
 [[total_item_slots,total item slots]]
 *Total item slots*: is the maximum number of <<item_slots,items>> you can
@@ -70,6 +71,7 @@ encumbered. This number is the lowest of your __strength__ and __constitution__.
 *Moves*: is the number of meters you can move in a round. You can also use
 moves to do other interesting <<moves,things>>.
 // }}}
+
 
 // {{{ CREATE YOUR ADVENTURER
 == CREATE YOUR ADVENTURER
@@ -89,7 +91,8 @@ Roll a d12. If you roll a number that isn't on the table, you don’t have a vic
 |===
 | 1d12  | Vice
 //------|--------------------------
-| 1-6   | No vice
+| 1-5   | No vice
+| 6     | Risk taking
 | 7     | Attention seeking
 | 8     | Bar fighting
 | 9     | Drinking
@@ -199,11 +202,8 @@ Roll 1d6 on this table to find out if you have a shield.
 //------|----------------------------
 |===
 
-// Turn automatic section id off. We want <<Armor>> and <<_armor>> to link to a
-// later section
-:!sectids:
-==== Armor
-:sectids:
+
+==== Armor Pieces
 Armors give you extra hit points; you have 1d3-1
 <<light_armor_table,light armor pieces>> of your choice.
 
@@ -221,9 +221,11 @@ Armors give you extra hit points; you have 1d3-1
 ==== Utility Gear
 Roll once on <<utility_gear_1>>.
 
+[%unbreakable]
+--
 [[utility_gear_1]]
 .Utility Gear 1
-[%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
+[%header,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
 | 1d10 | Item
 //-----|-----------------------
@@ -239,16 +241,18 @@ Roll once on <<utility_gear_1>>.
 |   10 | <<purse_copper>>
 //-----|-----------------------
 |===
+--
 
 
 Roll twice on <<utility_gear_2>>. If the second roll is the same as the first
 roll, reroll it.
 
+
 [%unbreakable]
 --
 [[utility_gear_2]]
 .Utility Gear 2
-[%header,%unbreakable,cols="^1,11",grid=none,frame=none,stripes=even]
+[%header,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
 | 1d10 | Item
 //-----|-----------------------------
@@ -266,11 +270,13 @@ roll, reroll it.
 |===
 --
 
+
 === All Done
 Now it’s time to read about the adventurer class and then check out the
 sections on dice checks and combat.
 
 // }}}
+
 
 // {{{ ADVENTURER
 == ADVENTURER
@@ -282,16 +288,11 @@ All characters start out with the same class: Adventurer.
 
 === Level 1
 
-[reftext="hit points"]
-[[hit_points]]
+[[hit_points,hit points]]
 ==== Hit Points
 Your __hit point total__ is 8, which means that, under normal
 circumstances, you can’t have more than 8 hit points. When you have lost all
 your hit points, you have to roll on the <<death_table>>.
-
-[quote]
-Your __hit point total__ is increased by 1 for every <<unused_item_slots,unused
-item slot>> you have.
 
 [[armor_skills]]
 ==== Armor Skills
@@ -309,7 +310,8 @@ each weapon category.
 ==== Adventurer's Blessing
 
 An adventurer is not just someone who chooses to go on adventures, the blood in
-their veins is magical, and it makes them very formidable.
+their veins is magical, and it makes them formidable and among the only 
+persons who can be magically revived.
 
 [%collapsible]
 ====
@@ -336,9 +338,6 @@ The Adventurer's Blessing is stunningly powerful; many nations want former
 adventurers of high levels in key military and governing positions, as the
 ability to be revived can be, well, vital for the continuation of the position.
 ====
-
-==== Bonus Hit Points
-You gain one extra hit point point per <<unused_item_slots,unused item slot>>.
 
 ==== Exotic Weapon Skills
 You are __not__ skilled at using any exotic weapons such as the <<kosh>>.
@@ -517,8 +516,7 @@ not take up any <<item_slots>>.
 
 === Level 3: Graduation
 It is time for you to move on. You’re no longer just an adventurer, you’re a
-Hero. Choose a hero class from the
-xref:hero#[Hero’s Guide to doom & destruction & stuff].
+Hero, so you get a class from the {hero_book}.
 
 [IMPORTANT]
 Even though you gain a heroic class at 3rd level, you're still an adventurer;
@@ -528,6 +526,7 @@ such as <<basic_spellcasting>>. You only lose an ability if your heroic class
 explicitly prevents you from having it.
 
 //}}}
+
 
 //{{{DICE
 == DICE
@@ -549,18 +548,15 @@ __strength__ check. You roll a d20. If you rolled lower than your __strength__,
 the check was successful, otherwise it was unsuccessful.
 ====
 
-[reftext="one"]
-[[nat1]]
+[[nat1,1]]
 *Rolling a 1*: Checks are always successful if you roll a 1 on your d20 and,
 depending on the type of check, other positive result may happen.
 
-[reftext="twenty"]
-[[nat20]]
+[[nat20,20]]
 *Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d20
 and, depending on the type of check, other positive result may happen.
 
-[reftext="easy"]
-[[easy]]
+[[easy,easy]]
 *Easy checks*: are checks where the target number is 3 higher than what it
 would normally be.
 
@@ -570,8 +566,7 @@ if your __strength__ is 9, making an easy __strength__ check would need to roll
 under 12.
 ====
 
-[reftext="difficult"]
-[[difficult]]
+[[difficult,difficult]]
 *Difficult checks*: are checks where the target number is 3 lower than what it
 normally would be.
 
@@ -592,8 +587,7 @@ the roll <<easy>>, but you're also <<encumbered>>, which makes the check
 <<difficult>>, so, overall, your check remains __difficult__.
 ====
 
-[reftext="adversarial"]
-[[adversarial]]
+[[adversarial,adversarial]]
 === Adversarial Checks
 These are checks where the difficulty depends on the level of the adversary. In
 this context, and adversary can be a baddie, a lock, a trap, a riddle, or
@@ -620,12 +614,12 @@ A first level adventurer is attacking a second level zombie. The attack check
 is normal because the level difference is less than 2.
 ====
 
+
 === Advantage & Disadvantage
 Certain conditions, abilities, classes, and spells can give a roll an advantage
 or disadvantage, which changes the way you roll the dice.
 
-[reftext="advantage"]
-[[advantage]]
+[[advantage,advantage]]
 *Advantage*: If a roll has advantage, you roll the dice twice, and pick the
 result you like best.
 
@@ -635,8 +629,7 @@ you have advantage on a Damage Roll, you roll your damage dice twice and pick
 the roll you like best.
 ====
 
-[reftext="disadvantage"]
-[[disadvantage]]
+[[disadvantage,disadvantage]]
 *Disadvantage*: If a roll has disadvantage, you roll the dice twice, and the GM
 picks the result they like.
 
@@ -645,6 +638,7 @@ applies to the same roll, it becomes a normal without any advantage or
 disadvantage roll.
 
 //}}}
+
 
 //{{{EQUIPMENT
 == EQUIPMENT
@@ -657,27 +651,25 @@ The weight of a few coins is negligible, but in large quantities, 100 coins
 take up one <<item_slots,item slot>>. A gold piece (__gp__) is equivalent to
 100 silver pieces (__sp__), a silver piece is 100 copper pieces (__cp__).
 
-[reftext="item slots"]
-[[item_slots]]
+[[item_slots,item slots]]
 === Item Slots
 An average item uses up one item slot. Bulky or heavy items, such as heavy
 armor, can take up multiple item slots. Your number of item slots is determined
-by your __strength__ and __constitution__. The lower of these two numbers is your
-number of unencumbered item slots, and the higher number is your total number
-of item slots. You can use all your unencumbered item slots without any side
-effects, but If you use any of your remaining item slots, you become
+by your __strength__ and __constitution__. The lower of these two numbers is
+your number of unencumbered item slots, and the higher number is your total
+number of item slots. You can use all your unencumbered item slots without any
+side effects, but If you use any of your remaining item slots, you become
 encumbered, which means that everything you do becomes difficult. You can never
 fill/carry more than your item slots total.
 
 .Calculating item slots
 ====
 If your __strength__ is 7 and your __constitution__ is 16, you have 16 __item
-slots__, and 7 of those are __unencumbered item slots__. This means that, if you
-use 8 or more of your __item slots__, you become <<encumbered>>.
+slots__, and 7 of those are __unencumbered item slots__. This means that, if
+you use 8 or more of your __item slots__, you become <<encumbered>>.
 ====
 
-[reftext="usage points"]
-[[usage_points]]
+[[usage_points,usage points]]
 === Usage Points
 Items that can be consumed or depleted (such as <<rations>>, arrows,
 <<lamp_oil>>) have usage points. When you have used such an item you make a
@@ -685,8 +677,7 @@ consumption check to see if it loses a usage point. If the item run out of
 <<usage_points>>, it is completely used up: no more arrows in the quiver, and
 no more food in the ration pack.
 
-[reftext="consumption check"]
-[[consumption_check]]
+[[consumption_check,consumption check]]
 === Consumption & Consumption Checks
 You are sometimes asked to spend a __consumption__ of a given consumable item.
 When making a __consumption__ of an item, you first roll a __consumption check__,
@@ -714,7 +705,7 @@ cannot be used any more during that combat.
 === Gear
 
 .General Gear
-[%header,cols="9,^2,^1"]
+[%header,cols="8,^2,^2"]
 |===
 | Name                  | {IS} | {cost}
 //----------------------|------|---------
@@ -735,7 +726,7 @@ cannot be used any more during that combat.
 
 
 .Consumables
-[%header,cols="7,^2,^2,^1"]
+[%header,cols="6,^2,^2,^2"]
 |===
 | Name                                            | {IS} | {UP} | {cost}
 //------------------------------------------------|------|------|-----------
@@ -760,7 +751,7 @@ cannot be used any more during that combat.
 
 [[light_armor_table]]
 .Light Armor
-[%header,cols="7,^2,^2,^1"]
+[%header,cols="5,^2,^2,^3"]
 |===
 | Armor Piece           | {IS} | {AHP} | {cost}
 //----------------------|------|-------|------
@@ -773,7 +764,7 @@ cannot be used any more during that combat.
 |===
 
 .Medium Armor
-[%header,cols="7,^2,^2,^1"]
+[%header,cols="5,^2,^2,^3"]
 |===
 | Armor Piece           | {IS}  | {AHP} | {cost}
 //----------------------|-------|-------|------
@@ -788,7 +779,7 @@ cannot be used any more during that combat.
 
 .Heavy Armor
 [[heavy_armor]]
-[%header,cols="7,^2,^2,^1"]
+[%header,cols="5,^2,^2,^3"]
 |===
 | Armor Piece           | {IS} | {AHP} | {cost}
 //----------------------|------|-------|------
@@ -803,7 +794,7 @@ cannot be used any more during that combat.
 
 [[lodging]]
 .Food and lodging (per person per night)
-[%header,cols="11,^1"]
+[%header,cols="10,^2"]
 |===
 | Lodging                                   | {cost}
 //------------------------------------------|--------
@@ -852,8 +843,7 @@ ____
 //START_SORT //KEY:
 
 //NO KEY HERE
-[reftext="coins"]
-[[coins]]
+[[coins,coins]]
 ==== Coins
 Small amounts of counts do not take up any room, but 100 coins take up 1
 <<item_slots,item slot>>, and generally requires a small sack to contain.
@@ -876,8 +866,7 @@ willing recipient. Once applied, the recipient rolls a number of dice (usually
 a few d6), and regain that many hit points.
 
 //KEY:
-[reftext="adventurer's logbook"]
-[[adventurers_logbook]]
+[[adventurers_logbook,adventurer's logbook]]
 ==== Adventurer's Logbook
 This special book is made from parchment from magical creatures. It highly
 resistant to fire, water, and wear and tear. You can write impossibly fast in
@@ -888,17 +877,9 @@ full speed, anything you write in this book is very legible, but this only
 applies to text; any drawings you make depend completely on your drawing
 skills.
 
-.Drawing
-****
-When you want to draw something, you make an __wisdom__ and __dexterity__
-check. The GM determines the quality of your drawing, based on the complexity
-of the drawing, the number of successes, failures, <<nat1>>s and <<nat20>>s
-****
-
 
 //KEY:
-[reftext="coin purse"]
-[[coin_purse]]
+[[coin_purse,coin purse]]
 ==== Coin Purse
 Purses aren't real items; they are concepts that can simplify bookkeeping.
 Instead of keeping track of every copper penny and doing a lot of math, you
@@ -906,22 +887,19 @@ just make consumptions whenever you buy something. You don't need to buy purses
 from a merchant - you just "buy" them directly from the GM. You cannot sell
 them or exchange them.
 
-[reftext="copper purse"]
-[[purse_copper]]
+[[purse_copper,copper purse]]
 *Copper purse*: for 1,000 copper pieces you can buy a copper purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 copper
 pieces (i.e. less than 1 silver piece), you can spend one
 <<consumption_check,consumption>> of this purse instead of spending coin.
 
-[reftext="silver purse"]
-[[purse_silver]]
+[[purse_silver,silver purse]]
 *Silver purse*: for 1,000 silver pieces you can buy a silver purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 silver
 pieces (i.e. less than 1 gold piece), you can spend one
 <<consumption_check,consumption>> of this purse instead of spending coin.
 
-[reftext="gold purse"]
-[[purse_gold]]
+[[purse_gold,gold purse]]
 *Gold purse*: for 1,000 gold pieces you can buy a gold purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 gold
 pieces you can spend one <<consumption_check,consumption>> of this purse
@@ -929,8 +907,7 @@ instead of spending coin.
 
 
 //KEY:
-[reftext="kosh"]
-[[kosh]]
+[[kosh,kosh]]
 ==== Kosh
 Adventurers with the <<shady>> special ability are <<weapon_skills,skilled>> at
 using the these weapons. To use a kosh, you make an attack check against the
@@ -946,23 +923,28 @@ the target suffers no other ill effects from being struck with a kosh.
 
 
 //KEY:
-[reftext="lamp oil"]
-[[lamp_oil]]
+[[lamp_oil,lamp oil]]
 === Lamp Oil
 This <<consumption_check,consumable>> item is flammable; you can use it as fuel
 for your lantern or storm lantern, and you can use it to light things on fire.
 
 You can throw lamp oil to cover an area; You first roll a __dexterity__ check.
-If successful, the oil bottle (or skin or jug) lands where you want it (within
-__strength__ meters), ruptures, and covers an area of 1d4 square meters.
-//
-At this point the oil is not on fire; you must light it yourself with torch, a
-spell, or similar fashion.
+
+[cols="^2s,10",stripes=odd]
+|===
+//----------|----------------------------------------------------
+| <<nat20>> | You drop the bottle at your feet and it ruptures.
+| Failure   | The bottle lands where intended, but it does not rupture.
+| Success   | The bottle lands where intended, ruptures, and covers 1d4
+              square meters in oil.
+| <<nat1>>  | The bottle lands where intended, ruptures, and covers up to 4
+              square meters (of your choice) in oil.
+//----------|----------------------------------------------------
+|===
 
 
 //KEY:
-[reftext="lantern"]
-[[lantern]]
+[[lantern,lantern]]
 ==== Lantern
 Lanterns illuminates the area around you. The lantern does not have have any
 usage points itself, but it it does <<lamp_oil>>; it uses one consumption every
@@ -973,17 +955,14 @@ check. If successful, the lantern lands where you want it to (within
 __strength__ meters), and covers 1d4 square meters in flaming oil. Anyone
 inside the affected area is set <<on_fire>>.
 
-
-[reftext="storm lantern"]
-[[storm_lantern]]
+[[storm_lantern,storm lantern]]
 *Storm Lanterns*: are a variant of the normal <<lantern>> that cannot be blown
 out in normal storms and gales. But they cannot be used to ignite an area
 either, as they are designed to go out when they aren't upright.
 
 
 //KEY:
-[reftext="lockpicking tools"]
-[[lockpicking_tools]]
+[[lockpicking_tools,lockpicking tools]]
 ==== Lockpicking Tools
 These tools allow you to pick various locks. They can be used up, and therefore
 have <<usage_points>>. To Open a Lock, you first spend 5 minutes and one
@@ -997,8 +976,7 @@ __dexterity__- and an __intelligence__ check.
 
 
 //KEY:
-[reftext="magic components"]
-[[magic_components]]
+[[magic_components,magic components]]
 ==== Magic Components
 Magic components are used when casting rituals and when recharging spellbooks.
 A consumption of magic components means you use some unspecified amount of your
@@ -1007,8 +985,7 @@ magic components.
 
 
 //KEY:
-[reftext="map making tools"]
-[[map_making_tools]]
+[[map_making_tools,map making tools]]
 ==== Map Making Tools
 You can use these tools to maps of dungeons, cities, and various land areas. To
 do so you must make an __intelligence__ check and a __wisdom__ check.
@@ -1023,21 +1000,18 @@ do so you must make an __intelligence__ check and a __wisdom__ check.
 
 
 //KEY
-[reftext="rations"]
-[[rations]]
+[[rations,rations]]
 ==== Rations
 Rations sustain you on your adventures. You must use one <<consumption_check,
 consumption>> of rations every day, otherwise you become <<starving>>.
 
-[reftext="iron rations"]
-[[iron_rations]]
+[[iron_rations,iron rations]]
 *Iron Rations* have twice as many <<usage_points>> as normal rations, while
 still only requiring one <<item_slots,item slot>>.
 
 
 //KEY:
-[reftext="restoring salve"]
-[[restoring_salve]]
+[[restoring_salve,restoring salve]]
 ==== Restoring Salve
 These salves can reverse the effects of <<reversible>> trauma. You spend one
 <<consumption_check,consumption>> of salve, and 30 minutes to apply it to a
@@ -1046,16 +1020,14 @@ from the recipient.
 
 
 //KEY:
-[reftext="spikes"]
-[[spikes]]
+[[spikes,spikes]]
 ==== Spikes
 When hammered in between the door and the wall or jamb, these 30 centimeter
 spikes can wedge a door shut until the spikes are removed.
 
 
 //KEY:
-[reftext="tinkering tools"]
-[[tinkering_tools]]
+[[tinkering_tools,tinkering tools]]
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
 
@@ -1090,8 +1062,7 @@ of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 
 
 //KEY:
-[reftext="torch"]
-[[torch]]
+[[torch,torch]]
 ==== Torch
 Aside from illuminating the area around you, torches can be used for a number
 of things.
@@ -1123,8 +1094,7 @@ that price. When selling something trivial or cheap, you sell it for 50% of the
 listed value, but if you’re selling more precious things, you must make a
 __haggling check__.
 
-[reftext="haggling check"]
-[[haggling_check]]
+[[haggling_check,haggling check]]
 *Haggling Check*:
 If you’re selling expensive items, or if you’re selling things in bulk, you
 must haggle to get a good price. You first roll a __charisma__ check, and refer
@@ -1146,6 +1116,7 @@ to the table below, and do what it says, even if you don't like the result.
 
 
 //}}}
+
 
 //{{{ COMBAT
 == COMBAT
@@ -1186,8 +1157,7 @@ the lowest of your __strength__, __dexterity__, and __wisdom__.
 
 ****
 
-[reftext="round"]
-[[round]]
+[[round,round]]
 === Rounds
 Combat is divided into 10-second rounds. At the beginning of every round,
 the adventurers roll __initiative__, to determine in which order they get to
@@ -1206,8 +1176,7 @@ baddies on the battlefield, the baddies get to go first that round.
 The players act in the order in which they sit around the gaming table,
 clockwise from the GM, and the baddies act in whatever order the GM wishes.
 
-[reftext="moves"]
-[[moves]]
+[[moves,moves]]
 === Moves
 You have 5 moves you can take before you take your main action. You can use
 them in many ways, and here's some examples.
@@ -1333,24 +1302,6 @@ yourself.
 //----------|-------------------------------------
 |===
 
-[reftext="unused item slots"]
-[[unused_item_slots]]
-==== Unused  Item Slots
-You unused item slots is equal to your <<total item slots>> minus the number of
-item slots that are currently in use.
-
-You gain one extra hit point for every unused <<item_slots,item slot>> you
-have. It's a bit like wearing armor.
-
-Dropping an item will cause your <<hit_point_total>> and your current number
-of hit points to increase by a number equal to the weight (in <<item_slots>>)
-of the item. It can sometimes be useful to unequip/drop items in battle if you
-are critically low on hit points.
-
-Equipping an item will cause your <<hit_point_total>> and your current number
-of hit points to decrease by number of points equal to the weight (in
-<<item_slots>>) of the item. This can cause you to reach <<zero_hp,zero hit
-pints>>, which can be lethal,
 
 ==== Armor
 You can wear up to five pieces of armor: a helmet, a cuirass, a gauntlet, of
@@ -1477,8 +1428,7 @@ received 5 points of damage). You rolled __59+5=64__, meaning you lose one
 You're sure to receive a negative __condition__ or two when rolling on the
 death table. Check the <<CONDITIONS>> section for more info.
 
-[reftext="death table"]
-[[death_table]]
+[[death_table,death table]]
 .Death Table
 [%header,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
@@ -1499,8 +1449,9 @@ death table. Check the <<CONDITIONS>> section for more info.
 The trauma table is used when you take damage after being reduced to 0 hit
 points.
 
-[reftext="trauma table"]
-[[trauma_table]]
+[%unbreakable]
+--
+[[trauma_table,trauma table]]
 .Trauma table
 [%header,cols="^1,^2,8",stripes=even,frame=none,grid=none]
 |===
@@ -1520,6 +1471,7 @@ points.
 | 01-20     | -          | No trauma
 //----------|------------|------------------------------
 |===
+--
 
 *Amputation*: You lose an arm or a leg. Roll 1d4 to find out which. Roll
 __dexterity__ or __constitution__ (your choice) if you succeed, you only lose
@@ -1529,8 +1481,7 @@ use high-level <<restoration_magic>>.
 *Permanent*: This trauma is permanent. There is no way to undo it or reverse
 it.
 
-[reftext="reversible"]
-[[reversible]]
+[[reversible,reversible]]
 *Reversible*: This type of trauma is permanent, but it can be reversed with
 <<restoring_salve,restoring salves>> or by using high-level
 <<restoration_magic>>.
@@ -1538,20 +1489,17 @@ it.
 *Temporary*: This trauma goes away after 1d20 days. It can also be reversed
 with restoration magic.
 
-[reftext="restoration magic"]
 .Restoration Magic
-[[restoration_magic]]
+[[restoration_magic,restoration magic]]
 [quote]
-The xref:heroes#[Hero’s Guide to doom & destruction & stuff]  and the
-xref:elites#[Elites’s Guide to doom & destruction & stuff] contain restoration
-and rejuvenation spells that can also restore or remove the effects of trauma.
+The {hero_book} and the {elite_book} contain restoration and rejuvenation
+spells that can also restore or remove the effects of trauma.
 
 === Healing and regeneration
 You can regain hit points in various ways, but you can never heal or be healed
 beyond your <<hit_point_total>>.
 
-[reftext="rest"]
-[[rest]]
+[[rest,rest]]
 *Resting*: Resting for 8 hours, at least six of which are spent sleeping, will
 allow you to regenerate a bit; roll a d6, add your level,  and increase your
 hit points by that number. Aside from sleeping, eating, and keeping watch, you
@@ -1572,8 +1520,7 @@ Conditions can affect characters and baddies.
 //START_SORT //KEY:
 
 //KEY:
-[reftext="comatose"]
-[[comatose]]
+[[comatose,comatose]]
 *Comatose*: You’re in a deep coma. If you receive conventional medical care,
 you will wake up in a matter of hours; make a __constitution__ check every hour
 to see if you wake up. If you receive magical healing, you will wake up in a
@@ -1581,49 +1528,51 @@ matter of minutes; make a __constitution__ check every minute to see if you wake
 up.
 
 //KEY:
-[reftext="dead"]
-[[dead]]
+[[dead,dead]]
 *Dead*: You're dead. You can be brought back to life with resurrection magic
 (not available in this document). If you are not buried or are treated with
 burial rites or the <<_burial_x>> spell you will rise as an undead within 2d6
 days.
 
+[%unbreakable]
+--
 .The Undead Curse
-[[the_undead_curse]]
-[reftex="the undead curse"]
-[%collapsible]
-====
+****
+[quote,Sybia LeDique]
+The horror of the battlefield is magnified, multiplied, and intensified when
+you have to kill your foes twice followed by your late comrades.
+
 Anyone (any intelligent, living creature) who dies will almost certainly rise
 again as an undead within a few days or even hours. This can be completely
-prevented by cremation, or by use of the <<_burial_x>> spell. Decapitation also
-has a high probability of success, but it is not guaranteed.
+prevented by use of the <<_burial_x>> spell or by one of the following burial
+rites:
 
-[quote,Sybia LeDique]
-The horror of the battlefield is magnified, multiplied, and intensified as you
-have to fight your foes twice and your late comrades also.
-====
+.. Burn the corpse.
+.. Cut off _all_ limbs.
+.. Cut off the head and spike the heart.
+.. Spike the heart and put silver coin in its mouth.
+****
+--
 
 
 //KEY:
-[reftext="demoralized"]
-[[demoralized]]
+[[demoralized,demoralized]]
 *Demoralized*: On your next turn you must spend all your moves (if possible)
 retreating from your opponents. When you have done that, the demoralized
 condition goes away.
 
 
 //KEY:
-[reftext="destroyed"]
-[[destroyed]]
+[[destroyed,destroyed]]
 *Destroyed*: You’re extremely dead; You must roll twice on the <<trauma_table>>
 and upgrade all temporary effects to <<reversible>>. Only very powerful
-resurrection magic, accessible only to xref:elites#[elites], can bring you back
-to life, and the costs of doing so are grave for both you can the caster.
+resurrection magic, accessible only to xref:elite#[elite persons], can bring
+you back to life, and the costs of doing so are grave for both you can the
+caster.
 
 
 //KEY:
-[reftext="dungeon mad"]
-[[dungeon_mad]]
+[[dungeon_mad,dungeon mad]]
 *Dungeon Mad*: You've been in complete darkness in a dungeon or cave for too
 long. Every hour you spend in total darkness in a dungeon or similar situation,
 you must make a __wisdom__ check; if you fail, you temporarily lose 1 point
@@ -1635,15 +1584,14 @@ if you are outside in the sunlight.
 [quote]
 You die if any of your stats reaches zero.
 
-[reftext="encumbered"]
-[[encumbered]]
+//KEY:
+[[encumbered,encumbered]]
 *Encumbered*: All checks become <<difficult>>, meaning that you have to roll 3
 points lower than you normally would to succeed.
 
 
 //KEY:
-[reftext="dying"]
-[[dying]]
+[[dying,dying]]
 *Dying*: You’re near death; you must roll on the <<trauma_table>>. Every round,
 at the beginning of your turn, you must make a d20 roll; if you roll a
 <<nat1>>, you are no longer dying, but <<unconscious>>, and if you rolled a
@@ -1651,30 +1599,26 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 
 
 //KEY:
-[reftext="exhausted"]
-[[exhausted]]
+[[exhausted,exhausted]]
 *Exhausted*: Same as <<encumbered>> __and__ your number of moves is halved,
 rounded down.
 
 
 //KEY:
-[reftext="frightened"]
-[[frightened]]
+[[frightened,frightened]]
 *Frightened*: You cannot move closer to what you believe is the source of
 your fear. You have 2 fewer moves than normal.
 
 
 //KEY:
-[reftext="invisible"]
-[[invisible]]
+[[invisible,invisible]]
 *invisible*: You are invisible. You cannot be targeted by creatures who rely
 primarily on sight. Even so, if a creature relies just partially on sight, its
 <<attack_and_damage,attack checks>> against you are <<difficult>>.
 
 
 //KEY:
-[reftext="on fire"]
-[[on_fire]]
+[[on_fire,on fire]]
 *On Fire*: You are on fire. At the start of every round, just before you get to
 act, you take 1d4 points of damage, and then you roll a __constitution__ check.
 If you succeed, the fire goes out. If you failed, the fire persists, and if you
@@ -1682,8 +1626,7 @@ rolled a <<nat20>>, the damage die increases (for instance, from 1d4 to 1d6).
 
 
 //KEY:
-[reftext="poisoned"]
-[[poisoned]]
+[[poisoned,poisoned]]
 *Poisoned*: You temporarily lose 1d4 points of a random stat every minute.
 After rolling your stat loss, you make a __constitution__ check with
 <<disadvantage>>. If successful, the poisoned condition is removed. You die if
@@ -1692,8 +1635,7 @@ Revival can restore you back to life.
 
 
 //KEY:
-[reftext="prone"]
-[[prone]]
+[[prone,prone]]
 *Prone*: You're prone on the ground, you must spend 1 <<moves,move>> to get up.
 While you are prone, you have four fewer <<moves>> than normal.
 
@@ -1704,16 +1646,14 @@ into more moves just to get up.
 
 
 //KEY:
-[reftext="restrained"]
-[[restrained]]
+[[restrained,restrained]]
 *Restrained*: Your hands and feet are restrained. You can make no more than one
 <<moves,move>> each round. Depending on the circumstances, the GM might allow
 you to try and escape your bonds.
 
 
 //KEY:
-[reftext="starving"]
-[[starving]]
+[[starving,starving]]
 *Starving*: Every day that you do not get at least one
 <<consumption_check,consumption>> of <<rations>> or similar, you roll 1d20 for
 each of your <<Stats,stats>>. If you rolled under a stat, that stat is reduced
@@ -1721,14 +1661,12 @@ by 1 until you get food and <<rest>>.
 
 
 //KEY:
-[reftext="unconscious"]
-[[unconscious]]
+[[unconscious,unconscious]]
 *Unconscious*: You are unconscious; if you receive any kind of healing, you
 will wake up right away, otherwise you will wake up within 2d6 hours.
 
 //KEY:
-[reftext="weighed down"]
-[[weighed_down]]
+[[weighed_down,weighed down]]
 *Weighed Down*: While you have this condition you are carrying a virtual "load"
 that takes up one <<item_slots,item slot>>. You can receive this condition
 multiple times, forcing you to carry many virtual weights; this can happen if
@@ -1738,11 +1676,11 @@ you receive the __weighed down__ <<trauma_table,trauma>> more than once.
 //END_SORT
 //}}}
 
+
 //{{{ MAGIC
 == MAGIC
 
-[reftext="spellbook"]
-[[spellbook]]
+[[spellbook,spellbook]]
 === Spellbooks
 A spellbook is a magical tome, book, or scroll. It takes up one
 <<item_slots,item slot>>, contains a single spell and can only be used if it
@@ -1758,8 +1696,7 @@ Normal spellbooks only have a few usage point, and only very powerful tomes
 have more.
 
 
-[reftext="basic spellcasting"]
-[[basic_spellcasting]]
+[[basic_spellcasting,basic spellcasting]]
 === Basic Spellcasting
 You can cast <<basic>> spells directly from a <<spellbook>> if you meet the
 requirements below. It is an <<Actions,action>> to cast a spell (unless
@@ -1934,6 +1871,7 @@ always travel in a direct line, completely unable to avoid obstacles.
 ****
 
 //}}}
+
 
 //{{{SPELLS
 == SPELLS
@@ -2414,6 +2352,7 @@ comes out of range.
 You create a purely visual illusion of an object, creature, thing, or
 phenomenon no bigger than <<X>> cubic meters and no longer than <<X>> meters on
 a side.
+
 You can make the phantasm appear anywhere you can see within 10·<<X>> meters,
 and it must remain within that radius at all times. You can move the phantasm
 <<X>> meters per round. The spell ends after 5·<<X>> minutes, if you stop
@@ -2422,10 +2361,8 @@ sandstorm, a creature, etc.).
 
 Creatures that have a reason to disbelieve the phantasm (such as creatures that
 rely heavily on scent and sound, or people who find the phantasm incompatible
-with their sense of “what ought to be” can make an <<adversarial>> __charisma__
-check to see the phantasm for what it is. The check is easy if the creature's
-level is 2 or more higher than the caster's level, and difficult of the
-creatures level is 2 or more lower than the caster's level.
+with their sense of "`what ought to be`" can make an <<adversarial>>
+__charisma__ check to see the phantasm for what it is.
 
 
 === Pleasure (X)
@@ -2613,6 +2550,7 @@ __charisma__ hours. But the marks remain visible to you, and invisible to others
 //END_SORT
 
 //}}}
+
 
 //{{{DICTIONARY
 

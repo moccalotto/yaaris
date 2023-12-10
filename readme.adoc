@@ -9,6 +9,6 @@ Kim Ravn Hansen <moccalotto@gmail.com>
 :stem:
 
 
-* xref:adventurer#[Adventurers’s Guide to doom & destruction & stuff].
-* xref:hero#[Hero’s Guide to doom & destruction & stuff].
-* xref:elite#[Elite’s Guide to doom & destruction & stuff].
+* xref:adventurer#[Adventurers’s Guide to Doom & Destruction & Stuff].
+* xref:hero#[Hero’s Guide to Doom & Destruction & Stuff].
+* xref:elite#[Elite’s Guide to Doom & Destruction & Stuff].
