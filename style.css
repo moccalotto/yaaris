@@ -33,7 +33,9 @@ html{
     margin:.67em 0
 }
  b,strong{
-    font-weight:bold
+    font-weight:bold;
+    font-family: 'Shadows Into Light Two', sans-serif;
+    letter-spacing:0.1em !important;
 }
  abbr{
     font-size:.9em
@@ -332,7 +334,7 @@ html{
  blockquote{
     margin:0 0 1.25em;
     padding:.5625em 1.25em 0 1.1875em;
-    border-left:1px solid #ddd
+    border-left:1px solid #ddd;
 }
  blockquote,blockquote p{
     line-height:1.6;

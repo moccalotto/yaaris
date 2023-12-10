@@ -1059,26 +1059,29 @@ spikes can wedge a door shut until the spikes are removed.
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
 
-Repairing mechanisms:: To repair a trap, mechanism, stuck door, or similar, you
-spend 10 minutes and one <<consumption_check,consumption>> of tinkering tools.
-Then you make a __dexterity__ check and an __intelligence__ check.
+*Repairing mechanisms*: 
+To repair a trap, mechanism, stuck door, or similar, you spend 10 minutes and
+one <<consumption_check,consumption>> of tinkering tools. Then you make a
+__dexterity__ check and an __intelligence__ check.
 
 * If both are successful, you have repaired the item.
 * If one is successful, the item is still damage, but you may try again.
 * If both failed, you cannot fix this item until you've gained a new level.
 
-Repairing armors:: This is like repairing mechanisms, except: only
-<<armorer,armorers>> can repair armors, and only __light armor__ can be
-repaired using tinkering tools alone; __medium__ and __heavy__ armor also
-requires a furnace (or the <<_furnace>> spell).
+*Repairing armors*: 
+This is like repairing mechanisms, except: only <<armorer,armorers>> can repair
+armors, and only __light armor__ can be repaired using tinkering tools alone;
+__medium__ and __heavy__ armor also requires a furnace (or the <<_furnace>>
+spell).
 
-Repairing weapons:: This is like repairing mechanisms, except: only
-<<armorer,armorers>> can repair weapons, and it takes twice as long if the
-weapon is broken rather than damaged.
+*Repairing weapons*:
+This is like repairing mechanisms, except: only <<armorer,armorers>> can repair
+weapons, and it takes twice as long if the weapon is broken rather than
+damaged.
 
-Disarming traps:: To disarm a trap you spend 10 minutes and one
-<<consumption_check,consumption>> of tinkering tools. Then you make a
-__dexterity__ and __wisdom__ check.
+*Disarming traps*: 
+To disarm a trap you spend 10 minutes and one <<consumption_check,consumption>>
+of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 
 *   If both are successful, you have disarmed the trap.
 *   If one is successful, you did not disarm the trap, but you may try again.
@@ -1137,6 +1140,7 @@ to the table below, and do what it says, even if you don't like the result.
 //----------|----------------------------------------------------
 |===
 
+.Negotiators
 [TIP]
 <<negotiator,Negotiators>> have <<advantage>> on haggling checks.
 
@@ -1836,7 +1840,7 @@ name.
 //KEY:
 [reftext="_X_"]
 [[X]]
-*x*: There are many versions of this spell, each with its own level. +
+*X*: There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example.
 
 //KEY:
