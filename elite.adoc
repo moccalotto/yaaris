@@ -257,4 +257,6 @@ consumed by the spell.
 Since this spell takes a permanent toll on the caster, it is difficult to find
 a caster who is willing to cast this spell, and if they can be persuaded, it
 will most likely be extremely expensive.
+
+
 //}}}

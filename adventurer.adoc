@@ -18,6 +18,8 @@
 :cost: <<_money,Cost>>
 :hero_book: xref:hero[Hero's Guide To Doom & Destruction & Stuff]
 :elite_book: xref:elite[Elite's Guide To Doom & Destruction & Stuff]
+:twenty: <<nat20,Twenty>>
+:one: <<nat1,One>>
 // VARIABLES }}}
 
 This document contains character creation and game mechanics, as well as gear,
@@ -375,17 +377,17 @@ this ability at later levels.
 //START_SORT //KEY:
 
 //KEY:
+[[armorer,armorer]]
+*Armorer*: You obtain a set of <<tinkering_tools>>, and you can can repair
+damaged and broken weapons as well as armor pieces using those tools.
+
+
+//KEY:
 [[backstabber,backstabber]]
 *Backstabber*:
 If an adjacent baddie moves away from you, you can make a melee attack against
 them with a readied melee weapon you are skilled at using. When you do so, you
 have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll.
-
-
-//KEY:
-[[armorer,armorer]]
-*Armorer*: You obtain a set of <<tinkering_tools>>, and you can can repair
-damaged and broken weapons as well as armor pieces using those tools.
 
 
 //KEY:
@@ -835,7 +837,7 @@ cannot be used any more during that combat.
 |===
 
 ____
-See <<range>> for more info on how far your ranged attacks can reach.
+See <<weapon_range>> for more info on how far your ranged attacks can reach.
 ____
 
 
@@ -850,22 +852,6 @@ Small amounts of counts do not take up any room, but 100 coins take up 1
 
 
 //KEY:
-[[bank_book,bank book]]
-==== Bank Book
-A bank book is a magical book that can contain money. There is a magical ritual
-called <<_banking_transaction_x>>, that allows you to transfer money into and
-out of the book.
-
-
-//KEY:
-[[healing_salve,healing salve]]
-==== Healing Salve
-These salves can heal minor wounds: You spend one
-<<consumption_check,consumption>> of salve, and five minutes to apply it to a
-willing recipient. Once applied, the recipient rolls a number of dice (usually
-a few d6), and regain that many hit points.
-
-//KEY:
 [[adventurers_logbook,adventurer's logbook]]
 ==== Adventurer's Logbook
 This special book is made from parchment from magical creatures. It highly
@@ -876,6 +862,14 @@ writing at up to fifty times your normal writing speed. Even when writing at
 full speed, anything you write in this book is very legible, but this only
 applies to text; any drawings you make depend completely on your drawing
 skills.
+
+
+//KEY:
+[[bank_book,bank book]]
+==== Bank Book
+A bank book is a magical book that can contain money. There is a magical ritual
+called <<_banking_transaction_x>>, that allows you to transfer money into and
+out of the book.
 
 
 //KEY:
@@ -905,6 +899,14 @@ pieces (i.e. less than 1 gold piece), you can spend one
 pieces you can spend one <<consumption_check,consumption>> of this purse
 instead of spending coin.
 
+
+//KEY:
+[[healing_salve,healing salve]]
+==== Healing Salve
+These salves can heal minor wounds: You spend one
+<<consumption_check,consumption>> of salve, and five minutes to apply it to a
+willing recipient. Once applied, the recipient rolls a number of dice (usually
+a few d6), and regain that many hit points.
 
 //KEY:
 [[kosh,kosh]]
@@ -990,13 +992,15 @@ magic components.
 You can use these tools to maps of dungeons, cities, and various land areas. To
 do so you must make an __intelligence__ check and a __wisdom__ check.
 
-*   If both are successful, your mapping process is accurate for the entire
-    dungeon level, city, or area.
-*   If just one is successful, your map is slightly incorrect, and using it
-    is <<difficult>>.
-*   If both failed, the map is not accurate at all. Twists and turns are
-    wrong, scales are wrong, the cardinal directions are wrong, and there are
-    missing areas and notes.
+* If both are successful, your mapping process is accurate for the entire
+  dungeon level, city, or area.
+
+* If just one is successful, your map is slightly incorrect, and using it
+  is <<difficult>>.
+
+* If both failed, the map is not accurate at all. Twists and turns are
+  wrong, scales are wrong, the cardinal directions are wrong, and there are
+  missing areas and notes.
 
 
 //KEY
@@ -1103,10 +1107,10 @@ to the table below, and do what it says, even if you don't like the result.
 [cols="^2s,10",stripes=odd]
 |===
 //----------|----------------------------------------------------
-| <<nat20>> | You sell the item(s) for 25% of local list price.
+| {twenty}  | You sell the item(s) for 25% of local list price.
 | Failure   | You sell the item(s) for 50% of local list price.
 | Success   | You sell the item(s) for 75% of local list price.
-| <<nat1>>  | You sell the item(s) for 100% of local list price.
+| {one}     | You sell the item(s) for 100% of local list price.
 //----------|----------------------------------------------------
 |===
 
@@ -1150,7 +1154,7 @@ A type of ranged weapon, these weapons are typically one-handed. Some of
 throwing weapons (such as daggers and javelins) can also be used as light melee
 weapons.
 
-[[range,range]]
+[[weapon_range,weapon range]]
 *Range*:
 The range of ranged weapons is a number of meters equal to
 the lowest of your __strength__, __dexterity__, and __wisdom__.
@@ -1164,6 +1168,7 @@ the adventurers roll __initiative__, to determine in which order they get to
 act.
 
 During their turn, a combatant can do the following things in order.
+
 . Make up to 5 moves.
 . Take one action.
 
@@ -1585,17 +1590,17 @@ if you are outside in the sunlight.
 You die if any of your stats reaches zero.
 
 //KEY:
-[[encumbered,encumbered]]
-*Encumbered*: All checks become <<difficult>>, meaning that you have to roll 3
-points lower than you normally would to succeed.
-
-
-//KEY:
 [[dying,dying]]
 *Dying*: You’re near death; you must roll on the <<trauma_table>>. Every round,
 at the beginning of your turn, you must make a d20 roll; if you roll a
 <<nat1>>, you are no longer dying, but <<unconscious>>, and if you rolled a
 <<nat20>>, you are dead.
+
+
+//KEY:
+[[encumbered,encumbered]]
+*Encumbered*: All checks become <<difficult>>, meaning that you have to roll 3
+points lower than you normally would to succeed.
 
 
 //KEY:
@@ -1808,12 +1813,6 @@ range of certain spell increases with the casters level.
 another spell, take damage, or stop focusing on keeping the spell going.
 
 //KEY:
-[[spell_level,level]]
-*Level*: The level of the spell. If the spell also has the  property,
-_level_ is the level of the weakest version of the spell, meaning no versions
-of the spell exists at a lower level that that.
-
-//KEY:
 [[range,range]]
 *Range*: The range of the spell. See also <<targeting_spell>>.
 
@@ -1821,6 +1820,12 @@ of the spell exists at a lower level that that.
 [[ritual,ritual]]
 *Ritual*: These spells can be cast via <<basic_ritual_casting>>, but can also be
 cast normally via <<basic_spellcasting>>.
+
+//KEY:
+[[spell_level,level]]
+*Level*: The level of the spell. If the spell also has the  property,
+_level_ is the level of the weakest version of the spell, meaning no versions
+of the spell exists at a lower level that that.
 
 //KEY:
 [[trance,trance]]
@@ -2523,6 +2528,13 @@ melee combat on its next turn.
 You fire a frightening magical missile against a baddie within range. When
 struck, the baddie takes <<X>> d6 damage, and then you make an <<adversarial>>
 __charisma__ check; if successful the baddie becomes <<demoralized>>.
+
+
+=== Luck (X)
+*Level 2+, duration: __charisma__ rounds*
+
+Whenever you make a __check__ with your d20, and you roll less than __X__, 
+this spell turns that roll into a __1__.
 
 
 === Vines (X)
