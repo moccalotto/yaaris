@@ -281,15 +281,15 @@ skilled at throwing daggers.
 .Rogue Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
-| Weapon Type             | Skill level   | Damage Roll
-//------------------------|---------------|------------
-| Light Melee Weapons     | __unskilled__ | 1d4
-| Ranged Weapons          | __unskilled__ | 1d4
-| Unarmed Combat          | __unskilled__ | 1d4
-| Heavy Melee Weapons     | __unskilled__ | 1d8
-| Quarterstaffs           | __skilled__   | 1d8
-| Daggers                 | __skilled__   | 1d6
-//------------------------|---------------|------------
+| Weapon Type             | Stat        | Skill     | Damage
+//------------------------|-------------|-----------|----------
+| Light Melee Weapons     | _strength_  | Unskilled | 1d4
+| Quarterstaffs           | _dexterity_ | Skilled   | 1d8
+| Daggers                 | _dexterity_ | Skilled   | 1d6
+| Ranged Weapons          | _dexterity_ | Unskilled | 1d4
+| Unarmed Combat          | _dexterity_ | Unskilled | 1d4
+| Heavy Melee Weapons     | _dexterity_ | Unskilled | 1d8
+//------------------------|-------------|-----------|----------
 |===
 
 ==== Armor Skills
@@ -455,18 +455,23 @@ other stat by one point as well.
 You are __skilled__ at using light weapons, unarmed combat, as well throwing
 daggers.
 
-.Rogue Damage Rolls
-[%header,cols="8,^2,^2"]
+[%unbreakable]
+--
+[[adventurer_damage_rolls_table]]
+.Rogues's Attack and Damage
+[%header,cols="6,^2,^2,^2"]
 |===
-| Weapon Type             | Skill level   | Damage Roll
-//------------------------|---------------|------------
-| Light Melee Weapons     | __skilled__   | 1d6
-| Throwing Daggers        | __skilled__   | 1d6
-| Other Ranged Weapons    | __unskilled__ | 1d4
-| Unarmed Combat          | __unskilled__ | 1d4
-| Heavy Melee Weapons     | __unskilled__ | 1d8
-//------------------------|---------------|------------
+| Weapon                | Stat        | Skill       | Damage 
+//----------------------|-------------|-------------|-------------
+| Light Melee Weapons   | _strength_  | Skilled     | 1d6
+| Throwing Daggers      | _wisdom_    | Skilled     | 1d6
+| Other Ranged Weapons  | _wisdom_    | Unskilled   | 1d4
+| Heavy Melee Weapons   | _strength_  | Unskilled   | 1d10
+| Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
+//----------------------|-------------|-------------|-------------
 |===
+--
+
 
 ==== Armor Skills
 You are __skilled__ at using light armor, but not shields.
@@ -627,16 +632,16 @@ one other stat by one point as well.
 
 ==== Weapon Skills
 
-.Warrior Damage Rolls
-[%header,cols="8,^2,^2"]
+.Warrior's Attack and Damage
+[%header,cols="6,^2,^2,^2"]
 |===
-| Weapon Type             | Skill level   | Damage Roll
-//------------------------|---------------|------------
-| Light Melee Weapons     | __skilled__   | 1d8
-| Ranged Weapons          | __skilled__   | 1d6
-| Unarmed Combat          | __unskilled__ | 1d4
-| Heavy Melee Weapons     | __skilled__   | 1d12
-//------------------------|---------------|------------
+| Weapon                | Stat        | Skill       | Damage 
+//----------------------|-------------|-------------|-------------
+| Light Melee Weapons   | _strength_  | Skilled     | 1d8
+| Ranged Weapons        | _wisdom_    | Skilled     | 1d6
+| Heavy Melee Weapons   | _strength_  | Skilled     | 1d12
+| Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
+//----------------------|-------------|-------------|-------------
 |===
 
 ==== Armor Skills

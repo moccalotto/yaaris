@@ -1,6 +1,6 @@
 = Adventurer's guide to doom & destruction & stuff
 :stylesheet: style.css
-:doctype: book
+:doctype: article
 :icons: font
 :sectlinks:
 :toc:
@@ -171,6 +171,7 @@ All characters start with the following equipment:
 *In addition to that:* Roll on each of the following tables to find out what
 additional equipment your character starts with.
 
+
 ==== Ranged weapon
 Roll 1d6 on this table to find out if you have a ranged weapon.
 
@@ -215,7 +216,6 @@ Armors give you extra hit points; you have 1d3-1
 | 5-6   | light cuirass and helmet
 //------|----------------------------
 |===
-
 
 
 ==== Utility Gear
@@ -346,11 +346,12 @@ Becoming skilled with such weapons require special training or abilities (such
 as <<shady>>).
 
 ==== Spellcasting
-You can use <<basic_spellcasting>> to cast <<basic>> spells fast and
-efficiently via <<spellbook,spellbooks>>. You can also use
-<<basic_ritual_casting>> to cast <<ritual,certain>> spells more slowly,
-draining your spellbook less. You can also use <<basic_recharging>> to recharge
-depleted spellbooks.
+You can use <<basic_spellcasting>> to cast <<basic>> spells quickly directly
+from a <<spellbook>>, draining it fairly fast. You can also use
+<<basic_ritual_casting>> to very slowly cast <<ritual,certain spells>>,
+draining your spellbook much less. You can also use <<basic_recharging>> to
+recharge depleted spellbooks.
+
 
 === Level 2
 When you reach second level, you gain more hit points, better stats, and a
@@ -369,9 +370,8 @@ Increase that stat by 1 point. If no stats are lower than your die roll,
 increase your lowest stat by 1.
 
 ==== Adventurer’s Special Ability
-Choose one of the abilities below. You can switch this ability at later levels,
-depending on which heroic class you pick. See the
-xref:hero#[Hero’s Guide to doom & destruction & stuff].
+Choose one of the abilities below. Your choice is not permanent; you can switch
+this ability at later levels.
 
 //START_SORT //KEY:
 
@@ -441,7 +441,7 @@ consumption checks>> for animal feed. When you reach level 5 your riding
 proficiency expands to all rideable land creatures. At level 8, you can ride
 virtually any willing creature.
 
-.About the Rider's Mount
+.About Your Mount
 [%collapsible]
 ====
 *Your horse* can drag a cart that can either carry you and two others, or you
@@ -764,7 +764,7 @@ cannot be used any more during that combat.
 |===
 | Armor Piece           | {IS} | {AHP} | {cost}
 //----------------------|------|-------|------
-| Light Shield          | 1    |  4    | 8  gp
+| Light Shield          | 1    |  3    | 8  gp
 | Light Helmet          | 1    |  3    | 8  gp
 | Light Cuirass         | 2    |  6    | 27 gp
 | Light Gauntlets       | 1    |  3    | 8  gp
@@ -800,6 +800,7 @@ cannot be used any more during that combat.
 //----------------------|------|-------|------
 |===
 
+
 [[lodging]]
 .Food and lodging (per person per night)
 [%header,cols="11,^1"]
@@ -812,8 +813,8 @@ cannot be used any more during that combat.
 //------------------------------------------|--------
 |===
 
-[reftext="light melee weapon"]
-[[light_melee_weapon]]
+
+[[light_melee_weapon,light melee weapons]]
 .Melee Weapons
 [%header,cols="9,^2,^1"]
 |===
@@ -823,6 +824,7 @@ cannot be used any more during that combat.
 | Heavy Melee Weapon            |   2  | 8 gp
 //------------------------------|------|--------
 |===
+
 
 .Ranged Weapons
 [%header,cols="7,^2,^2,^1"]
@@ -841,8 +843,10 @@ cannot be used any more during that combat.
 //------------------------------|------|------|------
 |===
 
-[quote]
-See <<attack_range>> for more info on how far your ranged attacks can reach.
+____
+See <<range>> for more info on how far your ranged attacks can reach.
+____
+
 
 === Special Items
 //START_SORT //KEY:
@@ -1171,6 +1175,7 @@ A type of ranged weapon, these weapons are typically one-handed. Some of
 throwing weapons (such as daggers and javelins) can also be used as light melee
 weapons.
 
+[[range,range]]
 *Range*:
 The range of ranged weapons is a number of meters equal to
 the lowest of your __strength__, __dexterity__, and __wisdom__.
@@ -1263,8 +1268,6 @@ When you have made your attack check, consult <<attack_check_results_table>> to
 find out what happens. Unless you rolled poorly on your attack check it is now
 to to roll the damage die and reduce your opponent's hit pints accordingly.
 
-[%unbreakable]
---
 [[adventurer_damage_rolls_table]]
 .Adventurer's Attack and Damage
 [%header,cols="6,^2,^2,^2"]
@@ -1273,11 +1276,10 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _strength_  | Skilled     | 1d6
 | Ranged Weapons        | _wisdom_    | Skilled     | 1d6
-| Heavy Melee Weapons   | _strength_  | Unskilled   | 1d12
+| Heavy Melee Weapons   | _strength_  | Unskilled   | 1d10
 | Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
 //----------------------|-------------|-------------|-------------
 |===
---
 
 [[attack_check_results_table]]
 .Attack Check Results
@@ -1814,16 +1816,16 @@ If you rolled a <<nat20>> the spell fizzles, and the spellbook looses all its
 [reftext="basic recharging"]
 [[basic_recharging]]
 === Basic Recharging
-Adventurers can recharge <<basic>> spellbooks, restoring them to their maximum
+Adventurers can recharge spellbooks, restoring them to their maximum
 <<usage_points>>.
 
 *Requirements*: The spell in the spellbook must be <<basic>>, and its level must
 not be higher than yours.
 
 *Procedure*: You start by spending one <<consumption_check,consumption>> of
-magic components, followed by 30 minutes of ritualistic work. Then you make an
-__intelligence__ check. If the check succeeds, you have recharged the spellbook,
-back to its maximum <<usage_points>> otherwise you must try again.
+<<magic_components>>, followed by 30 minutes of ritualistic work. Then you make
+an __intelligence__ check. If the check succeeds, you have recharged the
+spellbook, back to its maximum <<usage_points>> otherwise you must try again.
 
 ==== Spell Properties
 The properties of a spell is listed in bold font right underneath the spell's
@@ -1832,7 +1834,7 @@ name.
 //START_SORT //KEY:
 
 //KEY:
-[reftext="_x_"]
+[reftext="_X_"]
 [[X]]
 *x*: There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example.
@@ -1945,11 +1947,13 @@ they move further away from the caster. The spell ends when it has provided
 advantage to 2·<<X>> checks in total (i.e. not to each recipient) or when the
 caster stops focusing on the spell, whichever comes first.
 
+
 === Alluring Attraction (X)
 *Level 1+, <<ritual>>, duration: <<X>> days*
 
 Of the next <<X>>+1 __charisma__ checks you make, you have <<advantage>> on
 checks that have a strong flirting component or involve physical attraction.
+
 
 === Animal Friendship (X)
 *Level 1+, <<ritual>>, <<focus>> (up to <<X>> + 1 hours)*
@@ -1959,18 +1963,19 @@ made to befriend or calm animals. If you meet a hostile animal, there is a
 fifty percent chance that it becomes cautious instead of hostile when it sees
 you
 
+
 === Armor (X)
 *Level 1+, <<ritual>>*
 
-You turn a nonmagical piece of clothing that you wear into a functional armor
-piece that provides <<X>> <<armor_hit_points,hit points>>. You are skilled at
-using the armor.
+You turn a nonmagical piece of clothing that you wear into a magical armor
+piece; it provides __3+<<X>>__ <<armor_hit_points,hit points>> and you are
+skilled at using it.
 
 You can create a cuirass, gauntlets, greaves, and a helmet, but you cannot
 create a shield.
 
-The armor becomes nonmagical if it <<armor_wear,breaks>> during combat, if you
-remove it, or if you sleep.
+The armor piece reverts to a normal piece of clothing if you sleep or doff it.
+
 
 === Banking Transaction (X)
 *Level 2+, duration: 5 minutes*
@@ -1984,6 +1989,7 @@ on hand to withdraw your money).
 
 The number of coins you can withdraw/deposit is __10·<<X>>·<<X>>·<<X>>__ (i.e.
 10·<<X>>³).
+
 
 === Bug Repellent (X)
 *Level 1+, duration: <<X>> minutes*
@@ -2003,12 +2009,14 @@ made within the repellent area are <<difficult>>.
 Mundane vermin, such as normal spiders, worms, ants, flies, wasps, etc. are
 level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
 
+
 === Burial (X)
 *Level 1+, <<ritual>>*
 
 <<X>> corpses of your choice within __charisma__ meters will not automatically
 become undead (see <<the_undead_curse>>. This spell doesn't work if the
 corpse's level is higher than yours.
+
 
 === Calm Animal (X)
 *Level 1+*
@@ -2017,15 +2025,17 @@ You calm a hostile animal within 10+<<X>> meters and whose level isn't higher
 than <<X>>. The animal no longer considers you and your party as threats, and
 will simply wander away if possible.
 
-IMPORTANT: This spell does not affect monsters, even if they look like animals.
+[quote]
+This spell does not affect monsters, even if they look like animals.
+
 
 === Club
-*Level 1, duration: <<caster_level>>+5 rounds*
+*Level 1*
 
 A magical wooden club appears in your hand. You are skilled at wielding this
-one-handed weapon, and your damage die is 1d12 when doing so. The club
-dissolves into dust after <<caster_level>>+5 rounds, or instantly if you let go
-of it.
+one-handed weapon, and your damage die is 1d12. The club dissolves into dust
+after <<caster_level>>+5 rounds, or instantly if you let go of it.
+
 
 === Command Fire (X)
 *Level 1, range: 2·<<X>> meters, <<trance>> (up to 2·<<X>> minutes)*
@@ -2093,6 +2103,7 @@ magical items, and spellbooks, away from you while you're using this spell.
 You can sense if a trap is within 10+<<X>> meters, but you only know where it
 is when the trap is within <<X>> meters of you.
 
+
 === Detect Undead
 *Level 1, Duration: __wisdom__ hours*
 
@@ -2103,6 +2114,7 @@ penetrate more than one meter of rock or one centimeter of lead.
 You are not able to detect the direction of the undead; but nothing prohibits
 you from traversing the area and probing when you feel the presence of the
 undead creature, and discerning its location that way.
+
 
 === Fey Flames (X)
 *Level 2*
@@ -2356,6 +2368,7 @@ has been used to hide it.
 Some magical items have a level; this spell only works if the item's level is ≤
 <<X>>.
 
+
 === Order (X)
 *Level: 1+, duration: 1 round*
 
@@ -2499,6 +2512,7 @@ item crumbles to dust.
 
 [quote]
 the item is magical so it can be detected with <<_detect_magic>>.
+
 
 === Snooze (X)
 *Level 1+*
