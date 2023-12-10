@@ -549,12 +549,12 @@ __strength__ check. You roll a d20. If you rolled lower than your __strength__,
 the check was successful, otherwise it was unsuccessful.
 ====
 
-[reftext="1"]
+[reftext="one"]
 [[nat1]]
 *Rolling a 1*: Checks are always successful if you roll a 1 on your d20 and,
 depending on the type of check, other positive result may happen.
 
-[reftext="20"]
+[reftext="twenty"]
 [[nat20]]
 *Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d20
 and, depending on the type of check, other positive result may happen.
@@ -1767,7 +1767,7 @@ otherwise specified in the spell's description).
 
 *Requirements*:
 
-* You must have a <<spellbook>> with the given spell inscribed in it.
+* You must have a <<spellbook>> with a <<basic>> spell inscribed in it.
 * The spell's level must not be higher than yours,
 * You must not have cast any spells previously in this <<round>>.
 * The <<spellbook>> must have at least one <<usage_points,usage point>>.
@@ -1798,38 +1798,46 @@ time to do so.
 
 *Requirements*:
 
+* You must have a <<spellbook>> with a <<basic>> spell inscribed in it.
 * The spell must have the <<ritual>> property,
+* The spell's level must not be higher than yours,
 * The spellbook must have at least one <<usage_points,usage point>>.
 * You must be able to see, read, speak, and move about.
-* You must have the spellbook near you while the ritual is performed,
+* You must have the <<spellbook>> near you while the ritual is performed,
   as you will often refer to the book.
 * You must have your <<magic_components>> on you, as you'll need them for your
   ritual.
 
-*Procedure*: You spend 10 minutes and one <<consumption_check,consumption>> of
-<<magic_components>>, and then you make an __intelligence__ check.
-//
-If the check was a success the spell takes effect.
-//
-If the check wasn't a success the spell fizzles, but you can try later.
-//
-If you rolled a <<nat20>> the spell fizzles, and the spellbook looses all its
-<<usage_points>>.
+
+*Procedure*: 
+You spend 15 minutes and one <<consumption_check,consumption>> of
+<<magic_components>>, and then you make an __intelligence__ check and 
+refer to this table:
+
+[cols="^1s,10",stripes=odd]
+|===
+//----------|----------------------------------------------------
+| <<nat20>> | The spell fizzles and the book loses __all__ its <<usage_points>>.
+| Failure   | The spell fizzles.
+| Success   | The spell takes effect.
+| <<nat1>>  | The spell takes effect.
+//----------|----------------------------------------------------
+|===
 
 
-[reftext="basic recharging"]
-[[basic_recharging]]
+[[basic_recharging,basic recharging]]
 === Basic Recharging
 Adventurers can recharge spellbooks, restoring them to their maximum
 <<usage_points>>.
 
-*Requirements*: The spell in the spellbook must be <<basic>>, and its level must
-not be higher than yours.
+*Requirements*: The spell in the spellbook must contain a <<basic>> spell
+with a level no higher than yours. 
 
 *Procedure*: You start by spending one <<consumption_check,consumption>> of
 <<magic_components>>, followed by 30 minutes of ritualistic work. Then you make
 an __intelligence__ check. If the check succeeds, you have recharged the
 spellbook, back to its maximum <<usage_points>> otherwise you must try again.
+
 
 ==== Spell Properties
 The properties of a spell is listed in bold font right underneath the spell's
@@ -1838,56 +1846,47 @@ name.
 //START_SORT //KEY:
 
 //KEY:
-[reftext="_X_"]
-[[X]]
+[[X,_X_]]
 *X*: There are many versions of this spell, each with its own level. +
 See the <<example_multilevel>> example.
 
 //KEY:
-[reftext="basic"]
-[[basic]]
+[[basic,basic]]
 *Basic*: All basic spells can be cast by adventurers, and all spells in this
 document are <<basic>>. Higher level characters have access to more advanced
 types of spells.
 
 //KEY:
-[reftext="caster level"]
-[[caster_level]]
+[[caster_level,caster level]]
 *Caster level*: The level of the caster (i.e. not the spell). The potency, duration, or
 range of certain spell increases with the casters level.
 
 //KEY:
-[reftext="duration"]
-[[duration]]
+[[duration,duration]]
 *Duration*: The duration of the spell. See also <<cancelling_spell>>.
 
 //KEY:
-[reftext="focus"]
-[[focus]]
+[[focus,focus]]
 *Focus*: These spells cut their duration short and stop instantly if you cast
 another spell, take damage, or stop focusing on keeping the spell going.
 
 //KEY:
-[reftext="level"]
-[[spell_level]]
+[[spell_level,level]]
 *Level*: The level of the spell. If the spell also has the  property,
 _level_ is the level of the weakest version of the spell, meaning no versions
 of the spell exists at a lower level that that.
 
 //KEY:
-[reftext="range"]
-[[range]]
+[[range,range]]
 *Range*: The range of the spell. See also <<targeting_spell>>.
 
 //KEY:
-[reftext="ritual"]
-[[ritual]]
+[[ritual,ritual]]
 *Ritual*: These spells can be cast via <<basic_ritual_casting>>, but can also be
 cast normally via <<basic_spellcasting>>.
 
 //KEY:
-[reftext="trance"]
-[[trance]]
+[[trance,trance]]
 *Trance*: You must be seated to cast a trance spell, and you must remain seated
 for its duration. +
 //
@@ -1941,6 +1940,7 @@ always travel in a direct line, completely unable to avoid obstacles.
 All spells listed in this section are <<basic>> and can be used by adventurers.
 
 // START_SORT ===
+
 
 === Alertness (X)
 *Level 1+, <<focus>> (special)*
@@ -2132,7 +2132,7 @@ attack checks against them remain <<difficult>>.
 === Fierce Fortune (X)
 *Level 1*
 
-An ally within <<X>> meters gets <<advantage>>on their next
+An ally within <<X>> meters gets <<advantage>> on their next
 <<attack_and_damage,attack>> or <<Defense,defense check>>, provided it occurs
 within <<X>>+1 rounds.
 
