@@ -2243,6 +2243,13 @@ If the target is wearing three or more pieces of metal armor, you have
 Medium- and heavy armor is made of metal unless otherwise specified.
 
 
+=== Luck (X)
+*Level 2+, duration: __charisma__ rounds*
+
+Whenever you make a __check__ with your d20, and you roll less than __X__, 
+this spell turns that roll into a __1__.
+
+
 === Mage Might (X)
 *Level 1+, <<focus>> (duration up to <<X>> rounds)*
 
@@ -2528,13 +2535,6 @@ melee combat on its next turn.
 You fire a frightening magical missile against a baddie within range. When
 struck, the baddie takes <<X>> d6 damage, and then you make an <<adversarial>>
 __charisma__ check; if successful the baddie becomes <<demoralized>>.
-
-
-=== Luck (X)
-*Level 2+, duration: __charisma__ rounds*
-
-Whenever you make a __check__ with your d20, and you roll less than __X__, 
-this spell turns that roll into a __1__.
 
 
 === Vines (X)
