@@ -2607,10 +2607,6 @@ checks.
 *Easy*: Easy checks have a target number that's 3 higher than normal checks.
 
 //KEY:
-[[GM,GM]]
-*GM*: The Game Master.
-
-//KEY:
 *Hit Points (HP)*: A unit of health: your character has a number of hit points,
 you lose some of them when you take damage, and if you lose all of them, you
 must roll on the <<death_table>>.  __Baddies and NPCs also have hit points, and
@@ -2656,6 +2652,10 @@ order to make a successful check.
 *Unskilled (weapon)*: When you are not skilled at using a weapon,
 your __attack check__ is <<difficult>>, and the results of your attack checks
 are not as favorable. See <<attack_check_results_table>>.
+
+//KEY:
+[[GM,GM]]
+*GM*: The Game Master.
 
 //END_SORT
 
