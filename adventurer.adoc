@@ -1,4 +1,5 @@
 = Adventurer's Guide to Doom & Destruction & Stuff
+// {{{ VARIABLES
 :stylesheet: style.css
 :doctype: article
 :icons: font
@@ -11,7 +12,6 @@
 :xrefstyle: full
 
 
-// {{{ VARIABLES
 :IS: <<item_slots,Item Slots>>
 :UP: <<usage_points,Usage Points>>
 :AHP: <<armor_hit_points,Hit Points>>
@@ -20,6 +20,8 @@
 :elite_book: xref:elite[Elite's Guide To Doom & Destruction & Stuff]
 :twenty: <<nat20,Twenty>>
 :one: <<nat1,One>>
+:consumption: <<consumption_checks,consumption>>
+:consumable: <<consumption_checks,consumable>>
 // VARIABLES }}}
 
 This document contains character creation and game mechanics, as well as gear,
@@ -182,13 +184,13 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 
 [%header,cols="^2,10"]
 |===
-| d6    | Weapon
-//------|----------------------------
-| 1-3   | no ranged weapon
-| 4     | slingshot + bag of stones
-| 5     | bow + quiver of arrows
-| 6     | crossbow + quiver of bolts
-//------|----------------------------
+| d6  | Weapon
+//----|----------------------------
+| 1-3 | No ranged weapon
+| 4   | Slingshot + Bag of stones
+| 5   | Bow + Quiver of arrows
+| 6   | Crossbow + Quiver of bolts
+//----|----------------------------
 |===
 
 
@@ -199,8 +201,8 @@ Roll 1d6 on this table to find out if you have a shield.
 |===
 | d6    | Shield
 //------|----------------------------
-| 1-4   | no shield
-| 5-6   | light shield
+| 1-4   | No shield
+| 5-6   | Light Shield
 //------|----------------------------
 |===
 
@@ -213,31 +215,32 @@ Armors give you extra hit points; you have 1d3-1
 |===
 | d6    | Armor
 //------|----------------------------
-| 1-2   | no armor
-| 3-4   | light cuirass
-| 5-6   | light cuirass and helmet
+| 1-2   | No armor
+| 3-4   | Light Cuirass
+| 5-6   | Light Cuirass and Helmet
 //------|----------------------------
 |===
 
 
 ==== Utility Gear
-Roll once on <<utility_gear_1>>.
 
 [%unbreakable]
 --
+Roll once on <<utility_gear_1>>.
+
 [[utility_gear_1]]
 .Utility Gear 1
-[%header,cols="^1,11",grid=none,frame=none,stripes=even]
+[%header,cols="^1,11"]
 |===
 | 1d10 | Item
 //-----|-----------------------
 |   1  | <<iron_rations>>
-|   2  | grappling hook
+|   2  | Grappling hook
 |   3  | <<storm_lantern>>
-|   4  | rope, 10 meters
+|   4  | Rope, 10 meters
 |   5  | <<kosh>>
-|   6  | ball bearings
-|   7  | shovel
+|   6  | Ball bearings
+|   7  | Shovel
 |   8  | <<lockpicking_tools>>
 |   9  | <<lantern>>
 |   10 | <<purse_copper>>
@@ -246,28 +249,29 @@ Roll once on <<utility_gear_1>>.
 --
 
 
-Roll twice on <<utility_gear_2>>. If the second roll is the same as the first
-roll, reroll it.
-
 
 [%unbreakable]
 --
+Roll twice on <<utility_gear_2,the table below>>. If the second roll is the
+same as the first roll, reroll it.
+
 [[utility_gear_2]]
 .Utility Gear 2
-[%header,cols="^1,11",grid=none,frame=none,stripes=even]
+[%header,cols="^1,11"]
 |===
 | 1d10 | Item
 //-----|-----------------------------
 | 1    | 2d4 gold pieces
-| 2    | <<spellbook>> with 2 <<usage_points>> and a spell of your choice.
-| 3    | <<torch>>
-| 4    | <<spikes>>
-| 5    | <<tinkering_tools>>
-| 6    | pole, 3m, foldable
-| 7    | chalk
-| 8    | <<rations,ration pack, normal>>
-| 9    | <<lamp_oil,lamp oil>>
-| 10   | <<map_making_tools>>
+| 2    | <<spellbook,Spellbook>> with 2 <<usage_points>> 
+         and a spell of the <<GM,GMs>> choice.
+| 3    | <<torch,Torch>>
+| 4    | <<spikes,Spikes>>
+| 5    | <<tinkering_tools,Tinkering tools>>
+| 6    | Pole, 3m, foldable
+| 7    | Chalk
+| 8    | <<rations,Ration pack, normal>>
+| 9    | <<lamp_oil,Lamp oil>>
+| 10   | <<map_making_tools,Map making tools>>
 //-----|-----------------------------
 |===
 --
@@ -362,10 +366,6 @@ special ability.
 Your __hit point_total__ is increased by 1d8. Roll with <<advantage>>.
 
 ==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
-
-==== An Even More Betterer Stat
 Roll a d20 and select a stat that is lower than the result of the die roll.
 Increase that stat by 1 point. If no stats are lower than your die roll,
 increase your lowest stat by 1.
@@ -437,9 +437,9 @@ You are skilled at unarmed combat, and your unarmed combat damage die is 1d6.
 *Rider*:
 You acquire a trained horse for free (tamed wild horse, a gift, or similar).
 You become proficient at riding horses. You have <<advantage>> on all
-riding-related checks. You have <<advantage>> on <<consumption_check,
-consumption checks>> for animal feed. When you reach level 5 your riding
-proficiency expands to all rideable land creatures. At level 8, you can ride
+riding-related checks. You have <<advantage>> on {consumption} for animal feed.
+When you reach level 5 your riding proficiency expands to all rideable land
+creatures. At level 8, you can ride
 virtually any willing creature.
 
 .About Your Mount
@@ -454,7 +454,7 @@ check (with <<advantage>>) to command it when you're not.
 
 *Feed*: You can feed your horse __animal feed__, and if you can't you can feed
 it with <<rations>>, but the horse eats so much that you will have to make two
-<<consumption_check,consumption checks>> per day.
+<<consumption_checks>> per day.
 
 *If you lose this ability* (by changing it at later levels), you do not lose
 your mount, but your rolls are no longer made with <<advantage>>.
@@ -464,9 +464,9 @@ your mount, but your rolls are no longer made with <<advantage>>.
 //KEY:
 [[ritualist,ritualist]]
 *Ritualist*:
-You have <<advantage>> on <<consumption_check,consumption checks>> with
-<<magic_components>> and you have <<advantage>> on the __intelligence__
-check used for <<basic_ritual_casting>>.
+You have <<advantage>> on <<consumption_checks>> with <<magic_components>> and
+you have <<advantage>> on the __intelligence__ check used for
+<<basic_ritual_casting>>.
 
 
 //KEY:
@@ -490,8 +490,8 @@ you always have some chalk,
 you always know the cardinal directions,
 and have <<advantage>> on checks that involve navigation in caves and dungeons.
 //
-You also have <<advantage>> on <<consumption_check,consumption checks>> checks
-for <<lamp_oil>>, <<lantern,lanterns>>, and <<torch,torches>>.
+You also have <<advantage>> on <<consumption_checks>> checks for <<lamp_oil>>,
+<<lantern,lanterns>>, and <<torch,torches>>.
 //
 Moreover, at any time, one of the ropes you carry does not take up any
 <<item_slots>>.
@@ -500,18 +500,17 @@ Moreover, at any time, one of the ropes you carry does not take up any
 //KEY:
 [[thrifty,thrifty]]
 *Thrifty*:
-You have <<advantage>> on <<consumption_check,consumption checks>> with
-<<coin_purse,coin purses>>.
+You have <<advantage>> on <<consumption_checks>> with <<coin_purse,coin
+purses>>.
 
 
 //KEY:
 [[traveler,traveler]]
 *Traveler*:
-You have <<advantage>> on <<consumption_check,consumption checks>> for
-<<rations>> and animal feed, you always know the cardinal directions,
-and you have <<advantage>> on checks related to geography, travel, and
-navigation. Additionally, at any time, one of the ration packs you carry does
-not take up any <<item_slots>>.
+You have <<advantage>> on <<consumption_checks>> for <<rations>> and animal
+feed, you always know the cardinal directions, and you have <<advantage>> on
+checks related to geography, travel, and navigation. Additionally, at any time,
+one of the ration packs you carry does not take up any <<item_slots>>.
 
 //END_SORT
 
@@ -540,7 +539,8 @@ You make checks to see if your character can successfully do certain
 interesting things; you roll your d20. The check is successful if you roll
 __under__ a specified *__target number__*, which is usually one of your stats.
 
-NOTE: If the target number is 10, you must roll _below_ 10, not equal to 10, to
+NOTE: If the target number is 10, you must roll __below__ 10, not equal to 10,
+to
 succeed,
 
 .Target Number
@@ -679,7 +679,7 @@ consumption check to see if it loses a usage point. If the item run out of
 <<usage_points>>, it is completely used up: no more arrows in the quiver, and
 no more food in the ration pack.
 
-[[consumption_check,consumption check]]
+[[consumption_checks,consumption checks]]
 === Consumption & Consumption Checks
 You are sometimes asked to spend a __consumption__ of a given consumable item.
 When making a __consumption__ of an item, you first roll a __consumption check__,
@@ -734,13 +734,10 @@ cannot be used any more during that combat.
 //------------------------------------------------|------|------|-----------
 | <<adventurers_logbook,Adventurer's Logbook>>    |   1  | 10   | 20 gp
 | Animal Feed                                     |   2  | 1    | 15 cp
-| Bag of Slingshots                               |   1  | 3    | 10 cp
 | Ball bearings                                   |   1  | 2    | 15 cp
 | Candles                                         |   1  | 6    | 10 cp
 | Chalk                                           |   1  | 12   | 3  cp
 | <<lamp_oil,Lamp Oil>>                           |   1  | 2    | 5  cp
-| quiver of arrows                                |   1  | 3    | 5  sp
-| quiver of bolts                                 |   1  | 3    | 10 sp
 | <<magic_components,Magic Components>>           |   1  | 2    | 1  gp
 | <<iron_rations,Iron Rations>>                   |   1  | 2    | 4  sp
 | <<rations,Rations>>                             |   1  | 1    | 1  sp
@@ -828,17 +825,14 @@ cannot be used any more during that combat.
 | Spear                         |   1  |  1   | 3  gp
 | Darts                         |   1  |  4   | 3  gp
 | Bow                           |   2  |  -   | 7  gp
-| ↳ quiver of arrows            |   1  |  10  | 2  gp
+| ↳ Quiver of arrows            |   1  |  10  | 2  gp
 | Crossbow                      |   1  |  -   | 12 gp
-| ↳ quiver of bolts             |   1  |  10  | 2  gp
+| ↳ Quiver of bolts             |   1  |  10  | 2  gp
 | Sling                         |   0  |  -   | 4  gp
-| ↳ bag of stones               |   1  |  10  | 2  gp
+| ↳ Bag of slingshot            |   1  |  10  | 2  gp
 //------------------------------|------|------|------
 |===
-
-____
 See <<weapon_range>> for more info on how far your ranged attacks can reach.
-____
 
 
 === Special Items
@@ -885,26 +879,26 @@ them or exchange them.
 *Copper purse*: for 1,000 copper pieces you can buy a copper purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 copper
 pieces (i.e. less than 1 silver piece), you can spend one
-<<consumption_check,consumption>> of this purse instead of spending coin.
+{consumption} of this purse instead of spending coin.
 
 [[purse_silver,silver purse]]
 *Silver purse*: for 1,000 silver pieces you can buy a silver purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 silver
 pieces (i.e. less than 1 gold piece), you can spend one
-<<consumption_check,consumption>> of this purse instead of spending coin.
+{consumption} of this purse instead of spending coin.
 
 [[purse_gold,gold purse]]
 *Gold purse*: for 1,000 gold pieces you can buy a gold purse. It has 10
-<<usage_points>>. Whenever you buy something costing less than 100 gold
-pieces you can spend one <<consumption_check,consumption>> of this purse
-instead of spending coin.
+<<usage_points>>. Whenever you buy something costing less than 100 gold pieces
+you can spend one {consumption} of this purse instead of
+spending coin.
 
 
 //KEY:
 [[healing_salve,healing salve]]
 ==== Healing Salve
 These salves can heal minor wounds: You spend one
-<<consumption_check,consumption>> of salve, and five minutes to apply it to a
+{consumption} of salve, and five minutes to apply it to a
 willing recipient. Once applied, the recipient rolls a number of dice (usually
 a few d6), and regain that many hit points.
 
@@ -927,7 +921,7 @@ the target suffers no other ill effects from being struck with a kosh.
 //KEY:
 [[lamp_oil,lamp oil]]
 === Lamp Oil
-This <<consumption_check,consumable>> item is flammable; you can use it as fuel
+This {consumable} item is flammable; you can use it as fuel
 for your lantern or storm lantern, and you can use it to light things on fire.
 
 You can throw lamp oil to cover an area; You first roll a __dexterity__ check.
@@ -935,11 +929,11 @@ You can throw lamp oil to cover an area; You first roll a __dexterity__ check.
 [cols="^2s,10",stripes=odd]
 |===
 //----------|----------------------------------------------------
-| <<nat20>> | You drop the bottle at your feet and it ruptures.
-| Failure   | The bottle lands where intended, but it does not rupture.
-| Success   | The bottle lands where intended, ruptures, and covers 1d4
+| {twenty}  | You drop the container at your feet and it ruptures.
+| Failure   | The container lands where intended, but it does not rupture.
+| Success   | The container lands where intended, ruptures, and covers 1d4
               square meters in oil.
-| <<nat1>>  | The bottle lands where intended, ruptures, and covers up to 4
+| {one}     | The container lands where intended, ruptures, and covers up to 4
               square meters (of your choice) in oil.
 //----------|----------------------------------------------------
 |===
@@ -968,7 +962,7 @@ either, as they are designed to go out when they aren't upright.
 ==== Lockpicking Tools
 These tools allow you to pick various locks. They can be used up, and therefore
 have <<usage_points>>. To Open a Lock, you first spend 5 minutes and one
-<<consumption_check,consumption>> of lockpicking tools. Then you make both a
+{consumption} of lockpicking tools. Then you make both a
 __dexterity__- and an __intelligence__ check.
 
 * If both are successful, you open the lock.
@@ -982,7 +976,7 @@ __dexterity__- and an __intelligence__ check.
 ==== Magic Components
 Magic components are used when casting rituals and when recharging spellbooks.
 A consumption of magic components means you use some unspecified amount of your
-magic components which costs one <<consumption_check,consumption>> of your
+magic components which costs one {consumption} of your
 magic components.
 
 
@@ -1006,8 +1000,7 @@ do so you must make an __intelligence__ check and a __wisdom__ check.
 //KEY
 [[rations,rations]]
 ==== Rations
-Rations sustain you on your adventures. You must use one <<consumption_check,
-consumption>> of rations every day, otherwise you become <<starving>>.
+Rations sustain you on your adventures. You must use one {consumption} of rations every day, otherwise you become <<starving>>.
 
 [[iron_rations,iron rations]]
 *Iron Rations* have twice as many <<usage_points>> as normal rations, while
@@ -1018,7 +1011,7 @@ still only requiring one <<item_slots,item slot>>.
 [[restoring_salve,restoring salve]]
 ==== Restoring Salve
 These salves can reverse the effects of <<reversible>> trauma. You spend one
-<<consumption_check,consumption>> of salve, and 30 minutes to apply it to a
+{consumption} of salve, and 30 minutes to apply it to a
 willing recipient. Once applied, one <<reversible>> trauma condition is removed
 from the recipient.
 
@@ -1037,7 +1030,7 @@ Tinkering tools can be used to disarm traps and repair broken items.
 
 *Repairing mechanisms*: 
 To repair a trap, mechanism, stuck door, or similar, you spend 10 minutes and
-one <<consumption_check,consumption>> of tinkering tools. Then you make a
+one {consumption} of tinkering tools. Then you make a
 __dexterity__ check and an __intelligence__ check.
 
 * If both are successful, you have repaired the item.
@@ -1056,7 +1049,7 @@ weapons, and it takes twice as long if the weapon is broken rather than
 damaged.
 
 *Disarming traps*: 
-To disarm a trap you spend 10 minutes and one <<consumption_check,consumption>>
+To disarm a trap you spend 10 minutes and one {consumption}
 of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 
 *   If both are successful, you have disarmed the trap.
@@ -1071,8 +1064,7 @@ of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 Aside from illuminating the area around you, torches can be used for a number
 of things.
 
-Torches have 2 <<usage_points>>, and you must make a <<consumption_check>>
-every hour.
+Torches have 2 <<usage_points>>, and you must make a {consumption}every hour.
 
 Torches can be revitalized; it requires one consumption of <<lamp_oil>> to
 restore 1 <<usage_points,usage point>> to a torch. This cannot be done while
@@ -1252,10 +1244,10 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 |===
 | Weapon                | Stat        | Skill       | Damage 
 //----------------------|-------------|-------------|-------------
-| Light Melee Weapons   | _strength_  | Skilled     | 1d6
-| Ranged Weapons        | _wisdom_    | Skilled     | 1d6
-| Heavy Melee Weapons   | _strength_  | Unskilled   | 1d10
-| Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
+| Light Melee Weapons   | _Strength_  | Skilled     | 1d6
+| Ranged Weapons        | _Wisdom_    | Skilled     | 1d6
+| Heavy Melee Weapons   | _Strength_  | Unskilled   | 1d10
+| Unarmed Combat        | _Dexterity_ | Unskilled   | 1d4
 //----------------------|-------------|-------------|-------------
 |===
 
@@ -1264,11 +1256,11 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 [cols="^2s,10",stripes=odd]
 |===
 //----------|-------------------------------------
-| <<nat20>> | You miss and your weapon <<damaged_weapon,takes damage>>.
+| {twenty}  | You miss and your weapon <<damaged_weapon,takes damage>>.
 | Failure   | You deal half damage (rounded down) if you are
               <<weapon_skills,skilled>> with your weapon, otherwise you miss.
 | Success   | You deal normal damage.
-| <<nat1>>  | You deal maximum damage and if you are <<weapon_skills,skilled>>
+| {one}     | You deal maximum damage and if you are <<weapon_skills,skilled>>
               at using your weapon you get an extra <<Actions,action>>.
 //----------|-------------------------------------
 |===
@@ -1300,10 +1292,10 @@ yourself.
 [cols="^2s,10",stripes=odd]
 |===
 //----------|-------------------------------------
-| <<nat20>> | You take maximum damage and your best armor piece <<armor_wear,breaks>>.
+| {twenty}  | You take maximum damage and your best armor piece <<armor_wear,breaks>>.
 | Failure   | You take normal damage.
 | Success   | You take no damage.
-| <<nat1>>  | You take no damage and the enemy's weapon <<broken_weapon,breaks>>.
+| {one}     | You take no damage and the enemy's weapon <<broken_weapon,breaks>>.
 //----------|-------------------------------------
 |===
 
@@ -1437,16 +1429,16 @@ death table. Check the <<CONDITIONS>> section for more info.
 .Death Table
 [%header,cols="^1,11",grid=none,frame=none,stripes=even]
 |===
-| d100          | Effect
-//--------------|--------------------------------------------------
-| 100           | You’re <<destroyed>>.
-| 99            | You’re <<dead>>.
-| 76-98         | You’re <<comatose>> and <<dying>>.
-| 25-75         | You’re <<unconscious>> and <<dying>>.
-| 02-25         | You’re <<unconscious>>.
-| 1             | You’re still awake, but you are <<prone>> and only have
-                  one <<hit_points,hit point>>.
-//--------------|--------------------------------------------------
+| d100   | Effect
+//-------|--------------------------------------------------
+| 100    | You’re <<destroyed>>.
+| 99     | You’re <<dead>>.
+| 76-98  | You’re <<comatose>> and <<dying>>.
+| 25-75  | You’re <<unconscious>> and <<dying>>.
+| 02-25  | You’re <<unconscious>>.
+| 1      | You’re still awake, but you are <<prone>> and only have
+           one <<hit_points,hit point>>.
+//-------|--------------------------------------------------
 |===
 
 
@@ -1460,21 +1452,21 @@ points.
 .Trauma table
 [%header,cols="^1,^2,8",stripes=even,frame=none,grid=none]
 |===
-| Roll      | Type       | Effect
-//----------|------------|------------------------------
-| 101+      | Amputation | Lose a random limb
-| 100       | Permanent  | -1d4 to random stat
-| 89-99     | Permanent  | -1d8 maximum hit points
-| 90-98     | Reversible | -1 <<moves>>
-| 81-89     | Reversible | -1 to __charisma__
-| 71-80     | Reversible | <<weighed_down>>
-| 61-70     | Temporary  | -1 moves
-| 51-60     | Temporary  | All checks are <<difficult>>
-| 41-50     | Temporary  | -1d6 to random stat
-| 31-40     | Temporary  | -1d8 <<hit_point_total>> and current hit points
-| 21-30     | Reversible | Battle scar
-| 01-20     | -          | No trauma
-//----------|------------|------------------------------
+| Roll  | Type       | Effect
+//------|------------|------------------------------
+| 101+  | Amputation | Lose a random limb
+| 100   | Permanent  | -1d4 to random stat
+| 89-99 | Permanent  | -1d8 maximum hit points
+| 90-98 | Reversible | -1 <<moves>>
+| 81-89 | Reversible | -1 to __charisma__
+| 71-80 | Reversible | <<weighed_down>>
+| 61-70 | Temporary  | -1 moves
+| 51-60 | Temporary  | All checks are <<difficult>>
+| 41-50 | Temporary  | -1d6 to random stat
+| 31-40 | Temporary  | -1d8 <<hit_point_total>> and current hit points
+| 21-30 | Reversible | Battle scar
+| 01-20 | -          | No trauma
+//------|------------|------------------------------
 |===
 --
 
@@ -1660,7 +1652,7 @@ you to try and escape your bonds.
 //KEY:
 [[starving,starving]]
 *Starving*: Every day that you do not get at least one
-<<consumption_check,consumption>> of <<rations>> or similar, you roll 1d20 for
+{consumption} of <<rations>> or similar, you roll 1d20 for
 each of your <<Stats,stats>>. If you rolled under a stat, that stat is reduced
 by 1 until you get food and <<rest>>.
 
@@ -1725,10 +1717,10 @@ to this table:
 [cols="^1s,10",stripes=odd]
 |===
 //----------|----------------------------------------------------
-| <<nat20>> | The spell fizzles and the book loses __all__ its <<usage_points>>.
+| {twenty}  | The spell fizzles and the book loses __all__ its <<usage_points>>.
 | Failure   | The spell takes effect and the book loses __all__ its <<usage_points>>.
 | Success   | The spell takes effect and the book looses a single <<usage_points,usage point>>.
-| <<nat1>>  | The spell takes effect and no <<usage_points>> are spent.
+| {one}     | The spell takes effect and no <<usage_points>> are spent.
 //----------|----------------------------------------------------
 |===
 
@@ -1752,18 +1744,17 @@ time to do so.
 
 
 *Procedure*: 
-You spend 15 minutes and one <<consumption_check,consumption>> of
-<<magic_components>>, and then you make an __intelligence__ check and 
-refer to this table:
+You spend 15 minutes and one {consumption} of <<magic_components>>, and then
+you make an __intelligence__ check and refer to this table:
 
 [cols="^1s,10",stripes=odd]
 |===
-//----------|----------------------------------------------------
-| <<nat20>> | The spell fizzles and the book loses __all__ its <<usage_points>>.
-| Failure   | The spell fizzles.
-| Success   | The spell takes effect.
-| <<nat1>>  | The spell takes effect.
-//----------|----------------------------------------------------
+//---------|----------------------------------------------------
+| {twenty} | The spell fizzles and the book loses __all__ its <<usage_points>>.
+| Failure  | The spell fizzles.
+| Success  | The spell takes effect.
+| {one}    | The spell takes effect.
+//---------|----------------------------------------------------
 |===
 
 
@@ -1772,13 +1763,13 @@ refer to this table:
 Adventurers can recharge spellbooks, restoring them to their maximum
 <<usage_points>>.
 
-*Requirements*: The spell in the spellbook must contain a <<basic>> spell
-with a level no higher than yours. 
+*Requirements*: The spell in the spellbook must contain a <<basic>> spell with
+a level no higher than yours. 
 
-*Procedure*: You start by spending one <<consumption_check,consumption>> of
-<<magic_components>>, followed by 30 minutes of ritualistic work. Then you make
-an __intelligence__ check. If the check succeeds, you have recharged the
-spellbook, back to its maximum <<usage_points>> otherwise you must try again.
+*Procedure*: You start by spending one {consumption} of <<magic_components>>,
+followed by 30 minutes of ritualistic work. Then you make an __intelligence__
+check. If the check succeeds, you have recharged the spellbook, back to its
+maximum <<usage_points>> otherwise you must try again.
 
 
 ==== Spell Properties
@@ -1800,8 +1791,8 @@ types of spells.
 
 //KEY:
 [[caster_level,caster level]]
-*Caster level*: The level of the caster (i.e. not the spell). The potency, duration, or
-range of certain spell increases with the casters level.
+*Caster level*: The level of the caster (i.e. not the spell). The potency,
+duration, or range of certain spell increases with the casters level.
 
 //KEY:
 [[duration,duration]]
@@ -1818,14 +1809,14 @@ another spell, take damage, or stop focusing on keeping the spell going.
 
 //KEY:
 [[ritual,ritual]]
-*Ritual*: These spells can be cast via <<basic_ritual_casting>>, but can also be
-cast normally via <<basic_spellcasting>>.
+*Ritual*: These spells can be cast via <<basic_ritual_casting>>, but can also
+be cast normally via <<basic_spellcasting>>.
 
 //KEY:
 [[spell_level,level]]
-*Level*: The level of the spell. If the spell also has the  property,
-_level_ is the level of the weakest version of the spell, meaning no versions
-of the spell exists at a lower level that that.
+*Level*: The level of the spell. If the spell also has the  property, _level_
+is the level of the weakest version of the spell, meaning no versions of the
+spell exists at a lower level that that.
 
 //KEY:
 [[trance,trance]]
@@ -1839,8 +1830,8 @@ The spell stops instantly if you:
     d) make a <<moves,move>>,
     or e) take an <<Actions,action>>. +
 //
-You can speak, breathe, and adjust
-your position to remain comfortable, and nothing more.
+You can speak, breathe, and adjust your position to remain comfortable, and
+nothing more.
 
 //END_SORT
 
@@ -1854,16 +1845,16 @@ Missile 1__, __Tragic Missile 2__, and so on all the way to __Tragic Missile
 ---
 
 <<_ghost_mount_x>> also represents multiple spells, but since its description
-says it's <<spell_level,level>> stem:[2+], there is no __Ghost Mount 1__. Only a
-__Ghost Mount 2__, __Ghost Mount 3__, and so on.
+says it's <<spell_level,level>> stem:[2+], there is no __Ghost Mount 1__. Only
+a __Ghost Mount 2__, __Ghost Mount 3__, and so on.
 ====
 
 [[cancelling_spell]]
 .Cancelling a spell
 ****
-You cannot cancel or stop a spell with a <<duration>> unless the spell has
-the <<focus>> or <<trance>> property, or if cancellation is allowed in the
-spell's description.
+You cannot cancel or stop a spell with a <<duration>> unless the spell has the
+<<focus>> or <<trance>> property, or if cancellation is allowed in the spell's
+description.
 ****
 
 
@@ -1905,9 +1896,9 @@ checks that have a strong flirting component or involve physical attraction.
 === Animal Friendship (X)
 *Level 1+, <<ritual>>, <<focus>> (up to <<X>> + 1 hours)*
 
-You have <<advantage>> on all __intelligence__, __wisdom__, and __charisma__ checks
-made to befriend or calm animals. If you meet a hostile animal, there is a
-fifty percent chance that it becomes cautious instead of hostile when it sees
+You have <<advantage>> on all __intelligence__, __wisdom__, and __charisma__
+checks made to befriend or calm animals. If you meet a hostile animal, there is
+a fifty percent chance that it becomes cautious instead of hostile when it sees
 you
 
 
@@ -1941,20 +1932,20 @@ The number of coins you can withdraw/deposit is __10·<<X>>·<<X>>·<<X>>__ (i.e
 === Bug Repellent (X)
 *Level 1+, duration: <<X>> minutes*
 
-You target a nonmagical item within <<X>> meters. The item starts emitting sounds
-and odors that repel insects and other vermin. The spells area of influence is
-a sphere with a radius of 2·<<X>> meters
-
-This spell has no effects on non-vermin.
+You target a nonmagical item within <<X>> meters. The item starts emitting
+sounds and odors that repel insects and other vermin. The spells area of
+influence is a sphere with a radius of 2·<<X>> meters
 
 Vermin whose level is <<X>> or higher are completely unaffected.
 
-Vermin whose level is lower than <<X>> must make a normal __wisdom__ check or move
-out of the repellent area. Even if the check is successful, any other checks
-made within the repellent area are <<difficult>>.
+Vermin whose level is lower than <<X>> must make a normal __wisdom__ check or
+move out of the repellent area. Even if the check is successful, any other
+checks made within the repellent area are <<difficult>>.
 
 Mundane vermin, such as normal spiders, worms, ants, flies, wasps, etc. are
 level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
+
+This spell has no effects on non-vermin.
 
 
 === Burial (X)
@@ -2036,8 +2027,8 @@ You can sense magical items, and items that are affected by spells, such as an
 item with <<_illuminate_x>> cast on it. The item must be within __wisdom__
 meters. Your magical sense works almost like a sense of smell. This means that
 it is relatively hard to detect the direction of magical items, and it is
-exceptionally hard to distinguish magical items from each other. In general,
-it is only possible to detect the direction of the most powerful magical item.
+exceptionally hard to distinguish magical items from each other. In general, it
+is only possible to detect the direction of the most powerful magical item.
 
 [quote]
 It can be advantageous to keep you and your party's items, including your
@@ -2076,7 +2067,7 @@ attack checks against them remain <<difficult>>.
 *Level 1*
 
 An ally within <<X>> meters gets <<advantage>> on their next
-<<attack_and_damage,attack>> or <<Defense,defense check>>, provided it occurs
+<<attack_and_damage,attack->> or <<Defense,defense check>>, provided it occurs
 within <<X>>+1 rounds.
 
 
@@ -2126,7 +2117,8 @@ You construct a ghostly, humanoid that only you can see, hear, or smell. You
 can send it telepathic commands, and it will obey you to the best of its
 abilities, and without question or hesitation.
 
-The servant appears within 3·<<X>> meters, and must stay within 10·<<X>> meters.
+The servant appears within 3·<<X>> meters, and must stay within 10·<<X>>
+meters.
 
 * It can move up to <<X>> meters per round.
 * Its primary stats are all 2·X, and its __hit point_total__ is also 2·X.
@@ -2179,8 +2171,8 @@ You target a creature within range who regains <<X>>d6+<<X>> hit points.
 *Level 1+, <<ritual>>, range: 3+<<X>> meters*
 
 You target a creature in range; if you succeed an <<adversarial>> __wisdom__
-check, the creature loses 6·<<X>> <<hit_points>>, otherwise it loses
-<<X>>d6 <<hit_points>>.
+check, the creature loses 6·<<X>> <<hit_points>>, otherwise it loses <<X>>d6
+<<hit_points>>.
 
 
 === Illuminate (X)
@@ -2268,9 +2260,9 @@ is up to three levels higher than yours.
 === Magical Stone
 *Level 1*
 You touch a nonmagical stone or slingshot no larger than your fist. It becomes
-magical, and flies in a direct line towards an enemy within __wisdom__ meters at
-great speed. The stone automatically hits the opponent, dealing damage equal to
-three times your <<caster_level,level>>.
+magical, and flies in a direct line towards an enemy within __wisdom__ meters
+at great speed. The stone automatically hits the opponent, dealing damage equal
+to three times your <<caster_level,level>>.
 
 
 === Milf's Caustic Aerosol (X)
@@ -2292,8 +2284,8 @@ You create <<X>> edible and nourishing melons. Each melon weighs one
 
 You target a creature within 10 plus 10·<<X>> meters, and telepathically send
 10·<<X>> words to it. It can telepathically reply with the same number of
-words. If the recipient makes a successful __charisma__ check, no one notices its
-distraction while receiving and replying.
+words. If the recipient makes a successful __charisma__ check, no one notices
+its distraction while receiving and replying.
 
 
 === Mosstrum’s Magical Aura (X)
@@ -2405,11 +2397,11 @@ cryptographic cipher text, but it does let you understand secret languages.
 === Remove Fear (X)
 *Level 2+, range: __charisma__ meters*
 
-You target an ally within range. The spell automatically
-removes <<X>> fear-based conditions such as <<demoralized>>.
+You target an ally within range. The spell automatically removes <<X>>
+fear-based conditions such as <<demoralized>>.
 
-If the target suffers from more than <<X>> fear effects, the GM chooses which to
-remove.
+If the target suffers from more than <<X>> fear effects, the GM chooses which
+to remove.
 
 [quote]
 There are more fear effects than the ones described in this guide.
@@ -2456,12 +2448,12 @@ into moves).
 
 You touch  a nonmagical wearable item that weighs at least one
 <<item_slots,item slot>> and is worth at least <<X>> silver pieces. The item
-becomes a <<consumption_check,consumable>> magical item with <<X>>
-<<usage_points>>. When the wearer of such an item falls more than one meter,
-the magic in the item activates and the fall is slowed so the wearer does not
-take any damage from the fall. When the wearer has landed, the item loses one
-of its <<usage_points>>. When all the item’s usage points have been spent, the
-item crumbles to dust.
+becomes a {consumable} magical item with <<X>> <<usage_points>>. When the
+wearer of such an item falls more than one meter, the magic in the item
+activates and the fall is slowed so the wearer does not take any damage from
+the fall. When the wearer has landed, the item loses one of its
+<<usage_points>>. When all the item’s usage points have been spent, the item
+crumbles to dust.
 
 [quote]
 the item is magical so it can be detected with <<_detect_magic>>.
@@ -2557,7 +2549,8 @@ Other than being invisible, the marks behave as normal chalk marks, which means
 they can be rubbed out or washed away with water.
 
 The chalk stops being magical once you stop focusing on the spell, or after
-__charisma__ hours. But the marks remain visible to you, and invisible to others.
+__charisma__ hours. But the marks remain visible to you, and invisible to
+others.
 
 //END_SORT
 
@@ -2614,6 +2607,7 @@ checks.
 *Easy*: Easy checks have a target number that's 3 higher than normal checks.
 
 //KEY:
+[[GM,GM]]
 *GM*: The Game Master.
 
 //KEY:

@@ -1,7 +1,7 @@
-= Hero's guide to doom & destruction & stuff
-
+= Hero's Guide to Doom & Destruction & Stuff
+// {{{ VARIABLES
 :stylesheet: style.css
-:doctype: article
+:doctype: book
 :icons: font
 :sectlinks:
 :toc:
@@ -11,10 +11,11 @@
 :stem:
 :xrefstyle: full
 
-// {{{ VARIABLES
+
 :A: xref:adventure#
 :E: xref:elite#
 :X: xref:adventurer#X[x]
+:elites: xref:elites#[Elite's Guide to Doom & Destruction & Stuff]
 :action: xref:adventurer#_actions[action]
 :advantage: xref:adventurer#advantage[advantage]
 :adventurers_ability: xref:adventurer#_adventurers_special_ability[adventurer's ability]
@@ -29,9 +30,12 @@
 :difficult: xref:adventurer#difficult[difficult]
 :encumbered: xref:adventurer#encumbered[encumbered]
 :exhausted: xref:adventurer#exhausted[exhausted]
+:heal4: xref:adventurer#_heal_x[Heal 4]
+:heal5: xref:adventurer#_heal_x[Heal 5]
 :hit_point_total: xref:adventurer#hit_point_total[hit point total]
 :item_slot: xref:adventurer#item_slots[item slot]
 :item_slots: xref:adventurer#item_slots[item slots]
+:kosh: xref:adventurer#kosh[kosh]
 :move: xref:adventurer#moves[move]
 :moves: xref:adventurer#moves[moves]
 :nat1: xref:adventurer#nat1[1]
@@ -44,9 +48,6 @@
 :trauma_table: xref:adventurer#trauma_table[trauma table]
 :usage_point: xref:adventurer#usage_points[usage point]
 :usage_points: xref:adventurer#usage_points[usage points]
-:heal4: xref:adventurer#_heal_x[Heal 4]
-:heal5: xref:adventurer#_heal_x[Heal 5]
-:kosh: xref:adventurer#kosh[kosh]
 // }}}
 
 When you reach your third level, you can choose a heroic class, which allows
@@ -56,6 +57,8 @@ The game now starts to transition from survival into heroic fantasy; your
 character gains powers and special abilities, you can carry more resources,
 traversing the wilderness is less dangerous, and you begin establishing good
 reputations, bases of operations, and strong allies.
+
+toc::[]
 
 // {{{ CHAMPION
 == CHAMPION
@@ -71,9 +74,12 @@ undead, casting spells from the front lines, and healing their comrades.
 ==== More Hit Points
 Your {hit_point_total} is increased by 8.
 
+==== Specialization
+You may switch two stats.
+
 ==== Better Stats
-Increase your __constitution__ and __charisma__ by one point each, and increase
-one other stat by one point as well.
+Roll a d20 with {advantage}; if the roll is higher than your __wisdom__
+increase that it by one point. Do the same for __charisma__.
 
 ==== Weapon Skills
 
@@ -86,7 +92,7 @@ one other stat by one point as well.
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _strength_  | Skilled     | 1d8
 | Ranged Weapons        | _wisdom_    | Unskilled   | 1d6
-| Heavy Melee Weapons   | _strength_  | Unskilled   | 1d12
+| Heavy Melee Weapons   | _strength_  | Unskilled   | 2d12
 | Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
 //----------------------|-------------|-------------|-------------
 |===
@@ -168,9 +174,9 @@ take up any {item_slots}.
 ==== More Hit Points
 Increase your {hit_point_total} by 1d8. Roll with {advantage}.
 
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
 
 ==== Adventurer's Ability
 You may change your {adventurers_ability} if you want.
@@ -235,12 +241,12 @@ lower than yours.
 
 === Level 5
 
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
+
 ==== More Hit Points
 Increase your {hit_point_total} by 1d8. Roll with {advantage}.
-
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
 
 ==== New Spellbook
 You acquire a __champion's spellbook__; it is already attuned to you, and it
@@ -250,8 +256,7 @@ yours.
 
 === Level 6: Graduation
 It is time for you to move on. You’re no longer just an hero, you’re an Elite.
-See how this affects you in the
-xref:elites#[Elite’s Guide to doom & destruction & stuff].
+See how this affects you in the {elites}.
 
 // CHAMPION }}}
 
@@ -269,9 +274,12 @@ The mage is a scholar that solely specializes in spellcasting.
 ==== More Hit Points
 Your {hit_point_total} is increased by 6.
 
+==== Specialization
+You may switch two stats.
+
 ==== Better Stats
-Increase your __intelligence__ and __wisdom__ by one point each, and increase
-one other stat by one point as well.
+Roll a d20 with {advantage}; if the roll is higher than your __intelligence__
+increase that it by one point. Do the same for __wisdom__.
 
 ==== Weapon Skills
 You are only __skilled__ at using daggers and quarterstaffs, both of which are
@@ -345,9 +353,9 @@ book has the <<mage>> property, and its level is no higher than yours.
 ==== More Hit Points
 Increase your {hit_point_total} by 1d6. Roll with {advantage}.
 
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
 
 ==== New Spellbook
 You acquire a <<mages_spellbook>> with two {usage_points}. The spell in the
@@ -370,17 +378,14 @@ the __charisma__ check you must make when casting the __Snooze (X)__ spell.
 
 
 //KEY:
-*Collector*: When you become a __collector__,  and every time you as a
-__collector__ gain a new level, you acquire a new <<mages_spellbook>> with a
-new spell on it; the spell is of your level or less and it has two
-{usage_points}.
+*Collector*: When you become a __collector__,  and every time you gain a level
+as a __collector__ you acquire a new <<mages_spellbook>> with a spell on it;
+the spell is of your level or less and it has two {usage_points}.
 
 
 //KEY:
 *Efficient Caster*: Whenever you cast a spell you make a roll. If you roll
-below or equal your __level__ your book does not lose a {usage_point} and you
-gain a new action right away, allowing you to, among other things, cast the same
-spell again.
+below your __level__ it is as if you had rolled a {nat1}.
 
 
 //KEY:
@@ -417,21 +422,21 @@ one of its multilevel variants before.
 
 === Level 5
 
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
+
 ==== More Hit Points
 Increase your {hit_point_total} by 1d6. Roll with {advantage}.
-
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
 
 ==== New Spellbook
 You acquire a <<mages_spellbook>> with two {usage_points}. The spell in the
 book has the <<mage>> property, and its level is no higher than yours.
 
+
 === Level 6: Graduation
 It is time for you to move on. You’re no longer just an hero, you’re an Elite.
-See how this affects you in the
-xref:elites#[Elite’s Guide to doom & destruction & stuff].
+See how this affects you in the {elites}.
 
 // MAGE }}}
 
@@ -447,9 +452,12 @@ The rogue is stealthy, clever, and dangerous.
 ==== More Hit Points
 Your {hit_point_total} is increased by 8.
 
+==== Specialization
+You may switch two stats.
+
 ==== Better Stats
-Increase your __dexterity__ and __wisdom__ by one point each, and increase one
-other stat by one point as well.
+Roll a d20 with {advantage}; if the roll is higher than your __wisdom__
+increase that it by one point. Do the same for __charisma__.
 
 ==== Weapon skills
 You are __skilled__ at using light weapons, unarmed combat, as well throwing
@@ -472,6 +480,9 @@ daggers.
 |===
 --
 
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
 
 ==== Armor Skills
 You are __skilled__ at using light armor, but not shields.
@@ -483,6 +494,7 @@ You may change your {adventurers_ability} if you want.
 You gain one of the abilities below.
 
 //START_SORT //KEY:
+
 
 //KEY:
 *Absent*: You have {advantage} on all checks related to sneaking, hiding,
@@ -497,10 +509,9 @@ __skilled__ with the weapon you are using.
 
 //KEY:
 *Acrobat*: By spending an {action} you can jump up to __dexterity__ meters
-horizontally, or up to __L__ meters vertically, where __L__ is your level.
-You cannot do this if you're {encumbered}, {exhausted}, or similarly
-affected. Your acrobatic skills also enables you to move at full speed in
-difficult terrain.
+horizontally, or up to __level__ meters vertically. You cannot do this if
+you're {encumbered}, {exhausted}, or similarly affected. Your acrobatic skills
+also enables you to move at full speed in difficult terrain.
 
 
 //KEY:
@@ -508,12 +519,12 @@ difficult terrain.
 as you have one on you, and you are not {encumbered}, {exhausted},
 {restrained} or similar. You can spend three {moves} (instead of an
 {action}) to make a ranged attack with a dagger, as long as the target is
-within __L__ meters, where __L__ is your level.
+within __level__ meters of you.
 
 
 //KEY:
 *Lockpicker*: You have {advantage} on all checks (including
-{consumption_checks}) when using your lockpicking tools, and one of the sets of
+{consumption_checks}) when using your lockpicking tools. One of the sets of
 lockpicking tools you carry do not take up an {item_slot}. If you do not have a
 set of lockpicking tools already, you receive one when you pick this ability.
 
@@ -528,8 +539,9 @@ than you. It cannot even be opened with the key. It takes 10 minutes and one
 one. You are __skilled__ at using the {kosh}, and when you use it, the die
 you use to determine if the baddie goes unconscious is 1d10, and if the
 baddie's level is lower than yours, you roll your d10 with {advantage}. If
-you combine this ability with the {shady} {adventurers_ability}, the you roll
-1d10 to test for unconsciousness regardless of the level of the baddie.
+you combine this ability with the {shady} {adventurers_ability}, then you
+always roll 1d10 with {advantage} to test for unconsciousness regardless of the
+level of the baddie.
 
 
 //KEY:
@@ -538,11 +550,11 @@ when using your tinkering tools, and one of the sets of tinkering tools you
 carry do not take up an {item_slot}.
 
 You can repair weapons and armor pieces just as if you had the {armorer}
-adventurer's ability.
+{adventurers_ability}.
 
-Your attack checks and damage rolls against mechanoid creatures are made with
-{advantage}. You also completely ignore any and all damage resistances these
-creatures have.
+Your attack checks and damage rolls against automatons and mechanoid creatures
+are made with {advantage}. You also completely ignore any damage resistances
+such creatures might have.
 
 You have {advantage} on all checks involved in detecting traps, certain
 hidden doors, and other hidden mechanical installations.
@@ -557,9 +569,9 @@ your level.
 
 
 //KEY:
-*Tracker*: You magically mark a baddie within __charisma__ meters. You can only
-have one creature marked at a time. You have {advantage} on all ranged attack
-checks you make against a marked baddie.
+*Tracker*: as an {action} you magically mark a baddie within __charisma__
+meters. You can only have one creature marked at a time. You have {advantage}
+on all ranged attack checks and damage rolls against that baddie.
 
 As long as the baddie is within __charisma__ kilometers of you, you are able to
 sense in which direction it is, and if you make a successful {adversarial}
@@ -573,13 +585,14 @@ tracker's mark.
 
 
 //KEY:
-*Venom Specialist*: You can make poisonous venom from dead monster parts. It
-requires a recently deceased monster, a bonfire or similar, one hour of
-preparation, one {consumption} of <<_alchemist_tools>>, and one steel bottle
-to create a dose of venom that can coat the business end of a slashing or
-piercing weapon, including arrowheads.
+*Venom Specialist*: You can make venom from dead monster parts. It requires a
+recently deceased monster, a bonfire or similar, one hour of preparation, one
+{consumption} of <<_alchemist_tools>>, and one glass bottle to create a bottle of
+venom that can coat the business end of a slashing or piercing weapon,
+including arrowheads. The bottle has a number of {usage_points} equal to your
+level.
 
-It takes one {action} to apply a readied bottle of venom to a readied weapon,
+It takes three {moves} to apply a readied bottle of venom to a readied weapon,
 and it lasts for up to one week one the weapon.
 
 Once you have coated your weapon, you add __L__d6 to the damage of the next
@@ -596,24 +609,22 @@ Some baddies, such as undeads and mechanoids, are immune to poison.
 ==== More Hit Points
 Increase your {hit_point_total} by 1d8. Roll with {advantage}.
 
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
 
 === Level 5
 
 ==== More Hit Points
 Increase your {hit_point_total} by 1d8. Roll with {advantage}.
 
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
-
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
 
 === Level 6: Graduation
 It is time for you to move on. You’re no longer just an hero, you’re an Elite.
-See how this affects you in the
-xref:elites#[Elite’s Guide to doom & destruction & stuff].
+See how this affects you in the {elites}.
 
 // ROGUE }}}
 
@@ -626,9 +637,12 @@ xref:elites#[Elite’s Guide to doom & destruction & stuff].
 ==== More Hit Points
 Your {hit_point_total} is increased by 10.
 
+==== Specialization
+You may switch two stats.
+
 ==== Better Stats
-Increase your __constitution__ and __strength__ by one point each, and increase
-one other stat by one point as well.
+Roll a d20 with {advantage}; if the roll is higher than your __strength__
+increase that it by one point. Do the same for __constitution__.
 
 ==== Weapon Skills
 
@@ -719,24 +733,23 @@ you carry does not take up any {item_slots}.
 ==== More Hit Points
 Increase your {hit_point_total} by 1d10. Roll with {advantage}.
 
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
+
 
 === Level 5
 
 ==== More Hit Points
 Increase your {hit_point_total} by 1d10. Roll with {advantage}.
 
-==== Better Stats
-For each of your stats, you roll a d20; if the roll is higher than the stat,
-that stat is increased by 1 point.
-
-
 === Level 6: Graduation
 It is time for you to move on. You’re no longer just an hero, you’re an Elite.
-See how this affects you in the
-xref:elites#[Elite’s Guide to doom & destruction & stuff].
+See how this affects you in the {elites}.
+
+==== Better Stat
+Roll a d20 and increase one of the stats that is lower than what you rolled.
+Too bad if you didn't roll higher than any stat.
 
 // WARRIOR }}}
 
