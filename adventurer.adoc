@@ -10,6 +10,8 @@
 :experimental:
 :stem:
 :xrefstyle: full
+:author: Kim Ravn Hansen
+:email: moccalotto@gmail.com
 
 
 :IS: <<item_slots,Item Slots>>
@@ -42,9 +44,9 @@ Your character has 6 primary stats:
 
 [%unbreakable]
 --
-*Strength*: melee attacks, jock stuff and carrying gear. +
+*Strength*: melee attacks, jock stuff. +
 *Dexterity*: stealth, melee defense, and tricky tasks. +
-*Constitution*: carrying gear and surviving bad trauma. +
+*Constitution*: carrying stuff, surviving bad trauma. +
 *Intelligence*: initiative, magic, and managing resources. +
 *Wisdom*: ranged attack, ranged defense, and perception. +
 *Charisma*: luck, negotiation, charm magic, and selling treasure.
@@ -65,12 +67,8 @@ permanent injury if you <<zero_hp,run out of hit points>>.
 number of hit points you have when you're at full health. This number increases
 every time you gain a new level, and when you're wearing armor.
 
-[[total_item_slots,total item slots]]
-*Total item slots*: is the maximum number of <<item_slots,items>> you can
-carry. This number is the highest of your __strength__ and __constitution__.
-
-*Unencumbered item slots*: is the number of items you can carry without being
-encumbered. This number is the lowest of your __strength__ and __constitution__.
+*Item slots*: is the maximum number of <<item_slots,items>> you can carry. This
+number is equal to your __constitution__.
 
 *Moves*: is the number of meters you can move in a round. You can also use
 moves to do other interesting <<moves,things>>.
@@ -208,8 +206,7 @@ Roll 1d6 on this table to find out if you have a shield.
 
 
 ==== Armor Pieces
-Armors give you extra hit points; you have 1d3-1
-<<light_armor_table,light armor pieces>> of your choice.
+Roll 1d6 on this table to find out what armor you have.
 
 [%header,cols="^2,10"]
 |===
@@ -644,32 +641,22 @@ disadvantage roll.
 
 //{{{EQUIPMENT
 == EQUIPMENT
-This section contains info on item slots, <<usage_points>>, and several lists
-of equipment. These lists are not exhaustive, and other types of items and
-equipment exist.
 
 === Money
-The weight of a few coins is negligible, but in large quantities, 100 coins
-take up one <<item_slots,item slot>>. A gold piece (__gp__) is equivalent to
-100 silver pieces (__sp__), a silver piece is 100 copper pieces (__cp__).
+A gold piece (__gp__) is equivalent to 100 silver pieces (__sp__), a silver
+piece is 100 copper pieces (__cp__).
+
+The weight of a few coins is negligible, but 100 coins take up one
+<<item_slots,item slot>>. 
 
 [[item_slots,item slots]]
 === Item Slots
-An average item uses up one item slot. Bulky or heavy items, such as heavy
-armor, can take up multiple item slots. Your number of item slots is determined
-by your __strength__ and __constitution__. The lower of these two numbers is
-your number of unencumbered item slots, and the higher number is your total
-number of item slots. You can use all your unencumbered item slots without any
-side effects, but If you use any of your remaining item slots, you become
-encumbered, which means that everything you do becomes difficult. You can never
-fill/carry more than your item slots total.
-
-.Calculating item slots
-====
-If your __strength__ is 7 and your __constitution__ is 16, you have 16 __item
-slots__, and 7 of those are __unencumbered item slots__. This means that, if
-you use 8 or more of your __item slots__, you become <<encumbered>>.
-====
+An average item uses up one item slot, but bulky or heavy items can use up
+more. The number of item slots you can carry without penalty is equal to your
+__constitution__, and if your constitution changes, so does the number
+of item slots you can carry. You can use up all your item slots without any
+side effects, but can carry up to __strength__ additional item slots by
+overburdening yourself and being <<encumbered>> while doing so.
 
 [[usage_points,usage points]]
 === Usage Points
@@ -707,7 +694,7 @@ cannot be used any more during that combat.
 === Gear
 
 .General Gear
-[%header,cols="8,^2,^2"]
+[%header,cols="7,^2,^3"]
 |===
 | Name                  | {IS} | {cost}
 //----------------------|------|---------
@@ -728,7 +715,7 @@ cannot be used any more during that combat.
 
 
 .Consumables
-[%header,cols="6,^2,^2,^2"]
+[%header,cols="5,^2,^2,^3"]
 |===
 | Name                                            | {IS} | {UP} | {cost}
 //------------------------------------------------|------|------|-----------
@@ -821,9 +808,10 @@ cannot be used any more during that combat.
 |===
 | Name                          | {IS} | {UP} | {cost}
 //------------------------------|------|------|------
-| Dagger                        |   1  |  1   | 3  gp
-| Spear                         |   1  |  1   | 3  gp
-| Darts                         |   1  |  4   | 3  gp
+| Dagger __(melee & thrown)__   |   1  |  1   | 3  gp
+| Javelin __(melee & thrown)__  |   1  |  1   | 3  gp
+| Axe __(melee & thrown)__      |   1  |  1   | 3  gp
+| Dart                          |   1  |  4   | 3  gp
 | Bow                           |   2  |  -   | 7  gp
 | ↳ Quiver of arrows            |   1  |  10  | 2  gp
 | Crossbow                      |   1  |  -   | 12 gp
@@ -837,12 +825,6 @@ See <<weapon_range>> for more info on how far your ranged attacks can reach.
 
 === Special Items
 //START_SORT //KEY:
-
-//NO KEY HERE
-[[coins,coins]]
-==== Coins
-Small amounts of counts do not take up any room, but 100 coins take up 1
-<<item_slots,item slot>>, and generally requires a small sack to contain.
 
 
 //KEY:
@@ -1142,7 +1124,7 @@ A type of ranged weapon, these weapons require ammunition and almost always
 requires two hands.
 
 *Throwing Weapons*:
-A type of ranged weapon, these weapons are typically one-handed. Some of 
+A type of ranged weapon, these weapons are typically one-handed. Some of
 throwing weapons (such as daggers and javelins) can also be used as light melee
 weapons.
 
@@ -1202,8 +1184,8 @@ them in many ways, and here's some examples.
 
 .Move economy
 ****
-Moves do not carry over to the next round; use them or lose them, they're gone
-as soon as you take your <<Actions,action>>.
+Moves do not __carry over__; use them or lose them, they're gone when you take
+<<Actions,action>> or the round ends.
 
 Effects and conditions, such as being <<prone>>, <<exhausted>>,
 <<armor_wear,wearing broken armor>>, or being affected by spells such as
@@ -1427,7 +1409,7 @@ death table. Check the <<CONDITIONS>> section for more info.
 
 [[death_table,death table]]
 .Death Table
-[%header,cols="^1,11",grid=none,frame=none,stripes=even]
+[%header,cols="^2,10"]
 |===
 | d100   | Effect
 //-------|--------------------------------------------------
@@ -1450,22 +1432,22 @@ points.
 --
 [[trauma_table,trauma table]]
 .Trauma table
-[%header,cols="^1,^2,8",stripes=even,frame=none,grid=none]
+[%header,cols="^2,^2,8"]
 |===
 | Roll  | Type       | Effect
 //------|------------|------------------------------
-| 101+  | Amputation | Lose a random limb
-| 100   | Permanent  | -1d4 to random stat
-| 89-99 | Permanent  | -1d8 maximum hit points
-| 90-98 | Reversible | -1 <<moves>>
-| 81-89 | Reversible | -1 to __charisma__
-| 71-80 | Reversible | <<weighed_down>>
-| 61-70 | Temporary  | -1 moves
-| 51-60 | Temporary  | All checks are <<difficult>>
-| 41-50 | Temporary  | -1d6 to random stat
-| 31-40 | Temporary  | -1d8 <<hit_point_total>> and current hit points
-| 21-30 | Reversible | Battle scar
-| 01-20 | -          | No trauma
+| 101+  | Amputation | Lose a random limb.
+| 100   | Permanent  | -1d4 to random stat.
+| 89-99 | Permanent  | -1d8 maximum hit points.
+| 90-98 | Reversible | -1 <<moves>>.
+| 81-89 | Reversible | -1 to __charisma__.
+| 71-80 | Reversible | -1 <<item_slots,item slot>>.
+| 61-70 | Temporary  | -1 <<moves,move>>.
+| 51-60 | Temporary  | All checks are <<difficult>>.
+| 41-50 | Temporary  | -1d6 to random stat.
+| 31-40 | Temporary  | -1d8 <<hit_point_total>> and current hit points.
+| 21-30 | Reversible | Battle scar.
+| 01-20 | -          | No trauma.
 //------|------------|------------------------------
 |===
 --
@@ -1597,7 +1579,7 @@ points lower than you normally would to succeed.
 
 //KEY:
 [[exhausted,exhausted]]
-*Exhausted*: Same as <<encumbered>> __and__ your number of moves is halved,
+*Exhausted*: You are <<encumbered>> __and__ your number of <<moves>> is halved,
 rounded down.
 
 
@@ -1609,7 +1591,7 @@ your fear. You have 2 fewer moves than normal.
 
 //KEY:
 [[invisible,invisible]]
-*invisible*: You are invisible. You cannot be targeted by creatures who rely
+*Invisible*: You are invisible. You cannot be targeted by creatures who rely
 primarily on sight. Even so, if a creature relies just partially on sight, its
 <<attack_and_damage,attack checks>> against you are <<difficult>>.
 
@@ -1661,13 +1643,6 @@ by 1 until you get food and <<rest>>.
 [[unconscious,unconscious]]
 *Unconscious*: You are unconscious; if you receive any kind of healing, you
 will wake up right away, otherwise you will wake up within 2d6 hours.
-
-//KEY:
-[[weighed_down,weighed down]]
-*Weighed Down*: While you have this condition you are carrying a virtual "load"
-that takes up one <<item_slots,item slot>>. You can receive this condition
-multiple times, forcing you to carry many virtual weights; this can happen if
-you receive the __weighed down__ <<trauma_table,trauma>> more than once.
 
 
 //END_SORT
@@ -1750,7 +1725,7 @@ you make an __intelligence__ check and refer to this table:
 [cols="^1s,10",stripes=odd]
 |===
 //---------|----------------------------------------------------
-| {twenty} | The spell fizzles and the book loses __all__ its <<usage_points>>.
+| {twenty} | The spell fizzles and the book loses all its <<usage_points>>.
 | Failure  | The spell fizzles.
 | Success  | The spell takes effect.
 | {one}    | The spell takes effect.
@@ -1780,8 +1755,8 @@ name.
 
 //KEY:
 [[X,_X_]]
-*X*: There are many versions of this spell, each with its own level. +
-See the <<example_multilevel>> example.
+*X*: There are many versions of this spell, each with its own level.
+__See the <<example_multilevel>> example.__
 
 //KEY:
 [[basic,basic]]
@@ -1876,6 +1851,14 @@ All spells listed in this section are <<basic>> and can be used by adventurers.
 // START_SORT ===
 
 
+=== Crackdown (X)
+*Level 2+, range: __wisdsom__ meters, <<focus>> (up to <<X>> rounds)*
+
+You call down a bolt of lightning onto a baddie within range. The bolt deals
+__[level]__d6 damage. Each round thereafter, at the cost of 3 <<moves>> you can
+call down lightning again.
+
+
 === Alertness (X)
 *Level 1+, <<focus>> (special)*
 
@@ -1887,10 +1870,10 @@ caster stops focusing on the spell, whichever comes first.
 
 
 === Alluring Attraction (X)
-*Level 1+, <<ritual>>, duration: <<X>> days*
+*Level 1+, <<ritual>>, duration: <<X>> days (special)*
 
-Of the next <<X>>+1 __charisma__ checks you make, you have <<advantage>> on
-checks that have a strong flirting component or involve physical attraction.
+You have <<advantage>> on the next <<X>>+1 __charisma__ checks you make that
+have a strong flirting component or involve physical attraction.
 
 
 === Animal Friendship (X)
@@ -2067,7 +2050,7 @@ attack checks against them remain <<difficult>>.
 *Level 1*
 
 An ally within <<X>> meters gets <<advantage>> on their next
-<<attack_and_damage,attack->> or <<Defense,defense check>>, provided it occurs
+<<attack_and_damage,attack>>- or <<_defense,defense check>>, provided it occurs
 within <<X>>+1 rounds.
 
 
@@ -2238,8 +2221,8 @@ Medium- and heavy armor is made of metal unless otherwise specified.
 === Luck (X)
 *Level 2+, duration: __charisma__ rounds*
 
-Whenever you make a __check__ with your d20, and you roll less than __X__, 
-this spell turns that roll into a __1__.
+Whenever you make a __check__ with your d20, and you roll less than __X__, this
+spell turns that roll into a __1__.
 
 
 === Mage Might (X)
@@ -2645,8 +2628,8 @@ using.
 order to make a successful check.
 
 //KEY:
-*Unskilled (armor)*: When you are not skilled at using a piece of armor you become
-<<weighed_down>>, causing you to lose one <<moves,move>>.
+*Unskilled (armor)*: When you are not skilled at using a piece of armor you
+lose one <<moves,move>>.
 
 //KEY:
 *Unskilled (weapon)*: When you are not skilled at using a weapon,

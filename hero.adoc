@@ -63,6 +63,7 @@ reputations, bases of operations, and strong allies.
 toc::[]
 
 // {{{ CHAMPION
+[[champion_class]]
 == CHAMPION
 
 [quote,Pontius LeDique]
@@ -109,7 +110,7 @@ medium shields.
 You can use __champion's spellbooks__ to cast spells directly from the front
 lines without even opening the books.
 
-*Champion's spellbooks* can contain both {basic} and __champion__ spells,
+*Champion's spellbooks* can contain both {basic} and <<champion>> spells,
 they can only be used by the champion they are attuned to, and they can be used
 without being opened.
 
@@ -138,7 +139,7 @@ below.
 |===
 
 *Champion's Ritual Casting* works exactly like __basic ritual casting__, except
-you're using a __champion's spellbook__, and can cast <<champion>> spells,
+you're using a __champion's spellbook__, and can cast __champion__ spells,
 provided they have the {ritual} property.
 
 *Recharging*: You can recharge a <<champions_spellbook>> if it is attuned to
@@ -771,7 +772,6 @@ Blaaaaaahahaaahah
 
 //START_SORT ===
 
-
 === Detect Undead, Major
 *<<champion>>, Level 4. Duration: __wisdom__ hours.*
 
@@ -811,7 +811,7 @@ Destroying or severely damaging either clipboard breaks the spell.
 
 
 === Trauma (X)
-*[basic}, Level 6*
+*{basic}, Level 6*
 You touch a baddie who must roll on the {trauma_table}: 1d100+{X}.
 
 //END_SORT
