@@ -1851,14 +1851,6 @@ All spells listed in this section are <<basic>> and can be used by adventurers.
 // START_SORT ===
 
 
-=== Crackdown (X)
-*Level 2+, range: __wisdsom__ meters, <<focus>> (up to <<X>> rounds)*
-
-You call down a bolt of lightning onto a baddie within range. The bolt deals
-__[level]__d6 damage. Each round thereafter, at the cost of 3 <<moves>> you can
-call down lightning again.
-
-
 === Alertness (X)
 *Level 1+, <<focus>> (special)*
 
@@ -1979,6 +1971,14 @@ only make it expand to areas where there is plenty of fuel.
 meter. If the fire is 1 square meter in size, it shrinks to the size of a
 bonfire. If the fire is the size of a bonfire, it goes out, not producing any
 additional smoke in the process.
+
+
+=== Crackdown (X)
+*Level 2+, range: __wisdsom__ meters, <<focus>> (up to <<X>> rounds)*
+
+You call down a bolt of lightning onto a baddie within range. The bolt deals
+__[level]__d6 damage. Each round thereafter, at the cost of 3 <<moves>> you can
+call down lightning again.
 
 
 === Cure Exhaustion
