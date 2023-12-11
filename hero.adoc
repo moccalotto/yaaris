@@ -16,6 +16,8 @@
 :E: xref:elite#
 :X: xref:adventurer#X[x]
 :elites: xref:elites#[Elite's Guide to Doom & Destruction & Stuff]
+:one: xref:adventurer#nat1[One]
+:twenty: xref:adventurer#nat20[Twenty]
 :action: xref:adventurer#_actions[action]
 :advantage: xref:adventurer#advantage[advantage]
 :adventurers_ability: xref:adventurer#_adventurers_special_ability[adventurer's ability]
@@ -125,13 +127,13 @@ without being opened.
 *Spellcasting procedure:*: Make a __charisma__ check and refer to the table
 below.
 
-[cols="^1s,11",stripes=odd]
+[cols="^2s,10"]
 |===
 //----------|----------------------------------------------------
-| {nat1}    | The spell takes effect.
+| {One}     | The spell takes effect.
 | Success   | The spell takes effect, and the book loses a {usage_point}.
 | Failure   | The spell fizzles.
-| {nat20}   | The spell fizzles, and the book loses all its {usage_points}.
+| {Twenty}  | The spell fizzles, and the book loses all its {usage_points}.
 //----------|----------------------------------------------------
 |===
 
