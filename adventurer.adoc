@@ -60,10 +60,12 @@ Your starting stats range from 8 through 13, and cannot go beyond 15.
 [[level,level]]
 *Level*: your level is a measure of your badassity. You start at a level 1 and
 max out at level 10. Baddies, spells, certain items and challenges also have
-levels. You gain new levels by acquiring treasure and notoriety.
+levels. You gain new levels by acquiring treasure and notoriety. Whenever we
+use the letter <<L>> in this document, we refer to your level.
 
 *Hit points*: this is your current number of hit points. You can die or suffer
-permanent injury if you <<zero_hp,run out of hit points>>.
+permanent injury if you <<zero_hp,run out of hit points>>. We sometimes refer
+to hit points as HP.
 
 [[hit_point_total,hit point total]]
 *Hit point total*: is the maximum number of hit points you can have. I.e. the
@@ -2060,7 +2062,7 @@ within <<X>>+1 rounds.
 
 
 === Flaming Fingers (X)
-*Level 1*
+*Level 1+*
 
 Jets of fire spew forth from your burning hands, scorching up to <<X>> adjacent
 targets of your choice. If you make a successful __intelligence__ check, each
@@ -2561,12 +2563,12 @@ For instance, if you're attacking a baddie who is 2 or more levels higher than
 you, your check is difficult.
 
 //KEY:
-*Attack Check, melee*: A check to hit an opponent. It's an <<adversarial>>
+*Attack Check (Melee)*: A check to hit an opponent. It's an <<adversarial>>
 __strength__ check, and it is <<difficult>> if you're not skilled at using the
 given weapon.
 
 //KEY:
-*Attack Check, ranged*: A check to hit an opponent. It's an <<adversarial>>
+*Attack Check (Ranged)*: A check to hit an opponent. It's an <<adversarial>>
 __wisdom__ check, and it is <<difficult>> if you're not skilled at using the
 given weapon.
 
@@ -2580,11 +2582,11 @@ stats). For instance: when rolling a strength check you roll a d20 and must
 roll lower than your strength to succeed.
 
 //KEY:
-*Defense Check, melee*: A check to avoid being hit by melee attacks. This is an
-<<adversarial>> __dexterity__ check.
+*Defense Check (Melee)*: A check to avoid being hit by melee attacks. This is
+an <<adversarial>> __dexterity__ check.
 
 //KEY:
-*Defense Ranged, melee*: A check to avoid being hit by ranged attack. This is
+*Defense Check (Ranged)*: A check to avoid being hit by ranged attack. This is
 an <<adversarial>> __wisdom__ check.
 
 //KEY:
@@ -2605,12 +2607,11 @@ when they lose all of them, they die.__
 gets to act first.
 
 //KEY:
-*Level, L*: A character can have a level between 1 and 10. Baddies, traps,
-locks, spells, and various tasks can also have a level.
+*Level, L*: [[L,L]] Your Level. 
 
 //KEY:
-*NPC, NPCs*: Non player character(s). These persons and creatures are played
-by the GM.
+*NPC, NPCs*: Non player character(s). These persons and creatures are played by
+the GM.
 
 //KEY:
 *PC, PCs*: Player Character(s).
@@ -2630,11 +2631,11 @@ using.
 order to make a successful check.
 
 //KEY:
-*Unskilled (armor)*: When you are not skilled at using a piece of armor you
+*Unskilled (Armor)*: When you are not skilled at using a piece of armor you
 lose one <<moves,move>>.
 
 //KEY:
-*Unskilled (weapon)*: When you are not skilled at using a weapon,
+*Unskilled (Weapon)*: When you are not skilled at using a weapon,
 your __attack check__ is <<difficult>>, and the results of your attack checks
 are not as favorable. See <<attack_check_results_table>>.
 
