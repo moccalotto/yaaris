@@ -2640,8 +2640,7 @@ your __attack check__ is <<difficult>>, and the results of your attack checks
 are not as favorable. See <<attack_check_results_table>>.
 
 //KEY:
-[[GM,GM]]
-*GM*: The Game Master.
+*GM*: [[GM,GM]] The Game Master.
 
 //END_SORT
 
