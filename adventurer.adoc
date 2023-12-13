@@ -264,7 +264,7 @@ same as the first roll, reroll it.
 | 1d10 | Item
 //-----|-----------------------------
 | 1    | 2d4 gold pieces
-| 2    | <<spellbook,Spellbook>> with 2 <<usage_points>> 
+| 2    | <<spellbook,Spellbook>> with 2 <<usage_points>>
          and a spell of the <<GM,GMs>> choice.
 | 3    | <<torch,Torch>>
 | 4    | <<spikes,Spikes>>
@@ -318,7 +318,7 @@ each weapon category.
 ==== Adventurer's Blessing
 
 An adventurer is not just someone who chooses to go on adventures, the blood in
-their veins is magical, and it makes them formidable and among the only 
+their veins is magical, and it makes them formidable and among the only
 persons who can be magically revived.
 
 [%collapsible]
@@ -638,14 +638,14 @@ A gold piece (__gp__) is equivalent to 100 silver pieces, a silver piece (sp)
 is 100 copper pieces (__cp__).
 
 The weight of a few coins is negligible, but 100 coins take up one
-<<item_slots,item slot>>. 
+<<item_slots,item slot>>.
 
 [[item_slots,item slots]]
 === Item Slots
 An average item uses up one item slot, but bulky or heavy items can use up
 more. The number of item slots you can carry without penalty is equal to your
 __constitution__. If your __constitution__ changes so does the number of item
-slots you can carry. 
+slots you can carry.
 
 [[overburden,overburden]]
 *Overburdening*: You can use up all your item slots without any adverse
@@ -1022,7 +1022,7 @@ spikes can wedge a door shut until the spikes are removed.
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
 
-*Repairing mechanisms*: 
+*Repairing mechanisms*:
 To repair a trap, mechanism, stuck door, or similar, you spend 10 minutes and
 one {consumption} of tinkering tools. Then you make a
 __dexterity__ check and an __intelligence__ check.
@@ -1031,7 +1031,7 @@ __dexterity__ check and an __intelligence__ check.
 * If one is successful, the item is still damage, but you may try again.
 * If both failed, you cannot fix this item until you've gained a new level.
 
-*Repairing armors*: 
+*Repairing armors*:
 This is like repairing mechanisms, except: only <<armorer,armorers>> can repair
 armors, and only __light armor__ can be repaired using tinkering tools alone;
 __medium__ and __heavy__ armor also requires a furnace (or the <<_furnace>>
@@ -1042,7 +1042,7 @@ This is like repairing mechanisms, except: only <<armorer,armorers>> can repair
 weapons, and it takes twice as long if the weapon is broken rather than
 damaged.
 
-*Disarming traps*: 
+*Disarming traps*:
 To disarm a trap you spend 10 minutes and one {consumption}
 of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 
@@ -1115,10 +1115,15 @@ This section is all about fighting 🤺
 
 .Terms
 ****
-*Skilled & Unskilled*:
+*Weapon: Skilled & Unskilled*:
 Adventurer's are typically skilled at using ranged weapons and light melee
 weapons. If you are not skilled at using a weapon, the
 <<attack_and_damage,attack check>> is <<difficult>>.
+
+*Armor: Skilled & Unskilled*:
+Adventurer's are typically skilled using light armor pieces. For each piece of
+armor you are wearing that you are not skilled at using, you lose one
+<<moves,move>>.
 
 *Unarmed Combat*:
 Requires two free hands but does not suffer from <<_weapon_wear,weapon wear>>.
@@ -1235,7 +1240,7 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 .Adventurer's Attack and Damage
 [%header,cols="6,^2,^2,^2"]
 |===
-| Weapon                | Stat        | Skill       | Damage 
+| Weapon                | Stat        | Skill       | Damage
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _Strength_  | Skilled     | 1d6
 | Ranged Weapons        | _Wisdom_    | Skilled     | 1d6
@@ -1725,7 +1730,7 @@ time to do so.
   ritual.
 
 
-*Procedure*: 
+*Procedure*:
 You spend 15 minutes and one {consumption} of <<magic_components>>, and then
 you make an __intelligence__ check and refer to this table:
 
@@ -1746,7 +1751,7 @@ Adventurers can recharge spellbooks, restoring them to their maximum
 <<usage_points>>.
 
 *Requirements*: The spell in the spellbook must contain a <<basic>> spell with
-a level no higher than yours. 
+a level no higher than yours.
 
 *Procedure*: You start by spending one {consumption} of <<magic_components>>,
 followed by 30 minutes of ritualistic work. Then you make an __intelligence__
@@ -2235,7 +2240,7 @@ spell turns that roll into a __1__.
 === Mage Might (X)
 *Level 1+, <<focus>> (duration up to <<X>> rounds)*
 
-Your __strength__ score becomes __15+0.5·<<X>>__ (rounded down). 
+Your __strength__ score becomes __15+0.5·<<X>>__ (rounded down).
 
 
 === Magical Reading
@@ -2564,13 +2569,13 @@ you, your check is difficult.
 
 //KEY:
 *Attack Check (Melee)*: A check to hit an opponent. It's an <<adversarial>>
-__strength__ check, and it is <<difficult>> if you're not skilled at using the
-given weapon.
+__strength__ check, and it is <<difficult>> if you're not skilled at using your
+weapon.
 
 //KEY:
 *Attack Check (Ranged)*: A check to hit an opponent. It's an <<adversarial>>
-__wisdom__ check, and it is <<difficult>> if you're not skilled at using the
-given weapon.
+__wisdom__ check, and it is <<difficult>> if you're not skilled at using your
+weapon.
 
 //KEY:
 *Baddie*: A person, creature, or monster that is hostile or otherwise
@@ -2578,8 +2583,8 @@ considered to be your enemy.
 
 //KEY:
 *Check*: You roll your d20 against a given target number (usually one of your
-stats). For instance: when rolling a strength check you roll a d20 and must
-roll lower than your strength to succeed.
+stats). For instance: when rolling a __strength__ check you roll a d20 and must
+roll lower than your __strength__ to succeed.
 
 //KEY:
 *Defense Check (Melee)*: A check to avoid being hit by melee attacks. This is
@@ -2607,7 +2612,7 @@ when they lose all of them, they die.__
 gets to act first.
 
 //KEY:
-*Level, L*: [[L,L]] Your Level. 
+*Level, L*: [[L,L]] Your Level.
 
 //KEY:
 *NPC, NPCs*: Non player character(s). These persons and creatures are played by
@@ -2621,23 +2626,23 @@ the GM.
 specialist tool you are not proficient with.
 
 //KEY:
-*Roll*: Rolls are generic die rolls where you roll one or more specified dice,
-such as __3d6__, __1d10__, __2d8+2__, etc. The most common type of roll is the
-damage roll, where you roll your damage die for the type of weapon you're
+*Roll*: A roll is simply when you roll a die or dice such as such as __1d20__,
+__3d6__, __1d10__, __2d8+2__, etc. The most common type of roll is the
+<<_checks,check>>, where you use a __d20__, and the next most common type is
+the damage roll, where you roll your damage die for the type of weapon you're
 using.
 
 //KEY:
-*Target Number, TN*: The number you must roll below (usually with your d20) in
-order to make a successful check.
+*Target Number, TN*: The number you must roll below (usually with your __d20__)
+in order to make a successful check.
 
 //KEY:
-*Unskilled (Armor)*: When you are not skilled at using a piece of armor you
-lose one <<moves,move>>.
+*Unskilled (Armor)*:  For each piece of armor you are wearing that you are
+not skilled at using, you lose one <<moves,move>>.
 
 //KEY:
-*Unskilled (Weapon)*: When you are not skilled at using a weapon,
-your __attack check__ is <<difficult>>, and the results of your attack checks
-are not as favorable. See <<attack_check_results_table>>.
+*Unskilled (Weapon)*: If you are not skilled at using your weapon, your
+__attack{sp}check__ is <<difficult>>.
 
 //KEY:
 *GM*: [[GM,GM]] The Game Master.
