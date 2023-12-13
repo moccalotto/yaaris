@@ -304,10 +304,10 @@ your hit points, you have to roll on the <<death_table>>.
 
 [[armor_skills]]
 ==== Armor Skills
-You are skilled at using light shields and light armors. If you are wearing an
-armor you're not skilled at using, you lose one <<moves,move>>. See the
-<<Armor>> section for more info and pay attention to what happens if you're
-<<armor_wear,wearing broken armor>>.
+You are skilled at using light shields and light armors. For each piece of
+armor you are wearing that you are not skilled at using, you lose one
+<<moves,move>>.
+
 
 [[weapon_skills]]
 ==== Weapon Skills
@@ -1058,7 +1058,7 @@ of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 Aside from illuminating the area around you, torches can be used for a number
 of things.
 
-Torches have 2 <<usage_points>>, and you must make a {consumption}every hour.
+Torches have 2 <<usage_points>>, and use a {consumption} every hour.
 
 Torches can be revitalized; it requires one consumption of <<lamp_oil>> to
 restore 1 <<usage_points,usage point>> to a torch. This cannot be done while
@@ -1113,28 +1113,22 @@ to the table below, and do what it says, even if you don't like the result.
 
 This section is all about fighting 🤺
 
-.Terms
+.Attack Types
 ****
-*Weapon: Skilled & Unskilled*:
-Adventurer's are typically skilled at using ranged weapons and light melee
-weapons. If you are not skilled at using a weapon, the
-<<attack_and_damage,attack check>> is <<difficult>>.
-
-*Armor: Skilled & Unskilled*:
-Adventurer's are typically skilled using light armor pieces. For each piece of
-armor you are wearing that you are not skilled at using, you lose one
-<<moves,move>>.
-
 *Unarmed Combat*:
 Requires two free hands but does not suffer from <<_weapon_wear,weapon wear>>.
-Only <<pugilist,pugilists>> are skilled at using these weapons.
+Only <<pugilist,pugilists>> are skilled at unarmed combat. 
+See also <<weapon_skills,weapon skills>>.
 
 *Light Melee Weapons*:
-These weapons, except quarterstaves, are one-handed.
+These weapons, except quarterstaves, are one-handed. Adventurers are skilled
+at using these weapons.
+See also <<weapon_skills,weapon skills>>.
 
 *Heavy Melee Weapons*:
 Require two hands. Only <<great_weapon_specialist,great weapon specialists>>
 are skilled at using these weapons.
+See also <<weapon_skills,weapon skills>>.
 
 *Projectile Weapons*:
 Require ammunition and two hands.
@@ -1189,6 +1183,7 @@ them in many ways, and here's some examples.
 | Mount or dismount                             |   2
 | Move 1 meter in bad terrain                   |   2
 | Get up from a prone position                  |   2
+| Reload a projectile weapon from quiver/bag    |   2
 | Remove your gauntlets                         |   4
 | Remove your helmet                            |   4
 | Drop a functional heavy shield                |   5
