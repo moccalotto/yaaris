@@ -16,6 +16,7 @@
 
 :IS: <<item_slots,Item Slots>>
 :UP: <<usage_points,Usage Points>>
+:up: <<usage_points,usage points>>
 :AHP: <<armor_hit_points,Hit Points>>
 :cost: <<_money,Cost>>
 :hero_book: xref:hero[Hero's Guide To Doom & Destruction & Stuff]
@@ -45,12 +46,14 @@ Your character has 6 primary stats:
 [%unbreakable]
 --
 *Strength*: melee attacks, jock stuff. +
-*Dexterity*: stealth, melee defense, and tricky tasks. +
+*Dexterity*: stealth, melee defense, tricky tasks. +
 *Constitution*: carrying stuff, surviving bad trauma. +
-*Intelligence*: initiative, magic, and managing resources. +
-*Wisdom*: ranged attack, ranged defense, and perception. +
-*Charisma*: luck, negotiation, charm magic, and selling treasure.
+*Intelligence*: initiative, magic, tricky tasks. +
+*Wisdom*: ranged attack, ranged defense, perception. +
+*Charisma*: luck, negotiation, charm magic, selling treasure.
 --
+
+Your starting stats range from 8 through 13, and cannot go beyond 15.
 
 === Extra Stuff
 
@@ -80,8 +83,8 @@ moves to do other interesting <<moves,things>>.
 Go through the following sections, one by one, to create a new character.
 
 === 1. Stats
-For each of your six stats in order, you roll 1d8+6 and assign the result to
-that stat. Now each stat has a value between 7 and 14.
+For each of your six stats in order, you roll 1d6+7 and assign the result to
+that stat. Now each stat has a value between 8 and 13.
 
 === 2. Background & Fluff
 Roll on each of the following tables to flesh out your character.
@@ -516,7 +519,7 @@ one of the ration packs you carry does not take up any <<item_slots>>.
 It is time for you to move on. You’re no longer just an adventurer, you’re a
 Hero, so you get a class from the {hero_book}.
 
-[IMPORTANT]
+*NOTE*:
 Even though you gain a heroic class at 3rd level, you're still an adventurer;
 you still have the <<_adventurers_special_ability>>, the
 <<_adventurers_blessing>>, as well as the other abilities adventurers have,
@@ -534,17 +537,17 @@ as 1d6, 2d4, 3d6+3, etc. A check is a special kind of roll described below.
 === Checks
 You make checks to see if your character can successfully do certain
 interesting things; you roll your d20. The check is successful if you roll
-__under__ a specified *__target number__*, which is usually one of your stats.
+__under__ a specified __target number__, which is usually one of your stats.
 
-NOTE: If the target number is 10, you must roll __below__ 10, not equal to 10,
-to
-succeed,
-
-.Target Number
+.Checks & Target Numbers
 ====
+*BASIC EXAMPLE*:
+If the target number is 10, you must roll 9 or lower to succeed.
+
+*CONCRETE EXAMPLE*:
 You want to lift something really heavy, so the GM tells you to make a
-__strength__ check. You roll a d20. If you rolled lower than your __strength__,
-the check was successful, otherwise it was unsuccessful.
+__strength__ check. Your __strength__ is 12. You must roll 11 or below to
+succeed. You roll a 12, which isn't a success.
 ====
 
 [[nat1,1]]
@@ -557,33 +560,23 @@ and, depending on the type of check, other positive result may happen.
 
 [[easy,easy]]
 *Easy checks*: are checks where the target number is 3 higher than what it
-would normally be.
-
-.Easy strength check
-====
-if your __strength__ is 9, making an easy __strength__ check would need to roll
-under 12.
-====
+would normally be. For instance, if your __strength__ is 9, making an easy
+__strength__ check would need to roll under 12.
 
 [[difficult,difficult]]
 *Difficult checks*: are checks where the target number is 3 lower than what it
-normally would be.
+normally would be. For instance, if your __strength__ is 9, making a difficult
+__strength__ check would need to roll under 6.
 
-.Difficult strength check
-====
-if your __strength__ is 9, making a difficult __strength__ check would need to
-roll under 6.
-====
+*Difficult trumps easy*: If one or more conditions make a check <<difficult>>,
+it remains difficult even if there are other many other conditions that make
+the check <<easy>>.
 
-*Both = Difficult*: If one or more conditions make a check <<difficult>>, it
-remains difficult even if there are other many other conditions that make the
-check <<easy>>.
-
-.Both = Difficult
 ====
-You are battling an orc whose level is 2 below yours. This would normally make
-the roll <<easy>>, but you're also <<encumbered>>, which makes the check
-<<difficult>>, so, overall, your check remains __difficult__.
+You are attacking an orc whose level is 2 below yours. This would normally make
+the roll <<easy>> (see __adversarial checks__ below), but you're also
+<<encumbered>>, which makes the check <<difficult>>, so, overall, your check
+remains __difficult__.
 ====
 
 [[adversarial,adversarial]]
@@ -620,17 +613,13 @@ or disadvantage, which changes the way you roll the dice.
 
 [[advantage,advantage]]
 *Advantage*: If a roll has advantage, you roll the dice twice, and pick the
-result you like best.
-
-.Damage roll with advantage
-====
-you have advantage on a Damage Roll, you roll your damage dice twice and pick
-the roll you like best.
-====
+result you like best. For instance, if you have advantage on a damage doll, you
+roll your damage dice twice and pick the roll you like best.
 
 [[disadvantage,disadvantage]]
 *Disadvantage*: If a roll has disadvantage, you roll the dice twice, and the GM
-picks the result they like.
+picks the result they like. For instance, if you have disadvantage on a check,
+you roll the d20 twice and let the GM chose which die to use.
 
 *Both = neither*: If at least one advantage and at least one disadvantage
 applies to the same roll, it becomes a normal without any advantage or
@@ -643,8 +632,8 @@ disadvantage roll.
 == EQUIPMENT
 
 === Money
-A gold piece (__gp__) is equivalent to 100 silver pieces (__sp__), a silver
-piece is 100 copper pieces (__cp__).
+A gold piece (__gp__) is equivalent to 100 silver pieces, a silver piece (sp)
+is 100 copper pieces (__cp__).
 
 The weight of a few coins is negligible, but 100 coins take up one
 <<item_slots,item slot>>. 
@@ -653,10 +642,13 @@ The weight of a few coins is negligible, but 100 coins take up one
 === Item Slots
 An average item uses up one item slot, but bulky or heavy items can use up
 more. The number of item slots you can carry without penalty is equal to your
-__constitution__, and if your constitution changes, so does the number
-of item slots you can carry. You can use up all your item slots without any
-side effects, but can carry up to __strength__ additional item slots by
-overburdening yourself and being <<encumbered>> while doing so.
+__constitution__. If your __constitution__ changes so does the number of item
+slots you can carry. 
+
+[[overburden,overburden]]
+*Overburdening*: You can use up all your item slots without any adverse
+effects, but can carry up to __strength__ additional item slots by
+overburdening yourself and being <<exhausted>> while doing so.
 
 [[usage_points,usage points]]
 === Usage Points
@@ -680,16 +672,27 @@ check__, and if it fails, one of your ration packs loses a <<usage_points,usage
 point>>.
 
 *Projectiles*:
-You do not roll a __consumption check__ every time you fire an arrow, bolt, or
-slingshot during combat. Instead you make one consumption check after the
-combat ends (one for each type of projectile you used). When you fire a
-projectile while not in combat, you make a consumption check with <<advantage>>
-after each projectile fired.
+If you have fired a ranged weapon that uses ammunition in combat, no matter how
+many times you fired it, you roll a single __consumption__ check after the
+combat to see if the ammunition loses a <<usage_points,usage point>>.
 
+If you fire a ranged weapon while not in combat (while exploring a dungeon,
+hunting, during a competition, or similar) you roll __consumption__ right away.
+
+When your ammunition (quiver of arrows, bag of stones, etc.) has lost all its
+<<usage_points>> it is gone,
+
+[[melee_and_ranged,consumable thrown weapons]]
 *Consumable Thrown Weapons*:
-Items that can be used in melee combat __and__ ranged combat, such as knives,
-spears, and javelins, do not have usage points; when you have thrown them, they
-cannot be used any more during that combat.
+If you have thrown a throwable weapon in combat, no matter how many times
+you threw it, you roll a single __consumption{sp}check__ after the combat
+to see if the weapon loses a <<usage_points,usage point>>.
+
+If your throwing weapon is damaged in combat (for instance, by you rolling a
+<<nat20>> on an attack check) the weapon loses a <<usage_points,usage point>>.
+
+When a throwable weapon reaches zero <<usage_points>> it is completely used up
+and cannot be repaired.
 
 === Gear
 
@@ -698,7 +701,7 @@ cannot be used any more during that combat.
 |===
 | Name                  | {IS} | {cost}
 //----------------------|------|---------
-| Backpack              |  0   | 1  gp
+| Backpack              |  0   | 5  sp
 | Bedroll               |  1   | 1  sp
 | Clothing, common      |  1   | 3  sp
 | Clothing, poor        |  1   | 3  cp
@@ -735,6 +738,9 @@ cannot be used any more during that combat.
 //------------------------------------------------|------|------|-----------
 |===
 
+
+[%unbreakable]
+--
 [[light_armor_table]]
 .Light Armor
 [%header,cols="5,^2,^2,^3"]
@@ -748,6 +754,8 @@ cannot be used any more during that combat.
 | Light Greaves         | 1    |  3    | 8  gp
 //----------------------|------|-------|------
 |===
+--
+
 
 .Medium Armor
 [%header,cols="5,^2,^2,^3"]
@@ -803,14 +811,15 @@ cannot be used any more during that combat.
 |===
 
 
+:melee_ranged: (<<melee_and_ranged,melee & ranged>>)
 .Ranged Weapons
 [%header,cols="7,^2,^2,^1"]
 |===
 | Name                          | {IS} | {UP} | {cost}
 //------------------------------|------|------|------
-| Dagger __(melee & thrown)__   |   1  |  1   | 3  gp
-| Javelin __(melee & thrown)__  |   1  |  1   | 3  gp
-| Axe __(melee & thrown)__      |   1  |  1   | 3  gp
+| Dagger  __{melee_ranged}__    |   1  |  1   | 3  gp
+| Javelin __{melee_ranged}__    |   1  |  1   | 3  gp
+| Axe     __{melee_ranged}__    |   1  |  1   | 3  gp
 | Dart                          |   1  |  4   | 3  gp
 | Bow                           |   2  |  -   | 7  gp
 | ↳ Quiver of arrows            |   1  |  10  | 2  gp
@@ -820,8 +829,9 @@ cannot be used any more during that combat.
 | ↳ Bag of slingshot            |   1  |  10  | 2  gp
 //------------------------------|------|------|------
 |===
-See <<weapon_range>> for more info on how far your ranged attacks can reach.
 
+[quote]
+See <<weapon_range>> for more info on how far your ranged attacks can reach.
 
 === Special Items
 //START_SORT //KEY:
@@ -1109,8 +1119,8 @@ weapons. If you are not skilled at using a weapon, the
 <<attack_and_damage,attack check>> is <<difficult>>.
 
 *Unarmed Combat*:
-Requires two free hands but does not suffer from <<_weapon_wear,weapon wear
-and tear>>. Only <<pugilist,pugilists>> are skilled at using these weapons.
+Requires two free hands but does not suffer from <<_weapon_wear,weapon wear>>.
+Only <<pugilist,pugilists>> are skilled at using these weapons.
 
 *Light Melee Weapons*:
 These weapons, except quarterstaves, are one-handed.
@@ -1120,26 +1130,24 @@ Require two hands. Only <<great_weapon_specialist,great weapon specialists>>
 are skilled at using these weapons.
 
 *Projectile Weapons*:
-A type of ranged weapon, these weapons require ammunition and almost always
-requires two hands.
+Require ammunition and two hands.
 
 *Throwing Weapons*:
-A type of ranged weapon, these weapons are typically one-handed. Some of
-throwing weapons (such as daggers and javelins) can also be used as light melee
-weapons.
+Typically one-handed; certain throwing weapons (such as daggers and javelins)
+can also be used as light melee weapons. See also <<melee_and_ranged>>.
 
-[[weapon_range,weapon range]]
+[[weapon_range,range]]
 *Range*:
-The range of ranged weapons is a number of meters equal to
-the lowest of your __strength__, __dexterity__, and __wisdom__.
+The range of ranged weapons is a number of meters equal to the lowest of your
+__strength__, __dexterity__, and __wisdom__; you cannot target baddies beyond
+this range, and you cannot shoot into areas of complete darkness.
 
 ****
 
 [[round,round]]
 === Rounds
-Combat is divided into 10-second rounds. At the beginning of every round,
-the adventurers roll __initiative__, to determine in which order they get to
-act.
+Combat is divided into 10-second rounds. At the beginning of every round the
+adventurers roll __initiative__, to determine in which order they get to act.
 
 During their turn, a combatant can do the following things in order.
 
@@ -1182,10 +1190,11 @@ them in many ways, and here's some examples.
 //----------------------------------------------|------
 |===
 
-.Move economy
+.Move Economy
 ****
-Moves do not __carry over__; use them or lose them, they're gone when you take
-<<Actions,action>> or the round ends.
+Any moves you haven't used when you take your <<Actions,action>> are lost, and
+if your convert your <<Actions,action>> into moves you lose any of those moves
+that you did not use before your turn ended.
 
 Effects and conditions, such as being <<prone>>, <<exhausted>>,
 <<armor_wear,wearing broken armor>>, or being affected by spells such as
@@ -1233,12 +1242,13 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 //----------------------|-------------|-------------|-------------
 |===
 
+:weapon_wear: <<_weapon_wear,weapon wear>>
 [[attack_check_results_table]]
 .Attack Check Results
 [cols="^2s,10",stripes=odd]
 |===
 //----------|-------------------------------------
-| {twenty}  | You miss and your weapon <<damaged_weapon,takes damage>>.
+| {twenty}  | You miss and your weapon loses a {up} (see {weapon_wear}).
 | Failure   | You deal half damage (rounded down) if you are
               <<weapon_skills,skilled>> with your weapon, otherwise you miss.
 | Success   | You deal normal damage.
@@ -1248,15 +1258,12 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 |===
 
 ==== Weapon Wear
-If you roll a <<nat20>> on your attack check, your weapon becomes damaged,
+If your weapon loses all its <<usage_points>> it is broken and unusable
+and must be repaired before it can be used again. Attempting to use such
+a weapon is <<difficult>> and you also have <<disadvantage>>
 
-[[damaged_weapon,damaged]]
-*Damaged*: attacking with a damaged weapon is <<difficult>> and if you roll a
-<<nat20>> on your attack check, your weapon becomes __unusable__.
-
-[[broken_weapon,broken]]
-*Unusable*: you cannot make attacks with an unusable weapon; it must
-be repaired by an <<armorer>> or professional blacksmith.
+*Thrown Weapons*: If a throwing weapon loses all its <<usage_points>> it is
+simply gone and cannot be repaired.
 
 === Defense
 When a baddie attacks you, you make a so-called __defense check__; if the
@@ -1573,14 +1580,12 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 
 //KEY:
 [[encumbered,encumbered]]
-*Encumbered*: All checks become <<difficult>>, meaning that you have to roll 3
-points lower than you normally would to succeed.
+*Encumbered*: All your checks are <<difficult>>.
 
 
 //KEY:
 [[exhausted,exhausted]]
-*Exhausted*: You are <<encumbered>> __and__ your number of <<moves>> is halved,
-rounded down.
+*Exhausted*: You are <<encumbered>> and you lose 3 <<moves>>.
 
 
 //KEY:
@@ -2551,17 +2556,17 @@ others.
 before they can get their hero class.
 
 //KEY:
-*Adversarial check*: A check that is affected by the level of the opposition.
+*Adversarial Check*: A check that is affected by the level of the opposition.
 For instance, if you're attacking a baddie who is 2 or more levels higher than
 you, your check is difficult.
 
 //KEY:
-*Attack check, melee*: A check to hit an opponent. It's an <<adversarial>>
+*Attack Check, melee*: A check to hit an opponent. It's an <<adversarial>>
 __strength__ check, and it is <<difficult>> if you're not skilled at using the
 given weapon.
 
 //KEY:
-*Attack check, ranged*: A check to hit an opponent. It's an <<adversarial>>
+*Attack Check, ranged*: A check to hit an opponent. It's an <<adversarial>>
 __wisdom__ check, and it is <<difficult>> if you're not skilled at using the
 given weapon.
 
@@ -2571,15 +2576,15 @@ considered to be your enemy.
 
 //KEY:
 *Check*: You roll your d20 against a given target number (usually one of your
-stats). __For example: when rolling a strength check you roll a d20 and must
-roll lower than your strength to succeed.__
+stats). For instance: when rolling a strength check you roll a d20 and must
+roll lower than your strength to succeed.
 
 //KEY:
-*Defense check, melee*: A check to avoid being hit by melee attacks. This is an
+*Defense Check, melee*: A check to avoid being hit by melee attacks. This is an
 <<adversarial>> __dexterity__ check.
 
 //KEY:
-*Defense ranged, melee*: A check to avoid being hit by ranged attack. This is
+*Defense Ranged, melee*: A check to avoid being hit by ranged attack. This is
 an <<adversarial>> __wisdom__ check.
 
 //KEY:
@@ -2590,7 +2595,7 @@ checks.
 *Easy*: Easy checks have a target number that's 3 higher than normal checks.
 
 //KEY:
-*Hit Points (HP)*: A unit of health: your character has a number of hit points,
+*Hit Points, HP*: A unit of health: your character has a number of hit points,
 you lose some of them when you take damage, and if you lose all of them, you
 must roll on the <<death_table>>.  __Baddies and NPCs also have hit points, and
 when they lose all of them, they die.__
@@ -2600,15 +2605,15 @@ when they lose all of them, they die.__
 gets to act first.
 
 //KEY:
-*Level (lvl)*: A character can have a level between 1 and 10. Baddies, traps,
+*Level, L*: A character can have a level between 1 and 10. Baddies, traps,
 locks, spells, and various tasks can also have a level.
 
 //KEY:
-*NPC and NPCs*: Non player character(s). These persons and creatures are played
+*NPC, NPCs*: Non player character(s). These persons and creatures are played
 by the GM.
 
 //KEY:
-*PC and PCs*: Player Character(s).
+*PC, PCs*: Player Character(s).
 
 //KEY:
 *Proficient*: It is difficult or impossible to use an armor, weapon, or
@@ -2621,10 +2626,7 @@ damage roll, where you roll your damage die for the type of weapon you're
 using.
 
 //KEY:
-*TN*: Abbreviation of Target Number.
-
-//KEY:
-*Target number*: The number you must roll below (usually with your d20) in
+*Target Number, TN*: The number you must roll below (usually with your d20) in
 order to make a successful check.
 
 //KEY:

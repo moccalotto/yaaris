@@ -31,7 +31,9 @@
 :critical_hit: xref:adventurer#_critical_hits[critical hit]
 :difficult: xref:adventurer#difficult[difficult]
 :encumbered: xref:adventurer#encumbered[encumbered]
+:overburden: xref:adventurer#overburden[overburden]
 :exhausted: xref:adventurer#exhausted[exhausted]
+:haggling: xref:adventurer#haggling_check[haggling]
 :heal4: xref:adventurer#_heal_x[Heal 4]
 :heal5: xref:adventurer#_heal_x[Heal 5]
 :hit_point_total: xref:adventurer#hit_point_total[hit point total]
@@ -62,6 +64,137 @@ reputations, bases of operations, and strong allies.
 
 toc::[]
 
+// {{{ RULES
+== RULES
+
+=== Reckless attack
+Subtract K from your attack target number. If your roll is below K, your roll
+becomes a one.
+
+=== No Stat Over 15
+If you have a stat at 15 and you receive a stat increase (by leveling up or by
+some arcane means) you gain a special ability instead. This can happen multiple
+times.
+
+==== Strength Powers
+
+*Legendary Strength*:
+Once per day you can modify one of your __strength__ checks to become any
+possible value you want. For instance, you can turn an 18 into a 1.
+
+You can gain this ability multiple times; it simply increases the number of
+times per day it can be used.
+
+*Heavy Lifter*:
+You gain 2 extra item slots and you have {advantage} on checks and rolls that
+involve lifting stuff.
+
+*Fortress*:
+You are skilled at using cuirasses of any type and weight. Moreover, if you're
+wearing a cuirass, it does not take up any {item_slots}.
+
+*Brutal Strike*:
+You can make an attack that deals maximum possible damage. You can do this a
+number of times per day equal to your level.
+
+==== Dexterity Powers
+
+*Legendary Dexterity*:
+Once per day you can modify one of your __dexterity__ checks to become any
+possible value you want. For instance, you can turn an 18 into a 1.
+
+You can gain this ability multiple times; it simply increases the number of
+times per day it can be used.
+
+*Trap Avoidance*:
+You have {advantage} on checks and rolls for avoiding effects and damage from
+traps. Moreover, you only take half damage from such effects.
+
+*Swift Dodge*:
+You can make a special dodge that reduces an enemy's damage to the minimum
+possible value. You can do this a number of times per day equal to your level.
+
+==== Constitution Powers
+
+*Legendary Constitution*:
+Once per day you can modify one of your __constitution__ checks to become any
+possible value you want. For instance, you can turn an 18 into a 1.
+
+You can gain this ability multiple times; it simply increases the number of
+times per day it can be used.
+
+*Poison Resistance*:
+You have {advantage} on checks and rolls for avoiding effects and damage from
+poisons, venoms, toxins, etc. Moreover, you only take half damage from such
+effects.
+
+On top of that, you also gain 5 extra hit points.
+
+*Inexhaustible*:
+You do not lose any {moves} when you are {exhausted}. This enables you to to
+{overburden} yourself without losing {moves}, but you can't avoid being
+{encumbered}.
+
+*Superlative Survivor*:
+Your {hit_point_total} goes up by a number of points equal to three times your
+level. This also means that {hit_point_total} goes up by 3 every time your
+level increases.
+
+==== Intelligence Powers
+
+*Legendary Intelligence*:
+Once per day you can modify one of your __intelligence__ checks to become any
+possible value you want. For instance, you can turn an 18 into a 1.
+
+You can gain this ability multiple times; it simply increases the number of
+times per day it can be used.
+
+*Spellmaster*:
+Once per day you can cast a spell where you get to choose the results of any
+and all die rolls involved.
+
+*Brilliant Researcher*:
+You gain a spellbook with a spell of your choice. You can only choose spells
+that you are currently able to cast; its level must be no higher than yours and
+you must met any and all additional requirements.
+
+You can chose this ability multiple times.
+
+==== Wisdom Powers
+
+*Legendary Wisdom*:
+Once per day you can modify one of your __wisdom__ checks to become any
+possible value you want. For instance, you can turn an 18 into a 1.
+
+You can gain this ability multiple times; it simply increases the number of
+times per day it can be used.
+
+*Superlative Archer*:
+Once per day you can make a ranged attack where you get to chose the results
+of all die rolls involved.
+
+
+==== Charisma Powers
+
+*Legendary Charisma*:
+Once per day you can modify one of your __charisma__ checks to become any
+possible value you want. For instance, you can turn an 18 into a 1.
+
+You can gain this ability multiple times; it simply increases the number of
+times per day it can be used.
+
+*Negotiator*:
+You have {advantage} on checks that involve negotiation, interrogation, and
+charm, including {haggling} checks. Moreover, once per day you can sell a
+single item for the maximum possible price.
+
+*Lucky*:
+Once per day you can reroll any die roll made openly by you or others at the
+table. Any rolls the GM makes secretly or behind the screen cannot be affected.
+
+// }}}
+
+
 // {{{ CHAMPION
 [[champion_class]]
 == CHAMPION
@@ -91,7 +224,7 @@ increase that it by one point. Do the same for __charisma__.
 .Champion's Attack and Damage
 [%header,cols="6,^2,^2,^2"]
 |===
-| Weapon                | Stat        | Skill       | Damage 
+| Weapon                | Stat        | Skill       | Damage
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _strength_  | Skilled     | 1d8
 | Ranged Weapons        | _wisdom_    | Unskilled   | 1d6
@@ -205,10 +338,10 @@ it.
 * It starts with 4 {usage_points}, and it gains one extra point whenever you
   gain a level.
 * It does not take up any {item_slots}.
-* You do not need to make a spellcasting (__charisma__) check when casting from 
+* You do not need to make a spellcasting (__charisma__) check when casting from
   this book.
 * If you lose or change this ability, you keep the book as it is, but it starts
-  taking up one {item_slot}, and it does not gain any more spell levels or 
+  taking up one {item_slot}, and it does not gain any more spell levels or
   {usage_points}.
 
 //KEY:
@@ -472,7 +605,7 @@ daggers.
 .Rogues's Attack and Damage
 [%header,cols="6,^2,^2,^2"]
 |===
-| Weapon                | Stat        | Skill       | Damage 
+| Weapon                | Stat        | Skill       | Damage
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _strength_  | Skilled     | 1d6
 | Throwing Daggers      | _wisdom_    | Skilled     | 1d6
@@ -652,7 +785,7 @@ increase that it by one point. Do the same for __constitution__.
 .Warrior's Attack and Damage
 [%header,cols="6,^2,^2,^2"]
 |===
-| Weapon                | Stat        | Skill       | Damage 
+| Weapon                | Stat        | Skill       | Damage
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _strength_  | Skilled     | 1d8
 | Ranged Weapons        | _wisdom_    | Skilled     | 1d6
