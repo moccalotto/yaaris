@@ -64,6 +64,30 @@ You are expected to keep and use an Adventurer's Logbook at all time,
 and you are expected to transcribe your book's latest pages into any
 town's log you find.
 
+==== Adventurer's Blessing
+
+An adventurer is not just someone who chooses to go on adventures, the blood in
+their veins is magical, and it makes them formidable and among the only
+persons who can be magically revived.
+
+* You have an extremely high pain tolerance, and you are able to fight at
+  full capacity right up until you draw your last breath.
+
+* You almost never get sick from mundane illnesses and ailments such as
+  the flu, ulcers, food poisoning, arthritis, bad teeth, and cancers.
+
+* You are almost completely immune to long-term effects of battle and physical
+  trauma such as brain damage, bone fractures, torn ligaments, and the like.
+
+* You are almost immune to mental health problems such as addiction, anxiety,
+  dementia, depression and post traumatic stress disorder.
+
+* Unlike most creatures, you can be revived and rejuvenated with restoration
+  magic.
+
+The effects of this blessing get more powerful over time, and further facets of
+this blessing can reveal themselves as you gain experience and levels.
+
 //}}}
 
 

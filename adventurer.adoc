@@ -25,6 +25,7 @@
 :one: <<nat1,One>>
 :consumption: <<consumption_checks,consumption>>
 :consumable: <<consumption_checks,consumable>>
+:ex: icon:link[]
 // VARIABLES }}}
 
 This document contains character creation and game mechanics, as well as gear,
@@ -304,16 +305,13 @@ your hit points, you have to roll on the <<death_table>>.
 
 [[armor_skills]]
 ==== Armor Skills
-You are skilled at using light shields and light armors. For each piece of
-armor you are wearing that you are not skilled at using, you lose one
-<<moves,move>>.
+You are skilled at using light armor pieces. See also <<armor_skills>>.
 
 
 [[weapon_skills]]
 ==== Weapon Skills
-You are skilled at using light melee weapons and ranged weapons. On
-<<adventurer_damage_rolls_table>> you can see how much damage you deal with
-each weapon category.
+You are skilled at using ranged weapons and light melee weapons. See also
+<<adventurer_damage_rolls_table>>.
 
 ==== Adventurer's Blessing
 
@@ -321,31 +319,11 @@ An adventurer is not just someone who chooses to go on adventures, the blood in
 their veins is magical, and it makes them formidable and among the only
 persons who can be magically revived.
 
-[%collapsible]
-====
-* You have an extremely high pain tolerance, and you are able to fight at
-  full capacity right up until you draw your last breath.
-
-* You almost never get sick from mundane illnesses and ailments such as
-  the flu, ulcers, food poisoning, arthritis, bad teeth, and cancers.
-
-* You are almost completely immune to long-term effects of battle and physical
-  trauma such as brain damage, bone fractures, torn ligaments, and the like.
-
-* You are almost immune to mental health problems such as addiction, anxiety,
-  dementia, depression and post traumatic stress disorder.
-
-* Unlike most creatures, you can be revived and rejuvenated with restoration
-  magic.
-
-The effects of this blessing get more powerful over time, and further facets of
-this blessing can reveal themselves as you gain experience and levels.
-
 [quote,Margot LeDique]
 The Adventurer's Blessing is stunningly powerful; many nations want former
 adventurers of high levels in key military and governing positions, as the
 ability to be revived can be, well, vital for the continuation of the position.
-====
+
 
 ==== Exotic Weapon Skills
 You are __not__ skilled at using any exotic weapons such as the <<kosh>>.
@@ -743,50 +721,32 @@ and cannot be repaired.
 
 [%unbreakable]
 --
-[[light_armor_table]]
-.Light Armor
+[[armor_table]]
+.Armor
 [%header,cols="5,^2,^2,^3"]
 |===
 | Armor Piece           | {IS} | {AHP} | {cost}
 //----------------------|------|-------|------
-| Light Shield          | 1    |  3    | 8  gp
-| Light Helmet          | 1    |  3    | 8  gp
-| Light Cuirass         | 2    |  6    | 27 gp
-| Light Gauntlets       | 1    |  3    | 8  gp
-| Light Greaves         | 1    |  3    | 8  gp
+| Light Shield          |  1   |  3    | 8  gp
+| Light Helmet          |  1   |  3    | 8  gp
+| Light Cuirass         |  2   |  6    | 27 gp
+| Light Gauntlets       |  1   |  3    | 8  gp
+| Light Greaves         |  1   |  3    | 8  gp
+//----------------------|------|-------|------
+| Medium Shield         |  2   |   6   | 64  gp
+| Medium Helmet         |  2   |   6   | 64  gp
+| Medium Cuirass        |  3   |   9   | 125 gp
+| Medium Gauntlets      |  2   |   6   | 64  gp
+| Medium Greaves        |  2   |   6   | 64  gp
+//----------------------|------|-------|------
+| Heavy Shield          |  3   |   9   | 216 gp
+| Heavy Helmet          |  3   |   9   | 216 gp
+| Heavy Cuirass         |  4   |   12  | 343 gp
+| Heavy Gauntlets       |  3   |   9   | 216 gp
+| Heavy Greaves         |  3   |   9   | 216 gp
 //----------------------|------|-------|------
 |===
 --
-
-
-.Medium Armor
-[%header,cols="5,^2,^2,^3"]
-|===
-| Armor Piece           | {IS}  | {AHP} | {cost}
-//----------------------|-------|-------|------
-| Medium Shield         |   2   |   6   | 64  gp
-| Medium Helmet         |   2   |   6   | 64  gp
-| Medium Cuirass        |   3   |   9   | 125 gp
-| Medium Gauntlets      |   2   |   6   | 64  gp
-| Medium Greaves        |   2   |   6   | 64  gp
-//----------------------|-------|-------|------
-|===
-
-
-.Heavy Armor
-[[heavy_armor]]
-[%header,cols="5,^2,^2,^3"]
-|===
-| Armor Piece           | {IS} | {AHP} | {cost}
-//----------------------|------|-------|------
-| Heavy Shield          |   3  |   9   | 216 gp
-| Heavy Helmet          |   3  |   9   | 216 gp
-| Heavy Cuirass         |   4  |   12  | 343 gp
-| Heavy Gauntlets       |   3  |   9   | 216 gp
-| Heavy Greaves         |   3  |   9   | 216 gp
-//----------------------|------|-------|------
-|===
-
 
 [[lodging]]
 .Food and lodging (per person per night)
@@ -1117,13 +1077,12 @@ This section is all about fighting 🤺
 ****
 *Unarmed Combat*:
 Requires two free hands but does not suffer from <<_weapon_wear,weapon wear>>.
-Only <<pugilist,pugilists>> are skilled at unarmed combat. 
-See also <<weapon_skills,weapon skills>>.
+Only <<pugilist,pugilists>> are skilled at unarmed combat. See also
+<<weapon_skills,weapon skills>>.
 
 *Light Melee Weapons*:
-These weapons, except quarterstaves, are one-handed. Adventurers are skilled
-at using these weapons.
-See also <<weapon_skills,weapon skills>>.
+These weapons, except quarterstaves, are one-handed. Adventurers are skilled at
+using these weapons. See also <<weapon_skills,weapon skills>>.
 
 *Heavy Melee Weapons*:
 Require two hands. Only <<great_weapon_specialist,great weapon specialists>>
@@ -1157,8 +1116,8 @@ During their turn, a combatant can do the following things in order.
 
 
 === Initiative
-At the beginning of every round each adventurer makes an __intelligence__ check.
-If the adventurers have more failed checks than there are combat capable
+At the beginning of every round each adventurer makes an __intelligence__
+check. If the adventurers have more failed checks than there are combat capable
 baddies on the battlefield, the baddies get to go first that round.
 
 The players act in the order in which they sit around the gaming table,
@@ -1199,7 +1158,7 @@ if your convert your <<Actions,action>> into moves you lose any of those moves
 that you did not use before your turn ended.
 
 Effects and conditions, such as being <<prone>>, <<exhausted>>,
-<<armor_wear,wearing broken armor>>, or being affected by spells such as
+<<broken_armor,wearing broken armor>>, or being affected by spells such as
 <<_slow_x>> can reduce your number of moves. But they can never be reduced to
 less than zero. So you can always convert your <<Actions,action>> into moves
 and get three moves that way.
@@ -1283,7 +1242,7 @@ yourself.
 [cols="^2s,10",stripes=odd]
 |===
 //----------|-------------------------------------
-| {twenty}  | You take maximum damage and your best armor piece <<armor_wear,breaks>>.
+| {twenty}  | You take maximum damage and your best armor piece <<broken_armor,breaks>>.
 | Failure   | You take normal damage.
 | Success   | You take no damage.
 | {one}     | You take no damage and the enemy's weapon <<broken_weapon,breaks>>.
@@ -1292,16 +1251,14 @@ yourself.
 
 
 ==== Armor
-You can wear up to five pieces of armor: a helmet, a cuirass, a gauntlet, of
-greaves, and a shield.
+You can wear up to five pieces of armor: a helmet, a cuirass, a gauntlet, a set
+of greaves, and a shield.
 
 [[armor_hit_points]]
 ===== Armor Grants Hit Points
 Each piece of armor you wear increases your <<hit_point_total>> by a number of
-points. The better the armor piece, the more hit points you get.
-
-[quote]
-A shield is an armor piece.
+points. The better the armor piece, the more hit points you get; see
+<<armor_table>>.
 
 When you don an armor piece, your <<hit_point_total>> and your current number
 of hit points both increase by the number of hit points provided by the armor
@@ -1309,52 +1266,35 @@ piece.
 
 When you doff armor, your <<hit_point_total>> and your current number of hit
 points both decrease by the number of hit points provided by the armor piece.
-
-[quote]
-You can reach <<zero_hp,zero hit points>> if you doff armor, and this can be
-deadly.
+This means that, technically, you can reach <<zero_hp,zero hit points>> by
+removing armor.
 
 ===== Armor Requires Skill
 For each piece of armor you're wearing, if you're not skilled at using it,
 you lose one <<moves,move>>.
 
-[[armor_wear]]
-===== Armor Wears Out
+[[broken_armor]]
+===== Broken Armor
 If you are wearing at least one functional piece of armor and you roll a
-<<nat20>> on your <<Defense,defense check>>, one of the functional
-<<Armor,armor pieces>> you are wearing (your choice) breaks and becomes
-nonfunctional. A broken armor piece still provides <<hit_points>>, but wearing
-it reduces your number of <<moves>> by one. This is cumulative so if you're
-wearing 3 pieces of broken armor, you lose 3 moves.
+<<nat20>> on your <<Defense,defense check>>, one of the functional armor pieces
+you are wearing (your choice) breaks and becomes nonfunctional. A broken armor
+piece still provides <<hit_points>>, but wearing it reduces your number of
+<<moves>> by one. This is cumulative so if you're wearing 3 pieces of broken
+armor, you lose 3 moves.
 
-[quote]
+*Repairing Armor*:
+<<armorer,Armorers>> can restore an he armor piece to its former glory by 
+using <<tinkering_tools>>. Magic can repair nonmagical armor pieces via the
+<<repair_x>> spell, though certain restrictions apply.
+
+*Unskilled Usage of Damaged Armor*:
 If you're wearing a piece of broken armor that you're not
 <<armor_skills,skilled>> at using, that single armor piece causes you to lose
 _two_ <<moves>>; one because you're unskilled, and the other because the armor
 piece is broken.
 
-.Armor wear
-====
-You've just been attacked and rolled a <<nat20>> on your defense check, and you
-take 5 points of damage. You must now select an armor piece that has at least
-one hit point, and that armor piece will also take damage.
-
-You have a Light Shield (2 __hp__), a Light Helmet (2 __hp__) and a Light
-Cuirass (3 __hp__). You choose the shield, and mark it as providing only one
-one __hit point__.
-
-On top of the 5 points of damage you've just received, your <<hit_point_total>>
-goes down by one, and your current number of hit points goes down by one due to
-the armor damage.
-====
-
-==== Armor can be repaired
-Armor pieces can be repaired. So you should make a note of how many hit points
-the armor piece initially provided.
-
-But only an <<armorer>> can restore the armor piece to its former glory.
-
 === Damage and Death
+
 When you hit a baddie, you roll a damage roll to see how many points of damage
 you deal. The dice used in the damage roll depends on your class, your
 abilities, and the weapon (or spell) you used in the attack. Your opponent
@@ -2403,8 +2343,8 @@ There are more fear effects than the ones described in this guide.
 You instantly repair a break, crack, scratch, or tear up to 5+<<X>> centimeters
 on an object within range.
 
-A <<armor_wear,broken>> <<Armor,piece of armor>> can be repaired if it isn't
-magical, and it provides no more than 2·<<X>> <<armor_hit_points,hit points>>.
+A <<broken_armor,broken>> piece of armor can be repaired if it isn't magical, and
+it provides no more than 2·<<X>> <<armor_hit_points,hit points>>.
 
 A <<damaged_weapon>> or <<broken_weapon>> weapon or item can be repaired if
 they aren't magical, and <<X>> is at least double the item's number of
@@ -2558,36 +2498,29 @@ others.
 before they can get their hero class.
 
 //KEY:
-*Adversarial Check*: A check that is affected by the level of the opposition.
-For instance, if you're attacking a baddie who is 2 or more levels higher than
-you, your check is difficult.
+*Adversarial Check*: A check that is affected by the level difference between
+you and the opposition. <<adversarial,{ex}>>
 
 //KEY:
-*Attack Check (Melee)*: A check to hit an opponent. It's an <<adversarial>>
-__strength__ check, and it is <<difficult>> if you're not skilled at using your
-weapon.
-
-//KEY:
-*Attack Check (Ranged)*: A check to hit an opponent. It's an <<adversarial>>
-__wisdom__ check, and it is <<difficult>> if you're not skilled at using your
-weapon.
+*Attack Check*: A check to hit an opponent. It's an <<adversarial>> check. The
+stat used in the check depends on the attack type. See
+<<adventurer_damage_rolls_table>>.
 
 //KEY:
 *Baddie*: A person, creature, or monster that is hostile or otherwise
 considered to be your enemy.
 
 //KEY:
-*Check*: You roll your d20 against a given target number (usually one of your
-stats). For instance: when rolling a __strength__ check you roll a d20 and must
-roll lower than your __strength__ to succeed.
+*Check*: You roll your d20 against a given target number, usually one of your
+stats. <<Checks,{ex}>>
 
 //KEY:
 *Defense Check (Melee)*: A check to avoid being hit by melee attacks. This is
-an <<adversarial>> __dexterity__ check.
+an <<adversarial>> __dexterity__ check. <<_defense, {ex}>>
 
 //KEY:
 *Defense Check (Ranged)*: A check to avoid being hit by ranged attack. This is
-an <<adversarial>> __wisdom__ check.
+an <<adversarial>> __wisdom__ check. <<_defense, {ex}>>
 
 //KEY:
 *Difficult*: Difficult checks have a target number that’s 3 lower than normal
