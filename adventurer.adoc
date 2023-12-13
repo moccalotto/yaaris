@@ -25,7 +25,7 @@
 :one: <<nat1,One>>
 :consumption: <<consumption_checks,consumption>>
 :consumable: <<consumption_checks,consumable>>
-:ex: icon:link[]
+:link: icon:link[]
 // VARIABLES }}}
 
 This document contains character creation and game mechanics, as well as gear,
@@ -46,11 +46,11 @@ Your character has 6 primary stats:
 
 [%unbreakable]
 --
-*Strength*: melee attacks, jock stuff. +
-*Dexterity*: stealth, melee defense, tricky tasks. +
-*Constitution*: carrying stuff, surviving bad trauma. +
+*Strength*: melee attacks, lifting, carrying, jock stuff. +
+*Dexterity*: stealth, melee defense, unarmed combat, tricky tasks. +
+*Constitution*: carrying capacity, surviving bad trauma. +
 *Intelligence*: initiative, magic, tricky tasks. +
-*Wisdom*: ranged attack, ranged defense, perception. +
+*Wisdom*: perception, ranged attack & defense. +
 *Charisma*: luck, negotiation, charm magic, selling treasure.
 --
 
@@ -98,7 +98,7 @@ Roll a d12. If you roll a number that isn't on the table, you don’t have a vic
 [%header,cols="^1,11"]
 |===
 | 1d12  | Vice
-//------|--------------------------
+//------+--------------------------
 | 1-5   | No vice
 | 6     | Risk taking
 | 7     | Attention seeking
@@ -107,7 +107,7 @@ Roll a d12. If you roll a number that isn't on the table, you don’t have a vic
 | 10    | Fornicating
 | 11    | Gambling
 | 12    | Stealing
-//------|--------------------------
+//------+--------------------------
 |===
 
 
@@ -119,7 +119,7 @@ the right column.
 
 [%header,cols=2*a]
 |===
-//---------------------|------------------------
+//---------------------+------------------------
 | d6 rolled 1, 3, or 5 | d6 rolled 2, 4, or 6
 |
 . Apothecary
@@ -163,7 +163,7 @@ the right column.
 . Squire
 . Street urchin
 . Thief
-//---------------------|------------------------
+//---------------------+------------------------
 |===
 
 
@@ -189,12 +189,12 @@ Roll 1d6 on this table to find out if you have a ranged weapon.
 [%header,cols="^2,10"]
 |===
 | d6  | Weapon
-//----|----------------------------
+//----+----------------------------
 | 1-3 | No ranged weapon
 | 4   | Slingshot + Bag of stones
 | 5   | Bow + Quiver of arrows
 | 6   | Crossbow + Quiver of bolts
-//----|----------------------------
+//----+----------------------------
 |===
 
 
@@ -204,10 +204,10 @@ Roll 1d6 on this table to find out if you have a shield.
 [%header,cols="^2,10"]
 |===
 | d6    | Shield
-//------|----------------------------
+//------+----------------------------
 | 1-4   | No shield
 | 5-6   | Light Shield
-//------|----------------------------
+//------+----------------------------
 |===
 
 
@@ -217,11 +217,11 @@ Roll 1d6 on this table to find out what armor you have.
 [%header,cols="^2,10"]
 |===
 | d6    | Armor
-//------|----------------------------
+//------+----------------------------
 | 1-2   | No armor
 | 3-4   | Light Cuirass
 | 5-6   | Light Cuirass and Helmet
-//------|----------------------------
+//------+----------------------------
 |===
 
 
@@ -236,7 +236,7 @@ Roll once on <<utility_gear_1>>.
 [%header,cols="^1,11"]
 |===
 | 1d10 | Item
-//-----|-----------------------
+//-----+-----------------------
 |   1  | <<iron_rations>>
 |   2  | Grappling hook
 |   3  | <<storm_lantern>>
@@ -247,7 +247,7 @@ Roll once on <<utility_gear_1>>.
 |   8  | <<lockpicking_tools>>
 |   9  | <<lantern>>
 |   10 | <<purse_copper>>
-//-----|-----------------------
+//-----+-----------------------
 |===
 --
 
@@ -263,7 +263,7 @@ same as the first roll, reroll it.
 [%header,cols="^1,11"]
 |===
 | 1d10 | Item
-//-----|-----------------------------
+//-----+-----------------------------
 | 1    | 2d4 gold pieces
 | 2    | <<spellbook,Spellbook>> with 2 <<usage_points>>
          and a spell of the <<GM,GMs>> choice.
@@ -275,7 +275,7 @@ same as the first roll, reroll it.
 | 8    | <<rations,Ration pack, normal>>
 | 9    | <<lamp_oil,Lamp oil>>
 | 10   | <<map_making_tools,Map making tools>>
-//-----|-----------------------------
+//-----+-----------------------------
 |===
 --
 
@@ -548,7 +548,7 @@ __strength__ check would need to roll under 12.
 normally would be. For instance, if your __strength__ is 9, making a difficult
 __strength__ check would need to roll under 6.
 
-*Difficult trumps easy*: If one or more conditions make a check <<difficult>>,
+*Difficult trumps Easy*: If one or more conditions make a check <<difficult>>,
 it remains difficult even if there are other many other conditions that make
 the check <<easy>>.
 
@@ -601,7 +601,7 @@ roll your damage dice twice and pick the roll you like best.
 picks the result they like. For instance, if you have disadvantage on a check,
 you roll the d20 twice and let the GM chose which die to use.
 
-*Both = neither*: If at least one advantage and at least one disadvantage
+*Both = Neither*: If at least one advantage and at least one disadvantage
 applies to the same roll, it becomes a normal without any advantage or
 disadvantage roll.
 
@@ -641,15 +641,16 @@ no more food in the ration pack.
 [[consumption_checks,consumption checks]]
 === Consumption & Consumption Checks
 You are sometimes asked to spend a __consumption__ of a given consumable item.
-When making a __consumption__ of an item, you first roll a __consumption check__,
-which is a <<Checks,check>> with a target number of 11, and if the check wasn't
-successful, the item in question loses a <<usage_points,usage point>>.
+When making a __consumption__ of an item, you first roll a consumption check,
+which is a <<Checks,check>> with a target number of 11 (meaning you must roll
+10 or lower to succeed), and if the check wasn't successful, the item in
+question loses a <<usage_points,usage point>>.
 
-*Rations*:
-You must spend one __consumption__ of <<rations>> every day if you don't want to
-<<starving,starve>>. This means that, once a day, you must make a __consumption
-check__, and if it fails, one of your ration packs loses a <<usage_points,usage
-point>>.
+*Rations & Iron Rations*:
+You must spend one __consumption__ of <<rations>> every day if you don't want
+to <<starving,starve>>. This means that, once a day, you must make a
+__consumption{sp}check__, and if it fails, one of your ration packs loses a
+<<usage_points,usage point>>.
 
 *Projectiles*:
 If you have fired a ranged weapon that uses ammunition in combat, no matter how
@@ -668,10 +669,10 @@ If you have thrown a throwable weapon in combat, no matter how many times
 you threw it, you roll a single __consumption{sp}check__ after the combat
 to see if the weapon loses a <<usage_points,usage point>>.
 
-If your throwing weapon is damaged in combat (for instance, by you rolling a
-<<nat20>> on an attack check) the weapon loses a <<usage_points,usage point>>.
+Your throwable weapon can also lose <<usage_points>> right away if you roll a
+<<nat20>> on your attack check.
 
-When a throwable weapon reaches zero <<usage_points>> it is completely used up
+If your throwable weapon reaches zero <<usage_points>> it is completely used up
 and cannot be repaired.
 
 === Gear
@@ -680,7 +681,7 @@ and cannot be repaired.
 [%header,cols="7,^2,^3"]
 |===
 | Name                  | {IS} | {cost}
-//----------------------|------|---------
+//----------------------+------+---------
 | Backpack              |  0   | 5  sp
 | Bedroll               |  1   | 1  sp
 | Clothing, common      |  1   | 3  sp
@@ -693,7 +694,7 @@ and cannot be repaired.
 | Rope, 25m             |  2   | 10 cp
 | Shovel                |  1   | 2  cp
 | Steel bottle          |  1   | 25 sp
-//----------------------|------|---------
+//----------------------+------+---------
 |===
 
 
@@ -701,7 +702,7 @@ and cannot be repaired.
 [%header,cols="5,^2,^2,^3"]
 |===
 | Name                                            | {IS} | {UP} | {cost}
-//------------------------------------------------|------|------|-----------
+//------------------------------------------------+------+------+-----------
 | <<adventurers_logbook,Adventurer's Logbook>>    |   1  | 10   | 20 gp
 | Animal Feed                                     |   2  | 1    | 15 cp
 | Ball bearings                                   |   1  | 2    | 15 cp
@@ -715,7 +716,7 @@ and cannot be repaired.
 | <<lockpicking_tools,Lockpicking Tools>>         |   1  | 4    | 5  gp
 | <<tinkering_tools,Tinkering Tools>>             |   2  | 4    | 10 gp
 | <<torch,Torch>>                                 |   1  | 2    | 5  cp
-//------------------------------------------------|------|------|-----------
+//------------------------------------------------+------+------+-----------
 |===
 
 
@@ -726,25 +727,25 @@ and cannot be repaired.
 [%header,cols="5,^2,^2,^3"]
 |===
 | Armor Piece           | {IS} | {AHP} | {cost}
-//----------------------|------|-------|------
+//----------------------+------+-------+------
 | Light Shield          |  1   |  3    | 8  gp
 | Light Helmet          |  1   |  3    | 8  gp
 | Light Cuirass         |  2   |  6    | 27 gp
 | Light Gauntlets       |  1   |  3    | 8  gp
 | Light Greaves         |  1   |  3    | 8  gp
-//----------------------|------|-------|------
+//----------------------+------+-------+------
 | Medium Shield         |  2   |   6   | 64  gp
 | Medium Helmet         |  2   |   6   | 64  gp
 | Medium Cuirass        |  3   |   9   | 125 gp
 | Medium Gauntlets      |  2   |   6   | 64  gp
 | Medium Greaves        |  2   |   6   | 64  gp
-//----------------------|------|-------|------
+//----------------------+------+-------+------
 | Heavy Shield          |  3   |   9   | 216 gp
 | Heavy Helmet          |  3   |   9   | 216 gp
 | Heavy Cuirass         |  4   |   12  | 343 gp
 | Heavy Gauntlets       |  3   |   9   | 216 gp
 | Heavy Greaves         |  3   |   9   | 216 gp
-//----------------------|------|-------|------
+//----------------------+------+-------+------
 |===
 --
 
@@ -753,11 +754,11 @@ and cannot be repaired.
 [%header,cols="10,^2"]
 |===
 | Lodging                                   | {cost}
-//------------------------------------------|--------
+//------------------------------------------+--------
 | Opulent (luxurious rooms and food)        | 1  gp
 | Middle class (small room, decent fare)    | 5  sp
 | Poor (sleep in common room, cheap food)   | 10 cp
-//------------------------------------------|--------
+//------------------------------------------+--------
 |===
 
 
@@ -766,10 +767,10 @@ and cannot be repaired.
 [%header,cols="9,^2,^1"]
 |===
 | Melee Weapon                  | {IS} | {cost}
-//------------------------------|------|--------
+//------------------------------+------+--------
 | Light Melee Weapon            |   1  | 3 gp
 | Heavy Melee Weapon            |   2  | 8 gp
-//------------------------------|------|--------
+//------------------------------+------+--------
 |===
 
 
@@ -778,10 +779,10 @@ and cannot be repaired.
 [%header,cols="7,^2,^2,^1"]
 |===
 | Name                          | {IS} | {UP} | {cost}
-//------------------------------|------|------|------
+//------------------------------+------+------+------
 | Dagger  __{melee_ranged}__    |   1  |  1   | 3  gp
 | Javelin __{melee_ranged}__    |   1  |  1   | 3  gp
-| Axe     __{melee_ranged}__    |   1  |  1   | 3  gp
+| Small axe __{melee_ranged}__  |   1  |  1   | 3  gp
 | Dart                          |   1  |  4   | 3  gp
 | Bow                           |   2  |  -   | 7  gp
 | ↳ Quiver of arrows            |   1  |  10  | 2  gp
@@ -789,7 +790,7 @@ and cannot be repaired.
 | ↳ Quiver of bolts             |   1  |  10  | 2  gp
 | Sling                         |   0  |  -   | 4  gp
 | ↳ Bag of slingshot            |   1  |  10  | 2  gp
-//------------------------------|------|------|------
+//------------------------------+------+------+------
 |===
 
 [quote]
@@ -882,14 +883,14 @@ You can throw lamp oil to cover an area; You first roll a __dexterity__ check.
 
 [cols="^2s,10",stripes=odd]
 |===
-//----------|----------------------------------------------------
+//----------+----------------------------------------------------
 | {twenty}  | You drop the container at your feet and it ruptures.
 | Failure   | The container lands where intended, but it does not rupture.
 | Success   | The container lands where intended, ruptures, and covers 1d4
-              square meters in oil.
+              square meters (<<GM,GM's>> choice) in oil.
 | {one}     | The container lands where intended, ruptures, and covers up to 4
               square meters (of your choice) in oil.
-//----------|----------------------------------------------------
+//----------+----------------------------------------------------
 |===
 
 
@@ -1006,10 +1007,10 @@ damaged.
 To disarm a trap you spend 10 minutes and one {consumption}
 of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 
-*   If both are successful, you have disarmed the trap.
-*   If one is successful, you did not disarm the trap, but you may try again.
-*   If both failed, the trap triggers, and you are not able to dodge the
-    effects (if the trap is aimed at you).
+* If both are successful, you have disarmed the trap.
+* If one is successful, you did not disarm the trap, but you may try again.
+* If both failed, the trap triggers, and you are not able to dodge the
+  effects (if the trap is aimed at you).
 
 
 //KEY:
@@ -1052,12 +1053,12 @@ to the table below, and do what it says, even if you don't like the result.
 
 [cols="^2s,10",stripes=odd]
 |===
-//----------|----------------------------------------------------
+//----------+----------------------------------------------------
 | {twenty}  | You sell the item(s) for 25% of local list price.
 | Failure   | You sell the item(s) for 50% of local list price.
 | Success   | You sell the item(s) for 75% of local list price.
 | {one}     | You sell the item(s) for 100% of local list price.
-//----------|----------------------------------------------------
+//----------+----------------------------------------------------
 |===
 
 .Negotiators
@@ -1132,7 +1133,7 @@ them in many ways, and here's some examples.
 [%header,cols="11,^1"]
 |===
 | Description                                   | Moves
-//----------------------------------------------|------
+//----------------------------------------------+------
 | Move 1 meter in good terrain                  |   1
 | Ready a potion from a belt pouch              |   1
 | Draw a weapon from your sheath or equivalent  |   1
@@ -1148,7 +1149,7 @@ them in many ways, and here's some examples.
 | Drop a functional heavy shield                |   5
 | Ready a spellbook from your backpack          |   5
 | Gain an extra <<Actions,action>>              |   5
-//----------------------------------------------|------
+//----------------------------------------------+------
 |===
 
 .Move Economy
@@ -1195,12 +1196,12 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 [%header,cols="6,^2,^2,^2"]
 |===
 | Weapon                | Stat        | Skill       | Damage
-//----------------------|-------------|-------------|-------------
+//----------------------+-------------+-------------+-------------
 | Light Melee Weapons   | _Strength_  | Skilled     | 1d6
 | Ranged Weapons        | _Wisdom_    | Skilled     | 1d6
 | Heavy Melee Weapons   | _Strength_  | Unskilled   | 1d10
 | Unarmed Combat        | _Dexterity_ | Unskilled   | 1d4
-//----------------------|-------------|-------------|-------------
+//----------------------+-------------+-------------+-------------
 |===
 
 :weapon_wear: <<_weapon_wear,weapon wear>>
@@ -1208,14 +1209,15 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 .Attack Check Results
 [cols="^2s,10",stripes=odd]
 |===
-//----------|-------------------------------------
-| {twenty}  | You miss and your weapon loses a {up} (see {weapon_wear}).
-| Failure   | You deal half damage (rounded down) if you are
-              <<weapon_skills,skilled>> with your weapon, otherwise you miss.
-| Success   | You deal normal damage.
-| {one}     | You deal maximum damage and if you are <<weapon_skills,skilled>>
-              at using your weapon you get an extra <<Actions,action>>.
-//----------|-------------------------------------
+//---------+-------------------------------------
+| {twenty} | You miss and your weapon loses a {up} (see {weapon_wear}).
+| Failure  | You deal half damage (rounded down) if you are
+             <<weapon_skills,skilled>> with your weapon, otherwise deal no
+             damage.
+| Success  | You deal normal damage.
+| {one}    | You deal maximum damage. If you are <<weapon_skills,skilled>> at
+             using your weapon you also get an extra <<Actions,action>>.
+//---------+-------------------------------------
 |===
 
 ==== Weapon Wear
@@ -1241,12 +1243,12 @@ yourself.
 .Defense Check Results
 [cols="^2s,10",stripes=odd]
 |===
-//----------|-------------------------------------
+//----------+-------------------------------------
 | {twenty}  | You take maximum damage and your best armor piece <<broken_armor,breaks>>.
 | Failure   | You take normal damage.
 | Success   | You take no damage.
 | {one}     | You take no damage and the enemy's weapon <<broken_weapon,breaks>>.
-//----------|-------------------------------------
+//----------+-------------------------------------
 |===
 
 
@@ -1361,7 +1363,7 @@ death table. Check the <<CONDITIONS>> section for more info.
 [%header,cols="^2,10"]
 |===
 | d100   | Effect
-//-------|--------------------------------------------------
+//-------+--------------------------------------------------
 | 100    | You’re <<destroyed>>.
 | 99     | You’re <<dead>>.
 | 76-98  | You’re <<comatose>> and <<dying>>.
@@ -1369,7 +1371,7 @@ death table. Check the <<CONDITIONS>> section for more info.
 | 02-25  | You’re <<unconscious>>.
 | 1      | You’re still awake, but you are <<prone>> and only have
            one <<hit_points,hit point>>.
-//-------|--------------------------------------------------
+//-------+--------------------------------------------------
 |===
 
 
@@ -1384,7 +1386,7 @@ points.
 [%header,cols="^2,^2,8"]
 |===
 | Roll  | Type       | Effect
-//------|------------|------------------------------
+//------+------------+------------------------------
 | 101+  | Amputation | Lose a random limb.
 | 100   | Permanent  | -1d4 to random stat.
 | 89-99 | Permanent  | -1d8 maximum hit points.
@@ -1397,7 +1399,7 @@ points.
 | 31-40 | Temporary  | -1d8 <<hit_point_total>> and current hit points.
 | 21-30 | Reversible | Battle scar.
 | 01-20 | -          | No trauma.
-//------|------------|------------------------------
+//------+------------+------------------------------
 |===
 --
 
@@ -1638,12 +1640,12 @@ to this table:
 
 [cols="^1s,10",stripes=odd]
 |===
-//----------|----------------------------------------------------
+//----------+----------------------------------------------------
 | {twenty}  | The spell fizzles and the book loses __all__ its <<usage_points>>.
 | Failure   | The spell takes effect and the book loses __all__ its <<usage_points>>.
 | Success   | The spell takes effect and the book looses a single <<usage_points,usage point>>.
 | {one}     | The spell takes effect and no <<usage_points>> are spent.
-//----------|----------------------------------------------------
+//----------+----------------------------------------------------
 |===
 
 
@@ -1671,12 +1673,12 @@ you make an __intelligence__ check and refer to this table:
 
 [cols="^1s,10",stripes=odd]
 |===
-//---------|----------------------------------------------------
+//---------+----------------------------------------------------
 | {twenty} | The spell fizzles and the book loses all its <<usage_points>>.
 | Failure  | The spell fizzles.
 | Success  | The spell takes effect.
 | {one}    | The spell takes effect.
-//---------|----------------------------------------------------
+//---------+----------------------------------------------------
 |===
 
 
@@ -2499,7 +2501,7 @@ before they can get their hero class.
 
 //KEY:
 *Adversarial Check*: A check that is affected by the level difference between
-you and the opposition. <<adversarial,{ex}>>
+you and the opposition. <<adversarial,{link}>>
 
 //KEY:
 *Attack Check*: A check to hit an opponent. It's an <<adversarial>> check. The
@@ -2512,15 +2514,15 @@ considered to be your enemy.
 
 //KEY:
 *Check*: You roll your d20 against a given target number, usually one of your
-stats. <<Checks,{ex}>>
+stats. <<Checks,{link}>>
 
 //KEY:
 *Defense Check (Melee)*: A check to avoid being hit by melee attacks. This is
-an <<adversarial>> __dexterity__ check. <<_defense, {ex}>>
+an <<adversarial>> __dexterity__ check. <<_defense, {link}>>
 
 //KEY:
 *Defense Check (Ranged)*: A check to avoid being hit by ranged attack. This is
-an <<adversarial>> __wisdom__ check. <<_defense, {ex}>>
+an <<adversarial>> __wisdom__ check. <<_defense, {link}>>
 
 //KEY:
 *Difficult*: Difficult checks have a target number that’s 3 lower than normal

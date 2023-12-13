@@ -77,6 +77,8 @@ die from unnatural causes.
 * Tough, extreme pain tolerance, and high morale.
 * Individual orcs have animalistic intelligence, but sometimes a Great Leader
   that can control or direct the entire army.
+* Die if they are kept away from an open sky for too long; they cannot be 
+  imprisoned in a donjon or inside any kind of building - they'll rot.
 
 
 == Undeads

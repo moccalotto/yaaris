@@ -59,6 +59,24 @@ attitude several steps.
 // {{{ CAMPAIGN
 == CAMPAIGN 
 
+=== Creation Of Magical Items
+
+Most magical items must be made out of compatible materials. For instance, a
+flaming sword could most easily be made from steel that had fused with
+obsidian, or spent a long time in/near a volcano.
+
+Instead of mithril, orichalcum, etc. we just have a bunch if different types 
+of steel.
+
+* Gnomish Steel: Bronze on steroids.
+* Dwarf Steel: Basically a kind of carbide.
+* Orcish Steel: Steel that has been in the possession of
+  an orcish "clan" for a long period of time, possibly. Common steel can
+  transmute into orc steel by being embedded in a living orc for many years.
+* Obsidian Steel: Basically volcanic steel. Steel buried in a volcano, inside
+  a fire elemental, or similar.
+
+
 === Adventurer Logbook & Logging
 You are expected to keep and use an Adventurer's Logbook at all time,
 and you are expected to transcribe your book's latest pages into any
