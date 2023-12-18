@@ -167,6 +167,10 @@ the right column.
 //---------------------+------------------------
 |===
 
+[quote]
+Consult the GM when making a check that you think could be related to your
+background; you might get an <<advantage>>.
+
 
 === 3. Adventuring Gear
 
@@ -177,7 +181,7 @@ All characters start with the following equipment:
 * A backpack.
 * An <<adventurers_logbook>>.
 * 2 <<torch,torches>>.
-* A <<light_melee_weapon>>.
+* A <<melee_weapons,light melee weapon>>.
 * Three normal <<rations,ration packs>>.
 * A set of common clothing.
 * A bedroll.
@@ -277,7 +281,7 @@ until you have two different rolls.
 | 1d10 | Item
 //-----+-----------------------------
 | 1    | 2d6 gold pieces
-| 2    | <<spellbook,Spellbook>> with 2 {ups}. <<GM,GMs>> chooses the spell
+| 2    | <<spellbook,Spellbook>> with 2 {ups} (the <<GM>> chooses the spell)
 | 3    | <<torch,Torch>>
 | 4    | <<spikes,Spikes>>
 | 5    | <<tinkering_tools,Tinkering tools>>
@@ -459,6 +463,10 @@ You have <<advantage>> on <<consumption_checks>> with <<magic_components>> and
 you have <<advantage>> on the __intelligence__ check used for
 <<basic_ritual_casting>>.
 
+//KEY:
+[[infantry,infantry]]
+*Infantry*:
+You are able to use <<polearm,polearms>>.
 
 //KEY:
 [[shady,shady]]
@@ -773,7 +781,7 @@ and cannot be repaired.
 |===
 
 
-[[light_melee_weapon,light melee weapons]]
+[[melee_weapons,melee weapons]]
 .Melee Weapons
 [%header,cols="9,^2,^1"]
 |===
@@ -884,6 +892,17 @@ hours unless they're healed.
 Aside from losing a single hit point, and potentially falling unconscious,
 the target suffers no other ill effects from being struck with a kosh.
 
+//KEY:
+[[polearm,polearm]]
+==== Polearm
+Only <<infantry,infantrymen>> can use these weapons in any way. Polearms have a
+special ability: by spending 3 <<moves>> and 1 <<action>> you can attack a
+baddie who is 2 meters away from you, i.e. there is an entire one-meter square
+between you and the baddie.
+
+[quote]
+The polearms damage die follows your damage die for heavy weapons, although
+it can never be lower than 1d12.
 
 //KEY:
 [[lamp_oil,lamp oil]]

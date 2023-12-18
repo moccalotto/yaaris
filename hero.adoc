@@ -549,13 +549,13 @@ daggers.
 [%unbreakable]
 --
 [[adventurer_damage_rolls_table]]
-.Rogues's Attack and Damage
+.Rogue's Attack and Damage
 [%header,cols="6,^2,^2,^2"]
 |===
 | Weapon                | Stat        | Skill       | Damage
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _strength_  | Skilled     | 1d6
-| Throwing Daggers      | _wisdom_    | Skilled     | 1d6
+| Thrown Daggers        | _wisdom_    | Skilled     | 1d6
 | Other Ranged Weapons  | _wisdom_    | Unskilled   | 1d4
 | Heavy Melee Weapons   | _strength_  | Unskilled   | 1d10
 | Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
@@ -714,6 +714,9 @@ See how this affects you in the {elites}.
 
 // {{{ WARRIOR
 == WARRIOR
+
+[quote,Bruno LeDique]
+The warrior is fierce, tough, and dangerous.
 
 === Level 3
 
