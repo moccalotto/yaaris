@@ -402,6 +402,11 @@ when doing so, your damage die is 1d12.
 
 
 //KEY:
+[[infantry,infantry]]
+*Infantry*:
+You are able to use <<polearm,polearms>>.
+
+//KEY:
 [[monstrous_gourmand,monstrous gourmand]]
 *Monstrous Gourmand*:
 You can make edible ration packs from fresh monster parts (any recently dead
@@ -462,11 +467,6 @@ your mount, but your rolls are no longer made with <<advantage>>.
 You have <<advantage>> on <<consumption_checks>> with <<magic_components>> and
 you have <<advantage>> on the __intelligence__ check used for
 <<basic_ritual_casting>>.
-
-//KEY:
-[[infantry,infantry]]
-*Infantry*:
-You are able to use <<polearm,polearms>>.
 
 //KEY:
 [[shady,shady]]
@@ -893,18 +893,6 @@ Aside from losing a single hit point, and potentially falling unconscious,
 the target suffers no other ill effects from being struck with a kosh.
 
 //KEY:
-[[polearm,polearm]]
-==== Polearm
-Only <<infantry,infantrymen>> can use these weapons in any way. Polearms have a
-special ability: by spending 3 <<moves>> and 1 <<action>> you can attack a
-baddie who is 2 meters away from you, i.e. there is an entire one-meter square
-between you and the baddie.
-
-[quote]
-The polearms damage die follows your damage die for heavy weapons, although
-it can never be lower than 1d12.
-
-//KEY:
 [[lamp_oil,lamp oil]]
 === Lamp Oil
 This {consumable} item is flammable; you can use it as fuel
@@ -995,6 +983,18 @@ Rations sustain you on your adventures. You must use one {consumption} of ration
 *Iron Rations* have twice as many <<usage_points>> as normal rations, while
 still only requiring one <<item_slots,item slot>>.
 
+
+//KEY:
+[[polearm,polearm]]
+==== Polearm
+Only <<infantry,infantrymen>> can use these weapons in any way. Polearms have a
+special ability: by spending 3 <<moves>> and 1 <<action>> you can attack a
+baddie who is 2 meters away from you, i.e. there is an entire one-meter square
+between you and the baddie.
+
+[quote]
+The polearms damage die follows your damage die for heavy weapons, although
+it can never be lower than 1d12.
 
 //KEY:
 [[restoring_salve,restoring salve]]
