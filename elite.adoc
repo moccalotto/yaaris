@@ -13,6 +13,38 @@
 
 :moves: xref:adventurer#moves[moves]
 
+== STUFFFF
+
+Most casters use "helpers" such as summoned familiars.
+At least one caster type should also have a "body double" or
+a number of "mirror images". Maybe you can cast spells via mirror images.
+
+* Champion
+** Paladin: Spirit Mount
+** Shaman: Spirit Animal(s) [optional]
+** Paragon: Spirit Companion
+
+* Mage:
+** Illusionist: Mirror Image(s)
+** Elementalist: summon elementals
+** Bone Tamer (keep bones in bags (Item Slots), and animate them on demand.
+** Apex:  Spirit Parallel: Gives the caster extra (limit) actions
+
+*Warrior
+** Battle Dancer:   Spirit Chain Weapon (Meteor Hammer)
+                        Constrict
+                        Disarm
+                        Surprise Strike
+                        Ranged Melee Attack
+                        Chaotic Strike Strike (decrease TN, but increase critical threshold)
+** Fighter:
+***     ARTILLERY:  Spirit Arrows and/or bow
+                    Exploding spirit arrows
+                    Sniper arrow (fly through walls)
+***     FORTRESS:   Spirit Armor
+
+** Berserker:   already done, just needs tweaking
+
 //{{{ ELITE WARRIORS
 == ELITE WARRIORS
 
@@ -117,7 +149,7 @@ You gain now gain 4 bonus hit points per unused item slot.
    High damage chi strikes.
 .. CHAIN WEAPONS:
    Can use Meteor Hammer, spiked chain, and similar weapons.
-// https://en.wikipedia.org/wiki/Chain_weapon
+   https://en.wikipedia.org/wiki/Chain_weapon
 .. THROWING WEAPONS:
    Only uses throwable melee weapons.
    Always has an extra throwing weapon.
@@ -130,21 +162,21 @@ You gain now gain 4 bonus hit points per unused item slot.
 * All item slots are unencumbered.
 * Skilled in heavy weapons
 * Expertise
-.. DEFENSE:
+.. FORTRESS:
    Skilled in heavy armor.
    For each heavy armor piece worn, the armor expert gains __L__ extra hit
    pints. 
    Shield Bash
    Backstabber
-.. ARCHERY:
+.. ARTILLERY:
    Long range. Can spend {moves} to __aim__ to add damage.
    High damage with ranged weapons.
    Ultra Range Shot  shot with extreme range, may damage bow, uses an arrow
    usage point right away, causes X points of damage to the fighter.
 .. ZWEIHÄNDER:
    Expert in using heavy weapons.
-   Ranged Attack: Attack an enemy 2-3 meters away, may damage weapon, causes a
-   few points of damage to the fighter.
+   Ranged Force Attack: Attack an enemy 2-3 meters away, may damage weapon,
+   causes a few points of damage to the fighter.
 
 // ELITE WARRIORS }}}
 
@@ -166,9 +198,6 @@ You gain now gain 4 bonus hit points per unused item slot.
    Completely silent.
    Immune to fear, charm, etc.
    Frenzy (à la detonate)
-** ELEMENTAL SUMMONER:
-   Can summon elemental creatures, sometimes multiple.
-   Maintaining the creatures does not require {focus}.
 
 
 === Paladin (Champion Specialization)

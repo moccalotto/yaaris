@@ -16,7 +16,8 @@
 
 :IS: <<item_slots,Item Slots>>
 :UP: <<usage_points,Usage Points>>
-:up: <<usage_points,usage points>>
+:up: <<usage_points,usage point>>
+:ups: <<usage_points,usage points>>
 :AHP: <<armor_hit_points,Hit Points>>
 :cost: <<_money,Cost>>
 :hero_book: xref:hero[Hero's Guide To Doom & Destruction & Stuff]
@@ -64,16 +65,16 @@ max out at level 10. Baddies, spells, certain items and challenges also have
 levels. You gain new levels by acquiring treasure and notoriety. Whenever we
 use the letter <<L>> in this document, we refer to your level.
 
-*Hit points*: this is your current number of hit points. You can die or suffer
+*Hit Points*: this is your current number of hit points. You can die or suffer
 permanent injury if you <<zero_hp,run out of hit points>>. We sometimes refer
 to hit points as HP.
 
 [[hit_point_total,hit point total]]
-*Hit point total*: is the maximum number of hit points you can have. I.e. the
+*Hit Point Total*: is the maximum number of hit points you can have. I.e. the
 number of hit points you have when you're at full health. This number increases
 every time you gain a new level, and when you're wearing armor.
 
-*Item slots*: is the maximum number of <<item_slots,items>> you can carry. This
+*Item Slots*: is the maximum number of <<item_slots,items>> you can carry. This
 number is equal to your __constitution__.
 
 *Moves*: is the number of meters you can move in a round. You can also use
@@ -168,8 +169,11 @@ the right column.
 
 
 === 3. Adventuring Gear
+
 All characters start with the following equipment:
 
+[%unbreakable]
+--
 * A backpack.
 * An <<adventurers_logbook>>.
 * 2 <<torch,torches>>.
@@ -177,30 +181,37 @@ All characters start with the following equipment:
 * Three normal <<rations,ration packs>>.
 * A set of common clothing.
 * A bedroll.
-
+--
 
 *In addition to that:* Roll on each of the following tables to find out what
 additional equipment your character starts with.
 
 
+
 ==== Ranged weapon
 Roll 1d6 on this table to find out if you have a ranged weapon.
 
+[%unbreakable]
+--
 [%header,cols="^2,10"]
 |===
 | d6  | Weapon
 //----+----------------------------
-| 1-3 | No ranged weapon
+| 1-2 | No ranged weapon
+| 3   | Throwing Weapon (dagger, axe, or javelin)
 | 4   | Slingshot + Bag of stones
 | 5   | Bow + Quiver of arrows
 | 6   | Crossbow + Quiver of bolts
 //----+----------------------------
 |===
+--
 
 
 ==== Shield
 Roll 1d6 on this table to find out if you have a shield.
 
+[%unbreakable]
+--
 [%header,cols="^2,10"]
 |===
 | d6    | Shield
@@ -209,11 +220,14 @@ Roll 1d6 on this table to find out if you have a shield.
 | 5-6   | Light Shield
 //------+----------------------------
 |===
+--
 
 
 ==== Armor Pieces
 Roll 1d6 on this table to find out what armor you have.
 
+[%unbreakable]
+--
 [%header,cols="^2,10"]
 |===
 | d6    | Armor
@@ -223,14 +237,14 @@ Roll 1d6 on this table to find out what armor you have.
 | 5-6   | Light Cuirass and Helmet
 //------+----------------------------
 |===
-
+--
 
 ==== Utility Gear
 
-[%unbreakable]
---
 Roll once on <<utility_gear_1>>.
 
+[%unbreakable]
+--
 [[utility_gear_1]]
 .Utility Gear 1
 [%header,cols="^1,11"]
@@ -238,9 +252,9 @@ Roll once on <<utility_gear_1>>.
 | 1d10 | Item
 //-----+-----------------------
 |   1  | <<iron_rations>>
-|   2  | Grappling hook
+|   2  | Grappling hook + 10 meter rope
 |   3  | <<storm_lantern>>
-|   4  | Rope, 10 meters
+|   4  | Rope, 25 meters
 |   5  | <<kosh>>
 |   6  | Ball bearings
 |   7  | Shovel
@@ -251,22 +265,19 @@ Roll once on <<utility_gear_1>>.
 |===
 --
 
-
+Roll twice on <<utility_gear_2>>; if the two rolls are the same, reroll both
+until you have two different rolls.
 
 [%unbreakable]
 --
-Roll twice on <<utility_gear_2,the table below>>. If the second roll is the
-same as the first roll, reroll it.
-
 [[utility_gear_2]]
 .Utility Gear 2
 [%header,cols="^1,11"]
 |===
 | 1d10 | Item
 //-----+-----------------------------
-| 1    | 2d4 gold pieces
-| 2    | <<spellbook,Spellbook>> with 2 <<usage_points>>
-         and a spell of the <<GM,GMs>> choice.
+| 1    | 2d6 gold pieces
+| 2    | <<spellbook,Spellbook>> with 2 {ups}. <<GM,GMs>> chooses the spell
 | 3    | <<torch,Torch>>
 | 4    | <<spikes,Spikes>>
 | 5    | <<tinkering_tools,Tinkering tools>>
@@ -422,8 +433,8 @@ When you reach level 5 your riding proficiency expands to all rideable land
 creatures. At level 8, you can ride
 virtually any willing creature.
 
-.About Your Mount
 [%collapsible]
+.A Rider's Mount
 ====
 *Your horse* can drag a cart that can either carry you and two others, or you
 and 20 <<item_slots>> of cargo. When you ride it or direct it, it can move 2
@@ -539,16 +550,16 @@ depending on the type of check, other positive result may happen.
 and, depending on the type of check, other positive result may happen.
 
 [[easy,easy]]
-*Easy checks*: are checks where the target number is 3 higher than what it
+*Easy Checks*: are checks where the target number is 3 higher than what it
 would normally be. For instance, if your __strength__ is 9, making an easy
 __strength__ check would need to roll under 12.
 
 [[difficult,difficult]]
-*Difficult checks*: are checks where the target number is 3 lower than what it
+*Difficult Checks*: are checks where the target number is 3 lower than what it
 normally would be. For instance, if your __strength__ is 9, making a difficult
 __strength__ check would need to roll under 6.
 
-*Difficult trumps Easy*: If one or more conditions make a check <<difficult>>,
+*Difficult Trumps Easy*: If one or more conditions make a check <<difficult>>,
 it remains difficult even if there are other many other conditions that make
 the check <<easy>>.
 
@@ -701,7 +712,7 @@ and cannot be repaired.
 .Consumables
 [%header,cols="5,^2,^2,^3"]
 |===
-| Name                                            | {IS} | {UP} | {cost}
+| Name                                            | {IS} | {UPS}| {cost}
 //------------------------------------------------+------+------+-----------
 | <<adventurers_logbook,Adventurer's Logbook>>    |   1  | 10   | 20 gp
 | Animal Feed                                     |   2  | 1    | 15 cp
@@ -757,7 +768,7 @@ and cannot be repaired.
 //------------------------------------------+--------
 | Opulent (luxurious rooms and food)        | 1  gp
 | Middle class (small room, decent fare)    | 5  sp
-| Poor (sleep in common room, cheap food)   | 10 cp
+| Poor (sleep in common room, cheap food)   | 25 cp
 //------------------------------------------+--------
 |===
 
@@ -770,6 +781,7 @@ and cannot be repaired.
 //------------------------------+------+--------
 | Light Melee Weapon            |   1  | 3 gp
 | Heavy Melee Weapon            |   2  | 8 gp
+| <<kosh,Kosh>>                 |   1  | 6 gp
 //------------------------------+------+--------
 |===
 
@@ -778,7 +790,7 @@ and cannot be repaired.
 .Ranged Weapons
 [%header,cols="7,^2,^2,^1"]
 |===
-| Name                          | {IS} | {UP} | {cost}
+| Name                          | {IS} | {UPS}| {cost}
 //------------------------------+------+------+------
 | Dagger  __{melee_ranged}__    |   1  |  1   | 3  gp
 | Javelin __{melee_ranged}__    |   1  |  1   | 3  gp
@@ -831,19 +843,19 @@ from a merchant - you just "buy" them directly from the GM. You cannot sell
 them or exchange them.
 
 [[purse_copper,copper purse]]
-*Copper purse*: for 1,000 copper pieces you can buy a copper purse. It has 10
+*Copper Purse*: for 1,000 copper pieces you can buy a copper purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 copper
 pieces (i.e. less than 1 silver piece), you can spend one
 {consumption} of this purse instead of spending coin.
 
 [[purse_silver,silver purse]]
-*Silver purse*: for 1,000 silver pieces you can buy a silver purse. It has 10
+*Silver Purse*: for 1,000 silver pieces you can buy a silver purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 silver
 pieces (i.e. less than 1 gold piece), you can spend one
 {consumption} of this purse instead of spending coin.
 
 [[purse_gold,gold purse]]
-*Gold purse*: for 1,000 gold pieces you can buy a gold purse. It has 10
+*Gold Purse*: for 1,000 gold pieces you can buy a gold purse. It has 10
 <<usage_points>>. Whenever you buy something costing less than 100 gold pieces
 you can spend one {consumption} of this purse instead of
 spending coin.
@@ -881,7 +893,9 @@ for your lantern or storm lantern, and you can use it to light things on fire.
 
 You can throw lamp oil to cover an area; You first roll a __dexterity__ check.
 
-[cols="^2s,10",stripes=odd]
+[%unbreakable]
+--
+[cols="^2s,10"]
 |===
 //----------+----------------------------------------------------
 | {twenty}  | You drop the container at your feet and it ruptures.
@@ -892,6 +906,7 @@ You can throw lamp oil to cover an area; You first roll a __dexterity__ check.
               square meters (of your choice) in oil.
 //----------+----------------------------------------------------
 |===
+--
 
 
 //KEY:
@@ -983,7 +998,7 @@ spikes can wedge a door shut until the spikes are removed.
 ==== Tinkering Tools
 Tinkering tools can be used to disarm traps and repair broken items.
 
-*Repairing mechanisms*:
+*Repairing Mechanisms*:
 To repair a trap, mechanism, stuck door, or similar, you spend 10 minutes and
 one {consumption} of tinkering tools. Then you make a
 __dexterity__ check and an __intelligence__ check.
@@ -992,18 +1007,18 @@ __dexterity__ check and an __intelligence__ check.
 * If one is successful, the item is still damage, but you may try again.
 * If both failed, you cannot fix this item until you've gained a new level.
 
-*Repairing armors*:
+*Repairing Armors*:
 This is like repairing mechanisms, except: only <<armorer,armorers>> can repair
 armors, and only __light armor__ can be repaired using tinkering tools alone;
 __medium__ and __heavy__ armor also requires a furnace (or the <<_furnace>>
 spell).
 
-*Repairing weapons*:
+*Repairing Weapons*:
 This is like repairing mechanisms, except: only <<armorer,armorers>> can repair
 weapons, and it takes twice as long if the weapon is broken rather than
 damaged.
 
-*Disarming traps*:
+*Disarming Traps*:
 To disarm a trap you spend 10 minutes and one {consumption}
 of tinkering tools. Then you make a __dexterity__ and __wisdom__ check.
 
@@ -1051,7 +1066,9 @@ If you’re selling expensive items, or if you’re selling things in bulk, you
 must haggle to get a good price. You first roll a __charisma__ check, and refer
 to the table below, and do what it says, even if you don't like the result.
 
-[cols="^2s,10",stripes=odd]
+[%unbreakable]
+--
+[cols="^2s,10"]
 |===
 //----------+----------------------------------------------------
 | {twenty}  | You sell the item(s) for 25% of local list price.
@@ -1060,6 +1077,7 @@ to the table below, and do what it says, even if you don't like the result.
 | {one}     | You sell the item(s) for 100% of local list price.
 //----------+----------------------------------------------------
 |===
+--
 
 .Negotiators
 [TIP]
@@ -1110,10 +1128,13 @@ this range, and you cannot shoot into areas of complete darkness.
 Combat is divided into 10-second rounds. At the beginning of every round the
 adventurers roll __initiative__, to determine in which order they get to act.
 
+[%unbreakable]
+--
 During their turn, a combatant can do the following things in order.
 
 . Make up to 5 moves.
 . Take one action.
+--
 
 
 === Initiative
@@ -1204,10 +1225,12 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 //----------------------+-------------+-------------+-------------
 |===
 
+[%unbreakable]
+--
 :weapon_wear: <<_weapon_wear,weapon wear>>
 [[attack_check_results_table]]
 .Attack Check Results
-[cols="^2s,10",stripes=odd]
+[cols="^2s,10"]
 |===
 //---------+-------------------------------------
 | {twenty} | You miss and your weapon loses a {up} (see {weapon_wear}).
@@ -1219,6 +1242,7 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
              using your weapon you also get an extra <<Actions,action>>.
 //---------+-------------------------------------
 |===
+--
 
 ==== Weapon Wear
 If your weapon loses all its <<usage_points>> it is broken and unusable
@@ -1239,9 +1263,11 @@ When you have made your __defense check__ refer to
 yourself.
 
 
+[%unbreakable]
+--
 [[defense_check_results_table]]
 .Defense Check Results
-[cols="^2s,10",stripes=odd]
+[cols="^2s,10"]
 |===
 //----------+-------------------------------------
 | {twenty}  | You take maximum damage and your best armor piece <<broken_armor,breaks>>.
@@ -1250,6 +1276,7 @@ yourself.
 | {one}     | You take no damage and the enemy's weapon <<broken_weapon,breaks>>.
 //----------+-------------------------------------
 |===
+--
 
 
 ==== Armor
@@ -1431,7 +1458,7 @@ beyond your <<hit_point_total>>.
 
 [[rest,rest]]
 *Resting*: Resting for 8 hours, at least six of which are spent sleeping, will
-allow you to regenerate a bit; roll a d6, add your level,  and increase your
+allow you to regenerate a bit; roll 1d8, add your level,  and increase your
 hit points by that number. Aside from sleeping, eating, and keeping watch, you
 cannot do anything of consequence while resting.
 
@@ -1504,9 +1531,9 @@ caster.
 //KEY:
 [[dungeon_mad,dungeon mad]]
 *Dungeon Mad*: You've been in complete darkness in a dungeon or cave for too
-long. Every hour you spend in total darkness in a dungeon or similar situation,
-you must make a __wisdom__ check; if you fail, you temporarily lose 1 point
-from a random stat. This check is <<difficult>> if you are alone in the
+long. Every hour you spend in total darkness deep inside a dungeon or similar
+situation, you must make a __wisdom__ check; if you fail, you temporarily lose
+1 point from a random stat. This check is <<difficult>> if you are alone in the
 darkness. Your stats will start to regenerate as soon as you are again in the
 presence of light at the rate of one stat point per hour. It goes twice as fast
 if you are outside in the sunlight.
@@ -1638,16 +1665,34 @@ otherwise specified in the spell's description).
 the spell's incantation. Then you make an __intelligence__ check and refer
 to this table:
 
-[cols="^1s,10",stripes=odd]
+[%unbreakable]
+--
+[cols="^2s,10"]
 |===
 //----------+----------------------------------------------------
-| {twenty}  | The spell fizzles and the book loses __all__ its <<usage_points>>.
-| Failure   | The spell takes effect and the book loses __all__ its <<usage_points>>.
-| Success   | The spell takes effect and the book looses a single <<usage_points,usage point>>.
-| {one}     | The spell takes effect and no <<usage_points>> are spent.
+| {twenty}  | The spell fizzles and the book loses __all__ its {ups}.
+| Failure   | The spell takes effect and the book loses __all__ its {ups}.
+| Success   | The spell takes effect and the book looses a single {up}.
+| {one}     | The spell takes effect and no {ups} are spent.
 //----------+----------------------------------------------------
 |===
+--
 
+[[cancelling_spell]]
+.Cancelling a spell
+****
+You cannot cancel spells cast by others, and you cannot cancel a spell with a
+<<duration>> unless it has the <<focus>> or <<trance>> property, or if
+cancellation is allowed in the spell's description.
+****
+
+[[targeting_spell]]
+.Targeting a spell
+****
+Unless specifically allowed in the spell's description, you cannot target
+baddies or things you can't see. Spells that create projectiles, beams, or
+similar effects travel in a direct line, completely unable to avoid obstacles.
+****
 
 [[basic_ritual_casting,basic ritual casting]]
 === Basic Ritual Casting
@@ -1671,7 +1716,9 @@ time to do so.
 You spend 15 minutes and one {consumption} of <<magic_components>>, and then
 you make an __intelligence__ check and refer to this table:
 
-[cols="^1s,10",stripes=odd]
+[%unbreakable]
+--
+[cols="^2s,10"]
 |===
 //---------+----------------------------------------------------
 | {twenty} | The spell fizzles and the book loses all its <<usage_points>>.
@@ -1680,6 +1727,7 @@ you make an __intelligence__ check and refer to this table:
 | {one}    | The spell takes effect.
 //---------+----------------------------------------------------
 |===
+--
 
 
 [[basic_recharging,basic recharging]]
@@ -1705,7 +1753,7 @@ name.
 //KEY:
 [[X,_X_]]
 *X*: There are many versions of this spell, each with its own level.
-__See the <<example_multilevel>> example.__
+See also <<example_multilevel>>.
 
 //KEY:
 [[basic,basic]]
@@ -1759,6 +1807,8 @@ nothing more.
 
 //END_SORT
 
+[%unbreakable]
+--
 [[example_multilevel]]
 .Multilevel spells (X)
 ====
@@ -1772,23 +1822,7 @@ Missile 1__, __Tragic Missile 2__, and so on all the way to __Tragic Missile
 says it's <<spell_level,level>> stem:[2+], there is no __Ghost Mount 1__. Only
 a __Ghost Mount 2__, __Ghost Mount 3__, and so on.
 ====
-
-[[cancelling_spell]]
-.Cancelling a spell
-****
-You cannot cancel or stop a spell with a <<duration>> unless the spell has the
-<<focus>> or <<trance>> property, or if cancellation is allowed in the spell's
-description.
-****
-
-
-[[targeting_spell]]
-.Targeting a spell
-****
-Unless specifically allowed in the spell's description, you cannot target stuff
-you can't see, and spells that create projectiles, beams, or similar effects
-always travel in a direct line, completely unable to avoid obstacles.
-****
+--
 
 //}}}
 
@@ -1923,10 +1957,10 @@ additional smoke in the process.
 
 
 === Crackdown (X)
-*Level 2+, range: __wisdsom__ meters, <<focus>> (up to <<X>> rounds)*
+*Level 2+, range: __wisdom__ meters, <<focus>> (up to <<X>> rounds)*
 
 You call down a bolt of lightning onto a baddie within range. The bolt deals
-__[level]__d6 damage. Each round thereafter, at the cost of 3 <<moves>> you can
+<<L>>d6 damage. Each round thereafter, at the cost of 3 <<moves>> you can
 call down lightning again.
 
 

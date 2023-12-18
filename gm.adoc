@@ -59,6 +59,10 @@ attitude several steps.
 // {{{ CAMPAIGN
 == CAMPAIGN 
 
+=== Invader / Abyssal / Demon
+The dudes that invade the world via dungeons and other methods. All kinds of
+teleportation can be affected or hijacked by these invaders.
+
 === Creation Of Magical Items
 
 Most magical items must be made out of compatible materials. For instance, a

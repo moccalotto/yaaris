@@ -1,58 +1,5 @@
 = Hero's Guide to Doom & Destruction & Stuff
-// {{{ VARIABLES
-:stylesheet: style.css
-:doctype: book
-:icons: font
-:sectlinks:
-:toc:
-:toclevels: 1
-:toc-placement!:
-:experimental:
-:stem:
-:xrefstyle: full
-
-
-:A: xref:adventure#
-:E: xref:elite#
-:X: xref:adventurer#X[x]
-:elites: xref:elites#[Elite's Guide to Doom & Destruction & Stuff]
-:one: xref:adventurer#nat1[One]
-:twenty: xref:adventurer#nat20[Twenty]
-:action: xref:adventurer#_actions[action]
-:advantage: xref:adventurer#advantage[advantage]
-:adventurers_ability: xref:adventurer#_adventurers_special_ability[adventurer's ability]
-:adversarial: xref:adventurer#adversarial[adversarial]
-:armorer: xref:adventurer#armorer[armorer]
-:backstabber: xref:adventurer#backstabber[backstabber]
-:basic: xref:adventurer#basic[basic]
-:consumption: xref:adventurer#consumption_check[consumption]
-:consumption_check: xref:adventurer#consumption_check[consumption check]
-:consumption_checks: xref:adventurer#consumption_check[consumption checks]
-:critical_hit: xref:adventurer#_critical_hits[critical hit]
-:difficult: xref:adventurer#difficult[difficult]
-:encumbered: xref:adventurer#encumbered[encumbered]
-:overburden: xref:adventurer#overburden[overburden]
-:exhausted: xref:adventurer#exhausted[exhausted]
-:haggling: xref:adventurer#haggling_check[haggling]
-:heal4: xref:adventurer#_heal_x[Heal 4]
-:heal5: xref:adventurer#_heal_x[Heal 5]
-:hit_point_total: xref:adventurer#hit_point_total[hit point total]
-:item_slot: xref:adventurer#item_slots[item slot]
-:item_slots: xref:adventurer#item_slots[item slots]
-:kosh: xref:adventurer#kosh[kosh]
-:move: xref:adventurer#moves[move]
-:moves: xref:adventurer#moves[moves]
-:nat1: xref:adventurer#nat1[1]
-:nat20: xref:adventurer#nat20[20]
-:on_fire: xref:adventurer#on_fire[on_fire]
-:prone: xref:adventurer#prone[prone]
-:restrained: xref:adventurer#restrained[restrained]
-:ritual: xref:adventurer#ritual[ritual]
-:shady: xref:adventurer#shady[shady]
-:trauma_table: xref:adventurer#trauma_table[trauma table]
-:usage_point: xref:adventurer#usage_points[usage point]
-:usage_points: xref:adventurer#usage_points[usage points]
-// }}}
+include::herosub.adoc[]
 
 When you reach your third level, you can choose a heroic class, which allows
 you to obtain powerful abilities, spells, and gear.
