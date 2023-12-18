@@ -1,5 +1,5 @@
 = Hero's Guide to Doom & Destruction & Stuff
-include::herosub.adoc[]
+include::vars.adoc[]
 
 When you reach your third level, you can choose a heroic class, which allows
 you to obtain powerful abilities, spells, and gear.
