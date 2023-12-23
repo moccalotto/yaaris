@@ -14,16 +14,14 @@ toc::[]
 // {{{ RULES
 == RULES
 
-=== Reckless attack
-Subtract K from your attack target number. If your roll is below K, your roll
-becomes a one.
+=== Legendary Stats
+No stat can ever be increased further than 15.
 
-=== No Stat Over 15
-If you have a stat at 15 and you receive a stat increase (by leveling up or by
-some arcane means) you gain a special ability instead. This can happen multiple
+However, if you have a stat at 15 and you receive a stat increase (for instance
+by levelling up) you gain a special ability instead. This can happen multiple
 times.
 
-==== Strength Powers
+==== Strength Abilities
 
 *Legendary Strength*:
 Once per day you can modify one of your __strength__ checks to become any
@@ -33,18 +31,28 @@ You can gain this ability multiple times; it simply increases the number of
 times per day it can be used.
 
 *Heavy Lifter*:
-You gain 2 extra item slots and you have {advantage} on checks and rolls that
+You gain 2 extra {item_slots} and you have {advantage} on checks and rolls that
 involve lifting stuff.
+
+You can gain this ability multiple times; it increases the number of {item_slots}
+gained by 2 each time.
 
 *Fortress*:
 You are skilled at using cuirasses of any type and weight. Moreover, if you're
 wearing a cuirass, it does not take up any {item_slots}.
 
 *Brutal Strike*:
-You can make an attack that deals maximum possible damage. You can do this a
-number of times per day equal to your level.
+You can make an attack that deals maximum possible damage. You can do this {L}
+times per day.
 
-==== Dexterity Powers
+*Reckless Strength*:
+Whenever you make a strength-based check you can choose to make it
+__reckless__. A reckless check is {difficult}, but of you roll a four or lower
+on your die, it is converted into a {one}, which is a guaranteed success as
+well as an extraordinary success when it comes to attack checks.
+
+
+==== Dexterity Abilities
 
 *Legendary Dexterity*:
 Once per day you can modify one of your __dexterity__ checks to become any
@@ -59,9 +67,9 @@ traps. Moreover, you only take half damage from such effects.
 
 *Swift Dodge*:
 You can make a special dodge that reduces an enemy's damage to the minimum
-possible value. You can do this a number of times per day equal to your level.
+possible value. You can do this {L} times per day.
 
-==== Constitution Powers
+==== Constitution Abilities
 
 *Legendary Constitution*:
 Once per day you can modify one of your __constitution__ checks to become any
@@ -73,9 +81,7 @@ times per day it can be used.
 *Poison Resistance*:
 You have {advantage} on checks and rolls for avoiding effects and damage from
 poisons, venoms, toxins, etc. Moreover, you only take half damage from such
-effects.
-
-On top of that, you also gain 5 extra hit points.
+effects. On top of that you also gain 5 extra hit points.
 
 *Inexhaustible*:
 You do not lose any {moves} when you are {exhausted}. This enables you to to
@@ -87,7 +93,7 @@ Your {hit_point_total} goes up by a number of points equal to three times your
 level. This also means that {hit_point_total} goes up by 3 every time your
 level increases.
 
-==== Intelligence Powers
+==== Intelligence Abilities
 
 *Legendary Intelligence*:
 Once per day you can modify one of your __intelligence__ checks to become any
@@ -107,7 +113,16 @@ you must met any and all additional requirements.
 
 You can chose this ability multiple times.
 
-==== Wisdom Powers
+*Superlative Knowledge*: 
+Your memory is extremely good; you can remember and recall practically
+everything in great detail, from large scale geography down to individual
+letters in texts you have read. You can even recall every single step you've
+taken through a dungeon.
+
+[quote]
+You memory is not perfect; you can't recall stuff the GM can't either :-)
+
+==== Wisdom Abilities
 
 *Legendary Wisdom*:
 Once per day you can modify one of your __wisdom__ checks to become any
@@ -120,8 +135,15 @@ times per day it can be used.
 Once per day you can make a ranged attack where you get to chose the results
 of all die rolls involved.
 
+*Financier*:
+You can more or less instantly determine the worth of a pile, bag, or pouch of
+coins. You can also easily spot fake or worn-out coins. Very large piles of
+coins may take you a little bit of time to count, but even at a glance you can
+determine its rough value. It is more or less impossible to trick you with 
+fake coins or other illicit schemes.
 
-==== Charisma Powers
+
+==== Charisma Abilities
 
 *Legendary Charisma*:
 Once per day you can modify one of your __charisma__ checks to become any
@@ -131,13 +153,19 @@ You can gain this ability multiple times; it simply increases the number of
 times per day it can be used.
 
 *Negotiator*:
-You have {advantage} on checks that involve negotiation, interrogation, and
-charm, including {haggling} checks. Moreover, once per day you can sell a
-single item for the maximum possible price.
+You have {advantage} on checks that involve negotiation, interrogation, 
+charm, and {haggling}. Moreover, once per day you can sell a single item for
+the maximum possible price.
 
 *Lucky*:
 Once per day you can reroll any die roll made openly by you or others at the
 table. Any rolls the GM makes secretly or behind the screen cannot be affected.
+
+*Curator*:
+You can appraise valuable objects such as art pieces, gems, jewelry very 
+fast and to a very high degree of accuracy. You have {advantage} on any
+checks that involve the authenticity of a product, even if said check is not
+a __charisma__ check.
 
 // }}}
 
@@ -175,7 +203,7 @@ increase that it by one point. Do the same for __charisma__.
 //----------------------|-------------|-------------|-------------
 | Light Melee Weapons   | _strength_  | Skilled     | 1d8
 | Ranged Weapons        | _wisdom_    | Unskilled   | 1d6
-| Heavy Melee Weapons   | _strength_  | Unskilled   | 2d12
+| Heavy Melee Weapons   | _strength_  | Unskilled   | 1d12
 | Unarmed Combat        | _dexterity_ | Unskilled   | 1d4
 //----------------------|-------------|-------------|-------------
 |===
@@ -840,8 +868,8 @@ Too bad if you didn't roll higher than any stat.
 // WARRIOR }}}
 
 
-// {{{ HERO GEAR
-== HERO GEAR
+// {{{ GEAR
+== EQUIPMENT
 
 === Alchemist tools
 Blaaaaaahahaaahah
@@ -850,8 +878,8 @@ Blaaaaaahahaaahah
 // }}}
 
 
-// {{{ HERO SPELLS
-== HERO SPELLS
+// {{{ SPELLS
+== SPELLS
 
 //START_SORT ===
 

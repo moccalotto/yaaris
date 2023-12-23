@@ -1,4 +1,5 @@
 = Elite's guide to doom & destruction & stuff
+include::vars.adoc[]
 
 :stylesheet: style.css
 :doctype: article
@@ -11,44 +12,116 @@
 :stem:
 :xrefstyle: basic
 
-:moves: xref:adventurer#moves[moves]
-
 == STUFFFF
 
-Most casters use "helpers" such as summoned familiars.
-At least one caster type should also have a "body double" or
-a number of "mirror images". Maybe you can cast spells via mirror images.
+*   CHAMPION
+**      Paladin
+***         __SPIRIT MOUNT__
+****            Instantly summon and mount a horse or similar mount
+****            It can "die", but it can be resummoned
+****            Cooldown.
+***         COMMANDER
+****            Give other people orders/actions
+***         SPIRIT ARMOURY
+****            Summon and instantly don a set of armor, shield,
+                and weapon from a special storage dimension
+****            Cooldown / usage points.
 
-* Champion
-** Paladin: Spirit Mount
-** Shaman: Spirit Animal(s) [optional]
-** Paragon: Spirit Companion
+**      Shaman
+***         __SPIRIT BEAST__
+****            Can help you in combat.
+****            Can be resummoned if it dies, but there is a cooldown.
+****            Maybe it's just a spellbook
+***         SHAPE SHIFTING
+****            Basically a were-thing (werewolf, werebear)
+****            Claw Shape
+****            Low Light Vision
+****            Natural Armor
+****            Climbing, Jumping
+****            High movement rate
 
-* Mage:
-** Illusionist: Mirror Image(s)
-** Elementalist: summon elementals
-** Bone Tamer (keep bones in bags (Item Slots), and animate them on demand.
-** Apex:  Spirit Parallel: Gives the caster extra (limit) actions
+**      Paragon
+***         __SPIRIT COMPANION__
+****            Time limit & Cooldown
+****            An intangible blob of shimmering light with no shape
+****            Can only be attacked with very special spells
+****            Can heal (a la Healing Spirit from DnD)
+****            Can {focus} on a spell for the paragon
+****            You can cast spell through the spirit companion
+****            You can see through its eyes, but its very very blurry
+***         TOME KEEPER
+****            Spirit Armoury where K spellbooks can be kept
+***         DESTROYER
+****            You have all the __Terror of XXX__ abilities.
+****            When you cast spells against these beings all your
+                spellcasting checks and damage rolls have advantage.
 
-*Warrior
-** Battle Dancer:   Spirit Chain Weapon (Meteor Hammer)
-                        Constrict
-                        Disarm
-                        Surprise Strike
-                        Ranged Melee Attack
-                        Chaotic Strike Strike (decrease TN, but increase critical threshold)
-** Fighter:
-***     ARTILLERY:  Spirit Arrows and/or bow
-                    Exploding spirit arrows
-                    Sniper arrow (fly through walls)
-***     FORTRESS:   Spirit Armor
+*   MAGE
+**      Bone Tamer
+***         SPIRIT ARMOURY - CAN CONTAIN BONES
+***         ANIMATE BONES
+***         CONTROL BONES
+****            Manipulate bones in living beings
+****            Control
+****            Heal
+****            Damage
+**      Illusionist: Mirror Image(s)
+***         MIRROR IMAGE
+**      Elementalist
+***         SUMMON ELEMENTAL
+**      Apex
+***         SPELL ARMOURY
+****            Contain K spellbooks in a separate storage dimension
+***         APEX CASTING
+****            Cast spells from memory, draining HP instead of book
+***         ARMOURY CASTING
+****            Cast spell from book in armoury
 
-** Berserker:   already done, just needs tweaking
+* WARRIOR
+**  Berserker
+***     Already Done
+
+**  War Dancer
+***     SPIRIT WEAPON (METEOR HAMMER):
+****        Conjured out of thin air
+****        Constrict
+****        Disarm
+****        Surprise Strike
+****        Ranged Melee Attack
+****        Chaotic Strike Strike (decrease TN, but increase critical threshold)
+
+**  Fighter
+***     ARTILLERY:
+****        Spirit Arrows and/or bow
+****        Exploding spirit arrows
+****        Sniper arrow (fly through walls)
+
+***     JUGGERNAUT:
+****        Spirit Armor
+****        Slow Movement
+****        Disadvantage on attack checks.
+****        Outgoing damage has disadvantage.
+****        Advantage on Defense Checks
+****        Incoming damage has disadvantage.
+
+***     SKIRMISHER:
+****        Fast Mover
+****        Rearm (magical rearm) when engaging this stance
+
+***     OFFICER:
+****        Analyze Opponent
+
 
 //{{{ ELITE WARRIORS
 == ELITE WARRIORS
 
 === Berserker
+
+The berserker is a very dangerous combatant, almost impossible to kill in
+combat. When you pick this class you instantly gain access to the very powerful
+berserker's range; an ability that keeps growing in power as your level
+increases. Berserker's rage is the only active ability the berserker class
+provides; this makes them both tough and easy to play.
 
 ==== Level 6
 
@@ -65,7 +138,7 @@ This hit point bonus increases by one every time you gain a level, such that whe
 you're level 10, you gain 7 bonus hit points per unused item slot.
 
 ===== No Armor
-You fight without armor and shields. If you equip any armor pieces or shields, 
+You fight without armor and shields. If you equip any armor pieces or shields,
 you lose the ability to go berserk.
 
 ==== Weapon Skills
@@ -73,33 +146,33 @@ You are skilled at using light melee weapons, heavy melee weapons, and unarmed
 combat.
 
 ===== Berserker's Rage
-You can choose to go berserk when someone has drawn the blood of one or more of
-you or your, causing at least one hit point of damage. This rage lasts as long
-as someone attacks or your allies. If an entire combat round passes without you
-or your allies being attacked, your rage ends.
+You can choose to go berserk when a baddie attacks or damages you or one of
+your allies. Your rage continues as long as you or your allies are attacked or
+damaged by baddies, Your rage ends if an entire combat round passes without you
+being aware that you or your allies have been attacked or damaged by baddies.
 
-Being berserk has the following properties:
+The berserker's rage has the following properties:
 
 * The damage you deal with heavy weapons is doubled.
-* You gain 2 extra moves, and that number increases by one every time you 
+* You gain 2 extra moves, and that number increases by one every time you
   gain a level, such that when you are level 10, you have 7 extra moves per
   round.
 * You have {advantage} on all  __strength__, __constitution__, and
   __dexterity__ checks.
 * You have {disadvantage} on all  __intelligence__, __wisdom__, and
   __charisma__ checks.
-* You do not roll on the {death_table} when you reach zero hit points;
-  you simply remain alive and kicking. But when you are at zero hit points and
-  take damage, you must roll on the {trauma_table}, just like other adventurers
-  when they take {damage_at_zero_hp}.
+* You do not roll on the {death_table} when you reach zero hit points; you
+  remain alive and kicking. But when you are at zero hit points and take
+  damage, you must roll on the {trauma_table}, just like other adventurers when
+  they take {damage_at_zero_hp}.
 * If you reach zero hit points the damage you deal with heavy weapons is
   tripled instead of doubled.
 * If you are at zero hit points when your rage ends you must roll on the
-  {death_table} again.
-* When your berserker's rage ends, you take __L__d6 damage, where __L__ is your 
-  level.
-* If your rage ends when you are at zero hit pints, you must roll on the 
-  {death_table}.
+  {death_table} with {disadvantage}.
+* If your berserker's rage ends, and you are not at zero hit points, you take
+  {L}d6 damage. Should this damage cause you to reach zero hit points, you do
+  not roll on the {death_table}, but you do become {exhausted} until you regain
+  at least one hit point.
 
 ==== Level 7
 
@@ -112,12 +185,12 @@ First::
 For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
-Then:: 
+Then::
 If your strength is lower than 15, increase it by 1, and if your
 constitution is lower than 15, increase it by 1.
 
 ===== Bonus Hit Points
-You gain now gain 4 bonus hit points per unused item slot. 
+You gain now gain 4 bonus hit points per unused item slot.
 
 
 ==== Level 8
@@ -130,7 +203,7 @@ For each of your stats, you roll a d20; if the roll is higher than the stat,
 that stat is increased by 1 point.
 
 ===== Bonus Hit Points
-You gain now gain 4 bonus hit points per unused item slot. 
+You gain now gain 4 bonus hit points per unused item slot.
 
 ==== Level 9
 
@@ -139,44 +212,9 @@ You gain now gain 4 bonus hit points per unused item slot.
 
 
 === War Dancer
-* Only wears light helmet and light, medium, or heavy cuirass.
-* Can only use light melee weapons and throwing weapons.
-* Gains 3 hp per unused item slot if not wearing any armor or shield.
-* Extra {moves}
-* Specialization
-.. MARTIAL ARTS:
-   Multiple attacks.
-   High damage chi strikes.
-.. CHAIN WEAPONS:
-   Can use Meteor Hammer, spiked chain, and similar weapons.
-   https://en.wikipedia.org/wiki/Chain_weapon
-.. THROWING WEAPONS:
-   Only uses throwable melee weapons.
-   Always has an extra throwing weapon.
-   Can make multiple attacks and throws.
 
 
 === Fighter
-* Can wear all armor and shields.
-* Can use all non-exotic weapons.
-* All item slots are unencumbered.
-* Skilled in heavy weapons
-* Expertise
-.. FORTRESS:
-   Skilled in heavy armor.
-   For each heavy armor piece worn, the armor expert gains __L__ extra hit
-   pints. 
-   Shield Bash
-   Backstabber
-.. ARTILLERY:
-   Long range. Can spend {moves} to __aim__ to add damage.
-   High damage with ranged weapons.
-   Ultra Range Shot  shot with extreme range, may damage bow, uses an arrow
-   usage point right away, causes X points of damage to the fighter.
-.. ZWEIHÄNDER:
-   Expert in using heavy weapons.
-   Ranged Force Attack: Attack an enemy 2-3 meters away, may damage weapon,
-   causes a few points of damage to the fighter.
 
 // ELITE WARRIORS }}}
 
@@ -192,7 +230,7 @@ You gain now gain 4 bonus hit points per unused item slot.
    Shift into animals and elementals.
    Very high damage.
    Very high regeneration.
-** SPIRIT ANIMAL. 
+** SPIRIT BEAST
    It cannot die, but can be temporarily sent back to the spirit world.
    Competent fighter.
    Completely silent.
@@ -212,7 +250,7 @@ You gain now gain 4 bonus hit points per unused item slot.
     Mounted charge is fucking insane.
     Disappears when not mounted.
 .. COMMANDER:
-    As an action: 
+    As an action:
      a) Give an ally an extra action.
      b) Give many allies extra moves.
     Passive:
@@ -229,11 +267,11 @@ You gain now gain 4 bonus hit points per unused item slot.
 * Automatically get more books.
 * Abilities
 .. TOME KEEPER
-   Storage dimension where many books can be kept 
+   Storage dimension where many books can be kept
    Automatically get more books.
    Able to keep more than {focus} spell alive at the same time.
 .. DESTROYER:
-   Has all the Terror of X abilities.
+   Has all the `Terror of ____` abilities.
    Can free cast certain spells against X at any time without any books.
    Gains access to the spells mentioned above.
 .. SPIRIT COMPANION:
@@ -243,7 +281,7 @@ You gain now gain 4 bonus hit points per unused item slot.
    Is only active for a limited number of rounds at a time.
    Takes one action to summon.
    Paragon can cast spells through the companion
-      *) Companion can _touch_ the target.
+      *) Companion can __touch__ the target.
       *) Ranged spells can be fired from the companions position.
     Trans Familiar
     Detonate

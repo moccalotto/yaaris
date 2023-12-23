@@ -60,7 +60,7 @@ Your starting stats range from 8 through 13, and cannot go beyond 15.
 === Extra Stuff
 
 [[level,level]]
-*Level*: your level is a measure of your badassity. You start at a level 1 and
+*Level (L)*: your level is a measure of your badassity. You start at a level 1 and
 max out at level 10. Baddies, spells, certain items and challenges also have
 levels. You gain new levels by acquiring treasure and notoriety. Whenever we
 use the letter <<L>> in this document, we refer to your level.
@@ -113,8 +113,8 @@ Roll a d12. If you roll a number that isn't on the table, you don’t have a vic
 
 
 ==== Background
-Your background is what you used to do before you found out Adventurer's Blood
-flowed in your veins. Roll a d6 and a d20. If the d6 rolled an even number,
+Your background is what you used to do before you found out you had the
+Adventurer's Blessing. Roll a d6 and a d20. If the d6 rolled an even number,
 pick your background from the left column, otherwise pick your background from
 the right column.
 
@@ -168,7 +168,7 @@ the right column.
 |===
 
 [quote]
-Consult the GM when making a check that you think could be related to your
+Consult the GM when making checks that you think could be helped to your
 background; you might get an <<advantage>>.
 
 
@@ -1127,6 +1127,9 @@ Require two hands. Only <<great_weapon_specialist,great weapon specialists>>
 are skilled at using these weapons.
 See also <<weapon_skills,weapon skills>>.
 
+*Ranged Weapons*:
+Ranged weapons is generally split into two 
+
 *Projectile Weapons*:
 Require ammunition and two hands.
 
@@ -1703,7 +1706,7 @@ to this table:
 You cannot cancel spells cast by others, and you cannot cancel a spell with a
 <<duration>> unless it has the <<focus>> or <<trance>> property, or if
 cancellation is allowed in the spell's description.
-****
+**** 
 
 [[targeting_spell]]
 .Targeting a spell
@@ -1712,6 +1715,8 @@ Unless specifically allowed in the spell's description, you cannot target
 baddies or things you can't see. Spells that create projectiles, beams, or
 similar effects travel in a direct line, completely unable to avoid obstacles.
 ****
+
+
 
 [[basic_ritual_casting,basic ritual casting]]
 === Basic Ritual Casting
@@ -1884,23 +1889,18 @@ you
 
 You turn a nonmagical piece of clothing that you wear into a magical armor
 piece; it provides __3+<<X>>__ <<armor_hit_points,hit points>> and you are
-skilled at using it.
-
-You can create a cuirass, gauntlets, greaves, and a helmet, but you cannot
-create a shield.
-
-The armor piece reverts to a normal piece of clothing if you sleep or doff it.
+skilled at using it. You can create a cuirass, gauntlets, greaves, and a
+helmet, but you cannot create a shield. The armor piece reverts to a normal
+piece of clothing if you doff it, sleep, or otherwise loose consciousness.
 
 
 === Banking Transaction (X)
 *Level 2+, duration: 5 minutes*
 
 You touch a magical <<bank_book>> and transfer coins into- or out of it. You
-cannot bring the book’s balance below zero.
-
-It takes <<X>> minutes to cast this spell, and it requires <<X>> gold pieces,
-which are consumed by the spell (yes, you must have at least <<X>> gold pieces
-on hand to withdraw your money).
+cannot bring the book’s balance below zero. It takes <<X>> minutes to cast this
+spell, and it requires <<X>> gold pieces which are consumed by the spell (yes,
+you must have at least <<X>> gold pieces on hand to withdraw your money).
 
 The number of coins you can withdraw/deposit is __10·<<X>>·<<X>>·<<X>>__ (i.e.
 10·<<X>>³).
