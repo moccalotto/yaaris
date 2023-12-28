@@ -29,6 +29,9 @@ Targ Oil::
 Farg Oil::
     * Gargle Oil with powerful ranged attacks and spells.
 
+Gelatinous Pube::
+    * Disgustingly smelly seaweed thing
+
 Slime::
 A type of Oil, a slime is a semi-intelligent monster that can be made out of
 anything from rainwater to lava, these monsters are often highly caustic, and

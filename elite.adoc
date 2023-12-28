@@ -52,9 +52,9 @@ include::vars.adoc[]
 ***         TOME KEEPER
 ****            Spirit Armoury where K spellbooks can be kept
 ***         DESTROYER
-****            You have all the __Terror of XXX__ abilities.
+****            You have all the __Terror of XXX__ abilities
 ****            When you cast spells against these beings all your
-                spellcasting checks and damage rolls have advantage.
+                spellcasting checks and damage rolls have advantage
 
 *   MAGE
 **      Bone Tamer
@@ -65,6 +65,7 @@ include::vars.adoc[]
 ****            Control
 ****            Heal
 ****            Damage
+****            Extract - extract and prepare bones from a corpse
 **      Illusionist: Mirror Image(s)
 ***         MIRROR IMAGE
 **      Elementalist
@@ -218,6 +219,7 @@ You gain now gain 4 bonus hit points per unused item slot.
 
 // ELITE WARRIORS }}}
 
+
 // {{{ ELITE CHAMPIONS
 == ELITE CHAMPIONS
 
@@ -288,6 +290,7 @@ You gain now gain 4 bonus hit points per unused item slot.
 
 
 // }}} ELITE CHAMPIONS
+
 
 //{{{SPELLS
 == Spells

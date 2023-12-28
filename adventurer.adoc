@@ -14,19 +14,19 @@
 :email: moccalotto@gmail.com
 
 
+:AHP: <<armor_hit_points,Hit Points>>
 :IS: <<item_slots,Item Slots>>
 :UP: <<usage_points,Usage Points>>
-:up: <<usage_points,usage point>>
-:ups: <<usage_points,usage points>>
-:AHP: <<armor_hit_points,Hit Points>>
-:cost: <<_money,Cost>>
-:hero_book: xref:hero[Hero's Guide To Doom & Destruction & Stuff]
-:elite_book: xref:elite[Elite's Guide To Doom & Destruction & Stuff]
-:twenty: <<nat20,Twenty>>
-:one: <<nat1,One>>
-:consumption: <<consumption_checks,consumption>>
+:_up: <<usage_points,usage point>>
+:_ups: <<usage_points,usage points>>
 :consumable: <<consumption_checks,consumable>>
+:consumption: <<consumption_checks,consumption>>
+:cost: <<_money,Cost>>
+:elite_book: xref:elite[Elite's Guide To Doom & Destruction & Stuff]
+:hero_book: xref:hero[Hero's Guide To Doom & Destruction & Stuff]
 :link: icon:link[]
+:one: <<nat1,One>>
+:twenty: <<nat20,Twenty>>
 // VARIABLES }}}
 
 This document contains character creation and game mechanics, as well as gear,
@@ -281,7 +281,7 @@ until you have two different rolls.
 | 1d10 | Item
 //-----+-----------------------------
 | 1    | 2d6 gold pieces
-| 2    | <<spellbook,Spellbook>> with 2 {ups} (the <<GM>> chooses the spell)
+| 2    | <<spellbook,Spellbook>> with 2 <<usage_points>> (the <<GM>> chooses the spell)
 | 3    | <<torch,Torch>>
 | 4    | <<spikes,Spikes>>
 | 5    | <<tinkering_tools,Tinkering tools>>
@@ -436,11 +436,10 @@ You are skilled at unarmed combat, and your unarmed combat damage die is 1d6.
 [[rider,rider]]
 *Rider*:
 You acquire a trained horse for free (tamed wild horse, a gift, or similar).
-You become proficient at riding horses. You have <<advantage>> on all
+You become skilled at riding horses. You have <<advantage>> on all
 riding-related checks. You have <<advantage>> on {consumption} for animal feed.
-When you reach level 5 your riding proficiency expands to all rideable land
-creatures. At level 8, you can ride
-virtually any willing creature.
+When you reach level 5 your riding skill expands to all rideable land
+creatures. At level 8, you can ride virtually any willing creature.
 
 [%collapsible]
 .A Rider's Mount
@@ -557,47 +556,27 @@ depending on the type of check, other positive result may happen.
 *Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d20
 and, depending on the type of check, other positive result may happen.
 
-[[easy,easy]]
-*Easy Checks*: are checks where the target number is 3 higher than what it
-would normally be. For instance, if your __strength__ is 9, making an easy
-__strength__ check would need to roll under 12.
-
-[[difficult,difficult]]
-*Difficult Checks*: are checks where the target number is 3 lower than what it
-normally would be. For instance, if your __strength__ is 9, making a difficult
-__strength__ check would need to roll under 6.
-
-*Difficult Trumps Easy*: If one or more conditions make a check <<difficult>>,
-it remains difficult even if there are other many other conditions that make
-the check <<easy>>.
-
-====
-You are attacking an orc whose level is 2 below yours. This would normally make
-the roll <<easy>> (see __adversarial checks__ below), but you're also
-<<encumbered>>, which makes the check <<difficult>>, so, overall, your check
-remains __difficult__.
-====
-
 [[adversarial,adversarial]]
 === Adversarial Checks
 These are checks where the difficulty depends on the level of the adversary. In
 this context, and adversary can be a baddie, a lock, a trap, a riddle, or
 similar.
 
-If the adversary is two or more levels above you, the check is <<difficult>>,
-and if the adversary is two or more levels below you, the check is <<easy>>.
+If the adversary is two or more levels above you, your checks against them have
+<<disadvantage>> and if the adversary is two or more levels below you, your
+checks against them have <<advantage>>.
 
 .Adversarial Checks
 ====
 A second level adventurer is trying to attack an evil orc who is level 5. This
-attack is <<difficult>> because the orc is two or more levels above the
+attack check has <<advantage>> because the orc is two or more levels above the
 adventurer.
 
 ---
 
 A level 3 adventurer is trying to haggle with a level 1 merchant to get a good
-price on some loot. This <<haggling_check>> is <<easy>> because the adventurer
-is two levels above the merchant.
+price on some loot. This <<haggling_check>> has <<advantage>> because the
+adventurer is two levels above the merchant.
 
 ---
 
@@ -720,7 +699,7 @@ and cannot be repaired.
 .Consumables
 [%header,cols="5,^2,^2,^3"]
 |===
-| Name                                            | {IS} | {UPS}| {cost}
+| Name                                            | {IS} | {UP} | {cost}
 //------------------------------------------------+------+------+-----------
 | <<adventurers_logbook,Adventurer's Logbook>>    |   1  | 10   | 20 gp
 | Animal Feed                                     |   2  | 1    | 15 cp
@@ -798,7 +777,7 @@ and cannot be repaired.
 .Ranged Weapons
 [%header,cols="7,^2,^2,^1"]
 |===
-| Name                          | {IS} | {UPS}| {cost}
+| Name                          | {IS} | {UP} | {cost}
 //------------------------------+------+------+------
 | Dagger  __{melee_ranged}__    |   1  |  1   | 3  gp
 | Javelin __{melee_ranged}__    |   1  |  1   | 3  gp
@@ -966,8 +945,8 @@ do so you must make an __intelligence__ check and a __wisdom__ check.
 * If both are successful, your mapping process is accurate for the entire
   dungeon level, city, or area.
 
-* If just one is successful, your map is slightly incorrect, and using it
-  is <<difficult>>.
+* If just one is successful, your map is slightly incorrect, and using it gives
+  your related checks <<disadvantage>>.
 
 * If both failed, the map is not accurate at all. Twists and turns are
   wrong, scales are wrong, the cardinal directions are wrong, and there are
@@ -1057,15 +1036,16 @@ Torches have 2 <<usage_points>>, and use a {consumption} every hour.
 
 Torches can be revitalized; it requires one consumption of <<lamp_oil>> to
 restore 1 <<usage_points,usage point>> to a torch. This cannot be done while
-the torch is lit. After revitalizing your torch, you roll a difficult
-__wisdom__ check. If unsuccessful, the torch is destroyed, and cannot be lit.
+the torch is lit. After revitalizing your torch, you roll a __wisdom__ check
+with <<disadvantage>>. If unsuccessful, the torch is destroyed, and cannot be
+lit.
 
-You can use your torch as a light melee weapon, but it is difficult. If you
+You can use your torch as a light melee weapon with <<disadvantage>>. If you
 roll a <<nat20>> on your melee attack check, the torch breaks and cannot be
 repaired. If you roll a <<nat1>>, the target is set <<on_fire>>, dealing 1d4
 damage every round until it is put out.
 
-You can throw a torch and use it as a ranged weapon, but it is difficult. If
+You can throw a torch and use it as a ranged weapon with <<disadvantage>>. If
 you rolled a <<nat20>> on your attack check, the torch is broken and cannot be
 repaired. The throwing range of a torch is 5 meters.
 
@@ -1267,9 +1247,9 @@ to to roll the damage die and reduce your opponent's hit pints accordingly.
 --
 
 ==== Weapon Wear
-If your weapon loses all its <<usage_points>> it is broken and unusable
-and must be repaired before it can be used again. Attempting to use such
-a weapon is <<difficult>> and you also have <<disadvantage>>
+If your weapon loses all its <<usage_points>> it is broken and almost unusable
+until it has been repaired. Attempting to use a broken weapon gives you
+<<disadvantage>> on your attack check _and_ your damage roll.
 
 *Thrown Weapons*: If a throwing weapon loses all its <<usage_points>> it is
 simply gone and cannot be repaired.
@@ -1443,7 +1423,7 @@ points.
 | 81-89 | Reversible | -1 to __charisma__.
 | 71-80 | Reversible | -1 <<item_slots,item slot>>.
 | 61-70 | Temporary  | -1 <<moves,move>>.
-| 51-60 | Temporary  | All checks are <<difficult>>.
+| 51-60 | Temporary  | All checks have <<disadvantage>>.
 | 41-50 | Temporary  | -1d6 to random stat.
 | 31-40 | Temporary  | -1d8 <<hit_point_total>> and current hit points.
 | 21-30 | Reversible | Battle scar.
@@ -1551,14 +1531,14 @@ caster.
 
 
 //KEY:
-[[dungeon_mad,dungeon mad]]
+[[dungeon_mad,dungeon mad]] 
 *Dungeon Mad*: You've been in complete darkness in a dungeon or cave for too
 long. Every hour you spend in total darkness deep inside a dungeon or similar
 situation, you must make a __wisdom__ check; if you fail, you temporarily lose
-1 point from a random stat. This check is <<difficult>> if you are alone in the
-darkness. Your stats will start to regenerate as soon as you are again in the
-presence of light at the rate of one stat point per hour. It goes twice as fast
-if you are outside in the sunlight.
+1 point from a random stat. This check has <<disadvantage>> if you are alone in
+the darkness. Your stats will start to regenerate as soon as you are again in
+the presence of light at the rate of one stat point per hour. It goes twice as
+fast if you are outside in the sunlight.
 
 [quote]
 You die if any of your stats reaches zero.
@@ -1573,7 +1553,7 @@ at the beginning of your turn, you must make a d20 roll; if you roll a
 
 //KEY:
 [[encumbered,encumbered]]
-*Encumbered*: All your checks are <<difficult>>.
+*Encumbered*: All your checks have <<disadvantage>>.
 
 
 //KEY:
@@ -1591,7 +1571,9 @@ your fear. You have 2 fewer moves than normal.
 [[invisible,invisible]]
 *Invisible*: You are invisible. You cannot be targeted by creatures who rely
 primarily on sight. Even so, if a creature relies just partially on sight, its
-<<attack_and_damage,attack checks>> against you are <<difficult>>.
+<<attack_and_damage,attack checks>> against you have <<disadvantage>>.
+Attacking you with spells is also difficult, but it is up to the GM to decide
+such effects on a case by case basis.
 
 
 //KEY:
@@ -1692,10 +1674,10 @@ to this table:
 [cols="^2s,10"]
 |===
 //----------+----------------------------------------------------
-| {twenty}  | The spell fizzles and the book loses __all__ its {ups}.
-| Failure   | The spell takes effect and the book loses __all__ its {ups}.
-| Success   | The spell takes effect and the book looses a single {up}.
-| {one}     | The spell takes effect and no {ups} are spent.
+| {twenty}  | The spell fizzles and the book loses __all__ its {_ups}.
+| Failure   | The spell takes effect and the book loses __all__ its {_ups}.
+| Success   | The spell takes effect and the book looses a {_up}.
+| {one}     | The spell takes effect and no {_ups} are spent.
 //----------+----------------------------------------------------
 |===
 --
@@ -1917,7 +1899,7 @@ Vermin whose level is <<X>> or higher are completely unaffected.
 
 Vermin whose level is lower than <<X>> must make a normal __wisdom__ check or
 move out of the repellent area. Even if the check is successful, any other
-checks made within the repellent area are <<difficult>>.
+checks made within the repellent area have <<disadvantage>>
 
 Mundane vermin, such as normal spiders, worms, ants, flies, wasps, etc. are
 level 0. Supernatural vermin such as giant wasps, etc. are at least level 1.
@@ -2045,7 +2027,7 @@ undead creature, and discerning its location that way.
 You target a point within __wisdom__ meters. Every object and creature within
 <<caster_level>> meters of that point glows with a faint light as if on fire.
 <<invisible,Invisible>> creatures and object can now be seen and targeted, but
-attack checks against them remain <<difficult>>.
+attack checks against them still have <<disadvantage>>.
 
 
 === Fierce Fortune (X)
@@ -2067,7 +2049,7 @@ target receives 1d6+<<X>> damage, otherwise they receive 1d6 damage.
 === Friendliness (X)
 *Level 1, <<focus>> (up to <<X>> minutes)*
 
-Your __charisma__ checks are <<easy>>.
+Your __charisma__ checks have <<advantage>>.
 
 
 === Furnace
@@ -2168,8 +2150,8 @@ bright light that illuminates a radius of 10+<<X>> meters.
 
 You can attempt to cast this spell on the eyes of a creature within range,
 effectively blinding it (if it uses eyes and light to see). It requires a
-successful difficult __charisma__ check, and if the creature’s level is higher
-than <<X>>, the spell fizzles.
+successful __charisma__ check made with <<disadvantage>>, and if the creature’s
+level is higher than <<X>>, the spell fizzles.
 
 You must make a successful __charisma__ check to cast this spell on an item
 currently held, worn, or touched by a living creature, and if the creature’s
@@ -2311,7 +2293,8 @@ round, and only if the order would not result in self harm.
 You cannot affect creatures whose level is higher than <<X>>. But they become
 hostile as soon as you have cast the spell.
 
-If the target’s level is lower than <<X>> your __charisma__ check is <<easy>>.
+If the target’s level is lower than <<X>> your __charisma__ check has
+<<advantage>>.
 
 Any creature targeted by this spell will become hostile towards you, regardless
 if they executed the order or not.
@@ -2493,17 +2476,18 @@ similar; at a speed of about 1 liter per round (10 liters per minute)
 === Strength of Stone (X)
 *Level 1+, <<focus>>, <<ritual>>*
 
-You target a willing ally within 2·<<X>> meters, making all their __strength__
-checks easy for a 2·<<X>> rounds.
+You target a willing ally within 2·<<X>> meters, giving all their __strength__
+checks <<advantage>> for a 2·<<X>> rounds.
 
 
 === Taunt
 *Level 1+, duration: 1 round*
 
 You target <<X>> creatures within 10+<<X>> meters. For each target, if you can
-make a successful <<adversarial>> __charisma__ check (which is difficult if the
-target’s level is higher than yours), the target will rush and attack you in
-melee combat on its next turn.
+make a successful <<adversarial>> __charisma__ check (with <<disadvantage>> if
+the target’s level is higher than yours), the target will rush and attack you
+in melee combat on its next turn, and that attack will have <<disadvantage>> if
+the baddie's level is lower than yours.
 
 
 === Tragic Missile (X)
@@ -2541,7 +2525,7 @@ others.
 
 //}}}
 
-
+<<<
 //{{{DICTIONARY
 
 == DICTIONARY
@@ -2578,13 +2562,6 @@ an <<adversarial>> __dexterity__ check. <<_defense, {link}>>
 an <<adversarial>> __wisdom__ check. <<_defense, {link}>>
 
 //KEY:
-*Difficult*: Difficult checks have a target number that’s 3 lower than normal
-checks.
-
-//KEY:
-*Easy*: Easy checks have a target number that's 3 higher than normal checks.
-
-//KEY:
 *GM*: [[GM,GM]] The Game Master.
 
 //KEY:
@@ -2608,10 +2585,6 @@ the GM.
 *PC, PCs*: Player Character(s).
 
 //KEY:
-*Proficient*: It is difficult or impossible to use an armor, weapon, or
-specialist tool you are not proficient with.
-
-//KEY:
 *Roll*: A roll is simply when you roll a die or dice such as such as __1d20__,
 __3d6__, __1d10__, __2d8+2__, etc. The most common type of roll is the
 <<_checks,check>>, where you use a __d20__, and the next most common type is
@@ -2628,7 +2601,7 @@ not skilled at using, you lose one <<moves,move>>.
 
 //KEY:
 *Unskilled (Weapon)*: If you are not skilled at using your weapon, your
-__attack{sp}check__ is <<difficult>>.
+__attack{sp}check__ has <<disadvantage>>.
 
 //END_SORT
 
