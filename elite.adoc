@@ -116,7 +116,7 @@ include::vars.adoc[]
 //{{{ ELITE WARRIORS
 == ELITE WARRIORS
 
-=== Berserker
+=== Berserker (Bute ???)
 
 The berserker is a very dangerous combatant, almost impossible to kill in
 combat. When you pick this class you instantly gain access to the very powerful

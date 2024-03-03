@@ -55,15 +55,15 @@ Your character has 6 primary stats:
 *Charisma*: luck, negotiation, charm magic, selling treasure.
 --
 
-Your starting stats range from 8 through 13, and cannot go beyond 15.
+Your starting stats range from 8 through 13 and cannot ever go beyond 15.
 
 === Extra Stuff
 
-[[level,level]]
-*Level (L)*: your level is a measure of your badassity. You start at a level 1 and
-max out at level 10. Baddies, spells, certain items and challenges also have
-levels. You gain new levels by acquiring treasure and notoriety. Whenever we
-use the letter <<L>> in this document, we refer to your level.
+*Level (L)*: your level is a measure of your badassity. You start at a level 1
+and become more and more badass as you gain levels. Baddies, spells, and
+certain items and challenges also have levels. You gain new levels by acquiring
+treasure and notoriety. Whenever we use the letter <<L>> in this document, we
+refer to your level.
 
 *Hit Points*: this is your current number of hit points. You can die or suffer
 permanent injury if you <<zero_hp,run out of hit points>>. We sometimes refer
@@ -384,6 +384,15 @@ If an adjacent baddie moves away from you, you can make a melee attack against
 them with a readied melee weapon you are skilled at using. When you do so, you
 have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll.
 
+//KEY:
+[[medic,medic]]
+*Medic*: 
+You can augment magical healing and natural regeneration. You spend 30 minutes
+administering to a wounded individual; during that time all checks and rolls
+made to heal the patient (for instance to determine how many <<hit_points>> the
+patient regains) have <<advantage>>. This does not apply to "area of effect"
+healing. This augmentation can apply to regeneration via <<rest,resting>>,
+provided you administer to the patient right as they start the rest.
 
 //KEY:
 [[everdeen,everdeen]]
@@ -513,9 +522,9 @@ one of the ration packs you carry does not take up any <<item_slots>>.
 //END_SORT
 
 
-=== Level 3: Graduation
-It is time for you to move on. You’re no longer just an adventurer, you’re a
-Hero, so you get a class from the {hero_book}.
+=== Level 3: Hero
+You gain your hero specialization. You can find more info about the hero
+specialization classes in the {hero_book}.
 
 *NOTE*:
 Even though you gain a heroic class at 3rd level, you're still an adventurer;
@@ -535,25 +544,26 @@ as 1d6, 2d4, 3d6+3, etc. A check is a special kind of roll described below.
 === Checks
 You make checks to see if your character can successfully do certain
 interesting things; you roll your d20. The check is successful if you roll
-__under__ a specified __target number__, which is usually one of your stats.
+__no higher__ than a specified __target number__, which is usually one of
+your stats.
 
 .Checks & Target Numbers
 ====
 *BASIC EXAMPLE*:
-If the target number is 10, you must roll 9 or lower to succeed.
+If the target number is 10, you must roll 10 or lower to succeed.
 
 *CONCRETE EXAMPLE*:
 You want to lift something really heavy, so the GM tells you to make a
-__strength__ check. Your __strength__ is 12. You must roll 11 or below to
-succeed. You roll a 12, which isn't a success.
+__strength__ check. Your __strength__ is 12. You must roll 12 or below to
+succeed. You roll a 13, which isn't a success.
 ====
 
 [[nat1,1]]
-*Rolling a 1*: Checks are always successful if you roll a 1 on your d20 and,
+*Rolling a One*: Checks are always successful if you roll a 1 on your d20 and,
 depending on the type of check, other positive result may happen.
 
 [[nat20,20]]
-*Rolling a 20*: Checks are always unsuccessful if you roll a 20 on your d20
+*Rolling a Twenty*: Checks are always unsuccessful if you roll a 20 on your d20
 and, depending on the type of check, other positive result may happen.
 
 [[adversarial,adversarial]]
@@ -703,8 +713,8 @@ and cannot be repaired.
 //------------------------------------------------+------+------+-----------
 | <<adventurers_logbook,Adventurer's Logbook>>    |   1  | 10   | 20 gp
 | Animal Feed                                     |   2  | 1    | 15 cp
-| Ball bearings                                   |   1  | 2    | 15 cp
-| Candles                                         |   1  | 6    | 10 cp
+| Ball Bearings                                   |   1  | 20   | 15 cp
+| Candles                                         |   1  | 6    | 25 cp
 | Chalk                                           |   1  | 12   | 3  cp
 | <<lamp_oil,Lamp Oil>>                           |   1  | 2    | 5  cp
 | <<magic_components,Magic Components>>           |   1  | 2    | 1  gp
@@ -748,14 +758,14 @@ and cannot be repaired.
 --
 
 [[lodging]]
-.Food and lodging (per person per night)
+.Food and Lodging (per person per night)
 [%header,cols="10,^2"]
 |===
 | Lodging                                   | {cost}
 //------------------------------------------+--------
-| Opulent (luxurious rooms and food)        | 1  gp
+| Opulent (luxury apartment, finest food)   | 5  gp
 | Middle class (small room, decent fare)    | 5  sp
-| Poor (sleep in common room, cheap food)   | 25 cp
+| Poor (sleep in common room, cheap food)   | 50 cp
 //------------------------------------------+--------
 |===
 
@@ -773,7 +783,7 @@ and cannot be repaired.
 |===
 
 
-:melee_ranged: (<<melee_and_ranged,melee & ranged>>)
+:melee_ranged: (<<melee_and_ranged,Melee & Ranged>>)
 .Ranged Weapons
 [%header,cols="7,^2,^2,^1"]
 |===
@@ -781,14 +791,14 @@ and cannot be repaired.
 //------------------------------+------+------+------
 | Dagger  __{melee_ranged}__    |   1  |  1   | 3  gp
 | Javelin __{melee_ranged}__    |   1  |  1   | 3  gp
-| Small axe __{melee_ranged}__  |   1  |  1   | 3  gp
+| Small Axe __{melee_ranged}__  |   1  |  1   | 3  gp
 | Dart                          |   1  |  4   | 3  gp
 | Bow                           |   2  |  -   | 7  gp
-| ↳ Quiver of arrows            |   1  |  10  | 2  gp
+| ↳ Quiver of Arrows            |   1  |  10  | 2  gp
 | Crossbow                      |   1  |  -   | 12 gp
-| ↳ Quiver of bolts             |   1  |  10  | 2  gp
+| ↳ Quiver of Bolts             |   1  |  10  | 2  gp
 | Sling                         |   0  |  -   | 4  gp
-| ↳ Bag of slingshot            |   1  |  10  | 2  gp
+| ↳ Bag of Slingshot            |   1  |  10  | 2  gp
 //------------------------------+------+------+------
 |===
 
@@ -918,13 +928,14 @@ either, as they are designed to go out when they aren't upright.
 ==== Lockpicking Tools
 These tools allow you to pick various locks. They can be used up, and therefore
 have <<usage_points>>. To Open a Lock, you first spend 5 minutes and one
-{consumption} of lockpicking tools. Then you make both a
-__dexterity__- and an __intelligence__ check.
+{consumption} of lockpicking tools. Then you make both a __dexterity__- and an
+__intelligence__ check.
 
 * If both are successful, you open the lock.
 * If one is successful, the lock does not open, but you get to try again.
 * If none are successful, the lock becomes jammed, and can only be opened by a
-  real key or by a lock picker who is at least two levels higher than you.
+  key or by a lockpicker who is at least two levels higher than you. You may
+  try again when you have gained two levels.
 
 
 //KEY:
@@ -967,9 +978,9 @@ still only requiring one <<item_slots,item slot>>.
 [[polearm,polearm]]
 ==== Polearm
 Only <<infantry,infantrymen>> can use these weapons in any way. Polearms have a
-special ability: by spending 3 <<moves>> and 1 <<action>> you can attack a
-baddie who is 2 meters away from you, i.e. there is an entire one-meter square
-between you and the baddie.
+special ability: by spending three <<moves>> and one <<Actions,action>> you can
+attack a baddie who is two meters away from you, i.e. there is an entire
+one-meter square between you and the baddie.
 
 [quote]
 The polearms damage die follows your damage die for heavy weapons, although
@@ -979,9 +990,8 @@ it can never be lower than 1d12.
 [[restoring_salve,restoring salve]]
 ==== Restoring Salve
 These salves can reverse the effects of <<reversible>> trauma. You spend one
-{consumption} of salve, and 30 minutes to apply it to a
-willing recipient. Once applied, one <<reversible>> trauma condition is removed
-from the recipient.
+{consumption} of salve, and 30 minutes to apply it to a willing recipient. Once
+applied, one <<reversible>> trauma condition is removed from the recipient.
 
 
 //KEY:
@@ -1411,7 +1421,7 @@ points.
 [%unbreakable]
 --
 [[trauma_table,trauma table]]
-.Trauma table
+.Trauma Table
 [%header,cols="^2,^2,8"]
 |===
 | Roll  | Type       | Effect
@@ -1454,7 +1464,7 @@ with restoration magic.
 The {hero_book} and the {elite_book} contain restoration and rejuvenation
 spells that can also restore or remove the effects of trauma.
 
-=== Healing and regeneration
+=== Healing and Regeneration
 You can regain hit points in various ways, but you can never heal or be healed
 beyond your <<hit_point_total>>.
 
@@ -1464,9 +1474,16 @@ allow you to regenerate a bit; roll 1d8, add your level,  and increase your
 hit points by that number. Aside from sleeping, eating, and keeping watch, you
 cannot do anything of consequence while resting.
 
+If you have suffered temporary stat point loss, each reduced stat regains 1d4
+points.
+
 [quote]
+--
 You can regenerate 1d8 hit points after a meal, 6 hours of sleep, and two hours
 of rest.
+
+You can also 
+--
 
 *Magical Healing*: Spells (such as <<_heal_x>>), potions, and powers often
 allow you to instantly regain hit points, usually by rolling a number of
@@ -1683,7 +1700,7 @@ to this table:
 --
 
 [[cancelling_spell]]
-.Cancelling a spell
+.Cancelling a Spell
 ****
 You cannot cancel spells cast by others, and you cannot cancel a spell with a
 <<duration>> unless it has the <<focus>> or <<trance>> property, or if
@@ -1691,7 +1708,7 @@ cancellation is allowed in the spell's description.
 **** 
 
 [[targeting_spell]]
-.Targeting a spell
+.Targeting a Spell
 ****
 Unless specifically allowed in the spell's description, you cannot target
 baddies or things you can't see. Spells that create projectiles, beams, or
@@ -1749,6 +1766,11 @@ followed by 30 minutes of ritualistic work. Then you make an __intelligence__
 check. If the check succeeds, you have recharged the spellbook, back to its
 maximum <<usage_points>> otherwise you must try again.
 
+*Rushed Recharging*: You can partially recharge a spellbook on the go; you must
+hold the book in both hands and spend an <<Action,action>> You roll an
+__intelligence__ check, and if it succeeds you add one {_up} to the book, but
+you also temporarily lose 1d4 points of __intelligence__, some or all of which
+can be regained by <<rest,resting>>.
 
 ==== Spell Properties
 The properties of a spell is listed in bold font right underneath the spell's
@@ -1816,7 +1838,7 @@ nothing more.
 [%unbreakable]
 --
 [[example_multilevel]]
-.Multilevel spells (X)
+.Multilevel Spells (X)
 ====
 <<_tragic_missile_x>> is technically not a single spell. It exists as __Tragic
 Missile 1__, __Tragic Missile 2__, and so on all the way to __Tragic Missile
@@ -2181,11 +2203,12 @@ you, it will rationalize the sensation away.
 When you cast this spell, you instantly jump <<X>>+1 meters in a direction of
 your choice. You cannot reduce the length of the jump, but you can jump into a
 wall or other obstacle. Doing so causes you to take 1d6 damage for each meter
-the obstacle reduces your jump.
+the obstacle shortens your jump.
 
 If you jump into a creature, you each suffer 1d4 damage for each meter the
 collision shortened your jump. If the creature succeeds a __dexterity__ check,
-they're able to avoid you, and you fly right past it.
+they're able to avoid you, and you fly right past it (note that very large
+creatures don't get such a check).
 
 
 === Lightning Touch (X)
@@ -2450,11 +2473,11 @@ sleeping baddie wakes up if they take damage.
 === Spenser’s levitating Bowl
 *Level 1, <<ritual>>, duration: __intelligence__ · 10 minutes*
 
-You conjure a large vaguely bowl-shape plate that can carry as many
+You conjure a large, vaguely bowl-shape plate that can carry as many
 <<item_slots>> as your __intelligence__ score.
 
 It levitates about a meter above the ground, and can move half as fast as an
-adventurer. It is able to “climb” stairs and hills, but cannot scale walls or
+adventurer. It is able to negotiate stairs and hills, but cannot scale walls or
 steep cliffs.
 
 
@@ -2525,8 +2548,10 @@ others.
 
 //}}}
 
-<<<
+
 //{{{DICTIONARY
+// Page Break
+<<<
 
 == DICTIONARY
 

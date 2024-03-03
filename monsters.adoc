@@ -58,6 +58,8 @@ military camps, and similar concentrations of feces.
 * Usually antisocial, but can hunt in packs with its brothers.
 * It does not like the light (all checks are difficult when in bright light).
 
+B'ooze::
+* An ooze made of booze.
 
 == ORCS
 
@@ -68,13 +70,13 @@ Green and brown skinned creatures that are created when trees and large plants
 die from unnatural causes.
 
 * Orcs are a category containing  orcs, trolls, cyclops
-* Not gnolls.
-* Not Goblins or hob goblin
+* Not gnolls, goblins or hobs.
 * Created completely from plant matter => green and brown skins.
 * They exude a kind of blight that slowly degenerates vegetation, which makes
   the orcs stronger.
 * Boss Orcs can reverse their blight, killing off a few orcs and rapidly
   increasing plant growth.
+* Continue to grow as long as there is nourishment (plant matter).
 * Sometimes destroy forests to create more orcs.
 * Only become undead if some outside force (such as an evil mage) turns them.
 * Tough, extreme pain tolerance, and high morale.
@@ -82,9 +84,17 @@ die from unnatural causes.
   that can control or direct the entire army.
 * Die if they are kept away from an open sky for too long; they cannot be 
   imprisoned in a donjon or inside any kind of building - they'll rot.
+* Breeder orcs are a kind of "queen" orc that can charm enlightened males into
+  mating with them, creating hybrid orc spawn.
 
+Hybrid Orcs::
+* Like nephilim
+* Intelligent
+* Independent
+* Very Powerful
 
-== Undeads
+== UNDEADS
+
 * Undead creatures rise automatically. Especially if they have died from
   traumatic events such as war, assault, and magical accidents.
 * Once slain, some undeads can rise again. Usually as less powerful beings.
@@ -104,13 +114,58 @@ Sailors tend to walk towards shore and become a menace on the beaches and
 harbours of the world. Sea creatures tend to patrol their old territories and
 make a mess there.
 
-Crack-Ann:: Undead Kraken.
+Crack-Ann:: Female undead Kraken. Rotten and spiteful. Poisonous and stinky
+bodily fluids ad nauseam.
 
 Old George::
-There is an undead Crack-Ann called Old George. He's an undead,
-elderly guy, who is slow and not as young as he was. Sailors have learned to
-navigate around him, and generally avoid him.
+Male version of Crack-Ann. He's an elderly dude, who is slow and not as young
+as he was. Sailors have learned to navigate around him, and generally avoid
+him.
+
+== Bug Bears
+Combine a bug and a bear.
+
+* Many varieties
+* Some are mostly bug, some are mostly bear.
+* Some have wings, some have mandibles, some have cute bear ears on exoskeletal
+  head.
+
+== GOBLIN
+
+* Evil type of gnome
+* A bit like Rask Gar.
+* Dark vision.
+* Not very fond of gnomes.
+* Cowards.
+* Power cycles:
+** Males are intelligent, cunning, and fierce.
+** Females are physically very strong and tough.
+** Goblins are less powerful during 12 "daytime" hours.
+** ?? On odd years males get a boost to their mental stats, and
+   on even years females get a boost to their physical stats.
+   This is universal. It means that, no matter where you are,
+   you either have clever males or strong females, it varies from year to year.
+* Specializes in:
+** Extremely unsafe mechanical engineering.
+** Narcotics and similar poisons.
+** Unstable blast powder.
+** Traps that are unfair, unstable, and unnecessarily gruesome.
 
 
 == AUTOMATA
 Golems
+
+== MIMIC
+
+* House Mimic: A mimic the size and shape of a house.
+* Fortress Mimic: A mimic the size and shape of a fortress, and with all
+  of the armaments too.
+
+== MISC
+
+Haggis (Hag, slime ??)::
+Disgusting smelly blob of vile spellcasting.
+
+
+Cognac::
+Much more awesome than a gin (djinn)
