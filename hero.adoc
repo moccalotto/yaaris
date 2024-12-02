@@ -393,15 +393,14 @@ Roll a d20 with {advantage}; if the roll is higher than your __intelligence__
 increase that it by one point. Do the same for __wisdom__.
 
 ==== Weapon Skills
-You are only __skilled__ at using daggers and quarterstaffs, both of which are
-__light melee weapons__, even though a quarterstaff is two-handed. You are not
+You are only __skilled__ at using daggers and quarterstaffs. You are not
 skilled at throwing daggers.
 
-.Rogue Damage Rolls
+.Mage Damage Rolls
 [%header,cols="8,^2,^2"]
 |===
 | Weapon Type             | Stat        | Skill     | Damage
-//------------------------|-------------|-----------|----------
+//------------------------+-------------+-----------+----------
 | Light Melee Weapons     | _strength_  | Unskilled | 1d4
 | Quarterstaffs           | _dexterity_ | Skilled   | 1d8
 | Daggers                 | _dexterity_ | Skilled   | 1d6
@@ -420,8 +419,9 @@ efficiently.
 
 [reftext="mage's spellbook"]
 [[mages_spellbook]]
-*Mage's spellbooks* can contain both {basic} and <<mage>> spells, they can
-only be used by mages, and they are more efficient than __basic spellbooks__.
+*Mage's spellbooks* are like basic spell books, but they can contain both
+{basic} and <<mage>> spells. Mage's spellbooks are more efficient than
+__basic{sp}spellbooks__, but they can only be used by mages.
 
 *Spellcasting requirements*:
 

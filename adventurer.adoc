@@ -385,16 +385,6 @@ them with a readied melee weapon you are skilled at using. When you do so, you
 have __advantage__ on the <<attack_and_damage,attack check>> and the damage roll.
 
 //KEY:
-[[medic,medic]]
-*Medic*: 
-You can augment magical healing and natural regeneration. You spend 30 minutes
-administering to a wounded individual; during that time all checks and rolls
-made to heal the patient (for instance to determine how many <<hit_points>> the
-patient regains) have <<advantage>>. This does not apply to "area of effect"
-healing. This augmentation can apply to regeneration via <<rest,resting>>,
-provided you administer to the patient right as they start the rest.
-
-//KEY:
 [[everdeen,everdeen]]
 *Everdeen*:
 If you are without arrows during combat, you can spend 3 moves, and make a
@@ -414,6 +404,16 @@ when doing so, your damage die is 1d12.
 [[infantry,infantry]]
 *Infantry*:
 You are able to use <<polearm,polearms>>.
+
+//KEY:
+[[medic,medic]]
+*Medic*: 
+You can augment magical healing and natural regeneration. You spend 30 minutes
+administering to a wounded individual; during that time all checks and rolls
+made to heal the patient (for instance to determine how many <<hit_points>> the
+patient regains) have <<advantage>>. This does not apply to "area of effect"
+healing. This augmentation can apply to regeneration via <<rest,resting>>,
+provided you administer to the patient right as they start the rest.
 
 //KEY:
 [[monstrous_gourmand,monstrous gourmand]]
@@ -544,8 +544,9 @@ as 1d6, 2d4, 3d6+3, etc. A check is a special kind of roll described below.
 === Checks
 You make checks to see if your character can successfully do certain
 interesting things; you roll your d20. The check is successful if you roll
-__no higher__ than a specified __target number__, which is usually one of
-your stats.
+__no higher__ than a specified __target number__. 
+
+The __target number__ is usually one of your stats.
 
 .Checks & Target Numbers
 ====
@@ -559,18 +560,18 @@ succeed. You roll a 13, which isn't a success.
 ====
 
 [[nat1,1]]
-*Rolling a One*: Checks are always successful if you roll a 1 on your d20 and,
-depending on the type of check, other positive result may happen.
+*Rolling a One*: Checks are always successful if you roll a 1 on your d20.
+Furthermore, depending on the type of check, other positive effects may occur.
 
 [[nat20,20]]
-*Rolling a Twenty*: Checks are always unsuccessful if you roll a 20 on your d20
-and, depending on the type of check, other positive result may happen.
+*Rolling a Twenty*: Checks are always unsuccessful if you roll a 20 on your d20.
+Furthermore, depending on the type of check, other negative consequences may occur.
 
 [[adversarial,adversarial]]
 === Adversarial Checks
 These are checks where the difficulty depends on the level of the adversary. In
-this context, and adversary can be a baddie, a lock, a trap, a riddle, or
-similar.
+this context, and adversary can be any type of obstacle, such as a baddie, a
+lock, a trap, a riddle, or similar.
 
 If the adversary is two or more levels above you, your checks against them have
 <<disadvantage>> and if the adversary is two or more levels below you, your
@@ -579,14 +580,16 @@ checks against them have <<advantage>>.
 .Adversarial Checks
 ====
 A second level adventurer is trying to attack an evil orc who is level 5. This
-attack check has <<advantage>> because the orc is two or more levels above the
-adventurer.
+attack check has <<disadvantage>> because the orc is two or more levels above
+the adventurer. Had the orc been level 3, the check would not have had
+<<disadvantage>>.
 
 ---
 
 A level 3 adventurer is trying to haggle with a level 1 merchant to get a good
 price on some loot. This <<haggling_check>> has <<advantage>> because the
-adventurer is two levels above the merchant.
+adventurer is two levels above the merchant. Had the merchant (or indeed the
+adventurer) been level 2 the check would not have had <<advantage>>.
 
 ---
 
