@@ -21,19 +21,27 @@ local function sorter(lines)
 
             if sortArg then -- We've encountered a "start sort" command. So we enter sorting-mode
                 if string.sub(sortArg, 1, 1) == "=" then
+                    -- We are sorting by section names
+                    -- The type of section we're sorting (i.e. its depth) is denoted by the given number equal characters.
+                    -- Every time we encounter a section with the corresponding number of equal signs, we consider that a sorting key.
                     sortKeyPattern = "^" .. sortArg .. "%s+"
                 elseif sortArg == "//KEY:" then
+                    -- We are sorting by custom keys.
+                    -- This means that every time we encounter the string "KEY:" we consider the next line a sorting key.
                     sortKeyPattern = "^%s*//KEY:"
                 else
+                    -- Unknown sorting type.
                     io.stderr:write(string.format("unsupported sort argument: %s", sortArg))
                     os.exit()
                 end
 
+                -- We are done scanning for START_SORT commands, so now we can begin sorting the subsequent lines.
                 mode = MODE_SORTING
                 sections = {}
                 preface = ""
             end
 
+            -- Ensure that the outputted section contains the sort command.
             result = result .. line
 
             goto continue
@@ -49,23 +57,19 @@ local function sorter(lines)
                 goto continue
             end
 
-            if string.match(line, "^//%s*END_SORT") then -- We should stop sorting
-                -- Each section within the current sorting area is a single line
-                -- Sort those lines to sort the entire area,
-                -- and insert the lines into the output.
+            if string.match(line, "^//%s*END_SORT") then
+                -- We have encountered a command to stop sorting. So we should stop sorting.
+                -- Each section within the current sorting area is a single string
+                -- Sort those strings to sort the entire area,
+                -- and compile/combine/join the strings into the output.
 
                 table.sort(sections)
                 local sorted = table.concat(sections, "")
 
-                -- is there a preface?
-                if preface ~= "" then
-                    -- yes, so add preface text to beginning of sorted chunk
-                    result = result .. preface .. sorted
-                else
-                    -- no, so just add the sorted text to the output text
-                    result = result .. sorted -- add the sorted sections
-                end
-                result = result .. line       -- add "//END_SORT" line
+                -- Compile the resulting sorted text.
+                result = result .. preface .. sorted .. line
+
+                -- Reset the state machine to start looking for new areas to sort.
                 mode = MODE_SCAN
                 sections = {}
                 preface = ""
@@ -73,6 +77,8 @@ local function sorter(lines)
             end
 
             -- This happens if we have preface text before the first heading/sortkey
+            -- Preface text is paragraph text that comes after START_SORT, but before the
+            -- first sorting key/section is encountered.
             if nil == sections[#sections] then
                 preface = preface .. line
                 goto continue

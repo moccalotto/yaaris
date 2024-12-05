@@ -55,7 +55,8 @@ Your character has 6 primary stats:
 *Charisma*: luck, negotiation, charm magic, selling treasure.
 --
 
-Your starting stats range from 8 through 13 and cannot ever go beyond 15.
+Your starting stats range from 8 through 13 and may improve as you level up,
+but they can never increase beyond 15.
 
 === Extra Stuff
 
@@ -72,7 +73,7 @@ to hit points as HP.
 [[hit_point_total,hit point total]]
 *Hit Point Total*: is the maximum number of hit points you can have. I.e. the
 number of hit points you have when you're at full health. This number increases
-every time you gain a new level, and when you're wearing armor.
+as you level up, and also when you're wearing armor.
 
 *Item Slots*: is the maximum number of <<item_slots,items>> you can carry. This
 number is equal to your __constitution__.
@@ -94,7 +95,7 @@ that stat. Now each stat has a value between 8 and 13.
 Roll on each of the following tables to flesh out your character.
 
 ==== Vice
-Roll a d12. If you roll a number that isn't on the table, you don’t have a vice.
+Roll a d12 to find out what kind of vice (if any) you have.
 
 [%header,cols="^1,11"]
 |===
@@ -114,7 +115,7 @@ Roll a d12. If you roll a number that isn't on the table, you don’t have a vic
 
 ==== Background
 Your background is what you used to do before you found out you had the
-Adventurer's Blessing. Roll a d6 and a d20. If the d6 rolled an even number,
+<<adventurers_blessing>>. Roll a d6 and a d20. If the d6 rolled an odd number,
 pick your background from the left column, otherwise pick your background from
 the right column.
 
@@ -168,7 +169,7 @@ the right column.
 |===
 
 [quote]
-Consult the GM when making checks that you think could be helped to your
+Notify the GM when making checks that you think could be helped by your
 background; you might get an <<advantage>>.
 
 
@@ -328,6 +329,7 @@ You are skilled at using light armor pieces. See also <<armor_skills>>.
 You are skilled at using ranged weapons and light melee weapons. See also
 <<adventurer_damage_rolls_table>>.
 
+[[adventurers_blessing]]
 ==== Adventurer's Blessing
 
 An adventurer is not just someone who chooses to go on adventures, the blood in
@@ -554,9 +556,10 @@ The __target number__ is usually one of your stats.
 If the target number is 10, you must roll 10 or lower to succeed.
 
 *CONCRETE EXAMPLE*:
-You want to lift something really heavy, so the GM tells you to make a
+You want to lift a heavy strongbox, so the GM tells you to make a
 __strength__ check. Your __strength__ is 12. You must roll 12 or below to
-succeed. You roll a 13, which isn't a success.
+lift it. 
+
 ====
 
 [[nat1,1]]
